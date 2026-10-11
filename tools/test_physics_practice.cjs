@@ -8,10 +8,11 @@ const {JSDOM,VirtualConsole}=require(process.env.PHYSICS_JSDOM_PATH||'jsdom');
 const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'physics-practice.html'),'utf8');
 const pause=()=>new Promise(resolve=>setTimeout(resolve,25));
 let networkCalls=0;
-function page(source=html,{url='https://physics.test/physics-practice.html',storage={},online=false}={}){
+function page(source=html,{url='https://physics.test/physics-practice.html',storage={},online=false,firebase=null}={}){
   const errors=[],console=new VirtualConsole();console.on('jsdomError',e=>errors.push(e));
   const dom=new JSDOM(source,{url,runScripts:'dangerously',pretendToBeVisual:true,virtualConsole:console,beforeParse(w){
     Object.defineProperty(w.navigator,'onLine',{value:online,writable:true,configurable:true});
+    if(firebase)w.firebase=firebase;
     const contexts=new WeakMap();
     w.HTMLCanvasElement.prototype.getContext=function(){
       if(!contexts.has(this)){const data={ink:false,labels:[],getImageData(){return {data:new Uint8ClampedArray(this.ink?[0,0,0,255]:[255,255,255,255])};},fillRect(){this.ink=this.fillStyle!=='#fff';},fill(){this.ink=true;},stroke(){this.ink=true;},drawImage(){this.ink=true;},fillText(label){this.labels.push(label);}};
@@ -106,6 +107,46 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   const AI=p.w.PhotoReview;assert.equal(AI.normalize({verdict:'incorrect',confidence:'low',feedback:'Unreadable',weak_points:[{skill:'Signs',evidence:'Unknown'}]}).weak_points.length,0);
   assert.match(AI.hintPrompt(bank[0],'', 'text','solution',false),/Never state, confirm, or reject a final answer/);
   assert.equal(networkCalls,0,'All core practice works offline without network requests');
+  // A pasted sharing URL must never be saved or shared as the Firebase key.
+  const key='AIza'+'x'.repeat(35),liveId='a'.repeat(48),keyStorage='physics11FirebaseApiKey';
+  const amcLink='https://physics.test/amc8_practice.html?follow='+'b'.repeat(48)+'#liveKey='+key;
+  const brokenLink='https://physics.test/physics-practice.html?follow='+liveId+'#'+new URLSearchParams({liveKey:amcLink});
+  const nestedLink='https://physics.test/physics-practice.html?follow='+liveId+'#'+new URLSearchParams({liveKey:brokenLink});
+  function fakeFirebase(initial={}){
+    const initialized=[],writes=[],documents=new Map(Object.entries(initial)),apps=[];
+    const db={collection:()=>({doc:id=>({
+      async set(data){writes.push({id,data});documents.set(id,data);},
+      onSnapshot(...args){const callback=typeof args[0]==='function'?args[0]:args[1];callback({exists:documents.has(id),metadata:{fromCache:false},data:()=>documents.get(id)});return ()=>{};}
+    })})};
+    return {initialized,writes,apps,initializeApp(config){initialized.push(config.apiKey);const app={name:'[DEFAULT]',delete:async()=>{apps.length=0;}};apps.push(app);return app;},firestore:()=>db};
+  }
+  const hostFirebase=fakeFirebase(),host=page(html,{storage:{[keyStorage]:amcLink},firebase:hostFirebase});
+  const store=host.w.StudentStore;
+  assert.equal(store.getApiKey(),key);assert.equal(host.w.localStorage.getItem(keyStorage),key,'Previously saved sharing links are repaired');
+  for(const input of [key,' '+key+' ',amcLink,brokenLink,nestedLink,'https://physics.test/?apiKey='+encodeURIComponent(amcLink),'https://physics.test/physics-monitor.html#apiKey='+key])assert.equal(store.normalizeApiKey(input),key);
+  for(const input of ['not-a-key','https://physics.test/no-key','https://physics.test/'+key,'javascript:alert(1)','AIza'+'x'.repeat(36)])assert.equal(store.normalizeApiKey(input),'');
+  assert.equal(store.setApiKey('not-a-key'),false);assert.equal(store.getApiKey(),key,'Invalid input preserves the saved key');
+  host.dom.reconfigure({url:'https://physics.test/physics-practice.html?apiKey='+encodeURIComponent(amcLink)});assert.equal(store.getApiKey(),key);
+  host.dom.reconfigure({url:'https://physics.test/physics-practice.html?apiKey=bad'});assert.equal(store.getApiKey(),key,'Invalid URL configuration cannot replace a valid saved key');
+  host.dom.reconfigure({url:'https://physics.test/physics-practice.html'});
+  host.$('firebase-key').value=amcLink;host.$('sync-enable').click();assert.equal(store.getApiKey(),key);assert.equal(host.$('firebase-key').value,'••••••••');
+  host.$('firebase-key').value='bad';host.$('sync-enable').click();assert.match(host.$('sync-status').textContent,/valid Firebase API key/);assert.equal(store.getApiKey(),key);
+  login(host,'Host');await until(()=>hostFirebase.initialized.length===1);
+  host.$('share-live').click();await until(()=>!!host.$('live-link').value);
+  const generated=new URL(host.$('live-link').value);assert.equal(new URLSearchParams(generated.hash.slice(1)).get('liveKey'),key);
+  assert.ok(host.w.LivePractice.validId(generated.searchParams.get('follow')));assert.deepEqual(hostFirebase.initialized,[key]);
+  assert.throws(()=>host.w.LivePractice.shareURL(generated.href,liveId,amcLink),/invalid-firebase-api-key/);
+  assert.equal(new URL(store.shareLink()).searchParams.get('apiKey'),key);
+  assert.ok(hostFirebase.writes.some(write=>write.id.startsWith('live-')),'Host publishes a live question');
+  const followerFirebase=fakeFirebase({['live-'+liveId]:{kind:'physics11-live',version:1,active:true,revision:1,expiresAt:Date.now()+3600000,question:{q:bank[27].id}}});
+  const follower=page(html,{url:brokenLink,firebase:followerFirebase});
+  await until(()=>follower.$('live-status').textContent.startsWith('Following live.'));
+  assert.equal(follower.$('question-title').textContent,bank[27].title);assert.deepEqual(followerFirebase.initialized,[key]);
+  assert.equal(followerFirebase.writes.length,0,'Opening an old malformed link reads the session without writing progress');
+  const invalidFollower=page(html,{url:'https://physics.test/physics-practice.html?follow='+liveId+'#liveKey=bad'});
+  await until(()=>invalidFollower.$('live-status').textContent.includes('invalid Firebase key'));
+  assert.equal(networkCalls,0,'Invalid keys are rejected before loading Firebase');
+  assert.equal(store.setApiKey(''),true);assert.equal(store.getApiKey(),'','This device only still clears the key');
   // One shared steps pad supplies handwritten answers alongside typed text.
   const ink=page();login(ink,'Ink');change(ink,'mode','chapter');
   assert.equal(ink.$('answer-tab-handwritten'),null);assert.equal(ink.$('answer-canvas'),null);assert.equal(ink.d.querySelectorAll('canvas').length,1,'Only the shared steps canvas remains');
@@ -185,6 +226,6 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   timed.$('check').click();await until(()=>!timed.$('self-rating').hidden&&!timed.$('verify-retry').disabled);assert.match(timed.$('feedback').textContent,/timed out/);assert.equal(history(timed,'Timed').attempts.length,0);
   const monitorSource=fs.readFileSync(path.join(root,'physics-monitor.html'),'utf8');
   const m=page(monitorSource,{url:'https://physics.test/physics-monitor.html?student=Ada&period=week&exclude=',storage:saved});await pause();assert.deepEqual(m.errors,[]);assert.equal(m.$('activity-days').children.length,7);assert.match(m.$('activity-status').textContent,/saved on this device/);assert.ok(!m.w.StudentStore,'Monitor has no history-writing store');
-  for(const instance of [p,restored,shared,f,ink,inkReload,auto,autoReload,timed,m]){assert.deepEqual(instance.errors,[]);instance.w.close();}
+  for(const instance of [p,restored,shared,f,host,follower,invalidFollower,ink,inkReload,auto,autoReload,timed,m]){assert.deepEqual(instance.errors,[]);instance.w.close();}
   console.log('Passed: 101 question/answer pairs, graphs, navigation, student storage, future chapters, handwriting tools/backups, automatic model-answer verification, typed/handwritten submissions, correct/incorrect/partial verdicts, immutable submissions, uncertain/offline/error fallback, retries, cancellation/navigation/student isolation, timeout, read-only monitor, and offline startup.');
 })().catch(error=>{console.error(error);process.exit(1);});

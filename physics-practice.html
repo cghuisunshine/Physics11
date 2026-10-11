@@ -109,7 +109,7 @@ textarea:focus-visible{outline:3px solid #b78021;outline-offset:3px}
 .dock-choices{display:block!important}.dock-choices textarea{min-height:60px;font-size:12px}.dock-answer .rating-actions{margin-top:9px}.dock-answer .rating-actions button{font-size:12px;padding:8px 9px}.chapter-grid{max-height:230px;overflow-y:auto;padding:3px}
 @media(max-width:600px){.rating-actions button{flex:1}}
 </style></head>
-<body><header><a class="brand" href="content.html">Physics 11 <span>/ Practice Studio</span></a><div class="header-links"><button id="student-button" class="student-button" type="button" title="Switch student"><span id="student-sync-dot" class="sync-dot" data-state="local" aria-hidden="true"></span><span id="student-name-label">Sign in</span><span class="student-switch">Switch</span></button><button id="monitor-button" class="student-button" type="button">Monitor student</button><button id="fullscreen" class="fullscreen-toggle" type="button" aria-pressed="false" hidden>⛶ Full screen</button><a href="content.html">Browse chapters ↗</a><div class="settings-wrap"><button id="settings-button" class="settings-button" type="button" aria-label="Settings" title="Settings" aria-expanded="false" aria-controls="settings-panel"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div id="settings-panel" class="settings-panel" role="dialog" aria-label="Storage settings" hidden><h2>Storage settings</h2><p class="small">Progress is always saved on this device and works offline. Firebase is only used for optional sync across devices.</p><div class="sync-box settings-sync"><label for="firebase-key" class="small">Firebase API key (optional)</label><input id="firebase-key" type="password" autocomplete="off" placeholder="Leave empty to keep data on this device"><div class="sync-actions"><button id="sync-enable" class="secondary" type="button">Turn on sync</button><button id="sync-local" class="secondary" type="button">This device only</button><button id="sync-share" class="secondary" type="button">Share sync link</button></div><p id="sync-status" class="small" role="status">Saved on this device only.</p></div></div></div></div></header>
+<body><header><a class="brand" href="content.html">Physics 11 <span>/ Practice Studio</span></a><div class="header-links"><button id="student-button" class="student-button" type="button" title="Switch student"><span id="student-sync-dot" class="sync-dot" data-state="local" aria-hidden="true"></span><span id="student-name-label">Sign in</span><span class="student-switch">Switch</span></button><button id="monitor-button" class="student-button" type="button">Monitor student</button><button id="fullscreen" class="fullscreen-toggle" type="button" aria-pressed="false" hidden>⛶ Full screen</button><a href="content.html">Browse chapters ↗</a><div class="settings-wrap"><button id="settings-button" class="settings-button" type="button" aria-label="Settings" title="Settings" aria-expanded="false" aria-controls="settings-panel"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div id="settings-panel" class="settings-panel" role="dialog" aria-label="Storage settings" hidden><h2>Storage settings</h2><p class="small">Progress is always saved on this device and works offline. Firebase is only used for optional sync across devices.</p><div class="sync-box settings-sync"><label for="firebase-key" class="small">Firebase API key or sharing link (optional)</label><input id="firebase-key" type="password" autocomplete="off" placeholder="Paste a Firebase key or sharing link"><div class="sync-actions"><button id="sync-enable" class="secondary" type="button">Turn on sync</button><button id="sync-local" class="secondary" type="button">This device only</button><button id="sync-share" class="secondary" type="button">Share sync link</button></div><p id="sync-status" class="small" role="status">Saved on this device only.</p></div></div></div></div></header>
 <main><div class="intro"><div><div class="eyebrow">A LITTLE PRACTICE. A CLEAR NEXT STEP.</div><h1>Make your next answer<br>your best one.</h1><p>Work through a question, learn from the result, and build from there.</p></div><div class="session"><span id="attempt-count">0</span><div>answers checked</div><small id="accuracy">Your progress starts here</small></div></div>
 <div class="layout sidebar-collapsed" id="layout"><section class="workspace"><div class="toolbar"><label>Practice mode<select id="mode"><option value="adaptive">Adaptive · textbook questions</option><option value="chapter">By chapter · textbook sets</option><option value="random">Random · textbook questions</option><option value="review">Review · missed & flagged</option><option value="day">By day · past 7 days</option></select></label><label id="topic-control">Focus topic<select id="topic"><option value="">All topics</option></select></label></div>
 <div id="chapter-controls" class="chapter-controls" hidden><div class="toolbar"><label>Chapter<select id="practice-chapter" aria-describedby="chapter-help chapter-notice"></select></label><label>Problem<select id="chapter-question"></select></label></div><div class="chapter-progress"><button id="chapter-previous" class="quiet" type="button">← Previous question</button><span id="chapter-progress" class="small" role="status" aria-live="polite"></span></div><div id="chapter-grid" class="chapter-grid" role="group" aria-label="Problems in the selected chapter"></div><p id="chapter-help" class="small chapter-help">Practice the chapter’s questions in order, or jump to any number. Green = correct; orange = needs practice, using your latest checked answer. Progress is saved with your student history.</p><p id="chapter-notice" class="notice chapter-notice" hidden></p></div>
@@ -570,8 +570,31 @@ store.takeLegacy=()=>{const raw=ls.get(LEGACY_KEY);if(!raw)return null;ls.del(LE
 // ---- Firebase (optional) ----
 let db=null, activeKey='', unsubscribe=null, docRef=null, onRemote=null, onStatus=()=>{};
 let lastRemoteUpdatedAt='', pendingLocalUpdatedAt='', getLocal=()=>null;
-store.getApiKey=()=>{let fromUrl='';try{fromUrl=new URLSearchParams(location.search).get('apiKey')||'';}catch(e){}if(fromUrl.trim()){ls.set(FIREBASE_API_KEY_KEY,fromUrl.trim());return fromUrl.trim();}return ls.get(FIREBASE_API_KEY_KEY)||'';};
-store.setApiKey=key=>{key=String(key||'').trim();if(key)ls.set(FIREBASE_API_KEY_KEY,key);else ls.del(FIREBASE_API_KEY_KEY);};
+// Accept a key or a pasted sync/live link, including older nested sharing links.
+// Parse only known URL parameters so unrelated URLs cannot become API keys.
+store.normalizeApiKey=value=>{
+  value=String(value||'').trim();
+  for(let depth=0;depth<8&&value;depth++){
+    if(/^AIza[A-Za-z0-9_-]{35}$/.test(value))return value;
+    try{
+      const url=new URL(value);if(!['https:','http:'].includes(url.protocol))return '';
+      const fragment=new URLSearchParams(url.hash.slice(1));
+      value=(fragment.get('liveKey')||fragment.get('apiKey')||url.searchParams.get('apiKey')||'').trim();
+    }catch(e){return '';}
+  }
+  return '';
+};
+store.getApiKey=()=>{
+  let fromUrl='';try{fromUrl=new URLSearchParams(location.search).get('apiKey')||'';}catch(e){}
+  const saved=ls.get(FIREBASE_API_KEY_KEY)||'',key=store.normalizeApiKey(fromUrl)||store.normalizeApiKey(saved);
+  if(key&&key!==saved)ls.set(FIREBASE_API_KEY_KEY,key);
+  return key;
+};
+store.setApiKey=value=>{
+  if(!String(value||'').trim()){ls.del(FIREBASE_API_KEY_KEY);return true;}
+  const key=store.normalizeApiKey(value);if(!key)return false;
+  ls.set(FIREBASE_API_KEY_KEY,key);return true;
+};
 store.syncing=()=>!!docRef;
 store.shareLink=()=>{const key=store.getApiKey();if(!key)return '';const u=new URL(location.href);u.search='';u.hash='';u.searchParams.set('apiKey',key);return u.toString();};
 // The SDK is only downloaded once sync is on, so the page starts instantly offline or on slow networks.
@@ -584,6 +607,8 @@ function loadSdk(){
 }
 async function ensureFirebase(apiKey){
   if(!apiKey)throw Error('missing-firebase-api-key');
+  apiKey=store.normalizeApiKey(apiKey);
+  if(!apiKey)throw Error('invalid-firebase-api-key');
   await loadSdk();
   if(!root.firebase)throw Error('firebase-sdk-unavailable');
   if(activeKey&&activeKey!==apiKey){store.stop();if(firebase.apps.length&&firebase.app().delete)await firebase.app().delete();}
@@ -641,6 +666,7 @@ root.StudentStore=store;
   }
   function shareURL(base,id,key){
     if(!validId(id))throw Error('invalid-live-session');
+    if(typeof key!=='string'||!/^AIza[A-Za-z0-9_-]{35}$/.test(key))throw Error('invalid-firebase-api-key');
     const u=new URL(base);u.search='';u.hash='';u.searchParams.set('follow',id);
     // Firebase's web configuration stays in the fragment, out of request URLs.
     u.hash=new URLSearchParams({liveKey:key}).toString();return u.toString();
@@ -818,7 +844,7 @@ function setLiveStatus(status,error){
   const messages={publishing:'Sharing the current question… waiting for a connection if offline.',starting:'Starting live sharing…',hosting:'Live sharing is on. Anyone with this link follows the question you open.',ending:'Stopping live sharing…',connecting:'Connecting to the live session…',following:'Following live. Questions change automatically when the host moves on.',reconnecting:'Reconnecting… showing the last shared question.',ended:'The host stopped sharing, or this session has expired. You can leave to practice on your own.',unavailable:'This live session is unavailable. Check the link or ask the host for a new one.',invalid:'This live session contains an unavailable question.',
     'publish-error':'The latest question could not be shared. Check your connection and try again.', 'stop-error':'Sharing could not be stopped. Check your connection and try Stop sharing again.'};
   $('live-status').textContent=messages[status]||'Live sharing could not connect.';
-  if(status==='error')$('live-status').textContent=error?.message==='missing-firebase-api-key'?'Live sharing needs Firebase sync. Open Settings (☰), enter your Firebase API key, then try Share live again.':error?.code==='permission-denied'?'Firebase denied access to live sharing. Check the database permissions or use a regular question link.':'Live sharing could not connect. Check your connection and try again.';
+  if(status==='error')$('live-status').textContent=error?.message==='missing-firebase-api-key'?'Live sharing needs Firebase sync. Open Settings (☰), enter your Firebase API key, then try Share live again.':error?.message==='invalid-firebase-api-key'?'This sharing link has an invalid Firebase key. Ask the host to check Settings and share a new link.':error?.code==='permission-denied'?'Firebase denied access to live sharing. Check the database permissions or use a regular question link.':'Live sharing could not connect. Check your connection and try again.';
 }
 $('share-live').onclick=async()=>{
   if(!current||live.role!=='idle')return;
@@ -895,7 +921,7 @@ $('settings-button').onclick=e=>{e.stopPropagation();setSettings($('settings-pan
 document.addEventListener('click',e=>{if(!$('settings-panel').hidden&&!e.target.closest('.settings-wrap'))setSettings(false);});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('settings-panel').hidden){setSettings(false);$('settings-button').focus();}});
 $('firebase-key').value=students.getApiKey()?'••••••••':'';
-$('sync-enable').onclick=async()=>{const v=$('firebase-key').value.trim();if(v&&!/^•+$/.test(v))students.setApiKey(v);if(!students.getApiKey()){$('sync-status').textContent='Enter the Firebase API key first.';return;}$('firebase-key').value='••••••••';startSync();};
+$('sync-enable').onclick=async()=>{const v=$('firebase-key').value.trim();if(v&&!/^•+$/.test(v)&&!students.setApiKey(v)){$('sync-status').textContent='Enter a valid Firebase API key or a sharing link containing one.';return;}if(!students.getApiKey()){$('sync-status').textContent='Enter the Firebase API key first.';return;}$('firebase-key').value='••••••••';startSync();};
 $('sync-local').onclick=async()=>{if(live.role==='host'){try{await live.stopHost();$('live-link').value='';}catch(error){return;}}students.setApiKey('');students.stop();$('firebase-key').value='';syncStatus('local');};
 $('sync-share').onclick=()=>{const url=students.shareLink();if(!url){$('sync-status').textContent='Turn on sync first. A sync link only carries the key, never progress.';return;}
   if(navigator.share)navigator.share({title:'Physics 11 Practice Studio',url}).catch(()=>{});else window.prompt('Copy this link to open synced practice on another device:',url);};

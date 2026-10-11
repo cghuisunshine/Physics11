@@ -26,8 +26,31 @@ store.takeLegacy=()=>{const raw=ls.get(LEGACY_KEY);if(!raw)return null;ls.del(LE
 // ---- Firebase (optional) ----
 let db=null, activeKey='', unsubscribe=null, docRef=null, onRemote=null, onStatus=()=>{};
 let lastRemoteUpdatedAt='', pendingLocalUpdatedAt='', getLocal=()=>null;
-store.getApiKey=()=>{let fromUrl='';try{fromUrl=new URLSearchParams(location.search).get('apiKey')||'';}catch(e){}if(fromUrl.trim()){ls.set(FIREBASE_API_KEY_KEY,fromUrl.trim());return fromUrl.trim();}return ls.get(FIREBASE_API_KEY_KEY)||'';};
-store.setApiKey=key=>{key=String(key||'').trim();if(key)ls.set(FIREBASE_API_KEY_KEY,key);else ls.del(FIREBASE_API_KEY_KEY);};
+// Accept a key or a pasted sync/live link, including older nested sharing links.
+// Parse only known URL parameters so unrelated URLs cannot become API keys.
+store.normalizeApiKey=value=>{
+  value=String(value||'').trim();
+  for(let depth=0;depth<8&&value;depth++){
+    if(/^AIza[A-Za-z0-9_-]{35}$/.test(value))return value;
+    try{
+      const url=new URL(value);if(!['https:','http:'].includes(url.protocol))return '';
+      const fragment=new URLSearchParams(url.hash.slice(1));
+      value=(fragment.get('liveKey')||fragment.get('apiKey')||url.searchParams.get('apiKey')||'').trim();
+    }catch(e){return '';}
+  }
+  return '';
+};
+store.getApiKey=()=>{
+  let fromUrl='';try{fromUrl=new URLSearchParams(location.search).get('apiKey')||'';}catch(e){}
+  const saved=ls.get(FIREBASE_API_KEY_KEY)||'',key=store.normalizeApiKey(fromUrl)||store.normalizeApiKey(saved);
+  if(key&&key!==saved)ls.set(FIREBASE_API_KEY_KEY,key);
+  return key;
+};
+store.setApiKey=value=>{
+  if(!String(value||'').trim()){ls.del(FIREBASE_API_KEY_KEY);return true;}
+  const key=store.normalizeApiKey(value);if(!key)return false;
+  ls.set(FIREBASE_API_KEY_KEY,key);return true;
+};
 store.syncing=()=>!!docRef;
 store.shareLink=()=>{const key=store.getApiKey();if(!key)return '';const u=new URL(location.href);u.search='';u.hash='';u.searchParams.set('apiKey',key);return u.toString();};
 // The SDK is only downloaded once sync is on, so the page starts instantly offline or on slow networks.
@@ -40,6 +63,8 @@ function loadSdk(){
 }
 async function ensureFirebase(apiKey){
   if(!apiKey)throw Error('missing-firebase-api-key');
+  apiKey=store.normalizeApiKey(apiKey);
+  if(!apiKey)throw Error('invalid-firebase-api-key');
   await loadSdk();
   if(!root.firebase)throw Error('firebase-sdk-unavailable');
   if(activeKey&&activeKey!==apiKey){store.stop();if(firebase.apps.length&&firebase.app().delete)await firebase.app().delete();}

@@ -10,6 +10,7 @@
   }
   function shareURL(base,id,key){
     if(!validId(id))throw Error('invalid-live-session');
+    if(typeof key!=='string'||!/^AIza[A-Za-z0-9_-]{35}$/.test(key))throw Error('invalid-firebase-api-key');
     const u=new URL(base);u.search='';u.hash='';u.searchParams.set('follow',id);
     // Firebase's web configuration stays in the fragment, out of request URLs.
     u.hash=new URLSearchParams({liveKey:key}).toString();return u.toString();
