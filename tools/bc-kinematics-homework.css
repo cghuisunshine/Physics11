@@ -11,5 +11,6 @@
 .question[data-homework=true]{border-left:3px solid var(--accent);padding-left:14px}
 .homework-banner h1{font-size:32px;margin:0 0 12px;letter-spacing:0}.homework-banner p{color:var(--muted);line-height:1.6}#homework-directions{white-space:pre-wrap;overflow-wrap:anywhere}
 .homework-view>header{display:none}.homework-view[data-homework-answers=false] .answer,.homework-view[data-homework-answers=false] .answer-toggle{display:none!important}
+@media print{[data-edit-selection]{display:none!important}}
 @media(max-width:850px){.homework-panel,.homework-banner{margin:20px 16px;padding:20px}.homework-fields{grid-template-columns:1fr}}
 @media print{.homework-panel{display:none!important}.homework-banner{margin:0;padding:0 0 20px;border:0}.homework-view .context{display:block}.homework-view .context>summary{display:none}.homework-view .question{border-left:0;padding-left:0}.homework-view .set-heading p{display:none}.homework-view[data-homework-answers=true] .answer{display:block!important}}

@@ -56,6 +56,7 @@ function blobText(p,blob){return new Promise((resolve,reject)=>{const reader=new
   assert.equal(offline.d.querySelectorAll('script[src],img:not([src^="data:image/"])').length,0,'Homework downloads are standalone');
   assert.ok(offline.d.querySelector('.shared img'));assert.ok(offline.d.querySelector('.context[open] img'));
   assert.equal(offline.d.querySelectorAll('[data-homework],[data-complete]').length,0,'Teacher and collection progress controls are omitted');
+  assert.equal(offline.d.querySelectorAll('[data-edit-selection]').length,0,'Offline homework omits the teacher selection button');
   assert.equal(offline.d.querySelector('h1').textContent,'October homework <practice>');
   assert.equal(offline.d.querySelector('#homework-directions').textContent,p.$('homework-instructions').value);
   const digest=text=>createHash('sha256').update(text).digest('hex');
@@ -121,6 +122,18 @@ function blobText(p,blob){return new Promise((resolve,reject)=>{const reader=new
   assert.ok(samplingRestored.d.querySelector('[data-homework="q-99"]').checked);
   sampling.$('copy-homework').click();await pause();
   assert.equal(new URL(sampling.copied[0]).searchParams.get('homework'),'q-4,q-13,q-99','Sharing stores selected IDs, not a changing sampling rule');
+  sampling.$('preview-homework').click();sampling.$('create-homework').click();
+  assert.ok(sampling.$('homework-panel').hidden);
+  sampling.$('homework-banner').querySelector('[data-edit-selection]').click();
+  assert.ok(!sampling.$('homework-panel').hidden);assert.equal(visible(sampling).length,101);
+  assert.equal(sampling.$('search').value,'');assert.equal(sampling.$('topic').value,'');assert.equal(sampling.$('kind').value,'');
+  assert.deepEqual(selectedIds(),['q-4','q-13','q-99'],'Adjusting preserves automatic selection');
+  assert.equal(sampling.d.activeElement.dataset.homework,'q-4');
+  select(sampling,'q-13',false);select(sampling,'q-1');
+  assert.deepEqual(selectedIds(),['q-1','q-4','q-99'],'Manual additions and removals override the automatic selection');
+  assert.equal(sampling.$('q-4').dataset.homework,'true');assert.equal(sampling.$('q-13').dataset.homework,'false');
+  sampling.$('preview-homework').click();assert.deepEqual(visible(sampling),['q-1','q-4','q-99']);
+  sampling.$('copy-homework').click();await pause();assert.equal(new URL(sampling.copied[1]).searchParams.get('homework'),'q-1,q-4,q-99');
   // Local files generate hosted links; offline students can instead use the downloaded HTML.
   const local=page(html,{url:'file:///tmp/bc-kinematics-questions.html',blockedStorage:true});local.$('create-homework').click();select(local,'q-99');local.$('copy-homework').click();await pause();
   assert.equal(new URL(local.copied[0]).origin,'https://cghuisunshine.github.io');

@@ -106,6 +106,11 @@
   $('reset').onclick=()=>{resetFilters();render();};
   $('create-homework').onclick=()=>{composing=!composing;render();};
   $('all-questions').onclick=()=>setView(false);
+  document.querySelectorAll('[data-edit-selection]').forEach(button=>button.addEventListener('click',()=>{
+    composing=true;setView(false);
+    $('homework-message').textContent='Check Homework to add a question, or uncheck it to remove one. Your current selection is highlighted. Preview again when ready.';
+    const first=qs.find(q=>selected.has(q.id))||qs[0];first?.querySelector('[data-homework]').focus();
+  }));
   $('select-shown').onclick=()=>{for(const q of qs)if(!q.hidden)selected.add(q.id);changed();};
   $('set-section-percentages').onclick=()=>{
     const input=$('homework-all-percent');if(!input.reportValidity()||input.value==='')return;
@@ -150,6 +155,7 @@
     const style=output.createElement('style');style.textContent=[...document.querySelectorAll('style')].map(s=>s.textContent).join('\n')+'\n.homework-export main{max-width:1000px;margin:24px auto;padding:0 20px}.homework-export>header{display:block;padding:0}.homework-export .homework-banner{border:0;margin:20px auto}.homework-export .context{display:block}@media print{.homework-export main{margin:0;padding:0}.homework-export .context{display:block}.homework-export .context>summary{display:none}}';output.head.append(style);
     body.className='homework-view homework-export';body.dataset.homeworkAnswers=String($('homework-answers').checked);
     const header=output.createElement('header'),banner=$('homework-banner').cloneNode(true);banner.hidden=false;
+    banner.querySelector('[data-edit-selection]').remove();
     banner.querySelector('h1').textContent=title();banner.querySelector('#homework-details').textContent=`${selected.size} question${selected.size===1?'':'s'} · Chapter 2: Kinematics`;
     banner.querySelector('#homework-directions').textContent=$('homework-instructions').value;
     header.append(banner);body.append(header);
