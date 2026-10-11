@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Detailed algebra-based Physics 11 tutorials with worked examples, practice solutions, and textbook references.">
+<title>Unit 7: Electricity | Physics 11</title><style>:root{--ink:#172b41;--muted:#52677b;--paper:#f6f5ef;--panel:#fff;--line:#d9e1e6;--blue:#126b83;--pale:#e8f3f4;--orange:#9c4c17;--gold:#fff2db;--radius:16px;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);font-size:17px;line-height:1.7}
+*{box-sizing:border-box}body{margin:0}a{color:var(--blue);text-underline-offset:3px}button,input,select{font:inherit}button,.button{cursor:pointer;border:1px solid var(--line);border-radius:8px;background:white;padding:.45rem .8rem;color:var(--ink);text-decoration:none;display:inline-block}button:hover,.button:hover{background:var(--pale);border-color:var(--blue)}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #e79d3b;outline-offset:3px}.skip{position:fixed;top:-80px;left:1rem;z-index:10;background:white;padding:1rem}.skip:focus{top:0}.top{padding:.75rem 2rem;border-bottom:1px solid var(--line);background:#fff;display:flex;justify-content:space-between;align-items:center;gap:1rem}.brand{font-weight:800;letter-spacing:.04em;text-decoration:none}.top small{color:var(--muted)}.layout{display:grid;grid-template-columns:270px minmax(0,1fr);max-width:1440px;margin:auto}.sidebar{padding:1.7rem 1.2rem;position:sticky;top:0;height:100vh;overflow:auto;border-right:1px solid var(--line)}.sidebar label{font-size:.8rem;font-weight:700;display:block}.sidebar input[type=search]{width:100%;padding:.6rem;border:1px solid var(--line);border-radius:8px;background:white}.sidebar nav a{display:block;padding:.55rem .5rem;font-size:.87rem;text-decoration:none;border-radius:6px;margin:.1rem 0;line-height:1.45}.sidebar nav a:hover{background:var(--pale)}.sidebar .small{font-size:.78rem;color:var(--muted)}.sidebar hr{border:0;border-top:1px solid var(--line);margin:1rem 0}.sidebar progress{width:100%;accent-color:var(--blue)}main{padding:2rem 2.6rem 4rem;min-width:0}.hero{margin-bottom:1.5rem}.eyebrow{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--blue)}h1{font-size:clamp(2rem,4vw,3.3rem);line-height:1.14;margin:.7rem 0 1rem;letter-spacing:-.035em;max-width:900px}h2{font-size:1.45rem;line-height:1.35;margin:0 0 .7rem;letter-spacing:-.015em}h3{font-size:1.03rem;color:var(--blue);margin:1.4rem 0 .4rem}p{margin:.55rem 0 1rem}.lead{font-size:1.1rem;color:var(--muted);max-width:770px}.toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:1rem 0}.toolbar label{font-size:.85rem}.toolbar select{padding:.4rem;border:1px solid var(--line);border-radius:6px;background:white}.stats{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}.tag{font-size:.75rem;padding:.25rem .65rem;border:1px solid var(--line);border-radius:30px;background:white;color:var(--muted)}.lesson,.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem 2rem;margin:1.25rem 0;scroll-margin-top:1rem}.lesson>h2{padding-right:0}.complete{display:block;text-align:right;font-size:.76rem;color:var(--muted);margin-bottom:.7rem}.complete input{accent-color:var(--blue);width:17px;height:17px;vertical-align:middle}ul,ol{padding-left:1.5rem}li{margin:.35rem 0}.equations{background:#edf4f8;border-left:4px solid var(--blue);padding:1rem;border-radius:0 8px 8px 0;margin:1rem 0}.equations h3{margin:0 0 .5rem}.equations pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;font-size:.91rem}.equations code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.copy{font-size:.72rem;float:right;padding:.2rem .5rem}code{background:#edf4f8;padding:.1rem .3rem;border-radius:4px}pre code{background:transparent;padding:0}.worked{border-left:4px solid #dba34f;padding:.15rem 1rem;background:#fff8ed;border-radius:0 8px 8px 0;margin:1rem 0}.worked h3{color:var(--orange)}.pitfall{padding:.7rem 1rem;background:#f7f4fa;border-radius:8px}.sources{font-size:.75rem;color:var(--muted);border-top:1px solid var(--line);padding-top:.6rem;margin-top:1.2rem}.sources a{margin-right:.8rem}.solution{border:1px solid var(--line);border-radius:8px;margin:.5rem 0;padding:.7rem 1rem;background:#f8fcfb}.solution summary{cursor:pointer;color:var(--blue);font-weight:650}.solution p{margin:.7rem 0 .2rem}.explorer{background:#eaf4f4;border:1px solid #bfd9dc}.explorer .controls{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}.explorer label{display:flex;flex-direction:column;font-size:.8rem;font-weight:600}.explorer input[type=range]{width:150px;accent-color:var(--blue)}.explorer output{display:block;font-size:.88rem;white-space:pre-wrap;background:white;padding:.7rem 1rem;border-radius:8px;margin:1rem 0}.explorer svg{width:100%;height:auto;display:block;background:white;border-radius:12px}.explorer figcaption{font-size:.78rem;color:var(--muted);margin-top:.5rem}.explorer figure{margin:1rem 0}.footnav{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin:2rem 0}.footer{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);padding-top:1.2rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.unit-card{background:white;border:1px solid var(--line);border-radius:14px;padding:1.5rem;text-decoration:none;color:var(--ink)}.unit-card h2{margin:.5rem 0}.unit-card p{color:var(--muted);font-size:.9rem}.unit-card:hover{border-color:var(--blue);box-shadow:0 6px 25px #172b410b}.unit-card .meta{font-size:.75rem;color:var(--blue)}.unit-card ul{color:var(--muted);font-size:.8rem;margin-bottom:0}.home{max-width:1150px;margin:auto}.home main{padding:2rem}.checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem 1rem}.checklist label{font-size:.85rem}.quiz fieldset{border:1px solid var(--line);border-radius:8px;padding:1rem;margin:1rem 0}.quiz legend{font-weight:650;padding:0 .3rem}.quiz label{display:block;margin:.4rem 0}.quiz .feedback{font-weight:650}.quiz .feedback:empty{display:none}.status{font-size:.8rem;color:var(--muted)}[hidden]{display:none!important}.slide-controls{display:none}.mode-simple .sidebar,.mode-slides .sidebar{display:none}.mode-simple .layout,.mode-slides .layout{display:block;max-width:1080px}.mode-simple .complete,.mode-simple .copy{display:none}.mode-slides .slide-controls{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem;background:white;border:1px solid var(--line);border-radius:10px;position:sticky;bottom:1rem;box-shadow:0 6px 20px #172b4118}.mode-slides .lesson{font-size:1.05rem}.mode-slides .explorer,.mode-slides .inquiry,.mode-slides .quiz{display:none}.empty{padding:1rem;border:1px dashed var(--line);border-radius:8px}.formula-table{width:100%;border-collapse:collapse;font-size:.88rem}.formula-table th,.formula-table td{padding:.8rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.formula-table code{white-space:normal}.table-wrap{overflow:auto}html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media(max-width:900px){.layout{grid-template-columns:220px minmax(0,1fr)}main{padding:1.5rem}.lesson,.panel{padding:1.3rem}.sidebar{padding:1rem}.grid{gap:.8rem}}@media(max-width:700px){:root{font-size:16px}.top{padding:.7rem 1rem}.top small{display:none}.layout{display:block}.sidebar{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);padding:1rem}.sidebar nav{display:flex;flex-wrap:wrap;gap:.2rem}.sidebar nav a{font-size:.75rem;border:1px solid var(--line);max-width:100%;padding:.3rem .5rem}.sidebar .small,.sidebar hr,.sidebar .course-links{display:none}main,.home main{padding:1.2rem}.grid,.checklist{grid-template-columns:1fr}.lesson,.panel{padding:1.1rem}.complete{text-align:left}.toolbar button{font-size:.8rem}.formula-table{font-size:.78rem}.explorer input[type=range]{width:130px}}
+.textbook-bank{margin:3rem 0;scroll-margin-top:1rem}.bank-controls{display:flex;flex-wrap:wrap;align-items:end;gap:1rem;padding:1.2rem;background:var(--pale);border-radius:12px;margin:1rem 0}.bank-controls label{display:grid;gap:.3rem;font-size:.8rem;font-weight:650;flex:1;min-width:180px}.bank-controls select,.bank-controls input{width:100%;min-width:0;border:1px solid var(--line);border-radius:7px;background:white;padding:.55rem}.bank-controls button{font-size:.8rem;margin-bottom:1px}.problem-chapter{background:white;border:1px solid var(--line);border-radius:12px;margin:.8rem 0;overflow:hidden;scroll-margin-top:1rem}.problem-chapter>summary{cursor:pointer;padding:1.15rem 1.3rem;display:list-item;list-style-position:inside}.problem-chapter>summary>span{display:inline-block;vertical-align:top;width:calc(100% - 2rem)}.chapter-meta{display:block;font-size:.78rem;font-weight:400;color:var(--muted);margin-top:.15rem}.problem-chapter[open]>summary{background:var(--pale);border-bottom:1px solid var(--line)}.chapter-body{padding:1.2rem 1.3rem}.problem-module{padding:.2rem 0 1rem;border-bottom:1px solid var(--line)}.problem-module h3{margin:.8rem 0}.topic-tag{display:inline-block;vertical-align:middle;font-size:.63rem;color:var(--muted);padding:.1rem .4rem;border:1px solid var(--line);border-radius:20px;background:#f4f5f6;margin-left:.4rem;font-weight:500;white-space:nowrap}.topic-tag.focus{color:#216348;background:#eaf5eb;border-color:#c5deca}.problem-numbers{display:flex;flex-wrap:wrap;gap:.4rem}.problem-number{display:inline-flex;align-items:center;justify-content:center;min-width:2.4rem;padding:.3rem .5rem;border:1px solid var(--line);border-radius:6px;text-decoration:none;background:#fafcfc;font-size:.83rem;font-variant-numeric:tabular-nums}.problem-number:hover,.problem-number.selected{background:var(--blue);color:white;border-color:var(--blue)}.source-pages{margin:1.3rem 0 .3rem}.problem-page{border:1px solid var(--line);border-radius:8px;margin:.55rem 0;overflow:hidden;scroll-margin-top:1rem}.problem-page>summary{font-size:.85rem;padding:.65rem .8rem;cursor:pointer;background:#f6f8f9}.page-tools{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;padding:.7rem .8rem;font-size:.76rem;border-top:1px solid var(--line)}.page-tools button{font-size:.72rem;margin-left:auto}.page-selection{font-weight:700;color:var(--orange)}.page-selection:empty{display:none}.problem-image{position:relative;background:white}.problem-image img{display:block;width:100%;height:auto}.problem-marker{position:absolute;border:2px solid #c97812;background:#f3be4420;border-radius:3px;width:40%;height:2%;pointer-events:none}.bank-credit{margin-top:1rem}@media(max-width:700px){.chapter-body{padding:.8rem}.problem-chapter>summary{padding:.9rem}.bank-controls{padding:.9rem}.bank-controls label{min-width:100%}.problem-number{min-width:2.5rem;padding:.4rem .6rem}.page-tools{gap:.5rem}.page-tools button{margin-left:0}}
+@media print{@page{margin:15mm}:root{background:white;font-size:11pt;color:black}.top,.sidebar,.toolbar,.complete,.copy,.slide-controls,.footnav,.quiz button,.explorer .controls,.skip,.bank-controls,.page-tools,.problem-marker{display:none!important}.layout{display:block}main,.home main{padding:0}.lesson,.panel{box-shadow:none;border:0;border-radius:0;padding:0;margin:1.2rem 0;break-inside:auto}.lesson[hidden]{display:block!important}.lesson h2,h3{break-after:avoid}a{color:black}.sources{font-size:9pt}.equations,.worked{background:transparent;border-color:#888}h1{font-size:25pt}h2{font-size:17pt}.grid{display:block}.unit-card{display:block;margin:1rem 0}.explorer svg{max-height:150px}.solution{background:transparent}.mode-slides .explorer,.mode-slides .inquiry,.mode-slides .quiz{display:block}.footer{font-size:9pt}.problem-chapter,.problem-page{border:0}.problem-page[open]{break-before:page}.problem-image img{max-height:240mm;object-fit:contain}.problem-chapter>summary{background:white}}
+</style></head>
+<body class=""><a class="skip" href="#main">Skip to lesson content</a>
+<header class="top"><a class="brand" href="../index.html">PHYSICS / 11</a><small>Think in models. Check with evidence.</small><a href="../course-outline.md">Course outline</a></header>
+<div class="layout"><aside class="sidebar" aria-label="Lesson navigation"><label for="lesson-search">Search this unit</label><input id="lesson-search" type="search" placeholder="e.g. acceleration"><p class="small" id="search-status">Search explanations and examples.</p><hr><div class="eyebrow">Lesson outline</div><nav><a href="#lesson-7-1">7.1 Charge, current, voltage, and resistance</a><a href="#lesson-7-2">7.2 Ohm’s law and electrical measurements</a><a href="#lesson-7-3">7.3 Series circuits</a><a href="#lesson-7-4">7.4 Parallel circuits and mixed networks</a><a href="#lesson-7-5">7.5 Kirchhoff’s junction and loop rules</a><a href="#lesson-7-6">7.6 EMF, internal resistance, and terminal voltage</a><a href="#lesson-7-7">7.7 Electrical power, energy, and transmission</a><a href="#inquiry">Investigate and reflect</a></nav><hr><progress id="progress" max="7" value="0" aria-label="Lesson completion"></progress><p class="small" id="progress-count"></p><p class="small">Progress is stored only in this browser when local storage is available.</p><div class="course-links"><a href="../index.html">All units</a> · <a href="review.html">Formula review</a><br><a href="../content/unit-07-electricity.md">Editable notes</a></div></aside><main id="main"><div class="hero"><div class="eyebrow">Physics 11 · Unit 7</div><h1>Electricity</h1><p class="lead">Use charge and energy conservation to solve DC circuits, real batteries, and electrical power problems.</p><div class="stats"><span class="tag">7 lessons</span><span class="tag">7 worked examples</span><span class="tag">14 practice questions</span><span class="tag">Ch. 24 §24-1; Ch. 26 §§26-1, 26-3 to 26-5; Ch. 27 §§27-1 to 27-3</span></div><div class="toolbar"><label for="mode">Reading mode</label><select id="mode"><option value="study">Study</option><option value="simple">Simple</option><option value="slides">Slides</option></select><button id="show-answers">Show answers</button><button id="hide-answers">Hide answers</button><button id="print">Print / Save PDF</button></div>
+<p class="status">Study: try questions before opening answers. Simple: all answers visible. Slides: one lesson at a time; use arrow keys.</p></div><section class="panel explorer" data-kind="circuit" aria-labelledby="explorer-title"><div class="eyebrow">Predict → adjust → explain</div><h2 id="explorer-title">Series and parallel circuit explorer</h2><p>Change one input at a time. Predict what will change before checking the calculated readout.</p><div class="controls"><label for="voltage">Ideal source voltage (V)<input id="voltage" type="range" min="1" max="24" value="12" step="1"></label><label for="resistance1">Resistance R₁ (Ω)<input id="resistance1" type="range" min="1" max="20" value="6" step="1"></label><label for="resistance2">Resistance R₂ (Ω)<input id="resistance2" type="range" min="1" max="20" value="3" step="1"></label><label for="connection">Connection<select id="connection"><option value="series">Series</option><option value="parallel">Parallel</option></select></label></div><output aria-live="polite"></output><figure><svg viewBox="0 0 660 320" role="img" aria-label="Series and parallel circuit explorer"></svg><figcaption>This diagram is an ideal-model visualization. Calculated values are not experimental measurements.</figcaption></figure><noscript>Enable JavaScript for the adjustable diagram. All lesson text and practice answers remain available below.</noscript></section>    <section class="lesson" id="lesson-7-1"><label class="complete"><input type="checkbox" data-key="lesson-7-1"> Mark this lesson complete</label>
+      <h2>7.1 Charge, current, voltage, and resistance</h2>
+      <h3>Learning goal</h3>
+      <p>Explain each circuit quantity and connect its definition to its unit.</p>
+      <h3>Understand the model</h3>
+      <p>Current is the rate at which charge passes a cross-section. Conventional current follows the direction a positive charge would move; conduction electrons in a metal drift in the opposite direction. Charge is not used up as it passes through a resistor. In a steady circuit the same current enters and leaves a single unbranched component.</p>
+      <p>Potential difference, or voltage, is energy change per unit charge between two points. A source transfers energy to charge carriers and components transfer energy to other forms. Resistance relates a component’s voltage to its current at the operating condition. It is measured in ohms. A closed path is needed for sustained current in the simple DC circuit model; an open switch breaks that path.</p>
+      <div class="equations"><button class="copy" type="button">Copy equations</button><h3>Equations and units</h3>
+      <pre><code>I = Δq/Δt  (steady current)
+V = ΔE/q  (energy per charge)
+R = V/I
+1 A = 1 C/s; 1 V = 1 J/C; 1 Ω = 1 V/A</code></pre>
+      </div><div class="worked"><h3>Worked example</h3>
+      <p>A steady current of 0.500 A flows for 12.0 s through a component with a 9.00 V drop. Find charge and transferred energy.</p>
+      <ol>
+        <li>q = IΔt = (0.500)(12.0) = 6.00 C.</li>
+        <li>Energy transferred by those charges is E = qV = (6.00)(9.00) = 54.0 J.</li>
+        <li>The charges continue through the circuit. The component converts or transfers energy; it does not consume the charge.</li>
+      </ol>
+      </div><div class="pitfall"><h3>Common mistakes</h3>
+      <p>Voltage is measured between two points, not “through” a component. Current flows through a component; voltage is across it. Do not confuse charge in coulombs with energy in joules.</p>
+      </div><h3>Your turn</h3>
+      <ol>
+        <li>A 2.0 A steady current flows for 5.0 s. How much charge passes?</li>
+        <li>A 12 V source supplies 36 J to charge. How much charge?</li>
+      </ol>
+      <details class="solution"><summary>Reveal practice solutions and reasoning</summary>
+      <p><strong>1.</strong> q = It = 10 C.</p>
+      <p><strong>2.</strong> q = E/V = 36/12 = 3 C.</p>
+      </details><div class="sources">Read in the supplied textbook: <a href="../Physics%20text%20%28TOC%29.pdf#page=721" target="_blank" rel="noopener">§24-1 · PDF p. 721 / print p. 685</a><a href="../Physics%20text%20%28TOC%29.pdf#page=781" target="_blank" rel="noopener">§26-1 · PDF p. 781 / print p. 745</a><a href="../Physics%20text%20%28TOC%29.pdf#page=788" target="_blank" rel="noopener">§26-3 · PDF p. 788 / print p. 752</a></div></section>
+
+    <section class="lesson" id="lesson-7-2"><label class="complete"><input type="checkbox" data-key="lesson-7-2"> Mark this lesson complete</label>
+      <h2>7.2 Ohm’s law and electrical measurements</h2>
+      <h3>Learning goal</h3>
+      <p>Identify an ohmic component and infer resistance from a graph or circuit measurements.</p>
+      <h3>Understand the model</h3>
+      <p>An ohmic component has approximately constant resistance over the operating range when physical conditions such as temperature stay fixed. Its V-I graph is a straight line through the origin, with slope R when voltage is vertical and current horizontal. Many devices, including filament lamps at changing temperature, are not ohmic over a broad range. The ratio V/I at one point does not prove constant resistance.</p>
+      <p>An ammeter measures current and connects in series. Its ideal resistance is zero so that it changes the current as little as possible. A voltmeter measures potential difference and connects in parallel across the component. Its ideal resistance is infinite, drawing no current. Real meters affect the circuit slightly; incorrect ammeter placement across a source can create a short circuit.</p>
+      <div class="equations"><button class="copy" type="button">Copy equations</button><h3>Equations and units</h3>
+      <pre><code>V = IR  (constant-R model)
+R = slope of V-versus-I graph
+I = slope of I-versus-V graph × V for a line through origin
+slope of I-versus-V graph = 1/R</code></pre>
+      </div><div class="worked"><h3>Worked example</h3>
+      <p>An ohmic resistor has measured points (0.100 A, 2.00 V) and (0.300 A, 6.00 V). Find R and current at 9.00 V.</p>
+      <ol>
+        <li>R = ΔV/ΔI = (6.00 - 2.00)/(0.300 - 0.100) = 20.0 Ω.</li>
+        <li>Under the same conditions, I = 9.00/20.0 = 0.450 A.</li>
+        <li>A broad range of measured points would be needed to establish the linear model well. If temperature rises, resistance may change and the prediction may fail.</li>
+      </ol>
+      </div><div class="pitfall"><h3>Common mistakes</h3>
+      <p>Check which quantity is on each graph axis. Do not place an ammeter directly across a battery. Resistance readings should be made on an unpowered, appropriately isolated component using the meter’s instructions.</p>
+      </div><h3>Your turn</h3>
+      <ol>
+        <li>A 6.0 V drop gives 0.20 A through an ohmic resistor. Find R.</li>
+        <li>Why might a lamp’s V-I curve bend?</li>
+      </ol>
+      <details class="solution"><summary>Reveal practice solutions and reasoning</summary>
+      <p><strong>1.</strong> R = 6.0/0.20 = 30 Ω.</p>
+      <p><strong>2.</strong> Its filament temperature changes with electrical heating, which changes resistance; the constant-R assumption fails.</p>
+      </details><div class="sources">Read in the supplied textbook: <a href="../Physics%20text%20%28TOC%29.pdf#page=792" target="_blank" rel="noopener">§26-4 · PDF p. 792 / print p. 756</a><a href="../Physics%20text%20%28TOC%29.pdf#page=824" target="_blank" rel="noopener">§27-3 · PDF p. 824 / print p. 788</a></div></section>
+
+    <section class="lesson" id="lesson-7-3"><label class="complete"><input type="checkbox" data-key="lesson-7-3"> Mark this lesson complete</label>
+      <h2>7.3 Series circuits</h2>
+      <h3>Learning goal</h3>
+      <p>Find equivalent resistance and distribute voltage along one unbranched current path.</p>
+      <h3>Understand the model</h3>
+      <p>Components are in series when they lie on the same unbranched current path. Charge conservation gives the same current through every component. Energy conservation gives a source voltage equal to the sum of component voltage drops in an ideal resistive loop. Adding another series resistor increases total resistance and reduces current for a fixed ideal source.</p>
+      <p>Equivalent resistance replaces a combination while preserving the source’s voltage-current relationship. For series resistors, R_eq is their sum. First find total current from the source voltage and equivalent resistance, then calculate each drop using its resistance. A larger series resistance takes a larger share of the voltage. One open connection stops current through the entire series path.</p>
+      <div class="equations"><button class="copy" type="button">Copy equations</button><h3>Equations and units</h3>
+      <pre><code>R_eq = R₁ + R₂ + ...
+I = V_source/R_eq
+V_i = IR_i
+V_source = V₁ + V₂ + ...</code></pre>
+      </div><div class="worked"><h3>Worked example</h3>
+      <p>Connect 2.00 Ω and 4.00 Ω in series across an ideal 12.0 V source. Find current and both voltage drops.</p>
+      <ol>
+        <li>R_eq = 2.00 + 4.00 = 6.00 Ω.</li>
+        <li>I = 12.0/6.00 = 2.00 A through both resistors.</li>
+        <li>Drops are (2.00)(2.00) = 4.00 V and (2.00)(4.00) = 8.00 V. Their sum is 12.0 V, satisfying the loop rule.</li>
+      </ol>
+      </div><div class="pitfall"><h3>Common mistakes</h3>
+      <p>Series resistors share current, not necessarily voltage. Geometric placement in a drawing does not define series; trace the nodes and current path.</p>
+      </div><h3>Your turn</h3>
+      <ol>
+        <li>Three 10.0 Ω resistors are in series across 15.0 V. Find total current.</li>
+        <li>Two series resistors carry 0.40 A. What current enters the second resistor?</li>
+      </ol>
+      <details class="solution"><summary>Reveal practice solutions and reasoning</summary>
+      <p><strong>1.</strong> R_eq = 30.0 Ω and I = 0.500 A.</p>
+      <p><strong>2.</strong> 0.40 A; current is not consumed by the first resistor.</p>
+      </details><div class="sources">Read in the supplied textbook: <a href="../Physics%20text%20%28TOC%29.pdf#page=807" target="_blank" rel="noopener">§27-1 · PDF p. 807 / print p. 771</a></div></section>
+
+    <section class="lesson" id="lesson-7-4"><label class="complete"><input type="checkbox" data-key="lesson-7-4"> Mark this lesson complete</label>
+      <h2>7.4 Parallel circuits and mixed networks</h2>
+      <h3>Learning goal</h3>
+      <p>Recognize common nodes, find branch currents, and simplify a mixed circuit in stages.</p>
+      <h3>Understand the model</h3>
+      <p>Parallel components connect across the same two nodes, so they have the same potential difference. Current divides among branches and recombines at a junction. A lower-resistance branch carries more current for the same voltage. The equivalent resistance of positive parallel resistors is smaller than the smallest branch resistance.</p>
+      <p>For a mixed circuit, identify a true series or parallel group, replace it with its equivalent, and continue until the source current can be found. Then reverse the simplification: recover the voltage across each parallel group and currents through each branch. Components that happen to sit beside each other in a drawing are not necessarily parallel; both endpoint nodes must match.</p>
+      <div class="equations"><button class="copy" type="button">Copy equations</button><h3>Equations and units</h3>
+      <pre><code>1/R_eq = 1/R₁ + 1/R₂ + ...
+for two branches: R_eq = R₁R₂/(R₁ + R₂)
+I_total = I₁ + I₂ + ...
+I_branch = V_branch/R_branch</code></pre>
+      </div><div class="worked"><h3>Worked example</h3>
+      <p>A 4.00 Ω resistor is in series with a parallel group of 6.00 Ω and 3.00 Ω across an ideal 12.0 V source.</p>
+      <ol>
+        <li>The parallel equivalent is (6.00 × 3.00)/(6.00 + 3.00) = 2.00 Ω. Total resistance is 4.00 + 2.00 = 6.00 Ω.</li>
+        <li>Source current is 2.00 A. The series resistor drops 8.00 V, leaving 4.00 V across the parallel group.</li>
+        <li>Branch currents are 4.00/6.00 = 0.667 A and 4.00/3.00 = 1.33 A. Their unrounded sum is 2.00 A.</li>
+      </ol>
+      </div><div class="pitfall"><h3>Common mistakes</h3>
+      <p>Do not give a parallel sub-group the full source voltage if another series element takes a voltage drop. Parallel branches share voltage, not current.</p>
+      </div><h3>Your turn</h3>
+      <ol>
+        <li>Find the equivalent of two 8.0 Ω resistors in parallel.</li>
+        <li>A 6.0 Ω and a 12 Ω resistor are each across 12 V. Find branch and total currents.</li>
+      </ol>
+      <details class="solution"><summary>Reveal practice solutions and reasoning</summary>
+      <p><strong>1.</strong> R_eq = 4.0 Ω.</p>
+      <p><strong>2.</strong> Branch currents are 2.0 A and 1.0 A; total is 3.0 A. Equivalent resistance is 4.0 Ω.</p>
+      </details><div class="sources">Read in the supplied textbook: <a href="../Physics%20text%20%28TOC%29.pdf#page=817" target="_blank" rel="noopener">§27-2 · PDF p. 817 / print p. 781</a></div></section>
+
+    <section class="lesson" id="lesson-7-5"><label class="complete"><input type="checkbox" data-key="lesson-7-5"> Mark this lesson complete</label>
+      <h2>7.5 Kirchhoff’s junction and loop rules</h2>
+      <h3>Learning goal</h3>
+      <p>Write current and voltage equations with a consistent sign convention.</p>
+      <h3>Understand the model</h3>
+      <p>The junction rule expresses charge conservation in a steady circuit: total current entering a node equals total current leaving it. The loop rule expresses energy conservation per unit charge: the algebraic sum of voltage changes around a closed loop is zero. These rules extend beyond circuits that reduce neatly into series and parallel groups.</p>
+      <p>Choose branch-current arrows, label every component, and choose a direction for each loop traversal. Across a resistor in the assumed current direction, the voltage change is -IR; going against it gives +IR. Across an ideal source from negative to positive terminal, the change is +ε, and the reverse crossing gives -ε. A negative solved current means the real direction opposes the assumed arrow, not that the solution is invalid.</p>
+      <div class="equations"><button class="copy" type="button">Copy equations</button><h3>Equations and units</h3>
+      <pre><code>ΣI_in = ΣI_out
+ΣΔV around a closed loop = 0
+resistor along current: ΔV = -IR
+source from - to +: ΔV = +ε</code></pre>
+      </div><div class="worked"><h3>Worked example</h3>
+      <p>Two opposing ideal sources of 12.0 V and 4.00 V share a single loop with 2.00 Ω and 6.00 Ω resistors. Find current.</p>
+      <ol>
+        <li>Assume current in the direction driven by the 12.0 V source.</li>
+        <li>Loop equation: +12.0 - 4.00 - I(2.00) - I(6.00) = 0.</li>
+        <li>I = 8.00/8.00 = 1.00 A in the assumed direction. The resistor drops total 8.00 V, balancing the net source rise.</li>
+      </ol>
+      </div><div class="pitfall"><h3>Common mistakes</h3>
+      <p>Do not count every possible loop equation as independent. Use enough independent junction and loop equations for the unknown currents and verify the remaining rules afterward.</p>
+      </div><h3>Your turn</h3>
+      <ol>
+        <li>A junction receives 3.0 A and 2.0 A, with one outgoing branch of 1.5 A. Find the other outgoing current.</li>
+        <li>A solved branch current is -0.20 A. What does that mean?</li>
+      </ol>
+      <details class="solution"><summary>Reveal practice solutions and reasoning</summary>
+      <p><strong>1.</strong> 3.0 + 2.0 = 1.5 + I gives I = 3.5 A.</p>
+      <p><strong>2.</strong> The actual current is 0.20 A opposite the chosen arrow. The algebra has determined its direction.</p>
+      </details><div class="sources">Read in the supplied textbook: <a href="../Physics%20text%20%28TOC%29.pdf#page=807" target="_blank" rel="noopener">§27-1 · PDF p. 807 / print p. 771</a><a href="../Physics%20text%20%28TOC%29.pdf#page=817" target="_blank" rel="noopener">§27-2 · PDF p. 817 / print p. 781</a></div></section>
+
+    <section class="lesson" id="lesson-7-6"><label class="complete"><input type="checkbox" data-key="lesson-7-6"> Mark this lesson complete</label>
+      <h2>7.6 EMF, internal resistance, and terminal voltage</h2>
+      <h3>Learning goal</h3>
+      <p>Distinguish a battery’s energy-per-charge supply from the voltage delivered under load.</p>
+      <h3>Understand the model</h3>
+      <p>Electromotive force ε is the energy supplied by a source per unit charge. Despite its name, EMF is measured in volts rather than newtons. An ideal battery has no internal resistance. A real battery is modeled as an ideal source in series with an internal resistance r.</p>
+      <p>While the battery discharges, some energy is transferred to thermal energy inside it, so the terminal voltage is ε - Ir. With no current, this model gives terminal voltage equal to EMF. A larger load current creates a larger internal drop. During charging, when current enters the positive terminal, the simple model requires an applied terminal voltage ε + Ir. The discharge expression must not be used with an unexamined current direction.</p>
+      <div class="equations"><button class="copy" type="button">Copy equations</button><h3>Equations and units</h3>
+      <pre><code>discharging: V_terminal = ε - Ir
+I = ε/(R_load + r)
+P_internal = I²r
+P_source = εI; P_load = V_terminal I</code></pre>
+      </div><div class="worked"><h3>Worked example</h3>
+      <p>A battery has ε = 12.0 V and r = 0.500 Ω. Connect a 5.50 Ω load. Find current, terminal voltage, and internal heating power.</p>
+      <ol>
+        <li>Total resistance is 5.50 + 0.500 = 6.00 Ω, so I = 12.0/6.00 = 2.00 A.</li>
+        <li>V_terminal = 12.0 - (2.00)(0.500) = 11.0 V. Check: IR_load = (2.00)(5.50) = 11.0 V.</li>
+        <li>P_internal = (2.00)²(0.500) = 2.00 W. Source power is 24.0 W and load power 22.0 W, balancing the energy rate.</li>
+      </ol>
+      </div><div class="pitfall"><h3>Common mistakes</h3>
+      <p>EMF is not a mechanical force. An unloaded voltage measurement and a loaded voltage measurement need not match. Never deliberately short a battery to test the model.</p>
+      </div><h3>Your turn</h3>
+      <ol>
+        <li>A 9.0 V battery with r = 1.0 Ω supplies 0.50 A while discharging. Find terminal voltage.</li>
+        <li>Why does terminal voltage drop with a larger discharge current?</li>
+      </ol>
+      <details class="solution"><summary>Reveal practice solutions and reasoning</summary>
+      <p><strong>1.</strong> V_terminal = 9.0 - 0.50(1.0) = 8.5 V.</p>
+      <p><strong>2.</strong> The internal resistive drop Ir increases; more energy per second is converted to thermal energy inside the source.</p>
+      </details><div class="sources">Read in the supplied textbook: <a href="../Physics%20text%20%28TOC%29.pdf#page=807" target="_blank" rel="noopener">§27-1 · PDF p. 807 / print p. 771</a></div></section>
+
+    <section class="lesson" id="lesson-7-7"><label class="complete"><input type="checkbox" data-key="lesson-7-7"> Mark this lesson complete</label>
+      <h2>7.7 Electrical power, energy, and transmission</h2>
+      <h3>Learning goal</h3>
+      <p>Calculate electrical energy and explain why high-voltage transmission reduces resistive loss.</p>
+      <h3>Understand the model</h3>
+      <p>Electrical power transferred to a component is P = VI. For a resistor obeying V = IR, substitution gives I²R or V²/R. A device using a constant power for time t transfers energy Pt. The kilowatt-hour is an energy unit: one kW operating for one hour transfers 3.6 × 10⁶ J. It is not a power unit.</p>
+      <p>A transmission line loses power as I²R_line. For a fixed delivered power, increasing transmission voltage allows lower current and therefore much smaller line loss. If voltage is increased by a factor of ten at the same transmitted power, current becomes one tenth and resistive loss becomes one hundredth. This energy argument applies to the resistive line model; actual grid equipment and voltage conversion require additional physics. Circuit breakers and fuses interrupt excessive current to limit overheating.</p>
+      <div class="equations"><button class="copy" type="button">Copy equations</button><h3>Equations and units</h3>
+      <pre><code>P = VI
+for a resistor: P = I²R = V²/R
+E = Pt
+1 kWh = 3.6 × 10⁶ J
+P_line loss = I²R_line</code></pre>
+      </div><div class="worked"><h3>Worked example</h3>
+      <p>A 60.0 W device runs for 2.00 h. Find energy in kWh and joules. A line of total resistance 2.00 Ω carries 10.0 A; find its loss.</p>
+      <ol>
+        <li>Device energy is (0.0600 kW)(2.00 h) = 0.120 kWh.</li>
+        <li>In joules, E = (60.0 J/s)(7200 s) = 432 000 J = 432 kJ.</li>
+        <li>Line loss is (10.0)²(2.00) = 200 W. The total line resistance should include the return path if the circuit has one.</li>
+      </ol>
+      </div><div class="pitfall"><h3>Common mistakes</h3>
+      <p>Use hours with kW for kWh, and seconds with W for joules. Higher voltage does not directly reduce I²R loss unless current is correspondingly reduced for the same power transfer.</p>
+      </div><h3>Your turn</h3>
+      <ol>
+        <li>A 12.0 V resistor draws 2.00 A. Find power and energy in 30.0 s.</li>
+        <li>At fixed transmitted power, voltage doubles. What happens to resistive line loss?</li>
+      </ol>
+      <details class="solution"><summary>Reveal practice solutions and reasoning</summary>
+      <p><strong>1.</strong> P = 24.0 W; E = 720 J.</p>
+      <p><strong>2.</strong> Current halves, so I²R loss becomes one quarter if the line resistance is unchanged.</p>
+      </details><div class="sources">Read in the supplied textbook: <a href="../Physics%20text%20%28TOC%29.pdf#page=796" target="_blank" rel="noopener">§26-5 · PDF p. 796 / print p. 760</a><a href="../Physics%20text%20%28TOC%29.pdf#page=807" target="_blank" rel="noopener">§27-1 · PDF p. 807 / print p. 771</a></div></section>
+
+    <section class="panel inquiry" id="inquiry">
+      <h2>7.8 Investigate and reflect</h2>
+      <h3>Inquiry task</h3>
+      <p>With a teacher-approved low-voltage battery circuit, measure current through and voltage across a resistor at several settings. Plot V versus I and compare the slope with resistance. Repeat with series and parallel combinations and test junction and loop rules within uncertainty. Use only low-voltage classroom equipment; never investigate a wall outlet. Connect an ammeter in series and a voltmeter across the component.</p>
+      <h3>Evidence checklist</h3>
+      <ul>
+        <li>State the question and a testable prediction.</li>
+        <li>Identify independent, dependent, and controlled variables.</li>
+        <li>Record units, resolution, repeated trials, and a justified uncertainty estimate.</li>
+        <li>Use a labelled graph or table and explain slope or area when relevant.</li>
+        <li>Compare the result with the model and identify specific limitations.</li>
+        <li>Explain an improvement and connect the result to a practical application.</li>
+      </ul>
+    </section><p id="empty" class="empty" hidden>No lessons match. Try another term.</p><form class="panel quiz"><div class="eyebrow">Check understanding</div><h2>Unit checkpoint</h2><p>Select an answer for each question, then check your reasoning. You can retry.</p><fieldset data-answer="2" data-explanation="Both endpoints connect to the same two nodes."><legend>1. Parallel resistors share the same</legend><label><input type="radio" name="q0" value="0"> Current</label><label><input type="radio" name="q0" value="1"> Resistance</label><label><input type="radio" name="q0" value="2"> Voltage</label><p class="feedback" aria-live="polite"></p></fieldset><fieldset data-answer="0" data-explanation="Internal resistance reduces delivered voltage under load."><legend>2. A discharging real battery has terminal voltage</legend><label><input type="radio" name="q1" value="0"> ε - Ir</label><label><input type="radio" name="q1" value="1"> ε + Ir</label><label><input type="radio" name="q1" value="2"> Always zero</label><p class="feedback" aria-live="polite"></p></fieldset><fieldset data-answer="1" data-explanation="It is power multiplied by time."><legend>3. A kilowatt-hour is a unit of</legend><label><input type="radio" name="q2" value="0"> Power</label><label><input type="radio" name="q2" value="1"> Energy</label><label><input type="radio" name="q2" value="2"> Current</label><p class="feedback" aria-live="polite"></p></fieldset><button type="submit">Check answers</button><p class="score" aria-live="polite"></p></form><div class="slide-controls"><button id="prev-slide">← Previous</button><span id="slide-count" aria-live="polite"></span><button id="next-slide">Next →</button></div><div class="footnav"><a class="button" href="unit-06-energy-thermal-physics.html">← Previous unit</a><a class="button" href="unit-08-waves-sound.html">Next unit →</a></div><footer class="footer"><p>Course sequence: <a href="https://www.vsb.bc.ca/vln/physics-11">VLN Physics 11</a>. Scope check: <a href="https://curriculum.gov.bc.ca/curriculum/science/11/physics">BC Physics 11 curriculum</a>. Physics reading: the supplied Halliday & Resnick textbook. Explanations are adapted at Grade 11 algebra level; numerical examples and practice questions are authored for these tutorials.</p><p>Textbook links open the supplied PDF at the referenced viewer page. If your viewer ignores page anchors, enter the PDF page number manually. References point to section openings; read onward within the section for the full discussion.</p></footer></main></div>
+<script>(()=>{
+  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+  let saved={};try{saved=JSON.parse(localStorage.getItem('physics11-progress')||'{}')}catch{}
+  const lessons=$$('.lesson'), search=$('#lesson-search'), mode=$('#mode');
+  let current=0;
+  function progress(){const n=$$('.complete input:checked').length; const el=$('#progress-count');if(el)el.textContent=`${n} of ${lessons.length} lessons marked complete`;if($('#progress'))$('#progress').value=n;
+    $$('.unit-card').forEach(c=>{const ids=c.dataset.lessons.split(',');const n=ids.filter(id=>saved[id]).length;c.querySelector('.completion').textContent=`${n}/${ids.length} complete`})}
+  $$('.complete input').forEach(c=>{c.checked=!!saved[c.dataset.key];c.addEventListener('change',()=>{saved[c.dataset.key]=c.checked;try{localStorage.setItem('physics11-progress',JSON.stringify(saved))}catch{}progress()})});progress();
+  function applyFilter(){const q=(search?.value||'').trim().toLowerCase();let visible=0;lessons.forEach((l,i)=>{const match=l.textContent.toLowerCase().includes(q);const show=document.body.classList.contains('mode-slides')?i===current:match;l.hidden=!show;if(show)visible++});if($('#search-status'))$('#search-status').textContent=q?`${visible} lesson${visible===1?'':'s'} match your search`:'Search explanations, equations, and examples.';if($('#empty'))$('#empty').hidden=visible>0;if($('#slide-count'))$('#slide-count').textContent=`Lesson ${current+1} of ${lessons.length}`;$$('.sidebar nav a').forEach(a=>{const target=$(a.getAttribute('href'));if(target)a.hidden=!!target.hidden});if($('#prev-slide'))$('#prev-slide').disabled=current===0;if($('#next-slide'))$('#next-slide').disabled=current===lessons.length-1}
+  search?.addEventListener('input',applyFilter);
+  mode?.addEventListener('change',()=>{document.body.className=mode.value==='study'?'':`mode-${mode.value}`;if(mode.value!=='study')$$('details.solution').forEach(d=>d.open=true);if(mode.value==='study')$$('details.solution').forEach(d=>d.open=false);if(mode.value==='slides'&&search)search.value='';applyFilter()});
+  function slide(d){if(!document.body.classList.contains('mode-slides'))return;current=Math.max(0,Math.min(lessons.length-1,current+d));applyFilter();lessons[current]?.scrollIntoView({block:'start'})}
+  $('#prev-slide')?.addEventListener('click',()=>slide(-1));$('#next-slide')?.addEventListener('click',()=>slide(1));
+  document.addEventListener('keydown',e=>{if(/INPUT|SELECT|TEXTAREA/.test(e.target.tagName))return;if(e.key==='ArrowRight')slide(1);if(e.key==='ArrowLeft')slide(-1)});
+  $('#show-answers')?.addEventListener('click',()=>$$('details.solution').forEach(d=>d.open=true));
+  $('#hide-answers')?.addEventListener('click',()=>$$('details.solution').forEach(d=>d.open=false));
+  $('#print')?.addEventListener('click',()=>window.print());
+  let printState=[];window.addEventListener('beforeprint',()=>{printState=$$('details.solution').map(d=>d.open);$$('details.solution').forEach(d=>d.open=true)});window.addEventListener('afterprint',()=>$$('details.solution').forEach((d,i)=>d.open=printState[i]));
+  $$('.copy').forEach(b=>b.addEventListener('click',async()=>{const t=b.parentElement.querySelector('pre').textContent;try{await navigator.clipboard.writeText(t);b.textContent='Copied'}catch{const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(b.parentElement.querySelector('pre'));selection.removeAllRanges();selection.addRange(range);b.textContent='Selected: copy with Ctrl/Cmd+C'}setTimeout(()=>b.textContent='Copy equations',2500)}));
+  $$('.quiz').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();let score=0;let answered=0;form.querySelectorAll('fieldset').forEach(f=>{const input=f.querySelector('input:checked'),out=f.querySelector('.feedback');if(input)answered++;const ok=input&&input.value===f.dataset.answer;if(ok)score++;out.textContent=!input?'Choose an answer.':ok?'Correct. '+f.dataset.explanation:'Try again. '+f.dataset.explanation;out.style.color=ok?'#216348':'#8a381b'});form.querySelector('.score').textContent=`${score}/${form.querySelectorAll('fieldset').length} correct; ${answered} answered. You can revise and check again.`}));
+  applyFilter();
+  const bank=$('#textbook-problems');
+  if(bank){
+    const unit=$('#problem-unit'),query=$('#problem-search'),chapters=$$('.problem-chapter');
+    function filterProblems(){
+      const searchText=query.value.trim().toLowerCase(),words=searchText.split(/\s+/).filter(Boolean),exactNumber=/^\d+[.-]\d+$/.test(searchText)?searchText.replace('-','.'):null;let count=0,sets=0;
+      chapters.forEach(ch=>{
+        const eligible=unit.value==='all'||ch.dataset.units.split(',').includes(unit.value);let matches=0;
+        ch.querySelectorAll('.problem-module').forEach(module=>{
+          let moduleCount=0;
+          module.querySelectorAll('.problem-number').forEach(link=>{const show=eligible&&(exactNumber?link.dataset.number===exactNumber:words.every(word=>link.dataset.search.includes(word)));link.hidden=!show;if(show){moduleCount++;matches++}});
+          module.hidden=moduleCount===0;
+          const tag=module.querySelector('.topic-tag');if(tag.textContent!=='Mixed review'){
+            const focus=unit.value==='all'?!!module.dataset.units:module.dataset.units.split(',').includes(unit.value);
+            tag.textContent=focus?'Lesson focus':'Extension';tag.classList.toggle('focus',focus);
+          }
+        });
+        ch.hidden=!eligible||matches===0;if(!ch.hidden){sets++;count+=matches;if(words.length)ch.open=true}
+      });
+      $('#problem-status').textContent=`${count.toLocaleString()} problem${count===1?'':'s'} in ${sets} chapter${sets===1?'':'s'}${words.length?count===1?' matches your search':' match your search':''}.`;
+      $('#problem-empty').hidden=count>0;
+    }
+    function loadPage(page){const img=page.querySelector('img');if(!img.getAttribute('src'))img.src=img.dataset.src}
+    function revealPage(id){const page=document.getElementById(id);if(!page)return null;const chapter=page.closest('.problem-chapter');chapter.hidden=false;chapter.open=true;page.open=true;loadPage(page);return page}
+    unit.addEventListener('change',filterProblems);query.addEventListener('input',filterProblems);
+    $('#problem-reset').addEventListener('click',()=>{unit.value='all';query.value='';filterProblems()});
+    $$('.problem-page').forEach(page=>{
+      page.addEventListener('toggle',()=>{if(page.open)loadPage(page)});
+      page.querySelector('.close-problem-page').addEventListener('click',()=>{page.open=false;page.querySelector('summary').focus()});
+    });
+    $$('.problem-number').forEach(link=>link.addEventListener('click',event=>{
+      if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+      event.preventDefault();$$('.problem-number.selected').forEach(old=>old.classList.remove('selected'));link.classList.add('selected');
+      $$('.problem-marker').forEach(marker=>marker.hidden=true);$$('.page-selection').forEach(label=>label.textContent='');
+      const pages=link.dataset.pages.split(',');pages.forEach((number,i)=>{const page=revealPage(`problem-page-${number}`);page.querySelector('.page-selection').textContent=i===0?`Problem ${link.dataset.number} starts here`:`Possible continuation of problem ${link.dataset.number}`});
+      const page=document.getElementById(link.dataset.target),marker=page.querySelector('.problem-marker');marker.hidden=false;marker.style.top=`${Number(link.dataset.y)/796.68*100}%`;marker.style.left=`${Number(link.dataset.x)/667.3*100-0.5}%`;
+      page.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+      page.querySelector('summary').focus({preventScroll:true});
+    }));
+    function fromHash(){if(/^#problem-page-\d+$/.test(location.hash))revealPage(location.hash.slice(1));if(/^#problems-ch-\d+$/.test(location.hash)){const chapter=document.getElementById(location.hash.slice(1));if(chapter)chapter.open=true}}
+    window.addEventListener('hashchange',fromHash);filterProblems();fromHash();
+  }
+  // Each diagram is generated from the same equations explained in its readout.
+  const box=$('.explorer');if(!box)return;const svg=box.querySelector('svg'),out=box.querySelector('output');
+  const read=id=>Number(box.querySelector('#'+id)?.value||0), esc=t=>String(t).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  const text=(x,y,t,c='#52677b')=>`<text x="${x}" y="${y}" fill="${c}" font-size="15" font-family="system-ui">${esc(t)}</text>`;
+  const line=(x1,y1,x2,y2,c='#126b83',w=3)=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-width="${w}"/>`;
+  const arrow=(x1,y1,x2,y2,c='#126b83')=>{const a=Math.atan2(y2-y1,x2-x1),bx=x2-12*Math.cos(a),by=y2-12*Math.sin(a),dx=5*Math.sin(a),dy=5*Math.cos(a);return line(x1,y1,x2,y2,c)+`<polygon points="${x2},${y2} ${bx+dx},${by-dy} ${bx-dx},${by+dy}" fill="${c}"/>`};
+  const circle=(x,y,r,c)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${c}"/>`;
+  function axes(xLabel,yLabel){return line(60,260,600,260,'#a7b8c5',1)+line(60,260,60,35,'#a7b8c5',1)+text(320,310,xLabel)+text(15,22,yLabel)}
+  function draw(){const kind=box.dataset.kind;let h='',r='';
+    if(kind==='vector'){const a=read('magnitude'),deg=read('angle'),rad=deg*Math.PI/180,x=a*Math.cos(rad),y=a*Math.sin(rad);const ox=300,oy=150,s=5;h=line(70,oy,590,oy,'#b9c8d2',1)+line(ox,35,ox,260,'#b9c8d2',1)+arrow(ox,oy,ox+x*s,oy-y*s)+line(ox,oy,ox+x*s,oy,'#b96720')+line(ox+x*s,oy,ox+x*s,oy-y*s,'#b96720')+circle(ox+x*s,oy-y*s,6,'#126b83')+text(490,175,'+x')+text(310,45,'+y')+text(30,290,'Blue: vector   Orange: component projections');r=`Magnitude = ${a.toFixed(1)} N; angle = ${deg}° from +x\nFₓ = ${x.toFixed(2)} N; Fᵧ = ${y.toFixed(2)} N`}
+    if(kind==='motion'){const v0=read('initial-speed'),a=read('acceleration'),t=read('duration'),vf=v0+a*t,dx=v0*t+.5*a*t*t,min=Math.min(0,v0,vf),max=Math.max(1,v0,vf),span=max-min;const yy=v=>245-(v-min)*195/span;h=axes('Time (s)','Velocity (m/s)')+line(60,yy(0),600,yy(0),'#b9c8d2',1)+`<polygon points="60,${yy(0)} 60,${yy(v0)} 580,${yy(vf)} 580,${yy(0)}" fill="#d9efef"/>`+line(60,yy(v0),580,yy(vf))+text(65,yy(v0)-8,`${v0.toFixed(1)} m/s`)+text(435,yy(vf)-8,`${vf.toFixed(1)} m/s`)+text(60,280,'0')+text(580,280,String(t));r=`Final velocity = ${vf.toFixed(2)} m/s\nDisplacement (signed graph area) = ${dx.toFixed(2)} m\nAcceleration (slope) = ${a.toFixed(1)} m/s²; elapsed time = ${t.toFixed(1)} s`}
+    if(kind==='projectile'){const v=read('launch-speed'),deg=read('launch-angle'),height=read('height'),rad=deg*Math.PI/180,vx=v*Math.cos(rad),vy=v*Math.sin(rad),t=(vy+Math.sqrt(vy*vy+2*9.81*height))/9.81,R=vx*t,H=height+vy*vy/(2*9.81),xScale=520/Math.max(1,R),yScale=205/Math.max(1,H);let pts=[];for(let i=0;i<=80;i++){const ti=t*i/80;pts.push(`${60+vx*ti*xScale},${260-(height+vy*ti-.5*9.81*ti*ti)*yScale}`)}h=axes('Horizontal distance (m)','Height above ground (m)')+`<polyline points="${pts.join(' ')}" fill="none" stroke="#126b83" stroke-width="3"/>`+text(64,280,'0')+text(480,280,`${R.toFixed(1)} m`)+text(80,45,`Peak: ${H.toFixed(1)} m`);r=`v₀ₓ = ${vx.toFixed(2)} m/s; v₀ᵧ = ${vy.toFixed(2)} m/s\nFlight time = ${t.toFixed(2)} s; range = ${R.toFixed(2)} m\nMaximum height above ground = ${H.toFixed(2)} m. No drag; axes scale independently.`}
+    if(kind==='forces'){const m=read('mass'),p=read('push'),mu=read('friction'),N=m*9.81,f=mu*N,a=(p-f)/m;h=line(70,235,600,235,'#a7b8c5',2)+`<rect x="265" y="130" width="100" height="100" fill="#e8f3f4" stroke="#126b83"/>`+arrow(315,180,315,55)+text(325,65,`N = ${N.toFixed(1)} N`)+arrow(315,180,315,280,'#b96720')+text(325,280,`mg = ${N.toFixed(1)} N`)+arrow(315,180,520,180)+text(420,155,`Pull: ${p.toFixed(1)} N`)+arrow(315,180,110,180,'#b96720')+text(60,155,`Friction: ${f.toFixed(1)} N`)+text(65,25,'Forces on a block already sliding right; arrows show directions only');r=`Normal force = ${N.toFixed(2)} N; kinetic friction = ${f.toFixed(2)} N\nHorizontal net force = ${(p-f).toFixed(2)} N; acceleration = ${a.toFixed(2)} m/s²\nThe block is assumed to be sliding right at this instant; negative a means it slows.`}
+    if(kind==='ramp'){const m=read('mass'),deg=read('incline'),mu=read('friction'),rad=deg*Math.PI/180,N=m*9.81*Math.cos(rad),par=m*9.81*Math.sin(rad),a=9.81*(Math.sin(rad)-mu*Math.cos(rad));const x1=120,y1=255,x2=480,y2=255-190*Math.tan(rad)/Math.tan(60*Math.PI/180);h=line(x1,y1,x2,y2,'#126b83',4)+line(x1,y1,x2,y1,'#a7b8c5',1)+`<rect x="280" y="${(y1+y2)/2-30}" width="50" height="30" fill="#d9efef" stroke="#126b83" transform="rotate(${-Math.atan2(y1-y2,x2-x1)*180/Math.PI} 300 ${(y1+y2)/2})"/>`+text(70,45,`Ramp angle: ${deg}° (illustration not to scale)`)+text(400,280,'Downhill is positive')+text(80,90,`Normal: ${N.toFixed(1)} N`)+text(80,115,`Downslope gravity: ${par.toFixed(1)} N`)+text(80,140,`Uphill friction: ${(mu*N).toFixed(1)} N`);r=`N = mg cos θ = ${N.toFixed(2)} N\na = g(sin θ - μₖ cos θ) = ${a.toFixed(2)} m/s² downhill\nModel: already sliding downhill; this is not a static-friction release test.`}
+    if(kind==='energy'){const m=read('mass'),h0=read('start-height'),hNow=read('current-height')/100*h0,U=m*9.81*hNow,K=m*9.81*(h0-hNow),E=U+K,v=Math.sqrt(2*9.81*(h0-hNow)),scale=190/Math.max(1,E);h=line(60,260,600,260,'#a7b8c5',1)+`<rect x="110" y="${260-U*scale}" width="95" height="${U*scale}" fill="#126b83"/><rect x="280" y="${260-K*scale}" width="95" height="${K*scale}" fill="#dba34f"/><rect x="450" y="${260-E*scale}" width="95" height="${E*scale}" fill="#52677b"/>`+text(110,285,'Potential U')+text(280,285,'Kinetic K')+text(450,285,'Total E')+text(80,35,'Energy (J): frictionless fall from rest');r=`Current height = ${hNow.toFixed(2)} m above the chosen zero\nU = ${U.toFixed(2)} J; K = ${K.toFixed(2)} J; total = ${E.toFixed(2)} J\nSpeed = ${v.toFixed(2)} m/s (mass cancels from speed).`}
+    if(kind==='circuit'){const V=read('voltage'),r1=read('resistance1'),r2=read('resistance2'),parallel=box.querySelector('#connection').value==='parallel',R=parallel?r1*r2/(r1+r2):r1+r2,I=V/R,i1=parallel?V/r1:I,i2=parallel?V/r2:I,v1=i1*r1,v2=i2*r2;h=line(90,80,550,80)+line(90,80,90,140)+line(90,180,90,235)+line(90,235,550,235)+line(65,140,115,140,'#b96720',4)+line(75,180,105,180,'#b96720',4)+text(20,167,`${V} V`);if(parallel){h+=line(250,80,250,125)+line(250,175,250,235)+line(550,80,550,125)+line(550,175,550,235)+`<rect x="225" y="125" width="50" height="50" fill="#e8f3f4" stroke="#126b83"/><rect x="525" y="125" width="50" height="50" fill="#e8f3f4" stroke="#126b83"/>`+text(280,155,`${r1} Ω`)+text(460,155,`${r2} Ω`)}else{h+=line(550,80,550,235)+`<rect x="210" y="60" width="80" height="40" fill="#e8f3f4" stroke="#126b83"/><rect x="390" y="60" width="80" height="40" fill="#e8f3f4" stroke="#126b83"/>`+text(220,50,`${r1} Ω`)+text(400,50,`${r2} Ω`)}h+=text(120,280,`Ideal battery, ideal wires, two ${parallel?'parallel':'series'} resistors`);r=`Equivalent resistance = ${R.toFixed(2)} Ω; source current = ${I.toFixed(2)} A\nR₁: ${v1.toFixed(2)} V, ${i1.toFixed(2)} A; R₂: ${v2.toFixed(2)} V, ${i2.toFixed(2)} A\nTotal power = ${(V*I).toFixed(2)} W.`}
+    if(kind==='wave'){const f=read('frequency'),v=read('wave-speed'),A=read('amplitude'),lambda=v/f,L=4;let pts=[];for(let i=0;i<=200;i++){const x=L*i/200;pts.push(`${60+520*x/L},${150-65*A*Math.sin(2*Math.PI*x/lambda)}`)}h=line(60,150,600,150,'#a7b8c5',1)+line(60,250,600,250,'#a7b8c5',1)+`<polyline points="${pts.join(' ')}" fill="none" stroke="#126b83" stroke-width="3"/>`+text(15,25,'Displacement (cm) at one instant')+text(60,275,'0 m')+text(545,275,'4.0 m')+text(75,305,'Position along medium; this is a spatial snapshot, not a time graph');r=`Frequency = ${f.toFixed(1)} Hz; speed = ${v.toFixed(1)} m/s\nWavelength = v/f = ${lambda.toFixed(2)} m; period = ${(1/f).toFixed(3)} s\nAmplitude = ${A.toFixed(1)} cm. Changing amplitude leaves λ unchanged in this model.`}
+    svg.innerHTML=`<title>${esc(box.querySelector('h2').textContent)}</title>`+h;out.textContent=r;
+  }
+  box.querySelectorAll('input,select').forEach(i=>i.addEventListener('input',draw));draw();
+})();
+</script></body></html>

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Detailed algebra-based Physics 11 tutorials with worked examples, practice solutions, and textbook references.">
+<title>Unit 5: 2D Forces &amp; Simple Machines | Physics 11</title><style>:root{--ink:#172b41;--muted:#52677b;--paper:#f6f5ef;--panel:#fff;--line:#d9e1e6;--blue:#126b83;--pale:#e8f3f4;--orange:#9c4c17;--gold:#fff2db;--radius:16px;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);font-size:17px;line-height:1.7}
+*{box-sizing:border-box}body{margin:0}a{color:var(--blue);text-underline-offset:3px}button,input,select{font:inherit}button,.button{cursor:pointer;border:1px solid var(--line);border-radius:8px;background:white;padding:.45rem .8rem;color:var(--ink);text-decoration:none;display:inline-block}button:hover,.button:hover{background:var(--pale);border-color:var(--blue)}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #e79d3b;outline-offset:3px}.skip{position:fixed;top:-80px;left:1rem;z-index:10;background:white;padding:1rem}.skip:focus{top:0}.top{padding:.75rem 2rem;border-bottom:1px solid var(--line);background:#fff;display:flex;justify-content:space-between;align-items:center;gap:1rem}.brand{font-weight:800;letter-spacing:.04em;text-decoration:none}.top small{color:var(--muted)}.layout{display:grid;grid-template-columns:270px minmax(0,1fr);max-width:1440px;margin:auto}.sidebar{padding:1.7rem 1.2rem;position:sticky;top:0;height:100vh;overflow:auto;border-right:1px solid var(--line)}.sidebar label{font-size:.8rem;font-weight:700;display:block}.sidebar input[type=search]{width:100%;padding:.6rem;border:1px solid var(--line);border-radius:8px;background:white}.sidebar nav a{display:block;padding:.55rem .5rem;font-size:.87rem;text-decoration:none;border-radius:6px;margin:.1rem 0;line-height:1.45}.sidebar nav a:hover{background:var(--pale)}.sidebar .small{font-size:.78rem;color:var(--muted)}.sidebar hr{border:0;border-top:1px solid var(--line);margin:1rem 0}.sidebar progress{width:100%;accent-color:var(--blue)}main{padding:2rem 2.6rem 4rem;min-width:0}.hero{margin-bottom:1.5rem}.eyebrow{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--blue)}h1{font-size:clamp(2rem,4vw,3.3rem);line-height:1.14;margin:.7rem 0 1rem;letter-spacing:-.035em;max-width:900px}h2{font-size:1.45rem;line-height:1.35;margin:0 0 .7rem;letter-spacing:-.015em}h3{font-size:1.03rem;color:var(--blue);margin:1.4rem 0 .4rem}p{margin:.55rem 0 1rem}.lead{font-size:1.1rem;color:var(--muted);max-width:770px}.toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin:1rem 0}.toolbar label{font-size:.85rem}.toolbar select{padding:.4rem;border:1px solid var(--line);border-radius:6px;background:white}.stats{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}.tag{font-size:.75rem;padding:.25rem .65rem;border:1px solid var(--line);border-radius:30px;background:white;color:var(--muted)}.lesson,.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem 2rem;margin:1.25rem 0;scroll-margin-top:1rem}.lesson>h2{padding-right:0}.complete{display:block;text-align:right;font-size:.76rem;color:var(--muted);margin-bottom:.7rem}.complete input{accent-color:var(--blue);width:17px;height:17px;vertical-align:middle}ul,ol{padding-left:1.5rem}li{margin:.35rem 0}.equations{background:#edf4f8;border-left:4px solid var(--blue);padding:1rem;border-radius:0 8px 8px 0;margin:1rem 0}.equations h3{margin:0 0 .5rem}.equations pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;font-size:.91rem}.equations code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.copy{font-size:.72rem;float:right;padding:.2rem .5rem}code{background:#edf4f8;padding:.1rem .3rem;border-radius:4px}pre code{background:transparent;padding:0}.worked{border-left:4px solid #dba34f;padding:.15rem 1rem;background:#fff8ed;border-radius:0 8px 8px 0;margin:1rem 0}.worked h3{color:var(--orange)}.pitfall{padding:.7rem 1rem;background:#f7f4fa;border-radius:8px}.sources{font-size:.75rem;color:var(--muted);border-top:1px solid var(--line);padding-top:.6rem;margin-top:1.2rem}.sources a{margin-right:.8rem}.solution{border:1px solid var(--line);border-radius:8px;margin:.5rem 0;padding:.7rem 1rem;background:#f8fcfb}.solution summary{cursor:pointer;color:var(--blue);font-weight:650}.solution p{margin:.7rem 0 .2rem}.explorer{background:#eaf4f4;border:1px solid #bfd9dc}.explorer .controls{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}.explorer label{display:flex;flex-direction:column;font-size:.8rem;font-weight:600}.explorer input[type=range]{width:150px;accent-color:var(--blue)}.explorer output{display:block;font-size:.88rem;white-space:pre-wrap;background:white;padding:.7rem 1rem;border-radius:8px;margin:1rem 0}.explorer svg{width:100%;height:auto;display:block;background:white;border-radius:12px}.explorer figcaption{font-size:.78rem;color:var(--muted);margin-top:.5rem}.explorer figure{margin:1rem 0}.footnav{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin:2rem 0}.footer{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);padding-top:1.2rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.unit-card{background:white;border:1px solid var(--line);border-radius:14px;padding:1.5rem;text-decoration:none;color:var(--ink)}.unit-card h2{margin:.5rem 0}.unit-card p{color:var(--muted);font-size:.9rem}.unit-card:hover{border-color:var(--blue);box-shadow:0 6px 25px #172b410b}.unit-card .meta{font-size:.75rem;color:var(--blue)}.unit-card ul{color:var(--muted);font-size:.8rem;margin-bottom:0}.home{max-width:1150px;margin:auto}.home main{padding:2rem}.checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem 1rem}.checklist label{font-size:.85rem}.quiz fieldset{border:1px solid var(--line);border-radius:8px;padding:1rem;margin:1rem 0}.quiz legend{font-weight:650;padding:0 .3rem}.quiz label{display:block;margin:.4rem 0}.quiz .feedback{font-weight:650}.quiz .feedback:empty{display:none}.status{font-size:.8rem;color:var(--muted)}[hidden]{display:none!important}.slide-controls{display:none}.mode-simple .sidebar,.mode-slides .sidebar{display:none}.mode-simple .layout,.mode-slides .layout{display:block;max-width:1080px}.mode-simple .complete,.mode-simple .copy{display:none}.mode-slides .slide-controls{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem;background:white;border:1px solid var(--line);border-radius:10px;position:sticky;bottom:1rem;box-shadow:0 6px 20px #172b4118}.mode-slides .lesson{font-size:1.05rem}.mode-slides .explorer,.mode-slides .inquiry,.mode-slides .quiz{display:none}.empty{padding:1rem;border:1px dashed var(--line);border-radius:8px}.formula-table{width:100%;border-collapse:collapse;font-size:.88rem}.formula-table th,.formula-table td{padding:.8rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.formula-table code{white-space:normal}.table-wrap{overflow:auto}html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media(max-width:900px){.layout{grid-template-columns:220px minmax(0,1fr)}main{padding:1.5rem}.lesson,.panel{padding:1.3rem}.sidebar{padding:1rem}.grid{gap:.8rem}}@media(max-width:700px){:root{font-size:16px}.top{padding:.7rem 1rem}.top small{display:none}.layout{display:block}.sidebar{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);padding:1rem}.sidebar nav{display:flex;flex-wrap:wrap;gap:.2rem}.sidebar nav a{font-size:.75rem;border:1px solid var(--line);max-width:100%;padding:.3rem .5rem}.sidebar .small,.sidebar hr,.sidebar .course-links{display:none}main,.home main{padding:1.2rem}.grid,.checklist{grid-template-columns:1fr}.lesson,.panel{padding:1.1rem}.complete{text-align:left}.toolbar button{font-size:.8rem}.formula-table{font-size:.78rem}.explorer input[type=range]{width:130px}}
+.textbook-bank{margin:3rem 0;scroll-margin-top:1rem}.bank-controls{display:flex;flex-wrap:wrap;align-items:end;gap:1rem;padding:1.2rem;background:var(--pale);border-radius:12px;margin:1rem 0}.bank-controls label{display:grid;gap:.3rem;font-size:.8rem;font-weight:650;flex:1;min-width:180px}.bank-controls select,.bank-controls input{width:100%;min-width:0;border:1px solid var(--line);border-radius:7px;background:white;padding:.55rem}.bank-controls button{font-size:.8rem;margin-bottom:1px}.problem-chapter{background:white;border:1px solid var(--line);border-radius:12px;margin:.8rem 0;overflow:hidden;scroll-margin-top:1rem}.problem-chapter>summary{cursor:pointer;padding:1.15rem 1.3rem;display:list-item;list-style-position:inside}.problem-chapter>summary>span{display:inline-block;vertical-align:top;width:calc(100% - 2rem)}.chapter-meta{display:block;font-size:.78rem;font-weight:400;color:var(--muted);margin-top:.15rem}.problem-chapter[open]>summary{background:var(--pale);border-bottom:1px solid var(--line)}.chapter-body{padding:1.2rem 1.3rem}.problem-module{padding:.2rem 0 1rem;border-bottom:1px solid var(--line)}.problem-module h3{margin:.8rem 0}.topic-tag{display:inline-block;vertical-align:middle;font-size:.63rem;color:var(--muted);padding:.1rem .4rem;border:1px solid var(--line);border-radius:20px;background:#f4f5f6;margin-left:.4rem;font-weight:500;white-space:nowrap}.topic-tag.focus{color:#216348;background:#eaf5eb;border-color:#c5deca}.problem-numbers{display:flex;flex-wrap:wrap;gap:.4rem}.problem-number{display:inline-flex;align-items:center;justify-content:center;min-width:2.4rem;padding:.3rem .5rem;border:1px solid var(--line);border-radius:6px;text-decoration:none;background:#fafcfc;font-size:.83rem;font-variant-numeric:tabular-nums}.problem-number:hover,.problem-number.selected{background:var(--blue);color:white;border-color:var(--blue)}.source-pages{margin:1.3rem 0 .3rem}.problem-page{border:1px solid var(--line);border-radius:8px;margin:.55rem 0;overflow:hidden;scroll-margin-top:1rem}.problem-page>summary{font-size:.85rem;padding:.65rem .8rem;cursor:pointer;background:#f6f8f9}.page-tools{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;padding:.7rem .8rem;font-size:.76rem;border-top:1px solid var(--line)}.page-tools button{font-size:.72rem;margin-left:auto}.page-selection{font-weight:700;color:var(--orange)}.page-selection:empty{display:none}.problem-image{position:relative;background:white}.problem-image img{display:block;width:100%;height:auto}.problem-marker{position:absolute;border:2px solid #c97812;background:#f3be4420;border-radius:3px;width:40%;height:2%;pointer-events:none}.bank-credit{margin-top:1rem}@media(max-width:700px){.chapter-body{padding:.8rem}.problem-chapter>summary{padding:.9rem}.bank-controls{padding:.9rem}.bank-controls label{min-width:100%}.problem-number{min-width:2.5rem;padding:.4rem .6rem}.page-tools{gap:.5rem}.page-tools button{margin-left:0}}
+@media print{@page{margin:15mm}:root{background:white;font-size:11pt;color:black}.top,.sidebar,.toolbar,.complete,.copy,.slide-controls,.footnav,.quiz button,.explorer .controls,.skip,.bank-controls,.page-tools,.problem-marker{display:none!important}.layout{display:block}main,.home main{padding:0}.lesson,.panel{box-shadow:none;border:0;border-radius:0;padding:0;margin:1.2rem 0;break-inside:auto}.lesson[hidden]{display:block!important}.lesson h2,h3{break-after:avoid}a{color:black}.sources{font-size:9pt}.equations,.worked{background:transparent;border-color:#888}h1{font-size:25pt}h2{font-size:17pt}.grid{display:block}.unit-card{display:block;margin:1rem 0}.explorer svg{max-height:150px}.solution{background:transparent}.mode-slides .explorer,.mode-slides .inquiry,.mode-slides .quiz{display:block}.footer{font-size:9pt}.problem-chapter,.problem-page{border:0}.problem-page[open]{break-before:page}.problem-image img{max-height:240mm;object-fit:contain}.problem-chapter>summary{background:white}}
+</style></head>
+<body class=""><a class="skip" href="#main">Skip to lesson content</a>
+<header class="top"><a class="brand" href="../index.html">PHYSICS / 11</a><small>Think in models. Check with evidence.</small><a href="../course-outline.md">Course outline</a></header>
+<div class="layout"><aside class="sidebar" aria-label="Lesson navigation"><label for="lesson-search">Search this unit</label><input id="lesson-search" type="search" placeholder="e.g. acceleration"><p class="small" id="search-status">Search explanations and examples.</p><hr><div class="eyebrow">Lesson outline</div><nav><a href="#lesson-5-1">5.1 Angled forces and equilibrium</a><a href="#lesson-5-2">5.2 Inclined planes without friction</a><a href="#lesson-5-3">5.3 Friction on ramps and the threshold of slipping</a><a href="#lesson-5-4">5.4 Connected masses and ideal pulleys</a><a href="#lesson-5-5">5.5 Simple machines, mechanical advantage, and levers</a><a href="#inquiry">Investigate and reflect</a></nav><hr><progress id="progress" max="5" value="0" aria-label="Lesson completion"></progress><p class="small" id="progress-count"></p><p class="small">Progress is stored only in this browser when local storage is available.</p><div class="course-links"><a href="../index.html">All units</a> · <a href="review.html">Formula review</a><br><a href="../content/unit-05-2d-forces-simple-machines.md">Editable notes</a></div></aside><main id="main"><div class="hero"><div class="eyebrow">Physics 11 · Unit 5</div><h1>2D Forces &amp; Simple Machines</h1><p class="lead">Resolve forces on ramps, analyze connected objects, and explain how simple machines exchange force for distance.</p><div class="stats"><span class="tag">5 lessons</span><span class="tag">5 worked examples</span><span class="tag">10 practice questions</span><span class="tag">Ch. 3 §3-1; Ch. 5 §5-3; Ch. 6 §6-1; Ch. 12 §§12-1, 12-2; Ch. 7 §§7-2, 7-6</span></div><div class="toolbar"><label for="mode">Reading mode</label><select id="mode"><option value="study">Study</option><option value="simple">Simple</option><option value="slides">Slides</option></select><button id="show-answers">Show answers</button><button id="hide-answers">Hide answers</button><button id="print">Print / Save PDF</button></div>
+<p class="status">Study: try questions before opening answers. Simple: all answers visible. Slides: one lesson at a time; use arrow keys.</p></div><section class="panel explorer" data-kind="ramp" aria-labelledby="explorer-title"><div class="eyebrow">Predict → adjust → explain</div><h2 id="explorer-title">Sliding ramp model</h2><p>Change one input at a time. Predict what will change before checking the calculated readout.</p><div class="controls"><label for="mass">Mass (kg)<input id="mass" type="range" min="1" max="10" value="4" step="1"></label><label for="incline">Incline angle (°)<input id="incline" type="range" min="5" max="60" value="30" step="1"></label><label for="friction">Kinetic coefficient<input id="friction" type="range" min="0" max="0.6" value="0.2" step="0.05"></label></div><output aria-live="polite"></output><figure><svg viewBox="0 0 660 320" role="img" aria-label="Sliding ramp model"></svg><figcaption>This diagram is an ideal-model visualization. Calculated values are not experimental measurements.</figcaption></figure><noscript>Enable JavaScript for the adjustable diagram. All lesson text and practice answers remain available below.</noscript></section>    <section class="lesson" id="lesson-5-1"><label class="complete"><input type="checkbox" data-key="lesson-5-1"> Mark this lesson complete</label>
+      <h2>5.1 Angled forces and equilibrium</h2>
+      <h3>Learning goal</h3>
+      <p>Apply Newton’s second law independently along two axes.</p>
+      <h3>Understand the model</h3>
+      <p>In two dimensions the same vector law becomes two scalar equations. Resolve every angled force along the chosen axes, keeping signs. If the object is in equilibrium, both acceleration components are zero, so both component sums vanish. Two forces with cancelling horizontal components can still have vertical components that add.</p>
+      <p>For a box pulled upward at an angle on a horizontal floor, the upward pull reduces N. If the pull points downward it increases N. This also changes friction. Work from the free-body diagram rather than memorizing N = mg. The angle in a component formula must refer to the axis that defines the adjacent side.</p>
+      <div class="equations"><button class="copy" type="button">Copy equations</button><h3>Equations and units</h3>
+      <pre><code>ΣFₓ = maₓ; ΣFᵧ = maᵧ
+Fₓ = F cos θ; Fᵧ = F sin θ
+level floor, aᵧ = 0, upward pull: N = mg - F sin θ</code></pre>
+      </div><div class="worked"><h3>Worked example</h3>
+      <p>A 10.0 kg box is pulled with 40.0 N at 30.0° above horizontal on a frictionless level floor. Find N and horizontal acceleration.</p>
+      <ol>
+        <li>Fₓ = 40.0 cos 30.0° = 34.6 N; Fᵧ = 20.0 N upward.</li>
+        <li>Vertical balance gives N = 98.1 - 20.0 = 78.1 N.</li>
+        <li>Horizontal dynamics gives aₓ = 34.641/10.0 = 3.46 m/s². The smaller N would also reduce friction if friction were present.</li>
+      </ol>
+      </div><div class="pitfall"><h3>Common mistakes</h3>
+      <p>Do not use the full angled force in both component equations. Components reconstruct one force; they are not extra forces to add alongside it.</p>
+      </div><h3>Your turn</h3>
+      <ol>
+        <li>Two equal ropes make 30° with the horizontal and hold a 20.0 N load symmetrically. Find each tension.</li>
+        <li>What equations describe translational equilibrium?</li>
+      </ol>
+      <details class="solution"><summary>Reveal practice solutions and reasoning</summary>
+      <p><strong>1.</strong> Horizontal components cancel. 2T sin 30° = 20.0 N gives T = 20.0 N.</p>
+      <p><strong>2.</strong> ΣFₓ = 0 and ΣFᵧ = 0. An extended body may also require zero net torque for rotational equilibrium.</p>
+      </details><div class="sources">Read in the supplied textbook: <a href="../Physics%20text%20%28TOC%29.pdf#page=76" target="_blank" rel="noopener">§3-1 · PDF p. 76 / print p. 40</a><a href="../Physics%20text%20%28TOC%29.pdf#page=142" target="_blank" rel="noopener">§5-3 · PDF p. 142 / print p. 106</a></div></section>
+
+    <section class="lesson" id="lesson-5-2"><label class="complete"><input type="checkbox" data-key="lesson-5-2"> Mark this lesson complete</label>
+      <h2>5.2 Inclined planes without friction</h2>
+      <h3>Learning goal</h3>
+      <p>Choose axes along a ramp and resolve gravity relative to those axes.</p>
+      <h3>Understand the model</h3>
+      <p>For a ramp tilted by θ above horizontal, choose x down the ramp and y perpendicular outward. Gravity is vertical, but its components in these rotated axes are mg sin θ down the ramp and mg cos θ into the ramp. This choice avoids resolving the normal force: it lies entirely along the perpendicular axis.</p>
+      <p>If the block remains on a straight fixed ramp, its perpendicular acceleration is zero. With no other perpendicular force, N = mg cos θ. On a frictionless ramp the downslope equation gives a = g sin θ, independent of mass. The expression becomes zero for a level ramp and approaches g for a nearly vertical ramp, useful limiting checks.</p>
+      <div class="equations"><button class="copy" type="button">Copy equations</button><h3>Equations and units</h3>
+      <pre><code>F_g,parallel = mg sin θ
+F_g,perpendicular = mg cos θ
+N = mg cos θ  (no other perpendicular forces)
+a_down = g sin θ  (frictionless)</code></pre>
+      </div><div class="worked"><h3>Worked example</h3>
+      <p>A 4.00 kg block slides down a frictionless 25.0° ramp. Find N and acceleration.</p>
+      <ol>
+        <li>Perpendicular balance gives N = (4.00)(9.81) cos 25.0° = 35.6 N.</li>
+        <li>Downslope gravity is (4.00)(9.81) sin 25.0° = 16.6 N.</li>
+        <li>a = 16.584/4.00 = 4.15 m/s² down the ramp. Gravity still points vertically; the components are bookkeeping along rotated axes.</li>
+      </ol>
+      </div><div class="pitfall"><h3>Common mistakes</h3>
+      <p>N is not mg on a ramp. Do not draw mg sin θ and mg cos θ as extra forces in addition to mg; show either the original force or a clear component decomposition.</p>
+      </div><h3>Your turn</h3>
+      <ol>
+        <li>What is acceleration down a frictionless 30.0° ramp?</li>
+        <li>Does doubling block mass double the ramp acceleration?</li>
+      </ol>
+      <details class="solution"><summary>Reveal practice solutions and reasoning</summary>
+      <p><strong>1.</strong> a = 9.81 sin 30.0° = 4.91 m/s².</p>
+      <p><strong>2.</strong> No. Both the downslope gravitational force and inertia double, leaving a = g sin θ unchanged.</p>
+      </details><div class="sources">Read in the supplied textbook: <a href="../Physics%20text%20%28TOC%29.pdf#page=142" target="_blank" rel="noopener">§5-3 · PDF p. 142 / print p. 106</a><a href="../Physics%20text%20%28TOC%29.pdf#page=160" target="_blank" rel="noopener">§6-1 · PDF p. 160 / print p. 124</a></div></section>
+
+    <section class="lesson" id="lesson-5-3"><label class="complete"><input type="checkbox" data-key="lesson-5-3"> Mark this lesson complete</label>
+      <h2>5.3 Friction on ramps and the threshold of slipping</h2>
+      <h3>Learning goal</h3>
+      <p>Decide whether a block remains at rest and calculate acceleration after sliding begins.</p>
+      <h3>Understand the model</h3>
+      <p>A resting block on a ramp tends to slide down because of mg sin θ. Static friction acts up the ramp to prevent that tendency if it can supply enough force. Under the simple ramp model, the threshold is mg sin θ = μₛmg cos θ, giving tan θ = μₛ. Below the threshold, actual friction is mg sin θ rather than its maximum.</p>
+      <p>If a block slides down, kinetic friction points up the ramp and the acceleration along the downward axis is g(sin θ - μₖ cos θ). If it slides up, kinetic friction points down, so gravity and friction both oppose the upward velocity. The direction of kinetic friction comes from the current sliding direction, not from a memorized picture.</p>
+      <div class="equations"><button class="copy" type="button">Copy equations</button><h3>Equations and units</h3>
+      <pre><code>rest possible if mg sin θ ≤ μₛmg cos θ
+tan θ_threshold = μₛ
+sliding down: a = g(sin θ - μₖ cos θ)</code></pre>
+      </div><div class="worked"><h3>Worked example</h3>
+      <p>A block has μₛ = 0.50 and μₖ = 0.30 on a 30.0° ramp. Released from rest, does it slide? Find its acceleration if it does.</p>
+      <ol>
+        <li>tan 30.0° = 0.577, which exceeds μₛ = 0.50, so static friction cannot hold it.</li>
+        <li>Once sliding down, a = 9.81[sin 30.0° - 0.30 cos 30.0°].</li>
+        <li>a = 2.36 m/s² down the ramp. The static coefficient determines the onset, while the kinetic coefficient determines this sliding acceleration.</li>
+      </ol>
+      </div><div class="pitfall"><h3>Common mistakes</h3>
+      <p>Do not apply kinetic friction before checking whether the object slides. A downslope-moving block can slow down on a shallow ramp if friction exceeds the downslope weight component.</p>
+      </div><h3>Your turn</h3>
+      <ol>
+        <li>Find the threshold angle if μₛ = 0.40.</li>
+        <li>A block slides upward on a ramp. Which direction does friction act?</li>
+      </ol>
+      <details class="solution"><summary>Reveal practice solutions and reasoning</summary>
+      <p><strong>1.</strong> θ = tan⁻¹(0.40) = 21.8° in this ideal dry-friction model.</p>
+      <p><strong>2.</strong> Down the ramp, opposing upward sliding. Gravity’s parallel component also points down.</p>
+      </details><div class="sources">Read in the supplied textbook: <a href="../Physics%20text%20%28TOC%29.pdf#page=160" target="_blank" rel="noopener">§6-1 · PDF p. 160 / print p. 124</a></div></section>
+
+    <section class="lesson" id="lesson-5-4"><label class="complete"><input type="checkbox" data-key="lesson-5-4"> Mark this lesson complete</label>
+      <h2>5.4 Connected masses and ideal pulleys</h2>
+      <h3>Learning goal</h3>
+      <p>Write one equation per body and use the rope constraint to solve a system.</p>
+      <h3>Understand the model</h3>
+      <p>For a taut, inextensible rope over an ideal pulley, connected objects have matching acceleration magnitudes along the rope. Draw a separate free-body diagram for each mass. Choose a positive direction for each that agrees with one assumed system motion. The same tension magnitude appears in both equations under the massless-rope, massless-pulley, frictionless assumptions.</p>
+      <p>Adding the equations eliminates internal tension and gives the acceleration of the system. Substitute back to find tension. If the calculated acceleration is negative, the actual acceleration is opposite the assumed positive directions. Tension can differ from either mass’s weight because the masses accelerate.</p>
+      <div class="equations"><button class="copy" type="button">Copy equations</button><h3>Equations and units</h3>
+      <pre><code>Atwood system, m₂ &gt; m₁:
+m₂g - T = m₂a
+T - m₁g = m₁a
+a = (m₂ - m₁)g/(m₁ + m₂)</code></pre>
+      </div><div class="worked"><h3>Worked example</h3>
+      <p>An ideal pulley connects m₁ = 2.00 kg and m₂ = 3.00 kg. Find acceleration and rope tension.</p>
+      <ol>
+        <li>Assume m₂ accelerates down and m₁ up. Adding their equations gives (3.00 - 2.00)g = (3.00 + 2.00)a.</li>
+        <li>a = 1.962 m/s², so m₂ accelerates downward at 1.96 m/s².</li>
+        <li>T = m₁(g + a) = 2.00(9.81 + 1.962) = 23.5 N. Check m₂: m₂(g - a) gives the same tension.</li>
+      </ol>
+      </div><div class="pitfall"><h3>Common mistakes</h3>
+      <p>The two masses have the same acceleration magnitude, not the same upward-signed acceleration. Keep each body’s chosen axis explicit. Do not set T equal to mg for an accelerating mass.</p>
+      </div><h3>Your turn</h3>
+      <ol>
+        <li>A 2.00 kg cart on a frictionless table connects to a 1.00 kg hanging mass. Find a and T.</li>
+        <li>In an ideal Atwood system with equal masses and no other forces, what is a?</li>
+      </ol>
+      <details class="solution"><summary>Reveal practice solutions and reasoning</summary>
+      <p><strong>1.</strong> For the cart T = 2a; for the hanging mass 9.81 - T = a. Thus a = 3.27 m/s² and T = 6.54 N.</p>
+      <p><strong>2.</strong> a = 0. The masses may remain at rest or move at constant speed if already moving.</p>
+      </details><div class="sources">Read in the supplied textbook: <a href="../Physics%20text%20%28TOC%29.pdf#page=142" target="_blank" rel="noopener">§5-3 · PDF p. 142 / print p. 106</a></div></section>
+
+    <section class="lesson" id="lesson-5-5"><label class="complete"><input type="checkbox" data-key="lesson-5-5"> Mark this lesson complete</label>
+      <h2>5.5 Simple machines, mechanical advantage, and levers</h2>
+      <h3>Learning goal</h3>
+      <p>Relate force advantage to travel distance and use torque balance for an ideal lever.</p>
+      <h3>Understand the model</h3>
+      <p>A simple machine changes the magnitude or direction of an applied force. Ramps, levers, pulleys, wedges, screws, and wheels with axles exchange force for distance. A smaller input force normally acts through a larger distance; an ideal machine conserves work rather than creating energy. Actual friction and deformation reduce useful output.</p>
+      <p>Mechanical advantage is output force divided by input force. Ideal mechanical advantage is input distance divided by output distance. A ramp has ideal advantage L/h. A frictionless movable pulley supporting a load with n equivalent vertical rope segments has ideal advantage n, and the pulling end must move n times the load’s rise. For a lever at rest, torque balance uses force times perpendicular moment arm. This is an algebra-level application of the textbook’s static equilibrium chapter.</p>
+      <div class="equations"><button class="copy" type="button">Copy equations</button><h3>Equations and units</h3>
+      <pre><code>MA = F_out/F_in
+IMA = d_in/d_out
+ideal ramp: IMA = L/h
+τ = F × perpendicular moment arm
+ideal lever: F_in r_in = F_out r_out
+efficiency = (MA/IMA) × 100%</code></pre>
+      </div><div class="worked"><h3>Worked example</h3>
+      <p>An ideal lever has an input arm of 0.80 m and output arm of 0.20 m. What input force balances a 200 N load?</p>
+      <ol>
+        <li>Torque balance: F_in(0.80) = (200)(0.20).</li>
+        <li>F_in = 50 N, giving MA = 200/50 = 4.</li>
+        <li>For a small rotation the input moves four times as far as the load. If the load rises 0.050 m, ideal input travel is 0.20 m; both works equal 10 J.</li>
+      </ol>
+      </div><div class="pitfall"><h3>Common mistakes</h3>
+      <p>Mechanical advantage greater than one does not imply efficiency greater than 100%. Use perpendicular moment arms, not an arbitrary distance to a force’s application point.</p>
+      </div><h3>Your turn</h3>
+      <ol>
+        <li>A ramp is 3.0 m long and 0.60 m high. Find ideal advantage and ideal force for a 300 N load.</li>
+        <li>A machine has IMA = 4.0 and MA = 3.0. Find efficiency.</li>
+      </ol>
+      <details class="solution"><summary>Reveal practice solutions and reasoning</summary>
+      <p><strong>1.</strong> IMA = 3.0/0.60 = 5.0; ideal force = 300/5.0 = 60 N.</p>
+      <p><strong>2.</strong> Efficiency = (3.0/4.0) × 100% = 75%.</p>
+      </details><div class="sources">Read in the supplied textbook: <a href="../Physics%20text%20%28TOC%29.pdf#page=187" target="_blank" rel="noopener">§7-2 · PDF p. 187 / print p. 151</a><a href="../Physics%20text%20%28TOC%29.pdf#page=202" target="_blank" rel="noopener">§7-6 · PDF p. 202 / print p. 166</a><a href="../Physics%20text%20%28TOC%29.pdf#page=363" target="_blank" rel="noopener">§12-1 · PDF p. 363 / print p. 327</a><a href="../Physics%20text%20%28TOC%29.pdf#page=368" target="_blank" rel="noopener">§12-2 · PDF p. 368 / print p. 332</a></div></section>
+
+    <section class="panel inquiry" id="inquiry">
+      <h2>5.6 Investigate and reflect</h2>
+      <h3>Inquiry task</h3>
+      <p>Compare lifting a small load vertically with pulling it up a gentle ramp. Measure force and travel distance, then compare input work with the change in gravitational potential energy. Research an example of a simple machine using a publicly shared source from a local First Nation or an Indigenous-led organization. Cite the community and source, respect sharing protocols, and explain the mechanical principle without treating diverse First Peoples as one culture.</p>
+      <h3>Evidence checklist</h3>
+      <ul>
+        <li>State the question and a testable prediction.</li>
+        <li>Identify independent, dependent, and controlled variables.</li>
+        <li>Record units, resolution, repeated trials, and a justified uncertainty estimate.</li>
+        <li>Use a labelled graph or table and explain slope or area when relevant.</li>
+        <li>Compare the result with the model and identify specific limitations.</li>
+        <li>Explain an improvement and connect the result to a practical application.</li>
+      </ul>
+    </section><p id="empty" class="empty" hidden>No lessons match. Try another term.</p><form class="panel quiz"><div class="eyebrow">Check understanding</div><h2>Unit checkpoint</h2><p>Select an answer for each question, then check your reasoning. You can retry.</p><fieldset data-answer="2" data-explanation="The normal balances gravity perpendicular to the ramp."><legend>1. On an otherwise unforced frictionless ramp, N equals</legend><label><input type="radio" name="q0" value="0"> mg</label><label><input type="radio" name="q0" value="1"> mg sin θ</label><label><input type="radio" name="q0" value="2"> mg cos θ</label><p class="feedback" aria-live="polite"></p></fieldset><fieldset data-answer="0" data-explanation="Ideal work in equals useful work out."><legend>2. An ideal force advantage of 4 means input distance is</legend><label><input type="radio" name="q1" value="0"> Four times the output distance</label><label><input type="radio" name="q1" value="1"> One quarter of output distance</label><label><input type="radio" name="q1" value="2"> Equal to output distance</label><p class="feedback" aria-live="polite"></p></fieldset><fieldset data-answer="1" data-explanation="It opposes relative sliding along the surface."><legend>3. For a block sliding up a ramp, kinetic friction acts</legend><label><input type="radio" name="q2" value="0"> Up the ramp</label><label><input type="radio" name="q2" value="1"> Down the ramp</label><label><input type="radio" name="q2" value="2"> Vertically upward</label><p class="feedback" aria-live="polite"></p></fieldset><button type="submit">Check answers</button><p class="score" aria-live="polite"></p></form><div class="slide-controls"><button id="prev-slide">← Previous</button><span id="slide-count" aria-live="polite"></span><button id="next-slide">Next →</button></div><div class="footnav"><a class="button" href="unit-04-forces.html">← Previous unit</a><a class="button" href="unit-06-energy-thermal-physics.html">Next unit →</a></div><footer class="footer"><p>Course sequence: <a href="https://www.vsb.bc.ca/vln/physics-11">VLN Physics 11</a>. Scope check: <a href="https://curriculum.gov.bc.ca/curriculum/science/11/physics">BC Physics 11 curriculum</a>. Physics reading: the supplied Halliday & Resnick textbook. Explanations are adapted at Grade 11 algebra level; numerical examples and practice questions are authored for these tutorials.</p><p>Textbook links open the supplied PDF at the referenced viewer page. If your viewer ignores page anchors, enter the PDF page number manually. References point to section openings; read onward within the section for the full discussion.</p></footer></main></div>
+<script>(()=>{
+  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+  let saved={};try{saved=JSON.parse(localStorage.getItem('physics11-progress')||'{}')}catch{}
+  const lessons=$$('.lesson'), search=$('#lesson-search'), mode=$('#mode');
+  let current=0;
+  function progress(){const n=$$('.complete input:checked').length; const el=$('#progress-count');if(el)el.textContent=`${n} of ${lessons.length} lessons marked complete`;if($('#progress'))$('#progress').value=n;
+    $$('.unit-card').forEach(c=>{const ids=c.dataset.lessons.split(',');const n=ids.filter(id=>saved[id]).length;c.querySelector('.completion').textContent=`${n}/${ids.length} complete`})}
+  $$('.complete input').forEach(c=>{c.checked=!!saved[c.dataset.key];c.addEventListener('change',()=>{saved[c.dataset.key]=c.checked;try{localStorage.setItem('physics11-progress',JSON.stringify(saved))}catch{}progress()})});progress();
+  function applyFilter(){const q=(search?.value||'').trim().toLowerCase();let visible=0;lessons.forEach((l,i)=>{const match=l.textContent.toLowerCase().includes(q);const show=document.body.classList.contains('mode-slides')?i===current:match;l.hidden=!show;if(show)visible++});if($('#search-status'))$('#search-status').textContent=q?`${visible} lesson${visible===1?'':'s'} match your search`:'Search explanations, equations, and examples.';if($('#empty'))$('#empty').hidden=visible>0;if($('#slide-count'))$('#slide-count').textContent=`Lesson ${current+1} of ${lessons.length}`;$$('.sidebar nav a').forEach(a=>{const target=$(a.getAttribute('href'));if(target)a.hidden=!!target.hidden});if($('#prev-slide'))$('#prev-slide').disabled=current===0;if($('#next-slide'))$('#next-slide').disabled=current===lessons.length-1}
+  search?.addEventListener('input',applyFilter);
+  mode?.addEventListener('change',()=>{document.body.className=mode.value==='study'?'':`mode-${mode.value}`;if(mode.value!=='study')$$('details.solution').forEach(d=>d.open=true);if(mode.value==='study')$$('details.solution').forEach(d=>d.open=false);if(mode.value==='slides'&&search)search.value='';applyFilter()});
+  function slide(d){if(!document.body.classList.contains('mode-slides'))return;current=Math.max(0,Math.min(lessons.length-1,current+d));applyFilter();lessons[current]?.scrollIntoView({block:'start'})}
+  $('#prev-slide')?.addEventListener('click',()=>slide(-1));$('#next-slide')?.addEventListener('click',()=>slide(1));
+  document.addEventListener('keydown',e=>{if(/INPUT|SELECT|TEXTAREA/.test(e.target.tagName))return;if(e.key==='ArrowRight')slide(1);if(e.key==='ArrowLeft')slide(-1)});
+  $('#show-answers')?.addEventListener('click',()=>$$('details.solution').forEach(d=>d.open=true));
+  $('#hide-answers')?.addEventListener('click',()=>$$('details.solution').forEach(d=>d.open=false));
+  $('#print')?.addEventListener('click',()=>window.print());
+  let printState=[];window.addEventListener('beforeprint',()=>{printState=$$('details.solution').map(d=>d.open);$$('details.solution').forEach(d=>d.open=true)});window.addEventListener('afterprint',()=>$$('details.solution').forEach((d,i)=>d.open=printState[i]));
+  $$('.copy').forEach(b=>b.addEventListener('click',async()=>{const t=b.parentElement.querySelector('pre').textContent;try{await navigator.clipboard.writeText(t);b.textContent='Copied'}catch{const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(b.parentElement.querySelector('pre'));selection.removeAllRanges();selection.addRange(range);b.textContent='Selected: copy with Ctrl/Cmd+C'}setTimeout(()=>b.textContent='Copy equations',2500)}));
+  $$('.quiz').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();let score=0;let answered=0;form.querySelectorAll('fieldset').forEach(f=>{const input=f.querySelector('input:checked'),out=f.querySelector('.feedback');if(input)answered++;const ok=input&&input.value===f.dataset.answer;if(ok)score++;out.textContent=!input?'Choose an answer.':ok?'Correct. '+f.dataset.explanation:'Try again. '+f.dataset.explanation;out.style.color=ok?'#216348':'#8a381b'});form.querySelector('.score').textContent=`${score}/${form.querySelectorAll('fieldset').length} correct; ${answered} answered. You can revise and check again.`}));
+  applyFilter();
+  const bank=$('#textbook-problems');
+  if(bank){
+    const unit=$('#problem-unit'),query=$('#problem-search'),chapters=$$('.problem-chapter');
+    function filterProblems(){
+      const searchText=query.value.trim().toLowerCase(),words=searchText.split(/\s+/).filter(Boolean),exactNumber=/^\d+[.-]\d+$/.test(searchText)?searchText.replace('-','.'):null;let count=0,sets=0;
+      chapters.forEach(ch=>{
+        const eligible=unit.value==='all'||ch.dataset.units.split(',').includes(unit.value);let matches=0;
+        ch.querySelectorAll('.problem-module').forEach(module=>{
+          let moduleCount=0;
+          module.querySelectorAll('.problem-number').forEach(link=>{const show=eligible&&(exactNumber?link.dataset.number===exactNumber:words.every(word=>link.dataset.search.includes(word)));link.hidden=!show;if(show){moduleCount++;matches++}});
+          module.hidden=moduleCount===0;
+          const tag=module.querySelector('.topic-tag');if(tag.textContent!=='Mixed review'){
+            const focus=unit.value==='all'?!!module.dataset.units:module.dataset.units.split(',').includes(unit.value);
+            tag.textContent=focus?'Lesson focus':'Extension';tag.classList.toggle('focus',focus);
+          }
+        });
+        ch.hidden=!eligible||matches===0;if(!ch.hidden){sets++;count+=matches;if(words.length)ch.open=true}
+      });
+      $('#problem-status').textContent=`${count.toLocaleString()} problem${count===1?'':'s'} in ${sets} chapter${sets===1?'':'s'}${words.length?count===1?' matches your search':' match your search':''}.`;
+      $('#problem-empty').hidden=count>0;
+    }
+    function loadPage(page){const img=page.querySelector('img');if(!img.getAttribute('src'))img.src=img.dataset.src}
+    function revealPage(id){const page=document.getElementById(id);if(!page)return null;const chapter=page.closest('.problem-chapter');chapter.hidden=false;chapter.open=true;page.open=true;loadPage(page);return page}
+    unit.addEventListener('change',filterProblems);query.addEventListener('input',filterProblems);
+    $('#problem-reset').addEventListener('click',()=>{unit.value='all';query.value='';filterProblems()});
+    $$('.problem-page').forEach(page=>{
+      page.addEventListener('toggle',()=>{if(page.open)loadPage(page)});
+      page.querySelector('.close-problem-page').addEventListener('click',()=>{page.open=false;page.querySelector('summary').focus()});
+    });
+    $$('.problem-number').forEach(link=>link.addEventListener('click',event=>{
+      if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+      event.preventDefault();$$('.problem-number.selected').forEach(old=>old.classList.remove('selected'));link.classList.add('selected');
+      $$('.problem-marker').forEach(marker=>marker.hidden=true);$$('.page-selection').forEach(label=>label.textContent='');
+      const pages=link.dataset.pages.split(',');pages.forEach((number,i)=>{const page=revealPage(`problem-page-${number}`);page.querySelector('.page-selection').textContent=i===0?`Problem ${link.dataset.number} starts here`:`Possible continuation of problem ${link.dataset.number}`});
+      const page=document.getElementById(link.dataset.target),marker=page.querySelector('.problem-marker');marker.hidden=false;marker.style.top=`${Number(link.dataset.y)/796.68*100}%`;marker.style.left=`${Number(link.dataset.x)/667.3*100-0.5}%`;
+      page.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+      page.querySelector('summary').focus({preventScroll:true});
+    }));
+    function fromHash(){if(/^#problem-page-\d+$/.test(location.hash))revealPage(location.hash.slice(1));if(/^#problems-ch-\d+$/.test(location.hash)){const chapter=document.getElementById(location.hash.slice(1));if(chapter)chapter.open=true}}
+    window.addEventListener('hashchange',fromHash);filterProblems();fromHash();
+  }
+  // Each diagram is generated from the same equations explained in its readout.
+  const box=$('.explorer');if(!box)return;const svg=box.querySelector('svg'),out=box.querySelector('output');
+  const read=id=>Number(box.querySelector('#'+id)?.value||0), esc=t=>String(t).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  const text=(x,y,t,c='#52677b')=>`<text x="${x}" y="${y}" fill="${c}" font-size="15" font-family="system-ui">${esc(t)}</text>`;
+  const line=(x1,y1,x2,y2,c='#126b83',w=3)=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-width="${w}"/>`;
+  const arrow=(x1,y1,x2,y2,c='#126b83')=>{const a=Math.atan2(y2-y1,x2-x1),bx=x2-12*Math.cos(a),by=y2-12*Math.sin(a),dx=5*Math.sin(a),dy=5*Math.cos(a);return line(x1,y1,x2,y2,c)+`<polygon points="${x2},${y2} ${bx+dx},${by-dy} ${bx-dx},${by+dy}" fill="${c}"/>`};
+  const circle=(x,y,r,c)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${c}"/>`;
+  function axes(xLabel,yLabel){return line(60,260,600,260,'#a7b8c5',1)+line(60,260,60,35,'#a7b8c5',1)+text(320,310,xLabel)+text(15,22,yLabel)}
+  function draw(){const kind=box.dataset.kind;let h='',r='';
+    if(kind==='vector'){const a=read('magnitude'),deg=read('angle'),rad=deg*Math.PI/180,x=a*Math.cos(rad),y=a*Math.sin(rad);const ox=300,oy=150,s=5;h=line(70,oy,590,oy,'#b9c8d2',1)+line(ox,35,ox,260,'#b9c8d2',1)+arrow(ox,oy,ox+x*s,oy-y*s)+line(ox,oy,ox+x*s,oy,'#b96720')+line(ox+x*s,oy,ox+x*s,oy-y*s,'#b96720')+circle(ox+x*s,oy-y*s,6,'#126b83')+text(490,175,'+x')+text(310,45,'+y')+text(30,290,'Blue: vector   Orange: component projections');r=`Magnitude = ${a.toFixed(1)} N; angle = ${deg}° from +x\nFₓ = ${x.toFixed(2)} N; Fᵧ = ${y.toFixed(2)} N`}
+    if(kind==='motion'){const v0=read('initial-speed'),a=read('acceleration'),t=read('duration'),vf=v0+a*t,dx=v0*t+.5*a*t*t,min=Math.min(0,v0,vf),max=Math.max(1,v0,vf),span=max-min;const yy=v=>245-(v-min)*195/span;h=axes('Time (s)','Velocity (m/s)')+line(60,yy(0),600,yy(0),'#b9c8d2',1)+`<polygon points="60,${yy(0)} 60,${yy(v0)} 580,${yy(vf)} 580,${yy(0)}" fill="#d9efef"/>`+line(60,yy(v0),580,yy(vf))+text(65,yy(v0)-8,`${v0.toFixed(1)} m/s`)+text(435,yy(vf)-8,`${vf.toFixed(1)} m/s`)+text(60,280,'0')+text(580,280,String(t));r=`Final velocity = ${vf.toFixed(2)} m/s\nDisplacement (signed graph area) = ${dx.toFixed(2)} m\nAcceleration (slope) = ${a.toFixed(1)} m/s²; elapsed time = ${t.toFixed(1)} s`}
+    if(kind==='projectile'){const v=read('launch-speed'),deg=read('launch-angle'),height=read('height'),rad=deg*Math.PI/180,vx=v*Math.cos(rad),vy=v*Math.sin(rad),t=(vy+Math.sqrt(vy*vy+2*9.81*height))/9.81,R=vx*t,H=height+vy*vy/(2*9.81),xScale=520/Math.max(1,R),yScale=205/Math.max(1,H);let pts=[];for(let i=0;i<=80;i++){const ti=t*i/80;pts.push(`${60+vx*ti*xScale},${260-(height+vy*ti-.5*9.81*ti*ti)*yScale}`)}h=axes('Horizontal distance (m)','Height above ground (m)')+`<polyline points="${pts.join(' ')}" fill="none" stroke="#126b83" stroke-width="3"/>`+text(64,280,'0')+text(480,280,`${R.toFixed(1)} m`)+text(80,45,`Peak: ${H.toFixed(1)} m`);r=`v₀ₓ = ${vx.toFixed(2)} m/s; v₀ᵧ = ${vy.toFixed(2)} m/s\nFlight time = ${t.toFixed(2)} s; range = ${R.toFixed(2)} m\nMaximum height above ground = ${H.toFixed(2)} m. No drag; axes scale independently.`}
+    if(kind==='forces'){const m=read('mass'),p=read('push'),mu=read('friction'),N=m*9.81,f=mu*N,a=(p-f)/m;h=line(70,235,600,235,'#a7b8c5',2)+`<rect x="265" y="130" width="100" height="100" fill="#e8f3f4" stroke="#126b83"/>`+arrow(315,180,315,55)+text(325,65,`N = ${N.toFixed(1)} N`)+arrow(315,180,315,280,'#b96720')+text(325,280,`mg = ${N.toFixed(1)} N`)+arrow(315,180,520,180)+text(420,155,`Pull: ${p.toFixed(1)} N`)+arrow(315,180,110,180,'#b96720')+text(60,155,`Friction: ${f.toFixed(1)} N`)+text(65,25,'Forces on a block already sliding right; arrows show directions only');r=`Normal force = ${N.toFixed(2)} N; kinetic friction = ${f.toFixed(2)} N\nHorizontal net force = ${(p-f).toFixed(2)} N; acceleration = ${a.toFixed(2)} m/s²\nThe block is assumed to be sliding right at this instant; negative a means it slows.`}
+    if(kind==='ramp'){const m=read('mass'),deg=read('incline'),mu=read('friction'),rad=deg*Math.PI/180,N=m*9.81*Math.cos(rad),par=m*9.81*Math.sin(rad),a=9.81*(Math.sin(rad)-mu*Math.cos(rad));const x1=120,y1=255,x2=480,y2=255-190*Math.tan(rad)/Math.tan(60*Math.PI/180);h=line(x1,y1,x2,y2,'#126b83',4)+line(x1,y1,x2,y1,'#a7b8c5',1)+`<rect x="280" y="${(y1+y2)/2-30}" width="50" height="30" fill="#d9efef" stroke="#126b83" transform="rotate(${-Math.atan2(y1-y2,x2-x1)*180/Math.PI} 300 ${(y1+y2)/2})"/>`+text(70,45,`Ramp angle: ${deg}° (illustration not to scale)`)+text(400,280,'Downhill is positive')+text(80,90,`Normal: ${N.toFixed(1)} N`)+text(80,115,`Downslope gravity: ${par.toFixed(1)} N`)+text(80,140,`Uphill friction: ${(mu*N).toFixed(1)} N`);r=`N = mg cos θ = ${N.toFixed(2)} N\na = g(sin θ - μₖ cos θ) = ${a.toFixed(2)} m/s² downhill\nModel: already sliding downhill; this is not a static-friction release test.`}
+    if(kind==='energy'){const m=read('mass'),h0=read('start-height'),hNow=read('current-height')/100*h0,U=m*9.81*hNow,K=m*9.81*(h0-hNow),E=U+K,v=Math.sqrt(2*9.81*(h0-hNow)),scale=190/Math.max(1,E);h=line(60,260,600,260,'#a7b8c5',1)+`<rect x="110" y="${260-U*scale}" width="95" height="${U*scale}" fill="#126b83"/><rect x="280" y="${260-K*scale}" width="95" height="${K*scale}" fill="#dba34f"/><rect x="450" y="${260-E*scale}" width="95" height="${E*scale}" fill="#52677b"/>`+text(110,285,'Potential U')+text(280,285,'Kinetic K')+text(450,285,'Total E')+text(80,35,'Energy (J): frictionless fall from rest');r=`Current height = ${hNow.toFixed(2)} m above the chosen zero\nU = ${U.toFixed(2)} J; K = ${K.toFixed(2)} J; total = ${E.toFixed(2)} J\nSpeed = ${v.toFixed(2)} m/s (mass cancels from speed).`}
+    if(kind==='circuit'){const V=read('voltage'),r1=read('resistance1'),r2=read('resistance2'),parallel=box.querySelector('#connection').value==='parallel',R=parallel?r1*r2/(r1+r2):r1+r2,I=V/R,i1=parallel?V/r1:I,i2=parallel?V/r2:I,v1=i1*r1,v2=i2*r2;h=line(90,80,550,80)+line(90,80,90,140)+line(90,180,90,235)+line(90,235,550,235)+line(65,140,115,140,'#b96720',4)+line(75,180,105,180,'#b96720',4)+text(20,167,`${V} V`);if(parallel){h+=line(250,80,250,125)+line(250,175,250,235)+line(550,80,550,125)+line(550,175,550,235)+`<rect x="225" y="125" width="50" height="50" fill="#e8f3f4" stroke="#126b83"/><rect x="525" y="125" width="50" height="50" fill="#e8f3f4" stroke="#126b83"/>`+text(280,155,`${r1} Ω`)+text(460,155,`${r2} Ω`)}else{h+=line(550,80,550,235)+`<rect x="210" y="60" width="80" height="40" fill="#e8f3f4" stroke="#126b83"/><rect x="390" y="60" width="80" height="40" fill="#e8f3f4" stroke="#126b83"/>`+text(220,50,`${r1} Ω`)+text(400,50,`${r2} Ω`)}h+=text(120,280,`Ideal battery, ideal wires, two ${parallel?'parallel':'series'} resistors`);r=`Equivalent resistance = ${R.toFixed(2)} Ω; source current = ${I.toFixed(2)} A\nR₁: ${v1.toFixed(2)} V, ${i1.toFixed(2)} A; R₂: ${v2.toFixed(2)} V, ${i2.toFixed(2)} A\nTotal power = ${(V*I).toFixed(2)} W.`}
+    if(kind==='wave'){const f=read('frequency'),v=read('wave-speed'),A=read('amplitude'),lambda=v/f,L=4;let pts=[];for(let i=0;i<=200;i++){const x=L*i/200;pts.push(`${60+520*x/L},${150-65*A*Math.sin(2*Math.PI*x/lambda)}`)}h=line(60,150,600,150,'#a7b8c5',1)+line(60,250,600,250,'#a7b8c5',1)+`<polyline points="${pts.join(' ')}" fill="none" stroke="#126b83" stroke-width="3"/>`+text(15,25,'Displacement (cm) at one instant')+text(60,275,'0 m')+text(545,275,'4.0 m')+text(75,305,'Position along medium; this is a spatial snapshot, not a time graph');r=`Frequency = ${f.toFixed(1)} Hz; speed = ${v.toFixed(1)} m/s\nWavelength = v/f = ${lambda.toFixed(2)} m; period = ${(1/f).toFixed(3)} s\nAmplitude = ${A.toFixed(1)} cm. Changing amplitude leaves λ unchanged in this model.`}
+    svg.innerHTML=`<title>${esc(box.querySelector('h2').textContent)}</title>`+h;out.textContent=r;
+  }
+  box.querySelectorAll('input,select').forEach(i=>i.addEventListener('input',draw));draw();
+})();
+</script></body></html>
