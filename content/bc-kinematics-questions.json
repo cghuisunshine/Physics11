@@ -1,0 +1,1844 @@
+{
+  "source": "bc_science_physics_11.pdf",
+  "chapter": 2,
+  "title": "Kinematics",
+  "question_count": 101,
+  "groups": [
+    {
+      "id": "set-1",
+      "topic": "2.1",
+      "kind": "Warm-up",
+      "title": "Speed and velocity: warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              43,
+              54,
+              120,
+              575,
+              157
+            ]
+          ],
+          "text": "Imagine you are on a hike from a parking lot to a waterfall 2 km away. Is there a way you could describe to  someone that the hike was 4 km long and 0 km long  Explain your answer.",
+          "id": "q-1",
+          "answer_html": "<p>A round trip to the waterfall and back has <strong>distance 4 km</strong> (2 km out + 2 km back), but <strong>displacement 0 km</strong>, because you finish at the parking lot where you started.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-2",
+      "topic": "2.1",
+      "kind": "Sample prompt",
+      "title": "Sample 2.1.1: calculating displacement",
+      "questions": [
+        {
+          "label": "2.1.1",
+          "boxes": [
+            [
+              44,
+              54,
+              134,
+              575,
+              166
+            ]
+          ],
+          "text": "A person is 2.0 m to the left of a viewpoint sign enjoying the view. She moves 4.5 m to the right of the sign to get a  better view. What is the person's displacement",
+          "id": "q-2",
+          "answer_html": "<p>Take right as positive: x<sub>i</sub> = −2.0 m and x<sub>f</sub> = +4.5 m.</p><p><strong>Δx = x<sub>f</sub> − x<sub>i</sub> = 4.5 − (−2.0) = 6.5 m right.</strong> The source sample’s printed 2.5 m result is a sign error.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-3",
+      "topic": "2.1",
+      "kind": "Practice",
+      "title": "Practice 2.1.1: calculating displacement",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              44,
+              54,
+              367,
+              575,
+              520
+            ]
+          ],
+          "text": "1.  A woman walking her dog travels 200 m north  then 400 m west  then 500 m south. a   What was the total distance she travelled b   What was the magnitude of her displacement for the entire trip",
+          "id": "q-3",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>1100 m</strong>: distance = 200 + 400 + 500.</li><li>Net components are 400 m west and 300 m south. Magnitude = √(400² + 300²) = <strong>500 m</strong>.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              45,
+              54,
+              81,
+              575,
+              366
+            ]
+          ],
+          "text": "2.  The diagram below shows the displacements of a golf ball caused by a rookie golfer attempting to reach  hole number 7 on Ocean View Golf and Country Club. The golfer requires six shots to put the ball in the hole.  The diagram shows the six displacements of the ball.  m 75 m 100  m 100 28 m 125 m 290 m to hole 75 m a   What is the total distance the golf ball travelled while the golfer was playing the seventh hole b   What is the resultant displacement of the ball",
+          "id": "q-4",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Distance = 100 + 100 + 75 + 125 + 75 + 28 = <strong>503 m</strong>.</li><li>Displacement is the direct arrow from the tee to the hole: <strong>290 m toward the hole</strong> (right in the diagram).</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              45,
+              54,
+              383,
+              575,
+              555
+            ]
+          ],
+          "text": "3.  What is the total distance and displacement the dog takes after it leaves the front porch 8 m 4 m 8 m stop 4 m 8 m 6 m 53¡ front  porch",
+          "id": "q-5",
+          "answer_html": "<p>Distance along the route = 6 + 4 + 8 + 8 + 4 + 8 = <strong>38 m</strong>.</p><p>The final point is 8 m right and 6 m up from the porch. Displacement magnitude = √(8² + 6²) = <strong>10 m, 53° right of upward</strong> (equivalently 37° above the horizontal).</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-4",
+      "topic": "2.1",
+      "kind": "Quick check",
+      "title": "Average and instantaneous speed: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              46,
+              54,
+              301,
+              575,
+              382
+            ]
+          ],
+          "text": "1.  a   What is the difference between average speed and instantaneous speed b   Under what condition may average speed and instantaneous speed be the same",
+          "id": "q-6",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Average speed is total distance ÷ total elapsed time. Instantaneous speed is the speed at one particular instant.</li><li>They are the same throughout the interval when the speed is constant. A particular instantaneous value can also happen to equal the average during a changing-speed trip.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              46,
+              54,
+              409,
+              575,
+              437
+            ]
+          ],
+          "text": "2.  A tourist travels 320 km in 3.6 h. What is her average speed for the trip",
+          "id": "q-7",
+          "answer_html": "<p>v̄ = d/t = 320/3.6 = 88.9 km/h ≈ <strong>89 km/h</strong>.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              46,
+              54,
+              463,
+              575,
+              491
+            ]
+          ],
+          "text": "3.  A trucker travels 65 km at an average speed of 85 km/h. How long does the trip take",
+          "id": "q-8",
+          "answer_html": "<p>t = d/v = 65/85 = 0.765 h = 45.9 min ≈ <strong>0.76 h, or 46 min</strong>.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              46,
+              54,
+              518,
+              575,
+              545
+            ]
+          ],
+          "text": "4.  If your car averages 92 km/h for a 5.0 h trip  how far will you go",
+          "id": "q-9",
+          "answer_html": "<p>d = vt = (92)(5.0) = <strong>460 km</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-5",
+      "topic": "2.1",
+      "kind": "Sample prompt",
+      "title": "Samples 2.1.2 and 2.1.3: solving motion problems",
+      "questions": [
+        {
+          "label": "2.1.2",
+          "boxes": [
+            [
+              48,
+              54,
+              75.8,
+              575,
+              95
+            ]
+          ],
+          "text": "You are on a skateboard and moving to the right covering 0.5 m each second for 10 s. What is your velocity",
+          "id": "q-10",
+          "answer_html": "<p>v = Δx/Δt = 0.5 m / 1 s = <strong>0.5 m/s right</strong>. Over 10 s the displacement is 5.0 m, which gives the same velocity.</p>"
+        },
+        {
+          "label": "2.1.3",
+          "boxes": [
+            [
+              48,
+              54,
+              328.5,
+              575,
+              347
+            ]
+          ],
+          "text": "You are on a skateboard and moving to the right covering 0.5 m each second for 10 s. What is your velocity",
+          "id": "q-11",
+          "answer_html": "<p>Plot position increasing from (0 s, 0 m) to (10 s, 5.0 m). Its slope is (5.0 − 0)/(10 − 0) = <strong>+0.5 m/s</strong>, so the velocity is <strong>0.5 m/s right</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-6",
+      "topic": "2.1",
+      "kind": "Practice",
+      "title": "Practice 2.1.3: solving motion problems graphically",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              49,
+              54,
+              79,
+              575,
+              405
+            ]
+          ],
+          "text": "1.  Describe the motion represented in each of the following position-time graphs.  d Tt a  d Tt b  d   Tt c",
+          "id": "q-12",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>A horizontal position-time line: <strong>at rest</strong>; position remains constant.</li><li>A straight line with positive slope: <strong>constant positive velocity</strong>.</li><li>A straight line with negative slope: <strong>constant negative velocity</strong>. The object moves toward smaller positions.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              49,
+              54,
+              412,
+              575,
+              564
+            ]
+          ],
+          "text": "2.  Sketch a graph of each of the following situations. a   A golf ball is rolling towards a cup at 1.5 m/s [west]. b   A person is watching from the view of the cup and seeing the ball roll 1.5 m/s [east]. c   A person is traveling at 1.5 m/s [west] watching the cup roll towards the hole.",
+          "id": "q-13",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Choose east as positive and start at x = 0. A westward ball has <strong>x(t) = −1.5t m</strong>: a straight line with negative slope.</li><li>For the explicitly stated eastward observation, <strong>x(t) = +1.5t m</strong>: a straight line with positive slope.</li><li>Treat the cup as fixed to the ground. A person moving west at −1.5 m/s sees the cup move east relative to them: v<sub>cup/person</sub> = 0 − (−1.5) = <strong>+1.5 m/s</strong>. Its relative-position graph rises linearly.</li></ol><p>The wording of (b) and (c) is awkward: a stationary observer at the cup would not reverse the ball’s actual compass direction. The sketches below show the directions stated in (a) and (b), and the relative motion described in (c).</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"Position sketches with east positive\"><title>Position sketches with east positive</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M232 54V226\" stroke=\"#dce4e1\"/><text x=\"232\" y=\"246\" text-anchor=\"middle\">2</text><path d=\"M402 54V226\" stroke=\"#dce4e1\"/><text x=\"402\" y=\"246\" text-anchor=\"middle\">4</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">-6</text><path d=\"M62 140H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"144\" text-anchor=\"end\">0</text><path d=\"M62 54H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"58\" text-anchor=\"end\">6</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><path d=\"M62 140H402\" stroke=\"#506770\"/><polyline points=\"62.00,140.00 402.00,226.00\" fill=\"none\" stroke=\"#bc493e\" stroke-width=\"2.5\"/><polyline points=\"62.00,140.00 402.00,54.00\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">Time (s)</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">Position (m)</text></svg><figcaption>Position sketches with east positive. <span style=\"color:#bc493e\">(a) ball west</span>; <span style=\"color:#096a70\">(b) stated eastward motion; (c) apparent cup motion</span>.</figcaption></figure>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              49,
+              54,
+              592,
+              575,
+              710
+            ]
+          ],
+          "text": "3.  a   Fill in the data table if a car is traveling at 30 km/h through a school zone. Time  s 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 Distance  m b   Graph this data on a distance vs. time graph.",
+          "id": "q-14",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>30 km/h = 30/3.6 = <strong>8.333… m/s</strong>. Assuming d = 0 at t = 0, use d = 8.333…t.</li><li>Plot the table points and join them with a straight line through the origin. Its slope is <strong>8.33 m/s</strong>.</li></ol><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Time (s)</th><th scope=\"col\">Distance (m)</th></tr></thead><tbody><tr><td>1</td><td>8.33</td></tr><tr><td>2</td><td>16.67</td></tr><tr><td>3</td><td>25.00</td></tr><tr><td>4</td><td>33.33</td></tr><tr><td>5</td><td>41.67</td></tr><tr><td>6</td><td>50.00</td></tr><tr><td>7</td><td>58.33</td></tr><tr><td>8</td><td>66.67</td></tr></tbody></table></div><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"Distance-time graph at 30 km/h\"><title>Distance-time graph at 30 km/h</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M232 54V226\" stroke=\"#dce4e1\"/><text x=\"232\" y=\"246\" text-anchor=\"middle\">4</text><path d=\"M402 54V226\" stroke=\"#dce4e1\"/><text x=\"402\" y=\"246\" text-anchor=\"middle\">8</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">0</text><path d=\"M62 183H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"187\" text-anchor=\"end\">20</text><path d=\"M62 140H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"144\" text-anchor=\"end\">40</text><path d=\"M62 97H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"101\" text-anchor=\"end\">60</text><path d=\"M62 54H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"58\" text-anchor=\"end\">80</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><polyline points=\"62.00,226.00 402.00,82.67\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><circle cx=\"62\" cy=\"226\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"402\" cy=\"82.6667\" r=\"3.5\" fill=\"#096a70\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">Time (s)</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">Position (m)</text></svg><figcaption>Distance-time graph at 30 km/h. <span style=\"color:#096a70\">d = (8.333… m/s)t</span>.</figcaption></figure>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-7",
+      "topic": "2.1",
+      "kind": "Investigation",
+      "title": "Investigation 2-1: measuring the speed of a model car",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              50,
+              54,
+              630,
+              575,
+              643.4
+            ]
+          ],
+          "text": "1.  What does the slope of a distance-time graph represent",
+          "id": "q-15",
+          "answer_html": "<p>For a cumulative distance-time graph, slope = Δdistance/Δtime, so it represents <strong>speed</strong>. A secant gives average speed; a tangent gives instantaneous speed.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              50,
+              54,
+              643.4,
+              575,
+              656.9
+            ]
+          ],
+          "text": "2.  Find the average speed of the toy car over five 1 s intervals of the trip.",
+          "id": "q-16",
+          "answer_html": "<p><strong>Your measured distances are needed.</strong> For each one-second interval, v̄<sub>k</sub> = [d(k s) − d((k−1) s)] / 1 s, for k = 1, 2, 3, 4, 5. If you measured distance in centimetres, report speed in cm/s.</p><p>The overall five-second average is [d(5 s) − d(0)]/5 s; it also equals the arithmetic mean of the five equal-duration interval speeds.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              50,
+              54,
+              656.9,
+              575,
+              670.4
+            ]
+          ],
+          "text": "3.  Compare your slope of the distance-time graph with your average speed over the five 1 s intervals. ",
+          "id": "q-17",
+          "answer_html": "<p>Both calculations measure speed. For nearly uniform motion, the distance-time graph’s slope and the five interval averages should be approximately equal. For changing speed, each interval average can differ; compare a secant slope over the same interval. A best-fit slope across the whole trip may differ slightly because of measurement error.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              50,
+              54,
+              670.4,
+              575,
+              705
+            ]
+          ],
+          "text": "4.  Why might the average speed of the car during the first 1 s intervals be less than the average speed later in the  trip",
+          "id": "q-18",
+          "answer_html": "<p>The car generally starts from rest and accelerates before reaching its steady running speed, so it covers less distance in the first one-second interval. Startup friction and slack in the tape can also affect the first measurement.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          50,
+          54,
+          87,
+          575,
+          610
+        ]
+      ]
+    },
+    {
+      "id": "set-8",
+      "topic": "2.1",
+      "kind": "Section review",
+      "title": "2.1 Review: speed and velocity",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              51,
+              44,
+              82.9257,
+              295,
+              298.9257
+            ]
+          ],
+          "text": "1.  Can objects with the same speed have different  velocities  Why or why not",
+          "id": "q-19",
+          "answer_html": "<p><strong>Yes.</strong> Speed gives magnitude only; velocity also gives direction. Two cars travelling 50 km/h, one east and one west, have equal speeds but different velocities.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              51,
+              44,
+              298.9257,
+              295,
+              501.4255
+            ]
+          ],
+          "text": "2.  What are two ways of describing the direction of an  object's motion",
+          "id": "q-20",
+          "answer_html": "<p>Use <strong>compass directions</strong> (north, south, east, west) or a <strong>chosen sign convention</strong> (for example, right positive and left negative). State the convention before calculating.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              51,
+              44,
+              501.4255,
+              295,
+              715
+            ]
+          ],
+          "text": "3.  If you run with an average speed of 12.0 km/h  how  far will you go in 3.2 min",
+          "id": "q-21",
+          "answer_html": "<p>t = 3.2/60 h. Distance = (12.0)(3.2/60) = <strong>0.64 km = 640 m</strong>.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              51,
+              302,
+              83.1501,
+              576,
+              380.1501
+            ]
+          ],
+          "text": "4.  If the average speed of your private jet is   8.0 w 10 2  km/h  how long will it take you to   travel a distance of 1.8 w 10 3  km",
+          "id": "q-22",
+          "answer_html": "<p>t = d/v = (1.8 × 10³)/(8.0 × 10²) = 2.25 h ≈ <strong>2.3 h</strong> (two significant figures).</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              51,
+              302,
+              380.1501,
+              576,
+              715
+            ]
+          ],
+          "text": "5.  A red ant travels across a driveway  which is 3.5 m  wide  at an average speed of 2.6 cm/s. How long  will the ant take to cross the driveway  Express your  answer  a  in seconds and  b  in minutes.",
+          "id": "q-23",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>3.5 m = 350 cm. t = 350/2.6 = 134.6 s ≈ <strong>1.3 × 10² s</strong>.</li><li>t = 134.6/60 = 2.244 min ≈ <strong>2.2 min</strong>.</li></ol>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              52,
+              59,
+              48.7507,
+              310,
+              264.7507
+            ]
+          ],
+          "text": "6.  If your car moves with a steady speed of 122 km/h  for 20.0 min  then at a steady speed of 108 km/h for  30.0 min  what is the average speed of your car for  the entire trip",
+          "id": "q-24",
+          "answer_html": "<p>Total distance = 122(20/60) + 108(30/60) = 94.667 km. Total time = 50.0/60 h.</p><p>v̄ = 94.667/(50.0/60) = <strong>113.6 km/h ≈ 114 km/h</strong>. Weight speeds by time rather than taking their simple mean.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              52,
+              59,
+              264.7507,
+              310,
+              715
+            ]
+          ],
+          "text": "7.  A car moves with a steady speed of 84 km/h for   45 min  then 96 km/h for 20 min. a   What was the total distance travelled during the  whole trip b   What is its average speed for the whole trip",
+          "id": "q-25",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Distance = 84(45/60) + 96(20/60) = 63 + 32 = <strong>95 km</strong>.</li><li>Average speed = 95/(65/60) = 87.69 km/h ≈ <strong>88 km/h</strong>.</li></ol>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              52,
+              317,
+              48.7507,
+              576,
+              715
+            ]
+          ],
+          "text": "8.  An object is moving with uniformly increasing  speed. Its speed at time zero is 0 m/s. a   If its average speed during the first second is   14 m/s  at what time will its instantaneous speed  be 14 m/s b   What is its instantaneous speed at the end of the  first second",
+          "id": "q-26",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>For uniform acceleration from rest, average speed during the first second is half the final speed. Thus v(1 s) = 28 m/s and a = 28 m/s². The speed 14 m/s occurs at <strong>t = 0.50 s</strong>.</li><li>At t = 1.0 s, the instantaneous speed is <strong>28 m/s</strong>.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-9",
+      "topic": "2.2",
+      "kind": "Warm-up",
+      "title": "Acceleration: warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              53,
+              54,
+              126,
+              575,
+              365
+            ]
+          ],
+          "text": "Below are two blank speed-time graphs.   On graph  a  sketch the slope that represents a sports car traveling at constant speed.   On graph  b  sketch the slope of the same car starting from rest and speeding up at a constant rate.   Speed Speed vs. Time Speed Speed vs. Time Time a   b Time",
+          "id": "q-27",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Draw a <strong>horizontal line above zero</strong>: v = constant and a = 0.</li><li>Draw a <strong>straight rising line from the origin</strong>: v = at, with a positive constant slope.</li></ol><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"Illustrative speed-time sketches\"><title>Illustrative speed-time sketches</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M232 54V226\" stroke=\"#dce4e1\"/><text x=\"232\" y=\"246\" text-anchor=\"middle\">2</text><path d=\"M402 54V226\" stroke=\"#dce4e1\"/><text x=\"402\" y=\"246\" text-anchor=\"middle\">4</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">0</text><path d=\"M62 140H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"144\" text-anchor=\"end\">2.5</text><path d=\"M62 54H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"58\" text-anchor=\"end\">5</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><polyline points=\"62.00,122.80 402.00,122.80\" fill=\"none\" stroke=\"#bc493e\" stroke-width=\"2.5\"/><polyline points=\"62.00,226.00 402.00,88.40\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">Time (s)</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">Speed (arbitrary units)</text></svg><figcaption>Illustrative speed-time sketches. <span style=\"color:#bc493e\">(a) constant speed</span>; <span style=\"color:#096a70\">(b) uniform acceleration from rest</span>.</figcaption></figure>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-10",
+      "topic": "2.2",
+      "kind": "Sample prompt",
+      "title": "Sample 2.2.1: calculating acceleration",
+      "questions": [
+        {
+          "label": "2.2.1",
+          "boxes": [
+            [
+              54,
+              54,
+              75.8,
+              575,
+              108
+            ]
+          ],
+          "text": "A runner racing in a 100 m dash accelerates from rest to a speed of 9.0 m/s in 4.5 s. What was his average  acceleration during this time interval",
+          "id": "q-28",
+          "answer_html": "<p>a = (v<sub>f</sub> − v<sub>i</sub>)/t = (9.0 − 0)/4.5 = <strong>2.0 m/s²</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-11",
+      "topic": "2.2",
+      "kind": "Practice",
+      "title": "Practice 2.2.1: calculating acceleration",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              54,
+              54,
+              305,
+              575,
+              428
+            ]
+          ],
+          "text": "1.  What is the average acceleration for the following a   A car speeds up from 0 km/h to 60.0 km/h in 3.00 s.   b   A runner accelerates from rest to 9.00 m/s in 3.00 s.",
+          "id": "q-29",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>60.0 km/h = 16.667 m/s. a = (16.667 − 0)/3.00 = <strong>5.56 m/s²</strong>.</li><li>a = (9.00 − 0)/3.00 = <strong>3.00 m/s²</strong>.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              54,
+              54,
+              494,
+              575,
+              524
+            ]
+          ],
+          "text": "2.  What is the average acceleration of a truck that accelerates from 45.0 km/h to 60.0 km/h in 7.50 s",
+          "id": "q-30",
+          "answer_html": "<p>Δv = (60.0 − 45.0)/3.6 = 4.1667 m/s. a = 4.1667/7.50 = <strong>0.556 m/s²</strong>.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              54,
+              54,
+              588,
+              575,
+              625
+            ]
+          ],
+          "text": "3.  A car travelling 120 km/h brakes hard to avoid hitting a deer on the road  slowing to 60 km/h in 4.0 s. What is  its acceleration  Why is it negative",
+          "id": "q-31",
+          "answer_html": "<p>Take the initial direction of travel as positive. a = [(60 − 120)/3.6]/4.0 = −4.167 m/s² ≈ <strong>−4.2 m/s²</strong>. The acceleration is negative because velocity is decreasing in that positive direction.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-12",
+      "topic": "2.2",
+      "kind": "Section review",
+      "title": "2.2 Review: acceleration",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              57,
+              44,
+              82.9257,
+              295,
+              555.4256
+            ]
+          ],
+          "text": "1.  A policeman travelling 60 km/h spots a speeder  ahead  so he accelerates his vehicle at a steady rate  of 2.22 m/s 2  for 4.00 s  at which time he catches up  with the speeder.    a   How fast was the policeman travelling in m/s   b    How fast is the police car travelling after 4.00 s   Give your answer in both m/s and km/h.   c    If the speeder has a constant velocity  sketch the  motion of both the speeder and police car on a  speed vs. time graph below.",
+          "id": "q-32",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Initial speed = 60/3.6 = <strong>16.7 m/s</strong>.</li><li>v<sub>f</sub> = 16.667 + (2.22)(4.00) = <strong>25.5 m/s = 92.0 km/h</strong>.</li><li>Police speed rises linearly from 16.7 m/s at t = 0 to 25.5 m/s at t = 4.00 s. The speeder’s speed is a horizontal line. Its numerical height is <strong>not determined</strong>, because the initial gap is not supplied.</li></ol><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"Police and speeder speed-time sketch\"><title>Police and speeder speed-time sketch</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M232 54V226\" stroke=\"#dce4e1\"/><text x=\"232\" y=\"246\" text-anchor=\"middle\">2</text><path d=\"M402 54V226\" stroke=\"#dce4e1\"/><text x=\"402\" y=\"246\" text-anchor=\"middle\">4</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">0</text><path d=\"M62 168.667H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"172.667\" text-anchor=\"end\">10</text><path d=\"M62 111.333H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"115.333\" text-anchor=\"end\">20</text><path d=\"M62 54H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"58\" text-anchor=\"end\">30</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><polyline points=\"62.00,130.44 402.00,79.53\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><polyline points=\"62.00,122.80 402.00,122.80\" fill=\"none\" stroke=\"#bc493e\" stroke-width=\"2.5\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">Time (s)</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">Speed (m/s)</text></svg><figcaption>Police and speeder speed-time sketch. <span style=\"color:#096a70\">Police: v = 16.667 + 2.22t</span>; <span style=\"color:#bc493e\">Speeder: illustrative constant speed only</span>.</figcaption></figure><p>The speeder line at 18 m/s is an example, not a calculated answer. The police travel 84.43 m in four seconds; a catch-up condition would be initial gap = 84.43 − 4v<sub>s</sub>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              57,
+              44,
+              555.4256,
+              295,
+              715
+            ]
+          ],
+          "text": "2.  A motorbike accelerates at a constant rate from a  standing start. After 1.2 s  it is travelling 6.0 m/s. How  much time will have elapsed  starting from rest   before the bike is moving with a speed of 15.0 m/s",
+          "id": "q-33",
+          "answer_html": "<p>a = 6.0/1.2 = 5.0 m/s². From rest, t = v/a = 15.0/5.0 = <strong>3.0 s</strong> total.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              57,
+              302,
+              83.1503,
+              576,
+              715
+            ]
+          ],
+          "text": "3.  The graph below shows lines representing speed  vs. time for an accelerating aircraft  prepared by  observers at two different locations on the runway. Speed vs. Time a 70.0 b Speed  v  m/s 60.0 50.0 40.0 30.0 20.0 10.0     0 0  1.00  2.00  3.00  4.00  5.00  6.00 Time  t  s a   What is the equation for line  a b   What is the equation for line  b c   What is the acceleration of the aircraft according  to line  a d   What is the acceleration of the aircraft according  to line  b e   Explain why the y-intercept for line  b  is  different than the intercept for line  a .",
+          "id": "q-34",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Line (a): <strong>v ≈ 20 m/s + (14 m/s²)t</strong>.</li><li>Line (b): <strong>v ≈ (14 m/s²)t</strong>.</li><li>The slope of line (a) is approximately <strong>14 m/s²</strong>.</li><li>The parallel line (b) has the same acceleration, approximately <strong>14 m/s²</strong>.</li><li>The observers start their clocks at different points in the aircraft’s motion. For (b), t = 0 is at rest; for (a), t = 0 is when the aircraft already has speed 20 m/s.</li></ol><p>Graph readings are approximate. On line (b), (0 s, 0 m/s) and (5 s, 70 m/s) give slope 70/5 = 14 m/s².</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              58,
+              59,
+              48.7507,
+              310,
+              237.7507
+            ]
+          ],
+          "text": "4.   A racing motorbike's final velocity is 38 m/s in 5.5 s  with an acceleration of 6.0 m/s 2 . What was the initial  velocity of the motorbike",
+          "id": "q-35",
+          "answer_html": "<p>v<sub>i</sub> = v<sub>f</sub> − at = 38 − (6.0)(5.5) = <strong>5.0 m/s</strong>.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              58,
+              59,
+              237.7507,
+              310,
+              715
+            ]
+          ],
+          "text": "5.   While starting your car  which is a standard gearshift   you coast downhill getting to a speed of 2.0 m/s  before the engine starts. You accelerate back  uphill moving at 5.5 m/s. This takes a total of 3.0 s.  If downhill is the positive direction  what is the  average acceleration of your car",
+          "id": "q-36",
+          "answer_html": "<p>Downhill is positive, so v<sub>i</sub> = +2.0 m/s and v<sub>f</sub> = −5.5 m/s.</p><p>ā = [−5.5 − (+2.0)]/3.0 = <strong>−2.5 m/s²</strong>, directed uphill.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              58,
+              317,
+              48.7507,
+              576,
+              715
+            ]
+          ],
+          "text": "6.  The graph below describes the motion of a vehicle  whose acceleration changes twice.  Find the  acceleration of the vehicle for the parts of the graph  labeled  a   b  and  c  by finding the slope of each  part of the graph. Speed vs. Time for Changing Acceleration b Speed  v  m/s 30 20 a c 10   0 0  2  4  6  8  10 Time  t  s a b c",
+          "id": "q-37",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>From (0 s, 0 m/s) to (3 s, 30 m/s): a = 30/3 = <strong>+10 m/s²</strong>.</li><li>From 3 s to 6 s, speed stays 30 m/s: <strong>a = 0 m/s²</strong>.</li><li>From (6 s, 30 m/s) to (10 s, 0 m/s): a = (0 − 30)/(10 − 6) = <strong>−7.5 m/s²</strong>.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-13",
+      "topic": "2.3",
+      "kind": "Warm-up",
+      "title": "Uniform acceleration: warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              59,
+              54,
+              108,
+              575,
+              147
+            ]
+          ],
+          "text": "In your own words  describe the difference between average velocity  initial velocity  final velocity  and a change  in velocity.",
+          "id": "q-38",
+          "answer_html": "<p><strong>Initial velocity</strong> is velocity at the start of an interval. <strong>Final velocity</strong> is velocity at its end. <strong>Change in velocity</strong> is Δv = v<sub>f</sub> − v<sub>i</sub>. <strong>Average velocity</strong> is displacement divided by elapsed time; for constant acceleration it also equals (v<sub>i</sub> + v<sub>f</sub>)/2.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-14",
+      "topic": "2.3",
+      "kind": "Sample prompt",
+      "title": "Sample 2.3.1: determining uniform acceleration",
+      "questions": [
+        {
+          "label": "2.3.1",
+          "boxes": [
+            [
+              60,
+              54,
+              75.8,
+              575,
+              335
+            ]
+          ],
+          "text": "The graph below shows the uniform acceleration of an object  as it was allowed to drop off a cliff.  a   What was the acceleration of the object   b   Write an equation for the graph. Speed vs. Time 10.0 9.0 8.0 Ƌv = v f  o v 0 Speed  v  m/s 7.0 Ƌv 6.0 Ƌt = t f  o 0 5.0 4.0 3.0 2.0 1.0 Ƌt 0   0  0.10  0.20  0.30  0.40  0.50  0.60  0.70  0.80  0.90  1.00  Time  t  s",
+          "id": "q-39",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>a = (10.0 − 2.0)/(0.80 − 0) = <strong>10 m/s² downward</strong>, taking down as positive.</li><li>The straight-line equation is <strong>v = 2.0 m/s + (10 m/s²)t</strong>.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-15",
+      "topic": "2.3",
+      "kind": "Practice",
+      "title": "Practice 2.3.1: determining uniform acceleration",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              61,
+              54,
+              283,
+              575,
+              429
+            ]
+          ],
+          "text": "1.    a   What is the y-intercept  v 0  for the graph shown above    b   What is the slope of the graph c   What property of the moving object does this slope measure d   Write the specific equation for the graph  using symbols v for speed and t for time.",
+          "id": "q-40",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The graph intersects the speed axis at approximately <strong>15 m/s</strong>.</li><li>Use approximately (0 s, 15 m/s) and (10 s, 55 m/s): slope = (55 − 15)/10 = <strong>4.0 m/s²</strong>.</li><li>The slope represents <strong>acceleration</strong> for the one-direction motion shown.</li><li><strong>v = 15 m/s + (4.0 m/s²)t</strong>.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              61,
+              54,
+              457,
+              575,
+              660
+            ]
+          ],
+          "text": "2.  The following equation describes the motion of a ball thrown straight down  by someone leaning out of the  window of a tall building: v f  =   5.0 m/s      9.8 m/s 2 . t a   At what speed was the ball initially thrown out of the window b   What was the acceleration of the ball c   How fast was the ball moving after 1.2 s",
+          "id": "q-41",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The constant term gives the initial speed: <strong>5.0 m/s downward</strong>.</li><li>The coefficient of t is acceleration: <strong>9.8 m/s² downward</strong>.</li><li>v(1.2 s) = 5.0 + (9.8)(1.2) = 16.76 m/s ≈ <strong>17 m/s downward</strong>.</li></ol>"
+        }
+      ],
+      "shared": [
+        [
+          61,
+          54,
+          90,
+          575,
+          278
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-16",
+      "topic": "2.3",
+      "kind": "Quick check",
+      "title": "Uniform acceleration equations: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              63,
+              54,
+              254,
+              575,
+              294
+            ]
+          ],
+          "text": "1.  What is the initial velocity of a car accelerating east at 3.0 m/s 2  for 5.0 s and reaching a final velocity of   25.0 m/s east",
+          "id": "q-42",
+          "answer_html": "<p>Choose east positive. v<sub>i</sub> = v<sub>f</sub> − at = 25.0 − (3.0)(5.0) = <strong>10 m/s east</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              63,
+              54,
+              403,
+              575,
+              443
+            ]
+          ],
+          "text": "2.  If we assume acceleration is uniform  how far does a plane travel when it lands at 16.0 m/s west and comes to  rest in 8.0 s  ",
+          "id": "q-43",
+          "answer_html": "<p>For uniform acceleration, average speed = (16.0 + 0)/2 = 8.0 m/s. Distance = (8.0)(8.0) = <strong>64 m</strong>; displacement is 64 m west.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              63,
+              54,
+              564,
+              575,
+              592
+            ]
+          ],
+          "text": "3.  What is the stopping distance of a car if it accelerates at o9.29 m/s 2  and has an initial velocity of 100 km/h.",
+          "id": "q-44",
+          "answer_html": "<p>Convert v<sub>i</sub> = 100/3.6 = 27.778 m/s. From v<sub>f</sub>² = v<sub>i</sub>² + 2ad, with v<sub>f</sub> = 0:</p><p>d = −(27.778)²/[2(−9.29)] = <strong>41.5 m</strong> (about 42 m).</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-17",
+      "topic": "2.3",
+      "kind": "Investigation",
+      "title": "Investigation 2-3, Part 1: measuring acceleration",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              66,
+              54,
+              77.8,
+              575,
+              145.2
+            ]
+          ],
+          "text": "1.  a   What was the average speed of the cart during the first 0.10 s time interval b   What was the average speed of the cart during the second 0.10 s interval c   By how much did the average speed of the cart increase between the first interval and the second interval d   Calculate the acceleration of the cart between the first interval and the second interval by dividing the  increase in average speed by the time interval  which was 0.10 s.",
+          "id": "q-45",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>For your cart, v̄<sub>1</sub> = d<sub>1</sub>/0.10 s. With the <strong>sample</strong> distance 1.1 cm, this is <strong>11 cm/s</strong>.</li><li>v̄<sub>2</sub> = d<sub>2</sub>/0.10 s. With the <strong>sample</strong> distance 1.8 cm, this is <strong>18 cm/s</strong>.</li><li>Δv̄ = v̄<sub>2</sub> − v̄<sub>1</sub>; for the sample, <strong>7 cm/s</strong>.</li><li>a ≈ (v̄<sub>2</sub> − v̄<sub>1</sub>)/0.10 s. For the sample, <strong>70 cm/s² = 0.70 m/s²</strong>.</li></ol><p>Use your measured distances for your own result. The sample values illustrate the method; interval-average speeds correspond to interval midpoints for uniform acceleration.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              66,
+              54,
+              205,
+              575,
+              250
+            ]
+          ],
+          "text": "2.  Calculate the acceleration of the cart between the second and third intervals  third and fourth intervals  fourth  and fifth intervals  and fifth and sixth intervals. Allowing for slight variations due to experimental errors  is there  any pattern to your results",
+          "id": "q-46",
+          "answer_html": "<p>Calculate a<sub>23</sub> = (v̄<sub>3</sub> − v̄<sub>2</sub>)/0.10 s, then similarly a<sub>34</sub>, a<sub>45</sub>, and a<sub>56</sub>. <strong>Your measured speeds are needed for numerical answers.</strong></p><p>For uniform acceleration these estimates should be approximately equal. Differences can arise from distance measurements, friction, timer variation, or nonuniform motion.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          64,
+          54,
+          82,
+          575,
+          715
+        ],
+        [
+          65,
+          54,
+          59,
+          575,
+          496
+        ],
+        [
+          65,
+          54,
+          657,
+          575,
+          697
+        ]
+      ]
+    },
+    {
+      "id": "set-18",
+      "topic": "2.3",
+      "kind": "Investigation",
+      "title": "Investigation 2-3, Part 2: graphing acceleration",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              66,
+              54,
+              625.2,
+              575,
+              638.7
+            ]
+          ],
+          "text": "1.  What was the acceleration of your cart according to the slope of your graph",
+          "id": "q-47",
+          "answer_html": "<p><strong>Use your own best-fit graph.</strong> Acceleration is its slope: a = (v<sub>2</sub> − v<sub>1</sub>)/(t<sub>2</sub> − t<sub>1</sub>). Choose well-separated points on the best-fit line, not necessarily two raw measurements. Report cm/s² or m/s² consistently.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              66,
+              54,
+              638.7,
+              575,
+              652.2
+            ]
+          ],
+          "text": "2.  What is the equation for the speed-time graph you plotted for the cart",
+          "id": "q-48",
+          "answer_html": "<p>Write the fitted speed-time line as <strong>v(t) = v<sub>0</sub> + at</strong>. Here v<sub>0</sub> is your line’s y-intercept and a is its slope. Include their numerical values and units from your experiment; they cannot be determined from the question alone.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              66,
+              54,
+              652.2,
+              575,
+              713
+            ]
+          ],
+          "text": "3.  In Investigation 2-1  you figured out the acceleration of your cart simply by comparing average speeds of  the cart in successive time intervals. Compare the acceleration you calculated in Investigation 2-1 with the  acceleration you just obtained using the slope of your speed-time graph. Which method of finding the  acceleration iaverages outw the experimental errors better  Explain.",
+          "id": "q-49",
+          "answer_html": "<p>The methods should give similar accelerations within experimental uncertainty. A <strong>best-fit line using all the data</strong> usually averages random measurement errors better than one estimate formed by subtracting two adjacent speeds. Differencing nearby measurements can amplify error.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          66,
+          54,
+          270,
+          575,
+          609
+        ]
+      ]
+    },
+    {
+      "id": "set-19",
+      "topic": "2.3",
+      "kind": "Section review",
+      "title": "2.3 Review: uniform acceleration",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              67,
+              44,
+              82.9257,
+              295,
+              436.6452
+            ]
+          ],
+          "text": "1.  Use the following graph to answer the questions  below.   Speed vs. Time Speed  v  m/s 6.0 5.0 4.0 3.0 2.0 1.0 0   0  0.10  0.20  0.30  0.40  0.50  0.60  0.70  0.80 Time  t  s a   What is the y-intercept  v 0  of the speed-time  graph shown above b   What is the acceleration of the moving object c   What is the specific equation for this graph",
+          "id": "q-50",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>From the graph, initial speed is approximately <strong>5.5 m/s</strong>.</li><li>Using the stop near t = 0.70 s: a ≈ (0 − 5.5)/0.70 = <strong>−7.9 m/s²</strong>.</li><li><strong>v ≈ 5.5 m/s − (7.9 m/s²)t</strong>, valid until the object stops at about 0.70 s.</li></ol><p>These are approximate readings from the drawn graph, so small differences from graph interpolation are reasonable.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              67,
+              44,
+              436.6452,
+              295,
+              715
+            ]
+          ],
+          "text": "2.  A cyclist coasting along a road allows her bike to  come to rest with the help of a slight upslope in  the road. The motion of the bike is described by the  equation: v f  = 6.6 m/s o  2.2 m/s 2 t t a   What was the initial speed of the bike b   At what rate did the bike accelerate while  coming to rest c   How long did the bike take to come to rest",
+          "id": "q-51",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Initial speed is the constant term: <strong>6.6 m/s</strong>.</li><li>Acceleration is the coefficient of t: <strong>−2.2 m/s²</strong>.</li><li>Set v = 0: t = 6.6/2.2 = <strong>3.0 s</strong>.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              67,
+              302,
+              83.1501,
+              576,
+              272.1502
+            ]
+          ],
+          "text": "3.  What is the rate of acceleration of a mountain bike   if it slows down from 12.0 m/s to 8.0 m/s in a time of  3.25 s",
+          "id": "q-52",
+          "answer_html": "<p>a = (8.0 − 12.0)/3.25 = −1.2308 m/s² ≈ <strong>−1.23 m/s²</strong>.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              67,
+              302,
+              272.1502,
+              576,
+              715
+            ]
+          ],
+          "text": "4.  A truck parked on a down slope slips its brakes and  starts to coast downhill  accelerating from rest at a  constant rate of 0.80 m/s 2 . a   How fast will the truck be moving after 5.0 s b   How far will the truck coast during the 5.0 s",
+          "id": "q-53",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>v = at = (0.80)(5.0) = <strong>4.0 m/s downhill</strong>.</li><li>d = ½at² = ½(0.80)(5.0)² = <strong>10 m downhill</strong>.</li></ol>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              68,
+              59,
+              48.6507,
+              310,
+              534.6507
+            ]
+          ],
+          "text": "5.  An aircraft starts from rest and accelerates at a  constant rate down the runway. a   After 12.0 s  its speed is 36.0 m/s. What is its  acceleration b   How fast is the plane moving after 15.0 s c   How far down the runway will the plane be after  15.0 s",
+          "id": "q-54",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>a = (36.0 − 0)/12.0 = <strong>3.00 m/s²</strong>.</li><li>v(15.0 s) = (3.00)(15.0) = <strong>45.0 m/s</strong>.</li><li>d = ½(3.00)(15.0)² = 337.5 m ≈ <strong>338 m</strong>.</li></ol>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              68,
+              59,
+              534.6507,
+              310,
+              715
+            ]
+          ],
+          "text": "6.  A truck is moving along at 80.0 km/h when it hits   a gravel patch  which causes it to accelerate at   o5.0 km/h/s. How far will the truck travel before it  slows to 20.0 km/h",
+          "id": "q-55",
+          "answer_html": "<p>Time = (20.0 − 80.0)/(−5.0) = 12 s. Average speed = (80.0 + 20.0)/2 = 50.0 km/h = 13.889 m/s.</p><p>Distance = (13.889)(12) = 166.7 m ≈ <strong>1.7 × 10² m</strong>. The mixed unit km/h/s means the speed drops by 5.0 km/h each second.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              68,
+              317,
+              48.7509,
+              576,
+              359.2505
+            ]
+          ],
+          "text": "7.  A very frustrated physics student drops a physics  textbook off the top of the CN tower.  If the tower  is 5.3 w 10 2  m high  how long will the book take  to reach the ground  assuming there is no air  resistance  ",
+          "id": "q-56",
+          "answer_html": "<p>For a drop from rest, d = ½gt². t = √(2d/g) = √[2(530)/9.81] = 10.395 s ≈ <strong>10 s</strong> (two significant figures).</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              68,
+              317,
+              359.2505,
+              576,
+              715
+            ]
+          ],
+          "text": "8.  If an electron accelerates in a space of 5.0 cm   from rest to 1/10 c   where c is the speed of light    3.0 w 10 8  m/s  what is its acceleration",
+          "id": "q-57",
+          "answer_html": "<p>Distance = 5.0 cm = 0.050 m. Final speed = 0.10c = 3.0 × 10⁷ m/s.</p><p>a = (v<sub>f</sub>² − 0)/(2d) = (3.0 × 10⁷)²/[2(0.050)] = <strong>9.0 × 10¹⁵ m/s²</strong>, under the uniform-acceleration model.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-20",
+      "topic": "2.4",
+      "kind": "Warm-up",
+      "title": "Gravity and free fall: warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              69,
+              54,
+              125,
+              575,
+              190
+            ]
+          ],
+          "text": "Take a piece of paper and book in each hand and raise them to about the height of your shoulder. Predict which  one will hit the ground first if they are both dropped at the same time. Drop both and record results. Now  crumple the same piece of paper and repeat. Describe and suggest reasons for any differences between the two  events.",
+          "id": "q-58",
+          "answer_html": "<p>The <strong>book usually lands first</strong> when the paper is flat. Air resistance is large compared with the paper’s weight, so it falls more slowly. Crumpling reduces its exposed area and drag, so the paper and book should land closer together. In a vacuum they would have the same gravitational acceleration. Record your actual observations rather than inventing experimental results.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-21",
+      "topic": "2.4",
+      "kind": "Sample prompt",
+      "title": "Sample 2.4.1: free fall",
+      "questions": [
+        {
+          "label": "2.4.1",
+          "boxes": [
+            [
+              70,
+              54,
+              75.8,
+              575,
+              135
+            ]
+          ],
+          "text": "A golf ball is dropped from the top of the CN tower. Assuming that the ball is in true free fall  negligible air  resistance  answer these questions:  a   How fast will the ball be falling after 1.0 s b   How far down will the ball have fallen after 1.0 s",
+          "id": "q-59",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The sample uses g = 9.8 m/s². From rest, v = gt = (9.8)(1.0) = <strong>9.8 m/s downward</strong>.</li><li>d = ½gt² = ½(9.8)(1.0)² = <strong>4.9 m downward</strong>.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-22",
+      "topic": "2.4",
+      "kind": "Practice",
+      "title": "Practice 2.4.1: free fall",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              70,
+              54,
+              530,
+              575,
+              640
+            ]
+          ],
+          "text": "1.  a    How fast will the golf ball in the Sample Problem be moving after it has fallen a distance of 530 m    which is the height of the CN tower   Assume free fall. b   Why does the ball not reach this speed when it hits the ground",
+          "id": "q-60",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Using the sample’s g = 9.8 m/s², v = √(2gd) = √[2(9.8)(530)] = 101.9 m/s ≈ <strong>102 m/s downward</strong>.</li><li>Air resistance acts upward and reduces the net downward acceleration as the speed grows. The ball may approach terminal speed, so the ideal free-fall speed is not reached.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              71,
+              54,
+              73,
+              575,
+              111
+            ]
+          ],
+          "text": "2.  How high is the cliff if you toss a small rock off of it with an initial speed of 5.0 m/s and the rock takes 3.1 s   to reach the water",
+          "id": "q-61",
+          "answer_html": "<p><strong>Assuming the initial 5.0 m/s is downward</strong>, take down positive: h = v<sub>i</sub>t + ½gt² = (5.0)(3.1) + ½(9.81)(3.1)² = 62.64 m ≈ <strong>63 m</strong>.</p><p>The prompt does not explicitly state the initial direction. If the rock is initially thrown <strong>upward</strong>, use v<sub>i</sub> = −5.0 m/s, giving h = −15.5 + 47.14 = <strong>31.64 m ≈ 32 m</strong>.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              71,
+              54,
+              153,
+              575,
+              266
+            ]
+          ],
+          "text": "3.  a    At the Pacific National Exhibition in Vancouver  one of the amusement park rides drops a person in free   fall for 1.9 s. What will be the final velocity of the rider at the end of this ride b   What is the height of this ride",
+          "id": "q-62",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Assume the rider starts from rest. v = gt = (9.81)(1.9) = 18.64 m/s ≈ <strong>19 m/s downward</strong>.</li><li>h = ½gt² = ½(9.81)(1.9)² = 17.71 m ≈ <strong>18 m</strong>.</li></ol>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              71,
+              54,
+              301,
+              575,
+              340
+            ]
+          ],
+          "text": "4.  At an air show  a jet car accelerates from rest at a rate of 3g  where g is 9.81 m/s 2 . How far does the jet car   travel down the runway in a time of 4.0 s",
+          "id": "q-63",
+          "answer_html": "<p>a = 3g = 3(9.81) = 29.43 m/s². From rest, d = ½at² = ½(29.43)(4.0)² = 235.44 m ≈ <strong>2.4 × 10² m</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-23",
+      "topic": "2.4",
+      "kind": "Quick check",
+      "title": "Vertical projectile motion: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              72,
+              54,
+              419,
+              575,
+              542
+            ]
+          ],
+          "text": "1.  In Figure 2.4.2  what was the acceleration of the ball a   while it was being thrown b   while it was in free fall c   while it was being caught",
+          "id": "q-64",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Thrown from (0 s, 0 m/s) to A(0.2 s, 9.8 m/s): a = 9.8/0.2 = <strong>+49 m/s²</strong>.</li><li>Free fall from A to C: a = (−9.8 − 9.8)/(2.2 − 0.2) = <strong>−9.8 m/s²</strong>.</li><li>Caught from C(2.2 s, −9.8 m/s) to E(2.4 s, 0 m/s): a = [0 − (−9.8)]/(2.4 − 2.2) = <strong>+49 m/s²</strong>.</li></ol><p>Positive means upward. The throwing and catching accelerations are net accelerations read from the graph.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              72,
+              54,
+              554,
+              575,
+              592
+            ]
+          ],
+          "text": "2.  What point on the graph corresponds with the instant when the ball reached the ipeakw of its flight  Explain  how you know this.",
+          "id": "q-65",
+          "answer_html": "<p><strong>Point B, at t = 1.2 s.</strong> Here the vertical velocity changes from positive to negative through zero, so upward motion ends and downward motion begins. D and E also have zero velocity, but mark the start and end of handling, not the peak.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              72,
+              54,
+              635,
+              575,
+              677
+            ]
+          ],
+          "text": "3.  What altitude did the ball reach  Hint: The distance the ball travels equals the average speed multiplied by  _ the time elapsed when it reaches its ipeakw altitude. What property of the graph would give you d = v  t t  ",
+          "id": "q-66",
+          "answer_html": "<p>Displacement is the <strong>signed area under the velocity-time graph</strong>. From release at A (0.2 s) to the peak at B (1.2 s), the triangular area is ½(1.0 s)(9.8 m/s) = <strong>4.9 m above the release position</strong>.</p><p>If altitude is measured from the ball’s position at t = 0, include the throwing segment: ½(0.2)(9.8) = 0.98 m. The total rise is <strong>5.88 m</strong>. The graph gives changes in height; absolute altitude needs a reference height.</p>"
+        }
+      ],
+      "shared": [
+        [
+          72,
+          177,
+          47,
+          575,
+          378
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-24",
+      "topic": "2.4",
+      "kind": "Section review",
+      "title": "2.4 Review: acceleration due to gravity",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              73,
+              44,
+              82.9257,
+              295,
+              153
+            ]
+          ],
+          "text": "1.  On a certain asteroid  a steel ball drops a distance  of 0.80 m in 2.00 s from rest. Assuming uniform  acceleration due to gravity on this asteroid  what is  the value of g on the asteroid",
+          "id": "q-67",
+          "answer_html": "<p>d = ½gt², so g = 2d/t² = 2(0.80)/(2.00)² = <strong>0.40 m/s² downward</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              73,
+              44,
+              217.9255,
+              295,
+              715
+            ],
+            [
+              73,
+              302,
+              108,
+              576,
+              553
+            ]
+          ],
+          "text": "2.  The graph below represents the velocity of a ball  thrown straight up by a strong pitcher as a function  of time. In the first part of the graph ending at  A  the ball is accelerated to 39.2 m/s in a time of  0.20 s. After the ball leaves the pitcher's hand  it  experiences only the acceleration due to gravity  until it is caught in a glove and brought to rest in the  hand of the catcher. Velocity vs. Time for a Ball Thrown Straight up 40 A  0.2 s  39.2 m/s Velocity  v  m/s 30 20 10 0 B  4.20 s  0 m/s D  8.40 s  0 m/s o10  o20 o30 o40   0  C  8.20 s  o 39.2 m/s 1.0  2.0  3.0  4.0  5.0  6.0  7.0  8.0  9.0  10.0 Time  t  s   a   What is the acceleration of the ball while it is  being thrown b   What is the acceleration of the ball after it leaves  the pitcher's hand   ABC c   What is the acceleration of the ball while it is  being caught   CD d   What point on the graph  A  B  C  or D   corresponds with the instant when the ball is at  the peak of its flight  Explain your answer. e   Why is the slope of the graph negative as soon  as the ball leaves the pitcher's hand f   Why is the graph labelled velocity rather than  speed g   How far up did the ball travel h   How far down did the ball fall i   What is the average velocity of the ball for the  whole trip from pitcher's hand to catcher's  hand",
+          "id": "q-68",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Throwing: a = (39.2 − 0)/(0.20 − 0) = <strong>+196 m/s²</strong>.</li><li>Free flight ABC: a = (0 − 39.2)/(4.20 − 0.20) = <strong>−9.8 m/s²</strong>.</li><li>Catching CD: a = [0 − (−39.2)]/(8.40 − 8.20) = <strong>+196 m/s²</strong>.</li><li><strong>B</strong> is the peak: vertical velocity is zero and changes from upward to downward.</li><li>Gravity acts downward throughout free flight, so the acceleration and graph slope are negative when up is positive.</li><li>Velocity carries a direction and can be negative. Speed is a magnitude and cannot be negative.</li><li>In free flight from A to B, rise = ½(4.00)(39.2) = <strong>78.4 m above release</strong>. Including the initial throwing segment, add ½(0.20)(39.2) = 3.92 m: total upward travel from t = 0 is <strong>82.32 m</strong>.</li><li>From B to C, free-fall distance = <strong>78.4 m</strong>. Including the downward motion while being caught (C to D), add 3.92 m: total downward travel is <strong>82.32 m</strong>.</li><li>Average velocity for the complete trip = net displacement / total time = <strong>0 m/s</strong>. Equal positive and negative graph areas cancel, and the ball ends at its starting height.</li></ol><p>The distances in (g) and (h) distinguish free flight from the additional motion during throwing and catching. This avoids changing the graph’s stated start and end points.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              73,
+              302,
+              581.943081,
+              576,
+              715
+            ]
+          ],
+          "text": "3.  A body in free fall accelerates at a rate of 9.81 m/s 2  at  your latitude. How far does the body fall during   a  the first second   b  the second second   Think  first!",
+          "id": "q-69",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Assuming a drop from rest, d(1 s) = ½(9.81)(1)² = <strong>4.905 m ≈ 4.91 m</strong>.</li><li>During the second second: d(2 s) − d(1 s) = ½(9.81)(4 − 1) = <strong>14.715 m ≈ 14.7 m</strong>. Do not use the total two-second fall distance as the second-second distance.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-25",
+      "topic": "Chapter review",
+      "kind": "Chapter review",
+      "title": "Chapter 2 Review Questions",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              74,
+              59,
+              82.9257,
+              310,
+              217.9258
+            ]
+          ],
+          "text": "1.  What is the difference between velocity and speed",
+          "id": "q-70",
+          "answer_html": "<p><strong>Speed</strong> is a scalar describing how fast an object moves. <strong>Velocity</strong> is a vector specifying both speed and direction. Average speed uses distance/time, while average velocity uses displacement/time.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              74,
+              59,
+              217.9258,
+              310,
+              325.9258
+            ]
+          ],
+          "text": "2.  A traveller drives 568 km in 7.2 h. What is the  average speed for the trip",
+          "id": "q-71",
+          "answer_html": "<p>v̄ = 568/7.2 = 78.89 km/h ≈ <strong>79 km/h</strong>.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              74,
+              59,
+              325.9258,
+              310,
+              715
+            ]
+          ],
+          "text": "3.  The following distances and times  for consecutive  parts of a trip made by a red ant  were recorded by  different observers. There is considerable variation  in the precision of their measurements.     A. 4.56 m in 12 s  C. 12.8 m in 36.235 s B. 3.4 m in 6.89 s    a   What total distance did the ant travel b   What was the total time for the trip c   What was the average speed of the ant",
+          "id": "q-72",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Unrounded total distance = 4.56 + 3.4 + 12.8 = 20.76 m. Addition is limited by the least precise decimal place: <strong>20.8 m</strong>.</li><li>Unrounded total time = 12 + 6.89 + 36.235 = 55.125 s. Since 12 s is stated to whole seconds, report <strong>55 s</strong>.</li><li>Keep unrounded totals for the division: v̄ = 20.76/55.125 = 0.3766 m/s. With the time precision, report <strong>0.38 m/s</strong>.</li></ol>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              74,
+              317,
+              82.443081,
+              576,
+              285.6506
+            ]
+          ],
+          "text": "4.  Light travels with a speed of 3.00 w 10 5  km/s. How  long will it take light from a laser to travel to the  Moon  where it is reflected by a mirror  and back to  Earth  The Moon is 3.84 w 10 5  km from Earth.",
+          "id": "q-73",
+          "answer_html": "<p>The light travels to the Moon and back: d = 2(3.84 × 10⁵) = 7.68 × 10⁵ km.</p><p>t = d/v = (7.68 × 10⁵)/(3.00 × 10⁵) = <strong>2.56 s</strong>.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              74,
+              317,
+              285.6506,
+              576,
+              488.1506
+            ]
+          ],
+          "text": "5.  Under what condition can acceleration be  calculated simply by dividing change in speed by  change in time",
+          "id": "q-74",
+          "answer_html": "<p>This gives the signed acceleration when motion stays along one fixed direction/axis, so a change in speed corresponds to the velocity component’s change. Choose and preserve a sign convention. With changing direction, speed alone is insufficient to determine acceleration. The ratio over an interval is <strong>average</strong> acceleration; it equals the constant acceleration if acceleration is uniform.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              74,
+              317,
+              488.1506,
+              576,
+              715
+            ]
+          ],
+          "text": "6.  A high-powered racing car accelerates from rest at a  rate of 7.0 m/s 2 . How fast will it be moving after   10.0 s  Convert this speed to km/h.",
+          "id": "q-75",
+          "answer_html": "<p>v = v<sub>i</sub> + at = 0 + (7.0)(10.0) = <strong>70 m/s</strong>. Multiply by 3.6: 252 km/h ≈ <strong>2.5 × 10² km/h</strong> to two significant figures.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              75,
+              44,
+              48.6507,
+              295,
+              715
+            ]
+          ],
+          "text": "7.  The graph below is a speed-time graph for a vehicle. Speed vs. Time Speed  v  m/s 60.0 50.0 40.0 30.0 20.0 10.0 0   0    1.0  2.0  3.0  4.0  5.0 Time  t  s a   What was the acceleration of the vehicle b   What was the average speed of the vehicle  during its 5.00 s trip c   What distance did the vehicle travel during the  5.00 s d   Write a specific equation for this graph.",
+          "id": "q-76",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>a = (60.0 − 20.0)/5.00 = <strong>8.00 m/s²</strong>.</li><li>Average speed = (20.0 + 60.0)/2 = <strong>40.0 m/s</strong>.</li><li>Distance = (40.0)(5.00) = <strong>200 m</strong>. This is also the trapezoidal area under the graph.</li><li><strong>v(t) = 20.0 m/s + (8.00 m/s²)t</strong>, for 0 ≤ t ≤ 5.00 s.</li></ol>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              75,
+              302,
+              48.7508,
+              576,
+              237.7507
+            ]
+          ],
+          "text": "8.  A child on a toboggan slides down a snowy hill   accelerating uniformly at 2.8 m/s 2 . When the  toboggan passes the first observer  it is travelling  with a speed of 1.4 m/s. How fast will it be moving  when it passes a second observer  who is 2.5 m  downhill from the first observer",
+          "id": "q-77",
+          "answer_html": "<p>v<sub>f</sub>² = v<sub>i</sub>² + 2ad = (1.4)² + 2(2.8)(2.5) = 15.96.</p><p>v<sub>f</sub> = √15.96 = 3.995 m/s ≈ <strong>4.0 m/s downhill</strong>.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              75,
+              302,
+              237.7507,
+              576,
+              453.7507
+            ]
+          ],
+          "text": "9.  A space vehicle is orbiting the Earth at a speed of  7.58 w 10 3  m/s. In preparation for a return to Earth   it fires retrorockets  which provide a negative  acceleration of 78.4 m/s 2 . Ignoring any change in  altitude that might occur  how long will it take the  vehicle to slow down to 1.52 w 10 3  m/s",
+          "id": "q-78",
+          "answer_html": "<p>t = (v<sub>f</sub> − v<sub>i</sub>)/a = (1.52 × 10³ − 7.58 × 10³)/(−78.4) = <strong>77.3 s</strong>.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              75,
+              302,
+              453.7507,
+              576,
+              715
+            ]
+          ],
+          "text": "10.  Snoopy is taking off in his World War I biplane. He  coasts down the runway at a speed of 40.0 m/s  then  accelerates for 5.2 s at a rate of 1/2 g  where g is the  acceleration due to gravity  9.81 m/s 2 . How fast is  the plane moving after 5.2 s",
+          "id": "q-79",
+          "answer_html": "<p>a = ½g = 4.905 m/s². v<sub>f</sub> = 40.0 + (4.905)(5.2) = 65.506 m/s ≈ <strong>66 m/s</strong> (65.5 m/s before rounding).</p>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              76,
+              59,
+              48.6507,
+              310,
+              224.1507
+            ]
+          ],
+          "text": "11.  A woman biker  leader of the local chapter of Heck's  Angels  is driving along the highway at 80.0 km/h  in  a 60.0 km/h speed zone. She sees a police car ahead   so she brakes and her bike accelerates at   o8.0 km/h/s. How far along the road will she travel  before she is at the legal speed limit",
+          "id": "q-80",
+          "answer_html": "<p>t = (60.0 − 80.0)/(−8.0) = 2.5 s. Average speed = 70.0 km/h = 19.444 m/s.</p><p>Distance = (19.444)(2.5) = 48.61 m ≈ <strong>49 m</strong>.</p>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              76,
+              59,
+              224.1507,
+              310,
+              715
+            ]
+          ],
+          "text": "12.  Spiderman is crawling up a building at the rate of  0.50 m/s. Seeing Spiderwoman 56 m ahead of him   he accelerates at the rate of 2.3 m/s 2 . a   How fast will he be moving when he reaches  Spiderwoman b   How much time will he take to reach  Spiderwoman c   When he reaches Spiderwoman  Spiderman  discovers that she is a Black Widow and  as you  know  Black Widows consume their mates! He  is 200.00 m from the road below. How long will  it take him to fall to the safety of the road  if he  drops with an acceleration of g = 9.81 m/s 2",
+          "id": "q-81",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>v<sub>f</sub> = √[v<sub>i</sub>² + 2ad] = √[(0.50)² + 2(2.3)(56)] = 16.06 m/s ≈ <strong>16 m/s upward</strong>.</li><li>t = (v<sub>f</sub> − v<sub>i</sub>)/a = (16.0577 − 0.50)/2.3 = 6.764 s ≈ <strong>6.8 s</strong>.</li><li>Assuming he releases from rest at the 200.00 m height, t = √[2(200.00)/9.81] = <strong>6.39 s</strong>. If he still has an upward velocity when he lets go, that velocity must also be included; the prompt’s “drops” is taken to mean starts from rest.</li></ol>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              76,
+              317,
+              48.751,
+              576,
+              291.7506
+            ]
+          ],
+          "text": "13.  A stone is dropped from the top of a tall building. It  accelerates at a rate of 9.81 m/s 2 . How long will the  stone take to pass a window that is 2.0 m high  if the  top of the window is 20.0 m below the point from  which the stone was dropped",
+          "id": "q-82",
+          "answer_html": "<p>Compute the elapsed times from release to the window’s top (20.0 m) and bottom (22.0 m).</p><p>Δt = √[2(22.0)/9.81] − √[2(20.0)/9.81] = 2.1179 − 2.0193 = <strong>0.0986 s ≈ 0.099 s</strong>. The stone is already moving when it reaches the window.</p>"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              76,
+              317,
+              291.7506,
+              576,
+              715
+            ]
+          ],
+          "text": "14.  An aircraft  preparing for take-off  accelerates  uniformly from 0 m/s to 20.0 m/s in a time of 5.00 s. a   What is the acceleration of the aircraft b   How long will the plane take to reach its take-off  speed of 36.0 m/s",
+          "id": "q-83",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>a = (20.0 − 0)/5.00 = <strong>4.00 m/s²</strong>.</li><li>Total time from rest to take-off: t = 36.0/4.00 = <strong>9.00 s</strong>. This is 4.00 s more after the first 5.00 s.</li></ol>"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              77,
+              44,
+              48.6507,
+              295,
+              278.1507
+            ]
+          ],
+          "text": "15.  At an air show  a jet car accelerates from rest at a  rate of 3g  where g is 9.81 m/s 2 . How fast is the jet  travelling after 0.25 km",
+          "id": "q-84",
+          "answer_html": "<p>a = 3(9.81) = 29.43 m/s² and d = 0.25 km = 250 m.</p><p>v = √(2ad) = √[2(29.43)(250)] = 121.3 m/s ≈ <strong>1.2 × 10² m/s</strong>.</p>"
+        },
+        {
+          "label": "16",
+          "boxes": [
+            [
+              77,
+              44,
+              278.1507,
+              295,
+              715
+            ]
+          ],
+          "text": "16.  To start a soccer game  the referee flips a coin that  travels 50 cm into the air.    a   What was the coin's initial speed   b    How long was the coin in the air before landing  back in the hand of the referee",
+          "id": "q-85",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>At the peak, v<sub>f</sub> = 0. Initial speed = √(2gh) = √[2(9.81)(0.50)] = <strong>3.13 m/s upward</strong>.</li><li>Returning to the same height, total free-flight time = 2v<sub>i</sub>/g = 2(3.1321)/9.81 = <strong>0.639 s</strong>.</li></ol>"
+        },
+        {
+          "label": "17",
+          "boxes": [
+            [
+              77,
+              302,
+              48.6507,
+              576,
+              715
+            ]
+          ],
+          "text": "17.  A glider on an air track is made to accelerate  uniformly by tilting the track at a slight angle. The  distance travelled by the glider was measured at the  end of each 0.10 s interval  resulting in the following  data: DISTANCE  d  cm   0   0.025   0.100   0.225   0.400   0.625 TIME  t       s   0   0.100   0.200   0.300   0.400   0.500 a   Plot a graph with distance d on the y-axis and  time t on the x-axis. b   Plot a second graph with distance d on the y-axis  and t 2  on the x-axis. c   Use the slope of your second graph to figure out  the acceleration of the glider on the air track.  HINT: Think about the third equation for uniform  acceleration.",
+          "id": "q-86",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Plot distance against time. The points form an <strong>upward-curving parabola</strong>: d = (2.50 cm/s²)t².</li><li>Plot distance against t². The points form a <strong>straight line through the origin</strong>, with slope 0.625 cm / 0.250 s² = <strong>2.50 cm/s²</strong>.</li><li>From rest, d = ½at². On a d-versus-t² graph the slope is a/2, so <strong>a = 2(2.50) = 5.00 cm/s² = 0.0500 m/s²</strong>.</li></ol><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">t (s)</th><th scope=\"col\">t² (s²)</th><th scope=\"col\">d (cm)</th></tr></thead><tbody><tr><td>0.000</td><td>0.0000</td><td>0.000</td></tr><tr><td>0.100</td><td>0.0100</td><td>0.025</td></tr><tr><td>0.200</td><td>0.0400</td><td>0.100</td></tr><tr><td>0.300</td><td>0.0900</td><td>0.225</td></tr><tr><td>0.400</td><td>0.1600</td><td>0.400</td></tr><tr><td>0.500</td><td>0.2500</td><td>0.625</td></tr></tbody></table></div><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"Distance versus time\"><title>Distance versus time</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M130 54V226\" stroke=\"#dce4e1\"/><text x=\"130\" y=\"246\" text-anchor=\"middle\">0.1</text><path d=\"M198 54V226\" stroke=\"#dce4e1\"/><text x=\"198\" y=\"246\" text-anchor=\"middle\">0.2</text><path d=\"M266 54V226\" stroke=\"#dce4e1\"/><text x=\"266\" y=\"246\" text-anchor=\"middle\">0.3</text><path d=\"M334 54V226\" stroke=\"#dce4e1\"/><text x=\"334\" y=\"246\" text-anchor=\"middle\">0.4</text><path d=\"M402 54V226\" stroke=\"#dce4e1\"/><text x=\"402\" y=\"246\" text-anchor=\"middle\">0.5</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">0</text><path d=\"M62 176.857H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"180.857\" text-anchor=\"end\">0.2</text><path d=\"M62 127.714H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"131.714\" text-anchor=\"end\">0.4</text><path d=\"M62 78.5714H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"82.5714\" text-anchor=\"end\">0.6</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><polyline points=\"62.00,226.00 68.80,225.94 75.60,225.75 82.40,225.45 89.20,225.02 96.00,224.46 102.80,223.79 109.60,222.99 116.40,222.07 123.20,221.02 130.00,219.86 136.80,218.57 143.60,217.15 150.40,215.62 157.20,213.96 164.00,212.18 170.80,210.27 177.60,208.25 184.40,206.10 191.20,203.82 198.00,201.43 204.80,198.91 211.60,196.27 218.40,193.50 225.20,190.62 232.00,187.61 238.80,184.47 245.60,181.22 252.40,177.84 259.20,174.34 266.00,170.71 272.80,166.97 279.60,163.10 286.40,159.10 293.20,154.99 300.00,150.75 306.80,146.39 313.60,141.90 320.40,137.30 327.20,132.57 334.00,127.71 340.80,122.74 347.60,117.64 354.40,112.42 361.20,107.07 368.00,101.61 374.80,96.02 381.60,90.30 388.40,84.47 395.20,78.51 402.00,72.43\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">Time (s)</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">Distance (cm)</text></svg><figcaption>Distance versus time. <span style=\"color:#096a70\">d = 2.50t² (cm)</span>.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"Distance versus squared time\"><title>Distance versus squared time</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M130 54V226\" stroke=\"#dce4e1\"/><text x=\"130\" y=\"246\" text-anchor=\"middle\">0.05</text><path d=\"M198 54V226\" stroke=\"#dce4e1\"/><text x=\"198\" y=\"246\" text-anchor=\"middle\">0.1</text><path d=\"M266 54V226\" stroke=\"#dce4e1\"/><text x=\"266\" y=\"246\" text-anchor=\"middle\">0.15</text><path d=\"M334 54V226\" stroke=\"#dce4e1\"/><text x=\"334\" y=\"246\" text-anchor=\"middle\">0.2</text><path d=\"M402 54V226\" stroke=\"#dce4e1\"/><text x=\"402\" y=\"246\" text-anchor=\"middle\">0.25</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">0</text><path d=\"M62 176.857H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"180.857\" text-anchor=\"end\">0.2</text><path d=\"M62 127.714H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"131.714\" text-anchor=\"end\">0.4</text><path d=\"M62 78.5714H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"82.5714\" text-anchor=\"end\">0.6</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><polyline points=\"62.00,226.00 402.00,72.43\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><circle cx=\"62\" cy=\"226\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"402\" cy=\"72.4286\" r=\"3.5\" fill=\"#096a70\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">Time squared (s²)</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">Distance (cm)</text></svg><figcaption>Distance versus squared time. <span style=\"color:#096a70\">slope = 2.50 cm/s²</span>.</figcaption></figure>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-26",
+      "topic": "Extra practice",
+      "kind": "Extra practice",
+      "title": "Chapter 2 Extra Practice",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              78,
+              59,
+              82.9257,
+              310,
+              177.4256
+            ]
+          ],
+          "text": "1.  The speed of light in space is 300 000 km/s.  How far  does light travel in: a   1 min       b   1 h      c   1 d      d   1 y",
+          "id": "q-87",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>One minute = 60 s: d = (3.00 × 10⁵)(60) = <strong>1.80 × 10⁷ km</strong>.</li><li>One hour = 3600 s: <strong>1.08 × 10⁹ km</strong>.</li><li>One day = 86 400 s: <strong>2.592 × 10¹⁰ km</strong>.</li><li>Using a 365-day year, t = 31 536 000 s: <strong>9.4608 × 10¹² km</strong> (about one light-year).</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              78,
+              59,
+              177.4256,
+              310,
+              217.9256
+            ]
+          ],
+          "text": "2.  A jet aircraft travels a distance of 1867 km in a time  of 3.0 h. What is its average speed for the trip",
+          "id": "q-88",
+          "answer_html": "<p>v̄ = 1867/3.0 = 622.3 km/h ≈ <strong>6.2 × 10² km/h</strong>.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              78,
+              59,
+              217.9256,
+              310,
+              285.4256
+            ]
+          ],
+          "text": "3.  In a certain battery-powered circuit  an electron  requires 2.0 w 10 5  s to travel only 2.0 m. What is the  average speed of the electron in the circuit  Express  your answer in millimetres per second  mm/s .",
+          "id": "q-89",
+          "answer_html": "<p>v̄ = 2.0 m / (2.0 × 10⁵ s) = 1.0 × 10⁻⁵ m/s. Multiply by 1000 mm/m:</p><p><strong>v̄ = 1.0 × 10⁻² mm/s = 0.010 mm/s.</strong></p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              78,
+              59,
+              285.4256,
+              310,
+              339.4256
+            ]
+          ],
+          "text": "4.  Light from a laser requires 1.28 s to reach the Moon.  If light travels with a speed of 3.00 w 10 5  km/s  how  far is it to the Moon",
+          "id": "q-90",
+          "answer_html": "<p>d = vt = (3.00 × 10⁵)(1.28) = <strong>3.84 × 10⁵ km</strong>.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              78,
+              59,
+              339.4256,
+              310,
+              379.9255
+            ]
+          ],
+          "text": "5.  A tourist averaged 82 km/h for a 6.5 h trip in her car.  How far did she go",
+          "id": "q-91",
+          "answer_html": "<p>d = vt = (82)(6.5) = 533 km ≈ <strong>5.3 × 10² km</strong>.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              78,
+              59,
+              379.9255,
+              310,
+              715
+            ]
+          ],
+          "text": "6.  Use the following graph to answer the questions  below. Speed vs. Time Speed  v  m/s 16.0 14.0 12.0 10.0 8.0 6.0 4.0 2.0 0   0  1.0  2.0  3.0  4.0  5.0   6.0  7.0  8.0  9.0  10.0  11.0  12.0 Time  t  s a   What is the y-intercept of the above graph   Include units. b   What is the slope of the above graph   Include  units. c   What is the equation for the above graph    Use symbols v and t in the equation.",
+          "id": "q-92",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The y-intercept is <strong>4.0 m/s</strong>.</li><li>Use (0 s, 4.0 m/s) and (12 s, 16.0 m/s): slope = (16.0 − 4.0)/12 = <strong>1.0 m/s²</strong>.</li><li><strong>v = 4.0 m/s + (1.0 m/s²)t</strong>.</li></ol>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              78,
+              317,
+              82.085981,
+              576,
+              177.2935
+            ]
+          ],
+          "text": "7.  A certain airplane has an acceleration of 15.0 m/s 2 .  a    How fast will it be moving 2.5 s after it starts  down the runway b   How far will it travel during the 2.5 s c    Minimum take-off speed is 60.0 m/s. What  length must the runway be",
+          "id": "q-93",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Assuming it starts from rest, v = at = (15.0)(2.5) = 37.5 m/s ≈ <strong>38 m/s</strong>.</li><li>d = ½at² = ½(15.0)(2.5)² = 46.875 m ≈ <strong>47 m</strong>.</li><li>Minimum runway under the stated constant-acceleration model: d = v²/(2a) = (60.0)²/[2(15.0)] = <strong>120 m</strong>.</li></ol>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              78,
+              317,
+              177.2935,
+              576,
+              312.2935
+            ]
+          ],
+          "text": "8.  a    You are driving along the road at 80 km/h   22 m/s  when you see a moose 50.0 m in front   of your car. Your reaction time is 0.40 s  and when  you finally hit the brakes  your car accelerates at  a rate of o6.4 m/s 2 . Will your car stop in time to  avoid the moose b   If the road is wet and your car accelerates at a  rate of just o4.8 m/s 2  what will happen  Show  your calculations.",
+          "id": "q-94",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Using the given rounded speed 22 m/s, reaction distance = (22)(0.40) = 8.8 m. Braking distance = 22²/[2(6.4)] = 37.81 m. Total stopping distance = <strong>46.61 m</strong>, so <strong>yes</strong>, the car stops about 3.4 m before the moose.</li><li>On the wet road, braking distance = 22²/[2(4.8)] = 50.42 m. Total = 8.8 + 50.42 = <strong>59.22 m</strong>, so <strong>the car hits the moose</strong>. At impact it has braked over 50.0 − 8.8 = 41.2 m: v = √[22² − 2(4.8)(41.2)] = <strong>9.4 m/s</strong>, about 34 km/h.</li></ol><p>Converting 80 km/h without rounding gives a slightly different stopping distance, but the yes/no conclusions are unchanged. These are results of the exercise’s idealized model.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              78,
+              317,
+              312.2935,
+              576,
+              379.7935
+            ]
+          ],
+          "text": "9.  The CN Tower in Toronto is about 530 m high. If air  friction did not slow it down  how long would it  take a penny to fall from the top of the tower to the  ground below    g = 9.81 m/s 2",
+          "id": "q-95",
+          "answer_html": "<p>From rest, t = √(2h/g) = √[2(530)/9.81] = <strong>10.4 s</strong>, neglecting air resistance.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              78,
+              317,
+              379.7935,
+              576,
+              474.2935
+            ]
+          ],
+          "text": "10.  A motocross rider is coasting at a speed of 2.00 m/s.  He then decides to accelerate his bike at a rate of  3.00 m/s 2  for a distance of 100.0 m.    a  How fast is the bike moving  in m/s  at the end of  the 100.0 m stretch b   Convert your answer from m/s to km/h.",
+          "id": "q-96",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>v<sub>f</sub> = √[v<sub>i</sub>² + 2ad] = √[(2.00)² + 2(3.00)(100.0)] = <strong>24.6 m/s</strong>.</li><li>Use the unrounded value: (24.5764)(3.6) = <strong>88.5 km/h</strong>.</li></ol>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              78,
+              317,
+              474.2935,
+              576,
+              568.7933
+            ]
+          ],
+          "text": "11.  A mountain bike rider  after coming down a steep  hill  loses control of her bike while moving with a  speed of 5.00 m/s. Fortunately  she collides with a  haystack  which brings her to rest in a distance of  0.625 m. What was the acceleration of the bike and  rider while colliding with the haystack",
+          "id": "q-97",
+          "answer_html": "<p>Choose forward positive. a = (v<sub>f</sub>² − v<sub>i</sub>²)/(2d) = [0 − (5.00)²]/[2(0.625)] = <strong>−20.0 m/s²</strong>, opposite the motion.</p>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              78,
+              317,
+              568.7933,
+              576,
+              715
+            ]
+          ],
+          "text": "12.  A policeman on a mountain bike is cruising at a  speed of 4.00 m/s  when he sees a wanted criminal  standing on a corner  100.0 m ahead of him. If the  policeman accelerates at a rate of 2.00 m/s 2  how  much time will he take to reach the corner",
+          "id": "q-98",
+          "answer_html": "<p>d = v<sub>i</sub>t + ½at² gives 100.0 = 4.00t + t².</p><p>Solve t² + 4.00t − 100.0 = 0: t = [−4.00 + √(4.00² + 400.0)]/2 = <strong>8.20 s</strong>. Discard the negative-time root.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              79,
+              44,
+              48.7507,
+              295,
+              715
+            ]
+          ],
+          "text": "13.  The graph below shows how the speed of an aging  physics teacher varies with time  as he tries to run  up a hill. Speed vs. Time Speed  v  m/s 4.0 3.0 2.0 1.0 0   0  1.0  2.0  3.0  4.0  5.0   6.0  7.0  8.0  9.0  10.0  11.0  12.0  13.0  14.0 Time  t  s a   What was the starting speed of the runner b   What was the acceleration of the runner c   What distance did the runner travel d   What is the specific equation for the graph",
+          "id": "q-99",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Initial speed is <strong>3.5 m/s</strong>.</li><li>a = (0 − 3.5)/(14 − 0) = <strong>−0.25 m/s²</strong>.</li><li>Distance is the triangle’s area: d = ½(14)(3.5) = <strong>24.5 m</strong> (about 25 m at the graph’s precision).</li><li><strong>v = 3.5 m/s − (0.25 m/s²)t</strong>, for 0 ≤ t ≤ 14 s.</li></ol>"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              79,
+              302,
+              48.043081,
+              576,
+              183.7506
+            ]
+          ],
+          "text": "14. Equation 4 for uniform acceleration  v 2f  = v 20  2ad  can  be used to show that a body thrown upward with a  speed v will return to the same level with the same  speed it had when it was thrown upward. a   Show mathematically why the magnitude of v f   equals the magnitude of v 0 . b   Will the ball have the same velocity when it  comes down as when it was thrown up in the  air  Explain your answer.",
+          "id": "q-100",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Returning to the same level means displacement d = 0. Thus v<sub>f</sub>² = v<sub>i</sub>² + 2a(0) = v<sub>i</sub>², so <strong>|v<sub>f</sub>| = |v<sub>i</sub>|</strong>, assuming negligible air resistance.</li><li><strong>No.</strong> Speed is the same, but the returning velocity points downward. With up positive, v<sub>f</sub> = −v<sub>i</sub>.</li></ol>"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              79,
+              302,
+              183.7506,
+              576,
+              715
+            ]
+          ],
+          "text": "15.  A skateboarder accelerates uniformly down a hill   starting from rest. During the third 1 s interval from  rest  the skateboarder travels 7.5 m. What is the  acceleration of the skateboarder",
+          "id": "q-101",
+          "answer_html": "<p>“The third one-second interval” means <strong>t = 2 s to t = 3 s</strong>. From rest, d(t) = ½at².</p><p>7.5 m = d(3) − d(2) = ½a(3² − 2²) = 2.5a. Therefore <strong>a = 3.0 m/s² downhill</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    }
+  ]
+}

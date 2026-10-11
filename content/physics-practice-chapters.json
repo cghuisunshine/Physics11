@@ -1,0 +1,11 @@
+{
+  "chapters": [
+    {
+      "id": "bc-ch2",
+      "number": 2,
+      "title": "Kinematics",
+      "html": "bc-kinematics-questions.html",
+      "inventory": "content/bc-kinematics-questions.json"
+    }
+  ]
+}
