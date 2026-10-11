@@ -1,0 +1,15 @@
+.homework-panel,.homework-banner{max-width:1200px;margin:24px auto;padding:24px 30px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.homework-panel p{font-size:14px;color:var(--muted);line-height:1.6}.homework-panel h2{margin-top:0}
+.homework-fields{display:grid;grid-template-columns:1fr 2fr;gap:18px}.homework-fields label,#homework-link-row label{display:grid;gap:5px;font-size:13px;color:var(--muted)}
+.homework-fields input,.homework-fields textarea,#homework-link{width:100%;box-sizing:border-box;font:inherit;padding:10px;border:1px solid var(--line);border-radius:7px}
+.homework-answers{display:flex;align-items:center;gap:7px;font-size:14px;margin:16px 0}.homework-actions{display:flex;flex-wrap:wrap;gap:10px}
+.homework-actions button:disabled{opacity:.45;cursor:default}#homework-message:empty{display:none}#homework-count{font-weight:650}
+.homework-sampling{min-width:0;margin:20px 0;padding:18px;border:1px solid var(--line);border-radius:8px}.homework-sampling legend{padding:0 7px;font-weight:650}
+.sampling-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:end}.sampling-controls label{display:grid;gap:5px;font-size:13px;color:var(--muted)}.sampling-controls input,.sampling-table input{width:90px;padding:8px;border:1px solid var(--line);border-radius:7px;font:inherit}
+.sampling-table-wrap{overflow-x:auto}.sampling-table{width:100%;border-collapse:collapse;margin-top:16px;font-size:14px}.sampling-table th,.sampling-table td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line)}.sampling-table tbody th{font-weight:500}.sampling-table td:last-child{white-space:nowrap;color:var(--muted)}
+#homework-link-row{margin-top:16px}.question-top .homework-select{margin-left:0;color:var(--accent)}
+.question[data-homework=true]{border-left:3px solid var(--accent);padding-left:14px}
+.homework-banner h1{font-size:32px;margin:0 0 12px;letter-spacing:0}.homework-banner p{color:var(--muted);line-height:1.6}#homework-directions{white-space:pre-wrap;overflow-wrap:anywhere}
+.homework-view>header{display:none}.homework-view[data-homework-answers=false] .answer,.homework-view[data-homework-answers=false] .answer-toggle{display:none!important}
+@media(max-width:850px){.homework-panel,.homework-banner{margin:20px 16px;padding:20px}.homework-fields{grid-template-columns:1fr}}
+@media print{.homework-panel{display:none!important}.homework-banner{margin:0;padding:0 0 20px;border:0}.homework-view .context{display:block}.homework-view .context>summary{display:none}.homework-view .question{border-left:0;padding-left:0}.homework-view .set-heading p{display:none}.homework-view[data-homework-answers=true] .answer{display:block!important}}
