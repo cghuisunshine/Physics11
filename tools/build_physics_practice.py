@@ -94,6 +94,15 @@ def clean_fragment(fragment):
     return fragment
 
 
+def enlarge_question_images(fragment):
+    # Double the collection's display widths, retaining its responsive width
+    # cap and automatic height for question crops, shared graphs and data.
+    def enlarge(match):
+        return re.sub(r'(?<![-\w])width:(\d+)px',
+                      lambda width: f'width:{2 * int(width[1])}px', match[0])
+    return re.sub(r'<img\b[^>]*>', enlarge, fragment, flags=re.I)
+
+
 def load_bank(registry_path):
     registry = json.loads(registry_path.read_text())
     bank, ids, chapters = [], set(), set()
@@ -133,7 +142,7 @@ def load_bank(registry_path):
                     'number': number, 'topic': f'Ch {chapter["number"]} · {group["topic"]}',
                     'level': levels.get(group['kind'], 2), 'questionType': group['kind'],
                     'title': f'{group["title"]} — {question["label"]}',
-                    'html': clean_fragment(shared+tree.outer(image_node)+context),
+                    'html': enlarge_question_images(clean_fragment(shared+tree.outer(image_node)+context)),
                     'solution': clean_fragment(answer),
                     'answer': 'See worked solution',
                     'url': chapter['html']+'#'+question['id'],
