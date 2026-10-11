@@ -6,7 +6,7 @@ const {createHash}=require('node:crypto');
 const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'bc-kinematics-questions.html'),'utf8');
 const inventory=JSON.parse(fs.readFileSync(path.join(root,'content/bc-kinematics-questions.json'),'utf8'));
 const windows=[];
-function page(source=html,{url='https://cghuisunshine.github.io/Physics11/bc-kinematics-questions.html',storage={},blockedStorage=false}={}){
+function page(source=html,{url='https://cghuisunshine.github.io/Physics11/bc-kinematics-questions.html',storage={},blockedStorage=false,fetch=null}={}){
   const errors=[],virtualConsole=new VirtualConsole(),downloads=[],copied=[],printed=[];
   virtualConsole.on('jsdomError',error=>errors.push(error));
   const dom=new JSDOM(source,{url,runScripts:'dangerously',virtualConsole,beforeParse(w){
@@ -16,6 +16,12 @@ function page(source=html,{url='https://cghuisunshine.github.io/Physics11/bc-kin
     w.HTMLAnchorElement.prototype.click=function(){w.__downloadName=this.download;};
     for(const [key,value] of Object.entries(storage))w.localStorage.setItem(key,value);
     if(blockedStorage)Object.defineProperty(w,'localStorage',{get(){throw Error('storage blocked');}});
+    if(fetch){
+      w.fetch=fetch;
+      w.Image=class{constructor(){this.width=600;this.height=400;}set src(value){this.source=value;if(value)queueMicrotask(()=>this.onload?.());}};
+      w.HTMLCanvasElement.prototype.getContext=()=>({fillRect(){},fillText(){},drawImage(){}});
+      w.HTMLCanvasElement.prototype.toDataURL=()=> 'data:image/jpeg;base64,dGVzdA==';
+    }
   }});
   windows.push(dom.window);
   return {dom,w:dom.window,d:dom.window.document,errors,downloads,copied,printed,$:id=>dom.window.document.getElementById(id)};
@@ -134,6 +140,60 @@ function blobText(p,blob){return new Promise((resolve,reject)=>{const reader=new
   assert.equal(sampling.$('q-4').dataset.homework,'true');assert.equal(sampling.$('q-13').dataset.homework,'false');
   sampling.$('preview-homework').click();assert.deepEqual(visible(sampling),['q-1','q-4','q-99']);
   sampling.$('copy-homework').click();await pause();assert.equal(new URL(sampling.copied[1]).searchParams.get('homework'),'q-1,q-4,q-99');
+  // Real AI request/response protocol with deterministic network and canvas fixtures.
+  const aiCalls=[];let aiFailure=false,aiPending=false,lateResponse;
+  const ai=page(html,{fetch:async(url,options)=>{
+    const body=JSON.parse(options.body),questions=JSON.parse(body.message.split('ELIGIBLE QUESTIONS:\n')[1]);
+    const amount=Number(body.message.match(/Choose the (\d+)/)[1]);
+    aiCalls.push({url,options,body,questions,amount});
+    assert.ok(body.image);assert.equal(body.mime_type,'image/jpeg');
+    assert.ok(questions.every(q=>q.question_text&&q.worked_solution&&q.set&&q.number));
+    const selected=questions.slice(-amount).reverse().map(q=>({id:q.id,reason:'Multiple connected steps <test>.'}));
+    if(aiPending)return new Promise(resolve=>{lateResponse=()=>resolve({ok:true,json:async()=>({response:JSON.stringify({selected})})});});
+    if(aiFailure==='http')return {ok:false,status:503};
+    if(aiFailure==='network')throw new TypeError('Network unavailable');
+    if(aiFailure&&aiCalls.length%2===0)return {ok:true,json:async()=>({selected:[{id:'q-999',reason:'Invalid'}]})};
+    return {ok:true,json:async()=>({response:'```json\n'+JSON.stringify({selected})+'\n```'})};
+  }});
+  ai.$('create-homework').click();select(ai,'q-99');select(ai,'q-4');filter(ai,'kind','Practice');
+  for(const input of ai.d.querySelectorAll('[data-section-percent]')){input.value=['2.1','2.3'].includes(input.dataset.sectionPercent)?'50':'0';input.dispatchEvent(new ai.w.Event('input'));}
+  edit(ai,'homework-sampling-order','ai');assert.ok(!ai.$('homework-ai-help').hidden);
+  const aiSelected=()=>[...ai.d.querySelectorAll('[data-homework]')].filter(input=>input.checked).map(input=>input.dataset.homework);
+  await ai.$('apply-section-percentages').onclick();
+  assert.equal(aiCalls.length,2);assert.equal(aiCalls[0].url,'https://lakesideart.gochatus.org/grade-service/general');
+  assert.deepEqual(aiCalls.map(call=>call.amount),[3,1]);
+  assert.deepEqual(aiSelected(),['q-12','q-13','q-14','q-41','q-99'],'AI selects exact section counts, keeping questions outside filters');
+  assert.equal(ai.$('homework-ai-list').children.length,4);assert.equal(ai.$('homework-ai-list').querySelector('test'),null,'AI reasons are plain text');
+  assert.match(ai.$('homework-ai-status').textContent,/AI selected the hardest/);
+  ai.$('copy-homework').click();await pause();assert.equal(new URL(ai.copied[0]).searchParams.get('homework'),'q-12,q-13,q-14,q-41,q-99');
+  select(ai,'q-41',false);select(ai,'q-40');assert.deepEqual(aiSelected(),['q-12','q-13','q-14','q-40','q-99']);
+  assert.ok(ai.$('homework-ai-results').hidden,'Manual changes clear stale AI explanations');assert.equal(ai.$('homework-ai-status').textContent,'');
+  select(ai,'q-40',false);select(ai,'q-41');
+  aiFailure=true;await ai.$('apply-section-percentages').onclick();
+  assert.deepEqual(aiSelected(),['q-12','q-13','q-14','q-41','q-99'],'A later section failure cannot partially replace homework');
+  assert.match(ai.$('homework-ai-status').textContent,/invalid selection/);
+  for(const failure of ['http','network']){
+    aiFailure=failure;await ai.$('apply-section-percentages').onclick();
+    assert.deepEqual(aiSelected(),['q-12','q-13','q-14','q-41','q-99']);assert.match(ai.$('homework-ai-status').textContent,/unchanged/);assert.ok(!ai.$('apply-section-percentages').disabled);
+  }
+  const parse=ai.w.HomeworkDifficultyAI.parse,candidates=[ai.$('q-40'),ai.$('q-41')];
+  for(const bad of [{selected:[]},{selected:[{id:'q-999',reason:'wrong'}]},{selected:[{id:'q-40',reason:''}]},{selected:[{id:'q-40',reason:'a'},{id:'q-40',reason:'b'}]}])assert.throws(()=>parse(bad,candidates,bad.selected.length===2?2:1));
+  assert.throws(()=>parse({ok:false},candidates,1));assert.throws(()=>parse({response:'not JSON'},candidates,1));
+  aiFailure=false;aiPending=true;const pending=ai.$('apply-section-percentages').onclick();await pause();
+  assert.ok(ai.$('apply-section-percentages').disabled);assert.ok(!ai.$('cancel-homework-ai').hidden);
+  ai.$('cancel-homework-ai').click();assert.ok(ai.$('cancel-homework-ai').hidden);lateResponse();await pending;
+  assert.deepEqual(aiSelected(),['q-12','q-13','q-14','q-41','q-99'],'Canceled responses cannot alter selection');
+  const changedRequest=ai.$('apply-section-percentages').onclick();await pause();edit(ai,'homework-parity','even');lateResponse();await changedRequest;
+  assert.deepEqual(aiSelected(),['q-12','q-13','q-14','q-41','q-99'],'Changing number choice cancels stale AI results');
+  aiPending=false;Object.defineProperty(ai.w.navigator,'onLine',{value:false,configurable:true});
+  edit(ai,'homework-parity','all');await ai.$('apply-section-percentages').onclick();assert.match(ai.$('homework-ai-status').textContent,/internet connection/);
+  edit(ai,'homework-all-percent','100');ai.$('set-section-percentages').click();const beforeAll=aiCalls.length;
+  await ai.$('apply-section-percentages').onclick();assert.equal(aiCalls.length,beforeAll,'100% works offline without AI requests');
+  assert.ok(ai.$('homework-ai-help').hidden===false);assert.match(ai.$('homework-ai-status').textContent,/ranking was not needed/);
+  assert.deepEqual(aiSelected(),inventory.groups.filter(g=>g.kind==='Practice').flatMap(g=>g.questions.map(q=>q.id)).concat('q-99'));
+  edit(ai,'homework-all-percent','0');ai.$('set-section-percentages').click();await ai.$('apply-section-percentages').onclick();assert.equal(aiCalls.length,beforeAll);assert.deepEqual(aiSelected(),['q-99'],'Zero percent also works offline and keeps selections outside filters');
+  const aiStorage=Object.fromEntries(Object.keys(ai.w.localStorage).map(k=>[k,ai.w.localStorage.getItem(k)])),aiRestored=page(html,{storage:aiStorage});
+  assert.equal(aiRestored.$('homework-sampling-order').value,'ai');
   // Local files generate hosted links; offline students can instead use the downloaded HTML.
   const local=page(html,{url:'file:///tmp/bc-kinematics-questions.html',blockedStorage:true});local.$('create-homework').click();select(local,'q-99');local.$('copy-homework').click();await pause();
   assert.equal(new URL(local.copied[0]).origin,'https://cghuisunshine.github.io');
@@ -148,6 +208,6 @@ function blobText(p,blob){return new Promise((resolve,reject)=>{const reader=new
     assert.equal(digest(p.$('answer-'+question.id).innerHTML),digest(reference),'Source answer preserved for '+question.id);
   }
   for(const w of windows)w.close();
-  for(const instance of [p,recipient,offline,withAnswers,restored,sampling,samplingRestored,local,invalid,duplicate])assert.deepEqual(instance.errors,[]);
-  console.log('Passed: section percentages/random sampling, textbook odd/even numbers, filtered and preview sampling, validation/rounding, saved settings, homework selection/filtering, draft persistence, shared links, standalone downloads, optional answers, required graphs/procedures, print flow, invalid IDs, offline/storage/clipboard fallback, and all 101 source questions.');
+  for(const instance of [p,recipient,offline,withAnswers,restored,sampling,samplingRestored,ai,aiRestored,local,invalid,duplicate])assert.deepEqual(instance.errors,[]);
+  console.log('Passed: AI difficulty selection/counts/reasons, response validation, atomic failures, cancellation/stale responses, offline 0/100%, section percentages/random sampling, textbook odd/even numbers, filtered and preview sampling, validation/rounding, saved settings, homework selection/filtering, draft persistence, shared links, standalone downloads, optional answers, required graphs/procedures, print flow, invalid IDs, offline/storage/clipboard fallback, and all 101 source questions.');
 })().catch(error=>{for(const w of windows)w.close();console.error(error);process.exit(1);});

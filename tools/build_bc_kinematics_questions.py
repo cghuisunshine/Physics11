@@ -199,10 +199,12 @@ template='''<!doctype html>
 <label class="homework-answers"><input id="homework-answers" type="checkbox"> Include worked answers</label>
 <fieldset class="homework-sampling"><legend>Choose questions by section</legend>
 <p id="sampling-help">Use a percentage of the eligible questions in each section. Section, type, and search filters apply across the full collection. Odd/even uses the textbook question number within each set; unnumbered warm-ups and sample labels such as 2.1.1 are included only with All numbers.</p>
-<div class="sampling-controls"><label>Question numbers<select id="homework-parity"><option value="all">All numbers</option><option value="odd">Odd numbers</option><option value="even">Even numbers</option></select></label><label>Pick questions<select id="homework-sampling-order"><option value="random">Random sample</option><option value="first">First in order</option></select></label><label>Set all sections to (%)<input id="homework-all-percent" type="number" min="0" max="100" step="1" value="50"></label><button id="set-section-percentages" type="button">Set all percentages</button></div>
+<div class="sampling-controls"><label>Question numbers<select id="homework-parity"><option value="all">All numbers</option><option value="odd">Odd numbers</option><option value="even">Even numbers</option></select></label><label>Pick questions<select id="homework-sampling-order"><option value="random">Random sample</option><option value="first">First in order</option><option value="ai">AI: most difficult</option></select></label><label>Set all sections to (%)<input id="homework-all-percent" type="number" min="0" max="100" step="1" value="50"></label><button id="set-section-percentages" type="button">Set all percentages</button></div>
+<p id="homework-ai-help" hidden>AI compares question images and worked solutions using the practice studio's online AI service. Its difficulty estimates are explained below after selection. You can manually adjust the result.</p>
 <div class="sampling-table-wrap"><table class="sampling-table"><thead><tr><th scope="col">Section</th><th scope="col">Select (%)</th><th scope="col">Questions to select</th></tr></thead><tbody id="homework-sections"></tbody></table></div>
 <p>Counts round up. 0% skips a section; 100% selects every eligible question. Applying percentages replaces the selection within the current filters and keeps selections outside them.</p>
-<div class="homework-actions"><button id="apply-section-percentages" type="button">Apply section percentages</button><button id="select-matching-numbers" type="button">Add matching numbers</button></div>
+<div class="homework-actions"><button id="apply-section-percentages" type="button">Apply section percentages</button><button id="select-matching-numbers" type="button">Add matching numbers</button><button id="cancel-homework-ai" type="button" hidden>Cancel AI selection</button></div>
+<p id="homework-ai-status" role="status"></p><details id="homework-ai-results" hidden><summary>Why AI selected these questions</summary><ul id="homework-ai-list"></ul></details>
 </fieldset>
 <div class="homework-actions"><button id="select-shown" type="button">Select shown questions</button><button id="clear-selection" type="button">Clear selection</button><button type="button" data-edit-selection>Adjust questions</button><button id="preview-homework" type="button">Preview homework</button><button id="copy-homework" type="button">Copy homework link</button><button id="download-homework" type="button">Download homework HTML</button><button id="print-homework" type="button">Print homework / Save PDF</button></div>
 <p id="homework-count" aria-live="polite"></p><p id="homework-message" role="status"></p>
@@ -212,10 +214,13 @@ template='''<!doctype html>
 <p class="status" id="status" aria-live="polite"></p><div class="layout"><aside aria-label="Question sets"><h2>Browse the chapter</h2><nav>@@NAV@@</nav></aside><main id="questions">@@SECTIONS@@<p class="empty" id="empty" hidden>No questions match. Try a different word or clear the filters.</p></main></div>
 <footer>Source: BC Science Physics 11, Chapter 2 Kinematics, Edvantage Interactive (2012). Original numbering restarts in each set. Worked answers are independently calculated for this collection. All question images, answers, styles, and controls are embedded; no internet connection or companion files are needed. Completion marks are saved in this browser when local storage is available.</footer>
 <script>
+@@HOMEWORK_AI_SCRIPT@@
+</script><script>
 @@HOMEWORK_SCRIPT@@
 </script></body></html>'''
 template=template.replace('@@TOPICS@@',options(TOPICS)).replace('@@KINDS@@',options([(k,k) for k in KINDS])).replace('@@NAV@@',nav).replace('@@SECTIONS@@',''.join(sections))
 template=template.replace('@@HOMEWORK_STYLES@@',(ROOT/'tools/bc-kinematics-homework.css').read_text()).replace('@@HOMEWORK_SCRIPT@@',(ROOT/'tools/bc-kinematics-homework.js').read_text())
+template=template.replace('@@HOMEWORK_AI_SCRIPT@@',(ROOT/'tools/bc-kinematics-homework-ai.js').read_text())
 output=ROOT/'bc-kinematics-questions.html'; output.write_text(template)
 manifest=ROOT/'content/bc-kinematics-questions.json'
 manifest.write_text(json.dumps(dict(source=SOURCE.name,chapter=2,title='Kinematics',question_count=sequence,groups=GROUPS),indent=2,ensure_ascii=False))

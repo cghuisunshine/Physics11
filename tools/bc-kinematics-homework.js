@@ -7,7 +7,7 @@
   const params=new URLSearchParams(location.search),incoming=params.has('homework');
   const draft=read(DRAFT,{}),ids=incoming?(params.get('homework')||'').split(','):(Array.isArray(draft.ids)?draft.ids:[]);
   const selected=new Set(ids.filter(id=>known.has(id)));
-  let completed=read(DONE,{}),composing=false,homeworkView=incoming;
+  let completed=read(DONE,{}),composing=false,homeworkView=incoming,aiRequest=null;
   if(typeof completed!=='object'||Array.isArray(completed))completed={};
   $('homework-name').value=String(incoming?params.get('title')||'Kinematics homework':draft.title||'Kinematics homework').slice(0,160);
   $('homework-instructions').value=String(incoming?params.get('instructions')||'':draft.instructions||'').slice(0,2000);
@@ -21,7 +21,11 @@
     return {topic:option.value,input,count};
   });
   $('homework-parity').value=['all','odd','even'].includes(draft.parity)?draft.parity:'all';
-  $('homework-sampling-order').value=draft.samplingOrder==='first'?'first':'random';
+  $('homework-sampling-order').value=['first','ai'].includes(draft.samplingOrder)?draft.samplingOrder:'random';
+  function cancelAI(message='AI selection canceled. Your selection is unchanged.'){
+    if(!aiRequest)return;aiRequest.controller.abort();clearTimeout(aiRequest.timer);aiRequest=null;$('homework-ai-status').textContent=message;renderSampling();
+  }
+  function selectionChanged(){const pending=!!aiRequest;cancelAI('Settings or selection changed. Run AI selection again when ready.');if(!pending)$('homework-ai-status').textContent='';$('homework-ai-results').hidden=true;$('homework-ai-list').replaceChildren();}
   function matchesFilters(q){const set=q.closest('.question-set');return (!topic.value||set.dataset.topic===topic.value)&&(!kind.value||set.dataset.kind===kind.value)&&q.dataset.search.includes(search.value.trim().toLowerCase());}
   function matchesNumber(q){
     if($('homework-parity').value==='all')return true;
@@ -33,7 +37,9 @@
   function renderSampling(){
     const valid=validPercentages(),plan=samplingPlan();
     for(const rule of plan)rule.count.textContent=rule.input.checkValidity()?`${rule.amount} of ${rule.candidates.length} eligible`:'Enter 0–100';
-    $('apply-section-percentages').disabled=!valid||!qs.some(matchesFilters);
+    $('apply-section-percentages').disabled=!!aiRequest||!valid||!qs.some(matchesFilters);
+    $('apply-section-percentages').textContent=$('homework-sampling-order').value==='ai'?'AI: choose most difficult':'Apply section percentages';
+    $('homework-ai-help').hidden=$('homework-sampling-order').value!=='ai';$('cancel-homework-ai').hidden=!aiRequest;
     $('select-matching-numbers').disabled=!plan.some(rule=>rule.candidates.length);
   }
   const orderedIds=()=>qs.filter(q=>selected.has(q.id)).map(q=>q.id);
@@ -57,10 +63,11 @@
     }catch{/* File browsers may not allow replacing their URL. */}
   }
   function changed(){
+    selectionChanged();
     saveDraft();$('homework-message').textContent='';$('homework-link-row').hidden=true;
     if(homeworkView)updateLocation();render();
   }
-  function setView(value){homeworkView=value;resetFilters();updateLocation();render();}
+  function setView(value){cancelAI();homeworkView=value;resetFilters();updateLocation();render();}
   function render(){
     renderSampling();
     const term=search.value.trim().toLowerCase();let shown=0;
@@ -102,8 +109,8 @@
   document.querySelectorAll('[data-homework]').forEach(input=>input.addEventListener('change',()=>{
     if(input.checked)selected.add(input.dataset.homework);else selected.delete(input.dataset.homework);changed();
   }));
-  [search,topic,kind].forEach(input=>input.addEventListener('input',render));
-  $('reset').onclick=()=>{resetFilters();render();};
+  [search,topic,kind].forEach(input=>input.addEventListener('input',()=>{cancelAI('Filters changed. Run AI selection again when ready.');render();}));
+  $('reset').onclick=()=>{cancelAI();resetFilters();render();};
   $('create-homework').onclick=()=>{composing=!composing;render();};
   $('all-questions').onclick=()=>setView(false);
   document.querySelectorAll('[data-edit-selection]').forEach(button=>button.addEventListener('click',()=>{
@@ -114,14 +121,36 @@
   $('select-shown').onclick=()=>{for(const q of qs)if(!q.hidden)selected.add(q.id);changed();};
   $('set-section-percentages').onclick=()=>{
     const input=$('homework-all-percent');if(!input.reportValidity()||input.value==='')return;
+    selectionChanged();
     for(const rule of sectionRules)rule.input.value=input.value;saveDraft();renderSampling();
   };
-  for(const rule of sectionRules){rule.input.required=true;rule.input.addEventListener('input',()=>{saveDraft();renderSampling();});}
-  for(const id of ['homework-parity','homework-sampling-order'])$(id).addEventListener('input',()=>{saveDraft();renderSampling();});
+  for(const rule of sectionRules){rule.input.required=true;rule.input.addEventListener('input',()=>{selectionChanged();saveDraft();renderSampling();});}
+  for(const id of ['homework-parity','homework-sampling-order'])$(id).addEventListener('input',()=>{selectionChanged();saveDraft();renderSampling();});
   $('select-matching-numbers').onclick=()=>{for(const q of qs)if(matchesFilters(q)&&matchesNumber(q))selected.add(q.id);changed();};
-  $('apply-section-percentages').onclick=()=>{
-    if(!validPercentages())return;
+  $('cancel-homework-ai').onclick=()=>cancelAI();
+  $('apply-section-percentages').onclick=async()=>{
+    if(!validPercentages()||aiRequest)return;
     const plan=samplingPlan();
+    if($('homework-sampling-order').value==='ai'){
+      const request={controller:new AbortController(),timer:null};aiRequest=request;renderSampling();
+      $('homework-ai-status').textContent='Preparing AI selection…';
+      request.timer=setTimeout(()=>cancelAI('AI selection timed out. Your selection is unchanged; try again.'),360000);
+      try{
+        const result=await window.HomeworkDifficultyAI.choose(plan,{signal:request.controller.signal,onProgress:message=>{if(aiRequest===request)$('homework-ai-status').textContent=message;}});
+        if(aiRequest!==request||request.controller.signal.aborted)return;
+        clearTimeout(request.timer);aiRequest=null;
+        for(const q of qs)if(matchesFilters(q))selected.delete(q.id);
+        for(const item of result.selected)selected.add(item.id);
+        changed();
+        for(const item of result.selected){const q=$(item.id),entry=document.createElement('li'),link=document.createElement('a');link.href='#'+item.id;link.textContent=q.closest('.question-set').querySelector('h2').textContent+' — '+q.querySelector('.question-top a').textContent;entry.append(link,document.createTextNode(': '+item.reason));$('homework-ai-list').append(entry);}
+        $('homework-ai-results').hidden=!result.selected.length;
+        $('homework-ai-results').querySelector('summary').textContent=result.requests?'Why AI selected these questions':'Selected questions';
+        $('homework-ai-status').textContent=result.requests?'AI selected the hardest questions for each section percentage. Use Adjust questions to add or remove any.':'Section percentages applied. All eligible questions or none were requested, so AI ranking was not needed.';
+      }catch(error){
+        if(aiRequest===request)$('homework-ai-status').textContent=error.name==='AbortError'?'AI selection canceled. Your selection is unchanged.':(error instanceof TypeError?'Could not reach the AI service. Check your connection and try again.':error.message)+' Your selection is unchanged.';
+      }finally{clearTimeout(request.timer);if(aiRequest===request){aiRequest=null;renderSampling();}}
+      return;
+    }
     for(const q of qs)if(matchesFilters(q))selected.delete(q.id);
     for(const {candidates,amount} of plan){
       if($('homework-sampling-order').value==='random')for(let i=candidates.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[candidates[i],candidates[j]]=[candidates[j],candidates[i]];}
