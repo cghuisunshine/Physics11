@@ -8,6 +8,7 @@
 .sampling-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:end}.sampling-controls label{display:grid;gap:5px;font-size:13px;color:var(--muted)}.sampling-controls input,.sampling-table input{width:90px;padding:8px;border:1px solid var(--line);border-radius:7px;font:inherit}
 .sampling-table-wrap{overflow-x:auto}.sampling-table{width:100%;border-collapse:collapse;margin-top:16px;font-size:14px}.sampling-table th,.sampling-table td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line)}.sampling-table tbody th{font-weight:500}.sampling-table td:last-child{white-space:nowrap;color:var(--muted)}
 #homework-ai-status:empty{display:none}#homework-ai-results{margin-top:16px;font-size:14px}#homework-ai-results summary{cursor:pointer;color:var(--accent)}#homework-ai-list li{margin:10px 0}
+#choose-hardest-ai{background:var(--accent);color:white;font-weight:650}
 #homework-link-row{margin-top:16px}.question-top .homework-select{margin-left:0;color:var(--accent)}
 .question[data-homework=true]{border-left:3px solid var(--accent);padding-left:14px}
 .homework-banner h1{font-size:32px;margin:0 0 12px;letter-spacing:0}.homework-banner p{color:var(--muted);line-height:1.6}#homework-directions{white-space:pre-wrap;overflow-wrap:anywhere}

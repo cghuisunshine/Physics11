@@ -38,8 +38,9 @@
     const valid=validPercentages(),plan=samplingPlan();
     for(const rule of plan)rule.count.textContent=rule.input.checkValidity()?`${rule.amount} of ${rule.candidates.length} eligible`:'Enter 0–100';
     $('apply-section-percentages').disabled=!!aiRequest||!valid||!qs.some(matchesFilters);
-    $('apply-section-percentages').textContent=$('homework-sampling-order').value==='ai'?'AI: choose most difficult':'Apply section percentages';
-    $('homework-ai-help').hidden=$('homework-sampling-order').value!=='ai';$('cancel-homework-ai').hidden=!aiRequest;
+    $('choose-hardest-ai').disabled=$('apply-section-percentages').disabled;
+    $('apply-section-percentages').textContent=$('homework-sampling-order').value==='ai'?'Apply AI percentages':'Apply section percentages';
+    $('cancel-homework-ai').hidden=!aiRequest;
     $('select-matching-numbers').disabled=!plan.some(rule=>rule.candidates.length);
   }
   const orderedIds=()=>qs.filter(q=>selected.has(q.id)).map(q=>q.id);
@@ -128,6 +129,11 @@
   for(const id of ['homework-parity','homework-sampling-order'])$(id).addEventListener('input',()=>{selectionChanged();saveDraft();renderSampling();});
   $('select-matching-numbers').onclick=()=>{for(const q of qs)if(matchesFilters(q)&&matchesNumber(q))selected.add(q.id);changed();};
   $('cancel-homework-ai').onclick=()=>cancelAI();
+  $('choose-hardest-ai').onclick=()=>{
+    if(!validPercentages()||aiRequest||!qs.some(matchesFilters))return;
+    $('homework-sampling-order').value='ai';selectionChanged();saveDraft();renderSampling();
+    return $('apply-section-percentages').onclick();
+  };
   $('apply-section-percentages').onclick=async()=>{
     if(!validPercentages()||aiRequest)return;
     const plan=samplingPlan();
