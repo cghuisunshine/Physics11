@@ -11,7 +11,7 @@ try{
   assert.equal(d.querySelectorAll('.practice-set').length,20);assert.equal(d.querySelectorAll('.practice-question').length,79);
   assert.equal(d.querySelectorAll('.answer-disclosure').length,85,'All 79 answers plus six tutorial answers start collapsed');
   assert.equal(d.querySelectorAll('.answer-disclosure[open]').length,0);
-  const normalize=s=>s.replace(/([Frgμ])_([A-Za-z]+(?:,[A-Za-z]+)?)/g,'$1$2').replace(/\s+/g,' ').trim();
+  const normalize=s=>s.replace(/([Frgkμ])_([A-Za-z]+(?:,[A-Za-z]+)?)/g,'$1$2').replace(/\s+/g,' ').trim();
   for(const q of original.querySelectorAll('.question')){
     const copy=$('forces-'+q.id);assert.ok(copy,q.id);
     assert.deepEqual([...copy.querySelectorAll('.question-image img')].map(i=>i.src),[...q.querySelectorAll('.question-image img')].map(i=>i.src),'Original prompt images preserved: '+q.id);
@@ -29,6 +29,14 @@ try{
   for(const a of d.querySelectorAll('a[href^="#"]'))assert.ok(d.querySelector(a.getAttribute('href')));
   assert.equal(d.querySelectorAll('script[src],link[rel="stylesheet"]').length,0,'Notes have no runtime asset dependencies');
   assert.match($('topic-4').textContent,/coin-and-feather/);assert.match($('topic-9').textContent,/metre stick clamped horizontally/);
+  const springFigures=[...$('topic-8').querySelectorAll('.spring-visual')];assert.equal(springFigures.length,2);
+  for(const [index,figure] of springFigures.entries()){
+    const name=index?'spring-force-deformation':'spring-extension-compression';
+    assert.equal(figure.closest('details'),null,'Spring visual is visible with its explanation');
+    assert.equal(Buffer.from(figure.querySelector('img').src.split(',')[1],'base64').toString(),fs.readFileSync(path.join(root,'assets/forces-notes',name+'.svg'),'utf8'),'Embedded graph matches its standalone SVG');
+  }
+  const apparatus=$('topic-9').querySelector('.investigation-pair');assert.ok(apparatus);
+  assert.match(apparatus.querySelector('img').alt,/C-clamps/);assert.match(apparatus.querySelector('.investigation-explanation').textContent,/unknown object/);
   assert.equal($('forces-example-6-1').querySelector('.answer-body').textContent.includes('135 N'),true,'Friction worked result is hidden inside its disclosure');
   assert.equal($('forces-q-47').querySelector('.answer-body').textContent.includes('N/m'),true,'Source correction about spring-constant units retained');
   const before=$('forces-answer-q-2');before.querySelector('summary').click();assert.ok(before.open);before.querySelector('summary').click();assert.ok(!before.open);

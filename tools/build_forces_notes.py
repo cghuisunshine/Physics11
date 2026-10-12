@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build Forces Notes using the Kinematics notes design and Chapter 3 questions.
 
-Requires Pillow, BeautifulSoup, Poppler, and the chapter-tutorial-html skill.
+Requires Pillow, BeautifulSoup, Matplotlib, Poppler, and the chapter-tutorial-html skill.
 Run: python tools/build_forces_notes.py
 """
 from pathlib import Path
@@ -15,6 +15,7 @@ import tempfile
 
 from bs4 import BeautifulSoup
 from PIL import Image
+from forces_spring_graphs import build_spring_graphs
 
 ROOT = Path(__file__).resolve().parents[1]
 GENERATOR = Path.home() / '.agents/skills/chapter-tutorial-html/scripts/generate_chapter_html.py'
@@ -104,14 +105,19 @@ figures = {
         str(SOURCE.select_one('#set-15 .shared img')) +
         '<figcaption>Figure 3.3.1, textbook p. 93. The force-versus-extension slope is the spring constant; the horizontal axis is in centimetres.</figcaption></figure>'),
 }
-investigation_figures = [
+spring_figures = build_spring_graphs()
+investigation_figures = {7: [
     ('Investigation 3-2, Part 1: friction and weight', source_diagram(94, (88, 494, 394, 678),
         'Figure 3.2.3: a vertical spring balance weighs a block, then a horizontal spring balance pulls stacks of one, two, three, and four blocks.',
         'Figure 3.2.3, textbook p. 89. First weigh the blocks vertically. Then pull one to four stacked blocks horizontally: total weight increases while the bottom contact area stays the same.')),
     ('Investigation 3-2, Part 2: contact area', source_diagram(95, (72, 488, 394, 650),
         'Figure 3.2.4: the same four blocks are arranged with one, two, three, and four bottom faces contacting the bench, labelled a, b, c, and d.',
         'Figure 3.2.4, textbook p. 90. Arrangements (a), (b), (c), and (d) have contact areas A, 2A, 3A, and 4A. All use the same four blocks, so total weight is unchanged.')),
-]
+], 9: [
+    ('Investigation 3-3: another way to weigh', source_diagram(100, (88, 249, 389, 466),
+        'Figure 3.3.2: C-clamps hold a horizontal metre stick at the bench; a paper clip suspends a mass at the free end, with a pointer and vertical ruler to measure its downward depression.',
+        'Figure 3.3.2, textbook p. 95. The clamped stick bends under the load. Read the pointer against the vertical ruler, then use the calibrated force-versus-depression relationship to find the load\'s weight.')),
+]}
 COEFFICIENTS = [('Wood on wood', '0.25'), ('Steel on steel', '0.50'), ('Lubricated steel on steel', '0.10'),
     ('Rubber on dry asphalt', '0.40'), ('Rubber on wet asphalt', '0.20'), ('Rubber on ice', '0.005'), ('Steel on ice', '0.01')]
 table = '<div class="table-wrap"><table class="reference-table"><caption>Table 3.2.1, textbook p. 87: approximate kinetic coefficients</caption><thead><tr><th scope="col">Surfaces in contact</th><th scope="col">μ_k</th></tr></thead><tbody>' + ''.join(
@@ -157,13 +163,17 @@ for number, (raw, (refs, groups)) in enumerate(zip(sections, TOPICS), 1):
         body = body.replace(anchor, anchor + figure, 1)
     if number == 6:
         body = body.replace('<h3>Approximate surface coefficients</h3>', '<h3>Approximate surface coefficients</h3>' + table, 1)
-    if number == 7:
-        for heading, figure in investigation_figures:
+    if number == 8:
+        for heading, figure in spring_figures.items():
             anchor = '<h3>' + html.escape(heading) + '</h3>'
-            pattern = re.escape(anchor) + r'\s*(.*?)(?=\s*<h3>|\Z)'
-            body, matches = re.subn(pattern, lambda match: anchor + '<div class="investigation-pair">' + figure +
-                '<div class="investigation-explanation">' + match[1] + '</div></div>', body, count=1, flags=re.S)
-            assert matches == 1, heading
+            assert anchor in body, heading
+            body = body.replace(anchor, anchor + figure, 1)
+    for heading, figure in investigation_figures.get(number, []):
+        anchor = '<h3>' + html.escape(heading) + '</h3>'
+        pattern = re.escape(anchor) + r'\s*(.*?)(?=\s*<h3>|\Z)'
+        body, matches = re.subn(pattern, lambda match: anchor + '<div class="investigation-pair">' + figure +
+            '<div class="investigation-explanation">' + match[1] + '</div></div>', body, count=1, flags=re.S)
+        assert matches == 1, heading
     source_text = ' '.join(q['data-search'] for g in groups for q in SOURCE.select(f'#set-{g} .question'))
     search_text = ' '.join((BeautifulSoup(raw, 'html.parser').get_text(' ') + ' ' + source_text).lower().split())
     body += ''.join(practice(g) for g in groups)
@@ -175,7 +185,7 @@ for number, (raw, (refs, groups)) in enumerate(zip(sections, TOPICS), 1):
 assert len(used) == 79 and set(used) == {q['id'] for q in SOURCE.select('.question')}
 page = page.replace('%%CONTENTS%%', ''.join(contents))
 def notation(text):
-    return re.sub(r'(?<![A-Za-z_])([Frgμ])_([A-Za-z]+(?:,[A-Za-z]+)?)', lambda m: m[1] + '<sub>' + m[2] + '</sub>', text)
+    return re.sub(r'(?<![A-Za-z_])([Frgkμ])_([A-Za-z]+(?:,[A-Za-z]+)?)', lambda m: m[1] + '<sub>' + m[2] + '</sub>', text)
 page = ''.join(part if part.startswith('<') else notation(part) for part in re.split(r'(<[^>]+>)', page))
 footer = ('<footer><div class="notes-links"><a href="content.html">All Physics 11 notes</a>'
     '<a href="bc-forces-questions.html">Forces questions and homework tools</a>'

@@ -239,6 +239,18 @@ spring constant units: N/m
 ```
 In these magnitude calculations x is a positive extension or compression. The spring's restoring force opposes the displacement; along a signed axis it can be written F_s = −kx. The minus sign expresses direction, not a negative spring constant.
 
+### Seeing extension and compression
+Compare the three states of the **same spring** in the illustration. Its relaxed length L₀ is 10 cm. Stretching it to 14 cm gives x = +4 cm; compressing it to 6 cm gives x = −4 cm. The dashed reference line shows where the free end rests with no load.
+
+### Signed force graph: extension and compression
+The graph uses an illustrative spring with **k = 100 N/m**, equivalent to 1 N/cm. Positive x means extension; negative x means compression. The solid line is the external force needed to hold the spring at rest. The dashed line is the spring's restoring force, which always acts toward the relaxed position.
+
+- **Extension, x = +2 cm:** Hold with +2 N to the right; the spring pulls with −2 N to the left.
+- **Compression, x = −2 cm:** Hold with −2 N to the left; the spring pushes with +2 N to the right.
+- **Relaxed, x = 0:** Both forces are zero in this ideal model.
+
+The signed holding-force graph has slope +k, and the restoring-force graph has slope −k. The textbook's positive load-versus-extension graph below uses force magnitudes, so its slope is positive.
+
 ### Reading a force-versus-extension graph
 Plot force on the vertical axis and extension on the horizontal axis. The slope is the spring constant:
 ```
@@ -268,17 +280,25 @@ Doubling the mass doubles the extension as long as the spring remains in the sam
 
 ## 9 Elastic balances and calibration
 ### Investigation 3-3: another way to weigh
-The textbook investigation uses a **metre stick clamped horizontally**, with 80.0 cm overhanging the bench. Known masses hang from the free end. Measure the end's vertical depression relative to its unloaded position, and convert each mass into a force using F_g = mg.
+Figure 3.3.2 shows a **metre stick clamped horizontally**, with 80.0 cm overhanging the bench. The large paper clip holds the masses, and a pointer beside the vertical ruler shows how far the free end moves downward.
 
-Graph **force against depression** and determine the effective stiffness from a best-fit slope. Include axis quantities and units. A relationship close to a straight line through the origin supports a Hooke-like elastic model over the measured range. Remove the masses to check that the stick returns to its initial position, and check that the clamp remains secure.
+**How it works:** A load's weight bends the stick. The stick's elastic resistance supports the load at rest. Within a small, repeatable range, a larger force produces a proportionally larger depression, so the stick can serve as a calibrated elastic balance.
+
+**Calibrate before weighing an unknown object:**
+1. Record the unloaded pointer position. Measure depression y from that position, rather than using the ruler's absolute reading.
+2. Hang known masses and calculate each weight F_g = mg. Record the corresponding depression.
+3. Plot **force vertically against depression horizontally**. The best-fit slope is the effective stiffness k_eff. For an approximately linear graph through the origin, use F_g = k_eff y.
+4. Hang the unknown object, measure its depression, and read its weight from the graph or equation. If its mass is required, calculate m = F_g / g.
+
+Keep the same 80.0 cm overhang and clamp position during calibration and measurement; changing them changes the stick's stiffness. Remove the masses to check that the stick returns to its initial position. Compare the inferred weight with a commercial spring balance, as the investigation requests.
 
 ### Worked example: measuring an unknown mass
-A calibrated elastic balance has an effective stiffness of **k = 200 N/m**. An unknown mass produces a deflection of **3.00 cm** while hanging at rest. Find the mass, using g = 9.81 N/kg.
+A calibrated elastic balance has an effective stiffness of **k_eff = 200 N/m**. An unknown mass produces a depression of **3.00 cm** while hanging at rest. Find the mass, using g = 9.81 N/kg.
 
 **Worked answer**
 ```
-x = 3.00 cm = 0.0300 m
-F_s = kx = (200)(0.0300) = 6.00 N
+y = 3.00 cm = 0.0300 m
+F_g = k_eff y = (200)(0.0300) = 6.00 N
 mg = 6.00 N
 m = 6.00 / 9.81 ≈ 0.612 kg
 ```
