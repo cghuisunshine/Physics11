@@ -26,12 +26,20 @@
 <div class="layout"><aside class="sidebar" aria-label="Notes navigation"><label for="search">Find in these notes</label><input type="search" id="search" placeholder="Try “velocity”" autocomplete="off"><nav aria-label="Topics">%%CONTENTS%%</nav></aside><main id="main"><div class="slide-nav" hidden><button id="previous" type="button">← Previous</button><p id="slide-position" aria-live="polite"></p><button id="next" type="button">Next →</button></div><p class="empty" id="empty" role="status" hidden>No matching topics. Try another word.</p>{{SECTIONS}}</main></div>
 <script>
 (()=>{
-const cards=[...document.querySelectorAll('.section-card')],links=[...document.querySelectorAll('nav a')],search=document.querySelector('#search'),nav=document.querySelector('.slide-nav'),empty=document.querySelector('#empty');
-let mode='study',slide=0;
+const cards=[...document.querySelectorAll('.section-card')],links=[...document.querySelectorAll('.sidebar nav a')],search=document.querySelector('#search'),nav=document.querySelector('.slide-nav'),empty=document.querySelector('#empty'),sidebar=document.querySelector('.sidebar'),topicNav=sidebar.querySelector('nav');
+let mode='study',slide=0,activeLink=null,activePending=false;
 function visibleCards(){const q=search.value.trim().toLowerCase();return cards.filter(c=>c.dataset.search.includes(q));}
 function readingCard(){const visible=visibleCards();if(mode==='slides')return visible[slide]||null;const edge=document.querySelector('.toolbar-wrap').getBoundingClientRect().bottom;return visible.find(c=>c.getBoundingClientRect().bottom>edge)||visible[visible.length-1]||null;}
 function scrollToContent(target){if(target)target.scrollIntoView({behavior:'instant',block:'start'});}
-function render(){const visible=visibleCards();slide=Math.max(0,Math.min(slide,visible.length-1));cards.forEach(c=>{const match=visible.includes(c);c.hidden=!match||(mode==='slides'&&c!==visible[slide]);c.dataset.searchHidden=String(!match);});links.forEach((a,i)=>{a.hidden=!visible.includes(cards[i]);a.classList.toggle('active',mode==='slides'&&cards[i]===visible[slide]);if(mode==='slides'&&cards[i]===visible[slide])a.setAttribute('aria-current','step');else a.removeAttribute('aria-current');});nav.hidden=mode!=='slides'||!visible.length;empty.hidden=!!visible.length;document.querySelector('#slide-position').textContent=`Topic ${visible.length?slide+1:0} of ${visible.length}`;document.querySelector('#previous').disabled=slide===0;document.querySelector('#next').disabled=slide>=visible.length-1;}
+function keepLinkVisible(link){
+if(mode==='simple'||!link)return;
+const rect=link.getBoundingClientRect();
+if(window.innerWidth<=800){const bounds=topicNav.getBoundingClientRect();if(rect.left<bounds.left+8)topicNav.scrollLeft-=bounds.left+8-rect.left;else if(rect.right>bounds.right-8)topicNav.scrollLeft+=rect.right-bounds.right+8;}
+else{const bounds=sidebar.getBoundingClientRect();if(rect.top<bounds.top+8)sidebar.scrollTop-=bounds.top+8-rect.top;else if(rect.bottom>bounds.bottom-8)sidebar.scrollTop+=rect.bottom-bounds.bottom+8;}
+}
+function updateActiveSection(force=false){const current=readingCard(),next=links[cards.indexOf(current)]||null;links.forEach((link,i)=>{const active=cards[i]===current;link.classList.toggle('active',active);if(active)link.setAttribute('aria-current',mode==='slides'?'step':'location');else link.removeAttribute('aria-current');});if(force||next!==activeLink)keepLinkVisible(next);activeLink=next;}
+function scheduleActiveSection(){if(activePending)return;activePending=true;const update=()=>{activePending=false;updateActiveSection();};if(window.requestAnimationFrame)window.requestAnimationFrame(update);else setTimeout(update,16);}
+function render(){const visible=visibleCards();slide=Math.max(0,Math.min(slide,visible.length-1));cards.forEach(c=>{const match=visible.includes(c);c.hidden=!match||(mode==='slides'&&c!==visible[slide]);c.dataset.searchHidden=String(!match);});links.forEach((a,i)=>{a.hidden=!visible.includes(cards[i]);});nav.hidden=mode!=='slides'||!visible.length;empty.hidden=!!visible.length;document.querySelector('#slide-position').textContent=`Topic ${visible.length?slide+1:0} of ${visible.length}`;document.querySelector('#previous').disabled=slide===0;document.querySelector('#next').disabled=slide>=visible.length-1;updateActiveSection(true);}
 document.querySelectorAll('.mode-control button').forEach(b=>b.addEventListener('click',()=>{const current=readingCard();mode=b.dataset.mode;document.body.dataset.mode=mode;document.querySelectorAll('.mode-control button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));if(mode==='simple')search.value='';if(mode==='slides')slide=Math.max(0,visibleCards().indexOf(current));render();scrollToContent(mode==='slides'&&!nav.hidden?nav:current||visibleCards()[0]);}));
 search.addEventListener('input',()=>{slide=0;render();});
 function move(delta){slide+=delta;render();if(!nav.hidden)scrollToContent(nav);}
@@ -39,6 +47,11 @@ document.querySelector('#previous').addEventListener('click',()=>move(-1));docum
 links.forEach(a=>a.addEventListener('click',e=>{if(mode!=='slides')return;e.preventDefault();const target=document.querySelector(a.getAttribute('href'));slide=visibleCards().indexOf(target);render();scrollToContent(nav);}));
 document.addEventListener('keydown',e=>{if(mode!=='slides'||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||e.target.closest?.('input,textarea,select,summary,a,[contenteditable]:not([contenteditable="false"])'))return;if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();move(e.key==='ArrowRight'?1:-1);}});
 document.querySelector('#print').addEventListener('click',()=>window.print());
+window.addEventListener('scroll',scheduleActiveSection,{passive:true});
+window.addEventListener('resize',()=>{activeLink=null;scheduleActiveSection();});
+window.addEventListener('hashchange',scheduleActiveSection);
+document.addEventListener('toggle',scheduleActiveSection,true);
+document.addEventListener('load',scheduleActiveSection,true);
 render();
 })();
 </script>

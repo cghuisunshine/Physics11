@@ -5,14 +5,18 @@ const {JSDOM,VirtualConsole}=require(process.env.PHYSICS_JSDOM_PATH||'jsdom');
 const root=path.resolve(__dirname,'..');
 for(const [file,count,query,matchTopic] of [
   ['kinematics-notes.html',11,'a ball off a cliff','topic-10'],
-  ['vectors-notes.html',7,'relative velocity: boats','topic-7']
+  ['vectors-notes.html',7,'relative velocity: boats','topic-7'],
+  ['forces-notes.html',10,"Cavendish's measurement",'topic-3']
 ]){
 const html=fs.readFileSync(path.join(root,file),'utf8');
 const errors=[],scrolls=[],virtualConsole=new VirtualConsole();virtualConsole.on('jsdomError',error=>errors.push(error));
-let scrollY=0;
+let scrollY=0;const frames=[];
 const dom=new JSDOM(html,{url:`https://physics.test/${file}`,runScripts:'dangerously',virtualConsole,beforeParse(w){
+  w.requestAnimationFrame=callback=>{frames.push(callback);return frames.length;};
   w.HTMLElement.prototype.getBoundingClientRect=function(){
     if(this.classList.contains('toolbar-wrap'))return {top:0,bottom:72};
+    if(this.classList.contains('sidebar'))return {top:100,bottom:380};
+    if(this.matches('.sidebar nav a')){const number=Number(this.getAttribute('href').split('-')[1]);const top=110+(number-1)*70-w.document.querySelector('.sidebar').scrollTop;return {top,bottom:top+50};}
     const cards=[...w.document.querySelectorAll('.section-card')].filter(c=>!c.hidden),index=cards.indexOf(this);
     const top=400+Math.max(0,index)*524-scrollY;return {top,bottom:top+500};
   };
@@ -24,6 +28,16 @@ try{
   const visible=()=>cards.filter(c=>!c.hidden).map(c=>c.id),button=mode=>d.querySelector(`.mode-control button[data-mode="${mode}"]`);
   const key=(target,value)=>target.dispatchEvent(new w.KeyboardEvent('keydown',{key:value,bubbles:true,cancelable:true}));
   assert.deepEqual(errors,[]);assert.equal(visible().length,count);
+  const active=()=>d.querySelector('.sidebar nav a.active')?.getAttribute('href');
+  const flush=()=>{for(const callback of frames.splice(0))callback();};
+  assert.equal(active(),'#topic-1');
+  const priorScrolls=scrolls.length;
+  scrollY=400+4*524-72;w.dispatchEvent(new w.Event('scroll'));flush();
+  assert.equal(active(),'#topic-5');assert.equal(d.querySelector('.sidebar nav a.active').getAttribute('aria-current'),'location');
+  assert.ok(d.querySelector('.sidebar').scrollTop>0,'Current topic stays visible within a scrolling sidebar');
+  assert.equal(scrolls.length,priorScrolls,'Following the current topic does not scroll the main page');
+  scrollY=400+524-72;w.dispatchEvent(new w.Event('scroll'));flush();assert.equal(active(),'#topic-2');
+  assert.equal(d.querySelectorAll('.sidebar nav a.active').length,1);
   // The reader is at topic 5 when clicking the sticky Slides button.
   scrollY=400+4*524-72;button('slides').focus();button('slides').click();
   assert.equal(d.body.dataset.mode,'slides');assert.deepEqual(visible(),['topic-5']);assert.equal($('slide-position').textContent,`Topic 5 of ${count}`);
@@ -44,6 +58,7 @@ try{
   assert.deepEqual(visible(),[matchTopic]);assert.equal($('slide-position').textContent,'Topic 1 of 1');
   $('search').value='nothing matches this phrase';$('search').dispatchEvent(new w.Event('input'));
   assert.equal(visible().length,0);assert.ok(!$('empty').hidden);assert.ok(d.querySelector('.slide-nav').hidden);
+  assert.equal(active(),undefined,'Empty searches clear the current section highlight');
   key(button('slides'),'ArrowRight');assert.equal(visible().length,0);
   button('simple').click();assert.equal($('search').value,'');assert.equal(visible().length,count);
   // Leaving Slides also keeps the topic being read in view.
@@ -53,6 +68,6 @@ try{
   const source=fs.readFileSync(path.join(root,'tools/vectors-page.html'),'utf8');
   assert.equal(html.match(/<script>([\s\S]*?)<\/script>/)[1],source.match(/<script>([\s\S]*?)<\/script>/)[1],'The rebuild template retains the fix');
   assert.deepEqual(errors,[]);
-  console.log(file+': passed entering Slides from a scrolled topic, immediate scrolling, focused arrow-key navigation, previous/next/sidebar links, bounds, search/no results, editable-control handling, and Study/Simple modes.');
+  console.log(file+': passed scroll-driven section highlights, sidebar visibility without page jumps, Slides navigation, search/no results, and Study/Simple modes.');
 }finally{dom.window.close();}
 }
