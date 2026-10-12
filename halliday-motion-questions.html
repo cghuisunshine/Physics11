@@ -47,6 +47,7 @@
 <p id="homework-ai-status" role="status"></p><details id="homework-ai-results" hidden><summary>Why AI selected these questions</summary><ul id="homework-ai-list"></ul></details>
 </fieldset>
 <div class="homework-actions"><button id="select-shown" type="button">Select shown questions</button><button id="clear-selection" type="button">Clear selection</button><button type="button" data-edit-selection>Adjust questions</button><button id="preview-homework" type="button">Preview homework</button><button id="copy-homework" type="button">Copy homework link</button><button id="download-homework" type="button">Download homework HTML</button><button id="print-homework" type="button">Print homework / Save PDF</button></div>
+<div class="homework-ai-criteria"><label for="homework-refine-prompt">AI criteria to filter the current selection</label><textarea id="homework-refine-prompt" rows="2" maxlength="4000" placeholder="Example: Keep only questions involving relative motion or graphs."></textarea><div class="homework-actions"><button id="refine-homework-ai" type="button">AI: filter selected questions</button></div><p>AI will review only the questions currently selected and keep those that match your criteria. A successful result replaces the current selection; if the request fails, your selection stays as it is.</p></div>
 <p id="homework-count" aria-live="polite"></p><p id="homework-message" role="status"></p>
 <div id="homework-link-row" hidden><label for="homework-link">Homework link</label><input id="homework-link" type="url" readonly></div>
 </section>
