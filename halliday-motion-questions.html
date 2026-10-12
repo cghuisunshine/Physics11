@@ -19,7 +19,7 @@
 .sampling-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:end}.sampling-controls label{display:grid;gap:5px;font-size:13px;color:var(--muted)}.sampling-controls input,.sampling-table input{width:90px;padding:8px;border:1px solid var(--line);border-radius:7px;font:inherit}
 .sampling-table-wrap{overflow-x:auto}.sampling-table{width:100%;border-collapse:collapse;margin-top:16px;font-size:14px}.sampling-table th,.sampling-table td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line)}.sampling-table tbody th{font-weight:500}.sampling-table td:last-child{white-space:nowrap;color:var(--muted)}
 #homework-ai-status:empty{display:none}#homework-ai-results{margin-top:16px;font-size:14px}#homework-ai-results summary{cursor:pointer;color:var(--accent)}#homework-ai-list li{margin:10px 0}
-#choose-hardest-ai{background:var(--accent);color:white;font-weight:650}
+#choose-hardest-ai,[data-single-selection-action][data-selection-mode=ai]{background:var(--accent);color:white;font-weight:650}
 .homework-ai-criteria{display:grid;gap:6px;margin-top:18px;font-size:13px;color:var(--muted)}.homework-ai-criteria textarea{width:100%;min-width:0;box-sizing:border-box;resize:vertical;font:inherit;padding:10px;border:1px solid var(--line);border-radius:7px;color:var(--ink)}
 #homework-link-row{margin-top:16px}.question-top .homework-select{margin-left:0;color:var(--accent)}
 .question[data-homework=true]{border-left:3px solid var(--accent);padding-left:14px}
@@ -38,12 +38,12 @@
 <label class="homework-answers"><input id="homework-answers" type="checkbox"> Include worked answers</label>
 <fieldset class="homework-sampling"><legend>Choose questions by section</legend>
 <p id="sampling-help">Use a percentage of the eligible questions in each section. Section, type, and search filters apply across the full collection. Odd/even uses the textbook question number within each set; sample labels such as 2.01 are included only with All numbers.</p>
-<div class="sampling-controls"><label>Question numbers<select id="homework-parity"><option value="all">All numbers</option><option value="odd">Odd numbers</option><option value="even">Even numbers</option></select></label><label>Pick questions<select id="homework-sampling-order"><option value="random">Random sample</option><option value="first">First in order</option><option value="ai">AI: choose questions</option></select></label><label>Set all sections to (%)<input id="homework-all-percent" type="number" min="0" max="100" step="1" value="50"></label><button id="set-section-percentages" type="button">Set all percentages</button></div>
+<div class="sampling-controls"><label>Question numbers<select id="homework-parity"><option value="all">All numbers</option><option value="odd">Odd numbers</option><option value="even">Even numbers</option></select></label><label>Selection method<select id="homework-sampling-order"><option value="random">Random sample</option><option value="first">First in order</option><option value="ai">AI selection</option></select></label><label>Set all sections to (%)<input id="homework-all-percent" type="number" min="0" max="100" step="1" value="50"></label><button id="set-section-percentages" type="button">Set all percentages</button></div>
 <div class="homework-ai-criteria"><label for="homework-ai-prompt">AI selection criteria (optional)</label><textarea id="homework-ai-prompt" rows="3" maxlength="4000" aria-describedby="homework-ai-help" placeholder="Example: Choose beginner questions about free fall that use constant acceleration. Avoid calculus and questions with more than two parts."></textarea></div>
 <p id="homework-ai-help">Describe the topics, skills, difficulty, or question styles you want, then click <strong>AI: choose questions</strong>. Leave the criteria blank to choose the most difficult questions. AI respects your section percentages, filters, and odd/even choice. With criteria, each percentage is a maximum: AI may choose fewer questions or none if there are not enough matches. Use 100% to find all matching questions in a section; 0% skips it. AI selection needs internet access and sends your criteria and eligible questions to the practice studio's AI service. Reasons are shown after selection, and you can adjust the result.</p>
 <div class="sampling-table-wrap"><table class="sampling-table"><thead><tr><th scope="col">Section</th><th scope="col">Select (%)</th><th scope="col">Questions to select</th></tr></thead><tbody id="homework-sections"></tbody></table></div>
 <p>Counts round up. 0% skips a section. With AI criteria, the count is a maximum and 100% searches all eligible questions for matches. For random sampling, first in order, or AI with blank criteria, 100% selects every eligible question. Applying percentages replaces the selection within the current filters and keeps selections outside them.</p>
-<div class="homework-actions"><button id="apply-section-percentages" type="button">Apply section percentages</button><button id="choose-hardest-ai" type="button">AI: choose questions</button><button id="select-matching-numbers" type="button">Add matching numbers</button><button id="cancel-homework-ai" type="button" hidden>Cancel AI selection</button></div>
+<div class="homework-actions"><button id="apply-section-percentages" type="button" data-single-selection-action>Choose random questions</button><button id="select-matching-numbers" type="button">Add matching numbers</button><button id="cancel-homework-ai" type="button" hidden>Cancel AI selection</button></div>
 <p id="homework-ai-status" role="status"></p><details id="homework-ai-results" hidden><summary>Why AI selected these questions</summary><ul id="homework-ai-list"></ul></details>
 </fieldset>
 <div class="homework-actions"><button id="select-shown" type="button">Select shown questions</button><button id="clear-selection" type="button">Clear selection</button><button type="button" data-edit-selection>Adjust questions</button><button id="preview-homework" type="button">Preview homework</button><button id="copy-homework" type="button">Copy homework link</button><button id="download-homework" type="button">Download homework HTML</button><button id="print-homework" type="button">Print homework / Save PDF</button></div>
@@ -184,8 +184,10 @@
     const valid=validPercentages(),plan=samplingPlan();
     for(const rule of plan)rule.count.textContent=rule.input.checkValidity()?`${$('homework-sampling-order').value==='ai'&&criteria()?'Up to ':''}${rule.amount} of ${rule.candidates.length} eligible`:'Enter 0–100';
     $('apply-section-percentages').disabled=!!aiRequest||!valid||!qs.some(matchesFilters);
-    $('choose-hardest-ai').disabled=$('apply-section-percentages').disabled;
-    $('apply-section-percentages').textContent=$('homework-sampling-order').value==='ai'?'Apply AI percentages':'Apply section percentages';
+    if($('choose-hardest-ai'))$('choose-hardest-ai').disabled=$('apply-section-percentages').disabled;
+    const action=$('apply-section-percentages'),mode=$('homework-sampling-order').value;
+    action.dataset.selectionMode=mode;
+    action.textContent=action.hasAttribute('data-single-selection-action')?(aiRequest&&aiRequest.kind!=='refine'?'AI: choosing…':({random:'Choose random questions',first:'Choose first questions',ai:'AI: choose questions'})[mode]):mode==='ai'?'Apply AI percentages':'Apply section percentages';
     $('cancel-homework-ai').hidden=!aiRequest;
     $('select-matching-numbers').disabled=!plan.some(rule=>rule.candidates.length);
     if($('refine-homework-ai')){$('refine-homework-ai').disabled=!!aiRequest||!selected.size||!refineCriteria();$('refine-homework-ai').textContent=aiRequest?.kind==='refine'?'AI: filtering…':'AI: filter selected questions';}
@@ -296,7 +298,7 @@
     }catch(error){if(aiRequest===request)status.textContent=error.name==='AbortError'?'AI filtering canceled. Your selection is unchanged.':(error instanceof TypeError?'Could not reach the AI service. Check your connection and try again.':error.message)+' Your selection is unchanged.';}
     finally{clearTimeout(request.timer);if(aiRequest===request){aiRequest=null;renderSampling();}}
   };
-  $('choose-hardest-ai').onclick=()=>{
+  if($('choose-hardest-ai'))$('choose-hardest-ai').onclick=()=>{
     if(!validPercentages()||aiRequest||!qs.some(matchesFilters))return;
     $('homework-sampling-order').value='ai';selectionChanged();saveDraft();renderSampling();
     return $('apply-section-percentages').onclick();

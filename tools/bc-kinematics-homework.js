@@ -42,8 +42,10 @@
     const valid=validPercentages(),plan=samplingPlan();
     for(const rule of plan)rule.count.textContent=rule.input.checkValidity()?`${$('homework-sampling-order').value==='ai'&&criteria()?'Up to ':''}${rule.amount} of ${rule.candidates.length} eligible`:'Enter 0–100';
     $('apply-section-percentages').disabled=!!aiRequest||!valid||!qs.some(matchesFilters);
-    $('choose-hardest-ai').disabled=$('apply-section-percentages').disabled;
-    $('apply-section-percentages').textContent=$('homework-sampling-order').value==='ai'?'Apply AI percentages':'Apply section percentages';
+    if($('choose-hardest-ai'))$('choose-hardest-ai').disabled=$('apply-section-percentages').disabled;
+    const action=$('apply-section-percentages'),mode=$('homework-sampling-order').value;
+    action.dataset.selectionMode=mode;
+    action.textContent=action.hasAttribute('data-single-selection-action')?(aiRequest&&aiRequest.kind!=='refine'?'AI: choosing…':({random:'Choose random questions',first:'Choose first questions',ai:'AI: choose questions'})[mode]):mode==='ai'?'Apply AI percentages':'Apply section percentages';
     $('cancel-homework-ai').hidden=!aiRequest;
     $('select-matching-numbers').disabled=!plan.some(rule=>rule.candidates.length);
     if($('refine-homework-ai')){$('refine-homework-ai').disabled=!!aiRequest||!selected.size||!refineCriteria();$('refine-homework-ai').textContent=aiRequest?.kind==='refine'?'AI: filtering…':'AI: filter selected questions';}
@@ -154,7 +156,7 @@
     }catch(error){if(aiRequest===request)status.textContent=error.name==='AbortError'?'AI filtering canceled. Your selection is unchanged.':(error instanceof TypeError?'Could not reach the AI service. Check your connection and try again.':error.message)+' Your selection is unchanged.';}
     finally{clearTimeout(request.timer);if(aiRequest===request){aiRequest=null;renderSampling();}}
   };
-  $('choose-hardest-ai').onclick=()=>{
+  if($('choose-hardest-ai'))$('choose-hardest-ai').onclick=()=>{
     if(!validPercentages()||aiRequest||!qs.some(matchesFilters))return;
     $('homework-sampling-order').value='ai';selectionChanged();saveDraft();renderSampling();
     return $('apply-section-percentages').onclick();
