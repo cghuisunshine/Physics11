@@ -12,6 +12,8 @@
   $('homework-name').value=String(incoming?params.get('title')||'Kinematics homework':draft.title||'Kinematics homework').slice(0,160);
   $('homework-instructions').value=String(incoming?params.get('instructions')||'':draft.instructions||'').slice(0,2000);
   $('homework-answers').checked=incoming?params.get('answers')==='1':draft.answers===true;
+  const aiPrompt=$('homework-ai-prompt'),criteria=()=>aiPrompt?.value.trim().slice(0,4000)||'';
+  if(aiPrompt)aiPrompt.value=String(draft.aiPrompt||'').slice(0,4000);
   const sectionRules=[...topic.options].filter(option=>option.value).map((option,index)=>{
     const row=document.createElement('tr'),heading=document.createElement('th'),cell=document.createElement('td'),count=document.createElement('td'),input=document.createElement('input'),label=document.createElement('label');
     heading.scope='row';label.textContent=option.textContent;input.id=`homework-percent-${index}`;label.htmlFor=input.id;heading.append(label);
@@ -36,7 +38,7 @@
   function validPercentages(){return sectionRules.every(rule=>rule.input.checkValidity());}
   function renderSampling(){
     const valid=validPercentages(),plan=samplingPlan();
-    for(const rule of plan)rule.count.textContent=rule.input.checkValidity()?`${rule.amount} of ${rule.candidates.length} eligible`:'Enter 0–100';
+    for(const rule of plan)rule.count.textContent=rule.input.checkValidity()?`${$('homework-sampling-order').value==='ai'&&criteria()?'Up to ':''}${rule.amount} of ${rule.candidates.length} eligible`:'Enter 0–100';
     $('apply-section-percentages').disabled=!!aiRequest||!valid||!qs.some(matchesFilters);
     $('choose-hardest-ai').disabled=$('apply-section-percentages').disabled;
     $('apply-section-percentages').textContent=$('homework-sampling-order').value==='ai'?'Apply AI percentages':'Apply section percentages';
@@ -45,7 +47,7 @@
   }
   const orderedIds=()=>qs.filter(q=>selected.has(q.id)).map(q=>q.id);
   const title=()=>$('homework-name').value.trim()||'Kinematics homework';
-  function saveDraft(){try{localStorage.setItem(DRAFT,JSON.stringify({ids:orderedIds(),title:title(),instructions:$('homework-instructions').value,answers:$('homework-answers').checked,percentages:Object.fromEntries(sectionRules.filter(rule=>rule.input.checkValidity()).map(rule=>[rule.topic,Number(rule.input.value)])),parity:$('homework-parity').value,samplingOrder:$('homework-sampling-order').value}));}catch{}}
+  function saveDraft(){try{localStorage.setItem(DRAFT,JSON.stringify({ids:orderedIds(),title:title(),instructions:$('homework-instructions').value,answers:$('homework-answers').checked,percentages:Object.fromEntries(sectionRules.filter(rule=>rule.input.checkValidity()).map(rule=>[rule.topic,Number(rule.input.value)])),parity:$('homework-parity').value,samplingOrder:$('homework-sampling-order').value,...(aiPrompt?{aiPrompt:aiPrompt.value.slice(0,4000)}:{})}));}catch{}}
   function resetFilters(){search.value='';topic.value='';kind.value='';}
   function homeworkURL(){
     const base=location.protocol==='file:'?'https://cghuisunshine.github.io/Physics11/bc-kinematics-questions.html':location.href;
@@ -127,6 +129,7 @@
   };
   for(const rule of sectionRules){rule.input.required=true;rule.input.addEventListener('input',()=>{selectionChanged();saveDraft();renderSampling();});}
   for(const id of ['homework-parity','homework-sampling-order'])$(id).addEventListener('input',()=>{selectionChanged();saveDraft();renderSampling();});
+  aiPrompt?.addEventListener('input',()=>{$('homework-sampling-order').value='ai';selectionChanged();saveDraft();renderSampling();});
   $('select-matching-numbers').onclick=()=>{for(const q of qs)if(matchesFilters(q)&&matchesNumber(q))selected.add(q.id);changed();};
   $('cancel-homework-ai').onclick=()=>cancelAI();
   $('choose-hardest-ai').onclick=()=>{
@@ -138,11 +141,12 @@
     if(!validPercentages()||aiRequest)return;
     const plan=samplingPlan();
     if($('homework-sampling-order').value==='ai'){
+      const selectionCriteria=criteria();
       const request={controller:new AbortController(),timer:null};aiRequest=request;renderSampling();
       $('homework-ai-status').textContent='Preparing AI selection…';
       request.timer=setTimeout(()=>cancelAI('AI selection timed out. Your selection is unchanged; try again.'),360000);
       try{
-        const result=await window.HomeworkDifficultyAI.choose(plan,{signal:request.controller.signal,onProgress:message=>{if(aiRequest===request)$('homework-ai-status').textContent=message;}});
+        const result=await window.HomeworkDifficultyAI.choose(plan,{signal:request.controller.signal,criteria:selectionCriteria,onProgress:message=>{if(aiRequest===request)$('homework-ai-status').textContent=message;}});
         if(aiRequest!==request||request.controller.signal.aborted)return;
         clearTimeout(request.timer);aiRequest=null;
         for(const q of qs)if(matchesFilters(q))selected.delete(q.id);
@@ -151,7 +155,7 @@
         for(const item of result.selected){const q=$(item.id),entry=document.createElement('li'),link=document.createElement('a');link.href='#'+item.id;link.textContent=q.closest('.question-set').querySelector('h2').textContent+' — '+q.querySelector('.question-top a').textContent;entry.append(link,document.createTextNode(': '+item.reason));$('homework-ai-list').append(entry);}
         $('homework-ai-results').hidden=!result.selected.length;
         $('homework-ai-results').querySelector('summary').textContent=result.requests?'Why AI selected these questions':'Selected questions';
-        $('homework-ai-status').textContent=result.requests?'AI selected the hardest questions for each section percentage. Use Adjust questions to add or remove any.':'Section percentages applied. All eligible questions or none were requested, so AI ranking was not needed.';
+        $('homework-ai-status').textContent=result.requests?(selectionCriteria?(result.selected.length?'AI selected '+result.selected.length+' question'+(result.selected.length===1?'':'s')+' matching your criteria within the section limits. Use Adjust questions to add or remove any.':'AI found no eligible questions matching your criteria. Try broader criteria or adjust your filters.'):'AI selected the hardest questions for each section percentage. Use Adjust questions to add or remove any.'):'Section percentages applied. All eligible questions or none were requested, so AI ranking was not needed.';
       }catch(error){
         if(aiRequest===request)$('homework-ai-status').textContent=error.name==='AbortError'?'AI selection canceled. Your selection is unchanged.':(error instanceof TypeError?'Could not reach the AI service. Check your connection and try again.':error.message)+' Your selection is unchanged.';
       }finally{clearTimeout(request.timer);if(aiRequest===request){aiRequest=null;renderSampling();}}

@@ -1,0 +1,4743 @@
+{
+  "source": "Physics text (TOC).pdf",
+  "solutions_source": "Physics answer (TOC).pdf",
+  "chapter": 2,
+  "title": "Motion Along a Straight Line",
+  "question_count": 141,
+  "figures": {
+    "15": [
+      66,
+      67,
+      417,
+      328,
+      533
+    ],
+    "24": [
+      68,
+      453,
+      583,
+      602,
+      679
+    ],
+    "25": [
+      69,
+      66,
+      360,
+      325,
+      432
+    ],
+    "26": [
+      69,
+      489,
+      630,
+      602,
+      749
+    ],
+    "27": [
+      70,
+      341,
+      65,
+      602,
+      127
+    ],
+    "28": [
+      70,
+      491,
+      133,
+      602,
+      227
+    ],
+    "29": [
+      70,
+      499,
+      311,
+      602,
+      435
+    ],
+    "30": [
+      70,
+      464,
+      493,
+      602,
+      607
+    ],
+    "31": [
+      71,
+      208,
+      103,
+      325,
+      201
+    ],
+    "32": [
+      71,
+      66,
+      475,
+      325,
+      617
+    ],
+    "33": [
+      71,
+      385,
+      329,
+      602,
+      438
+    ],
+    "34": [
+      71,
+      492,
+      440,
+      602,
+      548
+    ],
+    "35": [
+      72,
+      173,
+      123,
+      331,
+      256
+    ],
+    "36": [
+      72,
+      218,
+      606,
+      331,
+      745
+    ],
+    "37": [
+      72,
+      374,
+      187,
+      602,
+      319
+    ],
+    "38": [
+      72,
+      430,
+      321,
+      602,
+      444
+    ],
+    "39": [
+      72,
+      464,
+      515,
+      602,
+      622
+    ],
+    "40": [
+      72,
+      474,
+      625,
+      602,
+      747
+    ],
+    "41": [
+      73,
+      66,
+      463,
+      325,
+      533
+    ],
+    "42": [
+      73,
+      66,
+      652,
+      325,
+      747
+    ],
+    "43": [
+      73,
+      464,
+      374,
+      602,
+      493
+    ],
+    "44": [
+      73,
+      464,
+      615,
+      602,
+      746
+    ],
+    "45": [
+      74,
+      67,
+      225,
+      326,
+      303
+    ],
+    "46": [
+      74,
+      216,
+      634,
+      326,
+      755
+    ],
+    "47": [
+      74,
+      385,
+      376,
+      602,
+      497
+    ]
+  },
+  "groups": [
+    {
+      "id": "set-1",
+      "topic": "2-1",
+      "kind": "Checkpoint",
+      "title": "Checkpoint 1",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              51,
+              66,
+              312.897118,
+              405,
+              352.948852
+            ]
+          ],
+          "text": "Checkpoint 1 Here are three pairs of initial and final positions, respectively, along an x axis. Which pairs give a negative displacement: (a) $3 m, #5 m; (b) $3 m, $7 m; (c) 7 m, $3 m?",
+          "answer_html": "<p>Δx = x<sub>f</sub> − x<sub>i</sub>: (a) +8 m, (b) −4 m, (c) −10 m. The negative displacements are <strong>(b) and (c)</strong>.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-1"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-2",
+      "topic": "2-2",
+      "kind": "Checkpoint",
+      "title": "Checkpoint 2",
+      "questions": [
+        {
+          "label": "2",
+          "boxes": [
+            [
+              54,
+              261,
+              539.051118,
+              602,
+              601.070952
+            ]
+          ],
+          "text": "Checkpoint 2 The following equations give the position x(t) of a particle in four situations (in each equation, x is in meters, t is in seconds, and t . 0): (1) x \" 3t $ 2; (2) x \" $4t 2 $ 2; (3) x \" 2/t 2 ; and (4) x \" $2. (a) In which situation is the velocity v of the particle con- stant? (b) In which is v in the negative x direction?",
+          "answer_html": "<p>Differentiate each position: (1) v = 3 m/s; (2) v = −8t; (3) v = −4/t³; (4) v = 0. <strong>(a) Constant in (1) and (4). (b) Negative in (2) and (3)</strong> for t &gt; 0.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-2"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-3",
+      "topic": "2-3",
+      "kind": "Checkpoint",
+      "title": "Checkpoint 3",
+      "questions": [
+        {
+          "label": "3",
+          "boxes": [
+            [
+              58,
+              260,
+              189.784818,
+              602,
+              251.804952
+            ]
+          ],
+          "text": "Checkpoint 3 A wombat moves along an x axis. What is the sign of its acceleration if it is moving (a) in the positive direction with increasing speed, (b) in the positive direction with decreasing speed, (c) in the negative direction with increasing speed, and (d) in the negative direction with decreasing speed?",
+          "answer_html": "<p>The speed increases when velocity and acceleration have the same sign. Thus (a) positive, (b) negative, (c) negative, (d) positive.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-3"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-4",
+      "topic": "2-4",
+      "kind": "Checkpoint",
+      "title": "Checkpoint 4",
+      "questions": [
+        {
+          "label": "4",
+          "boxes": [
+            [
+              61,
+              66,
+              71.192018,
+              405,
+              122.228252
+            ]
+          ],
+          "text": "Checkpoint 4 The following equations give the position x(t) of a particle in four situations: (1) x \" 3t $ 4; (2) x \" $5t 3 # 4t 2 # 6; (3) x \" 2/t 2 $ 4/t; (4) x \" 5t 2 $ 3. To which of these situations do the equations of Table 2-1 apply?",
+          "answer_html": "<p>The constant-acceleration equations apply to <strong>(1) and (4)</strong>. Their second derivatives are 0 and 10 m/s². The second derivatives of (2) and (3) depend on time.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-4"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-5",
+      "topic": "2-5",
+      "kind": "Checkpoint",
+      "title": "Checkpoint 5",
+      "questions": [
+        {
+          "label": "5",
+          "boxes": [
+            [
+              64,
+              260,
+              221.999418,
+              602,
+              273.035352
+            ]
+          ],
+          "text": "Checkpoint 5 (a) If you toss a ball straight up, what is the sign of the ball’s displacement for the ascent, from the release point to the highest point? (b) What is it for the descent, from the high- est point back to the release point? (c) What is the ball’s acceleration at its highest point?",
+          "answer_html": "<p>Taking upward as positive: (a) ascent displacement is positive; (b) descent displacement is negative; (c) acceleration at the highest point is <strong>−9.8 m/s²</strong>, downward. Zero instantaneous velocity does not imply zero acceleration.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-5"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-6",
+      "topic": "2-1",
+      "kind": "Sample prompt",
+      "title": "Sample 2.01: Average velocity: pickup truck",
+      "questions": [
+        {
+          "label": "2.01",
+          "boxes": [
+            [
+              53,
+              66,
+              97.242384,
+              327,
+              175.882716
+            ],
+            [
+              53,
+              66,
+              334.907184,
+              327,
+              359.623616
+            ],
+            [
+              53,
+              66,
+              597.037083,
+              327,
+              633.737016
+            ],
+            [
+              53,
+              340,
+              242.237784,
+              602,
+              290.920516
+            ]
+          ],
+          "text": "(a) What is your overall displacement from the beginning of your drive to your arrival at the station? You drive a beat-up pickup truck along a straight road for 8.4 km at 70 km/h, at which point the truck runs out of gaso- line and stops. Over the next 30 min, you walk another 2.0 km farther along the road to a gasoline station. (b) What is the time interval -t from the beginning of your drive to your arrival at the station? (c) What is your average velocity v avg from the beginning of your drive to your arrival at the station? Find it both numer- ically and graphically. (d) Suppose that to pump the gasoline, pay for it, and walk back to the truck takes you another 45 min. What is your average speed from the beginning of your drive to your return to the truck with the gasoline?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              53,
+              66,
+              73,
+              602,
+              710
+            ]
+          ],
+          "solution_source": "Physics text (TOC).pdf",
+          "figures": [],
+          "sample": true,
+          "id": "q-6"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-7",
+      "topic": "2-2",
+      "kind": "Sample prompt",
+      "title": "Sample 2.02: Velocity and slope: elevator cab",
+      "questions": [
+        {
+          "label": "2.02",
+          "boxes": [
+            [
+              54,
+              66,
+              653.529684,
+              327,
+              690.229276
+            ],
+            [
+              55,
+              270,
+              73,
+              493,
+              242
+            ]
+          ],
+          "text": "Figure 2-6a is an x(t) plot for an elevator cab that is initially stationary, then moves upward (which we take to be the pos- itive direction of x), and then stops. Plot v(t). x Position (m) 25 x = 24 m at t = 8.0 s 20 15 x = 4.0 m at t = 3.0 s 5 0 ∆x x(t) 10 b a 0 1 2 3 ∆t 4 5 6 Time (s) (a) d c 7 8 t 9 Slopes on the x versus t graph are the values on the v versus t graph. Slope",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              54,
+              66,
+              628,
+              602,
+              749
+            ],
+            [
+              55,
+              66,
+              60,
+              602,
+              741
+            ]
+          ],
+          "solution_source": "Physics text (TOC).pdf",
+          "figures": [],
+          "sample": true,
+          "id": "q-7"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-8",
+      "topic": "2-3",
+      "kind": "Sample prompt",
+      "title": "Sample 2.03: Acceleration and dv/dt",
+      "questions": [
+        {
+          "label": "2.03",
+          "boxes": [
+            [
+              58,
+              66,
+              306.079784,
+              328,
+              396.703216
+            ],
+            [
+              58,
+              66,
+              579.693684,
+              328,
+              592.427116
+            ],
+            [
+              58,
+              66,
+              693.533174,
+              328,
+              706.266606
+            ]
+          ],
+          "text": "A particle’s position on the x axis of Fig. 2-1 is given by x \" 4 $ 27t # t 3 , with x in meters and t in seconds. (a) Because position x depends on time t, the particle must be moving. Find the particle’s velocity function v(t) and ac- celeration function a(t). (b) Is there ever a time when v \" 0? (c) Describe the particle’s motion for t , 0.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              58,
+              66,
+              281,
+              602,
+              713
+            ]
+          ],
+          "solution_source": "Physics text (TOC).pdf",
+          "figures": [],
+          "sample": true,
+          "id": "q-8"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-9",
+      "topic": "2-4",
+      "kind": "Sample prompt",
+      "title": "Sample 2.04: Drag race: car and motorcycle",
+      "questions": [
+        {
+          "label": "2.04",
+          "boxes": [
+            [
+              61,
+              66,
+              178.763384,
+              327,
+              311.327816
+            ],
+            [
+              61,
+              66,
+              568,
+              327,
+              732
+            ]
+          ],
+          "text": "A popular web video shows a jet airplane, a car, and a mo- torcycle racing from rest along a runway (Fig. 2-10). Initially the motorcycle takes the lead, but then the jet takes the lead, and finally the car blows past the motorcycle. Here let’s focus on the car and motorcycle and assign some reasonable values to the motion. The motorcycle first takes the lead because its (constant) acceleration a m \" 8.40 m/s 2 is greater than the car’s (constant) acceleration a c \" 5.60 m/s 2 , but it soon loses to the car because it reaches its greatest speed v m \" 58.8 m/s before the car reaches its greatest speed v c \" 106 m/s. How long does the car take to reach the motorcycle? Figure 2-10 A jet airplane, a car, and a motorcycle just after accelerating from rest.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              61,
+              66,
+              156,
+              602,
+              735
+            ],
+            [
+              62,
+              66,
+              60,
+              602,
+              349
+            ]
+          ],
+          "solution_source": "Physics text (TOC).pdf",
+          "figures": [],
+          "sample": true,
+          "id": "q-9"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-10",
+      "topic": "2-5",
+      "kind": "Sample prompt",
+      "title": "Sample 2.05: Baseball toss",
+      "questions": [
+        {
+          "label": "2.05",
+          "boxes": [
+            [
+              64,
+              66,
+              331.175384,
+              328,
+              373.866516
+            ],
+            [
+              64,
+              66,
+              535.087684,
+              328,
+              547.821116
+            ],
+            [
+              64,
+              66,
+              627.257784,
+              328,
+              651.974216
+            ],
+            [
+              64,
+              343,
+              308,
+              602,
+              551
+            ]
+          ],
+          "text": "In Fig. 2-13, a pitcher tosses a baseball up along a y axis, with an initial speed of 12 m/s. (a) How long does the ball take to reach its maximum height? (b) What is the ball’s maximum height above its release point? (c) How long does the ball take to reach a point 5.0 m above its release point? Ball y v = 0 at highest point During ascent, a = –g, speed decreases, and velocity becomes less positive Figure 2-13 A pitcher tosses a baseball straight up into the air. The equations of free fall apply for rising as well as for falling objects, provided any effects from the air can be neglected. During descent, a = –g, speed increases, and velocity becomes more negative y = 0",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              64,
+              66,
+              308,
+              602,
+              711
+            ]
+          ],
+          "solution_source": "Physics text (TOC).pdf",
+          "figures": [],
+          "sample": true,
+          "id": "q-10"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-11",
+      "topic": "2-6",
+      "kind": "Sample prompt",
+      "title": "Sample 2.06: Graphical integration: whiplash injury",
+      "questions": [
+        {
+          "label": "2.06",
+          "boxes": [
+            [
+              66,
+              66,
+              99.658884,
+              329,
+              304.121616
+            ],
+            [
+              66,
+              67,
+              417,
+              328,
+              533
+            ]
+          ],
+          "text": "“Whiplash injury” commonly occurs in a rear-end collision where a front car is hit from behind by a second car. In the 1970s, researchers concluded that the injury was due to the occupant’s head being whipped back over the top of the seat as the car was slammed forward. As a result of this finding, head restraints were built into cars, yet neck injuries in rear- end collisions continued to occur. In a recent test to study neck injury in rear-end collisions, a volunteer was strapped to a seat that was then moved abruptly to simulate a collision by a rear car moving at 10.5 km/h. Figure 2-15a gives the accelerations of the volun- teer’s torso and head during the collision, which began at time t \" 0. The torso acceleration was delayed by 40 ms because during that time interval the seat back had to compress against the volunteer. The head acceleration was delayed by an additional 70 ms. What was the torso speed when the head began to accelerate? 100 Head 50 Torso 0 a (m/s 2 ) (a) 40 80 t (ms) 120 160",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              66,
+              66,
+              77,
+              602,
+              544
+            ]
+          ],
+          "solution_source": "Physics text (TOC).pdf",
+          "figures": [],
+          "sample": true,
+          "id": "q-11"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-12",
+      "topic": "Conceptual questions",
+      "kind": "Conceptual question",
+      "title": "Chapter 2 conceptual questions",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              67,
+              66,
+              379,
+              214,
+              457
+            ],
+            [
+              67,
+              228,
+              372,
+              327,
+              486
+            ]
+          ],
+          "text": "1 Figure 2-16 gives the velocity of a particle moving on an x axis. What are (a) the initial and (b) the final di- rections of travel? (c) Does the parti- cle stop momentarily? (d) Is the ac- celeration positive or negative? (e) Is it constant or varying? v t Figure 2-16 Question 1.",
+          "answer_html": "<p>(a) Initially in the negative x direction. (b) Finally in the positive x direction. (c) Yes, at the zero crossing of v(t). (d) Acceleration is positive. (e) It is constant because the velocity graph has a constant positive slope.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-12"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              67,
+              66,
+              459.9,
+              214,
+              504.1
+            ],
+            [
+              67,
+              66,
+              504.1,
+              245,
+              516
+            ],
+            [
+              67,
+              66,
+              528,
+              327,
+              613
+            ]
+          ],
+          "text": "2 Figure 2-17 gives the accelera- tion a(t) of a Chihuahua as it chases a German shepherd along an axis. In which of the time periods indicated does the Chihuahua move at constant speed? a t Figure 2-17 Question 2. A B C D E F G H",
+          "answer_html": "<p><strong>Period E</strong>, where a = 0 throughout the interval. Zero acceleration means constant velocity and therefore constant speed.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-13"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              67,
+              66,
+              625,
+              218,
+              725
+            ],
+            [
+              67,
+              230,
+              623,
+              327,
+              728
+            ]
+          ],
+          "text": "3 Figure 2-18 shows four paths along which objects move from a starting point to a final point, all in the same time interval. The paths pass over a grid of equally spaced straight lines. Rank the paths according to (a) the av- erage velocity of the objects and (b) the average speed of the objects, great- est first. 1 2 4 3 Figure 2-18 Question 3.",
+          "answer_html": "<p>(a) <strong>1 = 2 = 3 = 4</strong>: each path has the same positive displacement and duration. (b) <strong>4 &gt; 1 = 2 &gt; 3</strong>: average speed depends on the total path length, including reversals.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-14"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              67,
+              66,
+              730,
+              327,
+              754
+            ],
+            [
+              67,
+              341,
+              380,
+              486,
+              447
+            ],
+            [
+              67,
+              489,
+              370,
+              602,
+              485
+            ]
+          ],
+          "text": "4 Figure 2-19 is a graph of a parti- cle’s position along an x axis versus time. (a) At time t \" 0, what is the sign of the particle’s position? Is the particle’s velocity positive, negative, or 0 at (b) t \" 1 s, (c) t \" 2 s, and (d) t \" 3 s? (e) How many times does the particle go through the point x \" 0? x 0 1 2 t (s) 4 Figure 2-19 Question 4. 3",
+          "answer_html": "<p>(a) Negative initial position. Velocity is the slope of x(t): (b) positive at 1 s; (c) zero at 2 s; (d) negative at 3 s. (e) The particle passes x = 0 <strong>twice</strong>, at 1 s and 3 s.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-15"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              67,
+              341,
+              456,
+              486,
+              589
+            ],
+            [
+              67,
+              490,
+              494,
+              602,
+              583
+            ]
+          ],
+          "text": "5 Figure 2-20 gives the velocity of a particle moving along an axis. Point 1 is at the highest point on the curve; point 4 is at the lowest point; and points 2 and 6 are at the same height. What is the direction of travel at (a) time t \" 0 and (b) point 4? (c) At which of the six numbered points does the particle reverse its direction of travel? (d) Rank the six points according to the magnitude of the acceleration, greatest first. v 1 2 6 3 t 5 4 Figure 2-20 Question 5.",
+          "answer_html": "<p>(a) Positive direction at t = 0. (b) Negative direction at point 4. (c) It reverses at <strong>3 and 5</strong>, where velocity changes sign. (d) Compare absolute slopes: <strong>2 = 6 &gt; 3 = 5 &gt; 1 = 4</strong>; the slopes vanish at 1 and 4.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-16"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              67,
+              341,
+              594,
+              491,
+              705
+            ]
+          ],
+          "text": "6 At t \" 0, a particle moving along an x axis is at position x 0 \" $20 m. The signs of the particle’s initial velocity v 0 (at time t 0 ) and constant acceleration a are, respectively, for four situations: (1) #, #; (2) #, $; (3) $, #; (4) $, $. In 0 which situations will the particle (a) stop momentarily, (b) pass through the origin, and (c) never pass through the origin?",
+          "answer_html": "<p>(a) <strong>2 and 3</strong>, because acceleration initially opposes velocity. (b) <strong>1 and 3 certainly cross the origin</strong>. Situation 2 crosses only if v₀²/(2|a|) &gt; 20 m; equality means it reaches the origin and turns there. (c) <strong>4 never reaches the origin</strong>; situation 2 also fails to reach it if v₀²/(2|a|) &lt; 20 m. The signs alone do not settle situation 2.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-17"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              67,
+              341,
+              709.5,
+              491,
+              755
+            ],
+            [
+              68,
+              66,
+              65,
+              255,
+              100
+            ],
+            [
+              67,
+              495,
+              592,
+              602,
+              755
+            ]
+          ],
+          "text": "7 Hanging over the railing of a bridge, you drop an egg (no initial ve- locity) as you throw a second egg downward. Which curves in Fig. 2-21 give the velocity v(t) for (a) the dropped egg and (b) the thrown egg? (Curves A and B are parallel; so are C, D, and E; so are F and G.) v A B t C D G F E Figure 2-21 Question 7.",
+          "answer_html": "<p>(a) <strong>D</strong> for the dropped egg: zero initial velocity and constant negative slope −g. (b) <strong>E</strong> for the thrown egg: negative initial velocity and the same slope −g.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-18"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              68,
+              66,
+              104,
+              255,
+              161
+            ]
+          ],
+          "text": "8 The following equations give the velocity v(t) of a particle in four situations: (a) v \" 3; (b) v \" 4t 2 # 2t $ 6; (c) v \" 3t $ 4; (d) v \" 5t 2 $ 3. To which of these situations do the equations of Table 2-1 apply?",
+          "answer_html": "<p><strong>(a) and (c)</strong>. Their derivatives give constant accelerations 0 and 3, respectively. In (b) and (d), acceleration depends on time.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-19"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              68,
+              66,
+              166,
+              255,
+              276
+            ],
+            [
+              68,
+              260,
+              65,
+              326,
+              288
+            ]
+          ],
+          "text": "9 In Fig. 2-22, a cream tangerine is thrown di- rectly upward past three evenly spaced windows of equal heights. Rank the windows according to (a) the average speed of the cream tangerine while passing them, (b) the time the cream tan- gerine takes to pass them, (c) the magnitude of the acceleration of the cream tangerine while passing them, and (d) the change -v in the speed of the cream tangerine during the pas- sage, greatest first. 2 3 1 Figure 2-22 Question 9.",
+          "answer_html": "<p>(a) Average speed: <strong>3 &gt; 2 &gt; 1</strong>. (b) Passage time: <strong>1 &gt; 2 &gt; 3</strong>. (c) Acceleration magnitude: <strong>1 = 2 = 3</strong> (= g). (d) Signed change in speed: <strong>3 &gt; 2 &gt; 1</strong>, since Δv = −gΔt. The greatest magnitude of speed lost is at window 1, then 2, then 3.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-20"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              68,
+              66,
+              282.5,
+              255,
+              293.6
+            ],
+            [
+              68,
+              66,
+              293.6,
+              327,
+              317
+            ],
+            [
+              68,
+              342,
+              65,
+              602,
+              144
+            ]
+          ],
+          "text": "10 Suppose that a passenger intent on lunch during his first ride in a hot-air balloon accidently drops an apple over the side during the balloon’s liftoff. At the moment of the apple’s release, the balloon is accelerating upward with a magni- tude of 4.0 m/s 2 and has an upward velocity of magnitude 2 m/s. What are the (a) magnitude and (b) direction of the acceleration of the apple just after it is released? (c) Just then, is the apple moving upward or downward, or is it stationary? (d) What is the magni- tude of its velocity just then? (e) In the next few moments, does the speed of the apple increase, decrease, or remain constant?",
+          "answer_html": "<p>(a) 9.8 m/s². (b) Downward. (c) Moving upward immediately after release. (d) 2 m/s, inherited from the balloon. (e) Its speed initially decreases as gravity opposes its upward motion; it later reverses and speeds up downward.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-21"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              68,
+              342,
+              146,
+              602,
+              192
+            ],
+            [
+              68,
+              395,
+              214,
+              542,
+              321
+            ]
+          ],
+          "text": "11 Figure 2-23 shows that a particle moving along an x axis un- dergoes three periods of acceleration. Without written computa- tion, rank the acceleration periods according to the increases they produce in the particle’s velocity, greatest first. Acceleration a (3) (1) (2) Time t Figure 2-23 Question 11.",
+          "answer_html": "<p><strong>1 = 2 &gt; 3</strong>. Velocity increase is the area under a(t). Regions 1 and 2 each cover eight grid squares; region 3 covers seven.</p>",
+          "solution_boxes": [],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-22"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-13",
+      "topic": "2-1",
+      "kind": "Problem",
+      "title": "2-1 Position, displacement, and average velocity",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              68,
+              66,
+              439.0,
+              328,
+              464.76
+            ]
+          ],
+          "text": "•1 While driving a car at 90 km/h, how far do you move while your eyes shut for 0.50 s during a hard sneeze?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              31,
+              89,
+              149.244,
+              508,
+              191.676
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-23"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              68,
+              66,
+              465.15999999999997,
+              328,
+              534.86
+            ]
+          ],
+          "text": "•2 Compute your average velocity in the following two cases: (a) You walk 73.2 m at a speed of 1.22 m/s and then run 73.2 m at a speed of 3.05 m/s along a straight track. (b) You walk for 1.00 min at a speed of 1.22 m/s and then run for 1.00 min at 3.05 m/s along a straight track. (c) Graph x versus t for both cases and indicate how the average velocity is found on the graph.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              31,
+              89,
+              191.676,
+              508,
+              580.526
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-24"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              68,
+              66,
+              535.26,
+              328,
+              604.76
+            ]
+          ],
+          "text": "•3 SSM WWW An automobile travels on a straight road for 40 km at 30 km/h. It then continues in the same direction for an- other 40 km at 60 km/h. (a) What is the average velocity of the car during the full 80 km trip? (Assume that it moves in the positive x direction.) (b) What is the average speed? (c) Graph x versus t and indicate how the average velocity is found on the graph.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              31,
+              89,
+              580.526,
+              508,
+              794
+            ],
+            [
+              32,
+              89,
+              67,
+              508,
+              717.836
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-25"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              68,
+              66,
+              605.16,
+              328,
+              630.72
+            ]
+          ],
+          "text": "•4 A car moves uphill at 40 km/h and then back downhill at 60 km/h. What is the average speed for the round trip?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              32,
+              89,
+              717.836,
+              508,
+              794
+            ],
+            [
+              33,
+              89,
+              67,
+              508,
+              204.996
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-26"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              68,
+              66,
+              631.12,
+              328,
+              711.61
+            ]
+          ],
+          "text": "•5 SSM The position of an object moving along an x axis is given by x \" 3t $ 4t 2 # t 3 , where x is in meters and t in seconds. Find the position of the object at the following values of t: (a) 1 s, (b) 2 s, (c) 3 s, and (d) 4 s. (e) What is the object’s displacement between t \" 0 and t \" 4 s? (f) What is its average velocity for the time interval from t \" 2 s to t \" 4 s? (g) Graph x versus t for 0 0 t 0 4 s and indi- cate how the answer for (f) can be found on the graph.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              33,
+              89,
+              204.996,
+              508,
+              794
+            ],
+            [
+              34,
+              89,
+              67,
+              508,
+              261.156
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-27"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              68,
+              66,
+              712.01,
+              328,
+              755
+            ],
+            [
+              68,
+              341,
+              439,
+              603,
+              462.95
+            ]
+          ],
+          "text": "•6 The 1992 world speed record for a bicycle (human-powered vehicle) was set by Chris Huber. His time through the measured 200 m stretch was a sizzling 6.509 s, at which he commented, http://www.wiley.com/college/halliday Interactive solution is at “Cogito ergo zoom!” (I think, therefore I go fast!). In 2001, Sam Whittingham beat Huber’s record by 19.0 km/h. What was Whittingham’s time through the 200 m?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              34,
+              89,
+              261.156,
+              508,
+              405.546
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-28"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              68,
+              341,
+              463.34999999999997,
+              603,
+              532.85
+            ]
+          ],
+          "text": "••7 Two trains, each having a speed of 30 km/h, are headed at each other on the same straight track. A bird that can fly 60 km/h flies off the front of one train when they are 60 km apart and heads directly for the other train. On reaching the other train, the (crazy) bird flies directly back to the first train, and so forth. What is the to- tal distance the bird travels before the trains collide?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              34,
+              89,
+              405.546,
+              508,
+              461.774
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-29"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              68,
+              341,
+              533.25,
+              603,
+              689.63
+            ]
+          ],
+          "text": "••8 Panic escape. Figure 2-24 shows a general situation in which a stream of people attempt to escape through an exit door that turns out to be locked. The people move toward the door at speed v s \" 3.50 m/s, are each d \" 0.25 m in depth, and are sepa- rated by L \" 1.75 m. The arrangement in Fig. 2-24 L L L occurs at time t \" 0. (a) At what average rate does the layer of people at the door d d d increase? (b) At what time Locked does the layer’s depth reach door 5.0 m? (The answers reveal Figure 2-24 Problem 8. how quickly such a situation becomes dangerous.)",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              34,
+              89,
+              461.774,
+              508,
+              641.774
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            24
+          ],
+          "sample": false,
+          "id": "q-30"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              68,
+              341,
+              690.03,
+              603,
+              755
+            ]
+          ],
+          "text": "••9 ILW In 1 km races, runner 1 on track 1 (with time 2 min, 27.95 s) appears to be faster than runner 2 on track 2 (2 min, 28.15 s). However, length L 2 of track 2 might be slightly greater than length L 1 of track 1. How large can L 2 $ L 1 be for us still to conclude that runner 1 is faster?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              34,
+              89,
+              641.774,
+              508,
+              794
+            ],
+            [
+              35,
+              89,
+              67,
+              508,
+              179.20342
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-31"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              69,
+              66,
+              65.61,
+              328,
+              155.59
+            ]
+          ],
+          "text": "••10 To set a speed record in a measured (straight-line) distance d, a race car must be driven first in one direction (in time t 1 ) and then in the opposite direction (in time t 2 ). (a) To eliminate the ef- fects of the wind and obtain the car’s speed v c in a windless situation, should we find the average of d/t 1 and d/t 2 (method 1) or should we di- vide d by the average of t 1 and t 2 ? (b) What is the fractional difference in the two methods when a steady wind blows along the car’s route and the ratio of the wind speed v w to the car’s speed v c is 0.0240?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              35,
+              89,
+              179.20342,
+              508,
+              570.926
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-32"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              69,
+              66,
+              155.99,
+              328,
+              224.99
+            ]
+          ],
+          "text": "••11 You are to drive 300 km to an interview. The interview is at 11!15 A . M . You plan to drive at 100 km/h, so you leave at 8!00 A . M . to allow some extra time. You drive at that speed for the first 100 km, but then construction work forces you to slow to 40 km/h for 40 km. What would be the least speed needed for the rest of the trip to arrive in time for the interview?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              35,
+              89,
+              570.926,
+              508,
+              639.734
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-33"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              69,
+              66,
+              225.39000000000001,
+              328,
+              432.23
+            ]
+          ],
+          "text": "•••12 Traffic shock wave. An abrupt slowdown in concen- trated traffic can travel as a pulse, termed a shock wave, along the line of cars, either downstream (in the traffic direction) or up- stream, or it can be stationary. Figure 2-25 shows a uniformly spaced line of cars moving at speed v \" 25.0 m/s toward a uni- formly spaced line of slow cars moving at speed v s \" 5.00 m/s. Assume that each faster car adds length L \" 12.0 m (car length plus buffer zone) to the line of slow cars when it joins the line, and as- sume it slows abruptly at the last instant. (a) For what separation dis- tance d between the faster cars does the shock wave remain stationary? If the separation is twice that amount, what are the (b) speed and (c) direction (upstream or downstream) of the shock wave? L d L d L L L v v s Car Buffer Figure 2-25 Problem 12.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              35,
+              89,
+              639.734,
+              508,
+              794
+            ],
+            [
+              36,
+              89,
+              67,
+              508,
+              333.714
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            25
+          ],
+          "sample": false,
+          "id": "q-34"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              69,
+              66,
+              432.63,
+              328,
+              528.259873
+            ]
+          ],
+          "text": "•••13 ILW You drive on Interstate 10 from San Antonio to Houston, half the time at 55 km/h and the other half at 90 km/h. On the way back you travel half the distance at 55 km/h and the other half at 90 km/h. What is your average speed (a) from San Antonio to Houston, (b) from Houston back to San Antonio, and (c) for the entire trip? (d) What is your average velocity for the entire trip? (e) Sketch x versus t for (a), assuming the motion is all in the positive x direc- tion. Indicate how the average velocity can be found on the sketch.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              36,
+              89,
+              333.714,
+              508,
+              794
+            ],
+            [
+              37,
+              89,
+              67,
+              508,
+              248.556
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-35"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-14",
+      "topic": "2-2",
+      "kind": "Problem",
+      "title": "2-2 Instantaneous velocity and speed",
+      "questions": [
+        {
+          "label": "14",
+          "boxes": [
+            [
+              69,
+              66,
+              539.5699999999999,
+              328,
+              574.92
+            ]
+          ],
+          "text": "•14 An electron moving along the x axis has a position given by x \" 16te $t m, where t is in seconds. How far is the electron from the origin when it momentarily stops?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              37,
+              89,
+              248.556,
+              508,
+              486.926
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-36"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              69,
+              66,
+              575.3199999999999,
+              328,
+              676.98
+            ]
+          ],
+          "text": "•15 (a) If a particle’s position is given by x \" 4 $ 12t # 3t 2 (where t is in seconds and x is in meters), what is its velocity at t \" 1 s? (b) Is it moving in the positive or negative direction of x just then? (c) What is its speed just then? (d) Is the speed increasing or decreasing just then? (Try answering the next two questions without further calculation.) (e) Is there ever an instant when the velocity is zero? If so, give the time t; if not, answer no. (f) Is there a time after t \" 3 s when the particle is moving in the negative direction of x? If so, give the time t; if not, answer no.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              37,
+              89,
+              486.926,
+              508,
+              794
+            ],
+            [
+              38,
+              89,
+              67,
+              508,
+              112.284
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-37"
+        },
+        {
+          "label": "16",
+          "boxes": [
+            [
+              69,
+              66,
+              677.38,
+              328,
+              755
+            ],
+            [
+              69,
+              341,
+              65,
+              603,
+              93.09
+            ]
+          ],
+          "text": "•16 The position function x(t) of a particle moving along an x axis is x \" 4.0 $ 6.0t 2 , with x in meters and t in seconds. (a) At what time and (b) where does the particle (momentarily) stop? At what (c) negative time and (d) positive time does the particle pass through the origin? (e) Graph x versus t for the range $5 s to #5 s. (f) To shift the curve rightward on the graph, should we include the term #20t or the term $20t in x(t)? (g) Does that inclusion increase or decrease the value of x at which the particle momentarily stops?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              38,
+              89,
+              112.284,
+              508,
+              591.326
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-38"
+        },
+        {
+          "label": "17",
+          "boxes": [
+            [
+              69,
+              341,
+              93.49000000000001,
+              603,
+              193.016273
+            ]
+          ],
+          "text": "••17 The position of a particle moving along the x axis is given in centimeters by x \" 9.75 # 1.50t 3 , where t is in seconds. Calculate (a) the average velocity during the time interval t \" 2.00 s to t \" 3.00 s; (b) the instantaneous velocity at t \" 2.00 s; (c) the instantaneous ve- locity at t \" 3.00 s; (d) the instantaneous velocity at t \" 2.50 s; and (e) the instantaneous velocity when the particle is midway between its positions at t \" 2.00 s and t \" 3.00 s. (f) Graph x versus t and in- dicate your answers graphically.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              38,
+              89,
+              591.326,
+              508,
+              794
+            ],
+            [
+              39,
+              89,
+              67,
+              508,
+              422.97372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-39"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-15",
+      "topic": "2-3",
+      "kind": "Problem",
+      "title": "2-3 Acceleration",
+      "questions": [
+        {
+          "label": "18",
+          "boxes": [
+            [
+              69,
+              341,
+              205.33,
+              603,
+              307.78
+            ]
+          ],
+          "text": "•18 The position of a particle moving along an x axis is given by x \" 12t 2 $ 2t 3 , where x is in meters and t is in seconds. Determine (a) the position, (b) the velocity, and (c) the acceleration of the particle at t \" 3.0 s. (d) What is the maximum positive coordinate reached by the particle and (e) at what time is it reached? (f) What is the maxi- mum positive velocity reached by the particle and (g) at what time is it reached? (h) What is the acceleration of the particle at the instant the particle is not moving (other than at t \" 0)? (i) Determine the av- erage velocity of the particle between t \" 0 and t \" 3 s.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              39,
+              89,
+              422.97372,
+              508,
+              794
+            ],
+            [
+              40,
+              89,
+              67,
+              508,
+              170.196
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-40"
+        },
+        {
+          "label": "19",
+          "boxes": [
+            [
+              69,
+              341,
+              308.17999999999995,
+              603,
+              355.51
+            ]
+          ],
+          "text": "•19 SSM At a certain time a particle had a speed of 18 m/s in the positive x direction, and 2.4 s later its speed was 30 m/s in the opposite direction. What is the average acceleration of the particle during this 2.4 s interval?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              40,
+              89,
+              170.196,
+              508,
+              490.454
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-41"
+        },
+        {
+          "label": "20",
+          "boxes": [
+            [
+              69,
+              341,
+              355.90999999999997,
+              603,
+              414.63
+            ]
+          ],
+          "text": "•20 (a) If the position of a particle is given by x \" 20t $ 5t 3 , where x is in meters and t is in seconds, when, if ever, is the parti- cle’s velocity zero? (b) When is its acceleration a zero? (c) For what time range (positive or negative) is a negative? (d) Positive? (e) Graph x(t), v(t), and a(t).",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              40,
+              89,
+              490.454,
+              508,
+              794
+            ],
+            [
+              41,
+              89,
+              67,
+              508,
+              177.876
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-42"
+        },
+        {
+          "label": "21",
+          "boxes": [
+            [
+              69,
+              341,
+              415.03,
+              603,
+              495.52
+            ]
+          ],
+          "text": "••21 From t \" 0 to t \" 5.00 min, a man stands still, and from t \" 5.00 min to t \" 10.0 min, he walks briskly in a straight line at a constant speed of 2.20 m/s. What are (a) his average velocity v avg and (b) his average acceleration a avg in the time interval 2.00 min to 8.00 min? What are (c) v avg and (d) a avg in the time interval 3.00 min to 9.00 min? (e) Sketch x versus t and v versus t, and indicate how the answers to (a) through (d) can be obtained from the graphs.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              41,
+              89,
+              177.876,
+              508,
+              794
+            ],
+            [
+              42,
+              89,
+              67,
+              508,
+              126.084
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-43"
+        },
+        {
+          "label": "22",
+          "boxes": [
+            [
+              69,
+              341,
+              495.91999999999996,
+              603,
+              603.935273
+            ]
+          ],
+          "text": "••22 The position of a particle moving along the x axis depends on the time according to the equation x \" ct 2 $ bt 3 , where x is in me- ters and t in seconds.What are the units of (a) constant c and (b) con- stant b? Let their numerical values be 3.0 and 2.0, respectively. (c) At what time does the particle reach its maximum positive x position? From t \" 0.0 s to t \" 4.0 s, (d) what distance does the particle move and (e) what is its displacement? Find its velocity at times (f) 1.0 s, (g) 2.0 s, (h) 3.0 s, and (i) 4.0 s. Find its acceleration at times (j) 1.0 s, (k) 2.0 s, (l) 3.0 s, and (m) 4.0 s.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              42,
+              89,
+              126.084,
+              508,
+              794
+            ],
+            [
+              43,
+              89,
+              67,
+              508,
+              133.836
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-44"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-16",
+      "topic": "2-4",
+      "kind": "Problem",
+      "title": "2-4 Constant acceleration",
+      "questions": [
+        {
+          "label": "23",
+          "boxes": [
+            [
+              69,
+              341,
+              616.04,
+              603,
+              686.31
+            ]
+          ],
+          "text": "•23 SSM An electron with an initial velocity v 0 \" 1.50 ' 10 5 m/s enters a region of length L \" 1.00 cm where it is electrically acceler- Nonaccelerating Accelerating region region ated (Fig. 2-26). It emerges with v \" 5.70 ' 10 m/s. What is its ac- 6 celeration, assumed constant? L",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              43,
+              89,
+              133.836,
+              508,
+              661.316
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            26
+          ],
+          "sample": false,
+          "id": "q-45"
+        },
+        {
+          "label": "24",
+          "boxes": [
+            [
+              69,
+              341,
+              686.7099999999999,
+              603,
+              755
+            ],
+            [
+              70,
+              66,
+              65,
+              328,
+              167.82
+            ]
+          ],
+          "text": "•24 Catapulting mush- rooms. Certain mushrooms launch Path of electron their spores by a catapult mecha- nism. As water condenses from the air onto a spore that is attached to Figure 2-26 Problem 23. the mushroom, a drop grows on one side of the spore and a film grows on the other side. The spore is bent over by the drop’s weight, but when the film reaches the drop, the drop’s water suddenly spreads into the film and the spore springs upward so rapidly that it is slung off into the air. Typically, the spore reaches a speed of 1.6 m/s in a 5.0 mm launch; its speed is then reduced to zero in 1.0 mm by the air. Using those data and assuming constant accelerations, find the acceleration in terms of g during (a) the launch and (b) the speed reduction.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              43,
+              89,
+              661.316,
+              508,
+              794
+            ],
+            [
+              44,
+              89,
+              67,
+              508,
+              222.996
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-46"
+        },
+        {
+          "label": "25",
+          "boxes": [
+            [
+              70,
+              66,
+              168.22,
+              328,
+              226.24
+            ]
+          ],
+          "text": "•25 An electric vehicle starts from rest and accelerates at a rate of 2.0 m/s 2 in a straight line until it reaches a speed of 20 m/s. The vehicle then slows at a constant rate of 1.0 m/s 2 until it stops. (a) How much time elapses from start to stop? (b) How far does the vehicle travel from start to stop?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              44,
+              89,
+              222.996,
+              508,
+              561.446
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-47"
+        },
+        {
+          "label": "26",
+          "boxes": [
+            [
+              70,
+              66,
+              226.64000000000001,
+              328,
+              274.47
+            ]
+          ],
+          "text": "•26 A muon (an elementary particle) enters a region with a speed of 5.00 ' 10 6 m/s and then is slowed at the rate of 1.25 ' 10 14 m/s 2 . (a) How far does the muon take to stop? (b) Graph x versus t and v versus t for the muon.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              44,
+              89,
+              561.446,
+              508,
+              794
+            ],
+            [
+              45,
+              89,
+              67,
+              508,
+              249.444
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-48"
+        },
+        {
+          "label": "27",
+          "boxes": [
+            [
+              70,
+              66,
+              274.87,
+              328,
+              311.62
+            ]
+          ],
+          "text": "•27 An electron has a constant acceleration of #3.2 m/s 2 . At a certain instant its velocity is #9.6 m/s. What is its velocity (a) 2.5 s earlier and (b) 2.5 s later?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              45,
+              89,
+              249.444,
+              508,
+              374.85372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-49"
+        },
+        {
+          "label": "28",
+          "boxes": [
+            [
+              70,
+              66,
+              312.02,
+              328,
+              371.03
+            ]
+          ],
+          "text": "•28 On a dry road, a car with good tires may be able to brake with a constant deceleration of 4.92 m/s 2 . (a) How long does such a car, initially traveling at 24.6 m/s, take to stop? (b) How far does it travel in this time? (c) Graph x versus t and v versus t for the deceleration.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              45,
+              89,
+              374.85372,
+              508,
+              794
+            ],
+            [
+              46,
+              89,
+              67,
+              508,
+              70.024
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-50"
+        },
+        {
+          "label": "29",
+          "boxes": [
+            [
+              70,
+              66,
+              371.42999999999995,
+              328,
+              429.25
+            ]
+          ],
+          "text": "•29 ILW A certain elevator cab has a total run of 190 m and a max- imum speed of 305 m/min, and it accelerates from rest and then back to rest at 1.22 m/s 2 . (a) How far does the cab move while ac- celerating to full speed from rest? (b) How long does it take to make the nonstop 190 m run, starting and ending at rest?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              46,
+              89,
+              70.024,
+              508,
+              407.706
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-51"
+        },
+        {
+          "label": "30",
+          "boxes": [
+            [
+              70,
+              66,
+              429.65,
+              328,
+              498.85
+            ]
+          ],
+          "text": "•30 The brakes on your car can slow you at a rate of 5.2 m/s 2 . (a) If you are going 137 km/h and suddenly see a state trooper, what is the minimum time in which you can get your car under the 90 km/h speed limit? (The answer reveals the futility of braking to keep your high speed from being detected with a radar or laser gun.) (b) Graph x versus t and v versus t for such a slowing.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              46,
+              89,
+              407.706,
+              508,
+              721.076
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-52"
+        },
+        {
+          "label": "31",
+          "boxes": [
+            [
+              70,
+              66,
+              499.25,
+              328,
+              558.27
+            ]
+          ],
+          "text": "•31 SSM Suppose a rocket ship in deep space moves with con- stant acceleration equal to 9.8 m/s 2 , which gives the illusion of nor- mal gravity during the flight. (a) If it starts from rest, how long will it take to acquire a speed one-tenth that of light, which travels at 3.0 ' 10 8 m/s? (b) How far will it travel in so doing?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              46,
+              89,
+              721.076,
+              508,
+              794
+            ],
+            [
+              47,
+              89,
+              67,
+              508,
+              539.846
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-53"
+        },
+        {
+          "label": "32",
+          "boxes": [
+            [
+              70,
+              66,
+              558.67,
+              328,
+              616.69
+            ]
+          ],
+          "text": "•32 A world’s land speed record was set by Colonel John P. Stapp when in March 1954 he rode a rocket-propelled sled that moved along a track at 1020 km/h. He and the sled were brought to a stop in 1.4 s. (See Fig. 2-7.) In terms of g, what acceleration did he experience while stopping?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              47,
+              89,
+              539.846,
+              508,
+              715.676
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-54"
+        },
+        {
+          "label": "33",
+          "boxes": [
+            [
+              70,
+              66,
+              617.09,
+              328,
+              664.12
+            ]
+          ],
+          "text": "•33 SSM ILW A car traveling 56.0 km/h is 24.0 m from a barrier when the driver slams on the brakes. The car hits the barrier 2.00 s later. (a) What is the magnitude of the car’s constant acceleration before impact? (b) How fast is the car traveling at impact?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              47,
+              89,
+              715.676,
+              508,
+              794
+            ],
+            [
+              48,
+              89,
+              67,
+              508,
+              607.694
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-55"
+        },
+        {
+          "label": "34",
+          "boxes": [
+            [
+              70,
+              66,
+              664.52,
+              328,
+              755
+            ]
+          ],
+          "text": "••34 In Fig. 2-27, a red car and a green car, identical except for the color, move toward each other in adjacent lanes and parallel to an x axis. At time t \" 0, the red car is at x r \" 0 and the green car is at x g \" 220 m. If the red car has a constant velocity of 20 km/h, the cars pass each other at x \" 44.5 m, and if it has a constant velocity of 40 km/h, they pass each other at x \" 76.6 m. What are (a) the initial velocity and (b) the constant acceleration of the green car? Green x r car x Red x g car Figure 2-27 Problems 34 and 35.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              48,
+              89,
+              607.694,
+              508,
+              794
+            ],
+            [
+              49,
+              89,
+              67,
+              508,
+              168.636
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            27
+          ],
+          "sample": false,
+          "id": "q-56"
+        },
+        {
+          "label": "35",
+          "boxes": [
+            [
+              70,
+              341,
+              132.23000000000002,
+              603,
+              234.68
+            ]
+          ],
+          "text": "••35 Figure 2-27 shows a red car x g 0 and a green car that move toward each other. Figure 2-28 is a graph of x (m) their motion, showing the positions x g0 \" 270 m and x r0 \" $35.0 m at 0 time t \" 0. The green car has a con- x r 0 0 12 stant speed of 20.0 m/s and the red t (s) car begins from rest. What is the ac- Figure 2-28 Problem 35. celeration magnitude of the red car?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              49,
+              89,
+              168.636,
+              508,
+              395.706
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            27,
+            28
+          ],
+          "sample": false,
+          "id": "q-57"
+        },
+        {
+          "label": "36",
+          "boxes": [
+            [
+              70,
+              341,
+              235.08,
+              603,
+              312.05
+            ]
+          ],
+          "text": "••36 A car moves along an x axis through a distance of 900 m, starting at rest (at x \" 0) and ending at rest (at x \" 900 m). Through the first 14 of that distance, its acceleration is #2.25 m/s 2 . Through the rest of that distance, its acceleration is $0.750 m/s 2 . What are (a) its travel time through the 900 m and (b) its maxi- mum speed? (c) Graph position x, velocity v, and acceleration a versus time t for the trip.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              49,
+              89,
+              395.706,
+              508,
+              638.414
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-58"
+        },
+        {
+          "label": "37",
+          "boxes": [
+            [
+              70,
+              341,
+              312.45,
+              603,
+              383.47
+            ]
+          ],
+          "text": "••37 Figure 2-29 depicts the motion x (m) of a particle moving along an x axis with a constant acceleration. The fig- x s ure’s vertical scaling is set by x s \" 6.0 m. What are the (a) magnitude and (b) di- rection of the particle’s acceleration?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              49,
+              89,
+              638.414,
+              508,
+              794
+            ],
+            [
+              50,
+              89,
+              67,
+              508,
+              217.295584
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            29
+          ],
+          "sample": false,
+          "id": "q-59"
+        },
+        {
+          "label": "38",
+          "boxes": [
+            [
+              70,
+              341,
+              383.87,
+              603,
+              496.31
+            ]
+          ],
+          "text": "••38 (a) If the maximum acceleration that is tolerable for passengers in a 0 t (s) 1 2 subway train is 1.34 m/s and subway 2 stations are located 806 m apart, what Figure 2-29 Problem 37. is the maximum speed a subway train can attain between stations? (b) What is the travel time between stations? (c) If a subway train stops for 20 s at each station, what is the maximum average speed of the train, from one start-up to the next? (d) Graph x, v, and a versus t for the interval from one start-up to the next.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              50,
+              89,
+              217.295584,
+              508,
+              794
+            ],
+            [
+              51,
+              89,
+              67,
+              508,
+              216.084
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-60"
+        },
+        {
+          "label": "39",
+          "boxes": [
+            [
+              70,
+              341,
+              496.71,
+              603,
+              676.06
+            ]
+          ],
+          "text": "••39 Cars A and B move in x s the same direction in adjacent lanes.The position x of car A is x (m) given in Fig. 2-30, from time t \" 0 to t \" 7.0 s. The figure’s vertical scaling is set by x s \" 32.0 m.At t \" 0, car B is at x \" 0 1 2 3 4 5 6 7 0, with a velocity of 12 m/s and t (s) a negative constant accelera- Figure 2-30 Problem 39. tion a B . (a) What must a B be such that the cars are (momen- tarily) side by side (momentarily at the same value of x) at t \" 4.0 s? (b) For that value of a B , how many times are the cars side by side? (c) Sketch the position x of car B versus time t on Fig. 2-30. How many times will the cars be side by side if the magnitude of accelera- tion a B is (d) more than and (e) less than the answer to part (a)?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              51,
+              89,
+              216.084,
+              508,
+              727.22372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            30
+          ],
+          "sample": false,
+          "id": "q-61"
+        },
+        {
+          "label": "40",
+          "boxes": [
+            [
+              70,
+              341,
+              676.4599999999999,
+              603,
+              755
+            ],
+            [
+              71,
+              66,
+              65,
+              328,
+              113.2
+            ]
+          ],
+          "text": "••40 You are driving toward a traffic signal when it turns yel- low. Your speed is the legal speed limit of v 0 \" 55 km/h; your best deceleration rate has the magnitude a \" 5.18 m/s 2 .Your best reaction time to begin braking is T \" 0.75 s. To avoid having the front of your car enter the intersection after the light turns red, should you brake to a stop or continue to move at 55 km/h if the distance to the intersection and the duration of the yellow light are (a) 40 m and 2.8 s, and (b) 32 m and 1.8 s? Give an answer of brake, continue, either (if either strategy works), or neither (if neither strategy works and the yellow duration is inappropriate).",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              51,
+              89,
+              727.22372,
+              508,
+              794
+            ],
+            [
+              52,
+              89,
+              67,
+              508,
+              386.226
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-62"
+        },
+        {
+          "label": "41",
+          "boxes": [
+            [
+              71,
+              66,
+              113.60000000000001,
+              328,
+              238.22
+            ]
+          ],
+          "text": "••41 As two trains move v s along a track, their conductors suddenly notice that they are v (m/s) headed toward each other. 0 t (s) 2 4 6 Figure 2-31 gives their velocities v as functions of time t as the conductors slow the trains. The Figure 2-31 Problem 41. figure’s vertical scaling is set by v s \" 40.0 m/s. The slowing processes begin when the trains are 200 m apart.What is their separa- tion when both trains have stopped?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              52,
+              89,
+              386.226,
+              508,
+              496.526
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            31
+          ],
+          "sample": false,
+          "id": "q-63"
+        },
+        {
+          "label": "42",
+          "boxes": [
+            [
+              71,
+              66,
+              238.62,
+              328,
+              352.06
+            ]
+          ],
+          "text": "•••42 You are arguing over a cell phone while trailing an unmarked police car by 25 m; both your car and the police car are traveling at 110 km/h. Your argument diverts your attention from the police car for 2.0 s (long enough for you to look at the phone and yell, “I won’t do that!”). At the beginning of that 2.0 s, the po- lice officer begins braking suddenly at 5.0 m/s 2 . (a) What is the sep- aration between the two cars when your attention finally returns? Suppose that you take another 0.40 s to realize your danger and begin braking. (b) If you too brake at 5.0 m/s 2 , what is your speed when you hit the police car?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              52,
+              89,
+              496.526,
+              508,
+              794
+            ],
+            [
+              53,
+              89,
+              67,
+              508,
+              112.476
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-64"
+        },
+        {
+          "label": "43",
+          "boxes": [
+            [
+              71,
+              66,
+              352.46,
+              328,
+              624.756373
+            ]
+          ],
+          "text": "•••43 When a high-speed passenger train traveling at 161 km/h rounds a bend, the engineer is shocked to see that a locomotive has improperly entered onto the track from a siding and is a distance D \" 676 m ahead (Fig. 2-32). The locomotive is moving at 29.0 km/h. The engineer of the high-speed train imme- diately applies the brakes. (a) What must be the magnitude of the resulting constant deceleration if a collision is to be just avoided? (b) Assume that the engineer is at x \" 0 when, at t \" 0, he first spots the locomotive. Sketch x(t) curves for the locomotive and high-speed train for the cases in which a collision is just avoided and is not quite avoided. D High-speed train Locomotive Figure 2-32 Problem 43.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              53,
+              89,
+              112.476,
+              508,
+              676.70372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            32
+          ],
+          "sample": false,
+          "id": "q-65"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-17",
+      "topic": "2-5",
+      "kind": "Problem",
+      "title": "2-5 Free-fall acceleration",
+      "questions": [
+        {
+          "label": "44",
+          "boxes": [
+            [
+              71,
+              66,
+              637.0699999999999,
+              328,
+              684.6
+            ]
+          ],
+          "text": "•44 When startled, an armadillo will leap upward. Suppose it rises 0.544 m in the first 0.200 s. (a) What is its initial speed as it leaves the ground? (b) What is its speed at the height of 0.544 m? (c) How much higher does it go?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              53,
+              89,
+              676.70372,
+              508,
+              794
+            ],
+            [
+              54,
+              89,
+              67,
+              508,
+              318.306
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-66"
+        },
+        {
+          "label": "45",
+          "boxes": [
+            [
+              71,
+              66,
+              685.0,
+              328,
+              755
+            ]
+          ],
+          "text": "•45 SSM WWW (a) With what speed must a ball be thrown verti- cally from ground level to rise to a maximum height of 50 m? (b) How long will it be in the air? (c) Sketch graphs of y, v, and a versus t for the ball. On the first two graphs, indicate the time at which 50 m is reached.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              54,
+              89,
+              318.306,
+              508,
+              794
+            ],
+            [
+              55,
+              89,
+              67,
+              508,
+              309.09372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-67"
+        },
+        {
+          "label": "46",
+          "boxes": [
+            [
+              71,
+              341,
+              65.97,
+              603,
+              113.5
+            ]
+          ],
+          "text": "•46 Raindrops fall 1700 m from a cloud to the ground. (a) If they were not slowed by air resistance, how fast would the drops be moving when they struck the ground? (b) Would it be safe to walk outside during a rainstorm?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              55,
+              89,
+              309.09372,
+              508,
+              553.79372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-68"
+        },
+        {
+          "label": "47",
+          "boxes": [
+            [
+              71,
+              341,
+              113.9,
+              603,
+              161.43
+            ]
+          ],
+          "text": "•47 SSM At a construction site a pipe wrench struck the ground with a speed of 24 m/s. (a) From what height was it inadvertently dropped? (b) How long was it falling? (c) Sketch graphs of y, v, and a versus t for the wrench.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              55,
+              89,
+              553.79372,
+              508,
+              794
+            ],
+            [
+              56,
+              89,
+              67,
+              508,
+              469.43372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-69"
+        },
+        {
+          "label": "48",
+          "boxes": [
+            [
+              71,
+              341,
+              161.83,
+              603,
+              209.36
+            ]
+          ],
+          "text": "•48 A hoodlum throws a stone vertically downward with an ini- tial speed of 12.0 m/s from the roof of a building, 30.0 m above the ground. (a) How long does it take the stone to reach the ground? (b) What is the speed of the stone at impact?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              56,
+              89,
+              469.43372,
+              508,
+              794
+            ],
+            [
+              57,
+              89,
+              67,
+              508,
+              125.436
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-70"
+        },
+        {
+          "label": "49",
+          "boxes": [
+            [
+              71,
+              341,
+              209.76000000000002,
+              603,
+              257.29
+            ]
+          ],
+          "text": "•49 SSM A hot-air balloon is ascending at the rate of 12 m/s and is 80 m above the ground when a package is dropped over the side. (a) How long does the package take to reach the ground? (b) With what speed does it hit the ground?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              57,
+              89,
+              125.436,
+              508,
+              695.66372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-71"
+        },
+        {
+          "label": "50",
+          "boxes": [
+            [
+              71,
+              341,
+              257.69,
+              603,
+              441.67
+            ]
+          ],
+          "text": "••50 At time t \" 0, apple 1 is dropped from a bridge onto a road- way beneath the bridge; somewhat later, apple 2 is thrown down from the same height. Figure 2-33 gives the vertical positions y of the apples versus t during the falling, until both apples have hit the roadway. The scaling is set by t s \" 2.0 s. With approximately what speed is apple 2 thrown down? y 0 t s Figure 2-33 Problem 50.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              57,
+              89,
+              695.66372,
+              508,
+              794
+            ],
+            [
+              58,
+              89,
+              67,
+              508,
+              160.764
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            33
+          ],
+          "sample": false,
+          "id": "q-72"
+        },
+        {
+          "label": "51",
+          "boxes": [
+            [
+              71,
+              341,
+              442.07,
+              603,
+              566.49
+            ]
+          ],
+          "text": "••51 As a runaway scientific bal- v loon ascends at 19.6 m/s, one of its instrument packages breaks free of a harness and free-falls. Figure 2-34 0 t (s) 2 4 6 8 gives the vertical velocity of the package versus time, from before it breaks free to when it reaches the ground. (a) What maximum height above the break-free point does it Figure 2-34 Problem 51. rise? (b) How high is the break-free point above the ground?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              58,
+              89,
+              160.764,
+              508,
+              442.266
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            34
+          ],
+          "sample": false,
+          "id": "q-73"
+        },
+        {
+          "label": "52",
+          "boxes": [
+            [
+              71,
+              341,
+              566.89,
+              603,
+              625.41
+            ]
+          ],
+          "text": "••52 A bolt is dropped from a bridge under construction, falling 90 m to the valley below the bridge. (a) In how much time does it pass through the last 20% of its fall? What is its speed (b) when it begins that last 20% of its fall and (c) when it reaches the valley beneath the bridge?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              58,
+              89,
+              442.266,
+              508,
+              647.006
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-74"
+        },
+        {
+          "label": "53",
+          "boxes": [
+            [
+              71,
+              341,
+              625.81,
+              603,
+              673.34
+            ]
+          ],
+          "text": "••53 SSM ILW A key falls from a bridge that is 45 m above the water. It falls directly into a model boat, moving with constant velocity, that is 12 m from the point of impact when the key is re- leased. What is the speed of the boat?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              58,
+              89,
+              647.006,
+              508,
+              794
+            ],
+            [
+              59,
+              89,
+              67,
+              508,
+              338.73372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-75"
+        },
+        {
+          "label": "54",
+          "boxes": [
+            [
+              71,
+              341,
+              673.74,
+              603,
+              755
+            ]
+          ],
+          "text": "••54 A stone is dropped into a river from a bridge 43.9 m above the water. Another stone is thrown vertically down 1.00 s after the first is dropped. The stones strike the water at the same time. (a) What is the initial speed of the second stone? (b) Plot velocity versus time on a graph for each stone, taking zero time as the instant the first stone is released.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              59,
+              89,
+              338.73372,
+              508,
+              794
+            ],
+            [
+              60,
+              89,
+              67,
+              508,
+              249.396
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-76"
+        },
+        {
+          "label": "55",
+          "boxes": [
+            [
+              72,
+              66,
+              66.24000000000001,
+              328,
+              124.32
+            ]
+          ],
+          "text": "••55 SSM A ball of moist clay falls 15.0 m to the ground. It is in contact with the ground for 20.0 ms before stopping. (a) What is the magnitude of the average acceleration of the ball during the time it is in contact with the ground? (Treat the ball as a particle.) (b) Is the average acceleration up or down?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              60,
+              89,
+              249.396,
+              508,
+              661.556
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-77"
+        },
+        {
+          "label": "56",
+          "boxes": [
+            [
+              72,
+              66,
+              124.72,
+              328,
+              214.68
+            ]
+          ],
+          "text": "••56 Figure 2-35 v shows the speed v versus height y of a ball tossed directly upward, along a y v A axis. Distance d is 0.40 m. The speed at height y A is __ 1 v v A . The speed at height y B 3 A is 13 v A . What is speed v A ? y 0",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              60,
+              89,
+              661.556,
+              508,
+              753.04
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            35
+          ],
+          "sample": false,
+          "id": "q-78"
+        },
+        {
+          "label": "57",
+          "boxes": [
+            [
+              72,
+              66,
+              215.08,
+              328,
+              297.52
+            ]
+          ],
+          "text": "••57 To test the quality d y A y B of a tennis ball, you drop it onto the floor from a Figure 2-35 Problem 56. height of 4.00 m. It re- bounds to a height of 2.00 m. If the ball is in contact with the floor for 12.0 ms, (a) what is the magnitude of its average acceleration during that contact and (b) is the average acceleration up or down?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              60,
+              89,
+              753.04,
+              508,
+              794
+            ],
+            [
+              61,
+              89,
+              67,
+              508,
+              450.114
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-79"
+        },
+        {
+          "label": "58",
+          "boxes": [
+            [
+              72,
+              66,
+              297.91999999999996,
+              328,
+              345.45
+            ]
+          ],
+          "text": "••58 An object falls a distance h from rest. If it travels 0.50h in the last 1.00 s, find (a) the time and (b) the height of its fall. (c) Explain the physically unacceptable solution of the quadratic equation in t that you obtain.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              61,
+              89,
+              450.114,
+              508,
+              794
+            ],
+            [
+              62,
+              89,
+              67,
+              508,
+              276.93372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-80"
+        },
+        {
+          "label": "59",
+          "boxes": [
+            [
+              72,
+              66,
+              345.84999999999997,
+              328,
+              404.36
+            ]
+          ],
+          "text": "••59 Water drips from the nozzle of a shower onto the floor 200 cm below. The drops fall at regular (equal) intervals of time, the first drop striking the floor at the instant the fourth drop begins to fall. When the first drop strikes the floor, how far below the nozzle are the (a) second and (b) third drops?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              62,
+              89,
+              276.93372,
+              508,
+              710.636
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-81"
+        },
+        {
+          "label": "60",
+          "boxes": [
+            [
+              72,
+              66,
+              404.76,
+              328,
+              442.27
+            ]
+          ],
+          "text": "••60 A rock is thrown vertically upward from ground level at time t \" 0.At t \" 1.5 s it passes the top of a tall tower, and 1.0 s later it reaches its maximum height.What is the height of the tower?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              62,
+              89,
+              710.636,
+              508,
+              794
+            ],
+            [
+              63,
+              89,
+              67,
+              508,
+              219.684
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-82"
+        },
+        {
+          "label": "61",
+          "boxes": [
+            [
+              72,
+              66,
+              442.66999999999996,
+              328,
+              523.15
+            ]
+          ],
+          "text": "•••61 A steel ball is dropped from a building’s roof and passes a window, taking 0.125 s to fall from the top to the bottom of the window, a distance of 1.20 m. It then falls to a sidewalk and bounces back past the window, moving from bottom to top in 0.125 s. Assume that the upward flight is an exact reverse of the fall. The time the ball spends below the bottom of the window is 2.00 s. How tall is the building?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              63,
+              89,
+              219.684,
+              508,
+              639.014
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-83"
+        },
+        {
+          "label": "62",
+          "boxes": [
+            [
+              72,
+              66,
+              523.55,
+              328,
+              571.09
+            ]
+          ],
+          "text": "•••62 A basketball player grabbing a rebound jumps 76.0 cm vertically. How much total time (ascent and descent) does the player spend (a) in the top 15.0 cm of this jump and (b) in the bottom 15.0 cm? (The player seems to hang in the air at the top.)",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              63,
+              89,
+              639.014,
+              508,
+              794
+            ],
+            [
+              64,
+              89,
+              67,
+              508,
+              399.714
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-84"
+        },
+        {
+          "label": "63",
+          "boxes": [
+            [
+              72,
+              66,
+              571.49,
+              328,
+              619.02
+            ]
+          ],
+          "text": "•••63 A drowsy cat spots a flowerpot that sails first up and then down past an open window. The pot is in view for a total of 0.50 s, and the top-to-bottom height of the window is 2.00 m. How high above the window top does the flowerpot go? y s",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              64,
+              89,
+              399.714,
+              508,
+              597.014
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-85"
+        },
+        {
+          "label": "64",
+          "boxes": [
+            [
+              72,
+              66,
+              619.42,
+              328,
+              755
+            ]
+          ],
+          "text": "•••64 A ball is shot vertically up- ward from the surface of another planet. A plot of y versus t for the y (m) ball is shown in Fig. 2-36, where y is the height of the ball above its start- ing point and t \" 0 at the instant the ball is shot. The figure’s vertical scal- ing is set by y s \" 30.0 m. What are the 0 0 1 2 3 4 5 magnitudes of (a) the free-fall accel- t (s) eration on the planet and (b) the ini- tial velocity of the ball? Figure 2-36 Problem 64.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              64,
+              89,
+              597.014,
+              508,
+              794
+            ],
+            [
+              65,
+              89,
+              67,
+              508,
+              156.396
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            36
+          ],
+          "sample": false,
+          "id": "q-86"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-18",
+      "topic": "2-6",
+      "kind": "Problem",
+      "title": "2-6 Graphical integration in motion analysis",
+      "questions": [
+        {
+          "label": "65",
+          "boxes": [
+            [
+              72,
+              341,
+              77.78,
+              603,
+              114.33
+            ]
+          ],
+          "text": "•65 Figure 2-15a gives the acceleration of a volunteer’s head and torso during a rear-end collision. At maximum head ac- celeration, what is the speed of (a) the head and (b) the torso?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              65,
+              89,
+              156.396,
+              508,
+              645.086
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            15
+          ],
+          "sample": false,
+          "id": "q-87"
+        },
+        {
+          "label": "66",
+          "boxes": [
+            [
+              72,
+              341,
+              114.73,
+              603,
+              327.34
+            ]
+          ],
+          "text": "••66 In a forward punch in karate, the fist begins at rest at the waist and is brought rapidly forward until the arm is fully ex- tended. The speed v(t) of the fist is given in Fig. 2-37 for someone skilled in karate. The vertical scaling is set by v s \" 8.0 m/s. How far has the fist moved at (a) time t \" 50 ms and (b) when the speed of the fist is maximum? v s v (m/s) 0 50 100 140 t (ms) Figure 2-37 Problem 66.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              65,
+              89,
+              645.086,
+              508,
+              794
+            ],
+            [
+              66,
+              89,
+              67,
+              508,
+              527.726
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            37
+          ],
+          "sample": false,
+          "id": "q-88"
+        },
+        {
+          "label": "67",
+          "boxes": [
+            [
+              72,
+              341,
+              327.73999999999995,
+              603,
+              496.1
+            ]
+          ],
+          "text": "••67 When a soccer a s ball is kicked to- Bare ward a player and a (m/s 2 ) the player deflects the ball by “head- Helmet ing” it, the accelera- tion of the head dur- ing the collision can 0 2 4 6 be significant. Figure t (ms) 2-38 gives the meas- Figure 2-38 Problem 67. ured acceleration a(t) of a soccer player’s head for a bare head and a helmeted head, starting from rest. The scaling on the vertical axis is set by a s \" 200 m/s 2 . At time t \" 7.0 ms, what is the difference in the speed acquired by the bare head and the speed acquired by the helmeted head?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              66,
+              89,
+              527.726,
+              508,
+              794
+            ],
+            [
+              67,
+              89,
+              67,
+              508,
+              650.516
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            38
+          ],
+          "sample": false,
+          "id": "q-89"
+        },
+        {
+          "label": "68",
+          "boxes": [
+            [
+              72,
+              341,
+              496.5,
+              603,
+              686.83
+            ]
+          ],
+          "text": "••68 A salamander of the genus Hydromantes captures prey by launching its tongue as a projectile: The skeletal a 2 part of the tongue is shot for- ward, unfolding the rest of a (m/s 2 ) the tongue, until the outer portion lands on the prey, a 1 sticking to it. Figure 2-39 0 10 20 30 40 shows the acceleration mag- t (ms) nitude a versus time t for the acceleration phase of the Figure 2-39 Problem 68. launch in a typical situation. The indicated accelerations are v s a 2 \" 400 m/s 2 and a 1 \" 100 m/s 2 . What is the outward speed of the v (m/s) tongue at the end of the acceleration phase?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              67,
+              89,
+              650.516,
+              508,
+              794
+            ],
+            [
+              68,
+              89,
+              67,
+              508,
+              86.096589
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            39
+          ],
+          "sample": false,
+          "id": "q-90"
+        },
+        {
+          "label": "69",
+          "boxes": [
+            [
+              72,
+              341,
+              687.23,
+              603,
+              755
+            ]
+          ],
+          "text": "••69 ILW How far does the run- ner whose velocity–time graph is shown in Fig. 2-40 travel in 16 s? 0 4 8 12 16 t (s) The figure’s vertical scaling is set by v s \" 8.0 m/s. Figure 2-40 Problem 69.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              68,
+              89,
+              86.096589,
+              508,
+              244.836
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            40
+          ],
+          "sample": false,
+          "id": "q-91"
+        },
+        {
+          "label": "70",
+          "boxes": [
+            [
+              73,
+              66,
+              65.97,
+              328,
+              126.553073
+            ]
+          ],
+          "text": "•••70 Two particles move along an x axis. The position of particle 1 is given by x \" 6.00t 2 # 3.00t # 2.00 (in meters and seconds); the ac- celeration of particle 2 is given by a \" $8.00t (in meters per second squared and seconds) and, at t \" 0, its velocity is 20 m/s. When the velocities of the particles match, what is their velocity?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              68,
+              89,
+              244.836,
+              508,
+              529.694
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-92"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-19",
+      "topic": "2-mixed",
+      "kind": "Additional problem",
+      "title": "Additional problems: mixed review",
+      "questions": [
+        {
+          "label": "71",
+          "boxes": [
+            [
+              73,
+              66,
+              138.86,
+              328,
+              252.3
+            ]
+          ],
+          "text": "71 In an arcade video game, a spot is programmed to move across the screen according to x \" 9.00t $ 0.750t 3 , where x is dis- tance in centimeters measured from the left edge of the screen and t is time in seconds. When the spot reaches a screen edge, at either x \" 0 or x \" 15.0 cm, t is reset to 0 and the spot starts moving again according to x(t). (a) At what time after starting is the spot instan- taneously at rest? (b) At what value of x does this occur? (c) What is the spot’s acceleration (including sign) when this occurs? (d) Is it moving right or left just prior to coming to rest? (e) Just after? (f) At what time t . 0 does it first reach an edge of the screen?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              68,
+              89,
+              529.694,
+              508,
+              794
+            ],
+            [
+              69,
+              89,
+              67,
+              508,
+              195.204
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-93"
+        },
+        {
+          "label": "72",
+          "boxes": [
+            [
+              73,
+              66,
+              252.70000000000002,
+              328,
+              332.19
+            ]
+          ],
+          "text": "72 A rock is shot vertically upward from the edge of the top of a tall building. The rock reaches its maximum height above the top of the building 1.60 s after being shot. Then, after barely missing the edge of the building as it falls downward, the rock strikes the ground 6.00 s after it is launched. In SI units: (a) with what upward velocity is the rock shot, (b) what maximum height above the top of the building is reached by the rock, and (c) how tall is the building?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              69,
+              89,
+              195.204,
+              508,
+              453.474
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-94"
+        },
+        {
+          "label": "73",
+          "boxes": [
+            [
+              73,
+              66,
+              332.59,
+              328,
+              402.09
+            ]
+          ],
+          "text": "73 At the instant the traffic light turns green, an automobile starts with a constant acceleration a of 2.2 m/s 2 . At the same instant a truck, traveling with a constant speed of 9.5 m/s, overtakes and passes the automobile. (a) How far beyond the traffic signal will the automobile overtake the truck? (b) How fast will the automo- bile be traveling at that instant?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              69,
+              89,
+              453.474,
+              508,
+              732.16
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-95"
+        },
+        {
+          "label": "74",
+          "boxes": [
+            [
+              73,
+              66,
+              402.48999999999995,
+              328,
+              534.64
+            ]
+          ],
+          "text": "74 A pilot flies horizontally at 1300 km/h, at height h \" 35 m above initially level ground. However, at time t \" 0, the pilot be- gins to fly over ground sloping upward at angle u \" 4.3° (Fig. 2-41). If the pilot does not change the airplane’s heading, at what time t does the plane strike the ground? θ h Figure 2-41 Problem 74.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              69,
+              89,
+              732.16,
+              508,
+              794
+            ],
+            [
+              70,
+              89,
+              67,
+              508,
+              228.684
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            41
+          ],
+          "sample": false,
+          "id": "q-96"
+        },
+        {
+          "label": "75",
+          "boxes": [
+            [
+              73,
+              66,
+              535.04,
+              328,
+              604.54
+            ]
+          ],
+          "text": "75 To stop a car, first you require a certain reaction time to be- gin braking; then the car slows at a constant rate. Suppose that the total distance moved by your car during these two phases is 56.7 m when its initial speed is 80.5 km/h, and 24.4 m when its initial speed is 48.3 km/h. What are (a) your reaction time and (b) the magni- tude of the acceleration?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              70,
+              89,
+              228.684,
+              508,
+              794
+            ],
+            [
+              71,
+              89,
+              67,
+              508,
+              222.996
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-97"
+        },
+        {
+          "label": "76",
+          "boxes": [
+            [
+              73,
+              66,
+              604.9399999999999,
+              328,
+              755
+            ],
+            [
+              73,
+              341,
+              65,
+              603,
+              223.24
+            ]
+          ],
+          "text": "76 Figure 2-42 shows part of a street where traffic flow is to be controlled to allow a platoon of cars to move smoothly along the street. Suppose that the platoon leaders have just ONE WAY 1 2 3 D 12 D 23 Figure 2-42 Problem 76. reached intersection 2, where the green appeared when they were distance d from the intersection. They continue to travel at a cer- tain speed v p (the speed limit) to reach intersection 3, where the green appears when they are distance d from it. The intersections are separated by distances D 23 and D 12 . (a) What should be the time delay of the onset of green at intersection 3 relative to that at intersection 2 to keep the platoon moving smoothly? Suppose, instead, that the platoon had been stopped by a red light at intersection 1. When the green comes on there, the leaders require a certain time t r to respond to the change and an additional time to accelerate at some rate a to the cruising speed v p . (b) If the green at intersection 2 is to appear when the leaders are distance d from that intersection, how long after the light at intersection 1 turns green should the light at intersection 2 turn green?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              71,
+              89,
+              222.996,
+              508,
+              483.086
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            42
+          ],
+          "sample": false,
+          "id": "q-98"
+        },
+        {
+          "label": "77",
+          "boxes": [
+            [
+              73,
+              341,
+              223.64000000000001,
+              603,
+              282.66
+            ]
+          ],
+          "text": "77 SSM A hot rod can accelerate from 0 to 60 km/h in 5.4 s. (a) What is its average acceleration, in m/s 2 , during this time? (b) How far will it travel during the 5.4 s, assuming its acceleration is con- stant? (c) From rest, how much time would it require to go a distance of 0.25 km if its acceleration could be maintained at the value in (a)?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              71,
+              89,
+              483.086,
+              508,
+              794
+            ],
+            [
+              72,
+              89,
+              67,
+              508,
+              285.834
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-99"
+        },
+        {
+          "label": "78",
+          "boxes": [
+            [
+              73,
+              341,
+              283.06,
+              603,
+              375.03
+            ]
+          ],
+          "text": "78 A red train traveling at 72 km/h and a green train traveling at 144 km/h are headed toward each other along a straight, level track. When they are 950 m apart, each engineer sees the other’s train and applies the brakes. The brakes slow each train at the rate of 1.0 m/s 2 . Is there a collision? If so, answer yes and give the speed of the red train and the speed of the green train at impact, respec- tively. If not, answer no and give the separation between the trains when they stop.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              72,
+              89,
+              285.834,
+              508,
+              692.78372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-100"
+        },
+        {
+          "label": "79",
+          "boxes": [
+            [
+              73,
+              341,
+              375.42999999999995,
+              603,
+              511.33
+            ]
+          ],
+          "text": "79 At time t \" 0, a rock climber accidentally allows a piton to fall freely from a high point on the rock wall to the y valley below him. Then, after a short delay, his climbing part- ner, who is 10 m higher on the wall, throws a piton down- 0 1 2 3 ward. The positions y of the t (s) pitons versus t during the Figure 2-43 Problem 79. falling are given in Fig. 2-43. With what speed is the second piton thrown?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              72,
+              89,
+              692.78372,
+              508,
+              794
+            ],
+            [
+              73,
+              89,
+              67,
+              508,
+              147.156
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            43
+          ],
+          "sample": false,
+          "id": "q-101"
+        },
+        {
+          "label": "80",
+          "boxes": [
+            [
+              73,
+              341,
+              511.72999999999996,
+              603,
+              592.71
+            ]
+          ],
+          "text": "80 A train started from rest and moved with constant accelera- tion. At one time it was traveling 30 m/s, and 160 m farther on it was traveling 50 m/s. Calculate (a) the acceleration, (b) the time re- quired to travel the 160 m mentioned, (c) the time required to at- tain the speed of 30 m/s, and (d) the distance moved from rest to the time the train had a speed of 30 m/s. (e) Graph x versus t and v versus t for the train, from rest.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              73,
+              89,
+              147.156,
+              508,
+              683.564
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-102"
+        },
+        {
+          "label": "81",
+          "boxes": [
+            [
+              73,
+              341,
+              593.11,
+              603,
+              652.13
+            ]
+          ],
+          "text": "81 SSM A particle’s acceleration along an x axis is a \" 5.0t, with t in seconds and a in meters per second squared. At t \" 2.0 s, a (m/s 2 ) its velocity is #17 m/s. What is a s its velocity at t \" 4.0 s?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              73,
+              89,
+              683.564,
+              508,
+              794
+            ],
+            [
+              74,
+              89,
+              67,
+              508,
+              335.274
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-103"
+        },
+        {
+          "label": "82",
+          "boxes": [
+            [
+              73,
+              341,
+              652.53,
+              603,
+              755
+            ]
+          ],
+          "text": "82 Figure 2-44 gives the ac- celeration a versus time t for a particle moving along an x axis. The a-axis scale is set by a s \" 12.0 m/s 2 . At t \" $2.0 s, t (s) –2 0 2 4 6 the particle’s velocity is 7.0 m/s. What is its velocity at t \" 6.0 s? Figure 2-44 Problem 82.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              74,
+              89,
+              335.274,
+              508,
+              401.37372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            44
+          ],
+          "sample": false,
+          "id": "q-104"
+        },
+        {
+          "label": "83",
+          "boxes": [
+            [
+              74,
+              66,
+              65.87,
+              328,
+              305.41
+            ]
+          ],
+          "text": "83 Figure 2-45 shows a simple device for measuring your reaction time. It consists of a cardboard strip marked with a scale and two large dots. A friend holds the strip vertically, with thumb and forefinger at the dot on the right in Fig. 2-45. You then posi- tion your thumb and forefinger at the other dot (on the left in Fig. 2-45), being careful not to touch the strip. Your friend re- leases the strip, and you try to pinch it as soon as possible after you see it begin to fall. The mark at the place where you pinch the strip gives your reaction time. (a) How far from the lower dot should you place the 50.0 ms mark? How much higher should you place the marks for (b) 100, (c) 150, (d) 200, and (e) 250 ms? (For example, should the 100 ms marker be 2 times as far from the dot as the 50 ms marker? If so, give an answer of 2 times. Can you find any pattern in the answers?) Reaction time (ms) 0 50 100 150 200 250 Figure 2-45 Problem 83.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              74,
+              89,
+              401.37372,
+              508,
+              794
+            ],
+            [
+              75,
+              89,
+              67,
+              508,
+              70.024
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            45
+          ],
+          "sample": false,
+          "id": "q-105"
+        },
+        {
+          "label": "84",
+          "boxes": [
+            [
+              74,
+              66,
+              305.81,
+              328,
+              364.33
+            ]
+          ],
+          "text": "84 A rocket-driven sled running on a straight, level track is used to investigate the effects of large accelerations on humans. One such sled can attain a speed of 1600 km/h in 1.8 s, starting from rest. Find (a) the acceleration (assumed constant) in terms of g and (b) the distance traveled.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              75,
+              89,
+              70.024,
+              508,
+              249.444
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-106"
+        },
+        {
+          "label": "85",
+          "boxes": [
+            [
+              74,
+              66,
+              364.72999999999996,
+              328,
+              422.24
+            ]
+          ],
+          "text": "85 A mining cart is pulled up a hill at 20 km/h and then pulled back down the hill at 35 km/h through its original level. (The time required for the cart’s reversal at the top of its climb is negligible.) What is the average speed of the cart for its round trip, from its original level back to its original level?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              75,
+              89,
+              249.444,
+              508,
+              334.506
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-107"
+        },
+        {
+          "label": "86",
+          "boxes": [
+            [
+              74,
+              66,
+              422.64,
+              328,
+              492.15
+            ]
+          ],
+          "text": "86 A motorcyclist who is moving along an x axis directed to- ward the east has an acceleration given by a \" (6.1 $ 1.2t) m/s 2 for 0 0 t 0 6.0 s. At t \" 0, the velocity and position of the cyclist are 2.7 m/s and 7.3 m. (a) What is the maximum speed achieved by the cyclist? (b) What total distance does the cyclist travel be- tween t \" 0 and 6.0 s?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              75,
+              89,
+              334.506,
+              508,
+              722.396
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-108"
+        },
+        {
+          "label": "87",
+          "boxes": [
+            [
+              74,
+              66,
+              492.54999999999995,
+              328,
+              539.08
+            ]
+          ],
+          "text": "87 SSM When the legal speed limit for the New York Thruway was increased from 55 mi/h to 65 mi/h, how much time was saved by a motorist who drove the 700 km between the Buffalo entrance and the New York City exit at the legal speed limit?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              75,
+              89,
+              722.396,
+              508,
+              794
+            ],
+            [
+              76,
+              89,
+              67,
+              508,
+              362.706
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-109"
+        },
+        {
+          "label": "88",
+          "boxes": [
+            [
+              74,
+              66,
+              539.48,
+              328,
+              609.48
+            ]
+          ],
+          "text": "88 A car moving with constant acceleration covered the distance between two points 60.0 m apart in 6.00 s. Its speed as it passed the second point was 15.0 m/s. (a) What was the speed at the first point? (b) What was the magnitude of the acceleration? (c) At what prior distance from the first point was the car at rest? (d) Graph x versus t and v versus t for the car, from rest (t \" 0).",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              76,
+              89,
+              362.706,
+              508,
+              794
+            ],
+            [
+              77,
+              89,
+              67,
+              508,
+              221.196
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-110"
+        },
+        {
+          "label": "89",
+          "boxes": [
+            [
+              74,
+              66,
+              609.88,
+              328,
+              646.88
+            ]
+          ],
+          "text": "89 SSM A certain juggler usually tosses balls vertically to a height H. To what height must they be tossed if they are to spend twice as much time in the air?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              77,
+              89,
+              221.196,
+              508,
+              578.366
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-111"
+        },
+        {
+          "label": "90",
+          "boxes": [
+            [
+              74,
+              66,
+              647.28,
+              328,
+              755
+            ],
+            [
+              74,
+              341,
+              65,
+              603,
+              101.91
+            ]
+          ],
+          "text": "90 A particle starts from the ori- v s gin at t \" 0 and moves along the positive x axis. A graph of the veloc- v (m/s) ity of the particle as a function of the time is shown in Fig. 2-46; the v-axis scale is set by v s \" 4.0 m/s. (a) What is the coordinate of the particle at 0 1 2 3 4 5 6 t \" 5.0 s? (b) What is the velocity of t (s) the particle at t \" 5.0 s? (c) What is Figure 2-46 Problem 90. the acceleration of the particle at t \" 5.0 s? (d) What is the average ve- locity of the particle between t \" 1.0 s and t \" 5.0 s? (e) What is the average acceleration of the particle between t \" 1.0 s and t \" 5.0 s?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              77,
+              89,
+              578.366,
+              508,
+              794
+            ],
+            [
+              78,
+              89,
+              67,
+              508,
+              195.396818
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            46
+          ],
+          "sample": false,
+          "id": "q-112"
+        },
+        {
+          "label": "91",
+          "boxes": [
+            [
+              74,
+              341,
+              102.31,
+              603,
+              127.37
+            ]
+          ],
+          "text": "91 A rock is dropped from a 100-m-high cliff. How long does it take to fall (a) the first 50 m and (b) the second 50 m?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              78,
+              89,
+              195.396818,
+              508,
+              423.066
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-113"
+        },
+        {
+          "label": "92",
+          "boxes": [
+            [
+              74,
+              341,
+              127.77000000000001,
+              603,
+              185.8
+            ]
+          ],
+          "text": "92 Two subway stops are separated by 1100 m. If a subway train accelerates at #1.2 m/s 2 from rest through the first half of the dis- tance and decelerates at $1.2 m/s 2 through the second half, what are (a) its travel time and (b) its maximum speed? (c) Graph x, v, and a versus t for the trip.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              78,
+              89,
+              423.066,
+              508,
+              794
+            ],
+            [
+              79,
+              89,
+              67,
+              508,
+              68.68372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-114"
+        },
+        {
+          "label": "93",
+          "boxes": [
+            [
+              74,
+              341,
+              186.20000000000002,
+              603,
+              233.23
+            ]
+          ],
+          "text": "93 A stone is thrown vertically upward. On its way up it passes point A with speed v, and point B, 3.00 m higher than A, with speed 1 2 v. Calculate (a) the speed v and (b) the maximum height reached by the stone above point B.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              79,
+              89,
+              68.68372,
+              508,
+              416.37372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-115"
+        },
+        {
+          "label": "94",
+          "boxes": [
+            [
+              74,
+              341,
+              233.63,
+              603,
+              269.68
+            ]
+          ],
+          "text": "94 A rock is dropped (from rest) from the top of a 60-m-tall building. How far above the ground is the rock 1.2 s before it reaches the ground?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              79,
+              89,
+              416.37372,
+              508,
+              731.872
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-116"
+        },
+        {
+          "label": "95",
+          "boxes": [
+            [
+              74,
+              341,
+              270.08,
+              603,
+              497.85
+            ]
+          ],
+          "text": "95 SSM An iceboat has a constant velocity toward the east when a sudden gust of wind causes the iceboat to have a constant accel- eration toward the east for a period of 3.0 s. A plot of x versus t is shown in Fig. 2-47, where t \" 0 is taken to be the instant the wind starts to blow and the positive x axis is toward the east. (a) What is the acceleration of the iceboat during the 3.0 s interval? (b) What is the velocity of the iceboat at the end of the 3.0 s interval? (c) If the acceleration remains constant for an additional 3.0 s, how far does the iceboat travel during this second 3.0 s interval? 30 25 20 x (m) 15 10 5 0 0 0.5 1 1.5 2 2.5 3 t (s) Figure 2-47 Problem 95.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              79,
+              89,
+              731.872,
+              508,
+              794
+            ],
+            [
+              80,
+              89,
+              67,
+              508,
+              606.014
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [
+            47
+          ],
+          "sample": false,
+          "id": "q-117"
+        },
+        {
+          "label": "96",
+          "boxes": [
+            [
+              74,
+              341,
+              498.25,
+              603,
+              600.2
+            ]
+          ],
+          "text": "96 A lead ball is dropped in a lake from a diving board 5.20 m above the water. It hits the water with a certain velocity and then sinks to the bottom with this same constant velocity. It reaches the bottom 4.80 s after it is dropped. (a) How deep is the lake? What are the (b) magnitude and (c) direction (up or down) of the aver- age velocity of the ball for the entire fall? Suppose that all the wa- ter is drained from the lake. The ball is now thrown from the diving board so that it again reaches the bottom in 4.80 s. What are the (d) magnitude and (e) direction of the initial velocity of the ball?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              80,
+              89,
+              606.014,
+              508,
+              794
+            ],
+            [
+              81,
+              89,
+              67,
+              508,
+              433.074
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-118"
+        },
+        {
+          "label": "97",
+          "boxes": [
+            [
+              74,
+              341,
+              600.6,
+              603,
+              669.6
+            ]
+          ],
+          "text": "97 The single cable supporting an unoccupied construction ele- vator breaks when the elevator is at rest at the top of a 120-m-high building. (a) With what speed does the elevator strike the ground? (b) How long is it falling? (c) What is its speed when it passes the halfway point on the way down? (d) How long has it been falling when it passes the halfway point?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              81,
+              89,
+              433.074,
+              508,
+              794
+            ],
+            [
+              82,
+              89,
+              67,
+              508,
+              122.076
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-119"
+        },
+        {
+          "label": "98",
+          "boxes": [
+            [
+              74,
+              341,
+              670.0,
+              603,
+              706.05
+            ]
+          ],
+          "text": "98 Two diamonds begin a free fall from rest from the same height, 1.0 s apart. How long after the first diamond begins to fall will the two diamonds be 10 m apart?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              82,
+              89,
+              122.076,
+              508,
+              245.004
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-120"
+        },
+        {
+          "label": "99",
+          "boxes": [
+            [
+              74,
+              341,
+              706.4499999999999,
+              603,
+              755
+            ]
+          ],
+          "text": "99 A ball is thrown vertically downward from the top of a 36.6- m-tall building. The ball passes the top of a window that is 12.2 m above the ground 2.00 s after being thrown. What is the speed of the ball as it passes the top of the window?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              82,
+              89,
+              245.004,
+              508,
+              359.37372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-121"
+        },
+        {
+          "label": "100",
+          "boxes": [
+            [
+              75,
+              66,
+              65.87,
+              328,
+              113.9
+            ]
+          ],
+          "text": "100 A parachutist bails out and freely falls 50 m. Then the para- chute opens, and thereafter she decelerates at 2.0 m/s 2 . She reaches the ground with a speed of 3.0 m/s. (a) How long is the parachutist in the air? (b) At what height does the fall begin?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              82,
+              89,
+              359.37372,
+              508,
+              794
+            ],
+            [
+              83,
+              89,
+              67,
+              508,
+              236.70372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-122"
+        },
+        {
+          "label": "101",
+          "boxes": [
+            [
+              75,
+              66,
+              114.30000000000001,
+              328,
+              206.27
+            ]
+          ],
+          "text": "101 A ball is thrown down vertically with an initial speed of v 0 from a height of h. (a) What is its speed just before it strikes the ground? (b) How long does the ball take to reach the ground? What would be the answers to (c) part a and (d) part b if the ball were thrown upward from the same height and with the same ini- tial speed? Before solving any equations, decide whether the an- swers to (c) and (d) should be greater than, less than, or the same as in (a) and (b).",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              83,
+              89,
+              236.70372,
+              508,
+              794
+            ],
+            [
+              84,
+              89,
+              67,
+              508,
+              135.684
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-123"
+        },
+        {
+          "label": "102",
+          "boxes": [
+            [
+              75,
+              66,
+              206.67000000000002,
+              328,
+              265.68
+            ]
+          ],
+          "text": "102 The sport with the fastest moving ball is jai alai, where measured speeds have reached 303 km/h. If a professional jai alai player faces a ball at that speed and involuntarily blinks, he blacks out the scene for 100 ms. How far does the ball move dur- ing the blackout?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              84,
+              89,
+              135.684,
+              508,
+              217.236
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-124"
+        },
+        {
+          "label": "103",
+          "boxes": [
+            [
+              75,
+              66,
+              266.08,
+              328,
+              303.13
+            ]
+          ],
+          "text": "103 If a baseball pitcher throws a fastball at a horizontal speed of 160 km/h, how long does the ball take to reach home plate 18.4 m away?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              84,
+              89,
+              217.236,
+              508,
+              359.394
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-125"
+        },
+        {
+          "label": "104",
+          "boxes": [
+            [
+              75,
+              66,
+              303.53,
+              328,
+              395.49
+            ]
+          ],
+          "text": "104 A proton moves along the x axis according to the equation x \" 50t # 10t 2 , where x is in meters and t is in seconds. Calculate (a) the average velocity of the proton during the first 3.0 s of its motion, (b) the instantaneous velocity of the proton at t \" 3.0 s, and (c) the instantaneous acceleration of the proton at t \" 3.0 s. (d) Graph x versus t and indicate how the answer to (a) can be obtained from the plot. (e) Indicate the answer to (b) on the graph. (f) Plot v versus t and indicate on it the answer to (c).",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              84,
+              89,
+              359.394,
+              508,
+              794
+            ],
+            [
+              85,
+              89,
+              67,
+              508,
+              83.844
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-126"
+        },
+        {
+          "label": "105",
+          "boxes": [
+            [
+              75,
+              66,
+              395.89,
+              328,
+              454.91
+            ]
+          ],
+          "text": "105 A motorcycle is moving at 30 m/s when the rider applies the brakes, giving the motorcycle a constant deceleration. During the 3.0 s interval immediately after braking begins, the speed decreases to 15 m/s. What distance does the motorcycle travel from the instant braking begins until the motorcycle stops?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              85,
+              89,
+              83.844,
+              508,
+              202.644
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-127"
+        },
+        {
+          "label": "106",
+          "boxes": [
+            [
+              75,
+              66,
+              455.31,
+              328,
+              525.11
+            ]
+          ],
+          "text": "106 A shuffleboard disk is accelerated at a constant rate from rest to a speed of 6.0 m/s over a 1.8 m distance by a player using a cue. At this point the disk loses contact with the cue and slows at a constant rate of 2.5 m/s 2 until it stops. (a) How much time elapses from when the disk begins to accelerate until it stops? (b) What total distance does the disk travel?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              85,
+              89,
+              202.644,
+              508,
+              545.366
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-128"
+        },
+        {
+          "label": "107",
+          "boxes": [
+            [
+              75,
+              66,
+              525.51,
+              328,
+              562.76
+            ]
+          ],
+          "text": "107 The head of a rattlesnake can accelerate at 50 m/s 2 in striking a victim. If a car could do as well, how long would it take to reach a speed of 100 km/h from rest?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              85,
+              89,
+              545.366,
+              508,
+              651.169398
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-129"
+        },
+        {
+          "label": "108",
+          "boxes": [
+            [
+              75,
+              66,
+              563.16,
+              328,
+              600.21
+            ]
+          ],
+          "text": "108 A jumbo jet must reach a speed of 360 km/h on the runway for takeoff. What is the lowest constant acceleration needed for takeoff from a 1.80 km runway?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              85,
+              89,
+              651.169398,
+              508,
+              794
+            ],
+            [
+              86,
+              89,
+              67,
+              508,
+              71.176
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-130"
+        },
+        {
+          "label": "109",
+          "boxes": [
+            [
+              75,
+              66,
+              600.61,
+              328,
+              648.64
+            ]
+          ],
+          "text": "109 An automobile driver increases the speed at a constant rate from 25 km/h to 55 km/h in 0.50 min. A bicycle rider speeds up at a constant rate from rest to 30 km/h in 0.50 min. What are the magni- tudes of (a) the driver’s acceleration and (b) the rider’s acceleration?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              86,
+              89,
+              71.176,
+              508,
+              187.764
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-131"
+        },
+        {
+          "label": "110",
+          "boxes": [
+            [
+              75,
+              66,
+              649.04,
+              328,
+              685.59
+            ]
+          ],
+          "text": "110 On average, an eye blink lasts about 100 ms. How far does a MiG-25 “Foxbat” fighter travel during a pilot’s blink if the plane’s average velocity is 3400 km/h?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              86,
+              89,
+              187.764,
+              508,
+              230.196
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-132"
+        },
+        {
+          "label": "111",
+          "boxes": [
+            [
+              75,
+              66,
+              685.99,
+              328,
+              755
+            ],
+            [
+              75,
+              341,
+              65,
+              603,
+              91.43
+            ]
+          ],
+          "text": "111 A certain sprinter has a top speed of 11.0 m/s. If the sprinter starts from rest and accelerates at a constant rate, he is able to reach his top speed in a distance of 12.0 m. He is then able to main- tain this top speed for the remainder of a 100 m race. (a) What is his time for the 100 m race? (b) In order to improve his time, the sprinter tries to decrease the distance required for him to reach his top speed. What must this distance be if he is to achieve a time of 10.0 s for the race?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              86,
+              89,
+              230.196,
+              508,
+              564.326
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-133"
+        },
+        {
+          "label": "112",
+          "boxes": [
+            [
+              75,
+              341,
+              91.83000000000001,
+              603,
+              128.38
+            ]
+          ],
+          "text": "112 The speed of a bullet is measured to be 640 m/s as the bullet emerges from a barrel of length 1.20 m.Assuming constant accelera- tion, find the time that the bullet spends in the barrel after it is fired.",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              86,
+              89,
+              564.326,
+              508,
+              636.47372
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-134"
+        },
+        {
+          "label": "113",
+          "boxes": [
+            [
+              75,
+              341,
+              128.78,
+              603,
+              231.23
+            ]
+          ],
+          "text": "113 The Zero Gravity Research Facility at the NASA Glenn Research Center includes a 145 m drop tower.This is an evacuated ver- tical tower through which, among other possibilities, a 1-m-diameter sphere containing an experimental package can be dropped. (a) How long is the sphere in free fall? (b) What is its speed just as it reaches a catching device at the bottom of the tower? (c) When caught, the sphere experiences an average deceleration of 25g as its speed is reduced to zero.Through what distance does it travel during the deceleration?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              86,
+              89,
+              636.47372,
+              508,
+              794
+            ],
+            [
+              87,
+              89,
+              67,
+              508,
+              393.354
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-135"
+        },
+        {
+          "label": "114",
+          "boxes": [
+            [
+              75,
+              341,
+              231.63,
+              603,
+              355.56
+            ]
+          ],
+          "text": "114 A car can be braked to a stop from the autobahn-like speed of 200 km/h in 170 m. Assuming the acceleration is constant, find its magnitude in (a) SI units and (b) in terms of g. (c) How much time T b is required for the braking? Your reaction time T r is the time you require to perceive an emergency, move your foot to the brake, and begin the braking. If T r \" 400 ms, then (d) what is T b in terms of T r , and (e) is most of the full time required to stop spent in reacting or braking? Dark sunglasses delay the visual signals sent from the eyes to the visual cortex in the brain, increasing T r . (f) In the extreme case in which T r is increased by 100 ms, how much farther does the car travel during your reaction time?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              87,
+              89,
+              393.354,
+              508,
+              794
+            ],
+            [
+              88,
+              89,
+              67,
+              508,
+              160.393446
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-136"
+        },
+        {
+          "label": "115",
+          "boxes": [
+            [
+              75,
+              341,
+              355.96,
+              603,
+              402.99
+            ]
+          ],
+          "text": "115 In 1889, at Jubbulpore, India, a tug-of-war was finally won af- ter 2 h 41 min, with the winning team displacing the center of the rope 3.7 m. In centimeters per minute, what was the magnitude of the average velocity of that center point during the contest?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              88,
+              89,
+              160.393446,
+              508,
+              250.202996
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-137"
+        },
+        {
+          "label": "116",
+          "boxes": [
+            [
+              75,
+              341,
+              403.39,
+              603,
+              494.36
+            ]
+          ],
+          "text": "116 Most important in an investigation of an airplane crash by the U.S. National Transportation Safety Board is the data stored on the airplane’s flight-data recorder, commonly called the “black box” in spite of its orange coloring and reflective tape. The recorder is engi- neered to withstand a crash with an average deceleration of magni- tude 3400g during a time interval of 6.50 ms. In such a crash, if the recorder and airplane have zero speed at the end of that time inter- val, what is their speed at the beginning of the interval?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              88,
+              89,
+              250.202996,
+              508,
+              305.586
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-138"
+        },
+        {
+          "label": "117",
+          "boxes": [
+            [
+              75,
+              341,
+              494.76,
+              603,
+              552.77
+            ]
+          ],
+          "text": "117 From January 26, 1977, to September 18, 1983, George Meegan of Great Britain walked from Ushuaia, at the southern tip of South America, to Prudhoe Bay in Alaska, covering 30 600 km. In meters per second, what was the magnitude of his average velocity during that time period?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              88,
+              89,
+              305.586,
+              508,
+              442.794
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-139"
+        },
+        {
+          "label": "118",
+          "boxes": [
+            [
+              75,
+              341,
+              553.17,
+              603,
+              655.13
+            ]
+          ],
+          "text": "118 The wings on a stonefly do not flap, and thus the insect cannot fly. However, when the insect is on a water surface, it can sail across the surface by lifting its wings into a breeze. Suppose that you time stoneflies as they move at constant speed along a straight path of a certain length. On average, the trips each take 7.1 s with the wings set as sails and 25.0 s with the wings tucked in. (a) What is the ratio of the sailing speed v s to the nonsailing speed v ns ? (b) In terms of v s , what is the difference in the times the insects take to travel the first 2.0 m along the path with and without sailing?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              88,
+              89,
+              442.794,
+              508,
+              615.685704
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-140"
+        },
+        {
+          "label": "119",
+          "boxes": [
+            [
+              75,
+              341,
+              655.53,
+              603,
+              755
+            ]
+          ],
+          "text": "119 The position of a particle as it moves along a y axis is given by y \" (2.0 cm) sin (pt/4), with t in seconds and y in centimeters. (a) What is the average veloc- ity of the particle between t \" 0 and t \" 2.0 s? (b) What is the instan- taneous velocity of the particle at t \" 0, 1.0, and 2.0 s? (c) What is the average acceleration of the particle between t \" 0 and t \" 2.0 s? (d) What is the instantaneous acceleration of the particle at t \" 0, 1.0, and 2.0 s?",
+          "answer_html": "",
+          "solution_boxes": [
+            [
+              88,
+              89,
+              615.685704,
+              508,
+              794
+            ],
+            [
+              89,
+              89,
+              67,
+              508,
+              794
+            ]
+          ],
+          "solution_source": "Physics answer (TOC).pdf",
+          "figures": [],
+          "sample": false,
+          "id": "q-141"
+        }
+      ],
+      "shared": [],
+      "context": []
+    }
+  ]
+}
