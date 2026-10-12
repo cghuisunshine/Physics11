@@ -11,8 +11,8 @@ class PracticeBuilderTests(unittest.TestCase):
     def test_source_fidelity(self):
         bank = load_bank(ROOT/'content/physics-practice-chapters.json')
         registry = json.loads((ROOT/'content/physics-practice-chapters.json').read_text())
-        self.assertEqual(len(bank), 180)
-        self.assertEqual(len({q['id'] for q in bank}), 180)
+        self.assertEqual(len(bank), 301)
+        self.assertEqual(len({q['id'] for q in bank}), 301)
         by_id = {q['id']: q for q in bank}
         for chapter in registry['chapters']:
             inventory = json.loads((ROOT/chapter['inventory']).read_text())
@@ -43,13 +43,13 @@ class PracticeBuilderTests(unittest.TestCase):
             directory = Path(directory)
             source = directory/'future.json'
             source.write_text(json.dumps(future))
-            registry['chapters'].append({**registry['chapters'][0], 'id':'bc-ch4', 'number':4, 'title':'Dynamics', 'inventory':str(source)})
+            registry['chapters'].append({**registry['chapters'][0], 'id':'test-chapter', 'number':99, 'title':'Test chapter', 'inventory':str(source)})
             config = directory/'chapters.json'
             config.write_text(json.dumps(registry))
             result = load_bank(config)
             self.assertEqual(len(result), len(original)+2)
             self.assertEqual(result[:len(original)], original)
-            self.assertEqual([q['id'] for q in result[len(original):]], ['bc-ch4-q-1', 'bc-ch4-q-2'])
+            self.assertEqual([q['id'] for q in result[len(original):]], ['test-chapter-q-1', 'test-chapter-q-2'])
             self.assertEqual([q['number'] for q in result[len(original):]], [1, 2])
             registry['chapters'][-1]['id'] = 'bc-ch2'
             config.write_text(json.dumps(registry))

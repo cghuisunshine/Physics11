@@ -56,9 +56,9 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
 (async()=>{
   const p=page();await pause();assert.deepEqual(p.errors,[]);assert.equal(p.$('login-overlay').hidden,false);
   const bank=JSON.parse(p.$('question-bank').textContent),P=p.w.Practice;
-  assert.equal(bank.length,180);assert.equal(new Set(bank.map(q=>q.id)).size,180);
-  const kinematics=bank.filter(q=>q.chapter==='bc-ch2'),forces=bank.filter(q=>q.chapter==='bc-ch3');
-  assert.equal(kinematics.length,101);assert.equal(forces.length,79);
+  assert.equal(bank.length,301);assert.equal(new Set(bank.map(q=>q.id)).size,301);
+  const kinematics=bank.filter(q=>q.chapter==='bc-ch2'),forces=bank.filter(q=>q.chapter==='bc-ch3'),newtons=bank.filter(q=>q.chapter==='bc-ch4');
+  assert.equal(kinematics.length,101);assert.equal(forces.length,79);assert.equal(newtons.length,121);
   assert.equal(p.d.querySelectorAll('script[src]').length,0,'No external assets on startup');
   assert.ok(bank.every(q=>q.solution&&q.html.includes('data:image/')));
   assert.ok(bank.some(q=>q.solution.includes('<svg')),'Worked-answer graphs retained');
@@ -84,6 +84,10 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
     sameHTML(p,p.$('statement').innerHTML,q.html,'Exact question and shared context retained for '+q.id);
     assert.ok(p.$('solution').hidden);p.$('check').click();sameHTML(p,p.$('solution-body').innerHTML,q.solution,'Worked solution retained for '+q.id);
   }
+  assert.equal(p.$('chapter-grid').children.length,121);assert.equal(p.$('chapter-question').options.length,122);
+  assert.ok([...p.$('topic').options].some(o=>o.value==='Ch 4 · 4.4'));
+  change(p,'chapter-question',newtons.at(-1).id);p.$('skip').click();assert.equal(p.$('chapter-question').value,newtons[0].id,'Chapter 4 navigation wraps within its 121 questions');
+  change(p,'practice-chapter','bc-ch3');
   assert.equal(p.$('chapter-grid').children.length,79);assert.equal(p.$('chapter-question').options.length,80);
   assert.ok([...p.$('topic').options].some(o=>o.value==='Ch 3 · 3.3'));
   change(p,'chapter-question',forces.at(-1).id);p.$('skip').click();assert.equal(p.$('chapter-question').value,forces[0].id,'Forces navigation wraps within its 79 questions');
@@ -98,10 +102,12 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   const shared=page(html,{url:'https://physics.test/physics-practice.html?q='+bank[65].id});login(shared,'Shared');assert.equal(shared.$('question-title').textContent,bank[65].title);assert.ok(shared.$('solution').hidden);
   // A new chapter, different count and new topics, with the same source q-number.
   const forcesShared=page(html,{url:'https://physics.test/physics-practice.html?q='+forces[54].id});login(forcesShared,'Forces link');assert.equal(forcesShared.$('question-title').textContent,forces[54].title);assert.ok(forcesShared.$('solution').hidden);change(forcesShared,'mode','chapter');change(forcesShared,'practice-chapter','bc-ch3');assert.equal(forcesShared.$('chapter-grid').children.length,79);
-  const future=[...bank,...[1,2,3].map(n=>({...bank[0],id:'bc-ch4-q-'+n,chapter:'bc-ch4',chapterNumber:4,chapterTitle:'Dynamics',number:n,topic:'Ch 4 · 4.1',title:'Dynamics '+n}))];
+  const newtonsShared=page(html,{url:'https://physics.test/physics-practice.html?q='+newtons[76].id});login(newtonsShared,'Newton link');assert.equal(newtonsShared.$('question-title').textContent,newtons[76].title);assert.ok(newtonsShared.$('solution').hidden);
+  newtonsShared.$('check').click();sameHTML(newtonsShared,newtonsShared.$('solution-body').innerHTML,newtons[76].solution,'Shared Chapter 4 question reveals its own solution');newtonsShared.$('rate-correct').click();assert.equal(history(newtonsShared,'Newton link').attempts[0].id,'bc-ch4-q-77');
+  const future=[...bank,...[1,2,3].map(n=>({...bank[0],id:'test-chapter-q-'+n,chapter:'test-chapter',chapterNumber:99,chapterTitle:'Test chapter',number:n,topic:'Ch 99 · Future',title:'Test question '+n}))];
   const futureHTML=html.replace(/(<script id="question-bank"[^>]*>)[\s\S]*?(<\/script>)/,(_,a,b)=>a+JSON.stringify(future).replace(/</g,'\\u003c')+b);
-  const f=page(futureHTML);login(f,'Future');change(f,'mode','chapter');change(f,'practice-chapter','bc-ch4');assert.equal(f.$('chapter-grid').children.length,3);assert.equal(f.$('chapter-question').options.length,4);assert.match(f.$('reason').textContent,/of 3/);assert.ok([...f.$('topic').options].some(o=>o.value==='Ch 4 · 4.1'));
-  change(f,'chapter-question','bc-ch4-q-3');f.$('skip').click();assert.equal(f.$('chapter-question').value,'bc-ch4-q-1');
+  const f=page(futureHTML);login(f,'Future');change(f,'mode','chapter');change(f,'practice-chapter','test-chapter');assert.equal(f.$('chapter-grid').children.length,3);assert.equal(f.$('chapter-question').options.length,4);assert.match(f.$('reason').textContent,/of 3/);assert.ok([...f.$('topic').options].some(o=>o.value==='Ch 99 · Future'));
+  change(f,'chapter-question','test-chapter-q-3');f.$('skip').click();assert.equal(f.$('chapter-question').value,'test-chapter-q-1');
   const empty={version:1,attempts:[],items:{}};
   assert.throws(()=>P.record(empty,bank[0],'answer',1),/Rate your work/);
   P.record(empty,bank[0],'zero metres',40,false);P.record(empty,bank[0],'0 m',20,true);
@@ -233,6 +239,6 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   timed.$('check').click();await until(()=>!timed.$('self-rating').hidden&&!timed.$('verify-retry').disabled);assert.match(timed.$('feedback').textContent,/timed out/);assert.equal(history(timed,'Timed').attempts.length,0);
   const monitorSource=fs.readFileSync(path.join(root,'physics-monitor.html'),'utf8');
   const m=page(monitorSource,{url:'https://physics.test/physics-monitor.html?student=Ada&period=week&exclude=',storage:saved});await pause();assert.deepEqual(m.errors,[]);assert.equal(m.$('activity-days').children.length,7);assert.match(m.$('activity-status').textContent,/saved on this device/);assert.ok(!m.w.StudentStore,'Monitor has no history-writing store');
-  for(const instance of [p,restored,shared,forcesShared,f,host,follower,invalidFollower,ink,inkReload,auto,autoReload,timed,m]){assert.deepEqual(instance.errors,[]);instance.w.close();}
-  console.log('Passed: 180 question/answer pairs, graphs, navigation, student storage, future chapters, handwriting tools/backups, automatic model-answer verification, typed/handwritten submissions, correct/incorrect/partial verdicts, immutable submissions, uncertain/offline/error fallback, retries, cancellation/navigation/student isolation, timeout, read-only monitor, and offline startup.');
+  for(const instance of [p,restored,shared,forcesShared,newtonsShared,f,host,follower,invalidFollower,ink,inkReload,auto,autoReload,timed,m]){assert.deepEqual(instance.errors,[]);instance.w.close();}
+  console.log('Passed: 301 question/answer pairs, graphs, navigation, student storage, future chapters, handwriting tools/backups, automatic model-answer verification, typed/handwritten submissions, correct/incorrect/partial verdicts, immutable submissions, uncertain/offline/error fallback, retries, cancellation/navigation/student isolation, timeout, read-only monitor, and offline startup.');
 })().catch(error=>{console.error(error);process.exit(1);});

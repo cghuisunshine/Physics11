@@ -1,0 +1,2282 @@
+{
+  "source": "bc_science_physics_11.pdf",
+  "chapter": 4,
+  "title": "Newton's Laws of Motion",
+  "question_count": 121,
+  "groups": [
+    {
+      "id": "set-1",
+      "topic": "4.1",
+      "kind": "Warm-up",
+      "title": "Inertia and Newton's first law: warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              107,
+              54,
+              127.8829,
+              575,
+              167.3322
+            ]
+          ],
+          "text": "You are attending a magic show and the magician stands beside a table set with fancy plates  cups  and  silverware. Grabbing the edge of the tablecloth she quickly pulls the cloth out  and the plates  cups  and  silverware stay in place. Is this magic or just physics in action  Explain your answer.",
+          "id": "q-1",
+          "answer_html": "<p>This is physics. The dishes tend to remain at rest because of inertia. A fast, smooth pull lets friction from the cloth act for only a short time, so the impulse and change in the dishes’ momentum are small. They may move a little; inertia does not mean that friction is absent.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-2",
+      "topic": "4.1",
+      "kind": "Quick check",
+      "title": "Inertial mass: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              108,
+              54,
+              453.23290000000003,
+              575,
+              465.68219999999997
+            ]
+          ],
+          "text": "1.   Why does it hurt more to kick a rock shaped like a soccer ball than a soccer ball",
+          "id": "q-2",
+          "answer_html": "<p>A similarly sized rock usually has much greater mass and therefore greater inertia. It is harder to accelerate, so stopping your foot against it can produce a larger force. Its greater rigidity and shorter deformation time also matter; mass alone does not determine the impact force.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              108,
+              54,
+              515.2330000000001,
+              575,
+              554.6822
+            ]
+          ],
+          "text": "2.   When astronauts are living in the International Space Station  ISS  they are in orbit around Earth at a  minimum altitude of 278 km. They live in an environment of apparent weightlessness. Compare the inertial  mass of the astronauts when they live on the ISS to their inertial mass when they are on Earth. ",
+          "id": "q-3",
+          "answer_html": "<p>Their <strong>inertial mass is unchanged</strong>, assuming their bodies have not lost or gained material. Apparent weightlessness in orbit results from astronauts and station falling together, not from a disappearance of mass or inertia.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-3",
+      "topic": "4.1",
+      "kind": "Quick check",
+      "title": "Newton's first law: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              109,
+              54,
+              378.63100000000003,
+              575,
+              404.58029999999997
+            ]
+          ],
+          "text": "1.  A car you are driving in encounters a patch of ice just as the car enters a corner turn. Using your knowledge  of Newton's first law of motion  explain what will happen to the car.",
+          "id": "q-4",
+          "answer_html": "<p>If tire-road friction cannot provide the sideways force needed for the turn, the car tends to continue along its current straight-line direction, approximately tangent to the intended curve. Newton’s first law applies to the net force, not to what direction the wheels point.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              109,
+              54,
+              473.1309,
+              575,
+              512.5802
+            ]
+          ],
+          "text": "2.   You are a judge listening to an injury claim from a bus passenger. The passenger claims to have been hurt  when the bus driver slammed on the brakes and a suitcase came flying from the front of the bus to hit the  passenger. Do you believe the passenger's description of what happened  Explain your answer.",
+          "id": "q-5",
+          "answer_html": "<p>The description does not match the ordinary inertia effect of braking. A loose suitcase continues forward relative to the slowing bus, so it would move <strong>from the rear toward the front</strong>, rather than fly backward from the front toward a passenger behind it. A different force or prior motion would be needed to produce the stated path.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              109,
+              54,
+              581.1308,
+              575,
+              607.0801
+            ]
+          ],
+          "text": "3.  When you receive a drink for a take out order  usually there is a lid on the cup. Use Newton's first law to  explain why the lid is necessary to prevent spills.",
+          "id": "q-6",
+          "answer_html": "<p>When the cup accelerates, brakes, or turns, the liquid tends to continue its previous motion. It can move relative to the cup and spill. The lid contains the liquid while contact forces redirect or accelerate it with the cup.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-4",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1, Problem 1: seatbelts",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              110,
+              54,
+              424.37050000000005,
+              575,
+              436.8198
+            ]
+          ],
+          "text": "1.  How does this procedure illustrate inertia",
+          "id": "q-7",
+          "answer_html": "<p>When the toy car stops suddenly, the unattached figure continues forward until another force stops it. This illustrates inertia: stopping the vehicle does not automatically stop the passenger.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              110,
+              54,
+              437.87050000000005,
+              575,
+              450.3198
+            ]
+          ],
+          "text": "2.  How does a seatbelt work",
+          "id": "q-8",
+          "answer_html": "<p>A seatbelt exerts a restraining force on the passenger, changing the passenger’s velocity along with the car. It prevents continued forward motion into the interior or out of the vehicle.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              110,
+              54,
+              451.37050000000005,
+              575,
+              463.8198
+            ]
+          ],
+          "text": "3.  Why are you more likely to survive a collision with a seatbelt than without one",
+          "id": "q-9",
+          "answer_html": "<p>The belt restrains the passenger and distributes the stopping force over stronger parts of the body. By allowing a controlled stopping interval, it can reduce the average force for the same change in momentum: F<sub>avg</sub> = Δp/Δt.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          110,
+          54,
+          60,
+          575,
+          409
+        ]
+      ]
+    },
+    {
+      "id": "set-5",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1, Problem 2: air and inertia",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              110,
+              54,
+              621.6705000000001,
+              347,
+              647.6197999999999
+            ]
+          ],
+          "text": "1.  What evidence have you observed from this procedure that  supports the claim that air has inertia  ",
+          "id": "q-10",
+          "answer_html": "<p>As the bag starts moving, the air tends to remain at rest and lags relative to the bag. When the bag stops, the air tends to keep moving and presses or bulges the opposite side. Both observations show that air has mass and resists changes in motion. Describe what your own demonstration actually shows.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          110,
+          54,
+          474,
+          347,
+          607
+        ],
+        [
+          110,
+          349,
+          474,
+          576,
+          713
+        ]
+      ]
+    },
+    {
+      "id": "set-6",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1, Problem 3: an air track",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              111,
+              54,
+              196.9257,
+              575,
+              209.375
+            ]
+          ],
+          "text": "1.  Are there any unbalanced forces on the glider  ",
+          "id": "q-11",
+          "answer_html": "<p>On a level air track, after the nudge and while the glider is away from the ends, the net force is <strong>approximately zero</strong>. Weight downward and the air support upward balance; horizontal friction is small. Forces exist even though their resultant is nearly zero.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              111,
+              54,
+              210.4257,
+              575,
+              222.875
+            ]
+          ],
+          "text": "2.  Describe its motion. ",
+          "id": "q-12",
+          "answer_html": "<p>After the nudge, the glider should travel in a straight line at nearly constant velocity until it reaches an end. A slight speed change can result from residual drag or a track that is not perfectly level.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              111,
+              54,
+              223.9257,
+              575,
+              236.375
+            ]
+          ],
+          "text": "3.  How does this demonstration illustrate Newton's first law",
+          "id": "q-13",
+          "answer_html": "<p>With approximately zero net force, the glider maintains its velocity rather than requiring a continued push. That is Newton’s first law.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          111,
+          54,
+          60,
+          575,
+          181
+        ],
+        [
+          111,
+          54,
+          244,
+          575,
+          334
+        ]
+      ]
+    },
+    {
+      "id": "set-7",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1, Problem 4: the train track",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              111,
+              54,
+              524.6584,
+              575,
+              537.1077
+            ]
+          ],
+          "text": "1.  What happens to the toy train when it leaves the track  Explain this in terms of inertia. ",
+          "id": "q-14",
+          "answer_html": "<p>The expected initial path is <strong>a straight line tangent to the circle</strong>, option (c). Once the guiding track stops providing a sideways force, the train retains its instantaneous direction of motion. Later wheel forces and friction can alter its path.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          111,
+          54,
+          349,
+          575,
+          509
+        ],
+        [
+          111,
+          54,
+          548,
+          575,
+          702
+        ]
+      ]
+    },
+    {
+      "id": "set-8",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1, Problem 5: breaking string",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              112,
+              54,
+              237.4257,
+              375,
+              249.875
+            ]
+          ],
+          "text": "1.  Explain what happened  in terms of inertia.",
+          "id": "q-15",
+          "answer_html": "<p>With a slow pull, the upper string carries the weight plus the additional pull: T<sub>upper</sub> ≈ mg + T<sub>lower</sub>, so it normally breaks first. With a sufficiently quick jerk, the mass barely moves initially because of inertia, and the large brief tension in the lower string can break it first. The result depends on the strings and how the pull is applied.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              112,
+              54,
+              250.9257,
+              375,
+              276.875
+            ]
+          ],
+          "text": "2.  Which action illustrates the weight of the ball and which   illustrates the mass of the ball  ",
+          "id": "q-16",
+          "answer_html": "<p>The <strong>slow pull</strong> highlights the weight: the upper string must support mg as well as the pull. The <strong>quick jerk</strong> highlights inertial mass: the hanging object resists rapid acceleration.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          112,
+          54,
+          60,
+          375,
+          222
+        ],
+        [
+          112,
+          375,
+          60,
+          576,
+          257
+        ]
+      ]
+    },
+    {
+      "id": "set-9",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1, Problem 6: the pop-up coaster",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              112,
+              54,
+              587.3507000000001,
+              575,
+              599.8
+            ]
+          ],
+          "text": "1.  What forces are acting on the ball when it is in the air",
+          "id": "q-17",
+          "answer_html": "<p>After launch, the ideal model includes <strong>gravity downward</strong>. In the real demonstration, air resistance also acts. The launcher exerts no continuing force once contact ends.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              112,
+              54,
+              600.8507000000001,
+              575,
+              613.3
+            ]
+          ],
+          "text": "2.  How does this procedure illustrate Newton's first law of motion",
+          "id": "q-18",
+          "answer_html": "<p>At release, the ball already has the cart’s horizontal velocity. With negligible horizontal force it maintains that velocity while gravity changes its vertical motion. If the cart continues at the same velocity, the ball returns to the cannon.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              112,
+              54,
+              614.3507000000001,
+              575,
+              640.3
+            ]
+          ],
+          "text": "3.  Why does the ball sometimes miss the cart after it is released  Does this mean Newton's first law sometimes  does not apply",
+          "id": "q-19",
+          "answer_html": "<p>A miss can result from the trigger jerk changing the cart’s speed, rolling friction, an angled launch, or drag on the ball. Newton’s first law still applies: the cart and ball need not experience the same external forces after release.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          112,
+          54,
+          287,
+          575,
+          572
+        ]
+      ]
+    },
+    {
+      "id": "set-10",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1: concluding question",
+      "questions": [
+        {
+          "label": "Concluding question",
+          "boxes": [
+            [
+              112,
+              54,
+              666.5507,
+              575,
+              719.5
+            ]
+          ],
+          "text": "Use your understanding of inertia to explain the following situation: You are carrying a carton of milk with one hand  and need to get a section of paper towel off the roll in your kitchen. You can only use one hand to tear off the paper  towel. Why does a quick  jerking motion work better than a slow pulling motion when removing the paper towel  section from the roll",
+          "id": "q-20",
+          "answer_html": "<p>A sharp jerk gives the roll little time to accelerate, so its rotational inertia resists unwinding and the tension can tear the perforation. A slow pull lets the roll turn and supply more paper.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-11",
+      "topic": "4.1",
+      "kind": "Section review",
+      "title": "4.1 Review: inertia and Newton's first law",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              113,
+              44,
+              79.1257,
+              291,
+              241.1156
+            ]
+          ],
+          "text": "1.  In the Warm Up of this section  you were asked  to explain why the magician was able to pull the  tablecloth out from the under the plates  cups  and silverware. Using the concepts of inertia and  Newton's first law  explain why this imagic actw  succeeds.",
+          "id": "q-21",
+          "answer_html": "<p>This is physics. The dishes tend to remain at rest because of inertia. A fast, smooth pull lets friction from the cloth act for only a short time, so the impulse and change in the dishes’ momentum are small. They may move a little; inertia does not mean that friction is absent.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              113,
+              44,
+              241.1256,
+              291,
+              362.61550000000005
+            ]
+          ],
+          "text": "2.  Does 2 kg of apples have twice the inertia or half the  inertia of 1 kg of apples  Explain your answer.",
+          "id": "q-22",
+          "answer_html": "<p>The 2 kg of apples has <strong>twice the inertia</strong> of 1 kg. For the same net force its acceleration is half as large, because a = F<sub>net</sub>/m.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              113,
+              44,
+              362.62550000000005,
+              291,
+              484.11550000000005
+            ]
+          ],
+          "text": "3.  If the pen on your desk is at rest  can you say that no  forces are acting on it  Explain your answer.",
+          "id": "q-23",
+          "answer_html": "<p>No. Gravity pulls downward on the pen and the desk provides an upward normal force. These can balance, giving zero net force even though individual forces act.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              113,
+              44,
+              484.12550000000005,
+              291,
+              592.1154
+            ]
+          ],
+          "text": "4.  If the forces acting on the pen are balanced  is it  correct to say that the pen is at rest  Explain your  answer.",
+          "id": "q-24",
+          "answer_html": "<p>Balanced forces imply <strong>constant velocity</strong>, which can be zero or nonzero. They do not by themselves prove that the pen is at rest. If it is already at rest, it remains at rest while the forces stay balanced.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              113,
+              44,
+              592.1254,
+              291,
+              724.6
+            ]
+          ],
+          "text": "5.  If you place a ball in the centre of a wagon and then  quickly push the wagon forward  in what direction  does the ball appear to go  Why",
+          "id": "q-25",
+          "answer_html": "<p>The ball initially tends to remain at its original position while the wagon accelerates forward. It therefore appears to move <strong>backward relative to the wagon</strong>. Contact forces can subsequently accelerate it.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              113,
+              302,
+              79.2507,
+              576,
+              214.2407
+            ]
+          ],
+          "text": "6.  Why do headrests in cars help protect a person from  head and neck injury in a car accident",
+          "id": "q-26",
+          "answer_html": "<p>When a car is accelerated from behind, the seat pushes the torso forward while the head tends to retain its previous motion. The headrest provides a force to move the head with the torso and limits their relative motion.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              113,
+              302,
+              214.2507,
+              576,
+              362.74060000000003
+            ]
+          ],
+          "text": "7.  A hockey puck moving a constant velocity across  the ice eventually comes to a stop. Does this  prove the Newton's first law does not apply to all  situations",
+          "id": "q-27",
+          "answer_html": "<p>No. The puck slows because friction and drag exert a net force opposite its motion. The first law predicts constant velocity only when the net force is zero.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              113,
+              302,
+              362.7506,
+              576,
+              524.7406000000001
+            ]
+          ],
+          "text": "8.  You are travelling in a school bus on a field trip. The  driver has to apply the brakes quickly to prevent an  accident. Describe how your body would move in  response to this rapid braking action.",
+          "id": "q-28",
+          "answer_html": "<p>Your body tends to continue forward at its previous velocity while the bus slows. You therefore move forward relative to the bus until the seat, belt, or another contact force slows you.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              113,
+              302,
+              524.7506000000001,
+              576,
+              724.6
+            ]
+          ],
+          "text": "9.  While travelling in Africa you are chased by a very  large elephant. Would it make more sense to run  in a straight line to get away or in a zigzag motion   Explain your answer.",
+          "id": "q-29",
+          "answer_html": "<p>The intended textbook answer is <strong>zigzag motion</strong>: a massive animal needs a large sideways force to change direction quickly. Inertia helps explain that reasoning, but actual turning ability also depends on speed and available ground forces; mass alone does not establish which route would succeed.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-12",
+      "topic": "4.2",
+      "kind": "Warm-up",
+      "title": "Newton's second law: warm-up",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              114,
+              54,
+              179.1258,
+              575,
+              205.0751
+            ]
+          ],
+          "text": "1.  Based on your observations  what can you say about the direction of the force applied to the spool and the  acceleration of the spool",
+          "id": "q-30",
+          "answer_html": "<p>For the described motion to the right, the spool’s acceleration and the <strong>net horizontal force</strong> point right. F<sub>net</sub> = ma. The pull is not necessarily the only horizontal force: friction also contributes when the spool rolls. Use your observations to identify the actual acceleration.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              114,
+              54,
+              266.6258,
+              575,
+              292.57509999999996
+            ]
+          ],
+          "text": "2.  Would the direction of the force or the acceleration of the spool be affected if the thread were wrapped  around the spool in the opposite direction  Explain your answer.",
+          "id": "q-31",
+          "answer_html": "<p>Reversing the winding does not reverse the direction of a pull that is still horizontal to the right. For an ordinary spool with inner winding radius smaller than its outer rolling radius and sufficient grip, either winding can produce acceleration to the right, although torque and acceleration magnitude can differ.</p><p>If the pulling angle, slipping, or geometry changes, reassess the observed motion from the total force and torque rather than assuming the applied force alone determines everything.</p>"
+        }
+      ],
+      "shared": [
+        [
+          114,
+          54,
+          128.6257,
+          575,
+          168.07500000000002
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-13",
+      "topic": "4.2",
+      "kind": "Quick check",
+      "title": "Net force, mass, and acceleration: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              115,
+              54,
+              88.31808099999999,
+              575,
+              114.97500000000001
+            ]
+          ],
+          "text": "1.  A single engine plane has a mass of 1500 kg and acceleration of 0.400 m/s 2 . What is the thrust  or unbalanced  force  from the engine",
+          "id": "q-32",
+          "answer_html": "<p>Treat the stated thrust as the net force: F<sub>net</sub> = ma = (1500)(0.400) = <strong>600 N</strong> in the acceleration direction.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              115,
+              54,
+              223.318081,
+              575,
+              236.475
+            ]
+          ],
+          "text": "2.  What is the mass of a rocket that accelerates at 2.0 m/s 2  and has a thrust of 25 000 N",
+          "id": "q-33",
+          "answer_html": "<p>Under the quick check’s assumption that 25 000 N is the net accelerating force, m = F<sub>net</sub>/a = 25 000/2.0 = <strong>1.25 × 10⁴ kg</strong> before rounding, about 1.3 × 10⁴ kg. If this were total upward thrust near Earth, weight would also need to be included.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              115,
+              54,
+              345.5256,
+              575,
+              371.4749
+            ]
+          ],
+          "text": "3.  Find the acceleration of a passenger jet that has a mass of 250 000 kg and an engine thrust that provides an  unbalanced force of 50 000 N.",
+          "id": "q-34",
+          "answer_html": "<p>a = F<sub>net</sub>/m = 50 000/250 000 = <strong>0.20 m/s²</strong>, in the net-force direction.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-14",
+      "topic": "4.2",
+      "kind": "Sample prompt",
+      "title": "Sample 4.2.1: multiple forces acting on a body",
+      "questions": [
+        {
+          "label": "4.2.1",
+          "boxes": [
+            [
+              116,
+              54,
+              80,
+              575,
+              318
+            ]
+          ],
+          "text": "A 45.0 N block is being pushed along a floor  where the coefficient of kinetic friction is 0.333. If a force of 25.0 N is  applied  at what rate will the block accelerate  The mass of the block is 4.60 kg. F N normal force F N  = F g    but applied force > friction force creating the unbalanced forces applied force F fr F F g friction force force of gravity Figure 4.2.1   Forces acting on block",
+          "id": "q-35",
+          "answer_html": "<p>For a horizontal push on a level floor, N = 45.0 N. Kinetic friction = μ<sub>k</sub>N = (0.333)(45.0) = 14.985 N.</p><p>F<sub>net</sub> = 25.0 − 14.985 = 10.015 N. Thus a = 10.015/4.60 = <strong>2.18 m/s²</strong> in the pushing direction. Rounding friction to 15.0 N during the calculation gives the source sample’s 2.17 m/s²; either reflects the same model.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-15",
+      "topic": "4.2",
+      "kind": "Practice",
+      "title": "Practice 4.2.1: multiple forces acting on a body",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              117,
+              54,
+              81.56808099999999,
+              575,
+              108.22500000000001
+            ]
+          ],
+          "text": "1.  A falling object of 20 N experiences air resistance of 6.0 N. If acceleration due to gravity is 9.8 m/s 2  what is the  mass of the object",
+          "id": "q-36",
+          "answer_html": "<p>The 20 N value is the object’s weight: m = F<sub>g</sub>/g = 20/9.8 = <strong>2.0 kg</strong> (2.04 kg before rounding).</p><p>Air resistance affects acceleration, not the mass calculated from weight. The net downward force is 20 − 6.0 = 14 N; it is not appropriate to divide 14 N by g to find the mass.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              117,
+              54,
+              203.7756,
+              575,
+              229.72490000000002
+            ]
+          ],
+          "text": "2.  A 900 N person stands on two scales so that one foot is on each scale. What will each scale register in  Newtons",
+          "id": "q-37",
+          "answer_html": "<p>If the stationary person distributes their load equally, <strong>each scale reads 450 N</strong>, because N₁ + N₂ = 900 N.</p><p>Equal sharing is an assumption. Leaning to one side changes the individual readings; only their sum is determined without additional information.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              117,
+              54,
+              321.27570000000003,
+              575,
+              351.22499999999997
+            ]
+          ],
+          "text": "3.  What is the mass of a paratrooper who experiences an air resistance of 400 N and an acceleration of 4.5 m/s 2    during a parachute jump. ",
+          "id": "q-38",
+          "answer_html": "<p>Assuming the paratrooper accelerates <strong>downward</strong> at 4.5 m/s², choose downward positive: mg − 400 = ma.</p><p>m = 400/(9.81 − 4.5) = <strong>75 kg</strong> (75.3 kg before rounding).</p><p>The direction of acceleration is not stated. If acceleration is upward at 4.5 m/s² while the person descends and slows, 400 − mg = ma gives <strong>28 kg</strong>. The downward interpretation is the usual intended one.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              117,
+              54,
+              446.068081,
+              575,
+              553.7248999999999
+            ]
+          ],
+          "text": "4.  A force of 50 N accelerates a 5.0 kg block at 6.0 m/s 2  along a horizontal surface.   a   What is the frictional force acting on the block   b   What is the coefficient of friction",
+          "id": "q-39",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>F<sub>net</sub> = ma = (5.0)(6.0) = 30 N. Friction = 50 − 30 = <strong>20 N</strong>, opposite the motion.</li><li>N = mg = (5.0)(9.81) = 49.05 N. μ<sub>k</sub> = 20/49.05 = <strong>0.41</strong>, dimensionless.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-16",
+      "topic": "4.2",
+      "kind": "Investigation",
+      "title": "Investigation 4-2: Newton's second law",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              119,
+              54,
+              541.5457,
+              575,
+              553.995
+            ]
+          ],
+          "text": "1.  Describe how the speed of a cart changes when a constant unbalanced force pulls it.",
+          "id": "q-40",
+          "answer_html": "<p>A constant net force on a system of constant mass gives constant acceleration. If the cart starts from rest and moves in the force direction, its speed rises uniformly: <strong>v = at</strong>. More generally v = v₀ + at for the signed velocity.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              119,
+              54,
+              555.0457,
+              575,
+              580.995
+            ]
+          ],
+          "text": "2.  According to your first graph  a vs. F  how does acceleration depend on unbalanced force  Does your graph  suggest that acceleration is directly proportional to unbalanced force  Support your answer with your data.",
+          "id": "q-41",
+          "answer_html": "<p>For fixed total system mass, <strong>a = F<sub>net</sub>/M</strong>, so acceleration is directly proportional to net force. A graph of a versus F should be approximately straight through the origin.</p><p>Use your measured slopes and uncertainty to support the claim. No acceleration data are filled into the source table, so no experimental numerical slope can be supplied.</p><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Applied-force case</th><th scope=\"col\">Expected acceleration relative to the 2.0 N case</th></tr></thead><tbody><tr><td>2.0 N</td><td>1</td></tr><tr><td>4.0 N</td><td>2</td></tr><tr><td>6.0 N</td><td>3</td></tr><tr><td>8.0 N</td><td>4</td></tr></tbody></table></div>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              119,
+              54,
+              582.0457,
+              575,
+              607.995
+            ]
+          ],
+          "text": "3   According to your second and third graphs  how does the acceleration of the cart vary when the mass is  doubled  tripled  and quadrupled",
+          "id": "q-42",
+          "answer_html": "<p>At constant net force, a ∝ 1/M. Doubling, tripling, and quadrupling total mass reduce acceleration to <strong>½, ⅓, and ¼</strong> of its original value.</p><p>The a-versus-M graph is a decreasing inverse curve. The a-versus-1/M graph is a straight line through the origin. Compare these model predictions with your measured data.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              119,
+              54,
+              609.0457,
+              575,
+              621.495
+            ]
+          ],
+          "text": "4   Write an equation for the third graph  complete with the numerical value and units for the slope.",
+          "id": "q-43",
+          "answer_html": "<p><strong>Your measured slope is required.</strong> If the horizontal axis is 1/M in kg⁻¹ and a is in m/s², the equation is a = F<sub>net</sub>(1/M), and the slope has units kg·m/s² = N.</p><p>The source instead asks for a in cm/s² and mass in “mass units.” If u is the numerical number of mass units and one unit has actual mass M₀ kg, then <strong>a = S(1/u)</strong>, where S = 100F<sub>net</sub>/M₀ in cm/s² per unit of 1/u. Expressing the reciprocal-mass axis in mass-unit⁻¹ gives slope units cm·mass-unit/s². Determine M₀ and the numerical slope from your setup and data.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              119,
+              54,
+              622.5457,
+              575,
+              648.495
+            ]
+          ],
+          "text": "5   What were some of the experimental difficulties you encountered in this investigation  which would make it  difficult to obtain ideal results",
+          "id": "q-44",
+          "answer_html": "<p>Possible difficulties include pulley and wheel friction, a track not correctly tilted to compensate for friction, tension differing from the hanging weight while the hanging mass accelerates, timer calibration, tape drag, and uncertainty in dot spacing and total moving mass.</p><p>Include the cart, hanging mass, and other relevant moving components in the system mass. Keep total mass fixed when varying the hanging driving weight; repeat runs and fit the velocity-time data rather than relying on a single interval.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          118,
+          54,
+          60,
+          575,
+          724
+        ],
+        [
+          119,
+          54,
+          60,
+          575,
+          526
+        ]
+      ]
+    },
+    {
+      "id": "set-17",
+      "topic": "4.2",
+      "kind": "Section review",
+      "title": "4.2 Review: Newton's second law",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              120,
+              59,
+              86.5257,
+              306,
+              166.80808100000002
+            ]
+          ],
+          "text": "1.  What unbalanced force is needed to accelerate a   5.0 kg cart at 5.0 m/s 2",
+          "id": "q-45",
+          "answer_html": "<p>F<sub>net</sub> = ma = (5.0)(5.0) = <strong>25 N</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              120,
+              59,
+              166.818081,
+              306,
+              383.5156
+            ]
+          ],
+          "text": "2.  A net force of 7.5 w 10 4  N acts on a spacecraft of  mass 3.0 w 10 4  kg.   a   At what rate will the spacecraft accelerate     b    Assuming constant acceleration is maintained   how fast will the spacecraft be moving after 25 s   if its initial speed was 5.0 w 10 3  m/s",
+          "id": "q-46",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>a = (7.5 × 10⁴)/(3.0 × 10⁴) = <strong>2.5 m/s²</strong>.</li><li>v = v₀ + at = 5000 + (2.5)(25) = <strong>5062.5 m/s before rounding</strong>, about 5.1 × 10³ m/s at the precision of the givens.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              120,
+              59,
+              383.5256,
+              306,
+              724.6
+            ]
+          ],
+          "text": "3.  A model rocket has a mass of 0.12 kg. It accelerates  vertically to 60.0 m/s in 1.2 s.   a   What is its average acceleration     b   What is the unbalanced force on the rocket   c    If the force of gravity on the rocket is 1.2 N    what is the total thrust of its engine",
+          "id": "q-47",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Assuming launch from rest, a<sub>avg</sub> = (60.0 − 0)/1.2 = <strong>50 m/s² upward</strong>.</li><li>Average net force = ma = (0.12)(50) = <strong>6.0 N upward</strong>.</li><li>If drag is neglected, thrust − weight = net force, so thrust = 6.0 + 1.2 = <strong>7.2 N upward</strong>.</li></ol>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              120,
+              317,
+              86.492581,
+              576,
+              222.1901
+            ]
+          ],
+          "text": "4.  What is the mass of a rock if a force of 2.4 w 10 3  N  makes it accelerate at a rate of 4.0 w 10 1  m/s 2",
+          "id": "q-48",
+          "answer_html": "<p>m = F<sub>net</sub>/a = (2.4 × 10³)/(4.0 × 10¹) = <strong>60 kg</strong>.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              120,
+              317,
+              222.2001,
+              576,
+              478.69000000000005
+            ]
+          ],
+          "text": "5.  A fully loaded military rocket has a mass of   3.0 w 10 6  kg  and the force of gravity on it at ground  level is 2.9 w 10 7  N.   a    At what rate will the rocket accelerate during   lift-off  if the engines provide a thrust of   3.3 w 10 7  N   b   Why will this acceleration not remain constant",
+          "id": "q-49",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>F<sub>net</sub> = 3.3 × 10⁷ − 2.9 × 10⁷ = 4.0 × 10⁶ N upward. a = (4.0 × 10⁶)/(3.0 × 10⁶) = <strong>1.3 m/s² upward</strong>.</li><li>As fuel is expelled the rocket mass changes. Gravity, thrust, and air resistance can also change during flight, so the ratio F<sub>net</sub>/m need not remain constant.</li></ol>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              120,
+              317,
+              478.70000000000005,
+              576,
+              724.6
+            ]
+          ],
+          "text": "6.  A boy and his skateboard have a combined mass of  60.0 kg. After an initial shove  the boy starts coasting  at 5.5 m/s along a level driveway. Friction brings  him to rest in 5.0 s. The combined force of gravity on  the boy and skateboard is 5.9 w 10 2  N. What is the  average coefficient of rolling friction between the  driveway and the skateboard wheels",
+          "id": "q-50",
+          "answer_html": "<p>Choose the initial travel direction positive: a<sub>avg</sub> = (0 − 5.5)/5.0 = −1.1 m/s². Friction magnitude = m|a| = (60.0)(1.1) = 66 N.</p><p>μ<sub>rolling</sub> = F<sub>fr</sub>/N = 66/(5.9 × 10²) = <strong>0.11</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-18",
+      "topic": "4.3",
+      "kind": "Warm-up",
+      "title": "Newton's third law: warm-up",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              121,
+              54,
+              130,
+              575,
+              454
+            ]
+          ],
+          "text": "1.  Consider the following situations. Draw a sketch of each situation and  on each diagram  indicate the forces  being described. Share your results with the class.   a   If you wish to climb stairs  in which   c   If you are rowing a boat  which way must your     direction do you push  Which way to you     oars push if the boat is to move forward  Which     move     way to do you move                b   If you wish to swim forward  in which   direction must your arms push  Which   way do you move         d   When a car is moving forward  in which direction do the wheels push on the road  Which way to do you move   ",
+          "id": "q-51",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Stairs: push downward on the step; the step pushes upward on you, helping you rise.</li><li>Swimming: push water backward; the water pushes you forward.</li><li>Rowing: the oars push water backward; the water pushes the oars and boat forward.</li><li>Powered car: the driven tires push the road backward; the road’s forward static friction pushes the car forward.</li></ol><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 270\" role=\"img\" aria-label=\"Stairs interaction\"><title>Stairs interaction</title><rect x=\"40\" y=\"137\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"110\" y=\"159\" text-anchor=\"middle\">A: stairs</text><rect x=\"260\" y=\"67\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"330\" y=\"89\" text-anchor=\"middle\">B: person</text><path d=\"M110 173V219M330 67V21\" stroke=\"#096a70\" stroke-width=\"3\"/><path d=\"M105 212L110 222L115 212M325 28L330 18L335 28\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"3\"/><text x=\"110\" y=\"244\" text-anchor=\"middle\">B pushes A down</text><text x=\"330\" y=\"15\" text-anchor=\"middle\">A pushes B up</text></svg><figcaption>Stairs interaction. Only the interaction pair is shown; equal forces act on different bodies.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 270\" role=\"img\" aria-label=\"Swimming interaction\"><title>Swimming interaction</title><rect x=\"40\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"110\" y=\"114\" text-anchor=\"middle\">A: water</text><rect x=\"260\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"330\" y=\"114\" text-anchor=\"middle\">B: swimmer</text><path d=\"M110 80H45M330 80H395\" stroke=\"#096a70\" stroke-width=\"3\"/><path d=\"M53 75L43 80L53 85M387 75L397 80L387 85\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"3\"/><text x=\"110\" y=\"55\" text-anchor=\"middle\">B pushes A left</text><text x=\"330\" y=\"55\" text-anchor=\"middle\">A pushes B right</text></svg><figcaption>Swimming interaction. Only the interaction pair is shown; equal forces act on different bodies.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 270\" role=\"img\" aria-label=\"Rowing interaction\"><title>Rowing interaction</title><rect x=\"40\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"110\" y=\"114\" text-anchor=\"middle\">A: water</text><rect x=\"260\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"330\" y=\"114\" text-anchor=\"middle\">B: boat/oars</text><path d=\"M110 80H45M330 80H395\" stroke=\"#096a70\" stroke-width=\"3\"/><path d=\"M53 75L43 80L53 85M387 75L397 80L387 85\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"3\"/><text x=\"110\" y=\"55\" text-anchor=\"middle\">B pushes A left</text><text x=\"330\" y=\"55\" text-anchor=\"middle\">A pushes B right</text></svg><figcaption>Rowing interaction. Only the interaction pair is shown; equal forces act on different bodies.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 270\" role=\"img\" aria-label=\"Driven tire interaction\"><title>Driven tire interaction</title><rect x=\"40\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"110\" y=\"114\" text-anchor=\"middle\">A: road</text><rect x=\"260\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"330\" y=\"114\" text-anchor=\"middle\">B: tire/car</text><path d=\"M110 80H45M330 80H395\" stroke=\"#096a70\" stroke-width=\"3\"/><path d=\"M53 75L43 80L53 85M387 75L397 80L387 85\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"3\"/><text x=\"110\" y=\"55\" text-anchor=\"middle\">B pushes A left</text><text x=\"330\" y=\"55\" text-anchor=\"middle\">A pushes B right</text></svg><figcaption>Driven tire interaction. Only the interaction pair is shown; equal forces act on different bodies.</figcaption></figure>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-19",
+      "topic": "4.3",
+      "kind": "Quick check",
+      "title": "Action and reaction: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              122,
+              54,
+              531.7205,
+              575,
+              544.1698
+            ]
+          ],
+          "text": "1.  Review your diagrams from the Warm Up activity. In each diagram  label the action force and reaction force. ",
+          "id": "q-52",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Stairs: push downward on the step; the step pushes upward on you, helping you rise.</li><li>Swimming: push water backward; the water pushes you forward.</li><li>Rowing: the oars push water backward; the water pushes the oars and boat forward.</li><li>Powered car: the driven tires push the road backward; the road’s forward static friction pushes the car forward.</li></ol><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 270\" role=\"img\" aria-label=\"Stairs interaction\"><title>Stairs interaction</title><rect x=\"40\" y=\"137\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"110\" y=\"159\" text-anchor=\"middle\">A: stairs</text><rect x=\"260\" y=\"67\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"330\" y=\"89\" text-anchor=\"middle\">B: person</text><path d=\"M110 173V219M330 67V21\" stroke=\"#096a70\" stroke-width=\"3\"/><path d=\"M105 212L110 222L115 212M325 28L330 18L335 28\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"3\"/><text x=\"110\" y=\"244\" text-anchor=\"middle\">B pushes A down</text><text x=\"330\" y=\"15\" text-anchor=\"middle\">A pushes B up</text></svg><figcaption>Stairs interaction. Only the interaction pair is shown; equal forces act on different bodies.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 270\" role=\"img\" aria-label=\"Swimming interaction\"><title>Swimming interaction</title><rect x=\"40\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"110\" y=\"114\" text-anchor=\"middle\">A: water</text><rect x=\"260\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"330\" y=\"114\" text-anchor=\"middle\">B: swimmer</text><path d=\"M110 80H45M330 80H395\" stroke=\"#096a70\" stroke-width=\"3\"/><path d=\"M53 75L43 80L53 85M387 75L397 80L387 85\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"3\"/><text x=\"110\" y=\"55\" text-anchor=\"middle\">B pushes A left</text><text x=\"330\" y=\"55\" text-anchor=\"middle\">A pushes B right</text></svg><figcaption>Swimming interaction. Only the interaction pair is shown; equal forces act on different bodies.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 270\" role=\"img\" aria-label=\"Rowing interaction\"><title>Rowing interaction</title><rect x=\"40\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"110\" y=\"114\" text-anchor=\"middle\">A: water</text><rect x=\"260\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"330\" y=\"114\" text-anchor=\"middle\">B: boat/oars</text><path d=\"M110 80H45M330 80H395\" stroke=\"#096a70\" stroke-width=\"3\"/><path d=\"M53 75L43 80L53 85M387 75L397 80L387 85\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"3\"/><text x=\"110\" y=\"55\" text-anchor=\"middle\">B pushes A left</text><text x=\"330\" y=\"55\" text-anchor=\"middle\">A pushes B right</text></svg><figcaption>Rowing interaction. Only the interaction pair is shown; equal forces act on different bodies.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 270\" role=\"img\" aria-label=\"Driven tire interaction\"><title>Driven tire interaction</title><rect x=\"40\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"110\" y=\"114\" text-anchor=\"middle\">A: road</text><rect x=\"260\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"330\" y=\"114\" text-anchor=\"middle\">B: tire/car</text><path d=\"M110 80H45M330 80H395\" stroke=\"#096a70\" stroke-width=\"3\"/><path d=\"M53 75L43 80L53 85M387 75L397 80L387 85\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"3\"/><text x=\"110\" y=\"55\" text-anchor=\"middle\">B pushes A left</text><text x=\"330\" y=\"55\" text-anchor=\"middle\">A pushes B right</text></svg><figcaption>Driven tire interaction. Only the interaction pair is shown; equal forces act on different bodies.</figcaption></figure><p>Either member can be called “action”; the other is “reaction.” They are simultaneous and equal in magnitude, and neither waits for the other.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              122,
+              54,
+              545.2205,
+              575,
+              571.1698
+            ]
+          ],
+          "text": "2.  When you are walking  you are producing an action force toward the ground. Why do you move in the  opposite direction",
+          "id": "q-53",
+          "answer_html": "<p>Your foot pushes backward on the ground. Static friction from the ground pushes forward on your foot, accelerating your body forward. The paired forces act on different bodies. The upward normal force also supports you, but it is the forward component that produces forward acceleration.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              122,
+              54,
+              624.2208,
+              575,
+              650.1700999999999
+            ]
+          ],
+          "text": "3.  You see a large dog running along a floating log. If the dog is running to your right  what  if anything  is  happening to the log",
+          "id": "q-54",
+          "answer_html": "<p>The dog pushes the log left; the log pushes the dog right. With negligible external horizontal force, the log moves <strong>left</strong> as the dog moves right. Their total horizontal momentum remains constant; the amount of recoil depends on their masses.</p>"
+        }
+      ],
+      "shared": [
+        [
+          121,
+          54,
+          130,
+          575,
+          454
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-20",
+      "topic": "4.3",
+      "kind": "Investigation",
+      "title": "Investigation 4-3, Part 1: exploding carts",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              123,
+              54,
+              358.7257,
+              575,
+              431.1751
+            ]
+          ],
+          "text": "1.  Push two identical laboratory carts together so that their spring bumpers are compressed. Release the carts on  a flat table or floor. Observe as they accelerate away from each other.   a   What force makes the carts accelerate     b   Why do the two carts  of identical mass  accelerate at the same rate        c   How does this demonstration illustrate Newton's third law",
+          "id": "q-55",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The compressed spring bumpers exert repelling contact forces on the carts.</li><li>The equal-mass carts experience equal force magnitudes and therefore equal acceleration magnitudes, a = F/m, in opposite directions.</li><li>Each cart pushes the other with an equal and opposite force over the same interaction interval, illustrating Newton’s third law.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              123,
+              54,
+              438.2257,
+              575,
+              495.1751
+            ]
+          ],
+          "text": "2.  Predict what will happen if you double the mass of one of the carts by placing an extra cart on top of it. Test  your prediction.   a   Has the force repelling the carts changed     b   What has changed",
+          "id": "q-56",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>For the same spring compression, the <em>initial</em> spring force is unchanged; the force on one cart still equals the opposite force on the other. Changing the masses can change the subsequent release timing and force history.</li><li>With one cart twice as massive, its acceleration magnitude at a given interaction force is half the other cart’s. The lighter cart moves away faster; from an initially stationary, isolated pair, m₁v₁ + m₂v₂ = 0.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              123,
+              54,
+              502.22580000000005,
+              575,
+              545.6752
+            ]
+          ],
+          "text": "3.  Try making the mass of one of the carts much greater than the mass of the other.   a   Is the force changed     b   What has changed",
+          "id": "q-57",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The two carts still experience equal and opposite forces. With the same initial spring compression the initial force is the same as before, though the later force history may differ.</li><li>The much heavier cart has much smaller acceleration and recoil speed; the light cart moves much more. At each instant |a<sub>heavy</sub>|/|a<sub>light</sub>| = m<sub>light</sub>/m<sub>heavy</sub>.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          123,
+          54,
+          60,
+          575,
+          358
+        ]
+      ]
+    },
+    {
+      "id": "set-21",
+      "topic": "4.3",
+      "kind": "Investigation",
+      "title": "Investigation 4-3, Part 2: motion from rest",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              124,
+              54,
+              234.8757,
+              575,
+              301.325
+            ]
+          ],
+          "text": "1.  Place a piece of light plastic insulating Styrofoam board  50 cm w 25 cm w 2.5 cm  at one end of an air table as  shown in Figure 4.3.3. Place a wind-up toy car or a radio-controlled car at one end of the board. Turn on the air  table and start the car moving. Observe and describe what happens:   a   to the car    b   to the iroadw under the car ",
+          "id": "q-58",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The car moves forward because the board exerts a forward frictional force on its driven wheels.</li><li>The car pushes the lightweight board backward, so the board recoils in the opposite direction. If the car moves right, the board moves left, assuming negligible horizontal drag from the air table.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              124,
+              54,
+              305.3757,
+              575,
+              317.825
+            ]
+          ],
+          "text": "2.  How does this demonstration illustrate Newton's Third Law",
+          "id": "q-59",
+          "answer_html": "<p>The wheels exert a backward force on the board, and the board exerts an equal forward force on the wheels. These forces act on different bodies, so each can accelerate in the opposite direction.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          124,
+          54,
+          60,
+          575,
+          234
+        ]
+      ]
+    },
+    {
+      "id": "set-22",
+      "topic": "4.3",
+      "kind": "Investigation",
+      "title": "Investigation 4-3, Part 3: tug of war",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              124,
+              54,
+              531.0757,
+              575,
+              557.025
+            ]
+          ],
+          "text": "1.  Tie a string between two 20 N spring balances. Have two students stretch the string between them as shown in  Figure 4.3.4. What do the two spring balances read",
+          "id": "q-60",
+          "answer_html": "<p>For a light string in approximately static equilibrium, <strong>both balances read the same tension T</strong>. The actual reading depends on the applied pull; “20 N” is the balance’s capacity, not the necessarily observed force.</p><p>If each student pulls with 10 N, each balance reads 10 N, not 20 N. Record the actual common reading.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              124,
+              54,
+              564.0757,
+              575,
+              590.025
+            ]
+          ],
+          "text": "2.  Try pulling with different forces. Compare the forces on each spring balance each time you pull on the string  with a different force. Does it matter who does the pulling",
+          "id": "q-61",
+          "answer_html": "<p>The readings remain equal in the light-string, quasi-static model, regardless of which student initiates the pull. A stronger pull raises the common tension. Transient accelerations and non-negligible string or instrument mass can produce small differences during a rapidly changing pull.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              124,
+              54,
+              597.0756,
+              575,
+              623.0248
+            ]
+          ],
+          "text": "3.  Try adding a third spring balance in the middle of the string. How does this demonstration illustrate Newton's  third law",
+          "id": "q-62",
+          "answer_html": "<p>Adding a third balance in series should give the same reading T on all three while the system is nearly static. Each connected body exerts an equal and opposite force on its neighbor. Tension does not add merely because more balances are in series.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          124,
+          54,
+          333,
+          575,
+          530
+        ]
+      ]
+    },
+    {
+      "id": "set-23",
+      "topic": "4.3",
+      "kind": "Investigation",
+      "title": "Investigation 4-3: concluding questions",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              124,
+              54,
+              649.2757,
+              575,
+              675.225
+            ]
+          ],
+          "text": "1.  When a car moves forward  in which direction do the wheels of the car push on the road  What force actually  makes the car move forward",
+          "id": "q-63",
+          "answer_html": "<p>The driven wheels push the road <strong>backward</strong>. The road’s forward static-friction force on the wheels is the external force that propels the car forward. It must exceed resistance if the car is to accelerate.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              124,
+              54,
+              682.27566,
+              575,
+              708.22497
+            ]
+          ],
+          "text": "2.  List and discuss three examples of situations from your own everyday experience  that involve Newton's third  law.",
+          "id": "q-64",
+          "answer_html": "<p>Examples: a foot pushes the floor backward and the floor pushes the walker forward; a swimmer pushes water backward and water pushes the swimmer forward; a balloon pushes expelled air backward and that air pushes the balloon forward. Identify both bodies and both forces in each example.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-24",
+      "topic": "4.3",
+      "kind": "Section review",
+      "title": "4.3 Review: Newton's third law",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              125,
+              44,
+              86.6257,
+              291,
+              194.6156
+            ]
+          ],
+          "text": "1.  You are playing softball and your friend throws a  ball to you. You catch the ball. The action force is the  impact of the ball against your glove. What is the  reaction force",
+          "id": "q-65",
+          "answer_html": "<p>The glove exerts an equal and opposite force on the ball, slowing and stopping it. The ball’s force acts on the glove; the reaction acts on the ball.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              125,
+              44,
+              194.6256,
+              291,
+              343.11580000000004
+            ]
+          ],
+          "text": "2.  During a golf swing  is the club impacting on the  ball the action force or the reaction force  Use a  diagram to illustrate your answer.",
+          "id": "q-66",
+          "answer_html": "<p>You may call the club’s force on the ball the action and the ball’s force on the club the reaction. Reversing those labels is equally valid; both occur simultaneously.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 270\" role=\"img\" aria-label=\"Golf club and ball\"><title>Golf club and ball</title><rect x=\"40\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"110\" y=\"114\" text-anchor=\"middle\">A: club</text><rect x=\"260\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"330\" y=\"114\" text-anchor=\"middle\">B: ball</text><path d=\"M110 80H45M330 80H395\" stroke=\"#096a70\" stroke-width=\"3\"/><path d=\"M53 75L43 80L53 85M387 75L397 80L387 85\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"3\"/><text x=\"110\" y=\"55\" text-anchor=\"middle\">B pushes A left</text><text x=\"330\" y=\"55\" text-anchor=\"middle\">A pushes B right</text></svg><figcaption>Golf club and ball. Only the interaction pair is shown; equal forces act on different bodies.</figcaption></figure>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              125,
+              44,
+              343.1258,
+              291,
+              478.11580000000004
+            ]
+          ],
+          "text": "3.  If a soccer player kicks a ball with a force of 100 N   what is the magnitude of the reaction force",
+          "id": "q-67",
+          "answer_html": "<p>The ball exerts a reaction force of <strong>100 N</strong> on the foot in the opposite direction.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              125,
+              44,
+              478.1258,
+              291,
+              724.6
+            ]
+          ],
+          "text": "4.  Spiderman is having a tug of war with a grade 2  student. Both are pulling very hard from opposite  ends. Who exerts a greater force on the rope   Explain your answer.",
+          "id": "q-68",
+          "answer_html": "<p>In the usual light-rope, quasi-static tug-of-war model, the two end forces have <strong>equal magnitudes</strong>. The stronger participant does not create an unequal action-reaction pair.</p><p>For a rope with significant mass and acceleration, its two end forces can differ by m<sub>rope</sub>a. Those two end forces are not themselves a third-law pair; each has its own partner on the person at that end.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              125,
+              302,
+              86.75099999999999,
+              576,
+              221.7409
+            ]
+          ],
+          "text": "5.  In a demolition derby a Hummer SUV collides  head-on with a SMART car. Which car experiences a  greater impact force  Explain your answer.",
+          "id": "q-69",
+          "answer_html": "<p>Both cars experience <strong>the same impact-force magnitude</strong>, in opposite directions, at every instant of the collision. Different masses can produce different accelerations and damage; that does not alter the third-law pair.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              125,
+              302,
+              221.7509,
+              576,
+              410.7409
+            ]
+          ],
+          "text": "6.  During a martial arts demonstration  a black belt  uses a karate chop to break a large board with her  hand by exerting a force of 2000 N. What force did  the board exert on her hand  ",
+          "id": "q-70",
+          "answer_html": "<p>The board exerts <strong>2000 N</strong> on the hand in the opposite direction during the stated interaction.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              125,
+              302,
+              410.7509,
+              576,
+              724.6
+            ]
+          ],
+          "text": "7.  A few years from now after much hard work  you are  an astronaut and are completing a repair of some  solar panels. To do this you have to take a space  walk outside the International Space Station. By  accident  you find yourself disconnected from the  support rope and need to get back to the station. All  you have is your tools with you. How can you propel  yourself back to safety",
+          "id": "q-71",
+          "answer_html": "<p>In the idealized scenario, throw a tool <strong>away from the station</strong>. Your force accelerates the tool away, while its equal and opposite force gives you momentum toward the station. With negligible external impulse, the total momentum of you and the tool is conserved.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-25",
+      "topic": "4.4",
+      "kind": "Warm-up",
+      "title": "Momentum: warm-up",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              126,
+              54,
+              200.7451,
+              575,
+              297.1946
+            ]
+          ],
+          "text": "1.  Connect an object in the first column with a motion in the second column for the following situations.   a   The combination that will cause the most pain if the object hits your leg   _________________________     __________________________   b   The combination that will cause the least pain if the object hits your leg   _________________________     __________________________",
+          "id": "q-72",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The intended choice for the largest impact is <strong>softball at 10 m/s</strong>.</li><li>The intended choice for the smallest impact is <strong>feather at 2 m/s</strong>.</li></ol><p>These choices use the assumed ordering of object masses and speeds. Actual impact force and injury also depend on stopping time, shape, and material; momentum alone does not determine pain.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              126,
+              54,
+              308.2454,
+              575,
+              414.695
+            ]
+          ],
+          "text": "2.  Explain your reasoning for each answer.   a  __________________________________________________________________________________   _____________________________________________________________________________________   b  __________________________________________________________________________________   _____________________________________________________________________________________",
+          "id": "q-73",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>For the most massive listed object at the greatest speed, p = mv and kinetic energy ½mv² are greatest, so stopping it generally requires a larger momentum transfer.</li><li>For the least massive listed object at the lowest speed, momentum and kinetic energy are smallest, making the intended impact the least severe under otherwise similar conditions.</li></ol>"
+        }
+      ],
+      "shared": [
+        [
+          126,
+          54,
+          133.24519999999998,
+          575,
+          186.1945
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-26",
+      "topic": "4.4",
+      "kind": "Quick check",
+      "title": "Momentum: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              127,
+              54,
+              89.0257,
+              575,
+              101.47500000000001
+            ]
+          ],
+          "text": "1.  What is the momentum of a 100 kg motorbike travelling at 10 m/s",
+          "id": "q-74",
+          "answer_html": "<p>p = mv = (100)(10) = <strong>1.0 × 10³ kg·m/s</strong>, in the motorbike’s travel direction.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              127,
+              54,
+              155.818081,
+              575,
+              168.9751
+            ]
+          ],
+          "text": "2.  What is the mass of plane that is travelling at 200 km/h and has a momentum of 1.1 w 10 6  kgtm/s",
+          "id": "q-75",
+          "answer_html": "<p>Convert 200 km/h to 200/3.6 = 55.56 m/s.</p><p>m = p/v = (1.1 × 10⁶)/(55.56) = 19 800 kg ≈ <strong>2.0 × 10⁴ kg</strong>.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              127,
+              54,
+              237.5256,
+              575,
+              249.975
+            ]
+          ],
+          "text": "3.  How fast does a 0.01 kg bug have to fly to have a momentum of 0.25 kgtm/s  Is this possible",
+          "id": "q-76",
+          "answer_html": "<p>v = p/m = 0.25/0.01 = <strong>25 m/s</strong>, or 90 km/h, before rounding.</p><p>The equation allows this value mathematically. Whether an actual insect of this mass can sustain it requires biological and aerodynamic information not supplied in the question; no impossibility follows from p = mv alone.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-27",
+      "topic": "4.4",
+      "kind": "Quick check",
+      "title": "Impulse: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              128,
+              54,
+              88.2757,
+              575,
+              336.72499999999997
+            ]
+          ],
+          "text": "1.  a   What is the momentum of a 112 kg football player running with a velocity of 3.6 m/s   b   What impulse must a tackler impart to the football player to bring him to a stop   c   If the tackle was completed in 0.80 s  what average force did the tackler exert on the other player   d   Why is the force negative in question 1 c   ____________________________________________________________________________________   ____________________________________________________________________________________",
+          "id": "q-77",
+          "answer_html": "<p>Take the player’s initial running direction as positive.</p><ol class=\"answer-parts\" type=\"a\"><li>p<sub>i</sub> = mv = (112)(3.6) = <strong>+403.2 kg·m/s</strong>, about +4.0 × 10² kg·m/s.</li><li>J = Δp = p<sub>f</sub> − p<sub>i</sub> = 0 − 403.2 = <strong>−403.2 N·s</strong>, opposite the initial motion.</li><li>F<sub>avg</sub> = J/Δt = −403.2/0.80 = −504 N ≈ <strong>−5.0 × 10² N</strong>.</li><li>The minus sign means that the force points opposite to the direction defined as positive. It does not mean that the force magnitude is negative.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-28",
+      "topic": "4.4",
+      "kind": "Sample prompt",
+      "title": "Sample 4.4.1: conservation of momentum",
+      "questions": [
+        {
+          "label": "4.4.1",
+          "boxes": [
+            [
+              129,
+              54,
+              257.78758100000005,
+              575,
+              284.4445
+            ]
+          ],
+          "text": "A railway car of mass 6.0 ¨ 10 3  kg is coasting along a track with a velocity of 5.5 m/s when suddenly a 3.0 ¨ 10 3  kg  load of sulphur is dumped into the car. What is its new velocity",
+          "id": "q-78",
+          "answer_html": "<p>Assume the sulphur has zero initial horizontal velocity and external horizontal impulse is negligible. Conserve horizontal momentum of car plus sulphur:</p><p>(6000)(5.5) + (3000)(0) = (6000 + 3000)v. Thus v = 33 000/9000 = <strong>3.7 m/s</strong> in the original direction. The added load increases moving mass and reduces speed.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-29",
+      "topic": "4.4",
+      "kind": "Practice",
+      "title": "Practice 4.4.1: conservation of momentum",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              130,
+              54,
+              82.2757,
+              575,
+              121.72500000000001
+            ]
+          ],
+          "text": "1.  Two identical air track gliders each have a mass of 100 g and are sitting on an air track. One glider is at rest   and the other glider is moving toward it at a velocity. When they collide they stick together and move off at   2.0 m/s. What was the initial velocity of the moving glider",
+          "id": "q-79",
+          "answer_html": "<p>For equal masses m, mu + m(0) = (2m)(2.0). Therefore <strong>u = 4.0 m/s</strong> in the direction of the combined gliders.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              130,
+              54,
+              217.2756,
+              575,
+              243.22490000000002
+            ]
+          ],
+          "text": "2.  A 1.0 kg ball of putty is rolling towards a resting 4.5 kg bowling ball at 1.5 m/s. When they collide and stick  together  what is the resulting momentum of the two objects stuck together",
+          "id": "q-80",
+          "answer_html": "<p>Initial momentum = (1.0)(1.5) + (4.5)(0) = <strong>1.5 kg·m/s</strong>. With negligible external impulse, this is also the combined final momentum, in the putty’s initial direction.</p><p>If a final velocity is desired, v = 1.5/(1.0 + 4.5) ≈ 0.27 m/s; the question asks for momentum.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              130,
+              54,
+              338.77570000000003,
+              575,
+              364.72499999999997
+            ]
+          ],
+          "text": "3.  A ball rolls at a velocity of 3.5 m/s toward a 5.0 kg ball at rest. They collide and move off at a velocity of 2.5 m/s.  What was the mass of the moving ball",
+          "id": "q-81",
+          "answer_html": "<p>Let m be the initially moving ball’s mass and assume both balls share the stated final velocity.</p><p>m(3.5) = (m + 5.0)(2.5), so (3.5 − 2.5)m = 12.5. Hence <strong>m = 12.5 kg</strong> before rounding, about 13 kg.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-30",
+      "topic": "4.4",
+      "kind": "Section review",
+      "title": "4.4 Review: momentum and impulse",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              131,
+              44,
+              86.6257,
+              291,
+              208.1156
+            ]
+          ],
+          "text": "1.  What is the momentum of a 75 g mouse running  across the floor with a velocity of 2.6 m/s",
+          "id": "q-82",
+          "answer_html": "<p>75 g = 0.075 kg. p = (0.075)(2.6) = 0.195 kg·m/s ≈ <strong>0.20 kg·m/s</strong>, in the mouse’s direction.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              131,
+              44,
+              208.1256,
+              291,
+              329.6157
+            ]
+          ],
+          "text": "2.  What is the impulse of a 55 N force exerted over a  time interval of 1.0 ms",
+          "id": "q-83",
+          "answer_html": "<p>1.0 ms = 1.0 × 10⁻³ s. J = FΔt = (55)(1.0 × 10⁻³) = <strong>0.055 N·s</strong>, in the force direction.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              131,
+              44,
+              329.6257,
+              291,
+              464.61560000000003
+            ]
+          ],
+          "text": "3.  A 0.060 kg rifle bullet leaves the muzzle with a  velocity of 6.0 w 10 2  m/s.  If the 3.0 kg rifle is held  very loosely  with what velocity will it recoil",
+          "id": "q-84",
+          "answer_html": "<p>Choose the bullet’s direction positive. For an initially stationary rifle-bullet system with negligible external impulse, 0 = m<sub>b</sub>v<sub>b</sub> + m<sub>r</sub>v<sub>r</sub>.</p><p>v<sub>r</sub> = −(0.060)(600)/3.0 = <strong>−12 m/s</strong>, backward.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              131,
+              44,
+              464.6256,
+              291,
+              724.6
+            ]
+          ],
+          "text": "4.  A 53 kg skateboarder on a 2.0 kg skateboard  is coasting along at 1.6 m/s. He collides with a  stationary skateboarder of mass 43 kg  also on a   2.0 kg skateboard  and the two skateboarders coast  off in the same direction that the first skateboarder  was travelling. What velocity will the combined  skateboarders now have",
+          "id": "q-85",
+          "answer_html": "<p>Include both skateboards: moving mass = 53 + 2.0 = 55 kg; initially stationary mass = 43 + 2.0 = 45 kg.</p><p>v = [(55)(1.6) + (45)(0)]/(55 + 45) = <strong>0.88 m/s</strong> in the first skateboarder’s initial direction, assuming they move together afterward.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              131,
+              302,
+              86.9703,
+              576,
+              207.752581
+            ]
+          ],
+          "text": "5.   What impulse is needed to change the velocity of a  10.0 kg object from 12.6 m/s to 25.5 m/s in a time of  5.00 s  How much force is needed",
+          "id": "q-86",
+          "answer_html": "<p>J = Δp = m(v<sub>f</sub> − v<sub>i</sub>) = (10.0)(25.5 − 12.6) = <strong>129 N·s</strong>.</p><p>F<sub>avg</sub> = J/Δt = 129/5.00 = <strong>25.8 N</strong>. Both point in the direction of increasing velocity.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              131,
+              302,
+              207.76258099999998,
+              576,
+              397.46020000000004
+            ]
+          ],
+          "text": "6.  A 1.5 w 10 3  kg car travelling at 44 m/s collides  head-on with a 1.0 w 10 3  kg car travelling at 22 m/s  in the opposite direction. If the cars stick together  on impact  what is the velocity of the wreckage  immediately after impact   Hint:  Let the velocity of  the second car be o22 m/s  since it is moving in a  direction opposite to the first car.",
+          "id": "q-87",
+          "answer_html": "<p>Choose the first car’s direction positive. Initial total momentum = (1500)(44) + (1000)(−22) = 44 000 kg·m/s.</p><p>After sticking together, v = 44 000/(1500 + 1000) = <strong>+17.6 m/s</strong> before rounding, about 18 m/s in the first car’s original direction.</p><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Object</th><th scope=\"col\">Mass (kg)</th><th scope=\"col\">Initial velocity (m/s)</th><th scope=\"col\">Initial momentum (kg·m/s)</th></tr></thead><tbody><tr><td>Car 1</td><td>1500</td><td>44</td><td>66000</td></tr><tr><td>Car 2</td><td>1000</td><td>-22</td><td>-22000</td></tr><tr><td>Combined</td><td>2500</td><td>17.6 after collision</td><td>44000</td></tr></tbody></table></div>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              131,
+              302,
+              397.47020000000003,
+              576,
+              724.6
+            ]
+          ],
+          "text": "7.  a    What impulse must be imparted by a baseball  bat to a 145 g ball to change its velocity from  40.0 m/s to o50.0 m/s     b    If the collision between the baseball and the  bat lasts 1.00 ms  what force was exerted on the  ball   1 ms = 10 o3  s",
+          "id": "q-88",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>145 g = 0.145 kg. J = m(v<sub>f</sub> − v<sub>i</sub>) = (0.145)(−50.0 − 40.0) = −13.05 N·s ≈ <strong>−13.1 N·s</strong>.</li><li>1.00 ms = 0.00100 s. F<sub>avg</sub> = −13.05/0.00100 = <strong>−1.31 × 10⁴ N</strong>. The force on the ball is opposite its initial positive velocity.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-31",
+      "topic": "Chapter review",
+      "kind": "Chapter review",
+      "title": "Chapter 4 Review Questions",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              132,
+              59,
+              86.6257,
+              306,
+              289.1157
+            ]
+          ],
+          "text": "1.  A person who does not wear a seatbelt may crash  through the windshield if a car makes a sudden  stop. Explain what happens to this person in terms  of Newton's first law of motion. Explain why it is wise  to wear a seatbelt.",
+          "id": "q-89",
+          "answer_html": "<p>When the car stops, an unrestrained person tends to continue at the car’s former velocity until another force acts on them. A seatbelt supplies a controlled restraining force and prevents that continued motion into the windshield or other interior surfaces.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              132,
+              59,
+              289.1257,
+              306,
+              491.61560000000003
+            ]
+          ],
+          "text": "2.  In a frame of reference where there are no external   unbalanced forces  show that Newton's second law  includes the law of inertia.",
+          "id": "q-90",
+          "answer_html": "<p>In an inertial frame, F<sub>net</sub> = ma. If F<sub>net</sub> = 0 and m is nonzero, then a = 0, so velocity remains constant. This includes remaining at rest and continuing in straight-line uniform motion: Newton’s first law.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              132,
+              59,
+              491.6256,
+              306,
+              724.6
+            ]
+          ],
+          "text": "3.  What unbalanced force is needed to accelerate a   2.0 w10 3  kg vehicle at 1.5 m/s 2",
+          "id": "q-91",
+          "answer_html": "<p>F<sub>net</sub> = ma = (2.0 × 10³)(1.5) = <strong>3.0 × 10³ N</strong>.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              132,
+              317,
+              86.262581,
+              576,
+              289.4601
+            ]
+          ],
+          "text": "4.  What is the acceleration of a 5.8 w 10 3  kg vehicle if  an unbalanced force of 1.16 w 10 2  N acts on it",
+          "id": "q-92",
+          "answer_html": "<p>a = F<sub>net</sub>/m = (1.16 × 10²)/(5.8 × 10³) = <strong>0.020 m/s²</strong>.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              132,
+              317,
+              289.4701,
+              576,
+              491.96020000000004
+            ]
+          ],
+          "text": "5.  What is the mass of a space satellite if a thrust of   2.0 w 10 2  N accelerates it at a rate of 0.40 m/s 2  during  a small steering adjustment",
+          "id": "q-93",
+          "answer_html": "<p>m = F<sub>net</sub>/a = (2.0 × 10²)/0.40 = <strong>5.0 × 10² kg</strong>.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              132,
+              317,
+              491.97020000000003,
+              576,
+              724.6
+            ]
+          ],
+          "text": "6.  At what rate will a 5.0 kg object accelerate if a 12.8 N  force is applied to it  and the friction force opposing  its motion is 2.8 N",
+          "id": "q-94",
+          "answer_html": "<p>F<sub>net</sub> = 12.8 − 2.8 = 10.0 N. a = 10.0/5.0 = <strong>2.0 m/s²</strong> in the applied-force direction.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              133,
+              44,
+              52.3507,
+              291,
+              268.3407
+            ]
+          ],
+          "text": "7.  A rope is strong enough to withstand a 750 N force  without breaking. If two people pull on opposite  ends of the rope  each with a force of 500 N  will it  break  Explain.",
+          "id": "q-95",
+          "answer_html": "<p><strong>No</strong>, in the stated ideal, steady pulling case. The rope tension is 500 N, below its 750 N limit. Opposing 500 N pulls do not produce 1000 N of tension; they balance the rope’s net force while keeping 500 N of internal tension.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              133,
+              44,
+              268.3507,
+              291,
+              484.3405
+            ]
+          ],
+          "text": "8.  State Newton's third law of motion. Describe an  example of a situation involving the law of action  and reaction that you have not already used.",
+          "id": "q-96",
+          "answer_html": "<p>When A exerts a force on B, B simultaneously exerts an equal-magnitude, opposite-direction force on A. The forces act on different bodies.</p><p>Example: a balloon pushes gas backward as it escapes, and the gas pushes the balloon forward.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 270\" role=\"img\" aria-label=\"Balloon and expelled air\"><title>Balloon and expelled air</title><rect x=\"40\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"110\" y=\"114\" text-anchor=\"middle\">A: expelled air</text><rect x=\"260\" y=\"92\" width=\"140\" height=\"36\" rx=\"7\" fill=\"#e3eee8\" stroke=\"#096a70\"/><text x=\"330\" y=\"114\" text-anchor=\"middle\">B: balloon</text><path d=\"M110 80H45M330 80H395\" stroke=\"#096a70\" stroke-width=\"3\"/><path d=\"M53 75L43 80L53 85M387 75L397 80L387 85\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"3\"/><text x=\"110\" y=\"55\" text-anchor=\"middle\">B pushes A left</text><text x=\"330\" y=\"55\" text-anchor=\"middle\">A pushes B right</text></svg><figcaption>Balloon and expelled air. Only the interaction pair is shown; equal forces act on different bodies.</figcaption></figure>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              133,
+              44,
+              484.3505,
+              291,
+              724.6
+            ]
+          ],
+          "text": "9.  Two tug-of-war teams are at opposite ends of a  rope. Newton's third law says that the force exerted  by team A will equal the force that team B exerts on  team A. How can either team win the tug-of-war",
+          "id": "q-97",
+          "answer_html": "<p>The teams experience equal rope tension in the light-rope model, but each team also interacts with the ground. The team that can maintain greater effective traction can produce a net external force on the combined teams-and-rope system, moving it toward that team. The other team’s feet may slip. Newton’s third law is obeyed throughout.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              133,
+              302,
+              52.3507,
+              576,
+              322.3407
+            ]
+          ],
+          "text": "10.  a   Define momentum.   b    Why is momentum considered a very important  quantity in physics",
+          "id": "q-98",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Momentum is the vector quantity <strong>p = mv</strong>, with units kg·m/s.</li><li>Total momentum is conserved when the system’s net external impulse is zero. This allows predictions about collisions, recoil, and explosions even when the internal forces are complicated.</li></ol>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              133,
+              302,
+              322.3507,
+              576,
+              724.6
+            ]
+          ],
+          "text": "11.  a   Define impulse.   b    What is the impulse due to a force that causes  the velocity of a 46 g golf ball to change from   0 m/s to 60.0 m/s in 0.50 ms   c   What force was applied to the ball",
+          "id": "q-99",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Impulse is the time integral of force; for an average force, <strong>J = F<sub>avg</sub>Δt = Δp</strong>. Its unit is N·s, equivalent to kg·m/s.</li><li>46 g = 0.046 kg. J = (0.046)(60.0 − 0) = <strong>2.76 N·s</strong> before rounding, about 2.8 N·s.</li><li>0.50 ms = 0.00050 s. F<sub>avg</sub> = 2.76/0.00050 = <strong>5.5 × 10³ N</strong>, in the ball’s acceleration direction.</li></ol>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              134,
+              59,
+              52.3507,
+              306,
+              376.3407
+            ]
+          ],
+          "text": "12.  A hunter who fails to hold the rifle firmly against a  shoulder may be injured when shooting. Explain in  terms of Newton's third law.",
+          "id": "q-100",
+          "answer_html": "<p>The rifle pushes the bullet forward and the bullet pushes the rifle backward. If loosely supported, the rifle recoils before striking the shoulder; stopping it over a short time produces a large average contact force. Firm contact couples its motion to the shooter earlier.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              134,
+              59,
+              376.3507,
+              306,
+              724.6
+            ]
+          ],
+          "text": "13.  A 4.2 kg rifle shoots a 0.050 kg bullet at a velocity of  3.00 w 10 2  m/s. At what velocity does the rifle recoil",
+          "id": "q-101",
+          "answer_html": "<p>For zero initial momentum, v<sub>rifle</sub> = −m<sub>bullet</sub>v<sub>bullet</sub>/m<sub>rifle</sub> = −(0.050)(300)/4.2 = <strong>−3.6 m/s</strong>, opposite the bullet’s direction.</p>"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              134,
+              317,
+              52.2508,
+              576,
+              376.2407
+            ]
+          ],
+          "text": "14.  A 0.250  kg  ball of Plasticine  moving at 5.0 m/s  overtakes and collides with a 0.300 kg ball of  Plasticine  travelling in the same direction at 2.0 m/s.  The two balls of Plasticine stick together on collision.  What is their velocity after the collision",
+          "id": "q-102",
+          "answer_html": "<p>Both initial velocities point the same way: v = [(0.250)(5.0) + (0.300)(2.0)]/(0.250 + 0.300) = 1.85/0.550 = <strong>3.4 m/s</strong> in their original direction.</p>"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              134,
+              317,
+              376.2507,
+              576,
+              724.6
+            ]
+          ],
+          "text": "15.  A railroad car of mass 12 000 kg is travelling at a  velocity of 6.0 m/s when it collides with an identical  car at rest. The two cars lock together. What is their  common velocity after the collision",
+          "id": "q-103",
+          "answer_html": "<p>For identical masses m: m(6.0) + m(0) = (2m)v. Thus <strong>v = 3.0 m/s</strong> in the moving car’s original direction.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-32",
+      "topic": "Extra practice",
+      "kind": "Extra practice",
+      "title": "Chapter 4 Extra Practice",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              135,
+              44,
+              86.1257,
+              291,
+              126.11569999999999
+            ]
+          ],
+          "text": "1.   What is the difference between inertial mass and  gravitational mass",
+          "id": "q-104",
+          "answer_html": "<p><strong>Inertial mass</strong> measures resistance to acceleration: m<sub>i</sub> = F<sub>net</sub>/a. <strong>Gravitational mass</strong> measures coupling to gravity, for example F<sub>g</sub> = m<sub>g</sub>g. Their measured equality allows a balance based on gravity to determine inertial mass. Both are reported in kilograms.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              135,
+              44,
+              126.1257,
+              291,
+              179.6156
+            ]
+          ],
+          "text": "2.   Describe three factors related to inertia that explain  why an oil tanker ship is harder to maneuver when it  is full than when it is empty.",
+          "id": "q-105",
+          "answer_html": "<p>A full tanker has more mass and therefore more inertia. With comparable available forces, it is harder to <strong>start or speed up</strong>, <strong>stop or slow down</strong>, and <strong>turn</strong>. Changing velocity requires a greater impulse for the same velocity change; a given force produces less acceleration.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              135,
+              44,
+              179.6256,
+              291,
+              219.6156
+            ]
+          ],
+          "text": "3.   Use Newton's laws to explain why a headrest in a car  protects the neck of the person in a car.",
+          "id": "q-106",
+          "answer_html": "<p>When a car is accelerated from behind, the seat pushes the torso forward while the head tends to retain its previous motion. The headrest provides a force to move the head with the torso and limits their relative motion.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              135,
+              44,
+              219.6256,
+              291,
+              273.11560000000003
+            ]
+          ],
+          "text": "4.   Some older model trucks did not have headrests.  Why could this be a safety hazard for passengers in  the truck",
+          "id": "q-107",
+          "answer_html": "<p>Without a headrest, a rear impact can accelerate the torso through the seat while the head initially retains its previous motion. The resulting relative movement bends the neck. A headrest can exert a force on the head so that it moves more nearly with the torso.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              135,
+              44,
+              273.1256,
+              291,
+              326.61560000000003
+            ]
+          ],
+          "text": "5.   How can you use Newton's first law of motion to  explain why shooting a hockey puck across a frozen  pond will travel a long way",
+          "id": "q-108",
+          "answer_html": "<p>Ice provides relatively small opposing friction, so the puck’s horizontal net force and deceleration are small. It continues moving for a long distance; in the ideal zero-net-force limit it would maintain constant velocity.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              135,
+              44,
+              326.6256,
+              291,
+              393.61560000000003
+            ]
+          ],
+          "text": "6.   In a car collision seat belts are a safety device to  protect you. Should pets in a car wear a seat belt   Use Newton's first law of motion to defend you  position.",
+          "id": "q-109",
+          "answer_html": "<p>The inertia argument applies to pets as well as people: when a car stops or turns suddenly, an unrestrained animal tends to retain its previous motion. An appropriate restraint provides a force to change that motion with the car instead of allowing uncontrolled movement through the cabin.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              135,
+              44,
+              393.6256,
+              291,
+              447.11560000000003
+            ]
+          ],
+          "text": "7.   Using only units and Newton's second law of  motion  prove that the unit for force can be   kgtm/s 2 .",
+          "id": "q-110",
+          "answer_html": "<p>From F<sub>net</sub> = ma, [F] = [m][a] = <strong>kg × m/s² = kg·m/s²</strong>. One newton is defined as 1 kg·m/s².</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              135,
+              44,
+              447.1256,
+              291,
+              487.11560000000003
+            ]
+          ],
+          "text": "8.   What unbalanced force is needed to push a 35 kg  girl in a 20 kg wagon at an acceleration of 1.0 m/s 2",
+          "id": "q-111",
+          "answer_html": "<p>Total mass = 35 + 20 = 55 kg. F<sub>net</sub> = ma = (55)(1.0) = <strong>55 N</strong>.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              135,
+              44,
+              487.1256,
+              291,
+              540.6157000000001
+            ]
+          ],
+          "text": "9.   What force is needed to move a 270 N kindergarten  student learning to skate at an acceleration of   0.7 m/s 2",
+          "id": "q-112",
+          "answer_html": "<p>The stated 270 N is weight: m = 270/9.81 = 27.52 kg. F<sub>net</sub> = ma = (27.52)(0.7) = 19.27 N ≈ <strong>19 N</strong> in the acceleration direction. This is the net force; an applied push must also account for any resistance.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              135,
+              44,
+              540.6257,
+              291,
+              607.6157000000001
+            ]
+          ],
+          "text": "10.  Rhys and Gareth are having a tug of war with   1.25 kg of climbing rope. If Rhys pulls with a force of  24 N and the rope accelerates away from him at   1.4 m/s 2  with what force is Gareth pulling the rope",
+          "id": "q-113",
+          "answer_html": "<p>Choose the direction away from Rhys as positive. Gareth’s pull is positive and Rhys’s is negative: F<sub>Gareth</sub> − 24 = (1.25)(1.4) = 1.75 N.</p><p>F<sub>Gareth</sub> = <strong>25.75 N</strong> before rounding, about 26 N. The end pulls differ because the rope has mass and accelerates; each person-rope contact still obeys Newton’s third law.</p>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              135,
+              44,
+              607.6257,
+              291,
+              724.6
+            ]
+          ],
+          "text": "11  A 70 kg person is standing on a bathroom scale in an  elevator purely for scientific purposes. The elevator  begins to accelerate upward at 2.25 m/s 2  for 1.75 s  and then continues at a constant speed. What is the  reading on the scale or weight of the person when  the elevator is at rest and when it is accelerating",
+          "id": "q-114",
+          "answer_html": "<p>The scale measures the upward normal force N, not a change in the person’s gravitational weight.</p><ol class=\"answer-parts\" type=\"a\"><li>At rest: N = mg = (70)(9.81) = <strong>686.7 N</strong>, about 687 N.</li><li>Accelerating upward: N − mg = ma, so N = m(g + a) = (70)(9.81 + 2.25) = <strong>844.2 N</strong>, about 844 N.</li></ol><p>At the subsequent constant speed, acceleration is zero and the reading returns to about 687 N. The 1.75 s duration affects the velocity change, not the normal force during constant acceleration.</p>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              135,
+              302,
+              85.9456,
+              576,
+              152.93540000000002
+            ]
+          ],
+          "text": "12.  A 400 g air track glider has an initial velocity of   0.50 m/s. A force of 0.60 N is applied in the opposite  direction. How long will it take to bring the glider to  a stop",
+          "id": "q-115",
+          "answer_html": "<p>400 g = 0.400 kg. Choose the initial direction positive: a = −0.60/0.400 = −1.5 m/s².</p><p>t = (0 − 0.50)/(−1.5) = <strong>0.33 s</strong>.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              135,
+              302,
+              152.9454,
+              576,
+              206.43540000000002
+            ]
+          ],
+          "text": "13.  Owen is standing against the boards in a skating  rink with his skates on. He pushes against the  boards. What direction will he go",
+          "id": "q-116",
+          "answer_html": "<p>He moves <strong>away from the boards</strong>. His push on the boards is balanced by their equal and opposite push on him; it is the force on him that accelerates him.</p>"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              135,
+              302,
+              206.4454,
+              576,
+              246.4353
+            ]
+          ],
+          "text": "14.  If Owen is 40 kg  and pushes with a force of 15 N   what will be his acceleration",
+          "id": "q-117",
+          "answer_html": "<p>Assuming horizontal resistance is negligible, the boards exert 15 N on Owen. a = 15/40 = <strong>0.375 m/s²</strong> before rounding, about 0.38 m/s² away from the boards.</p>"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              135,
+              302,
+              246.4453,
+              576,
+              299.9354
+            ]
+          ],
+          "text": "15.  A 2100 kg sports car is approaching a stop sign. If  the acceleration rate to slow down is o4.5 m/s 2  what  is the net force slowing the car down",
+          "id": "q-118",
+          "answer_html": "<p>Choose forward positive. F<sub>net</sub> = ma = (2100)(−4.5) = <strong>−9450 N</strong>, about −9.5 × 10³ N, opposite the car’s velocity.</p>"
+        },
+        {
+          "label": "16",
+          "boxes": [
+            [
+              135,
+              302,
+              299.9454,
+              576,
+              366.9354
+            ]
+          ],
+          "text": "16.  A plastic bag at a local store can hold a maximum  of 275 N before it rips. When lifted  the bag reaches  a maximum acceleration of 6.0 m/s 2 . What is the  maximum mass that can be put into the bag",
+          "id": "q-119",
+          "answer_html": "<p>During upward acceleration, the supporting force must provide both weight support and acceleration: T − mg = ma, so T = m(g + a).</p><p>At the 275 N limit, m<sub>max</sub> = 275/(9.81 + 6.0) = <strong>17.4 kg</strong> before rounding, about 17 kg. This ignores the bag’s own mass and assumes its stated force limit applies to the lift.</p>"
+        },
+        {
+          "label": "17",
+          "boxes": [
+            [
+              135,
+              302,
+              366.9454,
+              576,
+              500.9354
+            ]
+          ],
+          "text": "17.  a    A racing car can reach a speed of 100 km/h in  1.95 s. If the car is 689 kg and the driver has a  weight of 833 N  what is the average acceleration  of the car   b    On a drag strip track of 350 m  the racing car  completes the distance in 4.67 s. If acceleration  is constant  what is the average acceleration and  final velocity",
+          "id": "q-120",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Assuming a start from rest, 100 km/h = 27.78 m/s. a<sub>avg</sub> = 27.78/1.95 = <strong>14.2 m/s²</strong>. The vehicle and driver masses are not needed to calculate acceleration from the speed change and elapsed time.</li><li>Assuming a start from rest and constant acceleration for the 350 m run, d = ½at² gives a = 2(350)/(4.67)² = <strong>32.1 m/s²</strong>. Then v<sub>f</sub> = at = <strong>150 m/s</strong>, about 540 km/h.</li></ol><p>These are different acceleration estimates. One constant acceleration cannot satisfy both sets of data from the same rest start. Part (b) is a separate idealized constant-acceleration calculation.</p>"
+        },
+        {
+          "label": "18",
+          "boxes": [
+            [
+              135,
+              302,
+              500.9454,
+              576,
+              724.6
+            ]
+          ],
+          "text": "18.  What is the acceleration of a 130 g baseball traveling  at 25 m/s when it is caught in a glove and brought  to rest in 0.05 s",
+          "id": "q-121",
+          "answer_html": "<p>Choose the ball’s initial direction positive. a<sub>avg</sub> = (v<sub>f</sub> − v<sub>i</sub>)/Δt = (0 − 25)/0.05 = <strong>−500 m/s²</strong>, opposite the initial velocity. Mass is not needed for this acceleration calculation.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    }
+  ]
+}

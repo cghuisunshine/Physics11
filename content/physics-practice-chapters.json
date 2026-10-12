@@ -13,6 +13,13 @@
       "title": "Forces",
       "html": "bc-forces-questions.html",
       "inventory": "content/bc-forces-questions.json"
+    },
+    {
+      "id": "bc-ch4",
+      "number": 4,
+      "title": "Newton's Laws of Motion",
+      "html": "bc-newtons-laws-questions.html",
+      "inventory": "content/bc-newtons-laws-questions.json"
     }
   ]
 }
