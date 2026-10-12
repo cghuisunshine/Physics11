@@ -1,0 +1,1538 @@
+{
+  "source": "bc_science_physics_11.pdf",
+  "chapter": 3,
+  "title": "Forces",
+  "question_count": 79,
+  "groups": [
+    {
+      "id": "set-1",
+      "topic": "3.1",
+      "kind": "Warm-up",
+      "title": "Force of gravity: warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              81,
+              54,
+              124,
+              575,
+              196
+            ]
+          ],
+          "text": "At shoulder level  hold a sheet of paper in one hand and a book in the other. If you release them at the same  time  which will hit the ground first  Test your prediction. Now place the sheet of paper on top of the book. The  paper should not extend over the edges of the book. Will the paper fall at the same rate as the book  faster  or  slower  Test your prediction. Can you create a rule for falling objects that explains how different masses fall to  the Earth  ",
+          "id": "q-1",
+          "answer_html": "<p>Separately, the book usually lands first because air resistance has a much larger effect relative to the paper’s weight. With the paper resting entirely on top of the book, the book shields it from most air resistance, so they fall together.</p><p>With negligible air resistance, objects released from the same height with the same initial vertical velocity have the same acceleration g, regardless of mass.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-2",
+      "topic": "3.1",
+      "kind": "Quick check",
+      "title": "Weight and gravitational field strength: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              82,
+              54,
+              268,
+              575,
+              285
+            ]
+          ],
+          "text": "1.  What is the force of gravity on a 90 kg person  What is the weight of this person",
+          "id": "q-2",
+          "answer_html": "<p>F<sub>g</sub> = mg = (90)(9.81) = 882.9 N ≈ <strong>8.8 × 10² N downward</strong>. Weight is the gravitational force, so the two requested quantities are the same.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              82,
+              54,
+              362,
+              575,
+              380
+            ]
+          ],
+          "text": "2.  If a person experiences a 637 N force of gravity on Earth's surface  what is the person's mass",
+          "id": "q-3",
+          "answer_html": "<p>m = F<sub>g</sub>/g = 637/9.81 = <strong>64.9 kg</strong> (about 65 kg).</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              82,
+              54,
+              470,
+              575,
+              505
+            ]
+          ],
+          "text": "3.  A 75 kg person would experience a force of gravity of 127.5 N on the Moon. What is the gravitational field  strength on the Moon",
+          "id": "q-4",
+          "answer_html": "<p>g<sub>Moon</sub> = F<sub>g</sub>/m = 127.5/75 = <strong>1.7 N/kg</strong>, equivalent to 1.7 m/s².</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-3",
+      "topic": "3.1",
+      "kind": "Quick check",
+      "title": "Universal gravitation: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              85,
+              54,
+              275,
+              575,
+              441
+            ]
+          ],
+          "text": "1.  Given two small  chocolate-centred candies of masses M and m  what will happen to the force of gravity F g   between them in the following situations a   r  is doubled. b   r  is tripled. c   r  is reduced to 1/2 r.  d   r  is reduced to 1/3 r. ",
+          "id": "q-5",
+          "answer_html": "<p>For fixed masses, F<sub>g</sub> = GMm/r², so F′/F = (r/r′)².</p><ol class=\"answer-parts\" type=\"a\"><li>Double r: <strong>F/4</strong>.</li><li>Triple r: <strong>F/9</strong>.</li><li>Halve r: <strong>4F</strong>.</li><li>Reduce r to one-third: <strong>9F</strong>.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              85,
+              54,
+              461,
+              575,
+              672
+            ]
+          ],
+          "text": "2.  The constant G in the law of universal gravitation has a value of 6.67 w 10 o11  Ntm 2 /kg 2 . Calculate the force of  gravity between the following objects:  a   a 100.0 kg person and Earth. Earth's mass is 5.98 w 10 24  kg  and its radius is 6.38 w 10 6  m. b   a 100.0 kg person and the Moon. The Moon's mass is 7.35 x 10 22  kg  and its radius is 1.74 w 10 6  m. c   two 46 g golf balls whose centres of mass are 10 cm apart.",
+          "id": "q-6",
+          "answer_html": "<p>Use F<sub>g</sub> = GMm/r², with masses in kilograms and centre-to-centre distance in metres.</p><ol class=\"answer-parts\" type=\"a\"><li>Earth: (6.67 × 10⁻¹¹)(5.98 × 10²⁴)(100.0)/(6.38 × 10⁶)² = <strong>980 N</strong>, toward Earth’s centre.</li><li>Moon: (6.67 × 10⁻¹¹)(7.35 × 10²²)(100.0)/(1.74 × 10⁶)² = <strong>162 N</strong>, toward the Moon’s centre.</li><li>Golf balls: m = 0.046 kg, r = 0.10 m. F = (6.67 × 10⁻¹¹)(0.046)²/(0.10)² = <strong>1.4 × 10⁻¹¹ N</strong>. Each ball attracts the other with this magnitude.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-4",
+      "topic": "3.1",
+      "kind": "Investigation",
+      "title": "Investigation 3-1A: the force of gravity",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              86,
+              54,
+              571,
+              575,
+              598.1
+            ]
+          ],
+          "text": "1.   Describe what happened when you dropped two steel balls of different mass simultaneously. Does the mass of  the balls affect their rate of fall",
+          "id": "q-7",
+          "answer_html": "<p>Expected observation: the two steel balls hit approximately together. Neglecting drag, a = F<sub>g</sub>/m = mg/m = g, so increasing mass increases gravitational force but does not change free-fall acceleration. Report your actual observations and experimental uncertainty.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              86,
+              54,
+              598.2,
+              575,
+              638.5
+            ]
+          ],
+          "text": "2.  a     Describe what happened when you dropped a piece of tissue paper and a steel ball simultaneously.  Explain.   b    What would happen if you did this experiment in a vacuum  Explain.",
+          "id": "q-8",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>In air, the steel ball normally lands first. Tissue paper has a large area and experiences a large drag force relative to its weight.</li><li>In a vacuum, both fall together because air resistance is absent and both accelerate at g.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              86,
+              54,
+              638.6,
+              575,
+              665.5
+            ]
+          ],
+          "text": "3.   What happened when you fired a steel ball straight out horizontally while simultaneously dropping an identical  ball  Does horizontal motion affect the rate of vertical fall of a ball",
+          "id": "q-9",
+          "answer_html": "<p>The horizontally launched and dropped balls land at approximately the same time, provided they start at the same height with zero initial vertical velocity. Their vertical motion is y = ½gt² downward. Horizontal velocity does not alter that vertical motion in the ideal model.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              86,
+              54,
+              665.6,
+              575,
+              710
+            ]
+          ],
+          "text": "4.  On the Moon  the force of gravity on a given mass is only about 1/6 of what it is on Earth. As a result  there is no  atmosphere around the Moon. Explain what you would expect to observe if you did Procedure steps 1 to 4 on  the Moon.",
+          "id": "q-10",
+          "answer_html": "<p>In the Moon’s negligible atmosphere, both steel balls, tissue and ball, and coin and feather released together fall together. The horizontally launched and dropped balls also land together. All accelerate more slowly than on Earth.</p><p>For the same height and g<sub>Moon</sub> ≈ g<sub>Earth</sub>/6, t = √(2h/g) is about <strong>√6 ≈ 2.45 times longer</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          86,
+          54,
+          60,
+          575,
+          552
+        ]
+      ]
+    },
+    {
+      "id": "set-5",
+      "topic": "3.1",
+      "kind": "Investigation",
+      "title": "Investigation 3-1B: gravity and distance",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              87,
+              56,
+              358,
+              236,
+              426.2
+            ]
+          ],
+          "text": "1.    a     What variables must you plot to  obtain a straight line  through  the origin   b    What is the specific equation for  your final straight line",
+          "id": "q-11",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Plot <strong>F<sub>g</sub> versus 1/r²</strong>. This produces a straight line through the origin; F versus 1/r is still curved.</li><li>With r in megametres, F<sub>g</sub> ≈ (398 N·Mm²)/r², since 9.81 × 6.37² = 398.06. Equivalently, F<sub>g</sub> ≈ (3.98 × 10¹⁴ N·m²)/r² with r in metres.</li></ol><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"Gravity on a 1 kg mass versus distance\"><title>Gravity on a 1 kg mass versus distance</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M129.681 54V226\" stroke=\"#dce4e1\"/><text x=\"129.681\" y=\"246\" text-anchor=\"middle\">6.37</text><path d=\"M197.363 54V226\" stroke=\"#dce4e1\"/><text x=\"197.363\" y=\"246\" text-anchor=\"middle\">12.74</text><path d=\"M265.044 54V226\" stroke=\"#dce4e1\"/><text x=\"265.044\" y=\"246\" text-anchor=\"middle\">19.11</text><path d=\"M332.725 54V226\" stroke=\"#dce4e1\"/><text x=\"332.725\" y=\"246\" text-anchor=\"middle\">25.48</text><path d=\"M400.406 54V226\" stroke=\"#dce4e1\"/><text x=\"400.406\" y=\"246\" text-anchor=\"middle\">31.85</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">0</text><path d=\"M62 191.6H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"195.6\" text-anchor=\"end\">2</text><path d=\"M62 157.2H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"161.2\" text-anchor=\"end\">4</text><path d=\"M62 122.8H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"126.8\" text-anchor=\"end\">6</text><path d=\"M62 88.4H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"92.4\" text-anchor=\"end\">8</text><path d=\"M62 54H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"58\" text-anchor=\"end\">10</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><polyline points=\"129.68,57.27 133.07,72.96 136.45,86.55 139.83,98.41 143.22,108.82 146.60,118.01 149.99,126.16 153.37,133.42 156.75,139.91 160.14,145.75 163.52,151.01 166.91,155.77 170.29,160.09 173.67,164.02 177.06,167.62 180.44,170.90 183.83,173.92 187.21,176.70 190.59,179.26 193.98,181.63 197.36,183.82 200.75,185.85 204.13,187.74 207.51,189.50 210.90,191.14 214.28,192.67 217.67,194.10 221.05,195.45 224.44,196.71 227.82,197.89 231.20,199.00 234.59,200.05 237.97,201.04 241.36,201.97 244.74,202.85 248.12,203.69 251.51,204.48 254.89,205.23 258.28,205.94 261.66,206.61 265.04,207.25 268.43,207.86 271.81,208.44 275.20,209.00 278.58,209.52 281.96,210.03 285.35,210.51 288.73,210.96 292.12,211.40 295.50,211.82 298.88,212.23 302.27,212.61 305.65,212.98 309.04,213.33 312.42,213.67 315.80,214.00 319.19,214.31 322.57,214.62 325.96,214.91 329.34,215.19 332.73,215.45 336.11,215.71 339.49,215.96 342.88,216.20 346.26,216.43 349.65,216.66 353.03,216.87 356.41,217.08 359.80,217.28 363.18,217.48 366.57,217.67 369.95,217.85 373.33,218.03 376.72,218.20 380.10,218.36 383.49,218.52 386.87,218.68 390.25,218.83 393.64,218.97 397.02,219.11 400.41,219.25\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">Distance from Earth’s centre (Mm)</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">Force (N)</text></svg><figcaption>Gravity on a 1 kg mass versus distance. <span style=\"color:#096a70\">F = 9.81(6.37/r)²</span>.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"Linearized inverse-square relationship\"><title>Linearized inverse-square relationship</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M130 54V226\" stroke=\"#dce4e1\"/><text x=\"130\" y=\"246\" text-anchor=\"middle\">0.005</text><path d=\"M198 54V226\" stroke=\"#dce4e1\"/><text x=\"198\" y=\"246\" text-anchor=\"middle\">0.01</text><path d=\"M266 54V226\" stroke=\"#dce4e1\"/><text x=\"266\" y=\"246\" text-anchor=\"middle\">0.015</text><path d=\"M334 54V226\" stroke=\"#dce4e1\"/><text x=\"334\" y=\"246\" text-anchor=\"middle\">0.02</text><path d=\"M402 54V226\" stroke=\"#dce4e1\"/><text x=\"402\" y=\"246\" text-anchor=\"middle\">0.025</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">0</text><path d=\"M62 191.6H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"195.6\" text-anchor=\"end\">2</text><path d=\"M62 157.2H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"161.2\" text-anchor=\"end\">4</text><path d=\"M62 122.8H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"126.8\" text-anchor=\"end\">6</text><path d=\"M62 88.4H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"92.4\" text-anchor=\"end\">8</text><path d=\"M62 54H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"58\" text-anchor=\"end\">10</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><polyline points=\"62.00,226.00 397.17,57.27\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">1/r² (Mm⁻²)</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">Force (N)</text></svg><figcaption>Linearized inverse-square relationship. <span style=\"color:#096a70\">F = 398/r²</span>.</figcaption></figure>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              87,
+              56,
+              426.3,
+              236,
+              548
+            ]
+          ],
+          "text": "2.  From your equation  calculate the  following: a   the distance at which the force  of gravity on the kilogram mass  is half of what it is at Earth's  surface b   the force of gravity on the 1 kg  mass at a distance of 10 Earth  radii  63.7 Mm",
+          "id": "q-12",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Set F/F<sub>surface</sub> = ½ = (R/r)². Thus <strong>r = R√2 = 9.01 Mm from Earth’s centre</strong>, about 2.64 Mm above the surface.</li><li>At r = 10R, F = 9.81/10² = <strong>0.0981 N</strong>.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          87,
+          54,
+          60,
+          575,
+          341.2
+        ],
+        [
+          87,
+          240,
+          341.3,
+          576,
+          667
+        ]
+      ]
+    },
+    {
+      "id": "set-6",
+      "topic": "3.1",
+      "kind": "Section review",
+      "title": "3.1 Review: force of gravity",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              88,
+              59,
+              142.5185,
+              306,
+              264.0185
+            ]
+          ],
+          "text": "1.  What is the force of gravity on a 600 N person  standing on Earth's surface",
+          "id": "q-13",
+          "answer_html": "<p>A “600 N person” is already described by their weight. The gravitational force is <strong>600 N downward</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              88,
+              59,
+              264.0185,
+              306,
+              399.0185
+            ]
+          ],
+          "text": "2.  How would the force of gravity between the Sun  and Earth change if the mass of the Sun was three  times greater than it is",
+          "id": "q-14",
+          "answer_html": "<p>F = GM<sub>Sun</sub>M<sub>Earth</sub>/r². With Earth’s mass and separation unchanged, tripling the Sun’s mass <strong>triples the force</strong>.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              88,
+              59,
+              399.0185,
+              306,
+              718
+            ]
+          ],
+          "text": "3.  a   What is the weight of an 80 kg person b   What is the weight of an 80 kg astronaut on the  Moon where g = 1.7 m/s 2",
+          "id": "q-15",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Earth: F<sub>g</sub> = (80)(9.81) = 784.8 N ≈ <strong>7.8 × 10² N downward</strong>.</li><li>Moon, using the stated g = 1.7 m/s²: F<sub>g</sub> = (80)(1.7) = <strong>1.4 × 10² N downward</strong> (136 N before rounding).</li></ol>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              88,
+              317,
+              142.8576,
+              576,
+              561.3573
+            ]
+          ],
+          "text": "4.  Given two candies with masses M and m a distance  d  apart  what will the force of gravity F g  between  them become in the following situations a   Only M is doubled. b   Only m is doubled. c   Both M and m are doubled. d   M  m  and d are all doubled.",
+          "id": "q-16",
+          "answer_html": "<p>Compare each case with F = GMm/d².</p><ol class=\"answer-parts\" type=\"a\"><li>Double only M: <strong>2F</strong>.</li><li>Double only m: <strong>2F</strong>.</li><li>Double both masses: <strong>4F</strong>.</li><li>Double both masses and d: 4F/2² = <strong>F</strong>, unchanged.</li></ol>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              88,
+              317,
+              561.3573,
+              576,
+              718
+            ]
+          ],
+          "text": "5.  What is the force of gravity on a 70.0 kg man  standing on Earth's surface  according to the law of  universal gravitation  Check your answer using   F = mg.",
+          "id": "q-17",
+          "answer_html": "<p>F<sub>g</sub> = (6.67 × 10⁻¹¹)(5.98 × 10²⁴)(70.0)/(6.38 × 10⁶)² = <strong>686 N downward</strong>.</p><p>Check: mg = (70.0)(9.81) = 686.7 N ≈ <strong>687 N</strong>. The small difference comes from rounded Earth data, which give g ≈ 9.799 N/kg.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              89,
+              44,
+              49.6507,
+              291,
+              441.1506
+            ]
+          ],
+          "text": "6.  What is the force of gravitational attraction between  a 75 kg boy and a 60.0 kg girl in the following  situations a   when they are 2.0 m apart  b   when they are only 1.0 m apart",
+          "id": "q-18",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>At 2.0 m: F = (6.67 × 10⁻¹¹)(75)(60.0)/2.0² = <strong>7.5 × 10⁻⁸ N</strong>.</li><li>At 1.0 m: F = (6.67 × 10⁻¹¹)(75)(60.0)/1.0² = <strong>3.0 × 10⁻⁷ N</strong>, four times greater.</li></ol><p>The simple calculation treats the stated distances as centre-to-centre distances and the people as point masses. Each person experiences the same force magnitude toward the other.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              89,
+              44,
+              441.1506,
+              291,
+              718
+            ]
+          ],
+          "text": "7.  What is the force of gravity exerted on you when  standing on the Moon  if your mass is 70.0 kg and  the Moon's mass is 7.34 w 10 22  kg  The Moon's radius  is 1.74 w 10 6  m.",
+          "id": "q-19",
+          "answer_html": "<p>F<sub>g</sub> = (6.67 × 10⁻¹¹)(7.34 × 10²²)(70.0)/(1.74 × 10⁶)² = <strong>113 N</strong>, toward the Moon’s centre.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              89,
+              302,
+              49.6508,
+              576,
+              333.1508
+            ]
+          ],
+          "text": "8.  What is the force of gravity exerted on you on Mars   if your mass is 70.0 kg and the mass of Mars is   6.37 w 10 23  kg  The radius of Mars is 3.43 w 10 6  m   and you are standing on its surface  searching for  Mars bars.",
+          "id": "q-20",
+          "answer_html": "<p>F<sub>g</sub> = (6.67 × 10⁻¹¹)(6.37 × 10²³)(70.0)/(3.43 × 10⁶)² = <strong>253 N</strong>, toward Mars’s centre.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              89,
+              302,
+              333.1508,
+              576,
+              718
+            ]
+          ],
+          "text": "9.  What is the force of gravity exerted on a 70.0 kg  person on Jupiter  assuming the person could find a  place to stand  Jupiter has a mass of 1.90 w 10 27  kg  and a radius of 7.18 w 10 7  m.",
+          "id": "q-21",
+          "answer_html": "<p>F<sub>g</sub> = (6.67 × 10⁻¹¹)(1.90 × 10²⁷)(70.0)/(7.18 × 10⁷)² = <strong>1.72 × 10³ N</strong>, toward Jupiter’s centre.</p>"
+        }
+      ],
+      "shared": [
+        [
+          88,
+          54,
+          84,
+          575,
+          127
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-7",
+      "topic": "3.2",
+      "kind": "Warm-up",
+      "title": "Friction: warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              90,
+              54,
+              116,
+              575,
+              147
+            ]
+          ],
+          "text": "Fill a narrow-neck jar to the brim with rice. Poke a pencil into the jar and push the pencil until it can't go any  farther. Repeat the poking until you can lift the jar with the pencil in the rice. Why does this happen",
+          "id": "q-22",
+          "answer_html": "<p>Repeated poking compacts the rice around the pencil. The tightly packed grains press against the pencil, increasing the normal forces and available static friction. When the upward frictional force transmitted through the pencil is large enough to support the rice and jar, you can lift them together.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-8",
+      "topic": "3.2",
+      "kind": "Sample prompt",
+      "title": "Sample 3.2.1: kinetic friction",
+      "questions": [
+        {
+          "label": "3.2.1",
+          "boxes": [
+            [
+              92,
+              54,
+              386.4,
+              575,
+              415
+            ]
+          ],
+          "text": "The coefficient of kinetic friction between a wooden box and a concrete floor is 0.30. With what force must you  push to slide the box across the floor at steady speed if the force of gravity on the box is 450 N",
+          "id": "q-23",
+          "answer_html": "<p>For a horizontal push on a level floor with no vertical acceleration, N = F<sub>g</sub> = 450 N. At steady speed, the push balances kinetic friction.</p><p>F<sub>push</sub> = μ<sub>k</sub>N = (0.30)(450) = 135 N ≈ <strong>1.4 × 10² N</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-9",
+      "topic": "3.2",
+      "kind": "Practice",
+      "title": "Practice 3.2.1: kinetic friction",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              93,
+              54,
+              79,
+              575,
+              115
+            ]
+          ],
+          "text": "1.  What is the total force of friction on a wagon's wheels if it takes 30 N to move it at a constant speed across a  bumpy path",
+          "id": "q-24",
+          "answer_html": "<p>Constant speed means zero net horizontal force. The total resisting friction is therefore <strong>30 N opposite the motion</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              93,
+              54,
+              187,
+              575,
+              407
+            ]
+          ],
+          "text": "2.  a    A 10 kg box of candy rests on a floor with a coefficient of static friction of 0.30. What force is needed to  move the box b   If the coefficient of kinetic friction is 0.25  what force is needed to keep the box moving at a constant  speed",
+          "id": "q-25",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>N = mg = (10)(9.81) = 98.1 N. Maximum static friction is μ<sub>s</sub>N = (0.30)(98.1) = <strong>29.4 N</strong>. A horizontal push must exceed this threshold to initiate sliding (about 29 N).</li><li>Once sliding, F = μ<sub>k</sub>N = (0.25)(98.1) = <strong>24.5 N</strong> (about 25 N) to maintain constant speed.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              93,
+              54,
+              524,
+              575,
+              562
+            ]
+          ],
+          "text": "3.  What is the coefficient of kinetic friction between a rubber tire and the road if a 2000 kg car needs 1.57 w 10 4  N  to keep the car moving at a constant speed",
+          "id": "q-26",
+          "answer_html": "<p>Assuming the stated resisting force is modeled as kinetic friction on a level road, N = mg = (2000)(9.81) = 19 620 N.</p><p>μ<sub>k</sub> = F<sub>fr</sub>/N = (1.57 × 10⁴)/19 620 = <strong>0.800</strong>, with no units.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-10",
+      "topic": "3.2",
+      "kind": "Investigation",
+      "title": "Investigation 3-2, Part 1: friction and weight",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              95,
+              54,
+              164.2,
+              575,
+              191.2
+            ]
+          ],
+          "text": "1.  When you doubled the force of gravity on the object sliding over your bench  what happened to the force of  friction  What happened to the force of friction when the force of gravity was tripled  quadrupled",
+          "id": "q-27",
+          "answer_html": "<p>Expected result for the same surfaces: F<sub>fr</sub> = μ<sub>k</sub>N and N = F<sub>g</sub>, so doubling, tripling, or quadrupling the weight approximately doubles, triples, or quadruples kinetic friction. Compare this prediction with your measured ratios.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              95,
+              54,
+              191.3,
+              575,
+              204.6
+            ]
+          ],
+          "text": "2.  What is the equation for your graph   Remember to use the proper symbols and units.",
+          "id": "q-28",
+          "answer_html": "<p>Fit a line to your measured F<sub>fr</sub> versus F<sub>g</sub> data. The ideal relationship is <strong>F<sub>fr</sub> = μ<sub>k</sub>F<sub>g</sub></strong>, where both forces are in newtons and the slope μ<sub>k</sub> is dimensionless.</p><p>Use your own numerical slope; no measurements are supplied. A nonzero fitted intercept can indicate balance zero error or additional resistance.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              95,
+              54,
+              204.8,
+              575,
+              231.5
+            ]
+          ],
+          "text": "3.  The slope of your graph is the coefficient of kinetic friction. What is the coefficient of kinetic friction between  the block and the tabletop you used",
+          "id": "q-29",
+          "answer_html": "<p><strong>Your measurements are required.</strong> Calculate μ<sub>k</sub> = ΔF<sub>fr</sub>/ΔF<sub>g</sub> from two well-separated points on the best-fit line. Both numerator and denominator are in newtons, so the coefficient has no units.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              95,
+              54,
+              231.7,
+              575,
+              276
+            ]
+          ],
+          "text": "4.  Name three situations where you need to have a   a low coefficient of friction  and b   a high coefficient of friction.",
+          "id": "q-30",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Low friction: bearings in machinery, ski bases sliding on snow, and lubricated engine parts.</li><li>High friction: shoe soles gripping the ground, bicycle brakes, and vehicle tires gripping the road.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          94,
+          54,
+          60,
+          575,
+          702
+        ],
+        [
+          95,
+          54,
+          60,
+          575,
+          149
+        ]
+      ]
+    },
+    {
+      "id": "set-11",
+      "topic": "3.2",
+      "kind": "Challenge",
+      "title": "Investigation 3-2: a different surface",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              95,
+              54,
+              291.6,
+              575,
+              307
+            ]
+          ],
+          "text": "1.  Measure the coefficient of kinetic friction between your blocks and a different horizontal surface.",
+          "id": "q-31",
+          "answer_html": "<p>Repeat the steady-speed pulling measurements on a different horizontal surface while controlling the blocks, pulling direction, and speed. Plot F<sub>fr</sub> against total weight and determine the new slope μ<sub>k</sub>. Compare slopes; do not invent a numerical result without measurements.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          94,
+          54,
+          60,
+          575,
+          702
+        ],
+        [
+          95,
+          54,
+          60,
+          575,
+          149
+        ]
+      ]
+    },
+    {
+      "id": "set-12",
+      "topic": "3.2",
+      "kind": "Investigation",
+      "title": "Investigation 3-2, Part 2: friction and contact area",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              96,
+              54,
+              301.2,
+              575,
+              341.5
+            ]
+          ],
+          "text": "1.  After comparing your results for Part 2 with several other groups doing the same experiment  write a conclusion  about the effect that varying the surface area has on the amount of friction between a smooth flat object of  constant force of gravity and another smooth surface.",
+          "id": "q-32",
+          "answer_html": "<p>For the same total weight and the same dry surfaces, kinetic friction should be <strong>approximately independent of apparent contact area</strong>. In the model F<sub>fr</sub> = μ<sub>k</sub>N, neither μ<sub>k</sub> nor N changes when the blocks are rearranged. State whether your results support that prediction within measurement uncertainty.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              96,
+              54,
+              341.6,
+              575,
+              359
+            ]
+          ],
+          "text": "2.  Discuss sources of error in this experiment.",
+          "id": "q-33",
+          "answer_html": "<p>Possible errors include an incorrectly zeroed spring balance, changing pulling speed, a string angled upward (reducing N), rough or dirty patches, different block surfaces, and reading the force while starting rather than sliding steadily.</p><p>Repeat trials, keep the pull horizontal, measure at steady speed, and report the variation among readings.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          95,
+          54,
+          309,
+          575,
+          680
+        ],
+        [
+          96,
+          54,
+          60,
+          575,
+          285
+        ]
+      ]
+    },
+    {
+      "id": "set-13",
+      "topic": "3.2",
+      "kind": "Section review",
+      "title": "3.2 Review: friction",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              97,
+              44,
+              83.9257,
+              291,
+              299.9255
+            ]
+          ],
+          "text": "1.  a    Where on a bicycle do you want to reduce  friction  How is this done b   Where on a bicycle do you want friction",
+          "id": "q-34",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Reduce friction in wheel bearings, pedal bearings, and the chain using lubrication and well-adjusted bearings.</li><li>Friction is needed between tires and the road and between brake pads and the braking surface. It also helps keep your feet on the pedals.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              97,
+              44,
+              299.9255,
+              291,
+              502.4255
+            ]
+          ],
+          "text": "2.  a   What is meant by the coefficient of kinetic  friction b  Why are there no units attached to values of ",
+          "id": "q-35",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The coefficient of kinetic friction is <strong>μ<sub>k</sub> = F<sub>fr</sub>/N</strong>, the ratio of sliding friction to normal force for a pair of surfaces.</li><li>It has no units because N/N = 1.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              97,
+              44,
+              502.4255,
+              291,
+              718
+            ]
+          ],
+          "text": "3.  A force of 120 N is needed to push a box along a  level road at a steady speed. If the force of gravity  on the box is 250 N  what is the coefficient of kinetic  friction between the box and the road",
+          "id": "q-36",
+          "answer_html": "<p>At steady speed, F<sub>fr</sub> = 120 N. On a level road with horizontal push, N = 250 N.</p><p>μ<sub>k</sub> = 120/250 = <strong>0.48</strong>.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              97,
+              302,
+              84.6502,
+              576,
+              219.6501
+            ]
+          ],
+          "text": "4.  The coefficient of kinetic friction between a steel  block and an ice rink surface is 0.0100. If a force of  24.5 N keeps the steel block moving at a steady  speed  what is the force of gravity on the block",
+          "id": "q-37",
+          "answer_html": "<p>At steady speed, F<sub>fr</sub> = 24.5 N. N = F<sub>fr</sub>/μ<sub>k</sub> = 24.5/0.0100 = <strong>2.45 × 10³ N</strong>. This is the block’s weight under the stated horizontal conditions.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              97,
+              302,
+              219.6501,
+              576,
+              395.1501
+            ]
+          ],
+          "text": "5.  A copper block has dimensions 1 cm w 2 cm w 4 cm.  A force of 0.10 N will pull the block along a table  surface at a steady speed if the 1 cm w 4 cm side is  face down on the table. What force will be needed  to pull the same block along when its 2 cm w 4 cm  side is face down",
+          "id": "q-38",
+          "answer_html": "<p>The weight and surfaces are unchanged, so the friction model predicts the same pulling force: <strong>0.10 N</strong>. Doubling the apparent contact area does not double friction.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              97,
+              302,
+              395.1501,
+              576,
+              718
+            ]
+          ],
+          "text": "6.  A 48 N cart is pulled across a concrete path at a  constant speed. A 42 N force is required to keep  the cart moving. What is the coefficient of kinetic  friction between the path and the cart",
+          "id": "q-39",
+          "answer_html": "<p>N = 48 N and steady-speed friction is 42 N. Thus μ<sub>k</sub> = 42/48 = <strong>0.88</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-14",
+      "topic": "3.3",
+      "kind": "Warm-up",
+      "title": "Hooke's law: warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              98,
+              54,
+              124,
+              575,
+              169
+            ]
+          ],
+          "text": "Take three different known masses and a rubber band. Measure the length of the rubber band as it hangs from  a hook. Add the smallest mass and measure the distance the rubber band stretches. Predict how far the rubber  band will stretch with your other two masses. Test each one and record your prediction below.",
+          "id": "q-40",
+          "answer_html": "<p>Measure the unstretched hanging length L₀, then the length L₁ with mass m₁. The extension is x₁ = L₁ − L₀. If the rubber band approximately follows Hooke’s law over this range, predict <strong>x₂ = x₁(m₂/m₁)</strong> and <strong>x₃ = x₁(m₃/m₁)</strong>.</p><p>Predicted total lengths are L₀ + x₂ and L₀ + x₃. Rubber bands need not be linear, so compare your measured extensions with the predictions rather than assuming they agree.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-15",
+      "topic": "3.3",
+      "kind": "Quick check",
+      "title": "Spring constant: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              99,
+              54,
+              222,
+              575,
+              241
+            ]
+          ],
+          "text": "1.  What is the applied force on a spring when it is stretched 20 cm and the spring constant is 3.2",
+          "id": "q-41",
+          "answer_html": "<p><strong>The source omits the units of k, so a unique numerical force cannot be determined.</strong> Use F = kx with consistent length units.</p><p>If the intended k is 3.2 N/cm, F = (3.2)(20) = <strong>64 N</strong>. If k is 3.2 N/m, convert 20 cm to 0.20 m: F = (3.2)(0.20) = <strong>0.64 N</strong>. The chapter’s graphs use centimetres, suggesting the first interpretation.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              99,
+              54,
+              384,
+              575,
+              403
+            ]
+          ],
+          "text": "2.  On Figure 3.3.1  the slope of the line is the spring constant  k . What is k for the spring used in that example",
+          "id": "q-42",
+          "answer_html": "<p>From Figure 3.3.1, a 1.0 N load produces 0.75 cm extension.</p><p>k = ΔF/Δx = 1.0/0.75 = <strong>1.33 N/cm ≈ 133 N/m</strong>. The graph’s slope has units; it is not dimensionless.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              99,
+              54,
+              546,
+              575,
+              565
+            ]
+          ],
+          "text": "3.  A 2.5 kg mass stretches a spring 10 cm. How far will the spring stretch when it supports 5.0 kg",
+          "id": "q-43",
+          "answer_html": "<p>For the same spring within its elastic range, extension is proportional to weight and therefore mass.</p><p>x₂ = x₁(m₂/m₁) = (10 cm)(5.0/2.5) = <strong>20 cm</strong>.</p>"
+        }
+      ],
+      "shared": [
+        [
+          98,
+          178,
+          436,
+          576,
+          724
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-16",
+      "topic": "3.3",
+      "kind": "Investigation",
+      "title": "Investigation 3-3: another way to weigh",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              101,
+              54,
+              448.2,
+              575,
+              502.1
+            ]
+          ],
+          "text": "1.  a    What is the equation for the graph you prepared of F vs. x   Remember to include the numerical value of  your slope  with proper units. b   Is the graph linear  Is the relationship between the two variables a direct proportion    Explain.",
+          "id": "q-44",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Your force-versus-depression equation is <strong>F = kx</strong>, with k determined from the measured slope ΔF/Δx. If F is in newtons and x in centimetres, k is in N/cm. No numerical depression data are supplied.</li><li>If your graph is straight and passes through the origin within uncertainty, F is directly proportional to x. A straight line with a nonzero intercept is linear but is not a direct proportion.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              101,
+              54,
+              502.2,
+              575,
+              532
+            ]
+          ],
+          "text": "2.  Calculate the percent difference between the unknown force of gravity as determined from the graph and as  measured with a laboratory spring balance.",
+          "id": "q-45",
+          "answer_html": "<p><strong>Your two measured forces are required.</strong> If neither method is treated as the accepted reference, percent difference = 100|F<sub>graph</sub> − F<sub>balance</sub>| / [(F<sub>graph</sub> + F<sub>balance</sub>)/2].</p><p>For example, 2.00 N and 2.10 N would give 4.88%, but these example values are not your experimental result. If the balance is specified as a reference, use percent error relative to that balance reading instead.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          100,
+          54,
+          60,
+          575,
+          678
+        ],
+        [
+          101,
+          54,
+          60,
+          575,
+          434
+        ]
+      ]
+    },
+    {
+      "id": "set-17",
+      "topic": "3.3",
+      "kind": "Challenge",
+      "title": "Investigation 3-3: make a letter weigher",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              101,
+              54,
+              548.3,
+              575,
+              579
+            ]
+          ],
+          "text": "1.  Make a iletter weigherw using a strip of hacksaw blade instead of a metre stick. Calibrate it in grams instead of  newtons.  The gram is a mass unit  but most postal rate scales are based on mass instead of force of gravity.  ",
+          "id": "q-46",
+          "answer_html": "<p>Clamp the strip securely, establish its unloaded position, and add known masses to mark the corresponding deflections in grams. Use several loads to test whether the scale spacing is linear, and stay within the elastic range.</p><p>If F = kx with x in metres, then m = kx/g in kilograms, or <strong>m = 1000kx/g</strong> in grams. Check the scale with an additional known mass before using it to weigh letters.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          100,
+          54,
+          60,
+          575,
+          678
+        ],
+        [
+          101,
+          54,
+          60,
+          575,
+          434
+        ]
+      ]
+    },
+    {
+      "id": "set-18",
+      "topic": "3.3",
+      "kind": "Section review",
+      "title": "3.3 Review: Hooke's law",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              102,
+              59,
+              83.9257,
+              306,
+              164.9256
+            ]
+          ],
+          "text": "1.  Why does the spring constant not have any units",
+          "id": "q-47",
+          "answer_html": "<p><strong>The premise is a source error: the spring constant does have units.</strong> From F = kx, k = F/x, so its SI unit is <strong>N/m</strong>. On a graph with extension in centimetres, the slope is in N/cm. A coefficient of friction is dimensionless; a spring constant is not.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              102,
+              59,
+              164.9256,
+              306,
+              272.9255
+            ]
+          ],
+          "text": "2.  Using symbols ixw for stretch and iFw for force of  gravity  write a specific equation for the line in  Figure 3.3.1.",
+          "id": "q-48",
+          "answer_html": "<p>Using Figure 3.3.1, k = 1.0 N/0.75 cm ≈ 1.33 N/cm.</p><p><strong>F = (1.33 N/cm)x</strong> when x is measured in centimetres, or <strong>F = (133 N/m)x</strong> when x is in metres.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              102,
+              59,
+              272.9255,
+              306,
+              515.9253
+            ]
+          ],
+          "text": "3.  a    Use your equation to solve for the stretch of the  spring when a force of gravity of 4.0 N acts on it.  Check your solution by looking at the graph in  Figure 3.3.1. b   Use your equation to solve for the force of  gravity needed to stretch the spring 2.0 cm.  Check your solution by looking at the graph in  Figure 3.3.1.",
+          "id": "q-49",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>x = F/k = 4.0/(1.0/0.75) = <strong>3.0 cm</strong>.</li><li>F = kx = (1.0/0.75)(2.0) = <strong>2.7 N</strong> (2.67 N before rounding).</li></ol>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              102,
+              59,
+              515.9253,
+              306,
+              718
+            ]
+          ],
+          "text": "4.  In a direct proportion graph  the slope of the graph  is called the spring constant. At any point on the  line  the ratio of the stretch to the force of gravity  will equal the constant of proportionality. By looking  at the graph  find the spring constant when   F = 5.0 N.",
+          "id": "q-50",
+          "answer_html": "<p>At F = 5.0 N, the graph gives x ≈ 3.75 cm. The spring constant is <strong>k = F/x ≈ 5.0/3.75 = 1.33 N/cm ≈ 133 N/m</strong>.</p><p>The source reverses the ratio: x/F = 0.75 cm/N is the compliance, the reciprocal of the spring constant.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              102,
+              317,
+              84.1507,
+              576,
+              718
+            ]
+          ],
+          "text": "5.  A wooden beam was clamped horizontally  so  that masses could be hung from its free end. The  depression x  in cm  caused by the force of gravity   F g   in N  on the masses was measured for loads up to  100 N. The graph below summarizes all the data. Force of gravity  load   N   Enqbd ne Fq`uhsx ur- Cdoqdrrhnm 110 100 90 80 70 60 50 40 30 20 10 0   0    1.0    2.0    3.0    4.0    5.0 Depression  cm a   What is the slope of the graph  expressed in  appropriate units b   Write an equation specifically for this graph. c   According to the above graph  how much will  the beam be depressed by a load of 80.0 N d   According to the above graph  what load will  cause the beam to be depressed by 3.0 cm",
+          "id": "q-51",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Slope = (100 N − 0)/(5.0 cm − 0) = <strong>20 N/cm = 2000 N/m</strong>.</li><li><strong>F<sub>g</sub> = (20 N/cm)x</strong>, with x in centimetres.</li><li>x = 80.0/20 = <strong>4.0 cm</strong>.</li><li>F<sub>g</sub> = (20)(3.0) = <strong>60 N</strong>.</li></ol>"
+        }
+      ],
+      "shared": [
+        [
+          98,
+          178,
+          436,
+          576,
+          724
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-19",
+      "topic": "Chapter review",
+      "kind": "Chapter review",
+      "title": "Chapter 3 Review Questions",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              103,
+              44,
+              83.9257,
+              291,
+              191.9258
+            ]
+          ],
+          "text": "1.  What is the force of gravity on a 70.0 kg man  standing on Earth's surface  according to the law of  universal gravitation  Check your answer using   F = mg.",
+          "id": "q-52",
+          "answer_html": "<p>F<sub>g</sub> = (6.67 × 10⁻¹¹)(5.98 × 10²⁴)(70.0)/(6.38 × 10⁶)² = <strong>686 N downward</strong>.</p><p>Check: mg = (70.0)(9.81) = 686.7 N ≈ <strong>687 N</strong>. The small difference comes from rounded Earth data, which give g ≈ 9.799 N/kg.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              103,
+              44,
+              191.9258,
+              291,
+              313.4256
+            ]
+          ],
+          "text": "2.  The force of gravity on a black bear is 2500 N on  Earth's surface. The animal becomes so iunbearablew  that it is transported four Earth radii from the surface  of Earth. What is the force of gravity on it now",
+          "id": "q-53",
+          "answer_html": "<p>Four Earth radii <em>above the surface</em> means r = R + 4R = 5R from the centre.</p><p>F′ = F(R/r)² = 2500/5² = <strong>100 N</strong>.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              103,
+              44,
+              313.4256,
+              291,
+              461.9256
+            ]
+          ],
+          "text": "3.  Both G and g are constants. Why is G a universal  constant and not g  Under what conditions is g a  constant",
+          "id": "q-54",
+          "answer_html": "<p><strong>G</strong> is the universal constant in F = GMm/r². It is the same for all pairs of masses in this model.</p><p><strong>g = GM/r²</strong> is the local gravitational field strength, so it changes with the attracting body and distance from its centre. Treat g as approximately constant near a particular surface when the height range is small compared with that body’s radius.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              103,
+              44,
+              461.9256,
+              291,
+              577
+            ],
+            [
+              103,
+              54,
+              577,
+              575,
+              714
+            ]
+          ],
+          "text": "4.  a  Calculate the value of g at each of the locations  shown in the table below. Express each answer as a  multiple or a decimal fraction of Earth's g.  b   Would the force of gravity on you be greatest on  the Moon  on Ganymede  or on Mercury   Mass Radius On the Moon 7.34 w 10 22  kg 1.74 w 10 6  m On planet Mercury 3.28 w 10 23  kg 2.57 w 10 6  m On Ganymede 1.54 w 10 23  kg 2.64 w 10 6  m On the Sun's surface  1.98 w 10 30  kg 6.95 w 10 8  m Value of g  One of Jupiter's moons",
+          "id": "q-55",
+          "answer_html": "<p>Use g = GM/R² and divide each result by Earth’s g = 9.81 N/kg.</p><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Location</th><th scope=\"col\">g (N/kg)</th><th scope=\"col\">g / gEarth</th></tr></thead><tbody><tr><td>Moon</td><td>1.62</td><td>0.165</td></tr><tr><td>Mercury</td><td>3.31</td><td>0.338</td></tr><tr><td>Ganymede</td><td>1.47</td><td>0.150</td></tr><tr><td>Sun’s surface</td><td>273</td><td>27.9</td></tr></tbody></table></div><p>Among the Moon, Ganymede, and Mercury, your weight is greatest on <strong>Mercury</strong>, since F<sub>g</sub> = mg.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              103,
+              302,
+              84.1509,
+              576,
+              393.943081
+            ]
+          ],
+          "text": "5.  What is the force of gravitational attraction between  a 75 kg boy and a 60.0 kg girl a   when they are 2.0 m apart   b   when they are only 1.0 m apart",
+          "id": "q-56",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>At 2.0 m: F = (6.67 × 10⁻¹¹)(75)(60.0)/2.0² = <strong>7.5 × 10⁻⁸ N</strong>.</li><li>At 1.0 m: F = (6.67 × 10⁻¹¹)(75)(60.0)/1.0² = <strong>3.0 × 10⁻⁷ N</strong>, four times greater.</li></ol><p>The simple calculation treats the stated distances as centre-to-centre distances and the people as point masses. Each person experiences the same force magnitude toward the other.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              103,
+              302,
+              393.943081,
+              576,
+              577
+            ]
+          ],
+          "text": "6.  Planet Mars has a mass of 6.4 w 10 23  kg  and you  have a mass of 5.0 w 10 1  kg. What force of gravity is  exerted between you and Mars  if you are standing  on its surface  ",
+          "id": "q-57",
+          "answer_html": "<p><strong>The question supplies Mars’s mass but omits its radius.</strong> Using R = 3.43 × 10⁶ m from section 3.1 Review question 8:</p><p>F = (6.67 × 10⁻¹¹)(6.4 × 10²³)(5.0 × 10¹)/(3.43 × 10⁶)² = 181.4 N ≈ <strong>1.8 × 10² N toward Mars’s centre</strong>. Without a radius or local g, the numerical force is undetermined.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              104,
+              59,
+              49.6507,
+              306,
+              211.6507
+            ]
+          ],
+          "text": "7.  To slide a metal puck across a greased sheet of metal  at constant speed requires a force of 0.525 N. If the  force of gravity on the puck is 5.00 N  what is the  coefficient of friction between the puck and the  greased metal",
+          "id": "q-58",
+          "answer_html": "<p>At constant speed, F<sub>fr</sub> = 0.525 N. For a horizontal pull, N = 5.00 N.</p><p>μ<sub>k</sub> = 0.525/5.00 = <strong>0.105</strong>.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              104,
+              59,
+              211.6507,
+              306,
+              522.1508
+            ]
+          ],
+          "text": "8.  a    The force of gravity on a wooden crate is 560 N.  It can be pushed along a certain floor at steady  speed if a horizontal force of 224 N is applied to  it. How much horizontal force will be needed to  move a stack of two crates at the same steady  speed   b   What force will be needed if the two crates are  not stacked but tied to one another side by side",
+          "id": "q-59",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Each crate contributes the same weight. Stacking two doubles N, so the required force is <strong>2(224) = 448 N</strong>.</li><li>Side by side, each crate still contributes 224 N of friction. Total force is <strong>448 N</strong>. The greater apparent contact area does not change the model’s result.</li></ol>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              104,
+              59,
+              522.1508,
+              306,
+              718
+            ]
+          ],
+          "text": "9.  The coefficient of kinetic friction between a rubber  disc and the ice is 0.0050. If the force of friction is  0.25 N  what is the force of gravity on the rubber  disc",
+          "id": "q-60",
+          "answer_html": "<p>For horizontal sliding, F<sub>g</sub> = N = F<sub>fr</sub>/μ<sub>k</sub> = 0.25/0.0050 = <strong>50 N</strong>.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              104,
+              317,
+              49.7509,
+              576,
+              718
+            ]
+          ],
+          "text": "10.  A student added masses to the end of a hanging  spring  then measured the amount of extension  or  stretch  caused by the force of gravity on each mass.  The following readings were obtained: Mass  kg   0.200  0.400  0.600  0.800  1.000 Force of gravity  N   1.96  3.92  5.88  7.84  9.80 Extension  cm   0.47  0.93  1.41  1.89  2.35 a   Plot a graph with force of gravity  F g  on the  y-axis and extension  x  on the x-axis. Determine  the slope of the graph in appropriate units. Write  an equation describing how the force of gravity  varies with the extension. b   Use both your graph and your equation to figure  out the force of gravity that would stretch the  spring 1.50 cm. c   Use both your graph and your equation to figure  out how much stretch would occur in the spring  when the force of gravity is 6.50 N.",
+          "id": "q-61",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Plot the five (extension, force) data points. They lie close to a line through the origin. A fit constrained through the origin gives k = ΣxF/Σx² ≈ <strong>4.17 N/cm = 417 N/m</strong>. Thus <strong>F ≈ (4.17 N/cm)x</strong>.</li><li>At x = 1.50 cm, F ≈ (4.17)(1.50) = <strong>6.25 N</strong>.</li><li>For F = 6.50 N, x ≈ 6.50/4.17 = <strong>1.56 cm</strong>.</li></ol><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"Force versus spring extension\"><title>Force versus spring extension</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M130 54V226\" stroke=\"#dce4e1\"/><text x=\"130\" y=\"246\" text-anchor=\"middle\">0.5</text><path d=\"M198 54V226\" stroke=\"#dce4e1\"/><text x=\"198\" y=\"246\" text-anchor=\"middle\">1</text><path d=\"M266 54V226\" stroke=\"#dce4e1\"/><text x=\"266\" y=\"246\" text-anchor=\"middle\">1.5</text><path d=\"M334 54V226\" stroke=\"#dce4e1\"/><text x=\"334\" y=\"246\" text-anchor=\"middle\">2</text><path d=\"M402 54V226\" stroke=\"#dce4e1\"/><text x=\"402\" y=\"246\" text-anchor=\"middle\">2.5</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">0</text><path d=\"M62 191.6H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"195.6\" text-anchor=\"end\">2</text><path d=\"M62 157.2H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"161.2\" text-anchor=\"end\">4</text><path d=\"M62 122.8H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"126.8\" text-anchor=\"end\">6</text><path d=\"M62 88.4H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"92.4\" text-anchor=\"end\">8</text><path d=\"M62 54H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"58\" text-anchor=\"end\">10</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><polyline points=\"125.92,192.29 188.48,158.58 253.76,124.86 319.04,91.15 381.60,57.44\" fill=\"none\" stroke=\"#bc493e\" stroke-width=\"2.5\"/><circle cx=\"125.92\" cy=\"192.288\" r=\"3.5\" fill=\"#bc493e\"/><circle cx=\"188.48\" cy=\"158.576\" r=\"3.5\" fill=\"#bc493e\"/><circle cx=\"253.76\" cy=\"124.864\" r=\"3.5\" fill=\"#bc493e\"/><circle cx=\"319.04\" cy=\"91.152\" r=\"3.5\" fill=\"#bc493e\"/><circle cx=\"381.6\" cy=\"57.44\" r=\"3.5\" fill=\"#bc493e\"/><polyline points=\"62.00,226.00 388.40,54.00\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><circle cx=\"62\" cy=\"226\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"388.4\" cy=\"54\" r=\"3.5\" fill=\"#096a70\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">Extension (cm)</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">Force (N)</text></svg><figcaption>Force versus spring extension. <span style=\"color:#bc493e\">Measured points</span>; <span style=\"color:#096a70\">F ≈ 4.17x</span>.</figcaption></figure><p>Slightly different hand-drawn best-fit slopes and corresponding estimates are reasonable.</p>"
+        }
+      ],
+      "shared": [
+        [
+          88,
+          54,
+          84,
+          575,
+          127
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-20",
+      "topic": "Extra practice",
+      "kind": "Extra practice",
+      "title": "Chapter 3 Extra Practice",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              105,
+              44,
+              87.9257,
+              291,
+              107.4256
+            ]
+          ],
+          "text": "1.  In what metric unit is mass measured",
+          "id": "q-62",
+          "answer_html": "<p>The SI unit of mass is the <strong>kilogram (kg)</strong>. Grams are also metric mass units, with 1000 g = 1 kg.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              105,
+              44,
+              107.4256,
+              291,
+              198.4258
+            ]
+          ],
+          "text": "2.  a    What is the force of gravity on a 150 kg statue at  Earth's surface   b   If the gravitation field strength on the Moon  is one-sixth that of Earth  what force of gravity  would be exerted on the statue on the Moon's  surface",
+          "id": "q-63",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Earth: F<sub>g</sub> = (150)(9.81) = 1471.5 N ≈ <strong>1.5 × 10³ N</strong>.</li><li>Using the stated one-sixth factor: F<sub>Moon</sub> = 1471.5/6 = 245.25 N ≈ <strong>2.5 × 10² N</strong>.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              105,
+              44,
+              198.4258,
+              291,
+              271.9257
+            ]
+          ],
+          "text": "3.  On the Moon  two stowaways on a Moon probe  vehicle ran from the vehicle on landing  and fell off a  Moon cliff at the same instant. One had a parachute  and the other did not. Which stowaway hit the  ground at the base of the Moon cliff first",
+          "id": "q-64",
+          "answer_html": "<p>They hit together if they start with the same vertical velocity and height. The Moon has negligible atmosphere, so the parachute provides essentially no aerodynamic slowing. Both have the same free-fall acceleration.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              105,
+              44,
+              271.9257,
+              291,
+              358.218081
+            ]
+          ],
+          "text": "4.  At Earth's surface  a package is a distance of one  Earth radius from the centre of Earth. The force of  gravity on a particular space payload is 1440 N. If  this package is moved to an orbit that is four Earth  radii from the centre of Earth  what will the force of  gravity on the package be",
+          "id": "q-65",
+          "answer_html": "<p>This time the stated distance is <em>four radii from the centre</em>: r = 4R.</p><p>F′ = 1440(R/4R)² = 1440/16 = <strong>90 N</strong>.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              105,
+              44,
+              358.218081,
+              291,
+              467.4257
+            ]
+          ],
+          "text": "5.  a    The mass of the Moon is 7.3 ¨ 10 22 kg and its  radius is 1 785 000 m. What is the strength of the  gravitational field on the surface of the Moon b   What would be the weight of an 80 kg person  on the Moon   c   What would be the mass of the person on the  Moon",
+          "id": "q-66",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>g = (6.67 × 10⁻¹¹)(7.3 × 10²²)/(1.785 × 10⁶)² = 1.528 N/kg ≈ <strong>1.5 N/kg</strong>.</li><li>Weight = mg ≈ (80)(1.528) = 122 N ≈ <strong>1.2 × 10² N</strong>.</li><li>The mass remains <strong>80 kg</strong>.</li></ol>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              105,
+              44,
+              467.4257,
+              291,
+              513.9257
+            ]
+          ],
+          "text": "6.  Two bowling balls each have a mass of 5.8 kg. The  centres of the two balls are 35.5 cm apart. What  gravitational force do they exert on each other",
+          "id": "q-67",
+          "answer_html": "<p>Convert 35.5 cm to 0.355 m. F = Gm²/r² = (6.67 × 10⁻¹¹)(5.8)²/(0.355)² = <strong>1.8 × 10⁻⁸ N</strong>. Each ball attracts the other with this magnitude.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              105,
+              44,
+              513.9257,
+              291,
+              560.4257
+            ]
+          ],
+          "text": "7.  Two electrons that are 1.0 m apart exert a force of  5.5 ¨ 10 o71  N on each other. What is the mass of each  electron",
+          "id": "q-68",
+          "answer_html": "<p>For identical masses, F = Gm²/r², so m = √(Fr²/G).</p><p>m = √[(5.5 × 10⁻⁷¹)(1.0)²/(6.67 × 10⁻¹¹)] = <strong>9.1 × 10⁻³¹ kg</strong>. This is their gravitational attraction; the much stronger electrical force is not the force being calculated.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              105,
+              44,
+              560.4257,
+              291,
+              620.4257
+            ]
+          ],
+          "text": "8.  Calculate the gravitational force between the Sun  and Pluto. The mass of the Sun is 2 w 10 30  kg  and the  mass of Pluto is 6 w 10 23  kg. Pluto is 6 w 10 12  m away  from the Sun.",
+          "id": "q-69",
+          "answer_html": "<p>Use the values supplied in the exercise: F = (6.67 × 10⁻¹¹)(2 × 10³⁰)(6 × 10²³)/(6 × 10¹²)² = <strong>2 × 10¹⁸ N</strong> (2.22 × 10¹⁸ N before rounding).</p><p>The answer follows the exercise’s stated Pluto mass.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              105,
+              44,
+              620.4257,
+              291,
+              718
+            ]
+          ],
+          "text": "9.  To slide a 40 N box at steady speed along a smooth  bench top  a pulling force of 2.5 N is needed. This  force is equal in magnitude to the force of friction.  Now an 80 N box is placed on top of the 40 N box.  What force must be exerted to slide the combined  boxes at steady speed across the same bench  surface  ",
+          "id": "q-70",
+          "answer_html": "<p>For the original box, μ<sub>k</sub> = 2.5/40 = 0.0625. The combined weight is 40 + 80 = 120 N.</p><p>F = μ<sub>k</sub>N = (0.0625)(120) = <strong>7.5 N</strong>.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              105,
+              302,
+              84.1504,
+              576,
+              130.6503
+            ]
+          ],
+          "text": "10.  If the friction force is 2.5 N  when a 40 N object is  pulled across a bench  what is the coefficient of  kinetic friction",
+          "id": "q-71",
+          "answer_html": "<p>μ<sub>k</sub> = F<sub>fr</sub>/N = 2.5/40 = 0.0625 ≈ <strong>0.063</strong>.</p>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              105,
+              302,
+              130.6503,
+              576,
+              204.1502
+            ]
+          ],
+          "text": "11.  A teacher is moving desks around in the classroom.  She pushes one desk with a force of 157 N. The  frictional force opposing the motion is 123 N. If the  desk has a mass of 5.0 kg  what is the acceleration of  the desk",
+          "id": "q-72",
+          "answer_html": "<p>F<sub>net</sub> = 157 − 123 = 34 N in the pushing direction.</p><p>a = F<sub>net</sub>/m = 34/5.0 = <strong>6.8 m/s²</strong> in that direction.</p>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              105,
+              302,
+              204.1502,
+              576,
+              291.1501
+            ]
+          ],
+          "text": "12.  A friend's car has run out of gas and four of you  are pushing the car to the gas station at a constant  speed of 4.5 km/h. If two of you are pushing with a  force of 300 N and the other two are pushing with a  force of 425 N  what is the force of friction between  the car tires and the road",
+          "id": "q-73",
+          "answer_html": "<p>Total push = 2(300) + 2(425) = 1450 N. Constant speed means zero net force.</p><p>The total resisting force described as friction is therefore <strong>1.45 × 10³ N opposite the motion</strong>.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              105,
+              302,
+              291.1501,
+              576,
+              409.1502
+            ]
+          ],
+          "text": "13.  a    A wooden block is placed on a table. Using a  spring scale you find a force of 16.0 N is required  to keep the 45.0 N block moving at a constant  speed. What is the coefficient of kinetic friction  between the block and the table b   If a second block of mass 1.8 kg is placed on the  first block  what force will be required to keep  the two blocks moving at a constant velocity",
+          "id": "q-74",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>μ<sub>k</sub> = 16.0/45.0 = <strong>0.356</strong>.</li><li>The upper block adds (1.8)(9.81) = 17.658 N of weight. N<sub>total</sub> = 45.0 + 17.658 = 62.658 N. F = (16.0/45.0)(62.658) = <strong>22.3 N</strong>, assuming the same lower block-table interface.</li></ol>"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              105,
+              302,
+              409.1502,
+              576,
+              442.1502
+            ]
+          ],
+          "text": "14.  What happens to the coefficient of friction between  a load and the floor if the load is tripled",
+          "id": "q-75",
+          "answer_html": "<p>The coefficient stays <strong>unchanged</strong> if the surface pair and conditions stay the same. Tripling the load triples N and therefore the friction force, not μ.</p>"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              105,
+              302,
+              442.1502,
+              576,
+              488.6502
+            ]
+          ],
+          "text": "15.  What single factor has the least effect on the  amount of friction between two surfaces sliding  over one another",
+          "id": "q-76",
+          "answer_html": "<p>The <strong>apparent area of contact</strong> has the least effect in the dry sliding-friction model used in this chapter, with weight and surface materials held fixed.</p>"
+        },
+        {
+          "label": "16",
+          "boxes": [
+            [
+              105,
+              302,
+              488.6502,
+              576,
+              521.6501
+            ]
+          ],
+          "text": "16.  A 2 kg mass stretches a spring 20 cm. What mass will  stretch the spring 35 cm",
+          "id": "q-77",
+          "answer_html": "<p>For the same spring, m/x is constant: m₂ = m₁x₂/x₁ = (2 kg)(35 cm)/(20 cm) = <strong>3.5 kg</strong>.</p>"
+        },
+        {
+          "label": "17",
+          "boxes": [
+            [
+              105,
+              302,
+              521.6501,
+              576,
+              554.6501
+            ]
+          ],
+          "text": "17.  A force of 12 N stretches a spring 3.0 cm. How much  stretch will occur with an applied force of 27.0 cm",
+          "id": "q-78",
+          "answer_html": "<p><strong>The printed “applied force of 27.0 cm” is dimensionally invalid.</strong> If the intended force is 27.0 N, then k = 12 N/3.0 cm = 4.0 N/cm and x = 27.0/4.0 = <strong>6.75 cm ≈ 6.8 cm</strong>.</p><p>If instead the intended question asks for the force required to stretch the spring 27.0 cm, F = (4.0 N/cm)(27.0 cm) = <strong>108 N</strong>.</p>"
+        },
+        {
+          "label": "18",
+          "boxes": [
+            [
+              105,
+              302,
+              554.6501,
+              576,
+              718
+            ]
+          ],
+          "text": "18.  a    Create a graph that illustrates a spring constant  of 1.5. You have 100 g  200 g  400 g  500 g  and  1000 g masses. b   Using your graph  how much would the spring  stretch if you added a 300 g mass c   Using your graph  how much would the spring  stretch if you added a 1200 g mass",
+          "id": "q-79",
+          "answer_html": "<p><strong>The source omits the units of the spring constant.</strong> Taking k = 1.5 N/cm, consistent with the chapter’s centimetre graphs:</p><ol class=\"answer-parts\" type=\"a\"><li>Plot F = (1.5 N/cm)x, with x in centimetres and F in newtons. The corresponding points are in the table below.</li><li>For 300 g: F = (0.300)(9.81) = 2.943 N; x = 2.943/1.5 = <strong>1.96 cm</strong>.</li><li>For 1200 g: F = (1.200)(9.81) = 11.772 N; x = 11.772/1.5 = <strong>7.85 cm</strong>. This extends beyond the largest calibration mass and assumes the spring remains linear.</li></ol><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Mass (g)</th><th scope=\"col\">Force (N)</th><th scope=\"col\">Stretch (cm)</th></tr></thead><tbody><tr><td>100</td><td>0.981</td><td>0.654</td></tr><tr><td>200</td><td>1.962</td><td>1.308</td></tr><tr><td>400</td><td>3.924</td><td>2.616</td></tr><tr><td>500</td><td>4.905</td><td>3.27</td></tr><tr><td>1000</td><td>9.81</td><td>6.54</td></tr></tbody></table></div><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"Spring with k = 1.5 N/cm\"><title>Spring with k = 1.5 N/cm</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M147 54V226\" stroke=\"#dce4e1\"/><text x=\"147\" y=\"246\" text-anchor=\"middle\">2</text><path d=\"M232 54V226\" stroke=\"#dce4e1\"/><text x=\"232\" y=\"246\" text-anchor=\"middle\">4</text><path d=\"M317 54V226\" stroke=\"#dce4e1\"/><text x=\"317\" y=\"246\" text-anchor=\"middle\">6</text><path d=\"M402 54V226\" stroke=\"#dce4e1\"/><text x=\"402\" y=\"246\" text-anchor=\"middle\">8</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">0</text><path d=\"M62 183H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"187\" text-anchor=\"end\">3</text><path d=\"M62 140H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"144\" text-anchor=\"end\">6</text><path d=\"M62 97H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"101\" text-anchor=\"end\">9</text><path d=\"M62 54H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"58\" text-anchor=\"end\">12</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><polyline points=\"62.00,226.00 402.00,54.00\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">Stretch (cm)</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">Force (N)</text></svg><figcaption>Spring with k = 1.5 N/cm. <span style=\"color:#096a70\">F = 1.5x</span>.</figcaption></figure><p>If k was intended to be 1.5 N/m, use metres instead: the 300 g and 1200 g stretches become 1.96 m and 7.85 m. Units must be specified to choose between these interpretations.</p>"
+        }
+      ],
+      "shared": [
+        [
+          88,
+          54,
+          84,
+          575,
+          127
+        ]
+      ],
+      "context": []
+    }
+  ]
+}
