@@ -13,7 +13,9 @@
   $('homework-instructions').value=String(incoming?params.get('instructions')||'':draft.instructions||'').slice(0,2000);
   $('homework-answers').checked=incoming?params.get('answers')==='1':draft.answers===true;
   const aiPrompt=$('homework-ai-prompt'),criteria=()=>aiPrompt?.value.trim().slice(0,4000)||'';
+  const refinePrompt=$('homework-refine-prompt'),refineCriteria=()=>refinePrompt?.value.trim().slice(0,4000)||'';
   if(aiPrompt)aiPrompt.value=String(draft.aiPrompt||'').slice(0,4000);
+  if(refinePrompt)refinePrompt.value=String(draft.refinePrompt||'').slice(0,4000);
   const sectionRules=[...topic.options].filter(option=>option.value).map((option,index)=>{
     const row=document.createElement('tr'),heading=document.createElement('th'),cell=document.createElement('td'),count=document.createElement('td'),input=document.createElement('input'),label=document.createElement('label');
     heading.scope='row';label.textContent=option.textContent;input.id=`homework-percent-${index}`;label.htmlFor=input.id;heading.append(label);
@@ -25,9 +27,9 @@
   $('homework-parity').value=['all','odd','even'].includes(draft.parity)?draft.parity:'all';
   $('homework-sampling-order').value=['first','ai'].includes(draft.samplingOrder)?draft.samplingOrder:'random';
   function cancelAI(message='AI selection canceled. Your selection is unchanged.'){
-    if(!aiRequest)return;aiRequest.controller.abort();clearTimeout(aiRequest.timer);aiRequest=null;$('homework-ai-status').textContent=message;renderSampling();
+    if(!aiRequest)return;const status=aiRequest.kind==='refine'?$('homework-refine-status'):$('homework-ai-status');aiRequest.controller.abort();clearTimeout(aiRequest.timer);aiRequest=null;status.textContent=message;renderSampling();
   }
-  function selectionChanged(){const pending=!!aiRequest;cancelAI('Settings or selection changed. Run AI selection again when ready.');if(!pending)$('homework-ai-status').textContent='';$('homework-ai-results').hidden=true;$('homework-ai-list').replaceChildren();}
+  function selectionChanged(){const pending=!!aiRequest;cancelAI('Settings or selection changed. Run AI selection again when ready.');if(!pending){$('homework-ai-status').textContent='';if($('homework-refine-status'))$('homework-refine-status').textContent='';}$('homework-ai-results').hidden=true;$('homework-ai-list').replaceChildren();if($('homework-refine-results')){$('homework-refine-results').hidden=true;$('homework-refine-list').replaceChildren();}}
   function matchesFilters(q){const set=q.closest('.question-set');return (!topic.value||set.dataset.topic===topic.value)&&(!kind.value||set.dataset.kind===kind.value)&&q.dataset.search.includes(search.value.trim().toLowerCase());}
   function matchesNumber(q){
     if($('homework-parity').value==='all')return true;
@@ -44,10 +46,12 @@
     $('apply-section-percentages').textContent=$('homework-sampling-order').value==='ai'?'Apply AI percentages':'Apply section percentages';
     $('cancel-homework-ai').hidden=!aiRequest;
     $('select-matching-numbers').disabled=!plan.some(rule=>rule.candidates.length);
+    if($('refine-homework-ai')){$('refine-homework-ai').disabled=!!aiRequest||!selected.size||!refineCriteria();$('refine-homework-ai').textContent=aiRequest?.kind==='refine'?'AI: filtering…':'AI: filter selected questions';}
+    if($('cancel-homework-refine'))$('cancel-homework-refine').hidden=aiRequest?.kind!=='refine';
   }
   const orderedIds=()=>qs.filter(q=>selected.has(q.id)).map(q=>q.id);
   const title=()=>$('homework-name').value.trim()||'Kinematics homework';
-  function saveDraft(){try{localStorage.setItem(DRAFT,JSON.stringify({ids:orderedIds(),title:title(),instructions:$('homework-instructions').value,answers:$('homework-answers').checked,percentages:Object.fromEntries(sectionRules.filter(rule=>rule.input.checkValidity()).map(rule=>[rule.topic,Number(rule.input.value)])),parity:$('homework-parity').value,samplingOrder:$('homework-sampling-order').value,...(aiPrompt?{aiPrompt:aiPrompt.value.slice(0,4000)}:{})}));}catch{}}
+  function saveDraft(){try{localStorage.setItem(DRAFT,JSON.stringify({ids:orderedIds(),title:title(),instructions:$('homework-instructions').value,answers:$('homework-answers').checked,percentages:Object.fromEntries(sectionRules.filter(rule=>rule.input.checkValidity()).map(rule=>[rule.topic,Number(rule.input.value)])),parity:$('homework-parity').value,samplingOrder:$('homework-sampling-order').value,...(aiPrompt?{aiPrompt:aiPrompt.value.slice(0,4000)}:{}),...(refinePrompt?{refinePrompt:refinePrompt.value.slice(0,4000)}:{})}));}catch{}}
   function resetFilters(){search.value='';topic.value='';kind.value='';}
   function homeworkURL(){
     const base=location.protocol==='file:'?'https://cghuisunshine.github.io/Physics11/bc-kinematics-questions.html':location.href;
@@ -130,8 +134,26 @@
   for(const rule of sectionRules){rule.input.required=true;rule.input.addEventListener('input',()=>{selectionChanged();saveDraft();renderSampling();});}
   for(const id of ['homework-parity','homework-sampling-order'])$(id).addEventListener('input',()=>{selectionChanged();saveDraft();renderSampling();});
   aiPrompt?.addEventListener('input',()=>{$('homework-sampling-order').value='ai';selectionChanged();saveDraft();renderSampling();});
+  refinePrompt?.addEventListener('input',()=>{if(aiRequest?.kind==='refine')cancelAI('Criteria changed. Run AI filtering again when ready.');saveDraft();renderSampling();});
   $('select-matching-numbers').onclick=()=>{for(const q of qs)if(matchesFilters(q)&&matchesNumber(q))selected.add(q.id);changed();};
   $('cancel-homework-ai').onclick=()=>cancelAI();
+  if($('cancel-homework-refine'))$('cancel-homework-refine').onclick=()=>cancelAI('AI filtering canceled. Your selection is unchanged.');
+  if($('refine-homework-ai'))$('refine-homework-ai').onclick=async()=>{
+    const selectionCriteria=refineCriteria();if(!selectionCriteria||!selected.size||aiRequest)return;
+    const candidates=qs.filter(q=>selected.has(q.id)),plan=[{topic:'current homework selection',candidates,amount:candidates.length}],status=$('homework-refine-status');
+    selectionChanged();
+    const request={controller:new AbortController(),timer:null,kind:'refine'};aiRequest=request;renderSampling();status.textContent='Preparing AI to review the selected questions…';
+    request.timer=setTimeout(()=>cancelAI('AI filtering timed out. Your selection is unchanged; try again.'),360000);
+    try{
+      const result=await window.HomeworkDifficultyAI.choose(plan,{signal:request.controller.signal,criteria:selectionCriteria,filterMode:true,onProgress:message=>{if(aiRequest===request)status.textContent=message;}});
+      if(aiRequest!==request||request.controller.signal.aborted)return;
+      clearTimeout(request.timer);aiRequest=null;selected.clear();for(const item of result.selected)selected.add(item.id);homeworkView=true;resetFilters();changed();
+      for(const item of result.selected){const q=$(item.id),entry=document.createElement('li'),link=document.createElement('a');link.href='#'+item.id;link.textContent=q.closest('.question-set').querySelector('h2').textContent+' — '+q.querySelector('.question-top a').textContent;entry.append(link,document.createTextNode(': '+item.reason));$('homework-refine-list').append(entry);}
+      $('homework-refine-results').hidden=!result.selected.length;
+      status.textContent=`AI kept ${result.selected.length} of ${candidates.length} selected questions and removed ${candidates.length-result.selected.length}. ${result.selected.length?'Only the remaining homework questions are shown below.':'Your selection is now empty.'}`;
+    }catch(error){if(aiRequest===request)status.textContent=error.name==='AbortError'?'AI filtering canceled. Your selection is unchanged.':(error instanceof TypeError?'Could not reach the AI service. Check your connection and try again.':error.message)+' Your selection is unchanged.';}
+    finally{clearTimeout(request.timer);if(aiRequest===request){aiRequest=null;renderSampling();}}
+  };
   $('choose-hardest-ai').onclick=()=>{
     if(!validPercentages()||aiRequest||!qs.some(matchesFilters))return;
     $('homework-sampling-order').value='ai';selectionChanged();saveDraft();renderSampling();
