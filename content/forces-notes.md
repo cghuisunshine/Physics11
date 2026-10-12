@@ -201,19 +201,27 @@ When a static coefficient μ_s is supplied, the limiting friction is F_static,ma
 
 ## 7 Investigating friction
 ### Investigation 3-2, Part 1: friction and weight
-Measure the pull needed to keep the block sliding steadily while changing its load. The steady pull estimates kinetic friction. A brief maximum at the start of motion is associated with overcoming static friction, not the steady sliding value.
+In Figure 3.2.3, the vertical spring balance on the left measures each block's weight. The four setups on the right show a horizontal balance pulling stacks of one, two, three, and four blocks. Add blocks on top of the same bottom block: **total weight changes while the contact area stays the same**.
+
+Measure the pull needed to keep each stack sliding steadily. The steady pull estimates kinetic friction. A brief maximum at the start of motion is associated with overcoming static friction, not the steady sliding value.
 
 Include both the block and any added load when finding the normal force. For the level, horizontally pulled setup, F_N equals their total weight. Graph **F_fr vertically against F_N horizontally**:
 ```
 slope = ΔF_fr / ΔF_N = μ_k
 ```
-The slope has no units because it is a ratio of two forces. Repeat measurements and use a best-fit line rather than selecting a single reading.
+The textbook labels the horizontal axis F_g; in this level setup, F_N = F_g. The slope has no units because it is a ratio of two forces. Repeat measurements and use a best-fit line rather than selecting a single reading.
 
 ### Changing the surface
 Keep load and measurement method comparable while changing the contacting surfaces. A different slope indicates a different coefficient. In a fair comparison, do not change both the load and surface condition without accounting for their separate effects.
 
 ### Investigation 3-2, Part 2: contact area
-Keep the same four blocks and total load, but arrange them so that one, two, three, then four block faces contact the bench. This changes the apparent contact area to A, 2A, 3A, and 4A while keeping total weight fixed. Compare steady sliding forces. Similar readings support the approximate independence of dry friction from apparent contact area.
+Figure 3.2.4 uses the **same four blocks in every arrangement**. Read the diagrams as follows:
+- **(a):** Four blocks stacked; one bottom face touches the bench, giving area A.
+- **(b):** Two stacks of two blocks; two bottom faces touch the bench, giving area 2A.
+- **(c):** Three bottom blocks with the fourth on top; three faces touch the bench, giving area 3A.
+- **(d):** All four blocks side by side; four faces touch the bench, giving area 4A.
+
+Here **contact area changes while total weight stays the same**. Use the horizontal spring balance to compare steady sliding forces. Similar readings support the approximate independence of dry friction from apparent contact area.
 
 ### Sources of experimental uncertainty
 An angled pull changes the normal force; a changing speed makes the pulling force an unreliable estimate of friction alone. An unzeroed force meter, surface contamination, and uneven motion can also affect results. Describe how your method controlled these effects.

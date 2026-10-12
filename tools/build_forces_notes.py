@@ -41,6 +41,13 @@ EXTRA_CSS = '''
 .table-wrap{overflow-x:auto}.reference-table{width:100%;border-collapse:collapse;font-size:14px;margin:16px 0}
 .reference-table th,.reference-table td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line)}
 .reference-table th{background:var(--soft)}.notes-links{display:flex;gap:20px;flex-wrap:wrap}
+.layout>main,.sidebar{min-width:0}
+.investigation-pair{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:24px;align-items:start;margin:18px 0 24px}
+.investigation-pair .diagram{margin:0;padding:12px}.investigation-explanation>p:first-child{margin-top:0}
+.investigation-explanation pre{font-size:15px;padding:14px 16px}
+@media(max-width:1050px){.investigation-pair{grid-template-columns:minmax(0,1fr);gap:18px}}
+@media(max-width:800px){.layout{grid-template-columns:minmax(0,1fr)}}
+@media print{.investigation-pair{display:block}.investigation-pair .diagram{margin-bottom:16px}}
 @media print{.practice-question-meta a{display:none}.context{display:block}.context>summary{display:none}.practice-question{break-inside:auto}.practice-question-meta{break-after:avoid}.question-image img{break-inside:avoid}.table-wrap{overflow:visible}}
 '''
 
@@ -97,6 +104,14 @@ figures = {
         str(SOURCE.select_one('#set-15 .shared img')) +
         '<figcaption>Figure 3.3.1, textbook p. 93. The force-versus-extension slope is the spring constant; the horizontal axis is in centimetres.</figcaption></figure>'),
 }
+investigation_figures = [
+    ('Investigation 3-2, Part 1: friction and weight', source_diagram(94, (88, 494, 394, 678),
+        'Figure 3.2.3: a vertical spring balance weighs a block, then a horizontal spring balance pulls stacks of one, two, three, and four blocks.',
+        'Figure 3.2.3, textbook p. 89. First weigh the blocks vertically. Then pull one to four stacked blocks horizontally: total weight increases while the bottom contact area stays the same.')),
+    ('Investigation 3-2, Part 2: contact area', source_diagram(95, (72, 488, 394, 650),
+        'Figure 3.2.4: the same four blocks are arranged with one, two, three, and four bottom faces contacting the bench, labelled a, b, c, and d.',
+        'Figure 3.2.4, textbook p. 90. Arrangements (a), (b), (c), and (d) have contact areas A, 2A, 3A, and 4A. All use the same four blocks, so total weight is unchanged.')),
+]
 COEFFICIENTS = [('Wood on wood', '0.25'), ('Steel on steel', '0.50'), ('Lubricated steel on steel', '0.10'),
     ('Rubber on dry asphalt', '0.40'), ('Rubber on wet asphalt', '0.20'), ('Rubber on ice', '0.005'), ('Steel on ice', '0.01')]
 table = '<div class="table-wrap"><table class="reference-table"><caption>Table 3.2.1, textbook p. 87: approximate kinetic coefficients</caption><thead><tr><th scope="col">Surfaces in contact</th><th scope="col">μ_k</th></tr></thead><tbody>' + ''.join(
@@ -142,6 +157,13 @@ for number, (raw, (refs, groups)) in enumerate(zip(sections, TOPICS), 1):
         body = body.replace(anchor, anchor + figure, 1)
     if number == 6:
         body = body.replace('<h3>Approximate surface coefficients</h3>', '<h3>Approximate surface coefficients</h3>' + table, 1)
+    if number == 7:
+        for heading, figure in investigation_figures:
+            anchor = '<h3>' + html.escape(heading) + '</h3>'
+            pattern = re.escape(anchor) + r'\s*(.*?)(?=\s*<h3>|\Z)'
+            body, matches = re.subn(pattern, lambda match: anchor + '<div class="investigation-pair">' + figure +
+                '<div class="investigation-explanation">' + match[1] + '</div></div>', body, count=1, flags=re.S)
+            assert matches == 1, heading
     source_text = ' '.join(q['data-search'] for g in groups for q in SOURCE.select(f'#set-{g} .question'))
     search_text = ' '.join((BeautifulSoup(raw, 'html.parser').get_text(' ') + ' ' + source_text).lower().split())
     body += ''.join(practice(g) for g in groups)
