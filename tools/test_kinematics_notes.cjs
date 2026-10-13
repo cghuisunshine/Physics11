@@ -27,6 +27,7 @@ const dom=new JSDOM(html,{url:`https://physics.test/${file}`,runScripts:'dangero
 try{
   const w=dom.window,d=w.document,$=id=>d.getElementById(id),cards=[...d.querySelectorAll('.section-card')];
   const visible=()=>cards.filter(c=>!c.hidden).map(c=>c.id),button=mode=>d.querySelector(`.mode-control button[data-mode="${mode}"]`);
+  const selectMode=mode=>{if($('notes-menu').hidden)$('notes-menu-toggle').click();button(mode).click();};
   const key=(target,value)=>target.dispatchEvent(new w.KeyboardEvent('keydown',{key:value,bubbles:true,cancelable:true}));
   assert.deepEqual(errors,[]);assert.equal(visible().length,count);
   const active=()=>d.querySelector('.sidebar nav a.active')?.getAttribute('href');
@@ -44,31 +45,31 @@ try{
   assert.equal(navigationToggle.getAttribute('aria-expanded'),'true');
   const expandedTopics=visible();
   navigationToggle.click();
-  assert.ok(sidebar.hidden);assert.equal(navigationToggle.textContent,'Show navigation');
+  assert.ok(sidebar.hidden);assert.equal(navigationToggle.getAttribute('aria-label'),'Show navigation');
   assert.equal(navigationToggle.getAttribute('aria-expanded'),'false');
   assert.equal(d.body.dataset.navigation,'collapsed');assert.deepEqual(visible(),expandedTopics);
   assert.equal(active(),'#topic-2','Collapsing does not reset the reading topic');
   assert.equal(w.localStorage.getItem('physics11-notes-navigation-collapsed'),'true');
   navigationToggle.click();assert.ok(!sidebar.hidden);assert.equal(active(),'#topic-2');
-  assert.equal(navigationToggle.textContent,'Hide navigation');
+  assert.equal(navigationToggle.getAttribute('aria-label'),'Hide navigation');
   // The reader is at topic 5 when clicking the sticky Slides button.
-  scrollY=400+4*524-72;button('slides').focus();button('slides').click();
+  scrollY=400+4*524-72;selectMode('slides');assert.equal(d.activeElement,$('notes-menu-toggle'));
   assert.equal(d.body.dataset.mode,'slides');assert.deepEqual(visible(),['topic-5']);assert.equal($('slide-position').textContent,`Topic 5 of ${count}`);
   assert.ok(!d.querySelector('.slide-nav').hidden);assert.deepEqual(JSON.parse(JSON.stringify(scrolls.at(-1))),{target:'slide-nav',options:{behavior:'instant',block:'start'}});
   assert.equal(button('slides').getAttribute('aria-pressed'),'true');assert.equal(d.querySelector('a[href="#topic-5"]').getAttribute('aria-current'),'step');
   // Focus remains on Slides: left/right keys must still change the topic.
-  key(button('slides'),'ArrowRight');assert.deepEqual(visible(),['topic-6']);
-  key(button('slides'),'ArrowLeft');assert.deepEqual(visible(),['topic-5']);
+  key($('notes-menu-toggle'),'ArrowRight');assert.deepEqual(visible(),['topic-6']);
+  key($('notes-menu-toggle'),'ArrowLeft');assert.deepEqual(visible(),['topic-5']);
   $('next').click();assert.deepEqual(visible(),['topic-6']);$('previous').click();assert.deepEqual(visible(),['topic-5']);
   d.querySelector(`a[href="#topic-${count}"]`).click();assert.deepEqual(visible(),[`topic-${count}`]);assert.ok($('next').disabled);
-  key(button('slides'),'ArrowRight');assert.deepEqual(visible(),[`topic-${count}`],'Navigation stays within the topic list');
+  key($('notes-menu-toggle'),'ArrowRight');assert.deepEqual(visible(),[`topic-${count}`],'Navigation stays within the topic list');
   d.querySelector('a[href="#topic-1"]').click();assert.ok($('previous').disabled);
   // Typing/search and answer disclosures keep their normal keyboard behavior.
   key($('search'),'ArrowRight');assert.deepEqual(visible(),['topic-1']);
   key(d.querySelector('summary'),'ArrowRight');assert.deepEqual(visible(),['topic-1']);
   button('slides').dispatchEvent(new w.KeyboardEvent('keydown',{key:'ArrowRight',ctrlKey:true,bubbles:true}));assert.deepEqual(visible(),['topic-1']);
   navigationToggle.click();assert.ok(sidebar.hidden);
-  key(button('slides'),'ArrowRight');assert.deepEqual(visible(),['topic-2'],'Slides still navigate with the sidebar collapsed');
+  key($('notes-menu-toggle'),'ArrowRight');assert.deepEqual(visible(),['topic-2'],'Slides still navigate with the sidebar collapsed');
   $('search').value=query;$('search').dispatchEvent(new w.Event('input'));
   assert.deepEqual(visible(),[matchTopic]);assert.equal($('slide-position').textContent,'Topic 1 of 1');
   navigationToggle.click();assert.ok(!sidebar.hidden);assert.equal($('search').value,query);
@@ -76,11 +77,11 @@ try{
   $('search').value='nothing matches this phrase';$('search').dispatchEvent(new w.Event('input'));
   assert.equal(visible().length,0);assert.ok(!$('empty').hidden);assert.ok(d.querySelector('.slide-nav').hidden);
   assert.equal(active(),undefined,'Empty searches clear the current section highlight');
-  key(button('slides'),'ArrowRight');assert.equal(visible().length,0);
-  button('simple').click();assert.equal($('search').value,'');assert.equal(visible().length,count);
+  key($('notes-menu-toggle'),'ArrowRight');assert.equal(visible().length,0);
+  selectMode('simple');assert.equal($('search').value,'');assert.equal(visible().length,count);
   assert.ok(sidebar.hidden);assert.ok(navigationToggle.hidden,'Simple mode already hides navigation');
   // Leaving Slides also keeps the topic being read in view.
-  button('slides').click();d.querySelector('a[href="#topic-5"]').click();button('study').click();
+  selectMode('slides');d.querySelector('a[href="#topic-5"]').click();selectMode('study');
   assert.equal(visible().length,count);assert.equal(scrolls.at(-1).target,'topic-5');
   assert.ok(d.querySelector('.slide-nav').hidden);
   assert.ok(!navigationToggle.hidden);assert.ok(!sidebar.hidden,'Study mode restores the navigation preference');
