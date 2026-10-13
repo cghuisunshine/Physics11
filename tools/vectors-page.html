@@ -16,30 +16,61 @@
 @media print{body{background:white;font-size:11pt}.top,.hero-art,.toolbar-wrap,.sidebar,.slide-nav,.skip,.empty{display:none!important}.hero{padding:0 0 20px}.hero h1{font-size:34pt}.meta{display:none}.layout,body[data-mode=slides] .layout,body[data-mode=simple] .layout{display:block;padding:0;margin:0;max-width:none}.section-card{display:block!important;border:0;border-radius:0;padding:12px 0;margin:0;min-height:0!important;break-inside:auto}.section-card h2,.section-card h3{break-after:avoid}.diagram,pre{break-inside:avoid}.conversion-note{display:block!important}.section-card[data-search-hidden=true]{display:block!important}footer{padding-inline:0}a{color:inherit}}
 
 .answer-disclosure{margin:20px 0 26px}.answer-disclosure>summary{width:fit-content;cursor:pointer;list-style:none;border:1px solid var(--accent);border-radius:8px;padding:8px 15px;color:var(--accent);font-size:14px;font-weight:700;background:white}.answer-disclosure>summary::-webkit-details-marker{display:none}.answer-disclosure>summary:hover{background:var(--soft)}.answer-disclosure[open]>summary{background:var(--accent);color:white}.answer-disclosure:not([open]) .hide-answer-label,.answer-disclosure[open] .show-answer-label{display:none}.answer-body{margin-top:12px;background:#f3f8f5;border:1px solid #cdddD4;border-radius:10px;padding:22px}.answer-body>h4{margin:0 0 14px;color:var(--accent);font-size:16px}.answer-body>h3:first-of-type{margin-top:12px}.solution-figure{margin:24px 0 8px}.solution-figure svg{display:block;width:100%;max-width:680px;height:auto;background:white;border:1px solid var(--line);border-radius:8px}.solution-figure figcaption{font-size:12px;line-height:1.6;color:var(--muted);margin-top:8px}.answer-body pre{font-size:15px;padding:14px 16px}@media(max-width:480px){.answer-body{padding:16px 12px}.answer-body pre{font-size:13px;padding:12px 10px}}@media print{.answer-disclosure:not([open]){display:none}.answer-disclosure[open]>summary{display:none}.answer-body{background:white;border-color:#bbb}.solution-figure{break-inside:avoid}}
+
+/* Collapsible notes navigation */
+.layout>main,.sidebar{min-width:0}
+.navigation-toggle{font-size:14px;white-space:nowrap}
+body[data-navigation=collapsed] .sidebar{display:none}
+body[data-navigation=collapsed]:not([data-mode=simple]) .layout{grid-template-columns:minmax(0,1fr);gap:0}
+body[data-navigation=collapsed]:not([data-mode=simple]) .layout main{font-size:18px}
+body[data-navigation=collapsed]:not([data-mode=simple]) .section-card pre{font-size:18px}
+body[data-navigation=collapsed]:not([data-mode=simple]) .diagram img,
+body[data-navigation=collapsed]:not([data-mode=simple]) .solution-figure svg,
+body[data-navigation=collapsed]:not([data-mode=simple]) .answer-graph svg{max-width:100%}
+@media(max-width:800px){.layout{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.toolbar{flex-wrap:wrap;gap:8px}.navigation-toggle{order:2;font-size:12px;padding:6px 10px}.print-button{margin-left:auto}}
+@media print{body[data-navigation=collapsed] .layout main,body[data-navigation=collapsed] .section-card pre{font-size:inherit}}
 </style>
 </head>
 <body data-mode="study">
 <a class="skip" href="#main">Skip to notes</a>
 <header class="top"><span class="brand">PHYSICS / 11</span><a href="https://hamber.mrlamphysics.com/wp-content/uploads/Vectors-Notes.pdf" target="_blank" rel="noopener">Original PDF ↗</a></header>
 <div class="hero"><div class="hero-copy"><div class="eyebrow">Math tools · Class notes</div><h1>{{H1_TITLE}}</h1><p>{{PAGE_SUBTITLE}}</p><div class="meta"><span>10 source pages</span><span>7 topics</span><span>Works offline</span><span>Answers hidden until opened</span></div></div><svg class="hero-art" viewBox="0 0 260 210" aria-hidden="true"><defs><marker id="hero-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 10 5 0 10" fill="none" stroke="#086b72" stroke-width="2"/></marker><marker id="hero-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 10 5 0 10" fill="none" stroke="#087cff" stroke-width="2"/></marker><marker id="hero-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 10 5 0 10" fill="none" stroke="#f14231" stroke-width="2"/></marker></defs><path d="M25 180H245M25 180V15" stroke="#dce4e7" stroke-width="1.5"/><path d="M35 170 155 170" stroke="#086b72" stroke-width="4" marker-end="url(#hero-green)"/><path d="M155 170 155 50" stroke="#087cff" stroke-width="4" marker-end="url(#hero-blue)"/><path d="M35 170 155 50" stroke="#f14231" stroke-width="4" marker-end="url(#hero-red)"/><path d="M155 50H35V170" stroke="#dce4e7" stroke-dasharray="5 5" fill="none"/><text x="83" y="197" font-size="15" fill="#086b72">x</text><text x="172" y="115" font-size="15" fill="#087cff">y</text><text x="68" y="100" font-size="15" fill="#f14231">resultant</text></svg></div>
-<div class="toolbar-wrap"><div class="toolbar"><div class="mode-control" role="group" aria-label="Reading mode"><button type="button" data-mode="study" aria-pressed="true">Study</button><button type="button" data-mode="simple" aria-pressed="false">Simple</button><button type="button" data-mode="slides" aria-pressed="false">Slides</button></div><button class="print-button" id="print" type="button">Print / Save PDF</button></div></div>
-<div class="layout"><aside class="sidebar" aria-label="Notes navigation"><label for="search">Find in these notes</label><input type="search" id="search" placeholder="Try “velocity”" autocomplete="off"><nav aria-label="Topics">%%CONTENTS%%</nav></aside><main id="main"><div class="slide-nav" hidden><button id="previous" type="button">← Previous</button><p id="slide-position" aria-live="polite"></p><button id="next" type="button">Next →</button></div><p class="empty" id="empty" role="status" hidden>No matching topics. Try another word.</p>{{SECTIONS}}</main></div>
+<div class="toolbar-wrap"><div class="toolbar"><div class="mode-control" role="group" aria-label="Reading mode"><button type="button" data-mode="study" aria-pressed="true">Study</button><button type="button" data-mode="simple" aria-pressed="false">Simple</button><button type="button" data-mode="slides" aria-pressed="false">Slides</button></div><button type="button" class="navigation-toggle" id="navigation-toggle" aria-controls="notes-navigation" aria-expanded="true">Hide navigation</button><button class="print-button" id="print" type="button">Print / Save PDF</button></div></div>
+<div class="layout"><aside class="sidebar" id="notes-navigation" aria-label="Notes navigation"><label for="search">Find in these notes</label><input type="search" id="search" placeholder="Try “velocity”" autocomplete="off"><nav aria-label="Topics">%%CONTENTS%%</nav></aside><main id="main"><div class="slide-nav" hidden><button id="previous" type="button">← Previous</button><p id="slide-position" aria-live="polite"></p><button id="next" type="button">Next →</button></div><p class="empty" id="empty" role="status" hidden>No matching topics. Try another word.</p>{{SECTIONS}}</main></div>
 <script>
 (()=>{
-const cards=[...document.querySelectorAll('.section-card')],links=[...document.querySelectorAll('.sidebar nav a')],search=document.querySelector('#search'),nav=document.querySelector('.slide-nav'),empty=document.querySelector('#empty'),sidebar=document.querySelector('.sidebar'),topicNav=sidebar.querySelector('nav');
-let mode='study',slide=0,activeLink=null,activePending=false;
+const cards=[...document.querySelectorAll('.section-card')],links=[...document.querySelectorAll('.sidebar nav a')],search=document.querySelector('#search'),nav=document.querySelector('.slide-nav'),empty=document.querySelector('#empty'),sidebar=document.querySelector('.sidebar'),topicNav=sidebar.querySelector('nav'),navigationToggle=document.querySelector('#navigation-toggle');
+let mode='study',slide=0,activeLink=null,activePending=false,navigationCollapsed=false;
+const navigationPreference='physics11-notes-navigation-collapsed';
+try{navigationCollapsed=localStorage.getItem(navigationPreference)==='true';}catch{}
+function renderNavigation(){
+const shown=mode!=='simple'&&!navigationCollapsed;
+document.body.dataset.navigation=navigationCollapsed?'collapsed':'expanded';
+sidebar.hidden=!shown;navigationToggle.hidden=mode==='simple';
+navigationToggle.textContent=navigationCollapsed?'Show navigation':'Hide navigation';
+navigationToggle.setAttribute('aria-expanded',String(shown));
+}
+navigationToggle.addEventListener('click',()=>{
+const current=readingCard(),edge=document.querySelector('.toolbar-wrap').getBoundingClientRect().bottom;
+const anchor=current&&([...current.querySelectorAll('h2,h3,p,pre,figure,.practice-question-meta,.question-image,summary')].find(e=>{const r=e.getBoundingClientRect();return r.height>0&&r.bottom>edge;})||current),top=anchor?.getBoundingClientRect().top;
+navigationCollapsed=!navigationCollapsed;renderNavigation();
+try{localStorage.setItem(navigationPreference,String(navigationCollapsed));}catch{}
+if(anchor){const shift=anchor.getBoundingClientRect().top-top;if(shift)window.scrollBy({top:shift,behavior:'instant'});}
+updateActiveSection(true);
+});
 function visibleCards(){const q=search.value.trim().toLowerCase();return cards.filter(c=>c.dataset.search.includes(q));}
 function readingCard(){const visible=visibleCards();if(mode==='slides')return visible[slide]||null;const edge=document.querySelector('.toolbar-wrap').getBoundingClientRect().bottom;return visible.find(c=>c.getBoundingClientRect().bottom>edge)||visible[visible.length-1]||null;}
 function scrollToContent(target){if(target)target.scrollIntoView({behavior:'instant',block:'start'});}
 function keepLinkVisible(link){
-if(mode==='simple'||!link)return;
+if(sidebar.hidden||!link)return;
 const rect=link.getBoundingClientRect();
 if(window.innerWidth<=800){const bounds=topicNav.getBoundingClientRect();if(rect.left<bounds.left+8)topicNav.scrollLeft-=bounds.left+8-rect.left;else if(rect.right>bounds.right-8)topicNav.scrollLeft+=rect.right-bounds.right+8;}
 else{const bounds=sidebar.getBoundingClientRect();if(rect.top<bounds.top+8)sidebar.scrollTop-=bounds.top+8-rect.top;else if(rect.bottom>bounds.bottom-8)sidebar.scrollTop+=rect.bottom-bounds.bottom+8;}
 }
 function updateActiveSection(force=false){const current=readingCard(),next=links[cards.indexOf(current)]||null;links.forEach((link,i)=>{const active=cards[i]===current;link.classList.toggle('active',active);if(active)link.setAttribute('aria-current',mode==='slides'?'step':'location');else link.removeAttribute('aria-current');});if(force||next!==activeLink)keepLinkVisible(next);activeLink=next;}
 function scheduleActiveSection(){if(activePending)return;activePending=true;const update=()=>{activePending=false;updateActiveSection();};if(window.requestAnimationFrame)window.requestAnimationFrame(update);else setTimeout(update,16);}
-function render(){const visible=visibleCards();slide=Math.max(0,Math.min(slide,visible.length-1));cards.forEach(c=>{const match=visible.includes(c);c.hidden=!match||(mode==='slides'&&c!==visible[slide]);c.dataset.searchHidden=String(!match);});links.forEach((a,i)=>{a.hidden=!visible.includes(cards[i]);});nav.hidden=mode!=='slides'||!visible.length;empty.hidden=!!visible.length;document.querySelector('#slide-position').textContent=`Topic ${visible.length?slide+1:0} of ${visible.length}`;document.querySelector('#previous').disabled=slide===0;document.querySelector('#next').disabled=slide>=visible.length-1;updateActiveSection(true);}
+function render(){renderNavigation();const visible=visibleCards();slide=Math.max(0,Math.min(slide,visible.length-1));cards.forEach(c=>{const match=visible.includes(c);c.hidden=!match||(mode==='slides'&&c!==visible[slide]);c.dataset.searchHidden=String(!match);});links.forEach((a,i)=>{a.hidden=!visible.includes(cards[i]);});nav.hidden=mode!=='slides'||!visible.length;empty.hidden=!!visible.length;document.querySelector('#slide-position').textContent=`Topic ${visible.length?slide+1:0} of ${visible.length}`;document.querySelector('#previous').disabled=slide===0;document.querySelector('#next').disabled=slide>=visible.length-1;updateActiveSection(true);}
 document.querySelectorAll('.mode-control button').forEach(b=>b.addEventListener('click',()=>{const current=readingCard();mode=b.dataset.mode;document.body.dataset.mode=mode;document.querySelectorAll('.mode-control button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));if(mode==='simple')search.value='';if(mode==='slides')slide=Math.max(0,visibleCards().indexOf(current));render();scrollToContent(mode==='slides'&&!nav.hidden?nav:current||visibleCards()[0]);}));
 search.addEventListener('input',()=>{slide=0;render();});
 function move(delta){slide+=delta;render();if(!nav.hidden)scrollToContent(nav);}

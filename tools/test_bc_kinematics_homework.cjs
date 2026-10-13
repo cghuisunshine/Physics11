@@ -36,9 +36,10 @@ function blobText(p,blob){return new Promise((resolve,reject)=>{const reader=new
 (async()=>{
   const p=page();assert.deepEqual(p.errors,[]);assert.equal(visible(p).length,101);
   assert.ok(p.$('homework-panel').hidden);p.$('create-homework').click();assert.ok(!p.$('homework-panel').hidden);
-  assert.equal(p.$('homework-sampling-order').value,'random');assert.equal(p.$('choose-hardest-ai').textContent,'AI: choose most difficult');
-  assert.equal(p.$('choose-hardest-ai').closest('[hidden]'),null,'The AI button is visible immediately when the homework editor opens');
-  assert.ok(!p.$('choose-hardest-ai').disabled);assert.equal(p.$('homework-ai-help').closest('[hidden]'),null);
+  assert.equal(p.$('homework-sampling-order').value,'random');assert.equal(p.$('choose-hardest-ai'),null);
+  assert.equal(p.$('apply-section-percentages').textContent,'Choose random questions');
+  assert.equal(p.$('homework-ai-prompt').closest('[hidden]'),null,'Custom criteria are visible in the homework editor');
+  assert.equal(p.$('homework-ai-help').closest('[hidden]'),null);
   assert.ok(p.$('download-homework').disabled,'Empty selections cannot be exported');
   // Include a shared graph, investigation procedure, and the recently cropped graph.
   select(p,'q-40');select(p,'q-15');select(p,'q-99');
@@ -103,7 +104,7 @@ function blobText(p,blob){return new Promise((resolve,reject)=>{const reader=new
     assert.equal(candidates.filter(q=>selectedIds().includes(q.id)).length,Math.ceil(candidates.length/2),'Random sampling honors each section percentage');
   }
   assert.equal(new Set(selectedIds()).size,selectedIds().length);
-  for(const value of ['-1','101','25.5','']){setRatio('2.1',value);assert.ok(sampling.$('apply-section-percentages').disabled);assert.ok(sampling.$('choose-hardest-ai').disabled);}
+  for(const value of ['-1','101','25.5','']){setRatio('2.1',value);assert.ok(sampling.$('apply-section-percentages').disabled);}
   edit(sampling,'homework-all-percent','100');sampling.$('set-section-percentages').click();
   edit(sampling,'homework-parity','odd');sampling.$('apply-section-percentages').click();
   const numbered=inventory.groups.flatMap(g=>g.questions).filter(q=>/^\d+$/.test(q.label));
@@ -162,7 +163,8 @@ function blobText(p,blob){return new Promise((resolve,reject)=>{const reader=new
   for(const input of ai.d.querySelectorAll('[data-section-percent]')){input.value=['2.1','2.3'].includes(input.dataset.sectionPercent)?'50':'0';input.dispatchEvent(new ai.w.Event('input'));}
   assert.equal(ai.$('homework-sampling-order').value,'random');assert.ok(!ai.$('homework-ai-help').hidden);
   const aiSelected=()=>[...ai.d.querySelectorAll('[data-homework]')].filter(input=>input.checked).map(input=>input.dataset.homework);
-  await ai.$('choose-hardest-ai').onclick();assert.equal(ai.$('homework-sampling-order').value,'ai','The dedicated button selects AI directly, without opening the menu');
+  edit(ai,'homework-sampling-order','ai');assert.equal(ai.$('apply-section-percentages').textContent,'AI: choose questions');
+  await ai.$('apply-section-percentages').onclick();
   assert.equal(aiCalls.length,2);assert.equal(aiCalls[0].url,'https://lakesideart.gochatus.org/grade-service/general');
   assert.deepEqual(aiCalls.map(call=>call.amount),[3,1]);
   assert.deepEqual(aiSelected(),['q-12','q-13','q-14','q-41','q-99'],'AI selects exact section counts, keeping questions outside filters');
@@ -184,7 +186,7 @@ function blobText(p,blob){return new Promise((resolve,reject)=>{const reader=new
   assert.throws(()=>parse({ok:false},candidates,1));assert.throws(()=>parse({response:'not JSON'},candidates,1));
   aiFailure=false;aiPending=true;const pending=ai.$('apply-section-percentages').onclick();await pause();
   assert.ok(ai.$('apply-section-percentages').disabled);assert.ok(!ai.$('cancel-homework-ai').hidden);
-  assert.ok(ai.$('choose-hardest-ai').disabled,'Both apply controls prevent duplicate AI requests');
+  assert.ok(ai.$('refine-homework-ai').disabled,'Selection and refinement cannot run at the same time');
   ai.$('cancel-homework-ai').click();assert.ok(ai.$('cancel-homework-ai').hidden);lateResponse();await pending;
   assert.deepEqual(aiSelected(),['q-12','q-13','q-14','q-41','q-99'],'Canceled responses cannot alter selection');
   const changedRequest=ai.$('apply-section-percentages').onclick();await pause();edit(ai,'homework-parity','even');lateResponse();await changedRequest;

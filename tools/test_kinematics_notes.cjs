@@ -6,7 +6,8 @@ const root=path.resolve(__dirname,'..');
 for(const [file,count,query,matchTopic] of [
   ['kinematics-notes.html',11,'a ball off a cliff','topic-10'],
   ['vectors-notes.html',7,'relative velocity: boats','topic-7'],
-  ['forces-notes.html',10,"Cavendish's measurement",'topic-3']
+  ['forces-notes.html',10,"Cavendish's measurement",'topic-3'],
+  ['newtons-laws-notes.html',12,'a car on a movable road','topic-8']
 ]){
 const html=fs.readFileSync(path.join(root,file),'utf8');
 const errors=[],scrolls=[],virtualConsole=new VirtualConsole();virtualConsole.on('jsdomError',error=>errors.push(error));
@@ -38,6 +39,18 @@ try{
   assert.equal(scrolls.length,priorScrolls,'Following the current topic does not scroll the main page');
   scrollY=400+524-72;w.dispatchEvent(new w.Event('scroll'));flush();assert.equal(active(),'#topic-2');
   assert.equal(d.querySelectorAll('.sidebar nav a.active').length,1);
+  const navigationToggle=$('navigation-toggle'),sidebar=$('notes-navigation');
+  assert.equal(navigationToggle.getAttribute('aria-controls'),sidebar.id);
+  assert.equal(navigationToggle.getAttribute('aria-expanded'),'true');
+  const expandedTopics=visible();
+  navigationToggle.click();
+  assert.ok(sidebar.hidden);assert.equal(navigationToggle.textContent,'Show navigation');
+  assert.equal(navigationToggle.getAttribute('aria-expanded'),'false');
+  assert.equal(d.body.dataset.navigation,'collapsed');assert.deepEqual(visible(),expandedTopics);
+  assert.equal(active(),'#topic-2','Collapsing does not reset the reading topic');
+  assert.equal(w.localStorage.getItem('physics11-notes-navigation-collapsed'),'true');
+  navigationToggle.click();assert.ok(!sidebar.hidden);assert.equal(active(),'#topic-2');
+  assert.equal(navigationToggle.textContent,'Hide navigation');
   // The reader is at topic 5 when clicking the sticky Slides button.
   scrollY=400+4*524-72;button('slides').focus();button('slides').click();
   assert.equal(d.body.dataset.mode,'slides');assert.deepEqual(visible(),['topic-5']);assert.equal($('slide-position').textContent,`Topic 5 of ${count}`);
@@ -54,20 +67,26 @@ try{
   key($('search'),'ArrowRight');assert.deepEqual(visible(),['topic-1']);
   key(d.querySelector('summary'),'ArrowRight');assert.deepEqual(visible(),['topic-1']);
   button('slides').dispatchEvent(new w.KeyboardEvent('keydown',{key:'ArrowRight',ctrlKey:true,bubbles:true}));assert.deepEqual(visible(),['topic-1']);
+  navigationToggle.click();assert.ok(sidebar.hidden);
+  key(button('slides'),'ArrowRight');assert.deepEqual(visible(),['topic-2'],'Slides still navigate with the sidebar collapsed');
   $('search').value=query;$('search').dispatchEvent(new w.Event('input'));
   assert.deepEqual(visible(),[matchTopic]);assert.equal($('slide-position').textContent,'Topic 1 of 1');
+  navigationToggle.click();assert.ok(!sidebar.hidden);assert.equal($('search').value,query);
+  assert.deepEqual(visible(),[matchTopic],'Showing navigation retains the search and selected slide');
   $('search').value='nothing matches this phrase';$('search').dispatchEvent(new w.Event('input'));
   assert.equal(visible().length,0);assert.ok(!$('empty').hidden);assert.ok(d.querySelector('.slide-nav').hidden);
   assert.equal(active(),undefined,'Empty searches clear the current section highlight');
   key(button('slides'),'ArrowRight');assert.equal(visible().length,0);
   button('simple').click();assert.equal($('search').value,'');assert.equal(visible().length,count);
+  assert.ok(sidebar.hidden);assert.ok(navigationToggle.hidden,'Simple mode already hides navigation');
   // Leaving Slides also keeps the topic being read in view.
   button('slides').click();d.querySelector('a[href="#topic-5"]').click();button('study').click();
   assert.equal(visible().length,count);assert.equal(scrolls.at(-1).target,'topic-5');
   assert.ok(d.querySelector('.slide-nav').hidden);
+  assert.ok(!navigationToggle.hidden);assert.ok(!sidebar.hidden,'Study mode restores the navigation preference');
   const source=fs.readFileSync(path.join(root,'tools/vectors-page.html'),'utf8');
   assert.equal(html.match(/<script>([\s\S]*?)<\/script>/)[1],source.match(/<script>([\s\S]*?)<\/script>/)[1],'The rebuild template retains the fix');
   assert.deepEqual(errors,[]);
-  console.log(file+': passed scroll-driven section highlights, sidebar visibility without page jumps, Slides navigation, search/no results, and Study/Simple modes.');
+  console.log(file+': passed collapsible navigation, retained topic/search, scroll-driven highlights, Slides navigation, and Study/Simple modes.');
 }finally{dom.window.close();}
 }
