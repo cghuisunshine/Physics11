@@ -19,15 +19,15 @@
     else if (!recent[recent.length-1].correct) level--;
     return Math.max(1,Math.min(3,level));
   }
-  function chooseTopic(state, filter, rng=Math.random) {
-    if (topics.includes(filter)) return filter;
-    const weights = topics.map(t=>1-stats(state,t).mastery + (stats(state,t).total ? 0 : .2));
+  function chooseTopic(state, filter, rng=Math.random, available=topics) {
+    if (available.includes(filter)) return filter;
+    const weights = available.map(t=>1-stats(state,t).mastery + (stats(state,t).total ? 0 : .2));
     let draw = rng()*weights.reduce((a,b)=>a+b,0);
-    return topics.find((t,i)=>(draw-=weights[i])<=0) || topics[topics.length-1];
+    return available.find((t,i)=>(draw-=weights[i])<=0) || available[available.length-1];
   }
   function chooseExam(bank, state, filter, currentId, rng=Math.random) {
-    const topic = chooseTopic(state,filter,rng);
     const eligible = bank.filter(p=>!filter || p.topic===filter);
+    const topic = chooseTopic(state,filter,rng,[...new Set(eligible.map(p=>p.topic))]);
     let unseen = eligible.filter(p=>!state.attempts.some(a=>a.id===p.id));
     const other = unseen.filter(p=>p.id!==currentId);
     if (other.length) unseen = other;

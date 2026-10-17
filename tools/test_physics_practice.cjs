@@ -62,6 +62,9 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   assert.equal(p.d.querySelectorAll('script[src]').length,0,'No external assets on startup');
   assert.ok(bank.every(q=>q.solution&&q.html.includes('data:image/')));
   assert.ok(bank.some(q=>q.solution.includes('<svg')),'Worked-answer graphs retained');
+  assert.ok([...p.$('topic').options].some(o=>o.textContent==='Ch 3 · 3.2 Friction'));
+  assert.ok([...p.$('topic').options].some(o=>o.textContent==="Ch 4 · 4.2 Newton's second law"));
+  assert.equal(p.$('topic').querySelectorAll('optgroup').length,3,'All-chapter topics are grouped by chapter');
   login(p,'Ada');change(p,'mode','chapter');await pause();
   assert.equal(p.$('chapter-grid').children.length,101);assert.equal(p.$('chapter-question').options.length,102);
   assert.ok(p.$('solution').hidden);assert.equal(p.$('solution').open,false);assert.equal(p.$('solution-body').childElementCount,0);
@@ -120,6 +123,48 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   const AI=p.w.PhotoReview;assert.equal(AI.normalize({verdict:'incorrect',confidence:'low',feedback:'Unreadable',weak_points:[{skill:'Signs',evidence:'Unknown'}]}).weak_points.length,0);
   assert.match(AI.hintPrompt(bank[0],'', 'text','solution',false),/Never state, confirm, or reject a final answer/);
   assert.equal(networkCalls,0,'All core practice works offline without network requests');
+  // Chapter/topic scope applies to every mode; keep source question numbers and saved IDs.
+  const scoped=page();login(scoped,'Topic scope');
+  const currentScoped=()=>bank.find(q=>q.url===scoped.$('source').getAttribute('href'));
+  for(const chapter of ['bc-ch2','bc-ch3','bc-ch4']){
+    change(scoped,'practice-chapter',chapter);
+    const questions=bank.filter(q=>q.chapter===chapter),topics=[...new Set(questions.map(q=>q.topic))];
+    assert.deepEqual([...scoped.$('topic').options].map(o=>o.value),['',...topics]);
+    assert.equal(currentScoped().chapter,chapter,'Adaptive questions respect the chapter');
+    for(const mode of ['adaptive','random']){
+      change(scoped,'mode',mode);change(scoped,'topic',topics[1]);
+      for(let n=0;n<3;n++){assert.equal(currentScoped().topic,topics[1]);scoped.$('skip').click();}
+    }
+    change(scoped,'mode','chapter');
+    assert.equal(scoped.$('topic').disabled,false);assert.equal(scoped.$('topic-control').hidden,false);
+    const section=questions.filter(q=>q.topic===topics[1]);
+    assert.deepEqual([...scoped.$('chapter-grid').children].map(b=>Number(b.textContent)),section.map(q=>q.number));
+    assert.equal(scoped.$('chapter-previous').disabled,true);
+    change(scoped,'chapter-question',section.at(-1).id);
+    assert.equal(scoped.$('skip').textContent,`Back to question ${section[0].number} →`);
+    scoped.$('skip').click();assert.equal(currentScoped().id,section[0].id);
+    scoped.$('skip').click();scoped.$('chapter-previous').click();assert.equal(currentScoped().id,section[0].id);
+    assert.match(scoped.$('reason').textContent,new RegExp(`1 of ${section.length} in this selection`));
+    assert.ok(scoped.$('question-meta').textContent.includes(section[0].topicTitle));
+    scoped.$('check').click();scoped.$('rate-practice').click();
+    assert.match(scoped.$('chapter-progress').textContent,new RegExp(`1/${section.length} answered`));
+    change(scoped,'mode','review');assert.equal(currentScoped().id,section[0].id);
+    change(scoped,'mode','day');assert.equal(scoped.$('day-question').options.length,2);
+    change(scoped,'topic',topics[0]);assert.equal(scoped.$('source').hidden,true,'No matching day questions');
+    change(scoped,'mode','review');assert.equal(scoped.$('source').hidden,true,'No matching review questions');
+    change(scoped,'mode','adaptive');change(scoped,'topic','');
+  }
+  change(scoped,'practice-chapter','bc-ch3');change(scoped,'topic','Ch 3 · 3.2');change(scoped,'practice-chapter','bc-ch4');
+  assert.equal(scoped.$('topic').value,'','Switching chapters clears an incompatible topic');
+  change(scoped,'practice-chapter','');assert.equal(scoped.$('topic').querySelectorAll('optgroup').length,3);
+  change(scoped,'topic','Ch 4 · 4.4');change(scoped,'mode','chapter');
+  assert.equal(scoped.$('practice-chapter').value,'bc-ch4','Chapter mode preserves a selected section from All chapters');
+  assert.equal(scoped.$('topic').value,'Ch 4 · 4.4');
+  change(scoped,'mode','review');change(scoped,'topic','');change(scoped,'practice-chapter','bc-ch2');
+  assert.equal(currentScoped().chapter,'bc-ch2');change(scoped,'mode','day');assert.equal(scoped.$('day-question').options.length,2,'Day history is limited to the chapter');
+  change(scoped,'practice-chapter','');assert.equal(scoped.$('day-question').options.length,4,'All chapters restores full day history');
+  assert.ok(scoped.$('topic-stats').textContent.includes("Ch 3 · 3.3 Hooke's law"));
+  assert.deepEqual(scoped.errors,[]);scoped.dom.window.close();
   // A pasted sharing URL must never be saved or shared as the Firebase key.
   const key='AIza'+'x'.repeat(35),liveId='a'.repeat(48),keyStorage='physics11FirebaseApiKey';
   const amcLink='https://physics.test/amc8_practice.html?follow='+'b'.repeat(48)+'#liveKey='+key;

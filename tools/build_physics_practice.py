@@ -9,6 +9,7 @@ import argparse
 import json
 import re
 from dataclasses import dataclass, field
+from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -115,6 +116,10 @@ def load_bank(registry_path):
         source_path = ROOT / chapter['html']
         inventory = json.loads((ROOT / chapter['inventory']).read_text())
         tree = Tree(source_path.read_text())
+        topic_select = tree.root.find(id='topic')
+        topic_titles = {option.attrs['value']: unescape(re.sub(r'<[^>]+>', '', tree.inner(option))).strip()
+                        for option in (topic_select.children if topic_select else [])
+                        if option.tag == 'option' and option.attrs.get('value')}
         number = 0
         for group in inventory['groups']:
             section = tree.root.find(id=group['id'])
@@ -140,6 +145,7 @@ def load_bank(registry_path):
                     'id': qid, 'sourceId': question['id'], 'kind': 'textbook',
                     'chapter': cid, 'chapterNumber': chapter['number'], 'chapterTitle': chapter['title'],
                     'number': number, 'topic': f'Ch {chapter["number"]} · {group["topic"]}',
+                    'topicTitle': topic_titles.get(group['topic'], group['topic']),
                     'level': levels.get(group['kind'], 2), 'questionType': group['kind'],
                     'title': f'{group["title"]} — {question["label"]}',
                     'html': enlarge_question_images(clean_fragment(shared+tree.outer(image_node)+context)),

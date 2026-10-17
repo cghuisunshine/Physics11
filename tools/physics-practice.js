@@ -188,10 +188,30 @@ $('sync-enable').onclick=async()=>{const v=$('firebase-key').value.trim();if(v&&
 $('sync-local').onclick=async()=>{if(live.role==='host'){try{await live.stopHost();$('live-link').value='';}catch(error){return;}}students.setApiKey('');students.stop();$('firebase-key').value='';syncStatus('local');};
 $('sync-share').onclick=()=>{const url=students.shareLink();if(!url){$('sync-status').textContent='Turn on sync first. A sync link only carries the key, never progress.';return;}
   if(navigator.share)navigator.share({title:'Physics 11 Practice Studio',url}).catch(()=>{});else window.prompt('Copy this link to open synced practice on another device:',url);};
-for(const t of P.topics){const o=document.createElement('option');o.value=t;o.textContent=t;$('topic').append(o);}
 const chapters=P.chapterSets(bank);
+const topicNames=new Map(bank.map(p=>[p.topic,p.topicTitle?`Ch ${p.chapterNumber} · ${p.topicTitle}`:p.topic]));
+const topicName=topic=>topicNames.get(topic)||topic;
 for(const chapter of chapters){const o=document.createElement('option');o.value=chapter.chapter;o.textContent=`Chapter ${chapter.number}: ${chapter.title} · ${chapter.count} questions`;$('practice-chapter').append(o);}
-$('practice-chapter').value=chapters[0]?.chapter||'';
+function refreshTopicOptions(){
+  const chapter=$('practice-chapter').value,selected=$('topic').value;
+  const all=document.createElement('option');all.value='';all.textContent=chapter?'All topics in this chapter':'All topics';
+  $('topic').replaceChildren(all);
+  for(const set of chapters.filter(c=>!chapter||c.chapter===chapter)){
+    const group=document.createElement('optgroup');group.label=`Chapter ${set.number}: ${set.title}`;
+    for(const topic of new Set(bank.filter(p=>p.chapter===set.chapter).map(p=>p.topic))){
+      const o=document.createElement('option');o.value=topic;o.textContent=topicName(topic);group.append(o);
+    }
+    $('topic').append(group);
+  }
+  if([...$('topic').options].some(o=>o.value===selected))$('topic').value=selected;
+}
+function scopedQuestions(questions=bank){
+  const chapter=$('practice-chapter').value,topic=$('topic').value;
+  return questions.filter(p=>(!chapter||p.chapter===chapter)&&(!topic||p.topic===topic));
+}
+const selectedChapterQuestions=()=>P.chapterQuestions(scopedQuestions(),$('practice-chapter').value);
+const selectedDayQuestions=day=>scopedQuestions(P.dayQuestions(state,day,$('topic').value,$('day-exclude-correct').checked));
+refreshTopicOptions();
 $('bank-count').textContent=`${bank.length.toLocaleString()} textbook questions · ${chapters.length} chapter${chapters.length===1?'':'s'}`;
 // "Last tried" for review-queue items: the most recent attempt on that question.
 function lastTried(id){let at='';for(const a of state.attempts)if(a.id===id&&a.at>at)at=a.at;return at;}
@@ -239,7 +259,7 @@ function renderRecent(){
     const b=document.createElement('button');b.className='queue-item recent-item';b.textContent=attempt.title;
     const meta=document.createElement('span');const verdict=document.createElement('span');
     verdict.className='verdict';verdict.dataset.ok=attempt.correct?'yes':'no';verdict.textContent=attempt.correct?'Correct':'Missed';
-    meta.append(when.toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})+' · '+attempt.topic+(attempt.review?' · review':'')+' · ');meta.append(verdict);
+    meta.append(when.toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})+' · '+topicName(attempt.topic)+(attempt.review?' · review':'')+' · ');meta.append(verdict);
     const duration=document.createElement('span');duration.textContent='Time spent: '+describeDuration(attempt.seconds);
     b.append(meta,duration);
     if(problem)b.onclick=()=>show(problem,'From your last 7 days. Review attempts do not change first-attempt accuracy.');else b.disabled=true;
@@ -254,30 +274,30 @@ function describeDay(date){
 function refreshDayControls(){
   const active=$('mode').value==='day';$('day-controls').hidden=!active;
   if(!active)return [];
-  const daySelect=$('practice-day'),chosen=daySelect.value,topic=$('topic').value,exclude=$('day-exclude-correct').checked;
+  const daySelect=$('practice-day'),chosen=daySelect.value;
   daySelect.replaceChildren(...P.pastDays().map(({key,date},i)=>{
     const o=document.createElement('option');o.value=key;
     const label=i===0?'Today':i===1?'Yesterday':date.toLocaleDateString([],{weekday:'long'});
-    const count=P.dayQuestions(state,key,topic,exclude).length;
+    const count=selectedDayQuestions(key).length;
     o.textContent=`${label} · ${date.toLocaleDateString([],{month:'short',day:'numeric'})} · ${count} question${count===1?'':'s'}`;return o;
   }));
   if([...daySelect.options].some(o=>o.value===chosen))daySelect.value=chosen;
-  const questions=P.dayQuestions(state,daySelect.value,topic,exclude),picker=$('day-question');
+  const questions=selectedDayQuestions(daySelect.value),picker=$('day-question');
   const placeholder=document.createElement('option');placeholder.value='';placeholder.disabled=true;placeholder.textContent=questions.length?'Choose a question':'No matching questions';
-  picker.replaceChildren(placeholder,...questions.map((p,i)=>{const o=document.createElement('option');o.value=p.id;o.textContent=`${i+1}. ${p.title} · ${p.topic}`;return o;}));
+  picker.replaceChildren(placeholder,...questions.map((p,i)=>{const o=document.createElement('option');o.value=p.id;o.textContent=`${i+1}. ${p.title} · ${topicName(p.topic)}`;return o;}));
   picker.value=questions.some(p=>p.id===current?.id)?current.id:'';picker.disabled=!questions.length;
   return questions;
 }
 function showDayQuestion(p,questions){
   const date=new Date($('practice-day').value+'T12:00:00').toLocaleDateString([],{weekday:'long',month:'short',day:'numeric'});
-  show(p,p?`${date} · Question ${questions.findIndex(q=>q.id===p.id)+1} of ${questions.length}. This is review practice.`:`No questions match ${date}${$('day-exclude-correct').checked?' after excluding correct answers':''}${$('topic').value?' in '+$('topic').value:''}. Choose another day or adjust the filters.`);
+  show(p,p?`${date} · Question ${questions.findIndex(q=>q.id===p.id)+1} of ${questions.length}. This is review practice.`:`No questions match ${date} and the selected chapter/topic${$('day-exclude-correct').checked?' after excluding correct answers':''}. Choose another day or adjust the filters.`);
   $('day-question').value=p?p.id:'';
 }
 function refreshChapterControls(){
-  const active=$('mode').value==='chapter';$('chapter-controls').hidden=!active;$('topic-control').hidden=active;$('topic').disabled=active;
+  const active=$('mode').value==='chapter';$('chapter-controls').hidden=!active;
   $('next').textContent='Next question →';$('skip').textContent='Skip for now';
   if(!active)return [];
-  const chapter=$('practice-chapter').value,questions=P.chapterQuestions(bank,chapter),progress=P.chapterProgress(state,questions),picker=$('chapter-question');
+  const questions=selectedChapterQuestions(),progress=P.chapterProgress(state,questions),picker=$('chapter-question');
   const inSet=questions.some(p=>p.id===current?.id);
   const placeholder=document.createElement('option');placeholder.value='';placeholder.disabled=true;placeholder.textContent='Choose a question';
   picker.replaceChildren(placeholder,...questions.map(p=>{const o=document.createElement('option');o.value=p.id;const a=progress.latest.get(p.id);o.textContent=`Question ${P.problemNumber(p)}${a?a.correct?' · Correct':' · Needs practice':''}`;return o;}));
@@ -285,7 +305,7 @@ function refreshChapterControls(){
   $('chapter-progress').textContent=`${progress.answered}/${questions.length} answered · ${progress.correct} correct${progress.answered===questions.length&&questions.length?' · Set complete!':''}`;
   $('chapter-previous').disabled=!inSet||questions[0]?.id===current.id;
   const last=inSet&&questions[questions.length-1].id===current.id;
-  if(last){$('next').textContent='Back to question 1 →';$('skip').textContent='Back to question 1 →';}
+  if(last){$('next').textContent=`Back to question ${questions[0].number} →`;$('skip').textContent=$('next').textContent;}
   $('chapter-grid').replaceChildren(...questions.map(p=>{
     const number=p.number,a=progress.latest.get(p.id),b=document.createElement('button');b.type='button';b.textContent=number;
     b.className=a?a.correct?'correct':'incorrect':'';
@@ -297,17 +317,17 @@ function refreshChapterControls(){
   return questions;
 }
 function showChapterQuestion(p){
-  const questions=P.chapterQuestions(bank,$('practice-chapter').value),seen=p&&state.attempts.some(a=>a.id===p.id);
-  show(p,p?`Chapter ${p.chapterNumber}: ${p.chapterTitle} · Question ${p.number} of ${questions.length}. ${seen?'Retrying counts as review.':'Work through the chapter at your own pace.'}`:'No questions available for this chapter.');
+  const questions=selectedChapterQuestions(),seen=p&&state.attempts.some(a=>a.id===p.id);
+  show(p,p?`Chapter ${p.chapterNumber}: ${p.chapterTitle} · Question ${p.number} · ${questions.findIndex(q=>q.id===p.id)+1} of ${questions.length} in this selection. ${seen?'Retrying counts as review.':'Work through the selection at your own pace.'}`:'No questions available for this chapter and topic.');
 }
 function dashboard(){
   const all=state.attempts, first=all.filter(a=>!a.review);
   $('attempt-count').textContent=all.length;
   $('accuracy').textContent=first.length?`${Math.round(first.filter(a=>a.correct).length/first.length*100)}% correct on first attempts`:'Your progress starts here';
   $('topic-stats').replaceChildren();
-  for(const topic of P.topics){const s=P.stats(state,topic), row=document.createElement('div');row.className='topic-row';const labels=document.createElement('div'), name=document.createElement('span'), score=document.createElement('span');name.textContent=topic;score.textContent=s.total?`${s.correct}/${s.total} correct`:'Not tried yet';labels.append(name,score);const bar=document.createElement('progress');bar.max=100;bar.value=s.total?s.correct/s.total*100:0;bar.setAttribute('aria-label',`${topic} first-attempt accuracy`);row.append(labels,bar);$('topic-stats').append(row);}
+  for(const topic of P.topics){const s=P.stats(state,topic), row=document.createElement('div');row.className='topic-row';const labels=document.createElement('div'), name=document.createElement('span'), score=document.createElement('span');name.textContent=topicName(topic);score.textContent=s.total?`${s.correct}/${s.total} correct`:'Not tried yet';labels.append(name,score);const bar=document.createElement('progress');bar.max=100;bar.value=s.total?s.correct/s.total*100:0;bar.setAttribute('aria-label',`${topicName(topic)} first-attempt accuracy`);row.append(labels,bar);$('topic-stats').append(row);}
   const queue=P.reviewQueue(state,'');$('review-count').textContent=queue.length;$('queue').replaceChildren();
-  for(const item of queue.slice(-5).reverse()){const b=document.createElement('button');b.className='queue-item';b.textContent=item.problem.title;const status=document.createElement('span');status.textContent=`${item.problem.topic} · ${[item.missed?'Missed':'',item.manual?'Flagged':'',item.aiConcern?'Check reasoning':''].filter(Boolean).join(' + ')}`;b.append(status);
+  for(const item of queue.slice(-5).reverse()){const b=document.createElement('button');b.className='queue-item';b.textContent=item.problem.title;const status=document.createElement('span');status.textContent=`${topicName(item.problem.topic)} · ${[item.missed?'Missed':'',item.manual?'Flagged':'',item.aiConcern?'Check reasoning':''].filter(Boolean).join(' + ')}`;b.append(status);
     const last=lastTried(item.problem.id);if(last){const when=document.createElement('span');when.className='queue-when';when.textContent='Last tried '+describeTime(last);when.title=new Date(last).toLocaleString();b.append(when);}b.onclick=()=>show(item.problem,'Retry a saved question. Review attempts do not change first-attempt accuracy.');$('queue').append(b);}
   if(!queue.length)$('queue').textContent='Nothing to review yet.';
   $('review-button').disabled=!queue.length;
@@ -344,12 +364,14 @@ function show(p,reason,fromLive=false){
   $('choice-list').replaceChildren();$('statement').replaceChildren();$('source').hidden=true;$('source').removeAttribute('href');live.publish(p).catch(()=>{});
   if(!p){$('badge').hidden=false;$('badge').textContent='All clear';$('question-title').textContent='No questions in this selection';$('question-meta').textContent='Choose another topic or practice mode.';return;}
   $('badge').textContent=p.questionType;$('badge').hidden=false;$('question-title').textContent=p.title;
-  $('question-meta').textContent=`Chapter ${p.chapterNumber}: ${p.chapterTitle} · ${p.topic} · ${P.levels[p.level-1]} (estimated)`;
+  $('question-meta').textContent=`Chapter ${p.chapterNumber}: ${p.chapterTitle} · ${p.topicTitle||p.topic} · ${P.levels[p.level-1]} (estimated)`;
   $('statement').innerHTML=p.html;$('source').href=p.url;$('source').hidden=false;flagButton();
   buildAnswerInput(p);$('photo-section').hidden=false;openDrawing();
 }
 function next(reset=false){
   if(live.role==='follower')return;
+  $('practice-chapter').options[0].disabled=$('mode').value==='chapter';
+  if($('mode').value==='chapter'&&!$('practice-chapter').value){$('practice-chapter').value=bank.find(p=>p.topic===$('topic').value)?.chapter||chapters[0]?.chapter||'';refreshTopicOptions();}
   const filter=$('topic').value, mode=$('mode').value;
   const dayQuestions=refreshDayControls();
   const chapterQuestions=refreshChapterControls();
@@ -362,16 +384,16 @@ function next(reset=false){
     showDayQuestion(dayQuestions.length?dayQuestions[(index+1)%dayQuestions.length]:null,dayQuestions);return;
   }
   if(mode==='review'){
-    const q=P.reviewQueue(state,filter), other=q.filter(x=>x.problem.id!==current?.id);
+    const ids=new Set(scopedQuestions().map(p=>p.id)),q=P.reviewQueue(state,filter).filter(x=>ids.has(x.problem.id)), other=q.filter(x=>x.problem.id!==current?.id);
     const p=(other[0]||q[0])?.problem;
-    show(p||null,p?'Review a missed or flagged question.':'Your review queue is clear for this topic.');return;
+    show(p||null,p?'Review a missed or flagged question.':'Your review queue is clear for this chapter and topic.');return;
   }
   if(mode==='random'){
-    const p=P.randomQuestion(bank,state,filter,current?.id),seen=p&&state.attempts.some(a=>a.id===p.id);
+    const p=P.randomQuestion(scopedQuestions(),state,filter,current?.id),seen=p&&state.attempts.some(a=>a.id===p.id);
     show(p,p?`Random textbook question. ${seen?'A repeat counts as review.':'This is an unseen question.'}`:'No questions match this topic.');return;
   }
-  const p=P.chooseExam(bank,state,filter,current?.id);
-  show(p,p?`${p.topic}: an unseen ${P.levels[p.level-1].toLowerCase()} question. Topics with lower recent accuracy receive more practice.`:'You have attempted every available textbook question in this selection. Review your misses or try random questions.');
+  const p=P.chooseExam(scopedQuestions(),state,filter,current?.id);
+  show(p,p?`${topicName(p.topic)}: an unseen ${P.levels[p.level-1].toLowerCase()} question. Topics with lower recent accuracy receive more practice.`:'You have attempted every available textbook question in this selection. Review your misses or try random questions.');
 }
 $('check').onclick=()=>{
   if(!current||checked||revealed)return;
@@ -461,12 +483,12 @@ $('rate-correct').onclick=()=>rateWork(true);$('rate-practice').onclick=()=>rate
 $('flag').onclick=()=>{if(!current)return;const old=state.items[current.id]||{problem:current,missed:false,manual:false};old.manual=!old.manual;state.items[current.id]=old;save();flagButton();dashboard();};
 $('next').onclick=()=>{next();$('question-title').focus();};$('skip').onclick=()=>{next();$('question-title').focus();};
 $('mode').onchange=()=>next(true);$('topic').onchange=()=>next(true);
-$('practice-chapter').onchange=()=>next(true);
-$('chapter-question').onchange=()=>{const questions=P.chapterQuestions(bank,$('practice-chapter').value),p=questions.find(p=>p.id===$('chapter-question').value);if(p)showChapterQuestion(p);};
-$('chapter-previous').onclick=()=>{const questions=P.chapterQuestions(bank,$('practice-chapter').value),index=questions.findIndex(p=>p.id===current?.id);if(index>0){showChapterQuestion(questions[index-1]);$('question-title').focus();}};
+$('practice-chapter').onchange=()=>{refreshTopicOptions();next(true);};
+$('chapter-question').onchange=()=>{const p=selectedChapterQuestions().find(p=>p.id===$('chapter-question').value);if(p)showChapterQuestion(p);};
+$('chapter-previous').onclick=()=>{const questions=selectedChapterQuestions(),index=questions.findIndex(p=>p.id===current?.id);if(index>0){showChapterQuestion(questions[index-1]);$('question-title').focus();}};
 $('practice-day').onchange=()=>next(true);$('day-exclude-correct').onchange=()=>next(true);
-$('day-question').onchange=()=>{const questions=P.dayQuestions(state,$('practice-day').value,$('topic').value,$('day-exclude-correct').checked);const p=questions.find(p=>p.id===$('day-question').value);if(p)showDayQuestion(p,questions);};
-$('review-button').onclick=()=>{$('mode').value='review';$('topic').value='';next();$('question-title').focus();};
+$('day-question').onchange=()=>{const questions=selectedDayQuestions($('practice-day').value);const p=questions.find(p=>p.id===$('day-question').value);if(p)showDayQuestion(p,questions);};
+$('review-button').onclick=()=>{$('mode').value='review';$('practice-chapter').value='';refreshTopicOptions();$('topic').value='';next();$('question-title').focus();};
 $('export').onclick=()=>{const blob=new Blob([JSON.stringify(P.compact(state),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`physics11-progress-${(student||'student').replace(/[^\w-]+/g,'_')}-${new Date().toISOString().slice(0,10)}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 $('import').onchange=async()=>{const file=$('import').files[0];if(!file)return;try{if(file.size>15000000)throw Error('too large');const s=JSON.parse(await file.text());if(!validState(s))throw Error('invalid');if(!window.confirm('Replace '+(student||'this student')+'’s progress with this backup?'))return;state=canonicalize(s);save();dashboard();next();}catch(e){$('storage-message').textContent='This file is not a valid Physics 11 practice backup. Your current progress has been kept.';}finally{$('import').value='';}};
 // A formula image that cannot load is replaced by readable text, not raw LaTeX.
@@ -596,8 +618,8 @@ function renderLearningLog(){
   if(!weaknesses.length)box.textContent='Draw your steps or add a photo to start your learning log.';
   for(const weak of weaknesses){const row=document.createElement('div');row.className='weak-point';
     const title=document.createElement('strong');title.textContent=weak.skill;row.append(title);
-    for(const content of [weak.topic+' · observed in '+weak.count+' question'+(weak.count===1?'':'s'),weak.evidence,weak.practice]){const p=document.createElement('p');p.textContent=content;row.append(p);}
-    const b=document.createElement('button');b.className='secondary';b.textContent='Practice '+weak.topic;b.onclick=()=>{$('mode').value='adaptive';$('topic').value=weak.topic;next();$('question-title').focus();};row.append(b);box.append(row);
+    for(const content of [topicName(weak.topic)+' · observed in '+weak.count+' question'+(weak.count===1?'':'s'),weak.evidence,weak.practice]){const p=document.createElement('p');p.textContent=content;row.append(p);}
+    const b=document.createElement('button');b.className='secondary';b.textContent='Practice '+topicName(weak.topic);b.onclick=()=>{$('mode').value='adaptive';$('practice-chapter').value=bank.find(p=>p.topic===weak.topic)?.chapter||'';refreshTopicOptions();$('topic').value=weak.topic;next();$('question-title').focus();};row.append(b);box.append(row);
   }
   const history=$('ai-history-list');history.replaceChildren();
   const reviews=state.attempts.filter(a=>a.aiReview).slice().reverse();

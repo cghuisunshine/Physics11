@@ -4,6 +4,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from html import unescape
 from build_physics_practice import ROOT, Tree, load_bank
 
 
@@ -13,10 +14,14 @@ class PracticeBuilderTests(unittest.TestCase):
         registry = json.loads((ROOT/'content/physics-practice-chapters.json').read_text())
         self.assertEqual(len(bank), 301)
         self.assertEqual(len({q['id'] for q in bank}), 301)
+        self.assertEqual(next(q['topicTitle'] for q in bank if q['topic'] == 'Ch 3 · 3.3'), "3.3 Hooke's law")
         by_id = {q['id']: q for q in bank}
         for chapter in registry['chapters']:
             inventory = json.loads((ROOT/chapter['inventory']).read_text())
             questions = [q for q in bank if q['chapter'] == chapter['id']]
+            source_tree = Tree((ROOT/chapter['html']).read_text())
+            titles = {o.attrs['value']: unescape(source_tree.inner(o))
+                      for o in source_tree.root.find(id='topic').children if o.attrs.get('value')}
             self.assertEqual(len(questions), inventory['question_count'])
             self.assertEqual([q['number'] for q in questions], list(range(1, len(questions)+1)))
             for group in inventory['groups']:
@@ -24,6 +29,8 @@ class PracticeBuilderTests(unittest.TestCase):
                     question = by_id[chapter['id']+'-'+source_question['id']]
                     self.assertEqual(question['solution'], source_question['answer_html'].strip())
                     self.assertEqual(question['url'], chapter['html']+'#'+source_question['id'])
+                    self.assertEqual(question['topic'], f'Ch {chapter["number"]} · {group["topic"]}')
+                    self.assertEqual(question['topicTitle'], titles[group['topic']])
                     tree = Tree(question['html'])
                     self.assertIsNotNone(tree.root.find(cls='question-image'))
                     for cls in ['shared', 'context']:
