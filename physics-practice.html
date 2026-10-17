@@ -106,13 +106,20 @@ textarea:focus-visible{outline:3px solid #b78021;outline-offset:3px}
 .statement .question-image{display:grid;gap:12px}.statement .question-image img{display:block;background:#fff}
 .statement figure{margin:18px 0}.statement figcaption{font-size:12px;color:var(--muted)}.statement details.context{padding:12px;background:#f5f5ee;border:1px solid var(--line);border-radius:8px}
 .statement .context img{display:block;margin:10px 0}.statement .graph{margin:18px 0}.statement svg{max-width:100%;height:auto}.statement table{font-size:14px;min-width:280px}
-.dock-choices{display:block!important}.dock-choices textarea{min-height:60px;font-size:12px}.dock-answer .rating-actions{margin-top:9px}.dock-answer .rating-actions button{font-size:12px;padding:8px 9px}.chapter-grid{max-height:230px;overflow-y:auto;padding:3px}
+.dock-choices{display:block!important}.dock-choices textarea{min-height:60px;font-size:12px}.dock-answer .rating-actions{margin-top:9px}.dock-answer .rating-actions button{font-size:12px;padding:8px 9px}.chapter-grid{max-height:230px;overflow-y:auto;padding:3px}.chapter-grid.cross-chapter{grid-template-columns:repeat(auto-fit,minmax(76px,1fr))}
 @media(max-width:600px){.rating-actions button{flex:1}}
+
+/* Checkbox topic picker supports several sections without modifier keys. */
+.topic-control{flex:1;min-width:180px;max-width:100%;font-size:12px;font-weight:650;color:var(--muted)}
+.topic-picker{position:relative;margin-top:5px}.topic-picker>summary{display:flex;align-items:center;justify-content:space-between;gap:10px;list-style:none;padding:11px;border:1px solid #cbd6cd;border-radius:7px;background:#fff;color:var(--ink);font-weight:400;font-size:12px}.topic-picker>summary::-webkit-details-marker{display:none}.topic-picker>summary::after{content:'⌄';flex:none}.topic-picker[open]>summary::after{content:'⌃'}
+.topic-menu{position:absolute;right:0;top:calc(100% + 6px);width:min(440px,calc(100vw - 36px));max-height:min(65vh,500px);overflow-y:auto;padding:14px;background:#fff;border:1px solid #cbd6cd;border-radius:9px;box-shadow:0 10px 28px #18383220;z-index:30}
+.topic-actions{display:flex;gap:8px;flex-wrap:wrap}.topic-actions button{padding:6px 10px;font-size:12px;border:1px solid var(--line)}.topic-menu .topic-group{margin:12px 0 0;padding:10px 0 0;border:0;border-top:1px solid var(--line)}
+.toolbar .topic-option{display:flex;align-items:flex-start;gap:9px;flex:none;min-width:0;max-width:100%;padding:7px 0;font-size:13px;font-weight:400;color:var(--ink);cursor:pointer}.topic-option input{width:16px;height:16px;flex:none;margin:3px 0 0;accent-color:var(--green)}.toolbar .topic-chapter{font-weight:700}.topic-group .topic-section{padding-left:16px}
 </style></head>
-<body><header><a class="brand" href="content.html">Physics 11 <span>/ Practice Studio</span></a><div class="header-links"><button id="student-button" class="student-button" type="button" title="Switch student"><span id="student-sync-dot" class="sync-dot" data-state="local" aria-hidden="true"></span><span id="student-name-label">Sign in</span><span class="student-switch">Switch</span></button><button id="monitor-button" class="student-button" type="button">Monitor student</button><button id="fullscreen" class="fullscreen-toggle" type="button" aria-pressed="false" hidden>⛶ Full screen</button><a href="content.html">Browse chapters ↗</a><div class="settings-wrap"><button id="settings-button" class="settings-button" type="button" aria-label="Settings" title="Settings" aria-expanded="false" aria-controls="settings-panel"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div id="settings-panel" class="settings-panel" role="dialog" aria-label="Storage settings" hidden><h2>Storage settings</h2><p class="small">Progress is always saved on this device and works offline. Firebase is only used for optional sync across devices.</p><div class="sync-box settings-sync"><label for="firebase-key" class="small">Firebase API key or sharing link (optional)</label><input id="firebase-key" type="password" autocomplete="off" placeholder="Paste a Firebase key or sharing link"><div class="sync-actions"><button id="sync-enable" class="secondary" type="button">Turn on sync</button><button id="sync-local" class="secondary" type="button">This device only</button><button id="sync-share" class="secondary" type="button">Share sync link</button></div><p id="sync-status" class="small" role="status">Saved on this device only.</p></div></div></div></div></header>
+<body><header><a class="brand" href="content.html">Physics 11 <span>/ Practice Studio</span></a><div class="header-links"><button id="student-button" class="student-button" type="button" title="Switch student"><span id="student-sync-dot" class="sync-dot" data-state="local" aria-hidden="true"></span><span id="student-name-label">Sign in</span><span class="student-switch">Switch</span></button><button id="monitor-button" class="student-button" type="button">Monitor student</button><button id="fullscreen" class="fullscreen-toggle" type="button" aria-pressed="false" hidden>⛶ Full screen</button><div class="settings-wrap"><button id="settings-button" class="settings-button" type="button" aria-label="Settings" title="Settings" aria-expanded="false" aria-controls="settings-panel"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div id="settings-panel" class="settings-panel" role="dialog" aria-label="Storage settings" hidden><h2>Storage settings</h2><p class="small">Progress is always saved on this device and works offline. Firebase is only used for optional sync across devices.</p><div class="sync-box settings-sync"><label for="firebase-key" class="small">Firebase API key or sharing link (optional)</label><input id="firebase-key" type="password" autocomplete="off" placeholder="Paste a Firebase key or sharing link"><div class="sync-actions"><button id="sync-enable" class="secondary" type="button">Turn on sync</button><button id="sync-local" class="secondary" type="button">This device only</button><button id="sync-share" class="secondary" type="button">Share sync link</button></div><p id="sync-status" class="small" role="status">Saved on this device only.</p></div></div></div></div></header>
 <main><div class="intro"><div><div class="eyebrow">A LITTLE PRACTICE. A CLEAR NEXT STEP.</div><h1>Make your next answer<br>your best one.</h1><p>Work through a question, learn from the result, and build from there.</p></div><div class="session"><span id="attempt-count">0</span><div>answers checked</div><small id="accuracy">Your progress starts here</small></div></div>
-<div class="layout sidebar-collapsed" id="layout"><section class="workspace"><div class="toolbar"><label>Practice mode<select id="mode"><option value="adaptive">Adaptive · textbook questions</option><option value="chapter">By chapter · textbook sets</option><option value="random">Random · textbook questions</option><option value="review">Review · missed & flagged</option><option value="day">By day · past 7 days</option></select></label><label>Chapter<select id="practice-chapter" aria-describedby="practice-scope-help"><option value="">All chapters</option></select></label><label id="topic-control">Focus topic<select id="topic" aria-describedby="practice-scope-help"><option value="">All topics</option></select></label></div>
-<p id="practice-scope-help" class="small">Choose a chapter to see its topics, then choose a section or practise all topics in that chapter.</p>
+<div class="layout sidebar-collapsed" id="layout"><section class="workspace"><div class="toolbar"><label>Practice mode<select id="mode"><option value="adaptive">Adaptive · textbook questions</option><option value="chapter">By chapter · textbook sets</option><option value="random">Random · textbook questions</option><option value="review">Review · missed & flagged</option><option value="day">By day · past 7 days</option></select></label><label>Chapter<select id="practice-chapter" aria-describedby="practice-scope-help"><option value="">All chapters</option></select></label><div id="topic-control" class="topic-control"><span id="topic-label">Focus topics</span><details id="topic-picker" class="topic-picker"><summary id="topic-summary" aria-labelledby="topic-label topic-summary">All topics</summary><div class="topic-menu"><div class="topic-actions"><button id="topic-all" class="quiet" type="button">Select all</button><button id="topic-clear" class="quiet" type="button">Clear selection</button></div><p id="topic-selection-status" class="small" role="status" aria-live="polite"></p><div id="topic-list"></div></div></details></div></div>
+<p id="practice-scope-help" class="small">Choose a chapter to see its topics. Check any combination of sections, or check a whole chapter. Use Clear selection to start a new selection.</p>
 <div id="chapter-controls" class="chapter-controls" hidden><div class="toolbar"><label>Problem<select id="chapter-question"></select></label></div><div class="chapter-progress"><button id="chapter-previous" class="quiet" type="button">← Previous question</button><span id="chapter-progress" class="small" role="status" aria-live="polite"></span></div><div id="chapter-grid" class="chapter-grid" role="group" aria-label="Problems in the selected chapter and topic"></div><p id="chapter-help" class="small chapter-help">Practice the selected chapter and topic in order, or jump to any question number. Green = correct; orange = needs practice, using your latest checked answer. Progress is saved with your student history.</p><p id="chapter-notice" class="notice chapter-notice" hidden></p></div>
 <div id="day-controls" hidden><div class="toolbar day-controls"><label>Practice day<select id="practice-day" aria-describedby="day-help"></select></label><label class="day-filter"><input id="day-exclude-correct" type="checkbox" aria-describedby="day-help">Exclude correctly answered questions</label></div><p id="day-help" class="small day-help">Revisit questions answered today or in the previous six days. The filter uses each question’s latest answer, including later retries.</p><label class="day-question">Question from this day<select id="day-question"></select></label></div>
 <section id="live-panel" class="live-panel" aria-label="Live question sharing" hidden><p id="live-status" role="status" aria-live="polite"></p><div id="live-link-row" class="live-link-row" hidden><input id="live-link" type="text" readonly aria-label="Live follow link"><button id="live-copy" class="primary" type="button">Copy link</button></div><button id="live-exit" class="quiet live-exit" type="button" hidden>Stop sharing</button></section>
@@ -929,26 +936,50 @@ $('sync-share').onclick=()=>{const url=students.shareLink();if(!url){$('sync-sta
 const chapters=P.chapterSets(bank);
 const topicNames=new Map(bank.map(p=>[p.topic,p.topicTitle?`Ch ${p.chapterNumber} · ${p.topicTitle}`:p.topic]));
 const topicName=topic=>topicNames.get(topic)||topic;
+let selectedTopics=new Set(P.topics);
+let topicsChapter='';
 for(const chapter of chapters){const o=document.createElement('option');o.value=chapter.chapter;o.textContent=`Chapter ${chapter.number}: ${chapter.title} · ${chapter.count} questions`;$('practice-chapter').append(o);}
-function refreshTopicOptions(){
-  const chapter=$('practice-chapter').value,selected=$('topic').value;
-  const all=document.createElement('option');all.value='';all.textContent=chapter?'All topics in this chapter':'All topics';
-  $('topic').replaceChildren(all);
-  for(const set of chapters.filter(c=>!chapter||c.chapter===chapter)){
-    const group=document.createElement('optgroup');group.label=`Chapter ${set.number}: ${set.title}`;
-    for(const topic of new Set(bank.filter(p=>p.chapter===set.chapter).map(p=>p.topic))){
-      const o=document.createElement('option');o.value=topic;o.textContent=topicName(topic);group.append(o);
-    }
-    $('topic').append(group);
+function availableTopics(){return [...new Set(bank.filter(p=>!$('practice-chapter').value||p.chapter===$('practice-chapter').value).map(p=>p.topic))];}
+function syncTopicSelection(){
+  const available=availableTopics(),count=selectedTopics.size,all=count===available.length;
+  $('topic-summary').textContent=!count?'Choose topics':all?($('practice-chapter').value?'Whole chapter':'All topics'):`${count} topic${count===1?'':'s'} selected`;
+  $('topic-summary').title=available.filter(t=>selectedTopics.has(t)).map(topicName).join('\n');
+  $('topic-selection-status').textContent=`${count} of ${available.length} topics selected · ${scopedQuestions().length} questions`;
+  $('topic-all').disabled=all;$('topic-clear').disabled=!count;
+  for(const input of $('topic-list').querySelectorAll('input[data-topic]'))input.checked=selectedTopics.has(input.value);
+  for(const input of $('topic-list').querySelectorAll('input[data-chapter]')){
+    const topics=[...new Set(bank.filter(p=>p.chapter===input.value).map(p=>p.topic))],selected=topics.filter(t=>selectedTopics.has(t)).length;
+    input.checked=selected===topics.length;input.indeterminate=selected>0&&selected<topics.length;
   }
-  if([...$('topic').options].some(o=>o.value===selected))$('topic').value=selected;
+}
+function refreshTopicOptions(){
+  const chapter=$('practice-chapter').value,available=availableTopics();
+  const previous=[...new Set(bank.filter(p=>!topicsChapter||p.chapter===topicsChapter).map(p=>p.topic))];
+  const wasAll=previous.length===selectedTopics.size&&previous.every(t=>selectedTopics.has(t));
+  selectedTopics=new Set(wasAll?available:available.filter(t=>selectedTopics.has(t)));
+  if(!selectedTopics.size)selectedTopics=new Set(available);
+  topicsChapter=chapter;
+  $('topic-list').replaceChildren();
+  for(const set of chapters.filter(c=>!chapter||c.chapter===chapter)){
+    const topics=[...new Set(bank.filter(p=>p.chapter===set.chapter).map(p=>p.topic))];
+    const group=document.createElement('fieldset');group.className='topic-group';
+    const legend=document.createElement('legend'),label=document.createElement('label'),input=document.createElement('input');label.className='topic-option topic-chapter';input.type='checkbox';input.value=set.chapter;input.dataset.chapter=set.chapter;
+    label.append(input,`Chapter ${set.number}: ${set.title} · Whole chapter`);legend.append(label);group.append(legend);
+    input.onchange=()=>{for(const t of topics){if(input.checked)selectedTopics.add(t);else selectedTopics.delete(t);}syncTopicSelection();next(true);};
+    for(const topic of topics){
+      const label=document.createElement('label'),input=document.createElement('input');label.className='topic-option topic-section';input.type='checkbox';input.value=topic;input.dataset.topic=topic;
+      label.append(input,topicName(topic));input.onchange=()=>{if(input.checked)selectedTopics.add(topic);else selectedTopics.delete(topic);syncTopicSelection();next(true);};group.append(label);
+    }
+    $('topic-list').append(group);
+  }
+  syncTopicSelection();
 }
 function scopedQuestions(questions=bank){
-  const chapter=$('practice-chapter').value,topic=$('topic').value;
-  return questions.filter(p=>(!chapter||p.chapter===chapter)&&(!topic||p.topic===topic));
+  const chapter=$('practice-chapter').value;
+  return questions.filter(p=>(!chapter||p.chapter===chapter)&&selectedTopics.has(p.topic));
 }
-const selectedChapterQuestions=()=>P.chapterQuestions(scopedQuestions(),$('practice-chapter').value);
-const selectedDayQuestions=day=>scopedQuestions(P.dayQuestions(state,day,$('topic').value,$('day-exclude-correct').checked));
+const selectedChapterQuestions=()=>scopedQuestions();
+const selectedDayQuestions=day=>scopedQuestions(P.dayQuestions(state,day,'',$('day-exclude-correct').checked));
 refreshTopicOptions();
 $('bank-count').textContent=`${bank.length.toLocaleString()} textbook questions · ${chapters.length} chapter${chapters.length===1?'':'s'}`;
 // "Last tried" for review-queue items: the most recent attempt on that question.
@@ -1036,18 +1067,19 @@ function refreshChapterControls(){
   $('next').textContent='Next question →';$('skip').textContent='Skip for now';
   if(!active)return [];
   const questions=selectedChapterQuestions(),progress=P.chapterProgress(state,questions),picker=$('chapter-question');
+  $('chapter-grid').classList.toggle('cross-chapter',!$('practice-chapter').value);
   const inSet=questions.some(p=>p.id===current?.id);
   const placeholder=document.createElement('option');placeholder.value='';placeholder.disabled=true;placeholder.textContent='Choose a question';
-  picker.replaceChildren(placeholder,...questions.map(p=>{const o=document.createElement('option');o.value=p.id;const a=progress.latest.get(p.id);o.textContent=`Question ${P.problemNumber(p)}${a?a.correct?' · Correct':' · Needs practice':''}`;return o;}));
+  picker.replaceChildren(placeholder,...questions.map(p=>{const o=document.createElement('option');o.value=p.id;const a=progress.latest.get(p.id);o.textContent=`${$('practice-chapter').value?'':`Ch ${p.chapterNumber} · `}Question ${P.problemNumber(p)}${a?a.correct?' · Correct':' · Needs practice':''}`;return o;}));
   picker.value=inSet?current.id:'';picker.disabled=!questions.length;
   $('chapter-progress').textContent=`${progress.answered}/${questions.length} answered · ${progress.correct} correct${progress.answered===questions.length&&questions.length?' · Set complete!':''}`;
   $('chapter-previous').disabled=!inSet||questions[0]?.id===current.id;
   const last=inSet&&questions[questions.length-1].id===current.id;
-  if(last){$('next').textContent=`Back to question ${questions[0].number} →`;$('skip').textContent=$('next').textContent;}
+  if(last){$('next').textContent=`Back to ${$('practice-chapter').value?'':`Ch ${questions[0].chapterNumber} · `}question ${questions[0].number} →`;$('skip').textContent=$('next').textContent;}
   $('chapter-grid').replaceChildren(...questions.map(p=>{
-    const number=p.number,a=progress.latest.get(p.id),b=document.createElement('button');b.type='button';b.textContent=number;
+    const number=p.number,a=progress.latest.get(p.id),b=document.createElement('button');b.type='button';b.textContent=$('practice-chapter').value?number:`Ch ${p.chapterNumber} · ${number}`;
     b.className=a?a.correct?'correct':'incorrect':'';
-    const label=`Question ${number}: ${p.title} · ${a?a.correct?'Correct':'Needs practice':'Not answered'}`;
+    const label=`Chapter ${p.chapterNumber}, Question ${number}: ${p.title} · ${a?a.correct?'Correct':'Needs practice':'Not answered'}`;
     b.setAttribute('aria-label',label);b.title=label;if(p.id===current?.id)b.setAttribute('aria-current','true');
     b.onclick=()=>{showChapterQuestion(p);$('question-title').focus();};return b;
   }));
@@ -1108,11 +1140,10 @@ function show(p,reason,fromLive=false){
 }
 function next(reset=false){
   if(live.role==='follower')return;
-  $('practice-chapter').options[0].disabled=$('mode').value==='chapter';
-  if($('mode').value==='chapter'&&!$('practice-chapter').value){$('practice-chapter').value=bank.find(p=>p.topic===$('topic').value)?.chapter||chapters[0]?.chapter||'';refreshTopicOptions();}
-  const filter=$('topic').value, mode=$('mode').value;
+  const mode=$('mode').value;
   const dayQuestions=refreshDayControls();
   const chapterQuestions=refreshChapterControls();
+  if(!selectedTopics.size){show(null,'Select one or more topics, or check a whole chapter, to start practising.');return;}
   if(mode==='chapter'){
     const index=reset===true?-1:chapterQuestions.findIndex(p=>p.id===current?.id);
     showChapterQuestion(chapterQuestions.length?chapterQuestions[(index+1)%chapterQuestions.length]:null);return;
@@ -1122,15 +1153,15 @@ function next(reset=false){
     showDayQuestion(dayQuestions.length?dayQuestions[(index+1)%dayQuestions.length]:null,dayQuestions);return;
   }
   if(mode==='review'){
-    const ids=new Set(scopedQuestions().map(p=>p.id)),q=P.reviewQueue(state,filter).filter(x=>ids.has(x.problem.id)), other=q.filter(x=>x.problem.id!==current?.id);
+    const ids=new Set(scopedQuestions().map(p=>p.id)),q=P.reviewQueue(state,'').filter(x=>ids.has(x.problem.id)), other=q.filter(x=>x.problem.id!==current?.id);
     const p=(other[0]||q[0])?.problem;
     show(p||null,p?'Review a missed or flagged question.':'Your review queue is clear for this chapter and topic.');return;
   }
   if(mode==='random'){
-    const p=P.randomQuestion(scopedQuestions(),state,filter,current?.id),seen=p&&state.attempts.some(a=>a.id===p.id);
+    const p=P.randomQuestion(scopedQuestions(),state,'',current?.id),seen=p&&state.attempts.some(a=>a.id===p.id);
     show(p,p?`Random textbook question. ${seen?'A repeat counts as review.':'This is an unseen question.'}`:'No questions match this topic.');return;
   }
-  const p=P.chooseExam(scopedQuestions(),state,filter,current?.id);
+  const p=P.chooseExam(scopedQuestions(),state,'',current?.id);
   show(p,p?`${topicName(p.topic)}: an unseen ${P.levels[p.level-1].toLowerCase()} question. Topics with lower recent accuracy receive more practice.`:'You have attempted every available textbook question in this selection. Review your misses or try random questions.');
 }
 $('check').onclick=()=>{
@@ -1220,13 +1251,24 @@ $('verify-retry').onclick=verifyAnswer;
 $('rate-correct').onclick=()=>rateWork(true);$('rate-practice').onclick=()=>rateWork(false);
 $('flag').onclick=()=>{if(!current)return;const old=state.items[current.id]||{problem:current,missed:false,manual:false};old.manual=!old.manual;state.items[current.id]=old;save();flagButton();dashboard();};
 $('next').onclick=()=>{next();$('question-title').focus();};$('skip').onclick=()=>{next();$('question-title').focus();};
-$('mode').onchange=()=>next(true);$('topic').onchange=()=>next(true);
+$('mode').onchange=()=>{
+  if($('mode').value==='chapter'&&!$('practice-chapter').value){
+    const selectedChapters=chapters.filter(c=>bank.some(p=>p.chapter===c.chapter&&selectedTopics.has(p.topic)));
+    const chapter=selectedChapters.length===1?selectedChapters[0]:null;
+    if(chapter){$('practice-chapter').value=chapter.chapter;refreshTopicOptions();}
+  }
+  next(true);
+};
+$('topic-all').onclick=()=>{selectedTopics=new Set(availableTopics());syncTopicSelection();next(true);};
+$('topic-clear').onclick=()=>{selectedTopics.clear();syncTopicSelection();next(true);};
+document.addEventListener('click',e=>{if(!$('topic-picker').contains(e.target))$('topic-picker').open=false;});
+$('topic-picker').addEventListener('keydown',e=>{if(e.key==='Escape'){$('topic-picker').open=false;$('topic-summary').focus();}});
 $('practice-chapter').onchange=()=>{refreshTopicOptions();next(true);};
 $('chapter-question').onchange=()=>{const p=selectedChapterQuestions().find(p=>p.id===$('chapter-question').value);if(p)showChapterQuestion(p);};
 $('chapter-previous').onclick=()=>{const questions=selectedChapterQuestions(),index=questions.findIndex(p=>p.id===current?.id);if(index>0){showChapterQuestion(questions[index-1]);$('question-title').focus();}};
 $('practice-day').onchange=()=>next(true);$('day-exclude-correct').onchange=()=>next(true);
 $('day-question').onchange=()=>{const questions=selectedDayQuestions($('practice-day').value);const p=questions.find(p=>p.id===$('day-question').value);if(p)showDayQuestion(p,questions);};
-$('review-button').onclick=()=>{$('mode').value='review';$('practice-chapter').value='';refreshTopicOptions();$('topic').value='';next();$('question-title').focus();};
+$('review-button').onclick=()=>{$('mode').value='review';$('practice-chapter').value='';selectedTopics=new Set(P.topics);refreshTopicOptions();next();$('question-title').focus();};
 $('export').onclick=()=>{const blob=new Blob([JSON.stringify(P.compact(state),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`physics11-progress-${(student||'student').replace(/[^\w-]+/g,'_')}-${new Date().toISOString().slice(0,10)}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 $('import').onchange=async()=>{const file=$('import').files[0];if(!file)return;try{if(file.size>15000000)throw Error('too large');const s=JSON.parse(await file.text());if(!validState(s))throw Error('invalid');if(!window.confirm('Replace '+(student||'this student')+'’s progress with this backup?'))return;state=canonicalize(s);save();dashboard();next();}catch(e){$('storage-message').textContent='This file is not a valid Physics 11 practice backup. Your current progress has been kept.';}finally{$('import').value='';}};
 // A formula image that cannot load is replaced by readable text, not raw LaTeX.
@@ -1357,7 +1399,7 @@ function renderLearningLog(){
   for(const weak of weaknesses){const row=document.createElement('div');row.className='weak-point';
     const title=document.createElement('strong');title.textContent=weak.skill;row.append(title);
     for(const content of [topicName(weak.topic)+' · observed in '+weak.count+' question'+(weak.count===1?'':'s'),weak.evidence,weak.practice]){const p=document.createElement('p');p.textContent=content;row.append(p);}
-    const b=document.createElement('button');b.className='secondary';b.textContent='Practice '+topicName(weak.topic);b.onclick=()=>{$('mode').value='adaptive';$('practice-chapter').value=bank.find(p=>p.topic===weak.topic)?.chapter||'';refreshTopicOptions();$('topic').value=weak.topic;next();$('question-title').focus();};row.append(b);box.append(row);
+    const b=document.createElement('button');b.className='secondary';b.textContent='Practice '+topicName(weak.topic);b.onclick=()=>{$('mode').value='adaptive';$('practice-chapter').value=bank.find(p=>p.topic===weak.topic)?.chapter||'';selectedTopics=new Set([weak.topic]);refreshTopicOptions();next();$('question-title').focus();};row.append(b);box.append(row);
   }
   const history=$('ai-history-list');history.replaceChildren();
   const reviews=state.attempts.filter(a=>a.aiReview).slice().reverse();

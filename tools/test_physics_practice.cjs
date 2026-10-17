@@ -36,7 +36,13 @@ function page(source=html,{url='https://physics.test/physics-practice.html',stor
   return {dom,w:dom.window,d:dom.window.document,errors,$:id=>dom.window.document.getElementById(id)};
 }
 function login(p,name){p.$('login-name').value=name;p.$('login-form').dispatchEvent(new p.w.Event('submit',{cancelable:true}));}
-function change(p,id,value){p.$(id).value=value;p.$(id).dispatchEvent(new p.w.Event('change'));}
+function topicInputs(p){return [...p.$('topic-list').querySelectorAll('input[data-topic]')];}
+function checkedTopics(p){return topicInputs(p).filter(input=>input.checked).map(input=>input.value);}
+function chooseTopics(p,values){
+  p.$('topic-clear').click();
+  for(const value of values){const input=topicInputs(p).find(input=>input.value===value);assert.ok(input,'Available topic '+value);input.checked=true;input.dispatchEvent(new p.w.Event('change',{bubbles:true}));}
+}
+function change(p,id,value){if(id==='topic'){chooseTopics(p,value?[value]:topicInputs(p).map(input=>input.value));return;}p.$(id).value=value;p.$(id).dispatchEvent(new p.w.Event('change'));}
 function response(p,value){p.$('response-input').value=value;p.$('response-input').dispatchEvent(new p.w.Event('input'));}
 function history(p,name){const saved=JSON.parse(p.w.localStorage.getItem('physics11Practice.v1:'+encodeURIComponent(name.toLowerCase())));return saved?JSON.parse(saved.state):{version:1,attempts:[],items:{}};}
 function sameHTML(p,actual,expected,message){
@@ -62,10 +68,10 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   assert.equal(p.d.querySelectorAll('script[src]').length,0,'No external assets on startup');
   assert.ok(bank.every(q=>q.solution&&q.html.includes('data:image/')));
   assert.ok(bank.some(q=>q.solution.includes('<svg')),'Worked-answer graphs retained');
-  assert.ok([...p.$('topic').options].some(o=>o.textContent==='Ch 3 · 3.2 Friction'));
-  assert.ok([...p.$('topic').options].some(o=>o.textContent==="Ch 4 · 4.2 Newton's second law"));
-  assert.equal(p.$('topic').querySelectorAll('optgroup').length,3,'All-chapter topics are grouped by chapter');
-  login(p,'Ada');change(p,'mode','chapter');await pause();
+  assert.ok(topicInputs(p).some(o=>o.parentElement.textContent==='Ch 3 · 3.2 Friction'));
+  assert.ok(topicInputs(p).some(o=>o.parentElement.textContent==="Ch 4 · 4.2 Newton's second law"));
+  assert.equal(p.$('topic-list').querySelectorAll('.topic-group').length,3,'All-chapter topics are grouped by chapter');
+  login(p,'Ada');change(p,'practice-chapter','bc-ch2');change(p,'mode','chapter');await pause();
   assert.equal(p.$('chapter-grid').children.length,101);assert.equal(p.$('chapter-question').options.length,102);
   assert.ok(p.$('solution').hidden);assert.equal(p.$('solution').open,false);assert.equal(p.$('solution-body').childElementCount,0);
   assert.ok(p.$('self-rating').hidden);assert.equal(p.$('rate-correct').onclick() ,undefined);assert.equal(p.$('attempt-count').textContent,'0');
@@ -88,11 +94,11 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
     assert.ok(p.$('solution').hidden);p.$('check').click();sameHTML(p,p.$('solution-body').innerHTML,q.solution,'Worked solution retained for '+q.id);
   }
   assert.equal(p.$('chapter-grid').children.length,121);assert.equal(p.$('chapter-question').options.length,122);
-  assert.ok([...p.$('topic').options].some(o=>o.value==='Ch 4 · 4.4'));
+  assert.ok(topicInputs(p).some(o=>o.value==='Ch 4 · 4.4'));
   change(p,'chapter-question',newtons.at(-1).id);p.$('skip').click();assert.equal(p.$('chapter-question').value,newtons[0].id,'Chapter 4 navigation wraps within its 121 questions');
   change(p,'practice-chapter','bc-ch3');
   assert.equal(p.$('chapter-grid').children.length,79);assert.equal(p.$('chapter-question').options.length,80);
-  assert.ok([...p.$('topic').options].some(o=>o.value==='Ch 3 · 3.3'));
+  assert.ok(topicInputs(p).some(o=>o.value==='Ch 3 · 3.3'));
   change(p,'chapter-question',forces.at(-1).id);p.$('skip').click();assert.equal(p.$('chapter-question').value,forces[0].id,'Forces navigation wraps within its 79 questions');
   change(p,'practice-chapter','bc-ch2');change(p,'chapter-question',bank[0].id);assert.equal(p.$('chapter-previous').disabled,true);
   change(p,'chapter-question',kinematics.at(-1).id);p.$('skip').click();assert.equal(p.$('chapter-question').value,bank[0].id,'Chapter navigation wraps by actual count');
@@ -109,7 +115,7 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   newtonsShared.$('check').click();sameHTML(newtonsShared,newtonsShared.$('solution-body').innerHTML,newtons[76].solution,'Shared Chapter 4 question reveals its own solution');newtonsShared.$('rate-correct').click();assert.equal(history(newtonsShared,'Newton link').attempts[0].id,'bc-ch4-q-77');
   const future=[...bank,...[1,2,3].map(n=>({...bank[0],id:'test-chapter-q-'+n,chapter:'test-chapter',chapterNumber:99,chapterTitle:'Test chapter',number:n,topic:'Ch 99 · Future',title:'Test question '+n}))];
   const futureHTML=html.replace(/(<script id="question-bank"[^>]*>)[\s\S]*?(<\/script>)/,(_,a,b)=>a+JSON.stringify(future).replace(/</g,'\\u003c')+b);
-  const f=page(futureHTML);login(f,'Future');change(f,'mode','chapter');change(f,'practice-chapter','test-chapter');assert.equal(f.$('chapter-grid').children.length,3);assert.equal(f.$('chapter-question').options.length,4);assert.match(f.$('reason').textContent,/of 3/);assert.ok([...f.$('topic').options].some(o=>o.value==='Ch 99 · Future'));
+  const f=page(futureHTML);login(f,'Future');change(f,'mode','chapter');change(f,'practice-chapter','test-chapter');assert.equal(f.$('chapter-grid').children.length,3);assert.equal(f.$('chapter-question').options.length,4);assert.match(f.$('reason').textContent,/of 3/);assert.ok(topicInputs(f).some(o=>o.value==='Ch 99 · Future'));
   change(f,'chapter-question','test-chapter-q-3');f.$('skip').click();assert.equal(f.$('chapter-question').value,'test-chapter-q-1');
   const empty={version:1,attempts:[],items:{}};
   assert.throws(()=>P.record(empty,bank[0],'answer',1),/Rate your work/);
@@ -129,14 +135,14 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   for(const chapter of ['bc-ch2','bc-ch3','bc-ch4']){
     change(scoped,'practice-chapter',chapter);
     const questions=bank.filter(q=>q.chapter===chapter),topics=[...new Set(questions.map(q=>q.topic))];
-    assert.deepEqual([...scoped.$('topic').options].map(o=>o.value),['',...topics]);
+    assert.deepEqual(topicInputs(scoped).map(o=>o.value),topics);
     assert.equal(currentScoped().chapter,chapter,'Adaptive questions respect the chapter');
     for(const mode of ['adaptive','random']){
       change(scoped,'mode',mode);change(scoped,'topic',topics[1]);
       for(let n=0;n<3;n++){assert.equal(currentScoped().topic,topics[1]);scoped.$('skip').click();}
     }
     change(scoped,'mode','chapter');
-    assert.equal(scoped.$('topic').disabled,false);assert.equal(scoped.$('topic-control').hidden,false);
+    assert.ok(topicInputs(scoped).every(input=>!input.disabled));assert.equal(scoped.$('topic-control').hidden,false);
     const section=questions.filter(q=>q.topic===topics[1]);
     assert.deepEqual([...scoped.$('chapter-grid').children].map(b=>Number(b.textContent)),section.map(q=>q.number));
     assert.equal(scoped.$('chapter-previous').disabled,true);
@@ -155,15 +161,43 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
     change(scoped,'mode','adaptive');change(scoped,'topic','');
   }
   change(scoped,'practice-chapter','bc-ch3');change(scoped,'topic','Ch 3 · 3.2');change(scoped,'practice-chapter','bc-ch4');
-  assert.equal(scoped.$('topic').value,'','Switching chapters clears an incompatible topic');
-  change(scoped,'practice-chapter','');assert.equal(scoped.$('topic').querySelectorAll('optgroup').length,3);
+  assert.deepEqual(checkedTopics(scoped),[...new Set(newtons.map(q=>q.topic))],'Switching chapters selects the new chapter when no previous section matches');
+  change(scoped,'practice-chapter','');assert.equal(scoped.$('topic-list').querySelectorAll('.topic-group').length,3);
   change(scoped,'topic','Ch 4 · 4.4');change(scoped,'mode','chapter');
   assert.equal(scoped.$('practice-chapter').value,'bc-ch4','Chapter mode preserves a selected section from All chapters');
-  assert.equal(scoped.$('topic').value,'Ch 4 · 4.4');
+  assert.deepEqual(checkedTopics(scoped),['Ch 4 · 4.4']);
   change(scoped,'mode','review');change(scoped,'topic','');change(scoped,'practice-chapter','bc-ch2');
   assert.equal(currentScoped().chapter,'bc-ch2');change(scoped,'mode','day');assert.equal(scoped.$('day-question').options.length,2,'Day history is limited to the chapter');
   change(scoped,'practice-chapter','');assert.equal(scoped.$('day-question').options.length,4,'All chapters restores full day history');
   assert.ok(scoped.$('topic-stats').textContent.includes("Ch 3 · 3.3 Hooke's law"));
+  chooseTopics(scoped,['Ch 2 · 2.2','Ch 3 · 3.2']);
+  assert.equal(scoped.$('topic-summary').textContent,'2 topics selected');
+  assert.equal(scoped.$('day-question').options.length,3,'Day practice combines selected sections across chapters');
+  change(scoped,'mode','review');
+  for(let i=0;i<3;i++){assert.ok(['Ch 2 · 2.2','Ch 3 · 3.2'].includes(currentScoped().topic));scoped.$('skip').click();}
+  for(const mode of ['adaptive','random']){
+    change(scoped,'mode',mode);
+    for(let i=0;i<6;i++){assert.ok(['Ch 2 · 2.2','Ch 3 · 3.2'].includes(currentScoped().topic));scoped.$('skip').click();}
+  }
+  change(scoped,'mode','chapter');
+  const combined=bank.filter(q=>['Ch 2 · 2.2','Ch 3 · 3.2'].includes(q.topic));
+  assert.equal(scoped.$('practice-chapter').value,'','Ordered practice keeps a cross-chapter selection');
+  assert.deepEqual([...scoped.$('chapter-question').options].slice(1).map(o=>o.value),combined.map(q=>q.id));
+  assert.ok([...scoped.$('chapter-grid').children].some(b=>b.textContent.startsWith('Ch 3 ·')));
+  change(scoped,'chapter-question',combined.at(-1).id);scoped.$('skip').click();assert.equal(currentScoped().id,combined[0].id);
+  scoped.$('topic-clear').click();assert.equal(scoped.$('source').hidden,true,'An empty selection does not fall back to all questions');assert.match(scoped.$('reason').textContent,/Select one or more topics/);
+  const wholeForces=scoped.$('topic-list').querySelector('input[data-chapter="bc-ch3"]');wholeForces.click();
+  assert.deepEqual(checkedTopics(scoped),[...new Set(forces.map(q=>q.topic))]);
+  assert.equal(scoped.$('chapter-grid').children.length,79,'Whole-chapter checkbox includes all sections and review questions');
+  topicInputs(scoped).find(input=>input.value==='Ch 3 · 3.2').click();
+  assert.equal(wholeForces.indeterminate,true,'Partially selected chapters have a mixed checkbox state');
+  wholeForces.click();assert.equal(wholeForces.checked,true);assert.equal(scoped.$('chapter-grid').children.length,79);
+  wholeForces.click();assert.equal(scoped.$('source').hidden,true);
+  scoped.$('topic-all').click();assert.equal(scoped.$('chapter-grid').children.length,301);change(scoped,'mode','random');change(scoped,'mode','chapter');assert.equal(scoped.$('chapter-grid').children.length,301,'Changing modes preserves All chapters and all selected topics');
+  change(scoped,'practice-chapter','bc-ch3');chooseTopics(scoped,['Ch 3 · 3.1','Ch 3 · 3.3']);
+  assert.deepEqual([...scoped.$('chapter-question').options].slice(1).map(o=>o.value),forces.filter(q=>q.topic!=='Ch 3 · 3.2'&&['Ch 3 · 3.1','Ch 3 · 3.3'].includes(q.topic)).map(q=>q.id),'Multiple sections form a union within a chapter');
+  scoped.$('topic-picker').open=true;scoped.$('topic-clear').click();assert.equal(scoped.$('topic-picker').open,true,'Changing topics keeps the picker open');
+  scoped.$('topic-picker').dispatchEvent(new scoped.w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));assert.equal(scoped.$('topic-picker').open,false);
   assert.deepEqual(scoped.errors,[]);scoped.dom.window.close();
   // A pasted sharing URL must never be saved or shared as the Firebase key.
   const key='AIza'+'x'.repeat(35),liveId='a'.repeat(48),keyStorage='physics11FirebaseApiKey';
@@ -206,7 +240,7 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   assert.equal(networkCalls,0,'Invalid keys are rejected before loading Firebase');
   assert.equal(store.setApiKey(''),true);assert.equal(store.getApiKey(),'','This device only still clears the key');
   // One shared steps pad supplies handwritten answers alongside typed text.
-  const ink=page();login(ink,'Ink');change(ink,'mode','chapter');
+  const ink=page();login(ink,'Ink');change(ink,'practice-chapter','bc-ch2');change(ink,'mode','chapter');
   assert.equal(ink.$('answer-tab-handwritten'),null);assert.equal(ink.$('answer-canvas'),null);assert.equal(ink.d.querySelectorAll('canvas').length,1,'Only the shared steps canvas remains');
   pointer(ink,'pointerdown',25,25);pointer(ink,'pointermove',60,40);pointer(ink,'pointerup',60,40);await pause();
   assert.equal(ink.$('drawing-undo').disabled,false);assert.equal(ink.$('drawing-clear').disabled,false);
@@ -227,10 +261,10 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   const requests=[];ink.w.fetch=async(url,options)=>{requests.push({url,body:JSON.parse(options.body)});return {ok:true,json:async()=>({verdict:'correct',confidence:'high',feedback:'Your handwritten answer has the correct units.',steps:[],weak_points:[]})};};
   ink.$('ai-check').click();await pause();await pause();assert.equal(requests.length,1);assert.match(requests[0].body.message,/Show your steps work attached/);assert.match(requests[0].body.message,/Optional typed units: m\/s/);assert.ok(ink.w.__lastEncodedLabels.some(label=>label.includes('STUDENT WORK')),'AI receives labelled steps alongside typed text');assert.equal(history(ink,'Ink').attempts[0].aiReview.verdict,'correct');
   const inkStorage=storageOf(ink);
-  const inkReload=page(html,{storage:inkStorage});change(inkReload,'mode','chapter');change(inkReload,'chapter-question',bank[0].id);await pause();
+  const inkReload=page(html,{storage:inkStorage});change(inkReload,'practice-chapter','bc-ch2');change(inkReload,'mode','chapter');change(inkReload,'chapter-question',bank[0].id);await pause();
   assert.ok(inkReload.$('solution').hidden);assert.equal(inkReload.$('previous-response').open,false);assert.ok(inkReload.$('previous-response').querySelector('polyline'),'Saved handwriting is reviewable after reload');assert.equal(inkReload.$('drawing-clear').disabled,true,'Retry starts with a fresh shared steps pad');
   // Online Show answer verifies automatically using the pre-reveal submission.
-  const auto=page(html,{online:true}),autoRequests=[];login(auto,'Auto');change(auto,'mode','chapter');
+  const auto=page(html,{online:true}),autoRequests=[];login(auto,'Auto');change(auto,'practice-chapter','bc-ch2');change(auto,'mode','chapter');
   let nextReview=review('incorrect');
   auto.w.fetch=async(url,options)=>{autoRequests.push({url,body:JSON.parse(options.body)});return {ok:true,json:async()=>({response:JSON.stringify(nextReview)})};};
   response(auto,'My original answer');await pause();auto.$('dock-check').click();
@@ -278,12 +312,12 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
     finish();await pause();assert.equal(history(auto,'Auto').attempts.length,6,'Late '+action+' result is not recorded');
   }
   // Timeout aborts the request and leaves manual fallback available.
-  const timed=page(html,{online:true});login(timed,'Timed');change(timed,'mode','chapter');response(timed,'Timeout answer');
+  const timed=page(html,{online:true});login(timed,'Timed');change(timed,'practice-chapter','bc-ch2');change(timed,'mode','chapter');response(timed,'Timeout answer');
   const originalTimeout=timed.w.setTimeout.bind(timed.w);timed.w.setTimeout=(fn,delay,...args)=>originalTimeout(fn,delay===120000?20:delay,...args);
   timed.w.fetch=async(url,options)=>new Promise((resolve,reject)=>options.signal.addEventListener('abort',()=>reject(new timed.w.DOMException('Aborted','AbortError')),{once:true}));
   timed.$('check').click();await until(()=>!timed.$('self-rating').hidden&&!timed.$('verify-retry').disabled);assert.match(timed.$('feedback').textContent,/timed out/);assert.equal(history(timed,'Timed').attempts.length,0);
   const monitorSource=fs.readFileSync(path.join(root,'physics-monitor.html'),'utf8');
   const m=page(monitorSource,{url:'https://physics.test/physics-monitor.html?student=Ada&period=week&exclude=',storage:saved});await pause();assert.deepEqual(m.errors,[]);assert.equal(m.$('activity-days').children.length,7);assert.match(m.$('activity-status').textContent,/saved on this device/);assert.ok(!m.w.StudentStore,'Monitor has no history-writing store');
   for(const instance of [p,restored,shared,forcesShared,newtonsShared,f,host,follower,invalidFollower,ink,inkReload,auto,autoReload,timed,m]){assert.deepEqual(instance.errors,[]);instance.w.close();}
-  console.log('Passed: 301 question/answer pairs, graphs, navigation, student storage, future chapters, handwriting tools/backups, automatic model-answer verification, typed/handwritten submissions, correct/incorrect/partial verdicts, immutable submissions, uncertain/offline/error fallback, retries, cancellation/navigation/student isolation, timeout, read-only monitor, and offline startup.');
+  console.log('Passed: multiple topic and whole-chapter selection across all modes, 301 question/answer pairs, graphs, navigation, student storage, future chapters, handwriting tools/backups, automatic model-answer verification, typed/handwritten submissions, correct/incorrect/partial verdicts, immutable submissions, uncertain/offline/error fallback, retries, cancellation/navigation/student isolation, timeout, read-only monitor, and offline startup.');
 })().catch(error=>{console.error(error);process.exit(1);});
