@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A nine-page Physics 11 forces review with key concepts, 21 questions, and brief answers.">
+<title>{{PAGE_TITLE}}</title>
+<style>
+:root{color-scheme:light;--ink:#20332f;--muted:#53635f;--accent:#24695b;--line:#d7dfda}
+*{box-sizing:border-box}body{margin:0;background:#eef1ed;color:var(--ink);font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--accent);text-underline-offset:3px}a:focus-visible,button:focus-visible{outline:3px solid #236eab;outline-offset:4px}.skip{position:absolute;left:12px;top:-100px}.skip:focus{top:8px;background:#fff;padding:8px;z-index:2}
+.toolbar{max-width:800px;margin:28px auto 20px;padding:0 24px}.toolbar p{color:var(--muted);margin:7px 0 18px}.toolbar h1{font-size:32px;line-height:1.15;margin:0;letter-spacing:-.035em}.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:14px}.actions button{border:0;border-radius:5px;background:var(--accent);color:#fff;font:inherit;padding:10px 15px;cursor:pointer}.actions button:hover{background:#195143}nav{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}nav a{background:white;border:1px solid var(--line);padding:4px 10px;border-radius:4px;font-size:13px;text-decoration:none}main{max-width:800px;margin:auto;padding:0 16px 28px}
+section{counter-increment:page;position:relative;background:#fff;border:1px solid var(--line);margin:20px 0;padding:35px 42px 64px;min-height:975px;scroll-margin-top:16px}main{counter-reset:page}section::before{content:"PHYSICS 11 / FORCES REVIEW";display:block;color:var(--accent);font-size:11px;letter-spacing:.13em;font-weight:750;margin-bottom:14px}section::after{content:"FORCES REVIEW  ·  Page " counter(page) " of 9";position:absolute;left:42px;right:42px;bottom:22px;padding-top:10px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}h2{font-size:27px;line-height:1.2;letter-spacing:-.03em;margin:0 0 22px}h3{font-size:15px;line-height:1.3;color:var(--accent);margin:20px 0 8px}p{margin:8px 0 13px}ul{padding-left:21px;margin:8px 0 16px}li{padding-left:2px;margin:7px 0}pre{background:#f3f6f3;border-left:3px solid var(--accent);padding:12px 15px;font:15px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere;margin:10px 0 14px}code{font:inherit}.question{padding:0 0 19px;margin-bottom:12px;border-bottom:1px solid #e4e9e5}.question:last-of-type{margin-bottom:0}section.answer-page p{margin-bottom:14px}section.answer-page h3{margin-top:22px}.source-link{font-size:12px;color:var(--muted);margin-top:18px}
+@media(max-width:600px){body{font-size:15px}.toolbar{padding:0 18px}.toolbar h1{font-size:29px}main{padding:0 9px 16px}section{padding:26px 22px 65px;min-height:0}section::after{left:22px;right:22px}h2{font-size:25px}pre{font-size:13px;padding:10px}section::before{font-size:10px}}
+@page{size:Letter;margin:12mm}
+@media print{html{font-size:11pt}body{background:white;color:#111;font-size:11pt;line-height:1.43}.toolbar,.skip{display:none}main{max-width:none;margin:0;padding:0}section{border:0;margin:0;padding:3mm 0 14mm;min-height:254mm;break-after:page;page-break-after:always;scroll-margin-top:0}section:last-child{break-after:auto;page-break-after:auto}section::before{font-size:8pt;margin-bottom:3.5mm}section::after{left:0;right:0;bottom:3mm;font-size:8pt}h2{font-size:21pt;margin-bottom:5mm}h3{font-size:11pt;margin-top:5mm}p{margin:2mm 0 3mm}li{margin:1.7mm 0}ul{margin-bottom:4mm}pre{font-size:10.2pt;padding:3mm 4mm;line-height:1.5;print-color-adjust:exact;-webkit-print-color-adjust:exact}.question{padding-bottom:4mm;margin-bottom:3mm}h2,h3{break-after:avoid}p,li,pre{break-inside:avoid;orphans:2;widows:2}section.answer-page p{margin-bottom:3.4mm}section.answer-page h3{margin-top:5mm}.source-link{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#review">Skip to review</a>
+<header class="toolbar">
+<h1>{{H1_TITLE}}</h1>
+<p>{{PAGE_SUBTITLE}}. Attempt the questions before checking the answers.</p>
+<div class="actions"><button id="print-review" type="button">Print / Save PDF</button><a href="forces-notes.html">Full forces notes</a><a href="#page-8">Answer key</a></div>
+<nav aria-label="Review pages"><a href="#page-1">1 · Weight</a><a href="#page-2">2 · Gravity</a><a href="#page-3">3 · Falling</a><a href="#page-4">4 · Friction</a><a href="#page-5">5 · Calculations</a><a href="#page-6">6 · Springs</a><a href="#page-7">7 · Balances</a><a href="#page-8">8–9 · Answers</a></nav>
+</header>
+<main id="review">
+{{SECTIONS}}
+</main>
+<script>document.getElementById('print-review').addEventListener('click',function(){window.print()});</script>
+</body>
+</html>
