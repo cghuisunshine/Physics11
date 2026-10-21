@@ -2,6 +2,9 @@
 const bank=JSON.parse(document.getElementById('question-bank').textContent);
 const AI=window.PhotoReview;
 const P=window.Practice, $=id=>document.getElementById(id);
+const Adaptive=window.AdaptivePractice;
+let generationRequest=null;
+let coachPresented=new Set();
 P.configure(bank);
 let state={version:1,attempts:[],items:{}}, current=null, selected=null, checked=false, revealed=false, started=Date.now();
 let activeAttempt=null, photo=null, photoVersion=0, reviewRequest=null;
@@ -143,11 +146,15 @@ function syncStatus(kind,error){
   if(kind==='synced'&&$('storage-message').textContent==='Saving and syncing…')$('storage-message').textContent='Progress saved and synced.';
 }
 function startSync(){if(!student)return;students.start(student,{getLocal:()=>students.loadLocal(student),onStatus:syncStatus,
-  onRemote:data=>{const s=readPayload(data);if(!s)return;state=s;updatedAt=data.updatedAt||'';students.saveLocal(student,{version:1,student,updatedAt,state:typeof data.state==='string'?data.state:JSON.stringify(data.state)});
+  onRemote:data=>{const s=readPayload(data);if(!s)return;cancelGeneration();state=s;updatedAt=data.updatedAt||'';students.saveLocal(student,{version:1,student,updatedAt,state:typeof data.state==='string'?data.state:JSON.stringify(data.state)});
     if(activeAttempt)activeAttempt=state.attempts.find(a=>a.at===activeAttempt.at&&a.id===activeAttempt.id)||null;dashboard();$('storage-message').textContent='Loaded the latest progress from another device.';}});}
 // A shared question link refers to its stable chapter/question ID.
-function shareURL(p){const u=new URL(location.href);u.search='';u.hash='';u.searchParams.set('q',p.id);return u.toString();}
-function sharedFromURL(){return bank.find(p=>p.id===new URLSearchParams(location.search).get('q'))||null;}
+function shareURL(p){const u=new URL(location.href);u.search='';u.hash='';u.searchParams.set('q',p.id);if(p.generatedData)u.hash=new URLSearchParams({practice:JSON.stringify(p.generatedData)}).toString();return u.toString();}
+function sharedFromURL(){
+  const id=new URLSearchParams(location.search).get('q'),known=bank.find(p=>p.id===id);if(known)return known;
+  try{const raw=new URLSearchParams(location.hash.slice(1)).get('practice');if(raw&&raw.length<26000){const p=Adaptive.problem(JSON.parse(raw),bank);if(p?.id===id)return p;}}catch{}
+  return null;
+}
 let pendingShare=sharedFromURL();
 if(new URLSearchParams(location.search).has('q')||new URLSearchParams(location.search).has('g')){try{const u=new URL(location.href);u.searchParams.delete('q');u.searchParams.delete('g');history.replaceState(null,'',u);}catch(e){}}
 $('share-question').onclick=async()=>{
@@ -157,6 +164,7 @@ $('share-question').onclick=async()=>{
   try{await navigator.clipboard.writeText(url);done('Link copied');}catch(e){window.prompt('Copy this link to share the question:',url);}
 };
 function useStudent(name){
+  cancelGeneration();coachPresented=new Set();
   cancelReview();student=students.login(name);state={version:1,attempts:[],items:{}};updatedAt='';
   const local=students.loadLocal(student),s=readPayload(local);
   if(local&&typeof local.student==='string'&&local.student!==student&&students.idFor(local.student)===students.idFor(student))student=students.login(local.student);
@@ -357,7 +365,60 @@ function dashboard(){
   if(!queue.length)$('queue').textContent='Nothing to review yet.';
   $('review-button').disabled=!queue.length;
   renderRecent();renderLearningLog();refreshDayControls();refreshChapterControls();
+  renderAdaptiveCoverage();
 }
+function renderAdaptiveCoverage(){
+  const box=$('adaptive-coverage');box.replaceChildren();
+  const rows=Adaptive.coverage(state,bank,scopedQuestions());
+  for(const topic of [...new Set(rows.map(r=>r.topic))]){
+    const group=document.createElement('div'),heading=document.createElement('h3');heading.textContent=topicName(topic);group.append(heading);
+    for(const row of rows.filter(r=>r.topic===topic)){const p=document.createElement('p');p.className='small';p.textContent=`${Adaptive.skills[row.skill]}: ${row.status}${row.total?` · ${row.correct}/${row.total} recent correct`:''}`;group.append(p);}
+    box.append(group);
+  }
+}
+function cancelGeneration(){
+  if(generationRequest){const request=generationRequest;generationRequest=null;request.controller.abort();clearTimeout(request.timer);}
+  $('adaptive-create').disabled=false;$('adaptive-cancel').hidden=true;$('adaptive-panel').removeAttribute('aria-busy');
+}
+async function generateAdaptive(){
+  if(generationRequest||live.role==='follower'||$('mode').value!=='coach')return;
+  if(!student){showLogin();$('adaptive-status').textContent='Choose a student before creating a question.';return;}
+  if(reviewRequest){$('adaptive-status').textContent='Finish or cancel the current answer check first.';return;}
+  const plan=Adaptive.plan(state,bank,scopedQuestions());
+  if(!plan){$('adaptive-status').textContent='Select at least one topic first.';return;}
+  const textbook=Adaptive.chooseTextbook(plan,scopedQuestions(),state,[...coachPresented,current?.id]);
+  if(textbook){
+    coachPresented.add(textbook.id);show({...textbook,coachSkill:plan.skill},`${topicName(textbook.topic)} · ${Adaptive.skills[plan.skill]} · ${plan.reason} A matching textbook question is available.`);
+    $('adaptive-status').textContent='Selected a suitable unused textbook question. AI creates a new question only when this topic, skill and difficulty have no suitable unused match.';return;
+  }
+  if(Object.keys(state.generated||{}).length>=5000){$('adaptive-status').textContent='This profile has reached its saved-question limit. Export progress and revisit saved questions or use textbook practice.';return;}
+  if(navigator.onLine===false){$('adaptive-status').textContent='You are offline. Revisit saved questions or use textbook practice, then retry when connected.';return;}
+  const controller=new AbortController(),request={controller,student,problem:current};generationRequest=request;
+  $('adaptive-create').disabled=true;$('adaptive-cancel').hidden=false;$('adaptive-panel').setAttribute('aria-busy','true');
+  $('adaptive-status').textContent=`No suitable unused textbook question for this skill and level. Creating ${P.levels[plan.level-1].toLowerCase()} practice in ${Adaptive.skills[plan.skill]} · ${topicName(plan.topic)}…`;
+  request.timer=setTimeout(()=>{request.timedOut=true;controller.abort();},60000);
+  try{
+    const message=Adaptive.prompt(plan,state,readableHTML(plan.anchor.html),readableHTML(plan.anchor.solution));
+    const image=await questionAndWorkingImage(plan.anchor,[],controller.signal);
+    if(controller.signal.aborted||generationRequest!==request)return;
+    const result=await fetch(AI.endpoint,{method:'POST',mode:'cors',credentials:'omit',headers:{'Content-Type':'application/json'},signal:controller.signal,body:JSON.stringify({message,image:image.image,mime_type:image.mime_type,filename:image.filename})});
+    if(!result.ok)throw Error('The question service returned HTTP '+result.status+'.');
+    const data=await result.json();
+    if(controller.signal.aborted||generationRequest!==request||student!==request.student||current!==request.problem||$('mode').value!=='coach')return;
+    const p=Adaptive.parse(data,plan,bank,'gen-'+crypto.randomUUID());
+    if(Object.values(state.generated||{}).some(d=>d.question.toLowerCase()===p.generatedData.question.toLowerCase()))throw Error('The service repeated a saved question. Please retry for a new one.');
+    generationRequest=null;clearTimeout(request.timer);
+    show(p,`${topicName(p.topic)} · ${Adaptive.skills[p.skill]} · ${plan.reason}`);
+    save();renderAdaptiveCoverage();$('adaptive-status').textContent='New question ready. Answer it, check your work, then choose Next question to continue.';
+    $('question-title').focus();
+  }catch(error){
+    if(generationRequest!==request)return;
+    $('adaptive-status').textContent=(request.timedOut?'Creating the question timed out.':error.name==='AbortError'?'Question creation canceled.':error instanceof TypeError?'Could not reach the question service. Check your connection.':error.message)+' Your current question and progress are kept. Retry or use textbook practice.';
+  }finally{if(generationRequest===request)cancelGeneration();}
+}
+$('adaptive-create').onclick=generateAdaptive;
+$('adaptive-cancel').onclick=()=>{cancelGeneration();$('adaptive-status').textContent='Question creation canceled. Your current question and progress are kept.';};
+$('adaptive-textbook').onclick=()=>{$('mode').value='adaptive';next(true);};
 function flagButton(){const manual=current && state.items[current.id]?.manual;$('flag').textContent=manual?'★ Flagged for review':'☆ Flag for review';$('flag').setAttribute('aria-pressed',String(!!manual));}
 function inkPreview(ink){
   const data=P.normalizeInk(ink);if(!data)return null;
@@ -380,25 +441,36 @@ function buildAnswerInput(problem){
   syncAnswerTools();
 }
 function show(p,reason,fromLive=false){
+  cancelGeneration();
   if(live.role==='follower'&&!fromLive){p=followedQuestion;reason='Following live — your answers and progress are your own.';}
+  if(p?.generatedData){state.generated=state.generated||{};state.generated[p.id]=p.generatedData;}
+  $('adaptive-panel').hidden=$('mode').value!=='coach'||live.role==='follower';
   resetPhotoReview();submittedAnswer=null;current=p;selected=null;checked=false;revealed=false;started=Date.now();$('reason').textContent=reason;
   refreshChapterControls();
   $('feedback').hidden=true;$('self-rating').hidden=true;$('verify-retry').hidden=true;$('solution').hidden=true;$('solution').open=false;$('solution-body').replaceChildren();$('image-warning').hidden=true;
   $('check').hidden=!p;$('check').disabled=false;$('check').textContent='Show answer';$('next').hidden=true;$('skip').hidden=!p;$('choices').hidden=!p;$('flag').hidden=!p;$('share-question').hidden=!p;$('photo-section').hidden=!p;
   $('share-live').hidden=!p||live.role==='follower'||['host','ending'].includes(live.role);
   $('choice-list').replaceChildren();$('statement').replaceChildren();$('source').hidden=true;$('source').removeAttribute('href');live.publish(p).catch(()=>{});
-  if(!p){$('badge').hidden=false;$('badge').textContent='All clear';$('question-title').textContent='No questions in this selection';$('question-meta').textContent='Choose another topic or practice mode.';return;}
+  if(!p){const ready=$('mode').value==='coach'&&selectedTopics.size;$('badge').hidden=false;$('badge').textContent=ready?'Skill builder':'All clear';$('question-title').textContent=ready?'Ready for your next question':'No questions in this selection';$('question-meta').textContent=ready?'Choose Find my next question above to begin.':'Choose another topic or practice mode.';return;}
   $('badge').textContent=p.questionType;$('badge').hidden=false;$('question-title').textContent=p.title;
   $('question-meta').textContent=`Chapter ${p.chapterNumber}: ${p.chapterTitle} · ${p.topicTitle||p.topic} · ${P.levels[p.level-1]} (estimated)`;
-  $('statement').innerHTML=p.html;$('source').href=p.url;$('source').hidden=false;flagButton();
+  $('statement').innerHTML=p.html;$('source').href=p.url;$('source').hidden=false;$('source').textContent=p.generatedData?'Open related textbook collection ↗':'Open question collection ↗';flagButton();
   buildAnswerInput(p);$('photo-section').hidden=false;openDrawing();
 }
 function next(reset=false){
   if(live.role==='follower')return;
+  cancelGeneration();
   const mode=$('mode').value;
+  $('adaptive-panel').hidden=mode!=='coach';
+  renderAdaptiveCoverage();
   const dayQuestions=refreshDayControls();
   const chapterQuestions=refreshChapterControls();
   if(!selectedTopics.size){show(null,'Select one or more topics, or check a whole chapter, to start practising.');return;}
+  if(mode==='coach'){
+    if(reset===true){show(null,'Choose Find my next question to start adaptive skill practice.');$('adaptive-status').textContent='Ready. Textbook questions come first; AI fills gaps. Your checked answers guide the next skill and difficulty.';}
+    else generateAdaptive();
+    return;
+  }
   if(mode==='chapter'){
     const index=reset===true?-1:chapterQuestions.findIndex(p=>p.id===current?.id);
     showChapterQuestion(chapterQuestions.length?chapterQuestions[(index+1)%chapterQuestions.length]:null);return;
@@ -408,7 +480,7 @@ function next(reset=false){
     showDayQuestion(dayQuestions.length?dayQuestions[(index+1)%dayQuestions.length]:null,dayQuestions);return;
   }
   if(mode==='review'){
-    const ids=new Set(scopedQuestions().map(p=>p.id)),q=P.reviewQueue(state,'').filter(x=>ids.has(x.problem.id)), other=q.filter(x=>x.problem.id!==current?.id);
+    const ids=new Set(scopedQuestions([...bank,...Adaptive.problems(state,bank)]).map(p=>p.id)),q=P.reviewQueue(state,'').filter(x=>ids.has(x.problem.id)), other=q.filter(x=>x.problem.id!==current?.id);
     const p=(other[0]||q[0])?.problem;
     show(p||null,p?'Review a missed or flagged question.':'Your review queue is clear for this chapter and topic.');return;
   }
@@ -421,6 +493,7 @@ function next(reset=false){
 }
 $('check').onclick=()=>{
   if(!current||checked||revealed)return;
+  cancelGeneration();
   cancelReview();stopCamera();drawing.finish();
   try{submittedAnswer=captureAnswer();}catch(error){$('feedback').hidden=false;$('feedback').className='wrong';$('feedback').textContent=error.message;return;}
   revealed=true;selected=submittedAnswer.choice;
@@ -450,7 +523,8 @@ function verificationFallback(message){
 }
 function recordSubmittedAnswer(correct,assessment='self',verification=null){
   const response=submittedAnswer;if(!current||checked||!revealed||!response)return false;
-  try{P.record(state,current,response.choice,response.seconds,correct,{answerInk:response.answerInk,answerInputMode:'typed',assessment,answerVerification:verification});}catch(error){verificationFallback(error.message);return false;}
+  cancelGeneration();
+  try{P.record(state,current,response.choice,response.seconds,correct,{answerInk:response.answerInk,answerInputMode:'typed',assessment,answerVerification:verification,practiceSkill:current.coachSkill});}catch(error){verificationFallback(error.message);return false;}
   checked=true;activeAttempt=state.attempts[state.attempts.length-1];
   if(verification){activeAttempt.aiReview=verification;activeAttempt.aiReviewedAt=new Date().toISOString();state.items[current.id].aiConcern=AI.needsReview(verification);reviewedDrawVersion=response.drawVersion;}
   save();dashboard();$('response-input').readOnly=true;const dock=$('dock-response');if(dock)dock.readOnly=true;
@@ -458,6 +532,7 @@ function recordSubmittedAnswer(correct,assessment='self',verification=null){
   const verdict=verification?{correct:'Correct',partly_correct:'Partly correct',incorrect:'Incorrect'}[verification.verdict]:'';
   $('feedback').textContent=(verification?'AI checked against the model answer: '+verdict+'. '+(verification.answer_check||verification.feedback).slice(0,400):correct?'Self-rated correct.':'Self-rated as needing practice.')+(correct?' Saved.':' Saved to your review queue.')+' Time spent: '+describeDuration(activeAttempt.seconds)+'.';
   $('next').hidden=false;$('skip').hidden=true;updatePhotoControls();
+  if($('mode').value==='coach')$('adaptive-status').textContent='Answer saved. Choose Next question for practice based on this result.';
   return true;
 }
 function rateWork(correct){
@@ -504,7 +579,7 @@ async function verifyAnswer(){
 }
 $('verify-retry').onclick=verifyAnswer;
 $('rate-correct').onclick=()=>rateWork(true);$('rate-practice').onclick=()=>rateWork(false);
-$('flag').onclick=()=>{if(!current)return;const old=state.items[current.id]||{problem:current,missed:false,manual:false};old.manual=!old.manual;state.items[current.id]=old;save();flagButton();dashboard();};
+$('flag').onclick=()=>{if(!current)return;if(current.generatedData)state.generated={...state.generated,[current.id]:current.generatedData};const old=state.items[current.id]||{problem:current,missed:false,manual:false};old.manual=!old.manual;state.items[current.id]=old;save();flagButton();dashboard();};
 $('next').onclick=()=>{next();$('question-title').focus();};$('skip').onclick=()=>{next();$('question-title').focus();};
 $('mode').onchange=()=>{
   if($('mode').value==='chapter'&&!$('practice-chapter').value){

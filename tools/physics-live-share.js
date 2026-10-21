@@ -2,8 +2,8 @@
 (function(root){
   'use strict';
   const validId=id=>typeof id==='string'&&/^[a-f0-9]{48}$/.test(id);
-  function pack(problem){return problem?{q:problem.id}:null;}
-  function unpack(data,bank){return data&&typeof data.q==='string'?bank.find(p=>p.id===data.q)||null:null;}
+  function pack(problem){return problem?{q:problem.id,...(problem.generatedData?{generated:problem.generatedData}:{})}:null;}
+  function unpack(data,bank){return data&&typeof data.q==='string'?(bank.find(p=>p.id===data.q)||(data.generated?.id===data.q&&root.AdaptivePractice?.problem(data.generated,bank))||null):null;}
   function sessionId(){
     const bytes=new Uint8Array(24);root.crypto.getRandomValues(bytes);
     return Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');

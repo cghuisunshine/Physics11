@@ -171,7 +171,7 @@ def build(registry_path, output_path):
     bank = load_bank(registry_path)
     data = json.dumps(bank, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c').replace('\u2028', '\\u2028').replace('\u2029', '\\u2029')
     scripts = '<script id="question-bank" type="application/json">'+data+'</script>\n'
-    for name in ['physics-activity.js', 'physics-practice-core.js', 'physics-photo-review.js', 'physics-drawing-pad.js', 'physics-students.js', 'physics-live-share.js', 'physics-practice.js']:
+    for name in ['physics-activity.js', 'physics-adaptive.js', 'physics-practice-core.js', 'physics-photo-review.js', 'physics-drawing-pad.js', 'physics-students.js', 'physics-live-share.js', 'physics-practice.js']:
         scripts += embedded_script(name)
     template = (TOOLS / 'physics-practice-template.html').read_text()
     output_path.write_text(template.replace('<!-- PRACTICE_SCRIPTS -->', scripts))

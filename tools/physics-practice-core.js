@@ -88,7 +88,9 @@
     if(response.answerInk&&!answerInk)throw Error('This handwritten answer is too large to save. Please shorten it or use the steps pad for longer working.');
     const assessment=response.assessment==='ai'?'ai':'self';
     if(assessment==='ai'&&!validVerification(response.answerVerification,correct))throw Error('A reliable answer verification is required to save an automatic result.');
+    if(problem.generatedData)state.generated={...state.generated,[problem.id]:problem.generatedData};
     state.attempts.push({id:problem.id,topic:problem.topic,level:problem.level,kind:problem.kind,chapter:problem.chapter,title:problem.title,choice,answer:problem.answer,correct,review,assessment,seconds:Math.max(0,elapsed||0),at:new Date().toISOString(),answerInputMode:response.answerInputMode==='handwritten'?'handwritten':'typed',...(answerInk?{answerInk}:{}),...(assessment==='ai'?{answerVerification:JSON.parse(JSON.stringify(response.answerVerification))}:{})});
+    if(Object.keys(root.AdaptivePractice?.skills||{}).includes(response.practiceSkill))state.attempts[state.attempts.length-1].practiceSkill=response.practiceSkill;
     const old=state.items[problem.id]||{};
     state.items[problem.id]={problem,manual:!!old.manual,missed:!correct,aiConcern:!!old.aiConcern};
     return correct;
@@ -98,17 +100,20 @@
   function validVerification(v,correct){return !!v&&['correct','partly_correct','incorrect'].includes(v.verdict)&&['high','medium'].includes(v.confidence)&&typeof v.feedback==='string'&&v.feedback.trim().length>0&&v.feedback.length<=6000&&correct===(v.verdict==='correct');}
   function validState(state,bank){
     if(!state||state.version!==1||!Array.isArray(state.attempts)||state.attempts.length>50000||!state.items||typeof state.items!=='object'||Array.isArray(state.items))return false;
-    const ids=new Set(bank.map(p=>p.id)),str=(v,n)=>typeof v==='string'&&v.length<=n;
+    if(state.generated!==undefined&&(!state.generated||typeof state.generated!=='object'||Array.isArray(state.generated)||Object.keys(state.generated).length>5000||!Object.entries(state.generated).every(([id,d])=>id===d?.id&&root.AdaptivePractice?.normalize(d,bank))))return false;
+    const ids=new Set([...bank,...(root.AdaptivePractice?.problems(state,bank)||[])].map(p=>p.id)),str=(v,n)=>typeof v==='string'&&v.length<=n;
     return state.attempts.every(a=>a&&ids.has(a.id)&&str(a.choice,12000)&&typeof a.correct==='boolean'&&typeof a.review==='boolean'&&['self','ai'].includes(a.assessment)&&(a.assessment!=='ai'||validVerification(a.answerVerification,a.correct))&&str(a.at,50)&&Number.isFinite(Date.parse(a.at))&&Number.isFinite(a.seconds)&&a.seconds>=0&&Object.hasOwn(state.items,a.id)&&(!a.answerInk||!!normalizeInk(a.answerInk))&&(a.answerInputMode===undefined||['typed','handwritten'].includes(a.answerInputMode)))&&
       Object.entries(state.items).every(([id,x])=>ids.has(id)&&x&&x.problem?.id===id&&typeof x.manual==='boolean'&&typeof x.missed==='boolean');
   }
   function hydrate(state,bank){
-    const byId=new Map(bank.map(p=>[p.id,p]));
+    const generated=Object.fromEntries(Object.entries(state.generated||{}).map(([id,d])=>[id,root.AdaptivePractice.normalize(d,bank)]));
+    const byId=new Map([...bank,...(root.AdaptivePractice?.problems({generated},bank)||[])].map(p=>[p.id,p]));
     const attempts=state.attempts.map(a=>{const p=byId.get(a.id);return {id:p.id,topic:p.topic,level:p.level,kind:p.kind,chapter:p.chapter,title:p.title,choice:a.choice,answer:p.answer,correct:a.correct,review:false,assessment:a.assessment,seconds:a.seconds,at:a.at,answerInputMode:a.answerInputMode==='handwritten'?'handwritten':'typed',...(a.answerInk?{answerInk:normalizeInk(a.answerInk)}:{}),...(a.assessment==='ai'?{answerVerification:a.answerVerification}:{}),...(a.aiReview?{aiReview:a.aiReview}:{}),...(a.aiReviewedAt?{aiReviewedAt:a.aiReviewedAt}:{})};});
     const seen=new Set();for(const a of attempts){a.review=seen.has(a.id);seen.add(a.id);}
+    for(let i=0;i<attempts.length;i++)if(Object.keys(root.AdaptivePractice?.skills||{}).includes(state.attempts[i].practiceSkill))attempts[i].practiceSkill=state.attempts[i].practiceSkill;
     const latest=new Map(attempts.map(a=>[a.id,a]));
     const items=Object.fromEntries(Object.entries(state.items).map(([id,item])=>[id,{problem:byId.get(id),manual:item.manual,missed:latest.has(id)?!latest.get(id).correct:false,aiConcern:false}]));
-    return {version:1,attempts,items};
+    return {version:1,attempts,items,...(Object.keys(generated).length?{generated}:{})};
   }
   function randomQuestion(bank,state,filter,currentId,rng=Math.random){
     const eligible=bank.filter(p=>!filter||p.topic===filter),other=eligible.filter(p=>p.id!==currentId),pool=other.length?other:eligible;
