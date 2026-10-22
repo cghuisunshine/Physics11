@@ -47,6 +47,8 @@ header,main{max-width:none}footer{max-width:none;margin:0 38px}
 .drawing-tools .close-btn{margin-right:8px;color:var(--muted)}.drawing-tools .close-btn:hover:not(:disabled){color:var(--ink);background:#f1f3ee}
 @media(hover:hover) and (pointer:fine){#drawing-help{display:none!important}}
 
+/* Generated-question provenance */
+.ai-marker{display:inline-flex;align-items:center;justify-content:center;flex:none;width:28px;height:28px;border:2px solid currentColor;border-radius:50%;background:#fff;color:var(--green);font:700 11px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.4px;vertical-align:middle}.badge.generated-badge{display:inline-flex;align-items:center;gap:7px;padding:4px 9px 4px 5px}
 /* Student sign-in and sync */
 .student-button{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #cbd6cd;color:var(--ink);font-size:13px;padding:7px 12px}.student-switch{color:var(--muted);font-weight:400;font-size:11px;border-left:1px solid var(--line);padding-left:8px}
 .sync-dot{width:8px;height:8px;border-radius:50%;background:#b9c4bb}.sync-dot[data-state=synced]{background:#2e8b57}.sync-dot[data-state=connecting]{background:#d9a441}.sync-dot[data-state=error]{background:#c2553a}
@@ -1283,6 +1285,7 @@ $('adaptive-create').onclick=generateAdaptive;
 $('adaptive-cancel').onclick=()=>{cancelGeneration();$('adaptive-status').textContent='Question creation canceled. Your current question and progress are kept.';};
 $('adaptive-textbook').onclick=()=>{$('mode').value='adaptive';next(true);};
 function flagButton(){const manual=current && state.items[current.id]?.manual;$('flag').textContent=manual?'★ Flagged for review':'☆ Flag for review';$('flag').setAttribute('aria-pressed',String(!!manual));}
+function aiMarker(){const marker=document.createElement('span');marker.className='ai-marker';marker.textContent='AI';marker.setAttribute('aria-label','AI-generated question');marker.title='AI-generated question';return marker;}
 function inkPreview(ink){
   const data=P.normalizeInk(ink);if(!data)return null;
   const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.classList.add('saved-answer-ink');svg.setAttribute('viewBox',`0 0 ${data.width} ${data.height}`);svg.setAttribute('role','img');svg.setAttribute('aria-label','Your saved handwritten answer');
@@ -1314,8 +1317,10 @@ function show(p,reason,fromLive=false){
   $('check').hidden=!p;$('check').disabled=false;$('check').textContent='Show answer';$('next').hidden=true;$('skip').hidden=!p;$('choices').hidden=!p;$('flag').hidden=!p;$('share-question').hidden=!p;$('photo-section').hidden=!p;
   $('share-live').hidden=!p||live.role==='follower'||['host','ending'].includes(live.role);
   $('choice-list').replaceChildren();$('statement').replaceChildren();$('source').hidden=true;$('source').removeAttribute('href');live.publish(p).catch(()=>{});
+  $('badge').classList.toggle('generated-badge',!!p?.generatedData);
   if(!p){const ready=$('mode').value==='coach'&&selectedTopics.size;$('badge').hidden=false;$('badge').textContent=ready?'Skill builder':'All clear';$('question-title').textContent=ready?'Ready for your next question':'No questions in this selection';$('question-meta').textContent=ready?'Choose Find my next question above to begin.':'Choose another topic or practice mode.';return;}
-  $('badge').textContent=p.questionType;$('badge').hidden=false;$('question-title').textContent=p.title;
+  if(p.generatedData)$('badge').replaceChildren(aiMarker(),document.createTextNode('Practice · '+Adaptive.skills[p.skill]));else $('badge').textContent=p.questionType;
+  $('badge').hidden=false;$('question-title').textContent=p.title;
   $('question-meta').textContent=`Chapter ${p.chapterNumber}: ${p.chapterTitle} · ${p.topicTitle||p.topic} · ${P.levels[p.level-1]} (estimated)`;
   $('statement').innerHTML=p.html;$('source').href=p.url;$('source').hidden=false;$('source').textContent=p.generatedData?'Open related textbook collection ↗':'Open question collection ↗';flagButton();
   buildAnswerInput(p);$('photo-section').hidden=false;openDrawing();
@@ -1780,7 +1785,7 @@ function sizeCanvas(){
  addEventListener('resize',q);}
 // Pin a compact copy of the question beside the pad once the real one scrolls above the viewport.
 (()=>{const wrap=$('steps-wrap'),dock=$('question-dock'),area=$('question-area');let above=false;
-const refresh=()=>{$('question-dock-title').textContent=$('question-title').textContent;const body=$('statement').cloneNode(true);body.querySelectorAll('[id]').forEach(n=>n.removeAttribute('id'));$('question-dock-body').replaceChildren(...body.childNodes);};
+const refresh=()=>{$('question-dock-title').replaceChildren(...(current?.generatedData?[aiMarker(),document.createTextNode(' ')]:[]),document.createTextNode($('question-title').textContent));const body=$('statement').cloneNode(true);body.querySelectorAll('[id]').forEach(n=>n.removeAttribute('id'));$('question-dock-body').replaceChildren(...body.childNodes);};
 const update=()=>{const b=area.getBoundingClientRect().bottom;above=area.offsetParent!==null&&(dock.hidden?b<=0:b<=60);const on=above&&document.querySelector('.question-card').classList.contains('drawing-active')&&!document.querySelector('.question-card').classList.contains('question-collapsed');if(on===!dock.hidden)return;if(on){refresh();wrap.style.minHeight=wrap.offsetHeight+'px';}else wrap.style.minHeight='';dock.hidden=!on;wrap.classList.toggle('docked',on);};
 {let r=0;addEventListener('scroll',()=>{if(!r)r=requestAnimationFrame(()=>{r=0;update();});},{passive:true});}
 if('IntersectionObserver' in window)new IntersectionObserver(([e])=>{above=!e.isIntersecting&&e.boundingClientRect.bottom<=0;update();}).observe(area);

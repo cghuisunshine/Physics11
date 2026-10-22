@@ -420,6 +420,7 @@ $('adaptive-create').onclick=generateAdaptive;
 $('adaptive-cancel').onclick=()=>{cancelGeneration();$('adaptive-status').textContent='Question creation canceled. Your current question and progress are kept.';};
 $('adaptive-textbook').onclick=()=>{$('mode').value='adaptive';next(true);};
 function flagButton(){const manual=current && state.items[current.id]?.manual;$('flag').textContent=manual?'★ Flagged for review':'☆ Flag for review';$('flag').setAttribute('aria-pressed',String(!!manual));}
+function aiMarker(){const marker=document.createElement('span');marker.className='ai-marker';marker.textContent='AI';marker.setAttribute('aria-label','AI-generated question');marker.title='AI-generated question';return marker;}
 function inkPreview(ink){
   const data=P.normalizeInk(ink);if(!data)return null;
   const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.classList.add('saved-answer-ink');svg.setAttribute('viewBox',`0 0 ${data.width} ${data.height}`);svg.setAttribute('role','img');svg.setAttribute('aria-label','Your saved handwritten answer');
@@ -451,8 +452,10 @@ function show(p,reason,fromLive=false){
   $('check').hidden=!p;$('check').disabled=false;$('check').textContent='Show answer';$('next').hidden=true;$('skip').hidden=!p;$('choices').hidden=!p;$('flag').hidden=!p;$('share-question').hidden=!p;$('photo-section').hidden=!p;
   $('share-live').hidden=!p||live.role==='follower'||['host','ending'].includes(live.role);
   $('choice-list').replaceChildren();$('statement').replaceChildren();$('source').hidden=true;$('source').removeAttribute('href');live.publish(p).catch(()=>{});
+  $('badge').classList.toggle('generated-badge',!!p?.generatedData);
   if(!p){const ready=$('mode').value==='coach'&&selectedTopics.size;$('badge').hidden=false;$('badge').textContent=ready?'Skill builder':'All clear';$('question-title').textContent=ready?'Ready for your next question':'No questions in this selection';$('question-meta').textContent=ready?'Choose Find my next question above to begin.':'Choose another topic or practice mode.';return;}
-  $('badge').textContent=p.questionType;$('badge').hidden=false;$('question-title').textContent=p.title;
+  if(p.generatedData)$('badge').replaceChildren(aiMarker(),document.createTextNode('Practice · '+Adaptive.skills[p.skill]));else $('badge').textContent=p.questionType;
+  $('badge').hidden=false;$('question-title').textContent=p.title;
   $('question-meta').textContent=`Chapter ${p.chapterNumber}: ${p.chapterTitle} · ${p.topicTitle||p.topic} · ${P.levels[p.level-1]} (estimated)`;
   $('statement').innerHTML=p.html;$('source').href=p.url;$('source').hidden=false;$('source').textContent=p.generatedData?'Open related textbook collection ↗':'Open question collection ↗';flagButton();
   buildAnswerInput(p);$('photo-section').hidden=false;openDrawing();
@@ -917,7 +920,7 @@ function sizeCanvas(){
  addEventListener('resize',q);}
 // Pin a compact copy of the question beside the pad once the real one scrolls above the viewport.
 (()=>{const wrap=$('steps-wrap'),dock=$('question-dock'),area=$('question-area');let above=false;
-const refresh=()=>{$('question-dock-title').textContent=$('question-title').textContent;const body=$('statement').cloneNode(true);body.querySelectorAll('[id]').forEach(n=>n.removeAttribute('id'));$('question-dock-body').replaceChildren(...body.childNodes);};
+const refresh=()=>{$('question-dock-title').replaceChildren(...(current?.generatedData?[aiMarker(),document.createTextNode(' ')]:[]),document.createTextNode($('question-title').textContent));const body=$('statement').cloneNode(true);body.querySelectorAll('[id]').forEach(n=>n.removeAttribute('id'));$('question-dock-body').replaceChildren(...body.childNodes);};
 const update=()=>{const b=area.getBoundingClientRect().bottom;above=area.offsetParent!==null&&(dock.hidden?b<=0:b<=60);const on=above&&document.querySelector('.question-card').classList.contains('drawing-active')&&!document.querySelector('.question-card').classList.contains('question-collapsed');if(on===!dock.hidden)return;if(on){refresh();wrap.style.minHeight=wrap.offsetHeight+'px';}else wrap.style.minHeight='';dock.hidden=!on;wrap.classList.toggle('docked',on);};
 {let r=0;addEventListener('scroll',()=>{if(!r)r=requestAnimationFrame(()=>{r=0;update();});},{passive:true});}
 if('IntersectionObserver' in window)new IntersectionObserver(([e])=>{above=!e.isIntersecting&&e.boundingClientRect.bottom<=0;update();}).observe(area);
