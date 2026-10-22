@@ -3,6 +3,7 @@ const bank=JSON.parse(document.getElementById('question-bank').textContent);
 const AI=window.PhotoReview;
 const P=window.Practice, $=id=>document.getElementById(id);
 const Adaptive=window.AdaptivePractice;
+try{if(localStorage.getItem('physics11AdaptiveSource')==='ai')$('adaptive-source').value='ai';}catch{}
 let generationRequest=null;
 let coachPresented=new Set();
 P.configure(bank);
@@ -380,22 +381,34 @@ function cancelGeneration(){
   if(generationRequest){const request=generationRequest;generationRequest=null;request.controller.abort();clearTimeout(request.timer);}
   $('adaptive-create').disabled=false;$('adaptive-cancel').hidden=true;$('adaptive-panel').removeAttribute('aria-busy');
 }
+function alwaysGenerate(){return $('adaptive-source').value==='ai';}
+function adaptiveSourceHelp(){
+  $('adaptive-source-help').textContent=alwaysGenerate()?'Every next question is newly created by AI using the selected textbook chapter/topic, a reference question, its diagrams and worked solution. Internet is required; suitable textbook questions are not substituted.':'Use a suitable unused textbook question first. If none matches the topic, skill and level, AI creates a new one using a textbook reference question, its diagrams and worked solution.';
+}
+function adaptiveReadyMessage(){return alwaysGenerate()?'Ready. Always AI is selected: each next question will be created using your selected textbook context. Your checked answers guide its skill and difficulty.':'Ready. Textbook questions come first; AI fills gaps. Your checked answers guide the next skill and difficulty.';}
+adaptiveSourceHelp();
+$('adaptive-source').onchange=()=>{
+  cancelGeneration();
+  try{localStorage.setItem('physics11AdaptiveSource',$('adaptive-source').value);}catch{}
+  adaptiveSourceHelp();$('adaptive-status').textContent=adaptiveReadyMessage();
+};
 async function generateAdaptive(){
   if(generationRequest||live.role==='follower'||$('mode').value!=='coach')return;
   if(!student){showLogin();$('adaptive-status').textContent='Choose a student before creating a question.';return;}
   if(reviewRequest){$('adaptive-status').textContent='Finish or cancel the current answer check first.';return;}
   const plan=Adaptive.plan(state,bank,scopedQuestions());
   if(!plan){$('adaptive-status').textContent='Select at least one topic first.';return;}
-  const textbook=Adaptive.chooseTextbook(plan,scopedQuestions(),state,[...coachPresented,current?.id]);
+  const requireAI=alwaysGenerate();
+  const textbook=requireAI?null:Adaptive.chooseTextbook(plan,scopedQuestions(),state,[...coachPresented,current?.id]);
   if(textbook){
     coachPresented.add(textbook.id);show({...textbook,coachSkill:plan.skill},`${topicName(textbook.topic)} · ${Adaptive.skills[plan.skill]} · ${plan.reason} A matching textbook question is available.`);
     $('adaptive-status').textContent='Selected a suitable unused textbook question. AI creates a new question only when this topic, skill and difficulty have no suitable unused match.';return;
   }
   if(Object.keys(state.generated||{}).length>=5000){$('adaptive-status').textContent='This profile has reached its saved-question limit. Export progress and revisit saved questions or use textbook practice.';return;}
-  if(navigator.onLine===false){$('adaptive-status').textContent='You are offline. Revisit saved questions or use textbook practice, then retry when connected.';return;}
+  if(navigator.onLine===false){$('adaptive-status').textContent=requireAI?'You are offline. Always AI needs an internet connection to create each new question. Reconnect and retry, or change Question source.':'You are offline. Revisit saved questions or use textbook practice, then retry when connected.';return;}
   const controller=new AbortController(),request={controller,student,problem:current};generationRequest=request;
   $('adaptive-create').disabled=true;$('adaptive-cancel').hidden=false;$('adaptive-panel').setAttribute('aria-busy','true');
-  $('adaptive-status').textContent=`No suitable unused textbook question for this skill and level. Creating ${P.levels[plan.level-1].toLowerCase()} practice in ${Adaptive.skills[plan.skill]} · ${topicName(plan.topic)}…`;
+  $('adaptive-status').textContent=`${requireAI?'Always AI · using textbook context.':'No suitable unused textbook question for this skill and level.'} Creating ${P.levels[plan.level-1].toLowerCase()} practice in ${Adaptive.skills[plan.skill]} · ${topicName(plan.topic)}…`;
   request.timer=setTimeout(()=>{request.timedOut=true;controller.abort();},60000);
   try{
     const message=Adaptive.prompt(plan,state,readableHTML(plan.anchor.html),readableHTML(plan.anchor.solution));
@@ -413,7 +426,7 @@ async function generateAdaptive(){
     $('question-title').focus();
   }catch(error){
     if(generationRequest!==request)return;
-    $('adaptive-status').textContent=(request.timedOut?'Creating the question timed out.':error.name==='AbortError'?'Question creation canceled.':error instanceof TypeError?'Could not reach the question service. Check your connection.':error.message)+' Your current question and progress are kept. Retry or use textbook practice.';
+    $('adaptive-status').textContent=(request.timedOut?'Creating the question timed out.':error.name==='AbortError'?'Question creation canceled.':error instanceof TypeError?'Could not reach the question service. Check your connection.':error.message)+' Your current question and progress are kept. '+(requireAI?'Retry or change Question source.':'Retry or use textbook practice.');
   }finally{if(generationRequest===request)cancelGeneration();}
 }
 $('adaptive-create').onclick=generateAdaptive;
@@ -470,7 +483,7 @@ function next(reset=false){
   const chapterQuestions=refreshChapterControls();
   if(!selectedTopics.size){show(null,'Select one or more topics, or check a whole chapter, to start practising.');return;}
   if(mode==='coach'){
-    if(reset===true){show(null,'Choose Find my next question to start adaptive skill practice.');$('adaptive-status').textContent='Ready. Textbook questions come first; AI fills gaps. Your checked answers guide the next skill and difficulty.';}
+    if(reset===true){show(null,'Choose Find my next question to start adaptive skill practice.');$('adaptive-status').textContent=adaptiveReadyMessage();}
     else generateAdaptive();
     return;
   }

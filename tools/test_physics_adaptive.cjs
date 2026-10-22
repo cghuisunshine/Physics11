@@ -84,5 +84,23 @@ module.exports=async function({page,html,bank,login,change,response,history,stor
   const setTimeout=timeout.w.setTimeout.bind(timeout.w);timeout.w.setTimeout=(fn,delay,...args)=>setTimeout(fn,delay===60000?25:delay,...args);
   timeout.w.fetch=async(url,options)=>new Promise((resolve,reject)=>options.signal.addEventListener('abort',()=>reject(new timeout.w.DOMException('Aborted','AbortError'))));
   timeout.$('adaptive-create').click();await until(()=>/timed out/.test(timeout.$('adaptive-status').textContent));assert.equal(timeout.$('adaptive-create').disabled,false);
-  for(const p of [c,reload,shared,timeout]){assert.deepEqual(p.errors,[]);p.w.close();}
+  // Always AI bypasses unused textbook matches and includes the selected textbook context.
+  const forced=page();login(forced,'Always AI');change(forced,'practice-chapter',bank[0].chapter);change(forced,'topic',bank[0].topic);change(forced,'mode','coach');change(forced,'adaptive-source','ai');
+  assert.ok(forced.w.AdaptivePractice.chooseTextbook(forced.w.AdaptivePractice.plan(fresh(),bank,scope),scope,fresh()),'Suitable unused textbook questions still exist');
+  const readyTitle=forced.$('question-title').textContent;
+  forced.$('adaptive-create').click();assert.match(forced.$('adaptive-status').textContent,/offline.*Always AI/);assert.equal(forced.$('question-title').textContent,readyTitle,'Offline Always AI never substitutes a textbook question');
+  forced.w.navigator.onLine=true;let forcedRequest;
+  forced.w.fetch=async(url,options)=>{forcedRequest=JSON.parse(options.body);return {ok:true,json:async()=>({response:{...content,title:'Always AI question'}})};};
+  forced.$('adaptive-create').click();await until(()=>forced.$('question-title').textContent==='Always AI question');
+  assert.ok(forced.$('badge').querySelector('.ai-marker'),'Mandatory generation keeps the circled AI marker');
+  assert.ok(forcedRequest.image);assert.match(forcedRequest.message,/Stay within the selected textbook chapter\/section/);
+  const context=JSON.parse(forcedRequest.message.split('\n').at(-1));
+  assert.equal(context.textbookContext.topic,scope[0].topic);assert.equal(context.textbookContext.chapterTitle,scope[0].chapterTitle);assert.ok(context.sourceQuestion);assert.ok(context.sourceSolution);
+  assert.equal(history(forced,'Always AI').attempts.length,0);
+  const forcedReload=page(html,{storage:storageOf(forced)});await pause();change(forcedReload,'mode','coach');assert.equal(forcedReload.$('adaptive-source').value,'ai');assert.match(forcedReload.$('adaptive-status').textContent,/Always AI/);
+  forced.w.fetch=async()=>{throw new forced.w.TypeError('Service unavailable');};forced.$('adaptive-create').click();await until(()=>/Could not reach/.test(forced.$('adaptive-status').textContent));assert.equal(forced.$('question-title').textContent,'Always AI question','A failed AI request keeps the current question');
+  let finishSource,pendingSource=false;forced.w.fetch=async()=>{pendingSource=true;return new Promise(resolve=>{finishSource=()=>resolve({ok:true,json:async()=>({response:{...content,title:'Wrong source response'}})});});};
+  forced.$('adaptive-create').click();await until(()=>pendingSource);change(forced,'adaptive-source','textbook-first');finishSource();await pause();assert.equal(forced.$('question-title').textContent,'Always AI question','Changing source cancels late AI responses');
+  forced.$('adaptive-create').click();assert.match(forced.$('adaptive-status').textContent,/Selected a suitable unused textbook/,'The textbook-first option remains available');
+  for(const p of [c,reload,shared,timeout,forced,forcedReload]){assert.deepEqual(p.errors,[]);p.w.close();}
 };
