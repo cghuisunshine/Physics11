@@ -39,7 +39,27 @@ const blobText=(p,b)=>new Promise(resolve=>{const r=new p.w.FileReader();r.onloa
   assert.equal(p.$('homework-name').value,'Newton’s Laws of Motion homework');assert.ok(!p.d.querySelector('[data-complete="q-1"]').checked,'Chapter 2 completion does not leak into Chapter 4');
   p.$('toggle-q-38').click();assert.ok(!p.$('answer-q-38').hidden);assert.match(p.$('answer-q-38').textContent,/75 kg/);p.$('toggle-q-38').click();assert.ok(p.$('answer-q-38').hidden);
   change(p,'topic','4.2');assert.equal(visible(p).length,21);change(p,'kind','Practice');assert.equal(visible(p).length,4);
+  p.$('reset').click();
+  const filterOption=(id,value)=>[...p.d.querySelectorAll(`[data-filter-option="${id}"]`)].find(input=>input.value===value);
+  assert.equal(p.$('topic').multiple,true);assert.equal(p.$('kind').multiple,true);
+  const selectCombined=()=>{for(const section of ['4.1','4.2'])filterOption('topic',section).click();for(const kind of ['Quick check','Practice'])filterOption('kind',kind).click();};
+  selectCombined();
+  const matching=inventory.groups.filter(g=>['4.1','4.2'].includes(g.topic)&&['Quick check','Practice'].includes(g.kind)).flatMap(g=>g.questions.map(q=>q.id));
+  assert.deepEqual(visible(p),matching,'Multiple sections and multiple types combine as OR within each filter, AND across filters');
+  assert.equal(p.$('topic-summary').textContent,'2 sections selected');assert.equal(p.$('kind-summary').textContent,'2 types selected');
+  assert.equal(filterOption('topic','').checked,false);
+  p.$('create-homework').click();p.$('select-shown').click();
+  assert.deepEqual([...p.d.querySelectorAll('[data-homework]:checked')].map(input=>input.dataset.homework),matching,'Select shown uses every selected section and type');
+  p.$('clear-selection').click();selectCombined();change(p,'homework-all-percent','100');p.$('set-section-percentages').click();change(p,'homework-sampling-order','first');p.$('apply-section-percentages').click();
+  assert.deepEqual([...p.d.querySelectorAll('[data-homework]:checked')].map(input=>input.dataset.homework),matching,'Section sampling uses the same combined filters');
+  p.$('clear-selection').click();selectCombined();p.$('create-homework').click();
+  for(const section of ['4.1','4.2'])filterOption('topic',section).click();
+  assert.deepEqual(visible(p),[]);assert.equal(p.$('topic-summary').textContent,'Choose sections');
+  filterOption('topic','').click();filterOption('kind','').click();assert.equal(visible(p).length,121);
+  p.$('topic-picker').open=true;p.$('topic-picker').dispatchEvent(new p.w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+  assert.equal(p.$('topic-picker').open,false);assert.equal(p.d.activeElement,p.$('topic-summary'));
   p.$('reset').click();change(p,'search','paratrooper');assert.deepEqual(visible(p),['q-38']);p.$('reset').click();
+  assert.equal(p.$('topic-summary').textContent,'All sections');assert.equal(p.$('kind-summary').textContent,'All types');
   p.$('create-homework').click();assert.ok(!p.$('homework-panel').hidden);assert.equal(p.d.querySelectorAll('[data-section-percent]').length,6);
   for(const input of p.d.querySelectorAll('[data-section-percent]')){input.value='0';input.dispatchEvent(new p.w.Event('input'));}
   const gravity=p.d.querySelector('[data-section-percent="4.1"]');gravity.value='100';gravity.dispatchEvent(new p.w.Event('input'));

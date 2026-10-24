@@ -35,6 +35,17 @@ function page(file,storage={}){
 }
 (async()=>{
   for(const [name,chapter] of configs){
+    if(name==='newtons-laws'){
+      const multi=page('bc-newtons-laws-questions.html');multi.$('create-homework').click();
+      for(const [id,values] of [['topic',['4.1','4.2']],['kind',['Quick check','Practice']]])for(const value of values){
+        [...multi.d.querySelectorAll(`[data-filter-option="${id}"]`)].find(input=>input.value===value).click();
+      }
+      edit(multi,'homework-all-percent','100');multi.$('set-section-percentages').click();edit(multi,'homework-ai-prompt','Find beginner questions.');
+      const candidates=[...multi.d.querySelectorAll('.question:not([hidden])')].map(q=>q.id);
+      await multi.$('apply-section-percentages').onclick();
+      assert.deepEqual(multi.calls.flatMap(call=>call.questions.map(q=>q.id)),candidates,'AI receives all matching sections and types, with no outside questions');
+      assert.equal(multi.calls.length,2,'AI applies each selected section percentage');assert.deepEqual(multi.errors,[]);multi.w.close();
+    }
     const file='bc-'+name+'-questions.html',p=page(file);p.$('create-homework').click();
     assert.deepEqual(p.errors,[]);assert.equal(p.$('choose-hardest-ai'),null);
     assert.equal(p.$('apply-section-percentages').textContent,'Choose random questions');

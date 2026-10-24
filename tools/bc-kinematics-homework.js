@@ -30,7 +30,8 @@
     if(!aiRequest)return;const status=aiRequest.kind==='refine'?$('homework-refine-status'):$('homework-ai-status');aiRequest.controller.abort();clearTimeout(aiRequest.timer);aiRequest=null;status.textContent=message;renderSampling();
   }
   function selectionChanged(){const pending=!!aiRequest;cancelAI('Settings or selection changed. Run AI selection again when ready.');if(!pending){$('homework-ai-status').textContent='';if($('homework-refine-status'))$('homework-refine-status').textContent='';}$('homework-ai-results').hidden=true;$('homework-ai-list').replaceChildren();if($('homework-refine-results')){$('homework-refine-results').hidden=true;$('homework-refine-list').replaceChildren();}}
-  function matchesFilters(q){const set=q.closest('.question-set');return (!topic.value||set.dataset.topic===topic.value)&&(!kind.value||set.dataset.kind===kind.value)&&q.dataset.search.includes(search.value.trim().toLowerCase());}
+  function matchesChoice(select,value){return select.multiple?[...select.selectedOptions].some(option=>!option.value||option.value===value):!select.value||select.value===value;}
+  function matchesFilters(q){const set=q.closest('.question-set');return matchesChoice(topic,set.dataset.topic)&&matchesChoice(kind,set.dataset.kind)&&q.dataset.search.includes(search.value.trim().toLowerCase());}
   function matchesNumber(q){
     if($('homework-parity').value==='all')return true;
     const label=q.querySelector('.question-top a').textContent.replace(/^Question\s+/,'').trim();
@@ -54,7 +55,7 @@
   const orderedIds=()=>qs.filter(q=>selected.has(q.id)).map(q=>q.id);
   const title=()=>$('homework-name').value.trim()||'Kinematics homework';
   function saveDraft(){try{localStorage.setItem(DRAFT,JSON.stringify({ids:orderedIds(),title:title(),instructions:$('homework-instructions').value,answers:$('homework-answers').checked,percentages:Object.fromEntries(sectionRules.filter(rule=>rule.input.checkValidity()).map(rule=>[rule.topic,Number(rule.input.value)])),parity:$('homework-parity').value,samplingOrder:$('homework-sampling-order').value,...(aiPrompt?{aiPrompt:aiPrompt.value.slice(0,4000)}:{}),...(refinePrompt?{refinePrompt:refinePrompt.value.slice(0,4000)}:{})}));}catch{}}
-  function resetFilters(){search.value='';topic.value='';kind.value='';}
+  function resetFilters(){search.value='';for(const select of [topic,kind]){select.value='';select.dispatchEvent(new Event('input'));}}
   function homeworkURL(){
     const base=location.protocol==='file:'?'https://cghuisunshine.github.io/Physics11/bc-kinematics-questions.html':location.href;
     const url=new URL(base);url.search='';url.hash='';
@@ -79,11 +80,11 @@
   function setView(value){cancelAI();homeworkView=value;resetFilters();updateLocation();render();}
   function render(){
     renderSampling();
-    const term=search.value.trim().toLowerCase();let shown=0;
+    let shown=0;
     for(const set of sets){
-      const match=(!topic.value||set.dataset.topic===topic.value)&&(!kind.value||set.dataset.kind===kind.value);let count=0;
+      let count=0;
       for(const q of set.querySelectorAll('.question')){
-        q.hidden=!(match&&q.dataset.search.includes(term)&&(!homeworkView||selected.has(q.id)));
+        q.hidden=!(matchesFilters(q)&&(!homeworkView||selected.has(q.id)));
         q.dataset.homework=String(composing&&selected.has(q.id));
         const input=q.querySelector('[data-homework]');input.checked=selected.has(q.id);input.closest('label').hidden=!composing;
         if(!q.hidden)count++;
