@@ -147,8 +147,11 @@ function syncStatus(kind,error){
   if(kind==='synced'&&$('storage-message').textContent==='Saving and syncing…')$('storage-message').textContent='Progress saved and synced.';
 }
 function startSync(){if(!student)return;students.start(student,{getLocal:()=>students.loadLocal(student),onStatus:syncStatus,
-  onRemote:data=>{const s=readPayload(data);if(!s)return;cancelGeneration();state=s;updatedAt=data.updatedAt||'';students.saveLocal(student,{version:1,student,updatedAt,state:typeof data.state==='string'?data.state:JSON.stringify(data.state)});
-    if(activeAttempt)activeAttempt=state.attempts.find(a=>a.at===activeAttempt.at&&a.id===activeAttempt.id)||null;dashboard();$('storage-message').textContent='Loaded the latest progress from another device.';}});}
+  onRemote:data=>{const s=readPayload(data);if(!s)return;const previous=JSON.stringify(practiceSelection());cancelGeneration();state=s;updatedAt=data.updatedAt||'';students.saveLocal(student,{version:1,student,updatedAt,state:typeof data.state==='string'?data.state:JSON.stringify(data.state)});
+    restorePracticeSelection();
+    if(activeAttempt)activeAttempt=state.attempts.find(a=>a.at===activeAttempt.at&&a.id===activeAttempt.id)||null;dashboard();
+    if(previous!==JSON.stringify(practiceSelection())&&live.role!=='follower')next(true,false);
+    $('storage-message').textContent='Loaded the latest progress from another device.';}});}
 // A shared question link refers to its stable chapter/question ID.
 function shareURL(p){const u=new URL(location.href);u.search='';u.hash='';u.searchParams.set('q',p.id);if(p.generatedData)u.hash=new URLSearchParams({practice:JSON.stringify(p.generatedData)}).toString();return u.toString();}
 function sharedFromURL(){
@@ -173,9 +176,9 @@ function useStudent(name){
   else if(local)$('storage-message').textContent='Saved progress for '+student+' could not be read. Starting fresh; sync or restore a backup to recover it.';
   else{const legacy=students.takeLegacy();if(legacy&&validState(legacy)){state=canonicalize(legacy);save();$('storage-message').textContent='Earlier progress on this device was moved into '+student+'’s history.';}}
   $('student-name-label').textContent=student;document.title='Physics 11 · Practice Studio · '+student;
-  hideLogin();dashboard();
+  restorePracticeSelection();hideLogin();dashboard();
   if(live.role==='follower')show(followedQuestion,'Following live — your answers and progress are your own.',true);
-  else if(pendingShare){const p=pendingShare;pendingShare=null;show(p,'Shared question — give it a try.');}else next(true);
+  else if(pendingShare){const p=pendingShare;pendingShare=null;show(p,'Shared question — give it a try.');}else next(true,false);
   startSync();
 }
 function showLogin(){
@@ -204,6 +207,18 @@ let selectedTopics=new Set(P.topics);
 let topicsChapter='';
 for(const chapter of chapters){const o=document.createElement('option');o.value=chapter.chapter;o.textContent=`Chapter ${chapter.number}: ${chapter.title} · ${chapter.count} questions`;$('practice-chapter').append(o);}
 function availableTopics(){return [...new Set(bank.filter(p=>!$('practice-chapter').value||p.chapter===$('practice-chapter').value).map(p=>p.topic))];}
+function practiceSelection(){return P.normalizePreferences({mode:$('mode').value,chapter:$('practice-chapter').value,topics:[...selectedTopics]},bank);}
+function rememberPracticeSelection(){
+  if(!student)return;
+  const preferences=practiceSelection();
+  if(JSON.stringify(state.preferences)===JSON.stringify(preferences))return;
+  state.preferences=preferences;save();
+}
+function restorePracticeSelection(){
+  const preferences=P.normalizePreferences(state.preferences,bank);
+  $('mode').value=preferences.mode;$('practice-chapter').value=preferences.chapter;
+  refreshTopicOptions();selectedTopics=new Set(preferences.topics);syncTopicSelection();
+}
 function syncTopicSelection(){
   const available=availableTopics(),count=selectedTopics.size,all=count===available.length;
   $('topic-summary').textContent=!count?'Choose topics':all?($('practice-chapter').value?'Whole chapter':'All topics'):`${count} topic${count===1?'':'s'} selected`;
@@ -490,9 +505,10 @@ function show(p,reason,fromLive=false){
   $('statement').innerHTML=p.html;$('source').href=p.url;$('source').hidden=false;$('source').textContent=p.generatedData?'Open related textbook collection ↗':'Open question collection ↗';flagButton();
   buildAnswerInput(p);$('photo-section').hidden=false;openDrawing();
 }
-function next(reset=false){
+function next(reset=false,persistSelection=true){
   if(live.role==='follower')return;
   cancelGeneration();
+  if(persistSelection)rememberPracticeSelection();
   const mode=$('mode').value;
   $('adaptive-panel').hidden=mode!=='coach';
   renderAdaptiveCoverage();
@@ -633,7 +649,7 @@ $('practice-day').onchange=()=>next(true);$('day-exclude-correct').onchange=()=>
 $('day-question').onchange=()=>{const questions=selectedDayQuestions($('practice-day').value);const p=questions.find(p=>p.id===$('day-question').value);if(p)showDayQuestion(p,questions);};
 $('review-button').onclick=()=>{$('mode').value='review';$('practice-chapter').value='';selectedTopics=new Set(P.topics);refreshTopicOptions();next();$('question-title').focus();};
 $('export').onclick=()=>{const blob=new Blob([JSON.stringify(P.compact(state),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`physics11-progress-${(student||'student').replace(/[^\w-]+/g,'_')}-${new Date().toISOString().slice(0,10)}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
-$('import').onchange=async()=>{const file=$('import').files[0];if(!file)return;try{if(file.size>15000000)throw Error('too large');const s=JSON.parse(await file.text());if(!validState(s))throw Error('invalid');if(!window.confirm('Replace '+(student||'this student')+'’s progress with this backup?'))return;state=canonicalize(s);save();dashboard();next();}catch(e){$('storage-message').textContent='This file is not a valid Physics 11 practice backup. Your current progress has been kept.';}finally{$('import').value='';}};
+$('import').onchange=async()=>{const file=$('import').files[0];if(!file)return;try{if(file.size>15000000)throw Error('too large');const s=JSON.parse(await file.text());if(!validState(s))throw Error('invalid');if(!window.confirm('Replace '+(student||'this student')+'’s progress with this backup?'))return;state=canonicalize(s);restorePracticeSelection();save();dashboard();next(true,false);}catch(e){$('storage-message').textContent='This file is not a valid Physics 11 practice backup. Your current progress has been kept.';}finally{$('import').value='';}};
 // A formula image that cannot load is replaced by readable text, not raw LaTeX.
 document.addEventListener('error',e=>{if(e.target.tagName==='IMG' && e.target.id!=='photo-preview'){const alt=e.target.alt||'',text=P.latexText(alt);const fallback=document.createElement('span');fallback.className='math-text';fallback.textContent=text||'[Diagram unavailable]';if(!text||/\[asy\]/i.test(alt))$('image-warning').hidden=false;e.target.replaceWith(fallback);}},true);
 function readableHTML(html){

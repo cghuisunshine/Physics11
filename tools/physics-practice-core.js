@@ -98,6 +98,13 @@
   // Keep only bank references in backups/storage: diagrams belong to the embedded bank.
   function compact(state){return {...state,items:Object.fromEntries(Object.entries(state.items).map(([id,item])=>[id,{...item,problem:{id}}]))};}
   function validVerification(v,correct){return !!v&&['correct','partly_correct','incorrect'].includes(v.verdict)&&['high','medium'].includes(v.confidence)&&typeof v.feedback==='string'&&v.feedback.trim().length>0&&v.feedback.length<=6000&&correct===(v.verdict==='correct');}
+  function normalizePreferences(value,bank){
+    const mode=['adaptive','coach','chapter','random','review','day'].includes(value?.mode)?value.mode:'adaptive';
+    const chapter=bank.some(p=>p.chapter===value?.chapter)?value.chapter:'';
+    const available=[...new Set(bank.filter(p=>!chapter||p.chapter===chapter).map(p=>p.topic))];
+    const topics=Array.isArray(value?.topics)?available.filter(t=>value.topics.includes(t)):available;
+    return {mode,chapter,topics};
+  }
   function validState(state,bank){
     if(!state||state.version!==1||!Array.isArray(state.attempts)||state.attempts.length>50000||!state.items||typeof state.items!=='object'||Array.isArray(state.items))return false;
     if(state.generated!==undefined&&(!state.generated||typeof state.generated!=='object'||Array.isArray(state.generated)||Object.keys(state.generated).length>5000||!Object.entries(state.generated).every(([id,d])=>id===d?.id&&root.AdaptivePractice?.normalize(d,bank))))return false;
@@ -113,7 +120,7 @@
     for(let i=0;i<attempts.length;i++)if(Object.keys(root.AdaptivePractice?.skills||{}).includes(state.attempts[i].practiceSkill))attempts[i].practiceSkill=state.attempts[i].practiceSkill;
     const latest=new Map(attempts.map(a=>[a.id,a]));
     const items=Object.fromEntries(Object.entries(state.items).map(([id,item])=>[id,{problem:byId.get(id),manual:item.manual,missed:latest.has(id)?!latest.get(id).correct:false,aiConcern:false}]));
-    return {version:1,attempts,items,...(Object.keys(generated).length?{generated}:{})};
+    return {version:1,attempts,items,...(state.preferences?{preferences:normalizePreferences(state.preferences,bank)}:{}),...(Object.keys(generated).length?{generated}:{})};
   }
   function randomQuestion(bank,state,filter,currentId,rng=Math.random){
     const eligible=bank.filter(p=>!filter||p.topic===filter),other=eligible.filter(p=>p.id!==currentId),pool=other.length?other:eligible;
@@ -142,7 +149,7 @@
     return t.replace(/\s+/g,' ').replace(/\s+([,.;?!])/g,'$1').trim();
   }
   const activityDays=root.ActivityMonitor?.days;
-  const api={activityDays,topics,levels,configure,stats,targetLevel,chooseTopic,chooseExam,record,reviewQueue,randomQuestion,compact,validState,hydrate,normalizeInk,latexText,dayKey,pastDays,dayQuestions,problemNumber,chapterQuestions,chapterSets,chapterProgress};
+  const api={activityDays,topics,levels,configure,stats,targetLevel,chooseTopic,chooseExam,record,reviewQueue,randomQuestion,compact,validState,hydrate,normalizePreferences,normalizeInk,latexText,dayKey,pastDays,dayQuestions,problemNumber,chapterQuestions,chapterSets,chapterProgress};
   if(typeof module!=='undefined') module.exports=api;
   root.Practice=api;
 })(typeof window!=='undefined'?window:globalThis);
