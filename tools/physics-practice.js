@@ -377,8 +377,25 @@ function renderAdaptiveCoverage(){
     box.append(group);
   }
 }
+function setGenerationBusy(busy){
+  for(const id of ['adaptive-create','next','skip']){
+    const button=$(id);
+    if(busy){
+      button.dataset.generationLabel=button.textContent;
+      button.dataset.generationDisabled=String(button.disabled);
+      button.textContent='Generating question…';button.disabled=true;button.setAttribute('aria-busy','true');
+    }else{
+      if(button.dataset.generationLabel!==undefined){
+        button.textContent=button.dataset.generationLabel;button.disabled=button.dataset.generationDisabled==='true';
+        delete button.dataset.generationLabel;delete button.dataset.generationDisabled;
+      }
+      button.removeAttribute('aria-busy');
+    }
+  }
+}
 function cancelGeneration(){
   if(generationRequest){const request=generationRequest;generationRequest=null;request.controller.abort();clearTimeout(request.timer);}
+  setGenerationBusy(false);
   $('adaptive-create').disabled=false;$('adaptive-cancel').hidden=true;$('adaptive-panel').removeAttribute('aria-busy');
 }
 function alwaysGenerate(){return $('adaptive-source').value==='ai';}
@@ -407,7 +424,7 @@ async function generateAdaptive(){
   if(Object.keys(state.generated||{}).length>=5000){$('adaptive-status').textContent='This profile has reached its saved-question limit. Export progress and revisit saved questions or use textbook practice.';return;}
   if(navigator.onLine===false){$('adaptive-status').textContent=requireAI?'You are offline. Always AI needs an internet connection to create each new question. Reconnect and retry, or change Question source.':'You are offline. Revisit saved questions or use textbook practice, then retry when connected.';return;}
   const controller=new AbortController(),request={controller,student,problem:current};generationRequest=request;
-  $('adaptive-create').disabled=true;$('adaptive-cancel').hidden=false;$('adaptive-panel').setAttribute('aria-busy','true');
+  setGenerationBusy(true);$('adaptive-cancel').hidden=false;$('adaptive-panel').setAttribute('aria-busy','true');
   $('adaptive-status').textContent=`${requireAI?'Always AI · using textbook context.':'No suitable unused textbook question for this skill and level.'} Creating ${P.levels[plan.level-1].toLowerCase()} practice in ${Adaptive.skills[plan.skill]} · ${topicName(plan.topic)}…`;
   request.timer=setTimeout(()=>{request.timedOut=true;controller.abort();},60000);
   try{
@@ -890,7 +907,7 @@ canvas.addEventListener('touchend',e=>{if(!tap||e.touches.length)return;const qu
     d.value=real.value;d.readOnly=real.readOnly;
 
   };
-const syncButtons=()=>{for(const id of ['check','next','skip','verify-retry']){const r=$(id),d=$('dock-'+id);d.hidden=r.hidden;d.disabled=r.disabled;d.textContent=r.textContent;}
+const syncButtons=()=>{for(const id of ['check','next','skip','verify-retry']){const r=$(id),d=$('dock-'+id);d.hidden=r.hidden;d.disabled=r.disabled;d.textContent=r.textContent;if(r.hasAttribute('aria-busy'))d.setAttribute('aria-busy',r.getAttribute('aria-busy'));else d.removeAttribute('aria-busy');}
     for(const id of ['rate-correct','rate-practice'])$('dock-'+id).disabled=$(id).disabled;
     $('dock-self-rating').hidden=$('self-rating').hidden;
     const f=$('feedback'),df=$('dock-feedback');df.hidden=f.hidden;df.className='dock-feedback'+(f.classList.contains('wrong')?' wrong':'');df.textContent=f.textContent;};
