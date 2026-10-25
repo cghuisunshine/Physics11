@@ -68,6 +68,8 @@ template = re.sub(r'<aside class="conversion-note">.*?</aside>', '', template, f
 hero = '''<svg class="hero-art" viewBox="0 0 260 210" aria-hidden="true"><path d="M20 155H242" stroke="#dce4e7" stroke-width="3"/><rect x="90" y="94" width="82" height="60" rx="7" fill="#edf6f4" stroke="#086b72" stroke-width="2"/><path d="M131 92V30m-7 8 7-8 7 8" fill="none" stroke="#087cff" stroke-width="3"/><path d="M131 156v42m-7-8 7 8 7-8" fill="none" stroke="#f14231" stroke-width="3"/><path d="M174 124h62m-8-7 8 7-8 7" fill="none" stroke="#086b72" stroke-width="3"/><path d="M88 124H26m8-7-8 7 8 7" fill="none" stroke="#f14231" stroke-width="3"/><text x="147" y="43" fill="#087cff" font-size="14">normal</text><text x="146" y="192" fill="#f14231" font-size="14">weight</text><text x="189" y="108" fill="#086b72" font-size="14">push</text><text x="18" y="108" fill="#f14231" font-size="14">friction</text></svg>'''
 template = re.sub(r'<svg class="hero-art".*?</svg>', lambda _: hero, template, flags=re.S)
 template = template.replace('</style>', EXTRA_CSS + '\n</style>')
+template = template.replace('<button class="print-button"',
+    '<a class="source-link" href="newtons-laws-review.html">Quick Review · 21 questions</a><button class="print-button"', 1)
 with tempfile.TemporaryDirectory(prefix='newtons-laws-notes-') as temp:
     custom = Path(temp) / 'template.html'
     custom.write_text(template)
@@ -207,6 +209,7 @@ def notation(text):
     return re.sub(r'(?<![A-Za-z_])([Fpmvagμ])_([A-Za-z]+(?:,[A-Za-z]+)?)', lambda m: m[1] + '<sub>' + m[2] + '</sub>', text)
 page = ''.join(part if part.startswith('<') else notation(part) for part in re.split(r'(<[^>]+>)', page))
 footer = ('<footer><div class="notes-links"><a href="content.html">All Physics 11 notes</a>'
+    '<a href="newtons-laws-review.html">Newton’s laws quick review</a>'
     '<a href="bc-newtons-laws-questions.html">Newton’s laws questions and homework tools</a>'
     '<a href="bc_science_physics_11.pdf#page=107">Read the textbook chapter</a></div>'
     '<p>Tutorial adapted from BC Science Physics 11, Edvantage Interactive (2012), Chapter 4 Newton’s Laws of Motion, printed pp. 102–130 (PDF pp. 107–135). '
