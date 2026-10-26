@@ -12,8 +12,8 @@ class PracticeBuilderTests(unittest.TestCase):
     def test_source_fidelity(self):
         bank = load_bank(ROOT/'content/physics-practice-chapters.json')
         registry = json.loads((ROOT/'content/physics-practice-chapters.json').read_text())
-        self.assertEqual(len(bank), 301)
-        self.assertEqual(len({q['id'] for q in bank}), 301)
+        self.assertEqual(len(bank), 445)
+        self.assertEqual(len({q['id'] for q in bank}), 445)
         self.assertEqual(next(q['topicTitle'] for q in bank if q['topic'] == 'Ch 3 · 3.3'), "3.3 Hooke's law")
         by_id = {q['id']: q for q in bank}
         for chapter in registry['chapters']:
@@ -37,6 +37,22 @@ class PracticeBuilderTests(unittest.TestCase):
                         if group.get(cls):
                             self.assertIsNotNone(tree.root.find(cls=cls))
             self.assertTrue(any('<svg' in q['solution'] for q in questions))
+
+    def test_energy_reference_context(self):
+        bank = load_bank(ROOT/'content/physics-practice-chapters.json')
+        energy = {q['sourceId']: q for q in bank if q['chapter'] == 'bc-ch5'}
+        self.assertEqual(len(energy), 144)
+        self.assertEqual({q['chapterNumber'] for q in energy.values()}, {5})
+        self.assertEqual({q['chapterTitle'] for q in energy.values()}, {'Energy'})
+        self.assertEqual({q['topic'] for q in energy.values()}, {
+            'Ch 5 · 5.1', 'Ch 5 · 5.2', 'Ch 5 · 5.3', 'Ch 5 · 5.4',
+            'Ch 5 · Chapter review', 'Ch 5 · Extra practice'})
+        for source_id in ['q-11', 'q-59', 'q-63', 'q-88']:
+            self.assertIsNotNone(Tree(energy[source_id]['html']).root.find(cls='context'))
+        for source_id in ['q-77', 'q-92', 'q-127', 'q-128']:
+            self.assertIsNotNone(Tree(energy[source_id]['html']).root.find(cls='shared'))
+        self.assertIn('25 cm above the bottom', energy['q-110']['solution'])
+        self.assertEqual(energy['q-144']['url'], 'bc-energy-questions.html#q-144')
 
     def test_add_chapter_without_changing_existing_ids(self):
         registry = json.loads((ROOT/'content/physics-practice-chapters.json').read_text())

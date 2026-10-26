@@ -2,7 +2,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const {JSDOM,VirtualConsole}=require(process.env.PHYSICS_JSDOM_PATH||'jsdom');
 const root=path.resolve(__dirname,'..'),key='physics11-notes-navigation-collapsed',saved=new Map();
-for(const file of ['vectors-notes.html','kinematics-notes.html','forces-notes.html','newtons-laws-notes.html']){
+for(const file of ['vectors-notes.html','kinematics-notes.html','forces-notes.html','newtons-laws-notes.html','energy-notes.html']){
   const html=fs.readFileSync(path.join(root,file),'utf8');
   for(const blocked of [false,true]){
     const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e));
@@ -27,4 +27,4 @@ for(const file of ['vectors-notes.html','kinematics-notes.html','forces-notes.ht
     }finally{dom.window.close();}
   }
 }
-console.log('Passed: navigation preference carries across all four notes pages and toggles work when storage is unavailable.');
+console.log('Passed: navigation preference carries across all five notes pages and toggles work when storage is unavailable.');

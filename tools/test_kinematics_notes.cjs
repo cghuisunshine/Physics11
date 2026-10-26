@@ -7,7 +7,8 @@ for(const [file,count,query,matchTopic] of [
   ['kinematics-notes.html',11,'a ball off a cliff','topic-10'],
   ['vectors-notes.html',7,'relative velocity: boats','topic-7'],
   ['forces-notes.html',10,"Cavendish's measurement",'topic-3'],
-  ['newtons-laws-notes.html',12,'a car on a movable road','topic-8']
+  ['newtons-laws-notes.html',12,'a car on a movable road','topic-8'],
+  ['energy-notes.html',14,'a runaway hill','topic-6']
 ]){
 const html=fs.readFileSync(path.join(root,file),'utf8');
 const errors=[],scrolls=[],virtualConsole=new VirtualConsole();virtualConsole.on('jsdomError',error=>errors.push(error));

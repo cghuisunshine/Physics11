@@ -1,0 +1,2676 @@
+{
+  "source": "bc_science_physics_11.pdf",
+  "chapter": 5,
+  "title": "Energy",
+  "question_count": 144,
+  "groups": [
+    {
+      "id": "set-1",
+      "topic": "5.1",
+      "kind": "Warm-up",
+      "title": "Energy forms: bouncing-ball warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              137,
+              45,
+              128.5257,
+              577,
+              140.975
+            ]
+          ],
+          "text": "Bounce a rubber or tennis ball up and down several times. List all the different forms of energy you observe.",
+          "id": "q-1",
+          "answer_html": "<p>During a fall, gravitational potential energy becomes kinetic energy. During impact the ball briefly stores elastic potential energy as it deforms. The rebound converts some stored energy back into kinetic and gravitational potential energy. Sound and thermal energy also result, so the rebound is usually lower. Energy is transferred between forms; it is not destroyed.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-2",
+      "topic": "5.1",
+      "kind": "Sample prompt",
+      "title": "Sample 5.1.1: calculating work",
+      "questions": [
+        {
+          "label": "5.1.1",
+          "boxes": [
+            [
+              137,
+              45,
+              537.7752,
+              577,
+              563.7244999999999
+            ]
+          ],
+          "text": "How much work does a golfer do lifting a 46 g golf ball out of the hole and up to his pocket  0.95 m above the  ground",
+          "id": "q-2",
+          "answer_html": "<p>Convert 46 g to 0.046 kg. For a steady lift, F = mg = (0.046)(9.81) = 0.451 N.</p><p>W = Fh = (0.046)(9.81)(0.95) = 0.4287 J ≈ <strong>0.43 J</strong>. This is the golfer’s positive work against gravity, assuming negligible change in speed.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-3",
+      "topic": "5.1",
+      "kind": "Practice",
+      "title": "Practice 5.1.1: calculating work",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              138,
+              45,
+              82.2757,
+              577,
+              94.72500000000001
+            ]
+          ],
+          "text": "1.  How much work will you do if you push a block of concrete 4.3 m along a floor  with a steady force of 25 N",
+          "id": "q-3",
+          "answer_html": "<p>The force acts along the displacement: W = Fd = (25)(4.3) = 107.5 J ≈ <strong>1.1 × 10² J</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              138,
+              45,
+              136.2757,
+              577,
+              162.225
+            ]
+          ],
+          "text": "2.  If your mass is 70.0 kg  how much work will you do climbing a flight of stairs 25.0 m high  moving at a steady  pace    g  = 9.81 N/kg",
+          "id": "q-4",
+          "answer_html": "<p>Use vertical rise, rather than distance along the stairs: W = mgh = (70.0)(9.81)(25.0) = <strong>1.72 × 10⁴ J</strong> of useful work against gravity.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              138,
+              45,
+              203.7757,
+              577,
+              229.725
+            ]
+          ],
+          "text": "3.  Your car is stuck in the mud. You push on it with a force of 300.0 N for 10.0 s  but it will not move. How much  work have you done in the 10.0 s",
+          "id": "q-5",
+          "answer_html": "<p>The displacement is zero, so W = Fd = (300.0)(0) = <strong>0 J</strong> of mechanical work on the car. The person still expends chemical energy; the 10.0 s does not make the mechanical work nonzero.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-4",
+      "topic": "5.1",
+      "kind": "Sample prompt",
+      "title": "Sample 5.1.2: calculating power",
+      "questions": [
+        {
+          "label": "5.1.2",
+          "boxes": [
+            [
+              138,
+              45,
+              551.1026,
+              577,
+              577.0518999999999
+            ]
+          ],
+          "text": "The power of a small motor in a toy can be calculated by the amount of work it does in a period of time. What is  the power rating of a toy motor that does 4200 J of work in 70.0 s",
+          "id": "q-6",
+          "answer_html": "<p>P = W/Δt = 4200/70.0 = <strong>60 W</strong>. This is an average output of 60 J each second.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-5",
+      "topic": "5.1",
+      "kind": "Practice",
+      "title": "Practice 5.1.2: calculating power",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              139,
+              45,
+              82.2757,
+              577,
+              108.22500000000001
+            ]
+          ],
+          "text": "1.  An airport baggage handler lifts 42 pieces of luggage  averaging 24 kg each  through a height of 1.6 m onto a  baggage cart  in a time of 3.6 min. In this situation  what is the power of the baggage handler",
+          "id": "q-7",
+          "answer_html": "<p>Total lifting work = 42mgh = (42)(24)(9.81)(1.6) = 15 821.6 J. The time is 3.6 × 60 = 216 s.</p><p>P = 15 821.6/216 ≈ <strong>73 W</strong> of useful average lifting power.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              139,
+              45,
+              163.2758,
+              577,
+              175.7251
+            ]
+          ],
+          "text": "2.  How much work or energy  in J  does a 150 W light bulb convert to heat and light in 1.0 h",
+          "id": "q-8",
+          "answer_html": "<p>Δt = 1.0 h = 3600 s. E = PΔt = (150)(3600) = <strong>5.4 × 10⁵ J</strong>, transferred into light and thermal energy. This is an energy amount, rather than J/h.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              139,
+              45,
+              230.7758,
+              577,
+              270.22499999999997
+            ]
+          ],
+          "text": "3.  A mechanical lifting system is approximately 25% efficient. This means that only 25% of the energy used to  lift a mass is converted into useable energy. The rest is mostly lost as heat. If 1.5 w 10 8  W is used for 2.0 h  how  much energy  in J  of useable work is produced   How much heat is produced",
+          "id": "q-9",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Input energy: E<sub>in</sub> = (1.5 × 10⁸)(2.0 × 3600) = 1.08 × 10¹² J. Useful work = 0.25E<sub>in</sub> = <strong>2.7 × 10¹¹ J</strong>.</li><li>Other output = 0.75E<sub>in</sub> = <strong>8.1 × 10¹¹ J</strong>, mostly thermal energy in the model. Total energy is conserved.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-6",
+      "topic": "5.1",
+      "kind": "Sample prompt",
+      "title": "Sample 5.1.3: calculating horsepower",
+      "questions": [
+        {
+          "label": "5.1.3",
+          "boxes": [
+            [
+              140,
+              45,
+              76.2757,
+              577,
+              102.22500000000001
+            ]
+          ],
+          "text": "An electric motor is used  with a pulley and a rope  to lift a 650 N load from the road up to a height of 12 m. This  job is done in a time of 11 s. What is the power output of the motor",
+          "id": "q-10",
+          "answer_html": "<p>Work = (650)(12) = 7800 J. P = 7800/11 = 709 W ≈ <strong>7.1 × 10² W</strong>.</p><p>With 1 hp = 746 W, power = 709/746 ≈ <strong>0.95 hp</strong>. The sample’s rounded 750 W/hp gives the same two-significant-figure result.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-7",
+      "topic": "5.1",
+      "kind": "Investigation",
+      "title": "Investigation 5-1A: work with pulleys",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              142,
+              45,
+              278.43600000000004,
+              577,
+              304.3853
+            ]
+          ],
+          "text": "1.  According to your results and those of your classmates  is the work that you do operating the pulley systems  greater than  equal to  or less than the work done by the pulley systems",
+          "id": "q-11",
+          "answer_html": "<p>Compare your measured W<sub>in</sub> = F<sub>effort</sub>d<sub>effort</sub> with W<sub>out</sub> = (2.0)(0.100) = 0.20 J. A real apparatus normally requires <strong>more input work than useful output work</strong>; an ideal apparatus requires equal work.</p><p>Use your actual measurements and uncertainties. A small apparent reversal can indicate measurement error rather than energy creation.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              142,
+              45,
+              305.43600000000004,
+              577,
+              317.8853
+            ]
+          ],
+          "text": "2.  Does a pulley system isavew you work  Explain. Why are pulley systems used to lift heavy loads",
+          "id": "q-12",
+          "answer_html": "<p>A pulley can reduce effort force or change the pull direction, but the smaller force acts over a longer distance. It does <strong>not save ideal work</strong>: input and output work are equal. Friction makes real input work larger. Pulleys make large loads manageable.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              142,
+              45,
+              318.93600000000004,
+              577,
+              397.3853
+            ]
+          ],
+          "text": "3.  If a pulley system allows you to lift a load that is twice your effort force  we say that it has a mechanical  advantage  MA  of 2. Mechanical advantage is equal to the load divided by the effort force: MA =    load effort force Calculate the mechanical advantage of each of the five pulley systems you used.",
+          "id": "q-13",
+          "answer_html": "<p>For each measured system, <strong>actual MA = load force / effort force = 2.0 N / your measured effort force</strong>. No effort readings are supplied, so measured numerical MA values cannot be filled in.</p><p>For comparison, ideal predictions for the pictured arrangements are:</p><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Arrangement</th><th scope=\"col\">Ideal MA</th></tr></thead><tbody><tr><td>Figure 5.1.1</td><td>2</td></tr><tr><td>Figure 5.1.2 A</td><td>2</td></tr><tr><td>Figure 5.1.2 B</td><td>1</td></tr><tr><td>Figure 5.1.2 C</td><td>3</td></tr><tr><td>Figure 5.1.2 D</td><td>4</td></tr></tbody></table></div>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              142,
+              45,
+              411.9359,
+              577,
+              464.8852
+            ]
+          ],
+          "text": "4.  Examine the diagrams in Figures 5.1.1 and 5.1.2. Note the number of sections of rope that are exerting an  upward force on the load. Considering that these sections of rope share the load equally  can you figure out a  quick and easy way to predict the ideal mechanical advantage of each system  Test your prediction against  the actual mechanical advantage you calculated for each pulley system.",
+          "id": "q-14",
+          "answer_html": "<p>Count the equal-tension rope segments supporting the moving load assembly, including an anchored rope end if it is attached to that assembly. For the simple systems pictured, their number gives ideal MA: <strong>2, 2, 1, 3, and 4</strong> in the order Figure 5.1.1, A, B, C, D.</p><p>Actual MA is commonly lower because of friction and moving pulley weight. Compare these predictions with your measured force ratios.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              142,
+              45,
+              465.9359,
+              577,
+              491.8853
+            ]
+          ],
+          "text": "5.  How might the effort distance and the load distance be used to calculate the ideal MA of a pulley system    Write a formula for calculating MA from effort distance and load distance.",
+          "id": "q-15",
+          "answer_html": "<p>Conservation of work for an ideal machine gives F<sub>e</sub>d<sub>e</sub> = F<sub>L</sub>d<sub>L</sub>. Thus <strong>IMA = d<sub>e</sub>/d<sub>L</sub></strong>. An effort moving four times as far as the load gives ideal MA = 4.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          141,
+          45,
+          60,
+          577,
+          724
+        ],
+        [
+          142,
+          45,
+          60,
+          577,
+          251
+        ]
+      ]
+    },
+    {
+      "id": "set-8",
+      "topic": "5.1",
+      "kind": "Challenge",
+      "title": "Investigation 5-1A: pulley challenges",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              142,
+              45,
+              513.736,
+              445,
+              553.1853
+            ]
+          ],
+          "text": "1.   Predict what the mechanical advantage of the pulley system in Figure 5.1.3 will be.    Test your prediction by experimenting.   Hint: Is it really just one pulley system",
+          "id": "q-16",
+          "answer_html": "<p>This is a cascade of <strong>three movable-pulley stages</strong>, each ideally doubling force. The advantages multiply: IMA = 2 × 2 × 2 = <strong>8</strong>.</p><p>The effort moves eight times the load distance. Counting all visible rope segments as if they shared one tension would miss the separate stages. Test the prediction with the actual apparatus.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              142,
+              45,
+              554.236,
+              429,
+              593.6853
+            ]
+          ],
+          "text": "2.  Draw a pulley system that has a mechanical advantage of less   than one.  For what purpose   might it be used",
+          "id": "q-17",
+          "answer_html": "<p>Reverse a movable-pulley arrangement: apply the effort to its axle, keep one rope end fixed below, and attach the load to the other end. Ideally, the effort is twice the load and the load moves twice the effort distance, so <strong>MA = ½</strong>.</p><p>This trades greater force for greater load speed or travel; it is useful when fast or long movement matters more than reducing effort.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 290\" role=\"img\" aria-label=\"A reversed movable pulley: effort lifts the pulley axle; one rope end is fixed below and the other supports a load.\"><title>Ideal mechanical advantage one half</title>\n<path d=\"M125 244V94A35 35 0 0 1 195 94V183\" fill=\"none\" stroke=\"#203440\" stroke-width=\"3\"/>\n<circle cx=\"160\" cy=\"94\" r=\"35\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/>\n<path d=\"M160 94V27m-6 9 6-9 6 9M110 244h30\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"3\"/>\n<rect x=\"176\" y=\"183\" width=\"38\" height=\"44\" rx=\"3\" fill=\"#e3eee8\" stroke=\"#096a70\"/>\n<text x=\"224\" y=\"204\">load rises 2d</text><text x=\"178\" y=\"39\">effort lifts axle by d</text>\n<text x=\"83\" y=\"269\">fixed end</text><text x=\"250\" y=\"99\">F effort = 2 × load</text>\n<text x=\"250\" y=\"124\">MA = load / effort = ½</text></svg><figcaption>Pull the axle upward. The load moves twice as far as the axle; the effort force is twice the load force. Rope and pulley are ideal.</figcaption></figure>"
+        }
+      ],
+      "shared": [
+        [
+          142,
+          445,
+          512,
+          566,
+          701
+        ]
+      ],
+      "context": [
+        [
+          141,
+          45,
+          60,
+          577,
+          724
+        ],
+        [
+          142,
+          45,
+          60,
+          577,
+          251
+        ]
+      ]
+    },
+    {
+      "id": "set-9",
+      "topic": "5.1",
+      "kind": "Investigation",
+      "title": "Investigation 5-1B: power of a small motor",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              143,
+              45,
+              566.9752,
+              577,
+              579.4245
+            ]
+          ],
+          "text": "1.  What is the maximum power output you measured for your motor",
+          "id": "q-18",
+          "answer_html": "<p><strong>Your measurements are required.</strong> For every trial calculate P<sub>out</sub> = mgh/Δt, then report the largest measured value and its conditions. With a 0.0500 kg mass, P = 0.4905h/Δt in watts when h is in metres and time in seconds.</p><p>The suggested 2–3 s is a target lifting time, not a complete set of data. Height and actual time are still needed.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              143,
+              45,
+              580.4752,
+              577,
+              592.9245
+            ]
+          ],
+          "text": "2.  What was the maximum power a member of your class achieved with the motor",
+          "id": "q-19",
+          "answer_html": "<p>Collect the classmates’ measured maximum output powers, all calculated from mgh/Δt, and identify the largest. <strong>No class measurements are provided</strong>, so there is no predetermined numerical maximum. Check that units, loads, and timing definitions are comparable.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          143,
+          45,
+          60,
+          577,
+          549
+        ]
+      ]
+    },
+    {
+      "id": "set-10",
+      "topic": "5.1",
+      "kind": "Section review",
+      "title": "5.1 Review: work, power, and machines",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              144,
+              59,
+              86.5257,
+              306,
+              356.5156
+            ]
+          ],
+          "text": "1.  How much work is done on a 10.0 kg mass by Earth's  gravitational field when the mass drops a distance  of 5.0 m",
+          "id": "q-20",
+          "answer_html": "<p>Gravity acts along the downward displacement: W<sub>g</sub> = mgd = (10.0)(9.81)(5.0) = 490.5 J ≈ <strong>+4.9 × 10² J</strong>. The work by gravity is positive.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              144,
+              59,
+              356.5256,
+              306,
+              724.6
+            ]
+          ],
+          "text": "2.  A girl uses a 3.0 m long ramp to push her 110 kg  motorbike up to a trailer. The floor of the trailer is  1.2 m above the ground. How much work is done on  the motorbike",
+          "id": "q-21",
+          "answer_html": "<p>Ignoring friction and any change in speed, the girl’s useful work against gravity is mgh = (110)(9.81)(1.2) = 1294.9 J ≈ <strong>1.3 × 10³ J</strong>.</p><p>Use the vertical rise 1.2 m. The 3.0 m ramp reduces effort force while increasing effort distance. Strictly, net work on the bike is zero if its speed is unchanged; the question intends the positive work supplied by the girl.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              144,
+              317,
+              86.95009999999999,
+              577,
+              505.44000000000005
+            ]
+          ],
+          "text": "3.  The force of gravity on a box of apples is 98.0 N.   How much work will you do a   if you lift the box from the floor to a height of   1.2 m b   if you carry the box horizontally a distance of   2.0 m",
+          "id": "q-22",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Lifting at steady speed: W = Fh = (98.0)(1.2) = 117.6 J ≈ <strong>1.2 × 10² J</strong>.</li><li>During a level, steady horizontal carry, the upward support force is perpendicular to displacement, so its work is <strong>0 J</strong>. Starting, stopping, or lifting the box would involve additional transfers.</li></ol>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              144,
+              317,
+              505.45000000000005,
+              577,
+              724.6
+            ]
+          ],
+          "text": "4.  A hiker carries a 25 kg load up a hill at a steady  speed through a vertical height of 350 m. How  much work does she do on the load",
+          "id": "q-23",
+          "answer_html": "<p>W = mgh = (25)(9.81)(350) = 85 837.5 J ≈ <strong>8.6 × 10⁴ J</strong> of useful work on the load.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              145,
+              44,
+              52.2507,
+              291,
+              349.24060000000003
+            ]
+          ],
+          "text": "5.  The force of gravity on a box is 100.0 N. The  coefficient of friction between the floor and the  box is 0.250. How much work is done when the box  is pushed along the floor  at a steady speed  for a  distance of 15.0 m",
+          "id": "q-24",
+          "answer_html": "<p>For a horizontal push, N = 100.0 N and friction = μN = (0.250)(100.0) = 25.0 N. At steady speed the push balances friction.</p><p>Work by the push = (25.0)(15.0) = <strong>375 J</strong>. Friction does −375 J; net work on the box is zero.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              145,
+              44,
+              349.2506,
+              291,
+              724.6
+            ]
+          ],
+          "text": "6.  Which of the variables below would  improve in  your favour if you used a pulley system of MA = 8 to  lift a load  compared with a pulley system of MA = 2   Explain your answer. a   effort distance         b   effort force          c   work done by you          d   your power e   work done by the machine",
+          "id": "q-25",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Effort distance increases by 8/2 = <strong>4 times</strong>, so it does not improve in the sense of requiring less movement.</li><li>Effort force falls to <strong>one quarter</strong> of the former value; this is the main advantage.</li><li>Ideal work done by you is <strong>unchanged</strong>, for the same load and height.</li><li>Power depends on time. For the same lifting time it is unchanged; at the same effort pulling speed, the load rises more slowly and useful power is lower. MA alone does not determine power.</li><li>Work done on the load by the machine is <strong>unchanged</strong>, equal to its weight times the same height.</li></ol>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              145,
+              302,
+              52.3507,
+              577,
+              362.84060000000005
+            ]
+          ],
+          "text": "7.  Draw a pulley system that has a mechanical  advantage of 1/2. For what purpose might you use  such a system",
+          "id": "q-26",
+          "answer_html": "<p>Reverse a movable-pulley arrangement: apply the effort to its axle, keep one rope end fixed below, and attach the load to the other end. Ideally, the effort is twice the load and the load moves twice the effort distance, so <strong>MA = ½</strong>.</p><p>This trades greater force for greater load speed or travel; it is useful when fast or long movement matters more than reducing effort.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 290\" role=\"img\" aria-label=\"A reversed movable pulley: effort lifts the pulley axle; one rope end is fixed below and the other supports a load.\"><title>Ideal mechanical advantage one half</title>\n<path d=\"M125 244V94A35 35 0 0 1 195 94V183\" fill=\"none\" stroke=\"#203440\" stroke-width=\"3\"/>\n<circle cx=\"160\" cy=\"94\" r=\"35\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/>\n<path d=\"M160 94V27m-6 9 6-9 6 9M110 244h30\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"3\"/>\n<rect x=\"176\" y=\"183\" width=\"38\" height=\"44\" rx=\"3\" fill=\"#e3eee8\" stroke=\"#096a70\"/>\n<text x=\"224\" y=\"204\">load rises 2d</text><text x=\"178\" y=\"39\">effort lifts axle by d</text>\n<text x=\"83\" y=\"269\">fixed end</text><text x=\"250\" y=\"99\">F effort = 2 × load</text>\n<text x=\"250\" y=\"124\">MA = load / effort = ½</text></svg><figcaption>Pull the axle upward. The load moves twice as far as the axle; the effort force is twice the load force. Rope and pulley are ideal.</figcaption></figure>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              145,
+              302,
+              362.85060000000004,
+              577,
+              724.6
+            ]
+          ],
+          "text": "8.  How powerful is a motor that can lift a 500.0 kg load  through a height of 12.0 m in a time of 12 s",
+          "id": "q-27",
+          "answer_html": "<p>P = mgh/Δt = (500.0)(9.81)(12.0)/12 = 4905 W ≈ <strong>4.9 × 10³ W</strong> or 4.9 kW.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              146,
+              59,
+              52.3507,
+              306,
+              724.6
+            ]
+          ],
+          "text": "9.  A motor does 25 MJ  megajoules  of work in one  hour. a   What is the power rating of the motor b   How many horsepower is this motor  if   1 HP = 750 W",
+          "id": "q-28",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>P = W/Δt = (25 × 10⁶)/3600 = 6944 W ≈ <strong>6.9 kW</strong>.</li><li>Use the specified 750 W/hp: 6944/750 = <strong>9.3 hp</strong> after rounding.</li></ol>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              146,
+              317,
+              52.3508,
+              577,
+              349.3407
+            ]
+          ],
+          "text": "10.  How much energy is consumed by a 100.0 W light  bulb  if it is left on for 12.0 h",
+          "id": "q-29",
+          "answer_html": "<p>E = PΔt = (100.0)(12.0 × 3600) = <strong>4.32 × 10⁶ J</strong> = 4.32 MJ.</p>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              146,
+              317,
+              349.3507,
+              577,
+              724.6
+            ]
+          ],
+          "text": "11.  An appliance that consumes electrical energy at  the rate of 1500 J/s  accomplishes 1200 J/s of useful  work. How efficient is the appliance",
+          "id": "q-30",
+          "answer_html": "<p>η = P<sub>useful</sub>/P<sub>in</sub> = 1200/1500 = 0.80, so the efficiency is <strong>80%</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-11",
+      "topic": "5.2",
+      "kind": "Warm-up",
+      "title": "Mechanical energy: shaking-sand warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              147,
+              45,
+              128.52519999999998,
+              577,
+              167.9745
+            ]
+          ],
+          "text": "Fill a coffee can with three or four handfuls of dry sand. Measure the temperature of the sand. Now shake the can  vigorously for three minutes. Take the temperature of the sand. Describe what happened to the temperature and  explain why you think it occurred.",
+          "id": "q-31",
+          "answer_html": "<p>The sand may warm because shaking does mechanical work on the sand and container. Collisions and friction transfer some of this work into microscopic internal energy.</p><p>Record the actual temperatures; a detectable rise is not guaranteed for every container and thermometer because energy also spreads to the container and room.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-12",
+      "topic": "5.2",
+      "kind": "Quick check",
+      "title": "Kinetic energy and work: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              148,
+              45,
+              85.0257,
+              577,
+              137.975
+            ]
+          ],
+          "text": "1.  A golfer wishes to improve his driving distance. Which would have more effect  Explain your answer.    a   doubling the mass of his golf club   OR    b   doubling the speed with which the clubhead strikes the ball",
+          "id": "q-32",
+          "answer_html": "<p>E<sub>k</sub> = ½mv². Doubling mass doubles kinetic energy, while doubling speed gives four times the kinetic energy. <strong>Doubling clubhead speed has the greater effect</strong> in this comparison; energy delivered to the ball also depends on the collision.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              148,
+              45,
+              193.0256,
+              577,
+              205.47490000000002
+            ]
+          ],
+          "text": "2.  How much work must be done to accelerate a 110 kg motorbike and its 60.0 kg rider from 0 to 80 km/h  ",
+          "id": "q-33",
+          "answer_html": "<p>Total mass = 110 + 60.0 = 170 kg; final speed = 80/3.6 = 22.22… m/s.</p><p>Net work = ΔE<sub>k</sub> = ½(170)(22.22…)² = 41 975 J ≈ <strong>4.2 × 10⁴ J</strong>. Extra engine work may also be needed to overcome resistance.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              148,
+              45,
+              260.5258,
+              577,
+              272.9751
+            ]
+          ],
+          "text": "3.  How much work is needed to slow down a 1200 kg vehicle from 80 km/h to 50 km/h  What does this work",
+          "id": "q-34",
+          "answer_html": "<p>v<sub>i</sub> = 80/3.6 m/s and v<sub>f</sub> = 50/3.6 m/s. W<sub>net</sub> = ½(1200)[(50/3.6)² − (80/3.6)²] = <strong>−1.81 × 10⁵ J</strong> before rounding.</p><p>About 1.8 × 10⁵ J of kinetic energy is removed. Braking and resistive forces do the negative work, transferring energy mainly into thermal energy.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              148,
+              45,
+              328.02590000000004,
+              577,
+              340.4752
+            ]
+          ],
+          "text": "4.  How much work is needed to accelerate a 1.0 g insect from rest up to 12 m/s  ",
+          "id": "q-35",
+          "answer_html": "<p>m = 1.0 g = 0.0010 kg. W<sub>net</sub> = ½mv² = ½(0.0010)(12)² = <strong>0.072 J</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-13",
+      "topic": "5.2",
+      "kind": "Quick check",
+      "title": "Gravitational potential energy: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              149,
+              45,
+              252.3526,
+              577,
+              278.3019
+            ]
+          ],
+          "text": "1.  A box of bananas is lifted 5 m and gains a certain amount of potential energy. If the box is lifted another 5 m   describe how the potential energy changes.",
+          "id": "q-36",
+          "answer_html": "<p>For constant g, ΔE<sub>p</sub> = mgΔh. The second 5 m rise adds <strong>the same potential-energy increase</strong> as the first. Total gain from the original level doubles.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              149,
+              45,
+              333.3527,
+              577,
+              345.80199999999996
+            ]
+          ],
+          "text": "2.  What is the mass of a television if it takes 620 J to lift it 2.5 m.",
+          "id": "q-37",
+          "answer_html": "<p>W = mgh, so m = 620/[(9.81)(2.5)] = 25.28 kg ≈ <strong>25 kg</strong> (25.3 kg before two-significant-figure rounding). Assume no other energy changes.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              149,
+              45,
+              414.3526,
+              577,
+              426.8019
+            ]
+          ],
+          "text": "3.  If it takes 240 J to lift a 4 kg object  how high is the object lifted",
+          "id": "q-38",
+          "answer_html": "<p>h = W/(mg) = 240/[(4)(9.81)] = <strong>6.1 m</strong> to the precision implied by the data.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-14",
+      "topic": "5.2",
+      "kind": "Sample prompt",
+      "title": "Sample 5.2.1: conservation of energy",
+      "questions": [
+        {
+          "label": "5.2.1",
+          "boxes": [
+            [
+              151,
+              45,
+              80,
+              577,
+              240
+            ]
+          ],
+          "text": "The pendulum bob in Figure 5.2.2 is pulled back far enough   that it is raised 0.36 m above its original level. When it is released   how fast will it be moving at the bottom of its swing E k  = 0 E p  = mgh E k  =  12  mv  2 E p  = 0 Figure 5.2.2   Moving pendulum",
+          "id": "q-39",
+          "answer_html": "<p>Choose the bottom as zero gravitational potential energy. With negligible losses, mgh = ½mv².</p><p>v = √(2gh) = √[(2)(9.81)(0.36)] = 2.658 m/s ≈ <strong>2.7 m/s</strong>. Only vertical rise matters.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-15",
+      "topic": "5.2",
+      "kind": "Practice",
+      "title": "Practice 5.2.1: conservation of energy",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              152,
+              45,
+              82.2757,
+              577,
+              121.72500000000001
+            ]
+          ],
+          "text": "1.  Spiderman shoots a web line 9 m long and swings on the end of it  like a pendulum. His starting point is   3.0 m above the lowest point in his swing. How fast is Spiderman moving as he passes through the bottom   of the swing",
+          "id": "q-40",
+          "answer_html": "<p>The drop is 3.0 m, not the 9 m web length. mgh = ½mv² gives v = √[(2)(9.81)(3.0)] = <strong>7.7 m/s</strong> at the bottom, assuming release from rest and negligible resistance.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              152,
+              45,
+              284.7756,
+              577,
+              324.22499999999997
+            ]
+          ],
+          "text": "2.  A vehicle moving with a speed of 90 km/h  25 m/s  loses its brakes but sees a runaway hill near the highway.  If the driver steers his vehicle into the runaway hill  how far up the hill  vertically  will the vehicle travel before  it comes to a stop   Ignore friction.",
+          "id": "q-41",
+          "answer_html": "<p>At the highest point, ½mv² = mgh. h = 25²/(2 × 9.81) = <strong>31.9 m</strong> before rounding, approximately 32 m vertically. Friction would reduce the stopping height.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              152,
+              45,
+              487.2756,
+              577,
+              526.7248999999999
+            ]
+          ],
+          "text": "3.  A 500 kg roller coaster car is going 10 m/s at the bottom of its run. How high can you build the next hill on  the track so that it can get over without any additional work being done on the car   Ignore friction.  Is your  answer reasonable",
+          "id": "q-42",
+          "answer_html": "<p>h<sub>max</sub> = v²/(2g) = 10²/(2 × 9.81) = <strong>5.1 m</strong>. Mass cancels.</p><p>This is the limiting height at which the car stops. To actually cross the crest with nonzero speed, the hill must be lower or additional energy must be supplied.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-16",
+      "topic": "5.2",
+      "kind": "Section review",
+      "title": "5.2 Review: mechanical energy",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              153,
+              44,
+              86.5257,
+              291,
+              409.57570000000004
+            ]
+          ],
+          "text": "pe lo s s es nl io ct fri 60.0 m 1.  How much kinetic energy does the 80.0 kg skier  sliding down the frictionless slope shown below  have when he is two-thirds of the way down the  ramp   The vertical height of the ramp is 60.0 m.   ",
+          "id": "q-43",
+          "answer_html": "<p>Assume the skier starts from rest. Two thirds down a straight slope corresponds to a vertical drop of (⅔)(60.0) = 40.0 m.</p><p>E<sub>k</sub> = mgΔh = (80.0)(9.81)(40.0) = <strong>3.14 × 10⁴ J</strong>. If there is initial kinetic energy, add it.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              153,
+              44,
+              409.58570000000003,
+              291,
+              724.6
+            ]
+          ],
+          "text": "2.  a    How much potential energy is gained when a   75 kg person takes a ski lift up a mountain for  600 m b    At another ski hill  a 50 kg person gains   3.68 w 10 5  J when she travels up a ski lift for   1500 m at a 30¡   angle. What is the vertical height  gained by the skier",
+          "id": "q-44",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Interpreting the stated 600 m as vertical rise, ΔE<sub>p</sub> = (75)(9.81)(600) = <strong>4.4 × 10⁵ J</strong>. An along-slope distance alone would require the slope angle.</li><li>h = ΔE<sub>p</sub>/(mg) = (3.68 × 10⁵)/[(50)(9.81)] ≈ <strong>750 m</strong>. This also agrees with (1500)sin 30° = 750 m.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              153,
+              302,
+              86.75049999999999,
+              577,
+              248.7406
+            ]
+          ],
+          "text": "3.  In a computer simulation  a Moon exploration robot  lifted 0.245 kg of Moon rock 60 cm. This action  required 0.24 J. What is the acceleration due to  gravity on the Moon",
+          "id": "q-45",
+          "answer_html": "<p>h = 60 cm = 0.60 m. g = W/(mh) = 0.24/[(0.245)(0.60)] = <strong>1.6 m/s²</strong> (1.63 m/s² before rounding), assuming a slow lift with no other losses.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              153,
+              302,
+              248.7506,
+              577,
+              410.74050000000005
+            ]
+          ],
+          "text": "4.  A physics student lifts his 2.0 kg pet rock 2.8 m  straight up. He then lets it drop to the ground.  Use  the law of conservation of energy to calculate how  fast the rock will be moving  a  half way down and  b  just before it hits the ground.",
+          "id": "q-46",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>After falling halfway, Δh = 1.4 m. v = √(2gΔh) = √[(2)(9.81)(1.4)] = <strong>5.2 m/s downward</strong>.</li><li>Just before impact, Δh = 2.8 m, so v = √[(2)(9.81)(2.8)] = <strong>7.4 m/s downward</strong>. Ignore air resistance.</li></ol>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              153,
+              302,
+              410.75050000000005,
+              577,
+              724.6
+            ]
+          ],
+          "text": "5.  A 65 kg girl is running with a speed of 2.5 m/s.  a   How much kinetic energy does she have    b    She grabs onto a rope that is hanging from the  ceiling and swings from the end of the rope.   How high off the ground will she swing",
+          "id": "q-47",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>E<sub>k</sub> = ½(65)(2.5)² = 203.125 J ≈ <strong>2.0 × 10² J</strong>.</li><li>The centre of mass can rise by h = v²/(2g) = 2.5²/(2 × 9.81) = <strong>0.32 m</strong> above its initial level, assuming all kinetic energy becomes gravitational potential energy. The initial body height is not specified, so this is a rise, not an absolute foot height.</li></ol>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              154,
+              59,
+              52.2507,
+              306,
+              376.24060000000003
+            ]
+          ],
+          "text": "6.  A rubber ball falls from a height of 2.0 m  bounces  off the floor and goes back up to a height of 1.6 m.  a   What percentage of its initial gravitational  potential energy has been lost    b   Where does this energy go  Does this contradict  the law of conservation of energy  Why or why  not",
+          "id": "q-48",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Fraction of mechanical energy lost = 1 − h<sub>rebound</sub>/h<sub>drop</sub> = 1 − 1.6/2.0 = 0.20. <strong>20%</strong> is lost from the mechanical stores.</li><li>Energy goes into thermal energy, sound, deformation, and motion of the floor and surroundings. Total energy conservation still holds.</li></ol>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              154,
+              59,
+              376.2506,
+              306,
+              724.6
+            ]
+          ],
+          "text": "7.  How much work must be done to increase the  speed of a 12 kg bicycle ridden by a 68 kg rider from  8.2 m/s to 12.7 m/s",
+          "id": "q-49",
+          "answer_html": "<p>The total mass is 12 + 68 = 80 kg. Net work = ½m(v<sub>f</sub>² − v<sub>i</sub>²) = ½(80)(12.7² − 8.2²) = <strong>3762 J ≈ 3.8 kJ</strong>. More applied work would be needed if resistance also did negative work.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              154,
+              317,
+              52.3508,
+              577,
+              724.6
+            ]
+          ],
+          "text": "8.  A 2.6 kg laboratory cart is given a push and moves  with a speed of 2.0 m/s toward a solid barrier   where it is momentarily brought to rest by its spring  bumper.  v = 2.0 m/s m = 2.6 kg a   How much elastic potential energy will be  stored in the spring at the moment when the  spring is fully compressed    b   What is the average force exerted by the spring  if it is compressed 0.12 m   Why is it necessary to  specify average force in this situation",
+          "id": "q-50",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>At maximum compression, E<sub>elastic</sub> = E<sub>k,initial</sub> = ½(2.6)(2.0)² = <strong>5.2 J</strong>, neglecting losses.</li><li>Average force magnitude = E/d = 5.2/0.12 = <strong>43 N</strong>. A spring’s force changes as it compresses, so this is not its maximum force. The spring does −5.2 J of work on the cart during compression.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-17",
+      "topic": "5.3",
+      "kind": "Warm-up",
+      "title": "Temperature and touch: warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              155,
+              45,
+              128.52519999999998,
+              577,
+              167.9745
+            ]
+          ],
+          "text": "On a hot summer day  you may have noticed that if you walk on concrete with your bare feet  it will be hotter  than the grass. If you go inside  a tile floor will feel cooler on your feet than the rest of the house. Why do you  experience these differences if the temperature is not changing dramatically",
+          "id": "q-51",
+          "answer_html": "<p>Outdoors, surfaces can reach different temperatures because they absorb sunlight differently and exchange energy differently with air, soil, and water. Grass also loses energy through evaporation.</p><p>Indoors, tile and other materials may have similar temperatures, but tile often conducts energy away from your feet faster and therefore feels colder. Touch depends on the rate of energy transfer as well as temperature.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-18",
+      "topic": "5.3",
+      "kind": "Quick check",
+      "title": "Temperature, heat, and kelvins: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              156,
+              45,
+              499.3526,
+              577,
+              606.3017
+            ]
+          ],
+          "text": "1.  a   Explain the difference between temperature  thermal energy  and heat. b   Why is it incorrect to say that a body contains heat",
+          "id": "q-52",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>Temperature</strong> describes thermal state; in the ideal-gas model it measures average translational kinetic energy per particle. <strong>Thermal/internal energy</strong> is microscopic energy stored in all the particles and interactions. <strong>Heat</strong> is energy transferred because of a temperature difference.</li><li>A body stores internal energy; heat names energy in transfer, rather than a substance contained inside it.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              157,
+              45,
+              64.2507,
+              577,
+              171.20000000000002
+            ]
+          ],
+          "text": "2.  A sample of helium gas has a temperature of 20¡C. a   What is its temperature in kelvins  K b    In another helium sample  the atoms have twice the average translational kinetic energy.   What is the temperature of this sample in  i  kelvins   ii  ¡C",
+          "id": "q-53",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>T = 20 + 273.15 = <strong>293.15 K ≈ 293 K</strong>.</li><li>Double the absolute temperature, not Celsius: T₂ = 2(293.15) = <strong>586.30 K</strong>. In Celsius this is 586.30 − 273.15 = <strong>313.15°C ≈ 313°C</strong>. The textbook’s rounded 273 conversion gives the same whole-number results.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              157,
+              45,
+              185.7506,
+              577,
+              387.19989999999996
+            ]
+          ],
+          "text": "3.  A large pot of near-boiling water has a small  red-hot nail dropped into it. a   Which has more thermal energy to begin with  the pot of water or the nail b   Which has the higher average kinetic energy to begin with c   Which will lose heat  and which will gain heat when the nail is dropped into the pot of boiling water d   After five minutes  which will have    i  more thermal energy      ii  higher average kinetic energy",
+          "id": "q-54",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>For the intended large-pot/small-nail comparison, the water has much more total thermal energy because of its large mass. Total internal energy cannot in general be ranked from temperature alone.</li><li>The red-hot nail has the higher temperature and therefore higher average translational kinetic energy in the textbook model.</li><li>Heat transfers <strong>from the hotter nail to the cooler water</strong>: the nail loses energy and water gains it.</li><li>Assuming five minutes is enough to reach thermal equilibrium and other transfers are negligible: (i) the large water sample still has much more total thermal energy; (ii) the temperatures, and the average translational kinetic energies in the textbook model, are equal. Five minutes alone does not prove equilibrium.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-19",
+      "topic": "5.3",
+      "kind": "Quick check",
+      "title": "Conduction, convection, and radiation: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              159,
+              45,
+              85.0257,
+              577,
+              97.47500000000001
+            ]
+          ],
+          "text": "1.  Water is a poor conductor  yet water is brought to a boil quickly in a pot or kettle. Explain.",
+          "id": "q-55",
+          "answer_html": "<p>Heating at the bottom sets up <strong>convection currents</strong>: warmer, usually less dense water rises, while cooler water descends toward the heater. Bulk fluid motion distributes energy much faster than conduction alone.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              159,
+              45,
+              166,
+              577,
+              425
+            ]
+          ],
+          "text": "2.  The diagram below shows a seashore scene. Water temperature stays quite constant day and night  but the  land warms up during the day  so it has a higher temperature than the sea. At night  the land cools rapidly  and is cooler than the sea. a   Sketch the direction of the convection current near the seashore in the daytime.  b   Using another colour or dotted arrows  sketch the direction of the convection current near the seashore  at night. c   When would you rather launch a sailboat to go out to sea  in the very early morning or in the evening   Why",
+          "id": "q-56",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>By day, warm air rises over the warmer land. Surface air flows <strong>from sea to land</strong>, with a return flow aloft.</li><li>At night, under the stated conditions, warm air rises over the relatively warmer sea. Surface air flows <strong>from land to sea</strong>, with a return flow aloft.</li><li>The intended choice is <strong>very early morning</strong>, when an offshore land breeze can help a boat head out. Near evening the circulation may be transitioning; actual winds also depend on larger weather systems.</li></ol><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 245\" role=\"img\" aria-label=\"Day: surface air flows from sea to land, rises over land, returns aloft, and descends over sea. Night reverses this circulation.\"><title>Idealized coastal convection</title>\n<text x=\"20\" y=\"24\">DAY</text><text x=\"20\" y=\"144\">NIGHT</text>\n<path d=\"M35 99H210V109H35Z M35 219H210V229H35Z\" fill=\"#d8d2bb\"/>\n<path d=\"M210 99H420V109H210Z M210 219H420V229H210Z\" fill=\"#bedfe9\"/>\n<path d=\"M335 82H110V45H335V82M110 202H335V165H110V202\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/>\n<path d=\"M117 76 109 82 117 88M104 54 110 45 116 54M326 39 335 45 326 51M329 73 335 82 341 73M326 196 335 202 326 208M329 174 335 165 341 174M119 159 110 165 119 171M104 193 110 202 116 193\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/>\n<text x=\"60\" y=\"125\">warmer land</text><text x=\"278\" y=\"125\">cooler sea</text>\n<text x=\"60\" y=\"243\">cooler land</text><text x=\"278\" y=\"243\">warmer sea</text></svg><figcaption>Surface sea breeze by day; surface land breeze at night, when the stated land–water temperature contrast applies.</figcaption></figure>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              159,
+              45,
+              476.5258,
+              577,
+              515.975
+            ]
+          ],
+          "text": "4.  Carefully dismantle a thermos bottle and examine its construction. Assume it is filled with hot soup. How  does the construction of the thermos bottle work to prevent heat loss by conduction  convection  and  radiation",
+          "id": "q-57",
+          "answer_html": "<p>The vacuum gap greatly reduces conduction and prevents convection across the gap. Shiny surfaces reduce net radiation exchange. The insulating stopper and narrow neck reduce conduction and fluid exchange; the stopper also reduces evaporation.</p><p>The supporting material and stopper still conduct some energy, so insulation slows transfer rather than preventing every loss.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              159,
+              45,
+              598.0257,
+              577,
+              610.4751
+            ]
+          ],
+          "text": "5.  Which will melt faster on a bright  sunny day  fresh snow or dirty snow  Why",
+          "id": "q-58",
+          "answer_html": "<p><strong>Dirty snow usually melts faster</strong> in sunlight because a thin dark contamination layer reduces reflectivity and increases absorption of solar radiation. This compares similar snow under otherwise similar conditions.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-20",
+      "topic": "5.3",
+      "kind": "Investigation",
+      "title": "Investigation 5-3A: conduction",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              161,
+              45,
+              273.27570000000003,
+              356,
+              299.22499999999997
+            ]
+          ],
+          "text": "1.  Of the metals you tested for conductivity in Part 1  list the order  in which they conduct heat  from best to worst.",
+          "id": "q-59",
+          "answer_html": "<p><strong>Report your observed order</strong> of wax release, for the actual metals and apparatus tested. The source does not supply a metal list or measured release times, so an experimental ranking cannot be invented.</p><p>For otherwise similar rods, faster wax melting suggests faster energy conduction. Typical equal-sized copper or aluminum rods conduct well compared with steel, but rod dimensions, contact, and heating conditions must also be controlled.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              161,
+              45,
+              300.27570000000003,
+              356,
+              326.22499999999997
+            ]
+          ],
+          "text": "2.  List three metals that are used in cooking utensils because they  conduct well.",
+          "id": "q-60",
+          "answer_html": "<p>Examples of good conducting metals used in cookware are <strong>copper, aluminum, and iron</strong>. Copper and aluminum spread energy rapidly; cast iron conducts less well than those two but has other useful cooking properties.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              161,
+              45,
+              327.27570000000003,
+              356,
+              339.72499999999997
+            ]
+          ],
+          "text": "3.  Explain the results you observed in Part 3.",
+          "id": "q-61",
+          "answer_html": "<p>Copper gauze conducts energy away from gases crossing its small openings. If the gas is cooled below its ignition temperature, a flame does not propagate through the gauze even though unburned gas can pass through.</p><p>Thus a flame can be established in one region without automatically igniting gas in neighboring regions separated by gauze. This explains the different burning locations in the teacher’s trials; record which regions actually burn. Results depend on gauze temperature and the apparatus.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          160,
+          45,
+          60,
+          577,
+          710
+        ],
+        [
+          161,
+          45,
+          60,
+          356,
+          256
+        ],
+        [
+          161,
+          356,
+          60,
+          577,
+          340
+        ]
+      ]
+    },
+    {
+      "id": "set-21",
+      "topic": "5.3",
+      "kind": "Challenge",
+      "title": "Investigation 5-3A: keeping ice solid",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              161,
+              45,
+              360.27570000000003,
+              577,
+              372.72499999999997
+            ]
+          ],
+          "text": "1.  Have a contest to see who can design a container that will keep an ice cube solid for the longest time.",
+          "id": "q-62",
+          "answer_html": "<p>Use an insulating container with a lid and trapped-air layers around the ice, minimize contact with conducting supports, and shield it from radiant heating.</p><p>For a fair test, use equal ice masses and initial temperatures, identical room conditions, and the same criterion for “still solid.” Measure melting time rather than assuming a winning design.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          160,
+          45,
+          60,
+          577,
+          710
+        ],
+        [
+          161,
+          45,
+          60,
+          356,
+          256
+        ],
+        [
+          161,
+          356,
+          60,
+          577,
+          340
+        ]
+      ]
+    },
+    {
+      "id": "set-22",
+      "topic": "5.3",
+      "kind": "Investigation",
+      "title": "Investigation 5-3B: convection",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              162,
+              45,
+              421.9257,
+              385,
+              461.375
+            ]
+          ],
+          "text": "1.  Explain  in terms of molecular motion and density   density = mass/volume  why a convection current in water or air  moves in the direction that it does.",
+          "id": "q-63",
+          "answer_html": "<p>Heating commonly expands a fluid, lowering its density. The less-dense warm fluid rises in surrounding cooler, denser fluid. Cooler fluid descends elsewhere and replaces it, making a circulation.</p><p>In the water loop, water rises on the heated side. In the convection box, warm air rises out above the candle, drawing cooler air and smoke down the other chimney.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              162,
+              45,
+              462.4257,
+              385,
+              515.375
+            ]
+          ],
+          "text": "2.  In Investigation 5-3A  you were able to boil water at the top of a  test tube while ice at the bottom of the tube remained frozen. What  would happen if you heated the bottom of a test tube that has ice at  the top  How would the heat be transferred to the ice",
+          "id": "q-64",
+          "answer_html": "<p>Heating from below generally makes warm water rise toward the ice, so <strong>convection transfers energy upward and the ice melts</strong>. Heating only the top creates a more stable warm-over-cold arrangement, so the lower ice can remain while the upper water boils.</p><p>This is the intended qualitative prediction; water’s density behavior near 4°C can affect detailed low-temperature motion.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          162,
+          45,
+          60,
+          577,
+          87
+        ],
+        [
+          162,
+          45,
+          88,
+          385,
+          405
+        ],
+        [
+          162,
+          385,
+          88,
+          577,
+          637
+        ]
+      ]
+    },
+    {
+      "id": "set-23",
+      "topic": "5.3",
+      "kind": "Investigation",
+      "title": "Investigation 5-3C: infrared absorption",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              163,
+              45,
+              488.32480000000004,
+              577,
+              500.7741
+            ]
+          ],
+          "text": "1.  Which container  if either  warmed up more",
+          "id": "q-65",
+          "answer_html": "<p><strong>Use your measured temperature changes</strong> to answer which water sample warmed more. Under comparable conditions, the black container is expected to warm more than the foil-covered container. The source table is blank, so no experimental temperatures are known.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              163,
+              45,
+              501.82480000000004,
+              577,
+              514.2741
+            ]
+          ],
+          "text": "2.  Try to explain what you observed.",
+          "id": "q-66",
+          "answer_html": "<p>The black surface generally absorbs more of the lamp’s incident radiation, while shiny foil reflects more. The absorbed energy increases the water and container internal energies.</p><p>Keep water masses, starting temperatures, lamp distances, container dimensions, and exposure times comparable. Heat loss and container heat capacity also affect the result.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          163,
+          45,
+          60,
+          577,
+          466
+        ]
+      ]
+    },
+    {
+      "id": "set-24",
+      "topic": "5.3",
+      "kind": "Challenge",
+      "title": "Investigation 5-3C: infrared reflection",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              163,
+              45,
+              534,
+              577,
+              722
+            ]
+          ],
+          "text": "1.  A Crooke's radiometer  named after Sir William Crookes  1832o1919  is shown  in Figure 5.3.9. Four vanes are connected to a pivot in a glass bulb  which is  partially  but not completely  evacuated. There are some air molecules inside  the container. One side of each vane is black.  The other side may be white or  silvered.           Design an experiment using an infrared light source  a mirror  and a  radiometer to test whether infrared radiation reflects from a shiny surface the  way visible light does. Figure 5.3.9   Crooke's radiometer",
+          "id": "q-67",
+          "answer_html": "<p>Place the radiometer so the lamp cannot shine directly on it, using a screen. Aim a mirror so the reflected lamp radiation reaches the vanes. Compare rotation with the mirror aimed at the radiometer and aimed away, keeping source distance and background conditions as similar as possible.</p><p>A reproducible response only when the reflected beam reaches it supports reflection of the radiation. Include a direct-illumination comparison and allow for the radiometer’s response time. It is a qualitative detector, not an automatic measurement of reflected power.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          163,
+          45,
+          60,
+          577,
+          466
+        ]
+      ]
+    },
+    {
+      "id": "set-25",
+      "topic": "5.3",
+      "kind": "Section review",
+      "title": "5.3 Review: temperature and heat transfer",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              164,
+              59,
+              86.5257,
+              306,
+              248.5156
+            ]
+          ],
+          "text": "1.  What are the three potential forms of kinetic energy  that a molecule could have",
+          "id": "q-68",
+          "answer_html": "<p>A molecule can have <strong>translational, rotational, and vibrational kinetic energy</strong>, depending on its structure and the available motions.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              164,
+              59,
+              248.5256,
+              306,
+              410.51570000000004
+            ]
+          ],
+          "text": "2.  If the temperature of an object is 30¡C  what is its  temperature in kelvins  ",
+          "id": "q-69",
+          "answer_html": "<p>T = 30 + 273.15 = <strong>303.15 K ≈ 303 K</strong>.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              164,
+              59,
+              410.52570000000003,
+              306,
+              586.0156000000001
+            ]
+          ],
+          "text": "3.  By what method can heat be transferred without the  presence of matter  ",
+          "id": "q-70",
+          "answer_html": "<p><strong>Radiation</strong>, carried by electromagnetic waves, can transfer energy through a vacuum. Conduction and ordinary convection require matter.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              164,
+              59,
+              586.0256,
+              306,
+              724.6
+            ]
+          ],
+          "text": "4.   What is the direction of airflow at night in the  situation shown below  assuming there are no major  weather disturbances 1 3 land 4 2 water",
+          "id": "q-71",
+          "answer_html": "<p>At night in the intended situation, the water is warmer than the land. Air rises over the water, giving flow <strong>from 2 to 1</strong>; cooler air descends over land, <strong>from 3 to 4</strong>. Surface return flow goes from land to sea, and upper return flow goes from sea to land.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 245\" role=\"img\" aria-label=\"Day: surface air flows from sea to land, rises over land, returns aloft, and descends over sea. Night reverses this circulation.\"><title>Idealized coastal convection</title>\n<text x=\"20\" y=\"24\">DAY</text><text x=\"20\" y=\"144\">NIGHT</text>\n<path d=\"M35 99H210V109H35Z M35 219H210V229H35Z\" fill=\"#d8d2bb\"/>\n<path d=\"M210 99H420V109H210Z M210 219H420V229H210Z\" fill=\"#bedfe9\"/>\n<path d=\"M335 82H110V45H335V82M110 202H335V165H110V202\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/>\n<path d=\"M117 76 109 82 117 88M104 54 110 45 116 54M326 39 335 45 326 51M329 73 335 82 341 73M326 196 335 202 326 208M329 174 335 165 341 174M119 159 110 165 119 171M104 193 110 202 116 193\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/>\n<text x=\"60\" y=\"125\">warmer land</text><text x=\"278\" y=\"125\">cooler sea</text>\n<text x=\"60\" y=\"243\">cooler land</text><text x=\"278\" y=\"243\">warmer sea</text></svg><figcaption>Surface sea breeze by day; surface land breeze at night, when the stated land–water temperature contrast applies.</figcaption></figure>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              164,
+              317,
+              86.2507,
+              577,
+              261.74060000000003
+            ]
+          ],
+          "text": "5.  A cold weather emergency survival suit is made of  a reflecting plastic material with a thin coating of  regular plastic. Why is the shiny  reflecting plastic on  the inside of the suit facing your body  Why is it not  wise to place this suit on someone who is already  suffering from hypothermia",
+          "id": "q-72",
+          "answer_html": "<p>A reflective inner surface reduces net radiative heat loss from the body. The enclosing material can also limit wind and evaporation. The suit conserves energy; it does not supply an independent source of heat.</p><p><strong>Source correction:</strong> the question’s implication that a reflective covering should categorically be withheld from a hypothermic person is misleading. Preventing further heat loss remains useful; insulation alone may not provide adequate rewarming. Hypothermia is an emergency requiring appropriate first aid. See <a href=\"https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/winter-storm/hypothermia-and-frostbite.html\" target=\"_blank\" rel=\"noopener\">American Red Cross guidance</a>.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              164,
+              317,
+              261.7506,
+              577,
+              410.24060000000003
+            ]
+          ],
+          "text": "6.  If you are sitting in front of an open fireplace  what  is the main method by which heat is transferred to  you",
+          "id": "q-73",
+          "answer_html": "<p>The main direct transfer from an open fire to a seated person in front of it is <strong>thermal radiation</strong>. Much of the hot air rises instead of moving straight toward the person.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              164,
+              317,
+              410.2506,
+              577,
+              585.7405
+            ]
+          ],
+          "text": "7.  When a pot of soup heats up  what is the main  method by which heat is transferred within the  soup  ",
+          "id": "q-74",
+          "answer_html": "<p><strong>Convection</strong> circulates the fluid: warmer soup rises and cooler soup descends. Conduction also acts locally, especially at the pot surface.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              164,
+              317,
+              585.7505,
+              577,
+              724.6
+            ]
+          ],
+          "text": "8.  In winter  why do the blades of your skates feel  cooler to the touch than your boots do",
+          "id": "q-75",
+          "answer_html": "<p>Metal skate blades conduct energy away from your skin faster than the boot material does. They can therefore feel colder <strong>even at the same initial temperature</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-26",
+      "topic": "5.4",
+      "kind": "Warm-up",
+      "title": "Lakes and puddles: warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              165,
+              45,
+              128.5257,
+              577,
+              154.475
+            ]
+          ],
+          "text": "In the fall when the temperature drops below 0¡C many lakes will not freeze over  but smaller puddles will freeze.  Why does this happen",
+          "id": "q-76",
+          "answer_html": "<p>A lake contains a much larger mass of water, so a large amount of energy must leave before its bulk temperature changes appreciably. Mixing can bring warmer water to the surface, and freezing also requires removal of latent energy.</p><p>A shallow puddle has much less stored energy and a large exposed surface relative to its volume, so it can cool and freeze sooner. Lake water and puddle water do not have different specific heat capacities merely because their sizes differ.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-27",
+      "topic": "5.4",
+      "kind": "Sample prompt",
+      "title": "Sample 5.4.1: specific heat capacity",
+      "questions": [
+        {
+          "label": "5.4.1",
+          "boxes": [
+            [
+              166,
+              45,
+              76.2757,
+              577,
+              88.72500000000001
+            ]
+          ],
+          "text": "If 25 kJ of heat is transferred to 50.0 kg of water initially at 20.0¡C  what will the final temperature of the water be",
+          "id": "q-77",
+          "answer_html": "<p>Q = 25 000 J and c = 4200 J/(kg·°C). ΔT = Q/(mc) = 25 000/[(50.0)(4200)] = 0.1190°C.</p><p>T<sub>f</sub> = 20.0 + 0.1190 ≈ <strong>20.1°C</strong>.</p>"
+        }
+      ],
+      "shared": [
+        [
+          165,
+          45,
+          454,
+          577,
+          612
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-28",
+      "topic": "5.4",
+      "kind": "Practice",
+      "title": "Practice 5.4.1: specific heat capacity",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              166,
+              45,
+              393.70410000000004,
+              577,
+              410.722
+            ]
+          ],
+          "text": "1.  How much heat is needed to raise the temperature of 90.0 kg of water from 18  C to 80  C",
+          "id": "q-78",
+          "answer_html": "<p>ΔT = 80 − 18 = 62°C. Q = mcΔT = (90.0)(4200)(62) = <strong>2.3436 × 10⁷ J</strong> before rounding, approximately <strong>23 MJ</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              166,
+              45,
+              447.70410000000004,
+              577,
+              476.22499999999997
+            ]
+          ],
+          "text": "2.  If 1.0 MJ  megajoule  of heat is transferred to 10.0 kg of water initially at 15  C  what will the water's final  temperature be",
+          "id": "q-79",
+          "answer_html": "<p>ΔT = (1.0 × 10⁶)/[(10.0)(4200)] = 23.81°C. T<sub>f</sub> = 15 + 23.81 = <strong>39°C</strong> after rounding.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              166,
+              45,
+              515.2041,
+              577,
+              543.725
+            ]
+          ],
+          "text": "3.  If 12 kg of water cools from 100  C down to room temperature  20  C  how much heat will it release to the  environment",
+          "id": "q-80",
+          "answer_html": "<p>Q<sub>water</sub> = (12)(4200)(20 − 100) = −4.032 × 10⁶ J. The magnitude released to the environment is <strong>4.0 MJ</strong>.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              166,
+              45,
+              585.2757,
+              577,
+              597.725
+            ]
+          ],
+          "text": "4.  Why is water such a desirable material to use as a coolant in a car engine",
+          "id": "q-81",
+          "answer_html": "<p>Water has a <strong>high specific heat capacity</strong>, so a substantial energy transfer causes a relatively small temperature rise. Circulating water can therefore carry considerable energy away from an engine. Real coolant mixtures also provide other useful properties.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              166,
+              45,
+              623.2041,
+              577,
+              651.725
+            ]
+          ],
+          "text": "5.  If it takes 1200 J to raise the temperature of 0.500 kg of brass from 20.0  C to 26.2  C  what is the specific heat  capacity of brass",
+          "id": "q-82",
+          "answer_html": "<p>ΔT = 26.2 − 20.0 = 6.2°C. c = Q/(mΔT) = 1200/[(0.500)(6.2)] = 387.1 J/(kg·°C) ≈ <strong>3.9 × 10² J/(kg·°C)</strong>.</p>"
+        }
+      ],
+      "shared": [
+        [
+          165,
+          45,
+          454,
+          577,
+          612
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-29",
+      "topic": "5.4",
+      "kind": "Sample prompt",
+      "title": "Sample 5.4.2: efficiency",
+      "questions": [
+        {
+          "label": "5.4.2",
+          "boxes": [
+            [
+              167,
+              45,
+              431.31690000000003,
+              577,
+              457.26619999999997
+            ]
+          ],
+          "text": "To lift a 1200 N motorcycle a vertical height of 1.3 m onto a pickup truck  a motocross rider pushes the bike up a  ramp 2.4 m  requiring an effort force up the ramp of 820 N. What is the efficiency of the ramp",
+          "id": "q-83",
+          "answer_html": "<p>Useful work = (1200 N)(1.3 m) = 1560 J. Input work = (820 N)(2.4 m) = 1968 J.</p><p>η = 1560/1968 = 0.7927 ≈ <strong>79%</strong>. Use vertical height for gravitational energy and ramp length for effort work, assuming no change in speed.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-30",
+      "topic": "5.4",
+      "kind": "Practice",
+      "title": "Practice 5.4.2: efficiency",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              168,
+              45,
+              82.2757,
+              577,
+              108.22500000000001
+            ]
+          ],
+          "text": "1.  You must do 500 J of work to operate a pulley system that lifts a 150 N load to a height of 3.0 m. How efficient  is the pulley system",
+          "id": "q-84",
+          "answer_html": "<p>Useful output = (150)(3.0) = 450 J. η = 450/500 = 0.90, so efficiency is <strong>90%</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              168,
+              45,
+              230.7758,
+              577,
+              256.72499999999997
+            ]
+          ],
+          "text": "2.  A kettle that is 80% efficient is rated 1200 W. At what rate does the water in the kettle absorb energy   in watts",
+          "id": "q-85",
+          "answer_html": "<p>P<sub>water</sub> = ηP<sub>in</sub> = (0.80)(1200) = <strong>960 W</strong>.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              168,
+              45,
+              379.27570000000003,
+              577,
+              391.72499999999997
+            ]
+          ],
+          "text": "3.  If a light bulb has an efficiency of 5.0%  at what rate does a 60 W bulb produce light energy",
+          "id": "q-86",
+          "answer_html": "<p>P<sub>light</sub> = (0.050)(60) = <strong>3.0 W</strong>. The remaining approximately 57 W is mainly transferred into thermal energy.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              168,
+              45,
+              514.2758,
+              577,
+              553.7251
+            ]
+          ],
+          "text": "4.  For every megajoule of chemical potential energy in the fuel used to run a certain truck  only 120 kJ of useful  work is done by the truck in making itself move. How efficient is the truck   Where are some of the places that  the energy from the fuel is wasted",
+          "id": "q-87",
+          "answer_html": "<p>η = E<sub>useful</sub>/E<sub>in</sub> = 120 kJ/1000 kJ = 0.12 = <strong>12%</strong>.</p><p>The other 880 kJ per input megajoule can heat the engine, coolant, exhaust, tires, road, and surroundings, with smaller sound and other transfers. It is not destroyed.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-31",
+      "topic": "5.4",
+      "kind": "Investigation",
+      "title": "Investigation 5-4: heating power",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              169,
+              45,
+              566.3128,
+              577,
+              578.7621
+            ]
+          ],
+          "text": "1.  What was your calculated power for the hot plate",
+          "id": "q-88",
+          "answer_html": "<p><strong>Use your temperature-time graph.</strong> P<sub>water</sub> = mc × slope = (0.300)(4200)(ΔT/Δt) = <strong>1260 × slope</strong> in watts when slope is in °C/s.</p><p>No measurements are supplied. For example only, a slope of 0.100°C/s would give 126 W; it is not an experimental result from the source.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              169,
+              45,
+              579.8128,
+              577,
+              617.6585
+            ]
+          ],
+          "text": "2.  Calculate the percent difference between your calculated power and the manufacturer's rating  as follows: manufacturer's rating o calculated power rating % difference =   ¨ 100% manufacturer's power rating",
+          "id": "q-89",
+          "answer_html": "<p>Using the source’s formula, relative discrepancy = <strong>100(P<sub>rated</sub> − P<sub>water</sub>)/P<sub>rated</sub></strong>. Substitute your measured water-heating power and the actual label rating.</p><p>The source calls this “percent difference,” but it is a discrepancy relative to the rating rather than the symmetric percent-difference convention. Values above the rating should trigger a review of measurements and assumptions, rather than being silently forced positive.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              169,
+              45,
+              626.3127000000001,
+              577,
+              698.6584799999999
+            ]
+          ],
+          "text": "3.  Assuming your calculations were correct  and the manufacturer's rating was also correct  what is the ratio of the  power you calculated  heat absorbed by the water per second  to the hot plate's rated power  heat given off by  the hot plate per second . This ratio is the efficiency of the hot plate. You can convert your decimal fraction to a  percent by multiplying by 100.   calculated power rating  ¨ 100% efficiency =  manufacturer's power rating",
+          "id": "q-90",
+          "answer_html": "<p>η = <strong>P<sub>water</sub>/P<sub>rated</sub> × 100%</strong>. Both quantities must refer to comparable operating conditions. Your measured slope and the label rating are needed for a numerical value.</p><p>This describes the useful fraction heating the water, rather than a failure of energy conservation.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              169,
+              45,
+              707.31266,
+              577,
+              719.7619599999999
+            ]
+          ],
+          "text": "4.  Why is the efficiency less than 100%",
+          "id": "q-91",
+          "answer_html": "<p>Some energy heats the hot plate, beaker, thermometer, and surrounding air, and some is transferred by radiation and evaporation. Therefore useful water-heating power is less than input power.</p><p>Thermometer lag, changing heat loss, imperfect mixing, and differences between label and actual operating power also affect the experimental result.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          169,
+          45,
+          60,
+          577,
+          548
+        ]
+      ]
+    },
+    {
+      "id": "set-32",
+      "topic": "5.4",
+      "kind": "Section review",
+      "title": "5.4 Review: thermal energy and efficiency",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              170,
+              59,
+              86.5257,
+              306,
+              289.01550000000003
+            ]
+          ],
+          "text": "1.  How much heat would be needed to warm 1.6 kg of  ice from o15¡C up to its melting point of 0¡C",
+          "id": "q-92",
+          "answer_html": "<p>Use c<sub>ice</sub> = 2100 J/(kg·°C): Q = (1.6)(2100)[0 − (−15)] = 50 400 J ≈ <strong>5.0 × 10⁴ J</strong>.</p><p>This warms the ice to its melting point but does not melt it; melting would require a separate latent-energy term.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              170,
+              59,
+              289.0255,
+              306,
+              505.01550000000003
+            ]
+          ],
+          "text": "2.  A 5.0 kg block of lead at 250¡C cools down to 20¡C.  How much heat does it give off in doing so",
+          "id": "q-93",
+          "answer_html": "<p>With c<sub>lead</sub> = 130 J/(kg·°C), Q<sub>lead</sub> = (5.0)(130)(20 − 250) = −149 500 J. It releases <strong>1.5 × 10⁵ J</strong> of energy.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              170,
+              59,
+              505.0255,
+              306,
+              724.6
+            ]
+          ],
+          "text": "3.  How much heat must be transferred into 5.0 kg of  water to raise its temperature from 20¡C up to 97¡C     ",
+          "id": "q-94",
+          "answer_html": "<p>Q = (5.0)(4200)(97 − 20) = 1 617 000 J ≈ <strong>1.6 MJ</strong>.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              170,
+              317,
+              86.7503,
+              577,
+              370.24030000000005
+            ]
+          ],
+          "text": "4.  If water has a specific heat capacity of 4200 J/kg/¡C   how much heat is needed to warm 50.0 kg of water  from 15¡C up to 85¡C",
+          "id": "q-95",
+          "answer_html": "<p>Q = (50.0)(4200)(85 − 15) = <strong>14 700 000 J = 14.7 MJ</strong> before any further rounding.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              170,
+              317,
+              370.25030000000004,
+              577,
+              724.6
+            ]
+          ],
+          "text": "5.  If 24 kJ of energy will warm 0.600 kg of a metal from  20¡ up to 220¡C  what is the specific heat capacity of  the metal      ",
+          "id": "q-96",
+          "answer_html": "<p>c = Q/(mΔT) = 24 000/[(0.600)(220 − 20)] = <strong>200 J/(kg·°C)</strong>. The source’s “20°” is interpreted as 20°C.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              171,
+              44,
+              52.2507,
+              291,
+              724.6
+            ]
+          ],
+          "text": "6.  A light bulb is immersed in 0.500 kg of water  which  has a specific heat capacity of 4200 J/kg/¡C. The  apparatus is well insulated  so that essentially all of  the radiated heat is used to warm the water. Every  100 s  the temperature of the water is recorded. The  graph below summarizes the data. Temperature vs. Time 100.0 90.0 80.0 Temperature  ¡C 70.0 60.0 50.0 40.0 30.0 20.0 10.0 0   0  1  2  3  4  5  6  7  8  Time  s x 100 9  10  11  12   a   What is the slope of the above graph  expressed  in proper units and in correct significant figures   b   Use the slope to calculate the useful heating  power of the light bulb.   c   What is the approximate power rating of the  bulb used in this experiment",
+          "id": "q-97",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Read the plotted line using widely separated points, approximately (0 s, 20°C) and (1000 s, 60°C). Slope ≈ (60 − 20)/1000 = <strong>0.040°C/s</strong>. The horizontal-axis numbers are hundreds of seconds.</li><li>P<sub>water</sub> ≈ (0.500)(4200)(0.040) = <strong>84 W</strong>. Graph readings are approximate.</li><li>A nominal rating of about <strong>100 W</strong> is plausible for a standard incandescent bulb delivering roughly this much heat, but the graph directly determines only useful water-heating power. Exact electrical rating also requires the fraction of input energy absorbed by the water.</li></ol><p><strong>Answer-key discrepancy:</strong> the printed key gives 0.0455°C/s and 95.6 W. Those two numbers agree with each other, but the displayed line is closer to 0.040°C/s. Use the plotted data and show the points you read.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              171,
+              302,
+              52.3509,
+              577,
+              241.3408
+            ]
+          ],
+          "text": "7.  Why are coastal climates more moderate than inland  climates",
+          "id": "q-98",
+          "answer_html": "<p>Large nearby water masses have a high total heat capacity and exchange energy slowly, moderating coastal air temperatures. Water circulation and evaporation also redistribute energy. Land typically warms and cools more rapidly, allowing larger inland temperature swings.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              171,
+              302,
+              241.3508,
+              577,
+              484.34060000000005
+            ]
+          ],
+          "text": "8.  A 60 W incandescent light bulb is 5% efficient. A   60 W fluorescent bulb is 15% efficient. How much  more light will the fluorescent light bulb give off  than the incandescent bulb  in the same period of  time",
+          "id": "q-99",
+          "answer_html": "<p>Incandescent light output = (0.05)(60) = 3 W. Fluorescent light output = (0.15)(60) = 9 W.</p><p>For the same duration, the fluorescent lamp emits <strong>three times as much useful light energy</strong>, or 6t J more over t seconds. “Three times as much” means 200% more, not 300% more.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              171,
+              302,
+              484.35060000000004,
+              577,
+              724.6
+            ]
+          ],
+          "text": "9.  A 1500 W kettle warms 1.00 kg of water from 18¡C to  88¡C in a time of 3.6 min. How efficient is the kettle",
+          "id": "q-100",
+          "answer_html": "<p>Useful energy = (1.00)(4200)(88 − 18) = 294 000 J. Input time = 3.6 × 60 = 216 s; input energy = (1500)(216) = 324 000 J.</p><p>η = 294 000/324 000 = 0.9074 ≈ <strong>91%</strong>.</p>"
+        }
+      ],
+      "shared": [
+        [
+          165,
+          45,
+          454,
+          577,
+          612
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-33",
+      "topic": "Chapter review",
+      "kind": "Chapter review",
+      "title": "Chapter 5 Review Questions",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              172,
+              59,
+              86.5257,
+              306,
+              397.01570000000004
+            ]
+          ],
+          "text": "1.  a    How much work will you do if you lift a 0.67 kg  book from a table top up a distance of 1.5 m to a  shelf b   How much work will be done on the book if you  lift it and move it 1.5 m sideways to a spot on  the same shelf",
+          "id": "q-101",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>W = mgh = (0.67)(9.81)(1.5) = 9.859 J ≈ <strong>9.9 J</strong> of work against gravity.</li><li>For motion only 1.5 m sideways at the same shelf height, with no speed change, the vertical support force does <strong>0 J</strong> of work. If the wording is read as also lifting the book from the table again, that separate 1.5 m rise still requires 9.9 J; the sideways part adds no gravitational work.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              172,
+              59,
+              397.02570000000003,
+              306,
+              586.0156000000001
+            ]
+          ],
+          "text": "2.  If you push a 75 N block along a floor a distance  of 4.2 m at a steady speed  and the coefficient of  kinetic friction is 0.40  how much work will you do  on the block",
+          "id": "q-102",
+          "answer_html": "<p>N = 75 N, so friction = (0.40)(75) = 30 N. At steady speed the horizontal push also has magnitude 30 N.</p><p>W<sub>push</sub> = Fd = (30)(4.2) = <strong>126 J ≈ 1.3 × 10² J</strong>. Friction does −126 J; the net work on the block is zero.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              172,
+              59,
+              586.0256,
+              306,
+              724.6
+            ]
+          ],
+          "text": "3.  Discuss the scientific accuracy of this statement:   I used a ramp to get my motorbike up on my truck  and  the ramp saved me a lot of work!",
+          "id": "q-103",
+          "answer_html": "<p>The ramp can reduce the effort force, making the task easier, but the effort acts over a greater distance. For the same vertical rise and no speed change, useful work remains <strong>mgh</strong>.</p><p>An ideal ramp saves no work; friction usually increases input work. The everyday claim uses “work” to mean effort or difficulty rather than the physics quantity.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              172,
+              317,
+              86.46459999999999,
+              577,
+              724.6
+            ]
+          ],
+          "text": "4.   a    What is the ideal mechanical advantage of the  pulley system shown below eõort load b   If the load is 240 N  what will the effort force be   ignoring friction c   If the load is lifted 2.8 m  how far will you have to  pull down on the rope d   If the load is lifted 2.8 m in 1.6 s  what is the  power rating of the pulley system",
+          "id": "q-104",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The moving load block is supported by four equal-tension rope segments: <strong>IMA = 4</strong>.</li><li>F<sub>e</sub> = 240/4 = <strong>60 N</strong>.</li><li>Effort distance = IMA × load distance = (4)(2.8) = <strong>11.2 m</strong>, or about 11 m to two significant figures.</li><li>P<sub>out</sub> = F<sub>L</sub>h/t = (240)(2.8)/1.6 = <strong>420 W</strong>. Ideal input power is the same.</li></ol>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              173,
+              44,
+              52.2507,
+              291,
+              538.2405
+            ]
+          ],
+          "text": "5.  With a pulley system  a mechanic can lift an 840 N  engine using an effort force of only 70.0 N. a   What is the mechanical advantage of the pulley  system b   To lift the engine up 20.0 cm  how far down on  the rope will the mechanic pull c   How much work is done on the 840 N engine  when it is lifted a height of 20.0 cm d   What is the minimum amount of work the  mechanic will have to do to lift the engine  20.0 cm",
+          "id": "q-105",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>MA = F<sub>L</sub>/F<sub>e</sub> = 840/70.0 = <strong>12</strong>.</li><li>For an ideal system with IMA = 12, d<sub>e</sub> = (12)(0.200) = <strong>2.40 m</strong>. The given force ratio is actual MA; if friction is significant it does not alone determine the distance ratio.</li><li>Work on the engine = (840)(0.200) = <strong>168 J</strong>.</li><li>Minimum input work = useful output work = <strong>168 J</strong>, neglecting losses. A real system requires at least this much.</li></ol>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              173,
+              44,
+              538.2505,
+              291,
+              724.6
+            ]
+          ],
+          "text": "6.  One watt is equivalent to 1 J/s  so a joule is the same  as a watt.second.  How many joules are there in   1 kW.h",
+          "id": "q-106",
+          "answer_html": "<p>1 kW·h = (1000 J/s)(3600 s) = <strong>3.6 × 10⁶ J</strong>. A kilowatt-hour is energy, not power. The J/s unit printed in the source answer key is incorrect here.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              173,
+              302,
+              52.3509,
+              577,
+              254.8407
+            ]
+          ],
+          "text": "7.  A skier has 60 kJ of gravitational potential energy  when at the top of the hill. Assuming no friction   how much kinetic energy does she have when she is  one-third of the way down the hill  ",
+          "id": "q-107",
+          "answer_html": "<p>Assume release from rest and a constant-angle slope. One third of the height has been lost, so one third of the initial potential energy has become kinetic energy: E<sub>k</sub> = (⅓)(60 kJ) = <strong>20 kJ</strong>. The remaining potential energy is 40 kJ.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              173,
+              302,
+              254.8507,
+              577,
+              497.8407
+            ]
+          ],
+          "text": "8.  The head of a golf club transfers a certain amount of  kinetic energy to the ball upon impact. Let this be  E k . If the golfer lightens the mass of the club head by  1/3  and increases the club head speed so that it is  3 times it previous speed  how much kinetic energy  will be transferred to the ball now",
+          "id": "q-108",
+          "answer_html": "<p>Read “lightens … by ⅓” literally: the new clubhead mass is (⅔)m. The speed is 3v. Its kinetic-energy ratio is [(⅔)m(3v)²]/(mv²) = (⅔)(9) = <strong>6</strong>.</p><p>If the same fraction transfers to the ball, the new transferred energy is <strong>6E<sub>k</sub></strong>. If the intended wording were “reduces the mass <em>to</em> ⅓,” it would instead be 3E<sub>k</sub>, the printed key’s value. The actual energy transfer also depends on the collision.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              173,
+              302,
+              497.8507,
+              577,
+              724.6
+            ]
+          ],
+          "text": "9.  A pendulum bob is moving 1.8 m/s at the bottom of  its swing. To what height above the bottom of the  swing will the bob travel",
+          "id": "q-109",
+          "answer_html": "<p>At the highest point the kinetic energy has become gravitational potential energy. h = v²/(2g) = 1.8²/(2 × 9.81) = 0.1651 m ≈ <strong>0.17 m</strong> above the lowest point.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              174,
+              59,
+              52.2507,
+              306,
+              338.8007
+            ]
+          ],
+          "text": "10.  The pendulum bob shown here must circle the rod   and the string must remain taut at the top of the  swing. How far up must the bob be raised before  releasing it to accomplish these goals pendulum  clamp ring stand rod 10 cm",
+          "id": "q-110",
+          "answer_html": "<p>After the string catches the rod, the small-loop radius is r = 10 cm = 0.10 m. Merely reaching the top requires a rise of 2r, but that would leave zero speed and the string could not remain taut.</p><p>At the top, mg + T = mv²/r. The limiting case T = 0 requires v² = gr. Conservation from release at height h above the loop bottom gives mgh = mg(2r) + ½m(gr).</p><p>Thus <strong>h<sub>min</sub> = 2.5r = 0.25 m = 25 cm above the bottom</strong>, or 15 cm above the rod. Strictly positive top tension requires a slightly larger height. The source key’s 20 cm uses height alone and omits the required top kinetic energy.</p>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              174,
+              59,
+              338.8107,
+              306,
+              541.3006
+            ]
+          ],
+          "text": "11.  Tarzan grabs a vine 12 m long and swings on the  end of it  like a pendulum. His starting point is   5.0 m above the lowest point in his swing. How fast  is Tarzan moving as he passes through the bottom  of the swing",
+          "id": "q-111",
+          "answer_html": "<p>Only the vertical drop 5.0 m enters the energy calculation, not the 12 m vine length. v = √(2gΔh) = √[(2)(9.81)(5.0)] = <strong>9.9 m/s</strong>, assuming release from rest and negligible losses.</p>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              174,
+              59,
+              541.3106,
+              306,
+              724.6
+            ]
+          ],
+          "text": "12.  Change 250¡C to kelvins.",
+          "id": "q-112",
+          "answer_html": "<p>T = 250 + 273.15 = <strong>523.15 K ≈ 523 K</strong>.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              174,
+              317,
+              52.3508,
+              577,
+              187.3407
+            ]
+          ],
+          "text": "13.  A steel rod is at a temperature of 25¡C. To what  Celsius temperature must you raise it  in order to  double its Kelvin temperature",
+          "id": "q-113",
+          "answer_html": "<p>Initial absolute temperature = 25 + 273.15 = 298.15 K. Double this to 596.30 K, then convert back: 596.30 − 273.15 = <strong>323.15°C ≈ 323°C</strong>. The required temperature increase is 298.15°C.</p>"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              174,
+              317,
+              187.3507,
+              577,
+              308.84090000000003
+            ]
+          ],
+          "text": "14.  Why are metals such good conductors",
+          "id": "q-114",
+          "answer_html": "<p>Metals contain mobile electrons that transfer energy rapidly through the material, in addition to energy transfer through lattice vibrations. These microscopic mechanisms make metals good thermal conductors.</p>"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              174,
+              317,
+              308.8509,
+              577,
+              724.6
+            ]
+          ],
+          "text": "15.  In your home  what method s  of heat transfer are  involved in the following situations a   Heat is distributed to your rooms from your  furnace. b   Heat escapes through the walls of your house. c   Heat escapes from your roof to the atmosphere.",
+          "id": "q-115",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>In a forced-air furnace system, moving warm air transfers energy by <strong>convection</strong>. Hot-water systems transport energy in circulating water and then transfer it into rooms by convection and radiation.</li><li>Heat passes through solid wall materials mainly by <strong>conduction</strong>; air leakage and convection in gaps can contribute.</li><li>Energy reaches and passes through the roof by conduction; the exterior then loses energy to air by <strong>convection</strong> and to the surroundings by <strong>radiation</strong>. Rising warm air inside and leakage can also matter.</li></ol>"
+        },
+        {
+          "label": "16",
+          "boxes": [
+            [
+              175,
+              44,
+              52.3507,
+              291,
+              335.84060000000005
+            ]
+          ],
+          "text": "16.  Why is the water at the top of a hot water tank  warmer than the water at the bottom of the tank",
+          "id": "q-116",
+          "answer_html": "<p>Warmer water is generally less dense than cooler water at normal hot-water-tank temperatures, so it rises while cooler water sinks. This convection and buoyant layering leave warmer water near the top.</p>"
+        },
+        {
+          "label": "17",
+          "boxes": [
+            [
+              175,
+              44,
+              335.85060000000004,
+              291,
+              724.6
+            ]
+          ],
+          "text": "17.  A certain metal has a specific heat capacity of   420 J/kg/¡C  while water has a specific heat capacity  of 4200 J/kg/¡C. A kilogram of the metal and a  kilogram of water are both at a temperature of 98¡C.  If both are allowed to cool to 18¡C  which will give  off more heat to the atmosphere  and how much  more will it release",
+          "id": "q-117",
+          "answer_html": "<p>Both samples cool by 80°C. Water releases (1)(4200)(80) = <strong>336 000 J</strong>; metal releases (1)(420)(80) = <strong>33 600 J</strong>.</p><p>Water releases <strong>10 times as much</strong>, or <strong>302 400 J more</strong>. Their signed energy changes are negative; these are released magnitudes.</p>"
+        },
+        {
+          "label": "18",
+          "boxes": [
+            [
+              175,
+              302,
+              52.3508,
+              577,
+              268.34060000000005
+            ]
+          ],
+          "text": "18.  If 10.0 kg of water at 25¡C is heated by a 100%  efficient 1500 W heater for 5.00 min  what will its  final temperature be  ",
+          "id": "q-118",
+          "answer_html": "<p>t = 5.00 × 60 = 300 s. Q = Pt = (1500)(300) = 450 000 J.</p><p>ΔT = Q/(mc) = 450 000/[(10.0)(4200)] = 10.714°C, so T<sub>f</sub> ≈ <strong>36°C</strong> (35.714°C before rounding).</p>"
+        },
+        {
+          "label": "19",
+          "boxes": [
+            [
+              175,
+              302,
+              268.35060000000004,
+              577,
+              484.3407
+            ]
+          ],
+          "text": "19.  How much heat is supplied by a 100% efficient   1200 W kettle in 10.0 min",
+          "id": "q-119",
+          "answer_html": "<p>Q = Pt = (1200)(10.0 × 60) = <strong>720 000 J = 0.720 MJ</strong>, given 100% useful efficiency.</p>"
+        },
+        {
+          "label": "20",
+          "boxes": [
+            [
+              175,
+              302,
+              484.3507,
+              577,
+              724.6
+            ]
+          ],
+          "text": "20.  What is the efficiency of a 1500 W kettle if it supplies  heat at the rate of 1400 W to the water in it",
+          "id": "q-120",
+          "answer_html": "<p>η = P<sub>water</sub>/P<sub>in</sub> = 1400/1500 = 0.9333…, so the efficiency is <strong>93%</strong>, approximately 93.3% before rounding.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-34",
+      "topic": "Extra practice",
+      "kind": "Extra practice",
+      "title": "Chapter 5 Extra Practice",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              176,
+              59,
+              86.6257,
+              306,
+              127.11559999999999
+            ]
+          ],
+          "text": "1.  How much gravitational energy is gained by a 45 kg  girl if she climbs 6.0 m up a flight of stairs   ",
+          "id": "q-121",
+          "answer_html": "<p>ΔE<sub>p</sub> = mgh = (45)(9.81)(6.0) = 2648.7 J ≈ <strong>2.6 × 10³ J</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              176,
+              59,
+              127.12559999999999,
+              306,
+              261.40808100000004
+            ]
+          ],
+          "text": "2.  a    A spring in a toy that launches plastic balls  requires an average force of 1.2 N to compress it  a distance of 3.0 cm. How much elastic potential  energy is stored in the spring when it is fully   compressed b   If all the elastic potential energy is transferred  to a 10.0 g ball  how fast will the ball move as it  leaves the spring",
+          "id": "q-122",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>For a changing spring force, use the stated average: E<sub>elastic</sub> = F<sub>avg</sub>x = (1.2)(0.030) = <strong>0.036 J</strong>. Do not multiply this average-force result by another ½.</li><li>With m = 10.0 g = 0.0100 kg, ½mv² = 0.036, so v = √[(2)(0.036)/0.0100] = <strong>2.7 m/s</strong>.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              176,
+              59,
+              261.41808100000003,
+              306,
+              302.61560000000003
+            ]
+          ],
+          "text": "3.  How much kinetic energy does a 1.0 w 10 3  kg car  travelling 90 km/h have  ",
+          "id": "q-123",
+          "answer_html": "<p>v = 90/3.6 = 25 m/s. E<sub>k</sub> = ½(1.0 × 10³)(25)² = 312 500 J ≈ <strong>3.1 × 10⁵ J</strong>.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              176,
+              59,
+              302.6256,
+              306,
+              356.61560000000003
+            ]
+          ],
+          "text": "4.  How much gravitational potential energy does a   75 kg skier have when at the top of a hill 2.0 w 10 3  m  high",
+          "id": "q-124",
+          "answer_html": "<p>E<sub>p</sub> = mgh = (75)(9.81)(2.0 × 10³) = 1.4715 × 10⁶ J ≈ <strong>1.5 MJ</strong>, relative to the hill’s bottom.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              176,
+              59,
+              356.6256,
+              306,
+              724.6
+            ]
+          ],
+          "text": "5.  Predict which of the two students below will move  when the rope is pulled. Give a reason for your  prediction. Be sure to test your prediction!  60 kg 40 kg pull",
+          "id": "q-125",
+          "answer_html": "<p>In the pictured arrangement, the pulley is attached to the 60 kg student and the other rope end to the 40 kg student. With ideal rope tension T, the 60 kg side receives <strong>2T</strong>, while the 40 kg side receives <strong>T</strong>.</p><p>With similar chair-floor friction coefficients, the 60 kg student should start moving first: that side needs T ≈ μ(60g)/2 = μ30g to overcome static friction, compared with μ40g on the other side. With negligible friction both move toward each other, and the 60 kg side accelerates more: 2T/60 > T/40.</p><p>The prediction depends on friction and chair masses; test it. Comparing body masses alone misses the pulley’s unequal forces. The external person pulling the free end means the two students alone are not an isolated system.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              176,
+              317,
+              86.9348,
+              577,
+              495.77970000000005
+            ]
+          ],
+          "text": "6.  The pulley systems shown below may be considered  frictionless. eõort force eõort  force eõort  force load load A B load C   a   What is the mechanical advantage of pulley system  A b   If the load is 600.0 N  what effort force is  needed c   If the load is lifted up a distance of 1.2 m  how  much work will be done on the load by the  pulley system d   If the load is lifted up 1.2 m  how much rope  must you pull   What is the effort distance e   How much work will you do",
+          "id": "q-126",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>System A has two moving pulleys plus a rope end anchored to the moving block, giving five load-supporting tensions: <strong>IMA = 5</strong>.</li><li>Effort = 600.0/5 = <strong>120.0 N</strong>.</li><li>Work on the load = (600.0)(1.2) = <strong>720 J</strong>.</li><li>Effort distance = (5)(1.2) = <strong>6.0 m</strong>.</li><li>Ideal work by you = (120.0)(6.0) = <strong>720 J</strong>. The 710 J printed elsewhere in the source key is inconsistent with these data.</li></ol>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              176,
+              317,
+              495.78970000000004,
+              577,
+              563.2797
+            ]
+          ],
+          "text": "7.  a    What is the mechanical advantage of the pulley  system B in question 6   Assume no friction. b   If someone pulls on the rope for a distance of   3.5 m  to what height will the load be lifted",
+          "id": "q-127",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>System B also has five supporting tensions: <strong>IMA = 5</strong>. The additional fixed pulley redirects the free end; it does not add another supporting strand to the moving block.</li><li>h = d<sub>e</sub>/IMA = 3.5/5 = <strong>0.70 m</strong>.</li></ol>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              176,
+              317,
+              563.2897,
+              577,
+              644.2797
+            ]
+          ],
+          "text": " 8.  a    What is the ideal mechanical advantage of pulley  system C in question 6 b   How heavy a load could you lift with pulley  system C in question 6  if your effort force is   300 N",
+          "id": "q-128",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>System C consists of <strong>four successive movable-pulley stages</strong>. Their ideal advantages multiply: IMA = 2⁴ = <strong>16</strong>.</li><li>Load force = IMA × effort = (16)(300) = <strong>4800 N</strong>. Ignore rope and pulley masses and friction.</li></ol>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              176,
+              317,
+              644.2897,
+              577,
+              684.77962
+            ]
+          ],
+          "text": "9.  A 75 kg girl runs up a 3.0 m flight of stairs in 2.5 s.  What is her ihorsepowerw in this situation",
+          "id": "q-129",
+          "answer_html": "<p>Useful power = mgh/t = (75)(9.81)(3.0)/2.5 = 882.9 W. In horsepower, 882.9/746 = <strong>1.2 hp</strong> after rounding. This is external mechanical output, not metabolic input.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              176,
+              317,
+              684.78962,
+              577,
+              724.6
+            ]
+          ],
+          "text": "10.  How much work will a 4.0 HP  3 kW  motor do in half  an hour",
+          "id": "q-130",
+          "answer_html": "<p>Use the given approximate rating 3 kW and time 0.5 h = 1800 s: W = Pt = (3000)(1800) = <strong>5.4 × 10⁶ J = 5.4 MJ</strong>. Using 4.0 hp × 746 W/hp gives 5.37 MJ, which rounds to the same result.</p>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              177,
+              44,
+              52.2507,
+              291,
+              92.74059999999999
+            ]
+          ],
+          "text": "11.  How much heat does a 1500 W heater give off in  one minute",
+          "id": "q-131",
+          "answer_html": "<p>Q = Pt = (1500)(60) = <strong>90 000 J = 90 kJ</strong>, assuming the heater’s stated power is the heating output.</p>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              177,
+              44,
+              92.75059999999999,
+              291,
+              187.2404
+            ]
+          ],
+          "text": "12.  A pendulum is started swinging from a height of  0.3000 m above its rest position  and allowed to   swing freely back and forth. If 1.00% of the bob's  energy is lost due to friction with each swing  to  what maximum height will the bob swing at the end  of its fourth swing",
+          "id": "q-132",
+          "answer_html": "<p>Each stated swing retains 99.0% of the preceding mechanical energy. At a turning point E = mgh, so after four such swings: h₄ = h₀(0.99)⁴ = (0.3000)(0.99)⁴ = <strong>0.2882 m</strong>.</p><p>This treats “swing” as the energy-loss interval defined by the question. Do not simply subtract 4% of the initial height; the losses compound.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              177,
+              44,
+              187.25039999999998,
+              291,
+              281.74060000000003
+            ]
+          ],
+          "text": "13.  The initial speed of a golf ball struck with a driver by  professional golfer has been measured to be   285 km/h. From what vertical height would you  have to drop a golf ball so that it reaches this same  speed as it hits the ground  Assume that air friction  can be ignored. ",
+          "id": "q-133",
+          "answer_html": "<p>v = 285/3.6 = 79.1667 m/s. From mgh = ½mv², h = v²/(2g) = (79.1667)²/(2 × 9.81) = <strong>319 m</strong>. This ideal result ignores air resistance, as requested.</p>"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              177,
+              44,
+              281.7506,
+              291,
+              430.24050000000005
+            ]
+          ],
+          "text": "14.  Discuss the main forms of heat transfer involved in  each of these situations: a   A fireplace warms you as you sit in front of it. b   Heat from the fireplace goes up the chimney. c   Heat is transferred from an electric stove  element into a frying pan. d   Soup is heated to near boiling even though it  does not conduct well. e   Your house is warmed using a natural gas  furnace system.",
+          "id": "q-134",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Fireplace to a person in front: mainly <strong>radiation</strong>.</li><li>Hot gases moving up the chimney: <strong>convection</strong>.</li><li>Stove element into a contacting pan: mainly <strong>conduction</strong>; radiation can also contribute across a gap.</li><li>Energy distributed through the soup: mainly <strong>convection</strong>.</li><li>A forced-air furnace distributes energy with moving air: <strong>convection</strong>. Conduction and radiation occur at solid surfaces and room boundaries.</li></ol>"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              177,
+              44,
+              430.25050000000005,
+              291,
+              724.6
+            ]
+          ],
+          "text": "15.  Describe in what direction the vanes of a Crooke's  radiometer turn when infrared light falls on them.  Suggest a possible reason why they turn in that  direction.",
+          "id": "q-135",
+          "answer_html": "<p>Under ordinary illumination, the vanes turn with the <strong>black faces trailing</strong>, as if those faces were being pushed backward. They absorb more radiation and become warmer than the shiny faces.</p><p>The motion comes from temperature-gradient-driven forces in the rarefied residual gas, involving the vane edges. It is not adequately explained by light pressure or simply by greater static pressure on an entire hot face. See <a href=\"https://arxiv.org/abs/physics/0402011\" target=\"_blank\" rel=\"noopener\">Scandurra, Enhanced radiometric forces</a> for the gas-thermal mechanism.</p>"
+        },
+        {
+          "label": "16",
+          "boxes": [
+            [
+              177,
+              302,
+              52.3506,
+              577,
+              79.34049999999999
+            ]
+          ],
+          "text": "16.  Why is an igloo warm",
+          "id": "q-136",
+          "answer_html": "<p>Snow traps air and is a poor conductor, so the walls slow energy loss from the relatively warm interior. The shelter also limits wind-driven exchange. Heat from occupants and other sources can keep the interior warmer than outdoors.</p><p>The igloo does not create energy, and “warm” means warmer than its surroundings rather than necessarily room temperature.</p>"
+        },
+        {
+          "label": "17",
+          "boxes": [
+            [
+              177,
+              302,
+              79.3505,
+              577,
+              105.63308099999999
+            ]
+          ],
+          "text": "17.  Define specific heat capacity.",
+          "id": "q-137",
+          "answer_html": "<p><strong>Specific heat capacity</strong> is the energy required per kilogram of a substance for a one-degree Celsius (or one-kelvin) temperature increase, without a phase change.</p><p>c = Q/(mΔT), with units <strong>J/(kg·°C)</strong> or J/(kg·K).</p>"
+        },
+        {
+          "label": "18",
+          "boxes": [
+            [
+              177,
+              302,
+              105.643081,
+              577,
+              133.3406
+            ]
+          ],
+          "text": "18.  Change 373 kelvins to   ¡C.",
+          "id": "q-138",
+          "answer_html": "<p>T = 373 − 273.15 = <strong>99.85°C ≈ 100°C</strong>. Using the textbook’s rounded 273 gives 100°C directly.</p>"
+        },
+        {
+          "label": "19",
+          "boxes": [
+            [
+              177,
+              302,
+              133.3506,
+              577,
+              187.3405
+            ]
+          ],
+          "text": "19.  Why might a metal doorknob feel cold to the touch  while the wooden door feels relatively warm  when  they are actually both at the same temperature",
+          "id": "q-139",
+          "answer_html": "<p>The metal doorknob conducts energy away from your warmer hand faster than wood does. Therefore it feels colder even when both objects have the same initial temperature.</p>"
+        },
+        {
+          "label": "20",
+          "boxes": [
+            [
+              177,
+              302,
+              187.35049999999998,
+              577,
+              241.3407
+            ]
+          ],
+          "text": "20.  If 5.00 kg of water at 10¡C is heated for 2.00 min by a  heater that supplies 1500 W to the water  what will  the final temperature of the water be    c =  4200 J/kg/¡C",
+          "id": "q-140",
+          "answer_html": "<p>Q = Pt = (1500)(2.00 × 60) = 180 000 J. ΔT = Q/(mc) = 180 000/[(5.00)(4200)] = 8.571°C.</p><p>T<sub>f</sub> = 10 + 8.571 = <strong>18.6°C</strong> before rounding to the precision of the initial temperature, approximately 19°C if 10°C is specified only to a whole degree. The 1500 W is already power delivered to the water.</p>"
+        },
+        {
+          "label": "21",
+          "boxes": [
+            [
+              177,
+              302,
+              241.3507,
+              577,
+              295.34060000000005
+            ]
+          ],
+          "text": "21.  A 1500 W kettle warms 1.30 kg of water from 25.0¡C  to 99.0¡C in 5.00 min. How efficient is the kettle    c =  4200 J/kg/¡C  ",
+          "id": "q-141",
+          "answer_html": "<p>Q<sub>water</sub> = (1.30)(4200)(99.0 − 25.0) = 404 040 J. E<sub>in</sub> = (1500)(5.00 × 60) = 450 000 J.</p><p>η = 404 040/450 000 = 0.8979 ≈ <strong>90%</strong> (89.8% before rounding).</p>"
+        },
+        {
+          "label": "22",
+          "boxes": [
+            [
+              177,
+              302,
+              295.35060000000004,
+              577,
+              349.3405
+            ]
+          ],
+          "text": "22.  A fluorescent lamp is about 15% efficient as a source  of light. How much heat does a 40 W fluorescent  lamp give off in 1 s",
+          "id": "q-142",
+          "answer_html": "<p>Heat output is the non-light fraction in this model: P<sub>heat</sub> = (1 − 0.15)(40) = 34 W. In 1 s, Q = Pt = <strong>34 J</strong>.</p>"
+        },
+        {
+          "label": "23",
+          "boxes": [
+            [
+              177,
+              302,
+              349.3505,
+              577,
+              389.8403
+            ]
+          ],
+          "text": "23.  A 1200 W kettle warms 800.0 g of water from 20¡C to  99¡C in 4.0 min. How efficient is the kettle",
+          "id": "q-143",
+          "answer_html": "<p>m = 800.0 g = 0.8000 kg; ΔT = 99 − 20 = 79°C. Q<sub>water</sub> = (0.8000)(4200)(79) = 265 440 J.</p><p>Input energy = (1200)(4.0 × 60) = 288 000 J. Efficiency = 265 440/288 000 × 100% ≈ <strong>92%</strong>.</p>"
+        },
+        {
+          "label": "24",
+          "boxes": [
+            [
+              177,
+              302,
+              389.8503,
+              577,
+              724.6
+            ]
+          ],
+          "text": "24.  A coffee percolator rated at 600 W supplies 500 W to  the water in it. What is the efficiency of the kettle",
+          "id": "q-144",
+          "answer_html": "<p>η = P<sub>water</sub>/P<sub>input</sub> = 500/600 = 0.8333…, so the percolator is <strong>83% efficient</strong>. The source calls it a kettle in the last sentence; the same stated device is intended.</p>"
+        }
+      ],
+      "shared": [
+        [
+          176,
+          318,
+          114,
+          577,
+          337
+        ]
+      ],
+      "context": []
+    }
+  ]
+}

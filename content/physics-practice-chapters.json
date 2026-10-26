@@ -20,6 +20,13 @@
       "title": "Newton's Laws of Motion",
       "html": "bc-newtons-laws-questions.html",
       "inventory": "content/bc-newtons-laws-questions.json"
+    },
+    {
+      "id": "bc-ch5",
+      "number": 5,
+      "title": "Energy",
+      "html": "bc-energy-questions.html",
+      "inventory": "content/bc-energy-questions.json"
     }
   ]
 }
