@@ -280,7 +280,7 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   const inkReload=page(html,{storage:inkStorage});change(inkReload,'practice-chapter','bc-ch2');change(inkReload,'mode','chapter');change(inkReload,'chapter-question',bank[0].id);await pause();
   assert.ok(inkReload.$('solution').hidden);assert.equal(inkReload.$('previous-response').open,false);assert.ok(inkReload.$('previous-response').querySelector('polyline'),'Saved handwriting is reviewable after reload');assert.equal(inkReload.$('drawing-clear').disabled,true,'Retry starts with a fresh shared steps pad');
   // Online Show answer verifies automatically using the pre-reveal submission.
-  const auto=page(html,{online:true}),autoRequests=[];login(auto,'Auto');change(auto,'practice-chapter','bc-ch2');change(auto,'mode','chapter');
+  const auto=page(html,{online:true,storage:{physics11PracticeFollowUp:'false'}}),autoRequests=[];login(auto,'Auto');change(auto,'practice-chapter','bc-ch2');change(auto,'mode','chapter');
   let nextReview=review('incorrect');
   auto.w.fetch=async(url,options)=>{autoRequests.push({url,body:JSON.parse(options.body)});return {ok:true,json:async()=>({response:JSON.stringify(nextReview)})};};
   response(auto,'My original answer');await pause();auto.$('dock-check').click();
@@ -336,6 +336,7 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   const m=page(monitorSource,{url:'https://physics.test/physics-monitor.html?student=Ada&period=week&exclude=',storage:saved});await pause();assert.deepEqual(m.errors,[]);assert.equal(m.$('activity-days').children.length,7);assert.match(m.$('activity-status').textContent,/saved on this device/);assert.ok(!m.w.StudentStore,'Monitor has no history-writing store');
   await require('./test_physics_adaptive.cjs')({page,html,bank,login,change,response,history,storageOf,until,pause});
   await require('./test_physics_preferences.cjs')({page,html,bank,login,change,chooseTopics,checkedTopics,history,storageOf,until,pause,fakeFirebase});
+  await require('./test_physics_follow_up.cjs')({page,html,bank,login,change,response,history,storageOf,until,pause,fakeFirebase});
   for(const instance of [p,restored,shared,forcesShared,newtonsShared,f,host,follower,invalidFollower,ink,inkReload,auto,autoReload,timed,m]){assert.deepEqual(instance.errors,[]);instance.w.close();}
   console.log('Passed: multiple topic and whole-chapter selection across all modes, 445 question/answer pairs including 144 Energy entries, graphs, navigation, student storage, future chapters, handwriting tools/backups, automatic model-answer verification, typed/handwritten submissions, correct/incorrect/partial verdicts, immutable submissions, uncertain/offline/error fallback, retries, cancellation/navigation/student isolation, timeout, read-only monitor, and offline startup.');
 })().catch(error=>{console.error(error);process.exit(1);});

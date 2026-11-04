@@ -5,6 +5,11 @@ const P=window.Practice, $=id=>document.getElementById(id);
 const Adaptive=window.AdaptivePractice;
 try{if(localStorage.getItem('physics11AdaptiveSource')==='ai')$('adaptive-source').value='ai';}catch{}
 let generationRequest=null;
+// Follow-up practice belongs to a missed textbook attempt, separate from its score.
+const FQ=window.PhysicsFollowUp,followUpSetting='physics11PracticeFollowUp';
+let followUpRequest=null,followUpSource=null,followUpQuestion=null,followUpChoice=null,followUpChecked=false,followUpRevealed=false;
+try{$('followup-enabled').checked=localStorage.getItem(followUpSetting)!=='false';}catch{}
+
 let coachPresented=new Set();
 P.configure(bank);
 let state={version:1,attempts:[],items:{}}, current=null, selected=null, checked=false, revealed=false, started=Date.now();
@@ -147,10 +152,10 @@ function syncStatus(kind,error){
   if(kind==='synced'&&$('storage-message').textContent==='Saving and syncing…')$('storage-message').textContent='Progress saved and synced.';
 }
 function startSync(){if(!student)return;students.start(student,{getLocal:()=>students.loadLocal(student),onStatus:syncStatus,
-  onRemote:data=>{const s=readPayload(data);if(!s)return;const previous=JSON.stringify(practiceSelection());cancelGeneration();state=s;updatedAt=data.updatedAt||'';students.saveLocal(student,{version:1,student,updatedAt,state:typeof data.state==='string'?data.state:JSON.stringify(data.state)});
+  onRemote:data=>{const s=readPayload(data);if(!s)return;const previous=JSON.stringify(practiceSelection());cancelGeneration();resetFollowUp();state=s;updatedAt=data.updatedAt||'';students.saveLocal(student,{version:1,student,updatedAt,state:typeof data.state==='string'?data.state:JSON.stringify(data.state)});
     restorePracticeSelection();
     if(activeAttempt)activeAttempt=state.attempts.find(a=>a.at===activeAttempt.at&&a.id===activeAttempt.id)||null;dashboard();
-    if(previous!==JSON.stringify(practiceSelection())&&live.role!=='follower')next(true,false);
+    if(previous!==JSON.stringify(practiceSelection())&&live.role!=='follower')next(true,false);else restoreFollowUp(current);
     $('storage-message').textContent='Loaded the latest progress from another device.';}});}
 // A shared question link refers to its stable chapter/question ID.
 function shareURL(p){const u=new URL(location.href);u.search='';u.hash='';u.searchParams.set('q',p.id);if(p.generatedData)u.hash=new URLSearchParams({practice:JSON.stringify(p.generatedData)}).toString();return u.toString();}
@@ -168,7 +173,7 @@ $('share-question').onclick=async()=>{
   try{await navigator.clipboard.writeText(url);done('Link copied');}catch(e){window.prompt('Copy this link to share the question:',url);}
 };
 function useStudent(name){
-  cancelGeneration();coachPresented=new Set();
+  resetFollowUp();cancelGeneration();coachPresented=new Set();
   cancelReview();student=students.login(name);state={version:1,attempts:[],items:{}};updatedAt='';
   const local=students.loadLocal(student),s=readPayload(local);
   if(local&&typeof local.student==='string'&&local.student!==student&&students.idFor(local.student)===students.idFor(student))student=students.login(local.student);
@@ -191,7 +196,7 @@ $('login-form').onsubmit=e=>{e.preventDefault();const name=$('login-name').value
 $('login-cancel').onclick=hideLogin;$('student-button').onclick=showLogin;
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('login-overlay').hidden&&student)hideLogin();});
 // ☰ settings menu (like the family to-do page) holds the Firebase sync settings.
-const setSettings=open=>{$('settings-panel').hidden=!open;$('settings-button').setAttribute('aria-expanded',String(open));if(open)setTimeout(()=>$('firebase-key').focus(),0);};
+const setSettings=open=>{$('settings-panel').hidden=!open;$('settings-button').setAttribute('aria-expanded',String(open));if(open)setTimeout(()=>$('followup-enabled').focus(),0);};
 $('settings-button').onclick=e=>{e.stopPropagation();setSettings($('settings-panel').hidden);};
 document.addEventListener('click',e=>{if(!$('settings-panel').hidden&&!e.target.closest('.settings-wrap'))setSettings(false);});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('settings-panel').hidden){setSettings(false);$('settings-button').focus();}});
@@ -487,7 +492,7 @@ function buildAnswerInput(problem){
   syncAnswerTools();
 }
 function show(p,reason,fromLive=false){
-  cancelGeneration();
+  resetFollowUp();cancelGeneration();
   if(live.role==='follower'&&!fromLive){p=followedQuestion;reason='Following live — your answers and progress are your own.';}
   if(p?.generatedData){state.generated=state.generated||{};state.generated[p.id]=p.generatedData;}
   $('adaptive-panel').hidden=$('mode').value!=='coach'||live.role==='follower';
@@ -503,11 +508,11 @@ function show(p,reason,fromLive=false){
   $('badge').hidden=false;$('question-title').textContent=p.title;
   $('question-meta').textContent=`Chapter ${p.chapterNumber}: ${p.chapterTitle} · ${p.topicTitle||p.topic} · ${P.levels[p.level-1]} (estimated)`;
   $('statement').innerHTML=p.html;$('source').href=p.url;$('source').hidden=false;$('source').textContent=p.generatedData?'Open related textbook collection ↗':'Open question collection ↗';flagButton();
-  buildAnswerInput(p);$('photo-section').hidden=false;openDrawing();
+  buildAnswerInput(p);$('photo-section').hidden=false;openDrawing();restoreFollowUp(p);
 }
 function next(reset=false,persistSelection=true){
   if(live.role==='follower')return;
-  cancelGeneration();
+  resetFollowUp();cancelGeneration();
   if(persistSelection)rememberPracticeSelection();
   const mode=$('mode').value;
   $('adaptive-panel').hidden=mode!=='coach';
@@ -542,7 +547,7 @@ function next(reset=false,persistSelection=true){
 }
 $('check').onclick=()=>{
   if(!current||checked||revealed)return;
-  cancelGeneration();
+  resetFollowUp();cancelGeneration();
   cancelReview();stopCamera();drawing.finish();
   try{submittedAnswer=captureAnswer();}catch(error){$('feedback').hidden=false;$('feedback').className='wrong';$('feedback').textContent=error.message;return;}
   revealed=true;selected=submittedAnswer.choice;
@@ -582,6 +587,7 @@ function recordSubmittedAnswer(correct,assessment='self',verification=null){
   $('feedback').textContent=(verification?'AI checked against the model answer: '+verdict+'. '+(verification.answer_check||verification.feedback).slice(0,400):correct?'Self-rated correct.':'Self-rated as needing practice.')+(correct?' Saved.':' Saved to your review queue.')+' Time spent: '+describeDuration(activeAttempt.seconds)+'.';
   $('next').hidden=false;$('skip').hidden=true;updatePhotoControls();
   if($('mode').value==='coach')$('adaptive-status').textContent='Answer saved. Choose Next question for practice based on this result.';
+  if(!correct&&current.kind==='textbook'&&live.role!=='follower'&&$('followup-enabled').checked)startFollowUp(activeAttempt);
   return true;
 }
 function rateWork(correct){
@@ -973,6 +979,102 @@ if('IntersectionObserver' in window)new IntersectionObserver(([e])=>{above=!e.is
 new MutationObserver(()=>{if(!dock.hidden)refresh();}).observe($('statement'),{childList:true,subtree:true});
 new MutationObserver(update).observe(document.querySelector('.question-card'),{attributes:true,attributeFilter:['class']});
 $('question-dock-top').onclick=()=>{document.querySelector('.question-card').scrollIntoView({behavior:'smooth',block:'start'});};})();
+function setFollowUpBusy(busy){
+  $('followup').setAttribute('aria-busy',String(busy));$('followup-cancel').hidden=!busy;
+}
+function resetFollowUp(){
+  if(followUpRequest){const request=followUpRequest;followUpRequest=null;clearTimeout(request.timer);request.controller.abort();}
+  followUpSource=null;followUpQuestion=null;followUpChoice=null;followUpChecked=false;followUpRevealed=false;
+  $('followup').hidden=true;$('followup-content').hidden=true;$('followup-status').textContent='';
+  $('followup-statement').textContent='';$('followup-choices').replaceChildren();$('followup-feedback').textContent='';$('followup-solution').textContent='';$('followup-solution').hidden=true;
+  for(const id of ['followup-check','followup-retry','followup-reveal'])$(id).hidden=true;
+  setFollowUpBusy(false);
+}
+function followUpRecord(){return followUpSource&&state.attempts.includes(followUpSource)&&followUpSource.id===current?.id?followUpSource.followUp:null;}
+function renderFollowUpChoices(){
+  $('followup-choices').replaceChildren();
+  followUpQuestion.choices.forEach((value,i)=>{
+    const letter='ABCDE'[i],button=document.createElement('button');button.type='button';button.className='followup-choice';button.textContent=letter+'. '+value;
+    button.setAttribute('aria-pressed',String(followUpChoice===letter));button.disabled=followUpChecked||followUpRevealed;
+    button.classList.toggle('selected',followUpChoice===letter);
+    if(followUpChecked&&followUpChoice===letter)button.classList.add(letter===followUpQuestion.answer?'correct':'incorrect');
+    button.onclick=()=>{followUpChoice=letter;renderFollowUpChoices();$('followup-check').disabled=false;};$('followup-choices').append(button);
+  });
+}
+function renderFollowUp(record){
+  followUpQuestion=record.question;followUpRevealed=record.revealed;
+  const last=record.answers.at(-1);followUpChoice=last?.choice||null;followUpChecked=!!last;
+  $('followup').hidden=false;$('followup-content').hidden=false;$('followup-statement').textContent=followUpQuestion.text;
+  $('followup-status').textContent='AI practice question · Apply the same method to a new situation.';
+  $('followup-feedback').textContent=last?(last.correct?'Correct! You applied the method to a new problem.':'Not quite. Compare your steps with the original solution, then try again.'):'';
+  $('followup-check').hidden=!!last||record.revealed;$('followup-check').disabled=!followUpChoice;
+  $('followup-retry').hidden=!!last?.correct&&!record.revealed;
+  // An unanswered new question needs no retry action yet.
+  if(!last&&!record.revealed)$('followup-retry').hidden=true;
+  $('followup-retry').textContent=record.revealed?'Try another similar question':'Try again';
+  $('followup-reveal').hidden=!last||last.correct||record.revealed;
+  const showSolution=record.revealed||last?.correct;
+  $('followup-solution').hidden=!showSolution;
+  $('followup-solution').textContent=showSolution?'Answer '+followUpQuestion.answer+'. '+followUpQuestion.explanation:'';
+  renderFollowUpChoices();
+}
+function restoreFollowUp(problem){
+  if(!problem||problem.kind!=='textbook'||!$('followup-enabled').checked||live.role==='follower')return false;
+  const attempt=state.attempts.filter(a=>a.id===problem.id).at(-1),record=!attempt?.correct&&FQ.normalizeRecord(attempt?.followUp);
+  if(!record)return false;
+  attempt.followUp=record;followUpSource=attempt;renderFollowUp(record);return true;
+}
+async function startFollowUp(attempt=followUpSource||activeAttempt){
+  const problem=current,owner=student,previous=followUpQuestion?.text||attempt?.followUp?.question?.text||'';
+  resetFollowUp();
+  if(!owner||!problem||problem.kind!=='textbook'||!attempt||attempt.id!==problem.id||attempt.correct!==false||!state.attempts.includes(attempt)||!$('followup-enabled').checked||live.role==='follower')return;
+  followUpSource=attempt;$('followup').hidden=false;
+  if(navigator.onLine===false){$('followup-status').textContent='You are offline. Reconnect, then retry creating a similar question. Your textbook answer is saved.';$('followup-retry').hidden=false;$('followup-retry').textContent='Retry creating question';return;}
+  $('followup-status').textContent='Creating a similar question using the same solution method…';setFollowUpBusy(true);
+  const controller=new AbortController(),request={controller,timedOut:false};followUpRequest=request;
+  request.timer=setTimeout(()=>{request.timedOut=true;controller.abort();},120000);
+  const stillCurrent=()=>followUpRequest===request&&current===problem&&student===owner&&followUpSource===attempt&&$('followup-enabled').checked&&live.role!=='follower';
+  try{
+    const image=await questionAndWorkingImage(problem,[],controller.signal);
+    if(controller.signal.aborted)throw new DOMException('Question creation canceled.','AbortError');
+    if(!stillCurrent())return;
+    const response=await fetch(AI.endpoint,{method:'POST',mode:'cors',credentials:'omit',headers:{'Content-Type':'application/json'},signal:controller.signal,
+      body:JSON.stringify({message:FQ.prompt(problem,attempt,readableHTML(problem.html),readableHTML(problem.solution),previous),image:image.image,mime_type:image.mime_type,filename:image.filename})});
+    if(!response.ok)throw Error('Could not create the similar question (HTTP '+response.status+'). Please retry.');
+    const question=FQ.parseResponse(await response.json(),previous);
+    if(controller.signal.aborted)throw new DOMException('Question creation canceled.','AbortError');
+    if(!stillCurrent())return;
+    attempt.followUp={question,answers:[],revealed:false};save();renderFollowUp(attempt.followUp);
+  }catch(error){
+    if(!stillCurrent())return;
+    $('followup-status').textContent=request.timedOut?'Creating the question timed out. Please retry.':error.name==='AbortError'?'Question creation canceled.':error instanceof TypeError?'Could not reach the AI tutor. Check your connection and retry.':error.message;
+    $('followup-retry').hidden=false;$('followup-retry').textContent='Retry creating question';
+  }finally{clearTimeout(request.timer);if(followUpRequest===request){followUpRequest=null;setFollowUpBusy(false);}}
+}
+$('followup-enabled').onchange=()=>{
+  try{localStorage.setItem(followUpSetting,String($('followup-enabled').checked));}catch{}
+  resetFollowUp();
+  if($('followup-enabled').checked&&!restoreFollowUp(current)&&checked&&activeAttempt?.correct===false)startFollowUp(activeAttempt);
+};
+$('followup-cancel').onclick=()=>{
+  const attempt=followUpSource;resetFollowUp();followUpSource=attempt;$('followup').hidden=false;
+  $('followup-status').textContent='Question creation canceled. Your textbook answer is saved.';$('followup-retry').hidden=false;$('followup-retry').textContent='Retry creating question';
+};
+$('followup-check').onclick=()=>{
+  const record=followUpRecord();if(!student||!record||!followUpQuestion||!followUpChoice||followUpChecked||followUpRevealed)return;
+  if(record.answers.length>=100){$('followup-reveal').hidden=false;$('followup-check').hidden=true;$('followup-feedback').textContent='This question has reached its saved retry limit. Reveal the solution to practise another similar question.';return;}
+  record.answers.push({choice:followUpChoice,correct:followUpChoice===followUpQuestion.answer,at:new Date().toISOString()});save();renderFollowUp(record);
+};
+$('followup-retry').onclick=()=>{
+  if(!followUpQuestion||followUpRevealed){startFollowUp();return;}
+  followUpChoice=null;followUpChecked=false;renderFollowUpChoices();$('followup-feedback').textContent='';
+  $('followup-check').hidden=false;$('followup-check').disabled=true;$('followup-retry').hidden=true;$('followup-reveal').hidden=true;
+};
+$('followup-reveal').onclick=()=>{
+  const record=followUpRecord();if(!record)return;
+  record.revealed=true;save();renderFollowUp(record);
+};
+
 dashboard();if(!followRequested)next();else show(null,'Connecting to the live session…',true);
 if(followRequested){
   const id=liveParams.get('follow'),key=new URLSearchParams(location.hash.slice(1)).get('liveKey')||students.getApiKey();
