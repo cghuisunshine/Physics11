@@ -25,6 +25,23 @@ function pure(){
   const selfState={...fresh(),exams:evidence.exams.slice(0,2).map(e=>({...e,review:{by:'self',representative:true}}))};assert.notEqual(E.readiness(selfState,bank,['t0','t1','t2']).status,'Ready');
   const tooSoon={...fresh(),exams:JSON.parse(JSON.stringify(evidence.exams.slice(0,2)))};tooSoon.exams[1].startedAt=new Date(now+86400000).toISOString();assert.notEqual(E.readiness(tooSoon,bank,['t0','t1','t2']).status,'Ready');
   assert.ok(E.valid(evidence,bank));console.log('Exam logic checks passed.');
+  const aiState=fresh(),ai=E.start(bank,aiState,['t0'],2,30,now,()=>0.5);
+  E.answer(ai,ai.ids[0],'Partial answer',null,now+1000);E.submit(ai,now+60000);
+  assert.equal(ai.aiPending,true);
+  const review={earned:7.5,possible:10,confidence:'high',feedback:'Method: 5/5. Calculation and units: 2.5/5.'};
+  assert.deepEqual(E.parseAIMark({response:JSON.stringify(review)}),review);
+  assert.equal(E.parseAIMark({response:{...review,confidence:'low'}}).earned,null,'Uncertain work cannot get an automatic score');
+  for(const bad of [{...review,earned:11},{...review,earned:'7.5'},{...review,possible:100},{...review,feedback:''},{...review,confidence:'unknown'}])assert.throws(()=>E.parseAIMark({response:bad}),/invalid/);
+  assert.throws(()=>E.parseAIMark({response:'not json'}),/unreadable/);assert.throws(()=>E.parseAIMark({error:'Unavailable'}),/error/);
+  E.recordAIMark(ai,ai.ids[0],review);assert.equal(E.applyAIMarks(ai,now+120000),false,'Incomplete marking cannot produce a total');
+  assert.throws(()=>E.recordAIMark(ai,ai.ids[1],review),/Unanswered/);
+  E.recordAIMark(ai,ai.ids[1],{...review,earned:0,feedback:'Blank answer.'});assert.ok(P.validState(aiState,bank));
+  const restoredAI=P.hydrate(JSON.parse(JSON.stringify(P.compact(aiState))),bank);assert.deepEqual(restoredAI.exams[0].aiResults,ai.aiResults,'Partial marks and feedback survive backups');
+  assert.equal(E.applyAIMarks(ai,now+120000),true);assert.equal(E.score(ai,bank).earned,7.5);assert.equal(ai.review.by,'ai');assert.equal(ai.review.representative,false);assert.equal(ai.aiPending,false);assert.ok(P.validState(aiState,bank));
+  assert.throws(()=>E.recordAIMark(ai,ai.ids[0],review),/cannot accept/);
+  const invalidAI=JSON.parse(JSON.stringify(aiState));invalidAI.exams[0].aiResults[ai.ids[0]].earned=100;assert.equal(P.validState(invalidAI,bank),false);
+  const aiEvidence={...fresh(),exams:evidence.exams.slice(0,2).map(e=>({...e,review:{by:'ai',representative:false}}))};assert.notEqual(E.readiness(aiEvidence,bank,['t0','t1','t2']).status,'Ready');
+  console.log('Exam AI mark validation checks passed.');
 }
 module.exports=async function({page,html,bank,login,change,history,storageOf,pause,fakeFirebase,until}){
   const p=page();login(p,'Exam Ada');const firstId=Object.keys(history(p,'Exam Ada').exposures)[0];assert.ok(firstId,'Displayed practice questions are tracked');

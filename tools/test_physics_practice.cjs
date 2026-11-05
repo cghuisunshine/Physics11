@@ -337,6 +337,7 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   const m=page(monitorSource,{url:'https://physics.test/physics-monitor.html?student=Ada&period=week&exclude=',storage:saved});await pause();assert.deepEqual(m.errors,[]);assert.equal(m.$('activity-days').children.length,7);assert.match(m.$('activity-status').textContent,/saved on this device/);assert.ok(!m.w.StudentStore,'Monitor has no history-writing store');
   await require('./test_physics_adaptive.cjs')({page,html,bank,login,change,response,history,storageOf,until,pause});
   await require('./test_physics_exam.cjs')({page,html,bank,login,change,history,storageOf,pause,fakeFirebase,until});
+  await require('./test_physics_exam_ai.cjs')({page,html,bank,login,change,history,storageOf,pause,until});
   await require('./test_physics_preferences.cjs')({page,html,bank,login,change,chooseTopics,checkedTopics,history,storageOf,until,pause,fakeFirebase});
   await require('./test_physics_follow_up.cjs')({page,html,bank,login,change,response,history,storageOf,until,pause,fakeFirebase});
   for(const instance of [p,restored,shared,forcesShared,newtonsShared,f,host,follower,invalidFollower,ink,inkReload,auto,autoReload,timed,m]){assert.deepEqual(instance.errors,[]);instance.w.close();}

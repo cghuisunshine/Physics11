@@ -802,7 +802,7 @@ function renderLearningLog(){
   }
 }
 // Original question crops accompany the combined typed answer, drawing and photo.
-async function questionAndWorkingImage(problem,work,signal=null){
+async function questionAndWorkingImage(problem,work,signal=null,referenceHTML=''){
   const doc=new DOMParser().parseFromString(problem.html,'text/html');
   const sources=[...doc.querySelectorAll('img')].map(img=>img.getAttribute('src'));
   const decode=src=>new Promise((resolve,reject)=>{const img=new Image();
@@ -811,9 +811,11 @@ async function questionAndWorkingImage(problem,work,signal=null){
     if(signal?.aborted){abort();return;}signal?.addEventListener('abort',abort,{once:true});
     img.onload=()=>{cleanup();resolve(img);};img.onerror=()=>{cleanup();reject(Error('Could not prepare the question images for AI.'));};img.src=src;
   });
+  const reference=new DOMParser().parseFromString(referenceHTML,'text/html');
   const images=await Promise.all(sources.map(decode)),working=await Promise.all((work||[]).map(async item=>({img:await decode(item.dataURL),label:item.filename==='drawn-answer-and-steps.jpg'?'STUDENT WORK — handwritten answer and steps':'STUDENT WORK — uploaded photograph'})));
+  const model=await Promise.all([...reference.querySelectorAll('img')].map(async image=>({img:await decode(image.getAttribute('src')),label:'MODEL ANSWER — reference solution, not student work'})));
   const width=1400,padding=32,heights=images.map(img=>Math.round(img.height*Math.min(1,(width-padding*2)/img.width)));
-  const blocks=working.map(block=>({...block,height:Math.round(block.img.height*Math.min(1,(width-padding*2)/block.img.width))}));
+  const blocks=[...working,...model].map(block=>({...block,height:Math.round(block.img.height*Math.min(1,(width-padding*2)/block.img.width))}));
   const c=document.createElement('canvas');c.width=width;c.height=100+heights.reduce((a,b)=>a+b+24,0)+(blocks.length?blocks.reduce((total,b)=>total+90+b.height,0):60);
   const g=c.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,c.width,c.height);g.fillStyle='#183832';g.font='bold 26px sans-serif';g.fillText('QUESTION — original textbook diagrams and data',padding,45);
   let y=80;images.forEach((img,i)=>{const h=heights[i],w=Math.round(img.width*h/img.height);g.drawImage(img,padding,y,w,h);y+=h+24;});
