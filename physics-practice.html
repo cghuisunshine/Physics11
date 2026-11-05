@@ -157,18 +157,21 @@ textarea:focus-visible{outline:3px solid #b78021;outline-offset:3px}
 <div class="eyebrow">INDEPENDENT PRACTICE</div><h2 id="exam-heading">Exam Mode</h2>
 <p id="exam-message" role="status" aria-live="polite"></p><button id="exam-backup" class="quiet" type="button">Export exam progress</button>
 <div id="exam-setup">
-<p>Select chapters and topics above, then take a timed mock exam. Answers and working are saved as you go. Hints, solutions and feedback stay hidden until submission.</p>
+<p>Select chapters and topics above, then take a timed mock exam. Answers and working are saved as you go. Use Check answer on any problem to see its model answer and worked solution immediately.</p>
 <p class="small">Questions are balanced across the selected topics and estimated difficulties. Investigations, warm-ups and sample prompts are excluded. Previously displayed practice questions and earlier exam questions are excluded. Views before this feature was added cannot be recovered. A teacher should check that the selection represents your school exam.</p>
 <form id="exam-start-form"><div class="toolbar"><label>Questions<input id="exam-count" type="number" min="1" max="40" step="1" value="10" required></label><label>Time limit (minutes)<input id="exam-minutes" type="number" min="1" max="180" step="1" value="30" required></label></div><p id="exam-available" class="small"></p><button id="exam-start" class="primary" type="submit">Start unseen exam</button></form>
 </div>
 <div id="exam-running" hidden>
 <div class="exam-session-head"><strong id="exam-position"></strong><span>Time left <strong id="exam-timer" role="timer" aria-label="Time remaining"></strong></span></div>
-<p class="small">Closed book · No hints or feedback · The timer continues if you leave or reload. Blank answers receive zero marks. Typed answers and handwriting are saved; photos are not used in exams.</p>
+<p class="small">Check answer reveals the current problem’s worked solution. The timer continues while checking answers and if you leave or reload. Blank answers receive zero marks. Typed answers and handwriting are saved; photos are not used in exams.</p>
 <nav id="exam-nav" class="exam-nav" aria-label="Exam questions"></nav>
 <h3 id="exam-question-title" tabindex="-1"></h3><div id="exam-statement" class="statement"></div>
 <label for="exam-response">Your answer and working (include units and direction)</label><textarea id="exam-response" rows="5" maxlength="12000"></textarea>
 <details id="exam-working"><summary>Write your working</summary><div class="exam-drawing-tools"><button id="exam-pen" type="button" class="quiet" aria-pressed="true">Pen</button><button id="exam-eraser" type="button" class="quiet" aria-pressed="false">Eraser</button><button id="exam-undo" type="button" class="quiet">Undo</button><button id="exam-clear" type="button" class="quiet">Clear</button></div><canvas id="exam-canvas" width="1200" height="800" aria-label="Exam working pad"></canvas></details>
-<p id="exam-draft-status" class="small" role="status"></p><div class="actions"><button id="exam-prev" class="quiet" type="button">← Previous</button><button id="exam-next" class="primary" type="button">Next →</button><button id="exam-submit" class="secondary" type="button">Submit exam</button></div>
+<p id="exam-draft-status" class="small" role="status"></p>
+<button id="exam-check" class="secondary" type="button" aria-expanded="false" aria-controls="exam-answer">Check answer</button>
+<section id="exam-answer" aria-labelledby="exam-answer-title" hidden><h4 id="exam-answer-title">Model answer and worked solution</h4><div id="exam-answer-body" class="statement"></div></section>
+<div class="actions"><button id="exam-prev" class="quiet" type="button">← Previous</button><button id="exam-next" class="primary" type="button">Next →</button><button id="exam-submit" class="secondary" type="button">Submit exam</button></div>
 </div>
 <div id="exam-review" hidden><h3 id="exam-review-title" tabindex="-1">Submitted exam</h3><p id="exam-review-summary"></p>
 <p class="small">Answers are locked. Mark every part, including reasoning, units and graphs, using partial credit. Enter the total earned and possible marks for each question. Blank answers must earn zero. Self-marked scores are useful practice evidence; only teacher-marked, representative exams qualify for Ready.</p>
@@ -2175,7 +2178,7 @@ function renderRunning(exam){
   for(const [i,id] of exam.ids.entries()){
     const b=document.createElement('button');b.type='button';b.textContent=i+1;const answered=!!(exam.responses[id]?.text.trim()||exam.responses[id]?.ink);b.classList.toggle('answered',answered);b.setAttribute('aria-label',`Question ${i+1}${answered?', answer saved':', unanswered'}`);if(i===exam.index)b.setAttribute('aria-current','true');b.onclick=()=>go(i);nav.append(b);
   }
-  if(rendered!==key){const id=exam.ids[exam.index],p=bank.find(p=>p.id===id);$('exam-question-title').textContent=p.title;$('exam-statement').innerHTML=p.html;stripLinks($('exam-statement'));$('exam-response').value=exam.responses[id]?.text||'';loadInk(exam.responses[id]?.ink);pad.enabled=true;rendered=key;$('exam-draft-status').textContent='Answers save as you work.';}
+  if(rendered!==key){const id=exam.ids[exam.index],p=bank.find(p=>p.id===id);$('exam-question-title').textContent=p.title;$('exam-statement').innerHTML=p.html;stripLinks($('exam-statement'));$('exam-response').value=exam.responses[id]?.text||'';loadInk(exam.responses[id]?.ink);pad.enabled=true;rendered=key;$('exam-draft-status').textContent='Answers save as you work.';$('exam-answer').hidden=true;$('exam-answer-body').replaceChildren();$('exam-check').textContent='Check answer';$('exam-check').setAttribute('aria-expanded','false');}
   $('exam-prev').disabled=exam.index===0;$('exam-next').disabled=exam.index===exam.ids.length-1;
 }
 function resultLabel(exam){const s=E.score(exam,bank);return s?`${s.percent.toFixed(1)}% · ${s.earned}/${s.possible} marks · ${exam.review.by==='teacher'?'teacher-marked':'self-marked'}`:'Awaiting marks';}
@@ -2246,6 +2249,12 @@ $('exam-start-form').onsubmit=e=>{
 };
 $('exam-response').oninput=()=>{flush();const exam=currentExam();if(exam){const b=$('exam-nav').children[exam.index];b?.classList.toggle('answered',!!($('exam-response').value.trim()||exam.responses[exam.ids[exam.index]]?.ink));}};
 $('exam-prev').onclick=()=>{const e=currentExam();if(e)go(e.index-1);};$('exam-next').onclick=()=>{const e=currentExam();if(e)go(e.index+1);};
+$('exam-check').onclick=()=>{
+  const exam=currentExam();if(!exam||!flush())return;
+  const show=$('exam-answer').hidden;
+  $('exam-answer-body').innerHTML=show?bank.find(p=>p.id===exam.ids[exam.index]).solution:'';
+  $('exam-answer').hidden=!show;$('exam-check').textContent=show?'Hide answer':'Check answer';$('exam-check').setAttribute('aria-expanded',String(show));
+};
 $('exam-submit').onclick=()=>{if(currentExam()&&window.confirm('Submit this exam? Answers will be locked and unanswered questions will receive zero marks.'))finish();};
 $('exam-new').onclick=()=>{viewed=null;rendered='';message('');refresh();};
 $('exam-mark-form').onsubmit=e=>{

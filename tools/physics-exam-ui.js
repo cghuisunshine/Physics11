@@ -30,7 +30,7 @@ function renderRunning(exam){
   for(const [i,id] of exam.ids.entries()){
     const b=document.createElement('button');b.type='button';b.textContent=i+1;const answered=!!(exam.responses[id]?.text.trim()||exam.responses[id]?.ink);b.classList.toggle('answered',answered);b.setAttribute('aria-label',`Question ${i+1}${answered?', answer saved':', unanswered'}`);if(i===exam.index)b.setAttribute('aria-current','true');b.onclick=()=>go(i);nav.append(b);
   }
-  if(rendered!==key){const id=exam.ids[exam.index],p=bank.find(p=>p.id===id);$('exam-question-title').textContent=p.title;$('exam-statement').innerHTML=p.html;stripLinks($('exam-statement'));$('exam-response').value=exam.responses[id]?.text||'';loadInk(exam.responses[id]?.ink);pad.enabled=true;rendered=key;$('exam-draft-status').textContent='Answers save as you work.';}
+  if(rendered!==key){const id=exam.ids[exam.index],p=bank.find(p=>p.id===id);$('exam-question-title').textContent=p.title;$('exam-statement').innerHTML=p.html;stripLinks($('exam-statement'));$('exam-response').value=exam.responses[id]?.text||'';loadInk(exam.responses[id]?.ink);pad.enabled=true;rendered=key;$('exam-draft-status').textContent='Answers save as you work.';$('exam-answer').hidden=true;$('exam-answer-body').replaceChildren();$('exam-check').textContent='Check answer';$('exam-check').setAttribute('aria-expanded','false');}
   $('exam-prev').disabled=exam.index===0;$('exam-next').disabled=exam.index===exam.ids.length-1;
 }
 function resultLabel(exam){const s=E.score(exam,bank);return s?`${s.percent.toFixed(1)}% · ${s.earned}/${s.possible} marks · ${exam.review.by==='teacher'?'teacher-marked':'self-marked'}`:'Awaiting marks';}
@@ -101,6 +101,12 @@ $('exam-start-form').onsubmit=e=>{
 };
 $('exam-response').oninput=()=>{flush();const exam=currentExam();if(exam){const b=$('exam-nav').children[exam.index];b?.classList.toggle('answered',!!($('exam-response').value.trim()||exam.responses[exam.ids[exam.index]]?.ink));}};
 $('exam-prev').onclick=()=>{const e=currentExam();if(e)go(e.index-1);};$('exam-next').onclick=()=>{const e=currentExam();if(e)go(e.index+1);};
+$('exam-check').onclick=()=>{
+  const exam=currentExam();if(!exam||!flush())return;
+  const show=$('exam-answer').hidden;
+  $('exam-answer-body').innerHTML=show?bank.find(p=>p.id===exam.ids[exam.index]).solution:'';
+  $('exam-answer').hidden=!show;$('exam-check').textContent=show?'Hide answer':'Check answer';$('exam-check').setAttribute('aria-expanded',String(show));
+};
 $('exam-submit').onclick=()=>{if(currentExam()&&window.confirm('Submit this exam? Answers will be locked and unanswered questions will receive zero marks.'))finish();};
 $('exam-new').onclick=()=>{viewed=null;rendered='';message('');refresh();};
 $('exam-mark-form').onsubmit=e=>{

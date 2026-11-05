@@ -31,6 +31,16 @@ module.exports=async function({page,html,bank,login,change,history,storageOf,pau
   change(p,'practice-chapter','bc-ch2');change(p,'mode','exam');p.$('exam-count').value=10;p.$('exam-minutes').value=30;
   p.$('exam-start-form').dispatchEvent(new p.w.Event('submit',{cancelable:true}));assert.equal(p.$('exam-running').hidden,false);let exam=history(p,'Exam Ada').exams[0];assert.equal(exam.status,'active');assert.ok(!exam.ids.includes(firstId));assert.equal(p.$('exam-statement').querySelectorAll('a').length,0);assert.equal(p.$('exam-review').hidden,true);
   p.$('exam-response').value='My independent working';p.$('exam-response').dispatchEvent(new p.w.Event('input'));
+  const deadline=exam.deadlineAt;
+  assert.equal(p.$('exam-answer').hidden,true);assert.equal(p.$('exam-answer-body').childElementCount,0);
+  p.$('exam-check').click();assert.equal(p.$('exam-answer').hidden,false);assert.equal(p.$('exam-check').getAttribute('aria-expanded'),'true');assert.equal(p.$('exam-check').textContent,'Hide answer');
+  const expected=p.w.document.createElement('div');expected.innerHTML=bank.find(q=>q.id===exam.ids[0]).solution;
+  assert.equal(p.$('exam-answer-body').innerHTML,expected.innerHTML,'Checking immediately reveals this question’s worked solution offline');
+  assert.equal(history(p,'Exam Ada').exams[0].status,'active');assert.equal(history(p,'Exam Ada').exams[0].deadlineAt,deadline);assert.equal(p.$('exam-response').value,'My independent working');
+  p.$('exam-check').click();assert.equal(p.$('exam-answer').hidden,true);assert.equal(p.$('exam-check').getAttribute('aria-expanded'),'false');assert.equal(p.$('exam-answer-body').childElementCount,0);
+  p.$('exam-check').click();p.$('exam-next').click();assert.equal(p.$('exam-answer').hidden,true);assert.equal(p.$('exam-answer-body').childElementCount,0);assert.equal(p.$('exam-check').textContent,'Check answer');
+  p.$('exam-check').click();expected.innerHTML=bank.find(q=>q.id===exam.ids[1]).solution;assert.equal(p.$('exam-answer-body').innerHTML,expected.innerHTML,'The next problem reveals its own solution');
+  p.$('exam-prev').click();assert.equal(p.$('exam-answer').hidden,true);assert.equal(p.$('exam-response').value,'My independent working');
   for(const [type,x,y] of [['pointerdown',10,10],['pointermove',30,30],['pointerup',30,30]]){const event=new p.w.MouseEvent(type,{clientX:x,clientY:y,button:0,bubbles:true,cancelable:true});Object.defineProperties(event,{pointerId:{value:1},isPrimary:{value:true},pointerType:{value:'pen'}});p.$('exam-canvas').dispatchEvent(event);}
   assert.ok(history(p,'Exam Ada').exams[0].responses[exam.ids[0]].ink,'Handwritten exam work is saved');p.$('exam-next').click();p.$('exam-prev').click();assert.equal(p.$('exam-response').value,'My independent working');
   change(p,'mode','random');assert.equal(p.$('mode').value,'exam','An active exam prevents practice navigation');assert.equal(history(p,'Exam Ada').attempts.length,0);
