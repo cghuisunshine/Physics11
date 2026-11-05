@@ -1,0 +1,50 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+     Investigation 5-1B  Measuring the Power of a Small Motor
+     Purpose   
+     To measure the rate at which a small electric motor does work and thus determine its power output
+     Procedure
+     1.  Use a small electric motor equipped with a special shaft on which a 2.0 m length of string can be wound.  
+         Clamp the motor to a ring stand  Figure 5.1.4 .
+
+
+
+
+                                       clamp
+                                                 power 
+                                                 supply
+
+
+                       h
+         stopwatch
+
+
+
+
+                           50 g
+                           mass
+
+
+          Figure 5.1.4  Power Step 1
+
+
+     2.  Try different source voltages with the motor to see what you need so that the motor will lift a mass of 50.0 g up 
+         from the floor in a time of approximately 2.0o3.0 s.
+     3.  To measure the useful power of the motor  you will need to know the force of gravity on the mass  the height 
+         through which the mass will be raised  and the time it takes to lift the mass through that height.  Remember 
+         that 1 kg of mass has a force of gravity on it of 9.8 N.
+     4.  Calculate the power of the motor for at least three different sets of conditions  using
+                     work
+          power =         .  Try different loads and/or different source voltages to vary the conditions.
+                     time
+
+     Concluding Questions
+     1.  What is the maximum power output you measured for your motor
+     2.  What was the maximum power a member of your class achieved with the motor
+
+
+
+
+   138  Chapter 5   Energy                                                 ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

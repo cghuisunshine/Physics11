@@ -1,0 +1,46 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+     Sample Problem 5.2.1  The Law of Conservation of Energy
+
+
+     The pendulum bob in Figure 5.2.2 is pulled back far enough  
+     that it is raised 0.36 m above its original level. When it is released  
+     how fast will it be moving at the bottom of its swing
+                                                                                                                      Ek = 0
+                                                                                                                         Ep = mgh
+                                                                                                     Ek = 12 mv 2
+                                                                                                        Ep = 0
+
+                                                                                Figure 5.2.2  Moving pendulum
+
+
+     What to Think About                                            How to Do It
+     1.  When the pendulum is pulled back  it is also 
+         lifted through a height h  and work mgh is done 
+         in lifting the bob against the force of gravity. The 
+         bob gains gravitational potential energy equal to 
+         the work done on it  so Ep = mgh. 
+       When the bob is released  its gravitational 
+         potential energy is transformed into kinetic 
+         energy.  At the bottom of the swing  Ep = 0  and
+                1
+       Ek =   mv2 but the kinetic energy at the bottom 
+                                                                    Ep = mgh = 1   mv2
+                2                                                              2
+       of the swing must equal the gravitational 
+         potential energy at the top according to the law 
+         of conservation of energy.                                 Therefore  v2 = 2gh and v = ó2gh
+     2.  Rearrange to find speed.
+                                                                    v = ó2gh
+                                                                          ó
+                                                                       =  2 9.8 m /s2 0.36 m
+     3.  Solve to find the speed of the bob at the bottom              = 2.7 m/s
+         of the swing.
+                                                                    The pendulum bob will be moving 2.7 m/s at 
+                                                                    the bottom of its swing.
+
+
+
+
+   146  Chapter 5   Energy                                                      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

@@ -1,0 +1,39 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+     Quick Check
+     1.  A single engine plane has a mass of 1500 kg and acceleration of 0.400 m/s2. What is the thrust  or unbalanced 
+         force  from the engine
+
+
+
+
+     2.  What is the mass of a rocket that accelerates at 2.0 m/s2 and has a thrust of 25 000 N
+
+
+
+
+     3.  Find the acceleration of a passenger jet that has a mass of 250 000 kg and an engine thrust that provides an 
+         unbalanced force of 50 000 N.
+
+
+
+
+                               The example and problems in the Quick Check above involve only one unbalanced force. 
+   Multiple Forces            
+                               In other situations  like Sample Problem 4.2.1 below  there are more forces to consider. 
+                                         Remember that  in these problems  it is important to identify the forces that 
+                               create the unbalanced force. Figure 4.2.1 shows four different forces acting on a block. 
+                               The two vertical forces are the force of gravity and the normal force  the force exerted by 
+                               the floor on the block . The two horizontal forces are the applied force and the force of 
+                               friction.
+                                         The two vertical forces balance each other because the force of gravity and the 
+                               normal force equal each other in size and act in opposite directions. The unbalanced force 
+                               is the difference between the applied force and the friction force opposing the applied 
+                               force.
+
+
+
+
+   110  Chapter 4   Newton's Laws of Motion                             ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

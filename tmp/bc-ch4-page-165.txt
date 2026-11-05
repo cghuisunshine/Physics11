@@ -1,0 +1,56 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   5.4  Measuring Thermal Energy
+
+     Warm Up
+     In the fall when the temperature drops below 0¡C many lakes will not freeze over  but smaller puddles will freeze. 
+     Why does this happen
+
+     _________________________________________________________________________________________
+
+     _________________________________________________________________________________________
+
+     _________________________________________________________________________________________
+
+
+
+
+                                The amount of thermal energy in an object depends on several factors. First  it depends 
+   Specimc Heat                
+                                on the mass  m  of the object. Second  it depends on the temperature  T  of the object. 
+   Capacity                     Third  it depends on the nature of the material in the object. Different materials have 
+                                different capacities for holding thermal energy. One material that has an exceptionally 
+                                high capacity for holding thermal energy is water.
+                                      It can be shown that to raise the temperature of 1 kg of water by 1¡C requires an 
+                                input of 4200 J. For comparison  it only requires an input of 450 J to raise the temperature 
+                                of 1 kg of iron by 1¡C. The amount of heat required to raise the temperature of 1 kg of a 
+                                substance by 1¡C is called the specific heat capacity  c  of the substance. For example  
+                                the specific heat capacity of water is written as c = 4200 J/kg/¡C. For iron  the specific heat 
+                                capacity is c  = 450 J/kg/¡C.
+                                      The joule  J  is an appropriate unit for measuring heat  since the English scientist 
+                                James Joule did the first experiments to compare the specific heat capacities of different 
+                                materials. Table 5.4.1 lists some specific heat capacities. 
+
+                                 Table 5.4.1   Specific Heat Capacities
+
+                                         Substance                        J/kg/oC              Substance               J/kg/oC
+                                            water                          4200                 aluminum                 920
+                                       methyl alcohol                      2400                   glass                  840
+                                      ethylene glycol                      2200                    iron                  450
+                                              ice                          2100                  copper                  430
+                                          kerosene                         2100                    lead                  130
+                                          steam                            2100
+                                 antifreeze
+
+                                        Since the specific heat capacity  c  is the amount of energy that must be transferred
+                                                                                                HE
+                                  to raise the temperature of 1 kg of water by 1¡C  then c =           where HE is the energy 
+                                                                                               mHT
+                                 transferred  m is the mass of material  and HT is the change in temperature. This is 
+                                 commonly written as:
+                                                                                     HE = mcHT
+
+
+
+   160  Chapter 5   Energy                                                        ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

@@ -122,6 +122,7 @@ def build():
     template = template.replace('<button class="print-button"',
                                 '<a class="source-link" href="content.html">All Physics 11 notes</a>'
                                 '<a class="source-link" href="bc-energy-questions.html">Energy questions and homework</a>'
+                                '<a class="source-link" href="energy-review.html">Quick Review · 21 questions</a>'
                                 '<button class="print-button"', 1)
     template = re.sub(r'<aside class="conversion-note">.*?</aside>', '', template, flags=re.S)
     hero = '''<svg class="hero-art" viewBox="0 0 260 210" aria-hidden="true">
@@ -235,6 +236,7 @@ def build():
     page = ''.join(part if part.startswith('<') else pattern.sub(lambda m: notation[m[0]], part)
                    for part in re.split(r'(<[^>]+>)', page))
     footer = (f'<footer><div class="notes-links"><a href="content.html">All Physics 11 notes</a>'
+              '<a href="energy-review.html">Energy quick review</a>'
               '<a href="bc-energy-questions.html">Energy questions and homework</a>'
               '<a href="bc_science_physics_11.pdf#page=137">Read the Energy chapter</a></div>'
               '<p>Adapted from BC Science Physics 11, Edvantage Interactive (2012), Chapter 5: Energy, '

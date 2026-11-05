@@ -1,0 +1,642 @@
+Contents — Solutions
+
+cover (txtbk)                                            8
+
+VOLUME 1 ------------                                    9
+
+1- Measurement                                           9
+   Module 1-1                                            9
+   Module 1-2                                           12
+   Module 1-3                                           16
+   Additional                                           21
+
+2- Motion Along a Straight Line                         31
+   Module 2-1                                           31
+   Module 2-2                                           37
+   Module 2-3                                           39
+   Module 2-4                                           43
+   Module 2-5                                           53
+   Module 2-6                                           65
+   Additional                                           68
+
+3- Vectors                                              90
+   Module 3-1                                           90
+   Module 3-2                                           93
+   Module 3-3                                          105
+   Additional                                          110
+
+4- Motion in Two and Three Dimensions                  131
+   Module 4-1                                          131
+   Module 4-2                                          133
+   Module 4-3                                          136
+   Module 4-4                                          143
+   Module 4-5                                          163
+   Module 4-6                                          168
+   Module 4-7                                          169
+   Additional                                          175
+
+5- Force and Motion—I                                  203
+   Module 5-1                                          203
+   Module 5-2                                          208
+   Module 5-3                                          209
+   Additional                                          237
+
+6- Force and Motion—II                                 251
+   Module 6-1                                          251
+   Module 6-2                                          273
+   Module 6-3                                          275
+   Additional                                          284
+
+7- Kinetic Energy and Work                             309
+   Module 7-1                                          309
+   Module 7-2                                          311
+   Module 7-3                                          315
+   Module 7-4                                          319
+   Module 7-5                                          323
+   Module 7-6                                          326
+   Additional                                          331
+
+8- Potential Energy and Conservation of Energy         346
+   Module 8-1                                          346
+   Module 8-2                                          350
+   Module 8-3                                          368
+   Module 8-4                                          371
+
+
+                                                 1/7
+   Module 8-5                                     373
+   Additional                                     384
+
+9- Center of Mass and Linear Momentum             422
+   Module 9-1                                     422
+   Module 9-2                                     426
+   Module 9-3                                     430
+   Module 9-4                                     432
+   Module 9-5                                     439
+   Module 9-6                                     444
+   Module 9-7                                     448
+   Module 9-8                                     454
+   Additional                                     459
+
+10- Rotation                                      485
+   Module 10-1                                    485
+   Module 10-2                                    488
+   Module 10-3                                    493
+   Module 10-4                                    499
+   Module 10-5                                    500
+   Module 10-6                                    504
+   Module 10-7                                    505
+   Module 10-8                                    508
+   Additional                                     512
+
+11- Rolling, Torque, and Angular Momentum         530
+   Module 11-1                                    530
+   Module 11-2                                    531
+   Module 11-3                                    540
+   Module 11-4                                    542
+   Module 11-5                                    545
+   Module 11-6                                    548
+   Module 11-7                                    550
+   Module 11-8                                    553
+   Module 11-9                                    567
+   Additional                                     567
+
+12- Equilibrium and Elasticity                    578
+   Module 12-1                                    578
+   Module 12-2                                    578
+   Module 12-3                                    604
+   Additional                                     608
+
+13- Gravitation                                   626
+   Module 13-1                                    626
+   Module 13-2                                    628
+   Module 13-3                                    633
+   Module 13-4                                    636
+   Module 13-5                                    638
+   Module 13-6                                    645
+   Module 13-7                                    653
+   Module 13-8                                    658
+   Additional                                     659
+
+14- Fluids                                        675
+   Module 14-1                                    675
+   Module 14-2                                    677
+   Module 14-3                                    682
+   Module 14-4                                    683
+   Module 14-5                                    683
+   Module 14-6                                    691
+
+
+                                            2/7
+   Module 14-7                                               693
+   Additional                                                701
+
+15- Oscillations                                             708
+   Module 15-1                                               708
+   Module 15-2                                               718
+   Module 15-3                                               724
+   Module 15-4                                               726
+   Module 15-5                                               734
+   Module 15-6                                               736
+   Additional                                                737
+
+16- Waves—I                                                  760
+   Module 16-1                                               760
+   Module 16-2                                               765
+   Module 16-3                                               770
+   Module 16-4                                               771
+   Module 16-5                                               771
+   Module 16-6                                               773
+   Module 16-7                                               775
+   Additional                                                786
+
+17- Waves—II                                                 807
+   Module 17-1                                               807
+   Module 17-2                                               810
+   Module 17-3                                               812
+   Module 17-4                                               817
+   Module 17-5                                               822
+   Module 17-6                                               827
+   Module 17-7                                               828
+   Module 17-8                                               833
+   Additional                                                834
+
+18- Temperature, Heat, and the First Law of Thermodynamics   849
+   Module 18-1                                               849
+   Module 18-2                                               850
+   Module 18-3                                               851
+   Module 18-4                                               855
+   Module 18-5                                               865
+   Module 18-6                                               868
+   Additional                                                875
+
+19- The Kinetic Theory of Gases                              889
+   Module 19-1                                               933
+   Module 19-2                                               934
+   Module 19-3                                               942
+   Module 19-4                                               947
+   Module 19-5                                               948
+   Module 19-6                                               950
+   Module 19-7                                               955
+   Module 19-8                                               959
+   Module 19-9                                               963
+   Additional                                                966
+
+20- Entropy and the Second Law of Thermodynamics             933
+   Module 20-1                                               933
+   Module 20-2                                               946
+   Module 20-3                                               953
+   Module 20-4                                               956
+   Additional                                                959
+
+
+
+                                                3/7
+VOLUME 2 ------------               973
+
+21- Coulomb’s Law                   973
+   Module 21-1                      973
+   Module 21-2                      984
+   Module 21-3                      988
+   Additional                       989
+
+22- Electric Fields                1007
+   Module 22-1                     1007
+   Module 22-2                     1007
+   Module 22-3                     1016
+   Module 22-4                     1017
+   Module 22-5                     1023
+   Module 22-6                     1025
+   Module 22-7                     1033
+   Additional                      1034
+
+23- Gauss’ Law                     1048
+   Module 23-1                     1048
+   Module 23-2                     1049
+   Module 23-3                     1053
+   Module 23-4                     1055
+   Module 23-5                     1060
+   Module 23-6                     1065
+   Additional                      1072
+
+24- Electric Potential             1081
+   Module 24-1                     1081
+   Module 24-2                     1081
+   Module 24-3                     1084
+   Module 24-4                     1086
+   Module 24-5                     1087
+   Module 24-6                     1090
+   Module 24-7                     1093
+   Additional                      1106
+
+25- Capacitance                    1123
+   Module 25-1                     1123
+   Module 25-2                     1123
+   Module 25-3                     1125
+   Module 25-4                     1133
+   Module 25-5                     1138
+   Module 25-6                     1141
+   Additional                      1144
+
+26- Current and Resistance         1155
+   Module 26-1                     1155
+   Module 26-2                     1155
+   Module 26-3                     1158
+   Module 26-4                     1166
+   Module 26-5                     1166
+   Additional                      1170
+
+27- Circuits                       1181
+   Module 27-1                     1181
+   Module 27-2                     1186
+   Module 27-3                     1200
+   Module 27-4                     1204
+   Additional                      1211
+
+
+
+                             4/7
+28- Magnetic Fields                                        1226
+   Module 28-1                                             1226
+   Module 28-2                                             1228
+   Module 28-3                                             1230
+   Module 28-4                                             1231
+   Module 28-5                                             1237
+   Module 28-6                                             1239
+   Module 28-7                                             1243
+   Module 28-8                                             1245
+   Additional                                              1250
+
+29- Magnetic Fields Due to Currents                        1261
+   Module 29-1                                             1261
+   Module 29-2                                             1274
+   Module 29-3                                             1277
+   Module 29-4                                             1279
+   Module 29-5                                             1281
+   Additional                                              1284
+
+30- Induction and Inductance                               1299
+   Module 30-1                                             1299
+   Module 30-2                                             1310
+   Module 30-3                                             1313
+   Module 30-4                                             1315
+   Module 30-5                                             1316
+   Module 30-6                                             1318
+   Module 30-7                                             1323
+   Module 30-8                                             1326
+   Module 30-9                                             1328
+   Additional                                              1331
+
+31- Electromagnetic Oscillations and Alternating Current   1341
+   Module 31-1                                             1341
+   Module 31-2                                             1351
+   Module 31-3                                             1353
+   Module 31-4                                             1356
+   Module 31-5                                             1365
+   Module 31-6                                             1371
+   Additional                                              1373
+
+32- Maxwell’s Equations; Magnetism of Matter               1386
+   Module 32-1                                             1386
+   Module 32-2                                             1387
+   Module 32-3                                             1391
+   Module 32-4                                             1397
+   Module 32-5                                             1398
+   Module 32-6                                             1400
+   Module 32-7                                             1401
+   Module 32-8                                             1404
+   Additional                                              1408
+
+33- Electromagnetic Waves                                  1417
+   Module 33-1                                             1417
+   Module 33-2                                             1418
+   Module 33-3                                             1421
+   Module 33-4                                             1427
+   Module 33-5                                             1432
+   Module 33-6                                             1436
+   Module 33-7                                             1442
+   Additional                                              1443
+
+
+                                                  5/7
+34- Images                           1463
+   Module 34-1                       1463
+   Module 34-2                       1464
+   Module 34-3                       1477
+   Module 34-4                       1480
+   Module 34-5                       1496
+   Additional                        1499
+
+35- Interference                     1523
+   Module 35-1                       1523
+   Module 35-2                       1527
+   Module 35-3                       1532
+   Module 35-4                       1535
+   Module 35-5                       1552
+   Additional                        1553
+
+36- Diffraction                      1565
+   Module 36-1                       1565
+   Module 36-2                       1568
+   Module 36-3                       1571
+   Module 36-4                       1576
+   Module 36-5                       1581
+   Module 36-6                       1586
+   Module 36-7                       1589
+   Additional                        1592
+
+37- Relativity                       1607
+   Module 37-1                       1607
+   Module 37-2                       1609
+   Module 37-3                       1611
+   Module 37-4                       1618
+   Module 37-5                       1622
+   Module 37-6                       1623
+   Additional                        1635
+
+38- Photons and Matter Waves         1655
+   Module 38-1                       1655
+   Module 38-2                       1659
+   Module 38-3                       1663
+   Module 38-4                       1670
+   Module 38-5                       1673
+   Module 38-6                       1679
+   Module 38-7                       1683
+   Module 38-8                       1683
+   Module 38-9                       1687
+   Additional                        1691
+
+39- More About Matter Waves          1695
+   Module 39-1                       1695
+   Module 39-2                       1700
+   Module 39-3                       1702
+   Module 39-4                       1703
+   Module 39-5                       1708
+   Additional                        1718
+
+40- All About Atoms                  1727
+   Module 40-1                       1727
+   Module 40-2                       1731
+   Module 40-3                       1732
+   Module 40-4                       1733
+
+
+
+                               6/7
+   Module 40-5                                  1739
+   Module 40-6                                  1741
+   Module 40-7                                  1747
+   Additional                                   1751
+
+41- Conduction of Electricity in Solids         1757
+   Module 41-1                                  1757
+   Module 41-2                                  1770
+   Module 41-3                                  1774
+   Additional                                   1776
+
+42- Nuclear Physics                             1781
+   Module 42-1                                  1781
+   Module 42-2                                  1783
+   Module 42-3                                  1791
+   Module 42-4                                  1799
+   Module 42-5                                  1801
+   Module 42-6                                  1805
+   Module 42-7                                  1807
+   Module 42-8                                  1809
+   Additional                                   1811
+
+43- Energy from the Nucleus                     1821
+   Module 43-1                                  1821
+   Module 43-2                                  1827
+   Module 43-3                                  1830
+   Module 43-4                                  1832
+   Module 43-5                                  1834
+   Module 43-6                                  1839
+   Additional                                   1839
+
+44- Quarks, Leptons, and the Big Bang           1844
+   Module 44-1                                  1844
+   Module 44-2                                  1847
+   Module 44-3                                  1853
+   Module 44-4                                  1854
+   Additional                                   1859
+
+
+
+
+                                          7/7
+INSTRUCTOR
+SOLUTIONS
+MANUAL
+Chapter 1
+
+1. THINK In this problem we’re given the radius of Earth, and asked to compute its
+circumference, surface area and volume.
+
+EXPRESS Assuming Earth to be a sphere of radius
+
+                    RE   6.37  106 m 103 km m   6.37  103 km,
+
+the corresponding circumference, surface area and volume are:
+                                                       4 3
+                        C  2 RE , A  4 RE2 ,    V     RE .
+                                                        3
+The geometric formulas are given in Appendix E.
+
+ANALYZE (a) Using the formulas given above, we find the circumference to be
+
+                        C  2 RE  2 (6.37  103 km)  4.00 104 km.
+
+(b) Similarly, the surface area of Earth is
+
+                                                      5.10  10 km ,
+                                                      2
+                    A  4 RE2  4 6.37  103 km                  8     2
+
+
+(c) and its volume is
+                         4 3 4
+                                                    
+                                                3
+                   V       RE    6.37  103 km  1.08  1012 km3.
+                          3      3
+
+LEARN From the formulas given, we see that C RE , A RE2 , and V RE3 . The ratios
+of volume to surface area, and surface area to circumference are V / A  RE / 3 and
+A / C  2RE .
+
+2. The conversion factors are: 1 gry  1/10 line , 1 line  1/12 inch and 1 point = 1/72
+inch. The factors imply that
+
+                         1 gry = (1/10)(1/12)(72 points) = 0.60 point.
+
+Thus, 1 gry2 = (0.60 point)2 = 0.36 point2, which means that 0.50 gry2 = 0.18 point 2 .
+
+3. The metric prefixes (micro, pico, nano, …) are given for ready reference on the inside
+front cover of the textbook (see also Table 1–2).
+
+
+
+                                              1
+2                                                                                  CHAPTER 1
+
+
+(a) Since 1 km = 1  103 m and 1 m = 1  106 m,
+
+                                                        
+                      1km  103 m  103 m 106  m m  109  m.
+
+The given measurement is 1.0 km (two significant figures), which implies our result
+should be written as 1.0  109 m.
+
+(b) We calculate the number of microns in 1 centimeter. Since 1 cm = 102 m,
+
+                                                         
+                     1cm = 102 m = 102m 106  m m  104 m.
+
+We conclude that the fraction of one centimeter equal to 1.0 m is 1.0  104.
+
+(c) Since 1 yd = (3 ft)(0.3048 m/ft) = 0.9144 m,
+
+                                                    
+                      1.0 yd =  0.91m  106  m m  9.1  105  m.
+
+4. (a) Using the conversion factors 1 inch = 2.54 cm exactly and 6 picas = 1 inch, we
+obtain
+                                        1 inch  6 picas 
+                 0.80 cm =  0.80 cm                     1.9 picas.
+                                        2.54 cm  1 inch 
+(b) With 12 points = 1 pica, we have
+
+                                  1 inch  6 picas  12 points 
+           0.80 cm =  0.80 cm                                23 points.
+                                  2.54 cm  1 inch  1 pica 
+
+5. THINK This problem deals with conversion of furlongs to rods and chains, all of
+which are units for distance.
+
+EXPRESS Given that 1 furlong  201.168 m, 1 rod  5.0292 m and 1chain  20.117 m ,
+the relevant conversion factors are
+                                                        1 rod
+               1.0 furlong  201.168 m  (201.168 m )            40 rods,
+                                                      5.0292 m
+and
+                                                      1 chain
+              1.0 furlong  201.168 m  (201.168 m )           10 chains .
+                                                     20.117 m
+Note the cancellation of m (meters), the unwanted unit.
+
+ANALYZE Using the above conversion factors, we find
+
+                                                                        40 rods
+(a) the distance d in rods to be d  4.0 furlongs   4.0 furlongs               160 rods,
+                                                                       1 furlong
+                                                                                             3
+
+
+                                                                   10 chains
+(b) and in chains to be d  4.0 furlongs   4.0 furlongs                    40 chains.
+                                                                   1 furlong
+
+LEARN Since 4 furlongs is about 800 m, this distance is approximately equal to 160
+rods ( 1 rod  5 m ) and 40 chains ( 1 chain  20 m ). So our results make sense.
+
+6. We make use of Table 1-6.
+
+(a) We look at the first (“cahiz”) column: 1 fanega is equivalent to what amount of cahiz?
+We note from the already completed part of the table that 1 cahiz equals a dozen fanega.
+                  1
+Thus, 1 fanega = 12 cahiz, or 8.33  102 cahiz. Similarly, “1 cahiz = 48 cuartilla” (in the
+                                                               1
+already completed part) implies that 1 cuartilla = 48 cahiz, or 2.08  102 cahiz.
+Continuing in this way, the remaining entries in the first column are 6.94  103 and
+3.47 103 .
+
+(b) In the second (“fanega”) column, we find 0.250, 8.33  102, and 4.17  102 for the
+last three entries.
+
+(c) In the third (“cuartilla”) column, we obtain 0.333 and 0.167 for the last two entries.
+
+                                                           1
+(d) Finally, in the fourth (“almude”) column, we get 2 = 0.500 for the last entry.
+
+(e) Since the conversion table indicates that 1 almude is equivalent to 2 medios, our
+amount of 7.00 almudes must be equal to 14.0 medios.
+
+(f) Using the value (1 almude = 6.94  103 cahiz) found in part (a), we conclude that
+7.00 almudes is equivalent to 4.86  102 cahiz.
+
+(g) Since each decimeter is 0.1 meter, then 55.501 cubic decimeters is equal to 0.055501
+                                         7.00        7.00
+m3 or 55501 cm3. Thus, 7.00 almudes = 12 fanega = 12 (55501 cm3) = 3.24  104 cm3.
+
+7. We use the conversion factors found in Appendix D.
+
+                          1 acre  ft = (43,560 ft 2 )  ft = 43,560 ft 3
+
+Since 2 in. = (1/6) ft, the volume of water that fell during the storm is
+
+        V  (26 km2 )(1/6 ft)  (26 km2 )(3281ft/km) 2 (1/6 ft )  4.66 107 ft 3.
+
+Thus,
+                              4.66  107 ft 3
+                     V              4  3
+                                                     .  103 acre  ft.
+                                                   11
+                         4.3560  10 ft acre  ft
+4                                                                            CHAPTER 1
+
+
+
+8. From Fig. 1-4, we see that 212 S is equivalent to 258 W and 212 – 32 = 180 S is
+equivalent to 216 – 60 = 156 Z. The information allows us to convert S to W or Z.
+
+(a) In units of W, we have
+                                                 258 W 
+                             50.0 S   50.0 S          60.8 W
+                                                 212 S 
+
+(b) In units of Z, we have
+                                                  156 Z 
+                              50.0 S   50.0 S          43.3 Z
+                                                  180 S 
+
+9. The volume of ice is given by the product of the semicircular surface area and the
+thickness. The area of the semicircle is A = r2/2, where r is the radius. Therefore, the
+volume is
+                                            
+                                       V  r2 z
+                                            2
+
+where z is the ice thickness. Since there are 103 m in 1 km and 102 cm in 1 m, we have
+
+                                    103 m   102 cm 
+                   r   2000 km          
+                                                                   5
+                                                        2000  10 cm.
+                                    1km   1m 
+
+In these units, the thickness becomes
+                                             102 cm 
+                    z  3000 m   3000 m                       2
+                                                       3000  10 cm
+                                             1m 
+
+                   
+                                                       
+                                  2
+which yields V      2000  105 cm 3000  102 cm  1.9  1022 cm3.
+                   2
+
+10. Since a change of longitude equal to 360 corresponds to a 24 hour change, then one
+expects to change longitude by 360 / 24 15 before resetting one's watch by 1.0 h.
+
+11. (a) Presuming that a French decimal day is equivalent to a regular day, then the ratio
+of weeks is simply 10/7 or (to 3 significant figures) 1.43.
+
+(b) In a regular day, there are 86400 seconds, but in the French system described in the
+problem, there would be 105 seconds. The ratio is therefore 0.864.
+
+12. A day is equivalent to 86400 seconds and a meter is equivalent to a million
+micrometers, so
+

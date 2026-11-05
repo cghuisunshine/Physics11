@@ -1,0 +1,90 @@
+                                                                                              2-2 I NSTANTAN EOUS VE LOCITY AN D SPE E D                                                      19
+
+
+
+                                                                                  x
+
+
+                                                                             25                                                                                d
+                                                                                                                     x = 24 m                     c
+                                                                                                                     at t = 8.0 s
+                                                                             20
+
+
+
+
+                                                         Position (m)
+                                                                             15
+                                                                                                                                                      ∆x
+                                                                                                                  x(t)
+                                                                             10
+                                                                                      x = 4.0 m
+                                                                                      at t = 3.0 s
+                                                                             5
+                                                                                                          b               ∆t
+                                                                                      a
+                                                                             0                                                                                     t
+                                                                                  0       1    2          3   4      5    6               7   8            9
+                                                                                                                   Time (s)
+                                                                                                                                                  Slopes on the x versus t graph
+                                                                                                                   (a)
+                                                                                                                                    Slope         are the values on the v versus t graph.
+                                                                                                                                    of x(t)
+                                                                                  v
+
+                                                                                                          b                        v(t)           c
+                                                         Velocity (m/s)       4
+
+                                                                              3
+
+                                                                              2
+
+                                                                              1
+                                                                                      a                                                                        d
+                                                                              0                                                                                    t
+                                                                                  0       1    2          3   4      5    6               7   8            9
+                                                                                                                   Time (s)
+                                                                                                                   (b)
+                                                                                                                                                  Slopes on the v versus t graph
+                                                                                                                                                  are the values on the a versus t graph.
+                                                                                  a
+                                                                                   Acceleration
+                                                                              3
+                                                       Acceleration (m/s2)
+
+
+
+
+                                                                              2
+                                                                              1
+                                                                                      a               b           a(t)                        c                d
+ Figure 2-6 (a) The x(t) curve for an elevator cab                            0                                                                                    t
+                                                                             –1           1    2          3   4       5        6          7   8            9
+ that moves upward along an x axis. (b) The v(t)
+ curve for the cab. Note that it is the derivative                           –2
+                                                                             –3
+ of the x(t) curve (v " dx/dt). (c) The a(t) curve
+                                                                             –4
+ for the cab. It is the derivative of the v(t) curve                                                                       Deceleration
+ (a " dv/dt). The stick figures along the bottom
+ suggest how a passenger’s body might feel dur-                                                                                                                        What you would feel.
+ ing the accelerations.
+                                                                                                                   (c)
+
+
+The plus sign indicates that the cab is moving in the posi-                                          terval, we must, in the language of calculus, calculate the
+tive x direction. These intervals (where v " 0 and v "                                               area “under the curve” on the v(t) graph for that interval.
+4 m/s) are plotted in Fig. 2-6b. In addition, as the cab ini-                                        For example, during the interval 3 s to 8 s in which the cab
+tially begins to move and then later slows to a stop,                                                has a velocity of 4.0 m/s, the change in x is
+v varies as indicated in the intervals 1 s to 3 s and 8 s to 9 s.
+                                                                                                                   -x " (4.0 m/s)(8.0 s $ 3.0 s) " #20 m.                                (2-6)
+Thus, Fig. 2-6b is the required plot. (Figure 2-6c is consid-
+ered in Module 2-3.)                                                                                 (This area is positive because the v(t) curve is above the
+     Given a v(t) graph such as Fig. 2-6b, we could “work                                            t axis.) Figure 2-6a shows that x does indeed increase by
+backward” to produce the shape of the associated x(t) graph                                          20 m in that interval. However, Fig. 2-6b does not tell us the
+(Fig. 2-6a). However, we would not know the actual values                                            values of x at the beginning and end of the interval. For that,
+for x at various times, because the v(t) graph indicates                                             we need additional information, such as the value of x at
+only changes in x. To find such a change in x during any in-                                         some instant.
+
+
+           Additional examples, video, and practice available at WileyPLUS

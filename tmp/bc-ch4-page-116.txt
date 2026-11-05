@@ -1,0 +1,40 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+        Sample Problem 4.2.1  Multiple Forces Acting on a Body
+        A 45.0 N block is being pushed along a floor  where the coefficient of kinetic friction is 0.333. If a force of 25.0 N is 
+        applied  at what rate will the block accelerate  The mass of the block is 4.60 kg.
+                                      FN       normal force
+
+
+                                                        FN = Fg   but
+                                                        applied force > friction force
+                                                        creating the unbalanced forces
+
+        applied force     F                      Ffr    friction force
+
+
+
+
+                                      Fg       force of gravity
+
+        Figure 4.2.1  Forces acting on block
+
+
+        What to Think About                         How to Do It
+        1.   Find the force of friction.            Ffr   =  FN  =  Fg  =   0.333  w  45.0 N  = 15.0 N
+
+
+        2.  Find the unbalanced force.              unbalanced force = applied force m friction force
+
+                                                    F   =  25.0 N m 15.0 N   =  10.0 N
+
+        3.  Find the acceleration.
+                                                               10.0 N = 2.17 m/s2
+                                                    a =  F =  4.60 kg
+                                                        m
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                 Chapter 4   Newton's Laws of Motion  111

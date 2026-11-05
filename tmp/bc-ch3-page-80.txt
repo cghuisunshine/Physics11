@@ -1,0 +1,55 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+      3  Forces
+      By the end of this chapter  you should be able to do the following:
+      ±  Solve problems involving the force of gravity                ±  Analyse situations involving the force due to friction
+         t  recognize the relationship between                           t  conduct experiments investigating force due to 
+             o  mass and attractive force due to gravity  e.g.              friction  involving
+                 force due to gravity on Earth's surface is                 o  normal force
+                 proportional to Earth's mass                               o  various types of material
+             o  the force of gravity between two objects and                o  surface area
+                 their distance of separation  i.e.  the inverse            o  speed 
+                 square law                                              t  recognize the relationship between force due to 
+         t  solve a variety of problems involving the                       friction and the strengths of normal force and 
+             relationship between                                           coefficient of friction
+             o  mass                                                     t  solve problems with objects sliding on horizontal 
+             o  gravitational field strength                                surfaces  involving
+             o  force due to gravity  weight                                o  force of friction
+         t  use Newton's law of universal gravitation to solve              o  coefficient of friction
+             problems involving                                             o  normal force
+             o  force
+             o  mass                                                  ±  Apply Hooke's law to the deformation of materials
+             o  distance of separation                                   t  state Hooke's law
+             o  universal gravitational constant                         t  use Hooke's law to solve problems that involve
+                                                                            o  force
+                                                                            o  spring constant
+                                                                            o  change in length
+
+
+      By the end of this chapter  you should know the meaning 
+      to these key terms:
+      t    coefficient of friction      t  mass
+      t    force                        t  Newton's law of 
+      t    force due to gravity            universal gravitation
+      t    gravitational field          t  normal force
+           strength                     t  spring constant
+      t    gravity                      t  static friction
+      t    Hooke's law                  t  universal gravitational 
+      t    inverse square law              constant
+      t    kinetic friction             t  weight
+
+
+
+      By the end of the chapter  you should be able to use and 
+      know when to use the following formulae:
+                                          m1m2
+      Fg = mg                      Fg = G  2  
+                                           r
+      Ffr = IFN                      F = k H x  
+                                                                       This bungee jumper experiences both the force of gravity and 
+                                                                       elastic force during her jump.
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                       Chapter 3   Forces  75

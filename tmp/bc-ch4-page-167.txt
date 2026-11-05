@@ -1,0 +1,55 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+                                   Power is the rate at which energy is produced or consumed  or the rate at which work is 
+   Power of a Heat             
+                                   done .  For our present needs  power is the rate at which heat is transferred.
+   Source
+                                                                                 P = HE
+                                                                                     Ht
+                                   where P is power  HE is the energy transferred  and Ht is the time interval during which 
+                                   the energy is transferred.
+
+
+                                For any energy-converting device  a convenient ratio to know is the ratio of the useful 
+   Eöciency                    
+                                energy output of the device to the energy put into the device. This ratio is the efficiency 
+                                of the device.
+                                                                         useful energy out of device
+                                                           efficiency = 
+                                                                           energy put into device
+
+
+                                                                                    Wout     Pout
+                                                                       efficiency =       = 
+                                                                                    W        Pin
+                                                                                     in
+
+                                          The efficiency rating gives us an idea of how much energy a device wastes as heat. 
+                                   One of the least efficient devices is an ordinary incandescent light bulb. Since it converts 
+                                   only 5% of its electrical energy into light and 95% into heat  a light bulb is only 5% 
+                                   efficient. An automobile might be only 10% efficient. Where does all its wasted energy 
+                                   go
+                                          Electric motors may have efficiencies in the range between 60% and 90%  while 
+                                   transformers and generators may be 99% efficient.
+
+
+
+     Sample Problem 5.4.2  Calculating Eöciency
+     To lift a 1200 N motorcycle a vertical height of 1.3 m onto a pickup truck  a motocross rider pushes the bike up a 
+     ramp 2.4 m  requiring an effort force up the ramp of 820 N. What is the efficiency of the ramp
+
+     What to Think About                   How to Do It
+     1.  Find the useful work done         Wout =  1200 N 1.3 m  = 1560 J
+         by the ramp.
+
+     2.  Find the work put into            Win =  820 N 2.4 m  = 1968 J
+         using the ramp.
+                                                         1560 J
+     3.  Find the efficiency of the        efficiency =  1968 J  w 100 % = 79%
+         ramp.
+                                           The ramp is 79% efficient.
+
+
+
+
+   162  Chapter 5   Energy                                                  ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

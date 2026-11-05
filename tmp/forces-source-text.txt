@@ -1,0 +1,678 @@
+
+Forces Notes | Physics 11 notes
+Skip to notes
+PHYSICS / 11
+BC Science · Chapter 3
+Forces Notes
+Understand gravity, friction, and springs, then practise with all 79 questions from the chapter collection.
+10 study topics79 textbook questionsPages 76–100Works offlineAnswers hidden until openednormalweightpushfriction
+Reading mode
+StudySimpleSlidesPrint / Save PDFOriginal PDF ↗
+Find in these notes1 Forces and gravitational fields2 Mass, weight, and measuring gravity3 Universal gravitation and distance4 Investigating gravity5 Static friction and kinetic friction6 Normal force and friction calculations7 Investigating friction8 Hooke's law and spring graphs9 Elastic balances and calibration10 Chapter review and extra practice
+← Previous
+Next →
+No matching topics. Try another word.
+BC Science Chapter 3 / Textbook pp. 76      
+1 Forces and gravitational fields
+What a force does
+A force describes an interaction: a push or pull exerted by one object on another. It can change an object's speed, direction, or shape. A force has a magnitude and a direction, so it is a vector. Its SI unit is the newton, N.
+Identify both the object experiencing the force and the object producing it. A hand pushes a book; a floor supports a box; Earth attracts a falling ball. Several forces can act at once. Their combined effect depends on their directions, not just their sizes.
+Contact forces and action at a distance
+Friction and spring forces require contact. Gravity acts between masses even when they do not touch. Around a mass, a gravitational field describes the gravitational force that another mass would experience.
+Gravity is attractive. Near Earth's surface its direction is approximately downward, toward Earth's centre. The strength of the field is the gravitational force per kilogram of mass:
+      g = Fg / m
+near Earth's surface: g ≈ 9.81 N/kg
+1 N/kg = 1 m/s²
+The two units describe the same physical quantity in different contexts: force per unit mass or the acceleration of an object acted on by gravity alone.
+Why paper and a book fall differently
+The paper-and-book warm-up separates gravity from air resistance. Thin paper has a large exposed area relative to its mass. Air resistance can therefore have a substantial effect on its motion. A book underneath the paper can shield it from much of that resistance.
+With negligible air resistance, objects released from the same height with the same initial velocity have the same gravitational acceleration. A larger mass experiences a larger gravitational force, but it also requires more force for a given acceleration.
+Check your reasoning
+Do not infer that a moving object must have a force pointing in its direction of travel. Forces describe interactions and changes in motion. A falling object can experience both downward gravity and upward air resistance.
+Force of gravity: warm-up
+Question Warm-upTextbook p. 76Open in question collection
+Show answerHide answer
+Worked answer
+Separately, the book usually lands first because air resistance has a much larger effect relative to the paper’s weight. With the paper resting entirely on top of the book, the book shields it from most air resistance, so they fall together.
+With negligible air resistance, objects released from the same height with the same initial vertical velocity have the same acceleration g, regardless of mass.
+BC Science Chapter 3 / Textbook pp. 77–78      
+2 Mass, weight, and measuring gravity
+Mass and weight are different quantities
+Mass describes inertia and is measured in kilograms. Weight is the gravitational force on an object and is measured in newtons. Changing location changes weight if the gravitational field changes; it does not change the object's mass.
+      Fg = mg
+m = Fg / g
+g = Fg / m
+Here Fg is the magnitude of the gravitational force. Its direction must be stated separately, usually downward near Earth's surface.
+Worked example: weight on Earth
+Find the weight of a 60.0 kg person on Earth, using g = 9.81 N/kg.
+Show answerHide answer
+Worked answer
+Fg = mg = (60.0 kg)(9.81 N/kg)
+    = 588.6 N ≈ 589 N downward
+The kilograms cancel, leaving newtons. The person's mass is still 60.0 kg.
+Worked example: a different planet
+A 4.00 kg object has a weight of 14.8 N on another planet. Find the gravitational field strength there.
+Show answerHide answer
+Worked answer
+g = Fg / m = 14.8 N / 4.00 kg
+  = 3.70 N/kg
+The object's mass is 4.00 kg on either planet. On Earth the same object would weigh about 39.2 N.
+What a spring balance measures
+A spring balance responds to a force through its stretch. For an object hanging at rest, the upward spring force balances the downward gravitational force, so the balance can measure weight. A scale marked in kilograms converts that force using an assumed value of g.
+This interpretation assumes the object is in equilibrium. A support-force reading need not equal weight when the object accelerates. Chapter 4 develops those situations further.
+Common mistakes
+Convert grams to kilograms before using g in N/kg.
+Do not report a force in kilograms or a mass in newtons.
+Use the gravitational field strength at the specified location.
+Distinguish a force reading from a mass-equivalent scale display.
+Weight and gravitational field strength: quick check
+Question 1Textbook p. 77Open in question collection
+Show answerHide answer
+Worked answer
+Fg = mg = (90)(9.81) = 882.9 N ≈ 8.8 × 10² N downward. Weight is the gravitational force, so the two requested quantities are the same.
+Question 2Textbook p. 77Open in question collection
+Show answerHide answer
+Worked answer
+m = Fg/g = 637/9.81 = 64.9 kg (about 65 kg).
+Question 3Textbook p. 77Open in question collection
+Show answerHide answer
+Worked answer
+gMoon = Fg/m = 127.5/75 = 1.7 N/kg, equivalent to 1.7 m/s².
+BC Science Chapter 3 / Textbook pp. 78–80, 83–84      
+3 Universal gravitation and distance
+The attraction between two masses
+Newton's law of universal gravitation gives the magnitude of the attraction between two point masses. It also applies outside a spherically symmetric body when its mass is treated as concentrated at its centre:
+      Fg = Gm₁m₂ / r²
+G = 6.67 × 10⁻¹¹ N·m²/kg²
+The masses m₁ and m₂ are in kilograms. The separation r is in metres and is measured between the centres, not between the nearest surfaces. The force on each object has the same magnitude; each points toward the other object.
+Cavendish's measurement
+Figure 3.1.2, textbook p. 79. Small gravitational forces twist the suspended rod.
+The attraction between ordinary laboratory masses is extremely small. Cavendish used the twist of a suspended rod to detect that attraction. The apparatus illustrates why air currents and other unwanted influences had to be minimized. Measuring this attraction allowed the gravitational constant G to be determined.
+How changing mass or distance changes the force
+At fixed separation, doubling one mass doubles the force; doubling both masses multiplies the force by four. Distance enters as a square:
+      Fnew / Fold = (m₁,new / m₁,old)(m₂,new / m₂,old)(rold / rnew)²
+double r: Fnew = Fold / 4
+triple r: Fnew = Fold / 9
+halve r: Fnew = 4Fold
+Use ratios when the question asks how a force changes. You often do not need to calculate either force separately.
+Worked example: changing the separation
+Two objects attract with a force F. Both masses remain unchanged, but the separation increases to three times its original value. What is the new force?
+Show answerHide answer
+Worked answer
+Fnew / F = (r / 3r)² = 1/9
+Fnew = F/9
+The force decreases to one ninth. It does not decrease to one third, because the law depends on r².
+Connecting universal gravity to weight
+For a small object of mass m near a spherical planet of mass M, combine Fg = mg with the universal law:
+      mg = GMm / r²
+g = GM / r²
+at altitude h: r = R + h
+The small object's mass cancels. The field strength depends on the planet's mass and the distance from its centre. At an altitude equal to the planet's radius, r doubles and g becomes one quarter of its surface value.
+A reliable calculation method
+Convert to SI units, write the centre-to-centre separation, square it, substitute the masses and G, and check the power of ten. Very small forces between everyday objects are physically reasonable. G and g are different quantities with different units.
+Universal gravitation: quick check
+Question 1Textbook p. 80Open in question collection
+Show answerHide answer
+Worked answer
+For fixed masses, Fg = GMm/r², so F′/F = (r/r′)².
+Double r: F/4.
+Triple r: F/9.
+Halve r: 4F.
+Reduce r to one-third: 9F.
+Question 2Textbook p. 80Open in question collection
+Show answerHide answer
+Worked answer
+Use Fg = GMm/r², with masses in kilograms and centre-to-centre distance in metres.
+Earth: (6.67 × 10⁻¹¹)(5.98 × 10²⁴)(100.0)/(6.38 × 10⁶)² = 980 N, toward Earth’s centre.
+Moon: (6.67 × 10⁻¹¹)(7.35 × 10²²)(100.0)/(1.74 × 10⁶)² = 162 N, toward the Moon’s centre.
+Golf balls: m = 0.046 kg, r = 0.10 m. F = (6.67 × 10⁻¹¹)(0.046)²/(0.10)² = 1.4 × 10⁻¹¹ N. Each ball attracts the other with this magnitude.
+3.1 Review: force of gravity
+Reference constants from section 3.1.
+Question 1Textbook p. 83Open in question collection
+Show answerHide answer
+Worked answer
+A “600 N person” is already described by their weight. The gravitational force is 600 N downward.
+Question 2Textbook p. 83Open in question collection
+Show answerHide answer
+Worked answer
+F = GMSunMEarth/r². With Earth’s mass and separation unchanged, tripling the Sun’s mass triples the force.
+Question 3Textbook p. 83Open in question collection
+Show answerHide answer
+Worked answer
+Earth: Fg = (80)(9.81) = 784.8 N ≈ 7.8 × 10² N downward.
+Moon, using the stated g = 1.7 m/s²: Fg = (80)(1.7) = 1.4 × 10² N downward (136 N before rounding).
+Question 4Textbook p. 83Open in question collection
+Show answerHide answer
+Worked answer
+Compare each case with F = GMm/d².
+Double only M: 2F.
+Double only m: 2F.
+Double both masses: 4F.
+Double both masses and d: 4F/2² = F, unchanged.
+Question 5Textbook p. 83Open in question collection
+Show answerHide answer
+Worked answer
+Fg = (6.67 × 10⁻¹¹)(5.98 × 10²⁴)(70.0)/(6.38 × 10⁶)² = 686 N downward.
+Check: mg = (70.0)(9.81) = 686.7 N ≈ 687 N. The small difference comes from rounded Earth data, which give g ≈ 9.799 N/kg.
+Question 6Textbook p. 84Open in question collection
+Show answerHide answer
+Worked answer
+At 2.0 m: F = (6.67 × 10⁻¹¹)(75)(60.0)/2.0² = 7.5 × 10⁻⁸ N.
+At 1.0 m: F = (6.67 × 10⁻¹¹)(75)(60.0)/1.0² = 3.0 × 10⁻⁷ N, four times greater.
+The simple calculation treats the stated distances as centre-to-centre distances and the people as point masses. Each person experiences the same force magnitude toward the other.
+Question 7Textbook p. 84Open in question collection
+Show answerHide answer
+Worked answer
+Fg = (6.67 × 10⁻¹¹)(7.34 × 10²²)(70.0)/(1.74 × 10⁶)² = 113 N, toward the Moon’s centre.
+Question 8Textbook p. 84Open in question collection
+Show answerHide answer
+Worked answer
+Fg = (6.67 × 10⁻¹¹)(6.37 × 10²³)(70.0)/(3.43 × 10⁶)² = 253 N, toward Mars’s centre.
+Question 9Textbook p. 84Open in question collection
+Show answerHide answer
+Worked answer
+Fg = (6.67 × 10⁻¹¹)(1.90 × 10²⁷)(70.0)/(7.18 × 10⁷)² = 1.72 × 10³ N, toward Jupiter’s centre.
+BC Science Chapter 3 / Textbook pp. 81–82      
+4 Investigating gravity
+Investigation 3-1A: falling-body demonstrations
+Compare two steel balls of different masses dropped together from the same height. With little air resistance, their landing times should be almost the same. Then compare tissue paper with a steel ball: different air-resistance effects make the paper fall more slowly.
+The coin-and-feather demonstration removes most of the air from a tube. When air resistance is negligible, both objects fall together. The final demonstration compares a ball launched horizontally with one dropped vertically at the same instant. Their vertical motions are the same if their initial vertical velocities, release heights, and gravitational acceleration are the same.
+These results connect forces to the earlier kinematics model: horizontal motion does not change vertical free fall when air resistance is negligible. On the Moon, free fall has a smaller acceleration and takes longer from a given height, but the paired objects still share the same vertical acceleration.
+Connecting a weight graph to field strength
+As an additional connection, a graph of Fg vertically against m horizontally has a useful slope:
+      slope = ΔFg / Δm = g
+slope units: N/kg
+A straight line approximately through the origin supports Fg = mg. Use widely separated points on a best-fit line to estimate the slope. If you graph mass against force instead, the slope is 1/g and has units kg/N.
+Investigation 3-1B: force versus distance
+For fixed masses, the universal law predicts Fg proportional to 1/r². A graph of force against distance is curved. Plotting Fg against 1/r² gives a straight line in the ideal model.
+      Fg = (Gm₁m₂)(1/r²)
+slope of Fg versus 1/r² = Gm₁m₂
+Use centre-to-centre distances. Compare ratios to the inverse-square prediction rather than assuming equal changes in distance produce equal changes in force.
+Writing an investigation conclusion
+State the observed relationship, cite a slope or ratio from your own data, and connect it to the relevant equation. A conclusion should also explain discrepancies, such as balance zero error, uncertain distance measurements, or limited graph resolution.
+The procedure and data tables accompany the original questions below. Investigation answers describe methods and may include illustrative values; use your measured results when completing an experiment.
+Investigation 3-1A: the force of gravity
+Investigation procedure and data tables
+Question 1Textbook p. 81Open in question collection
+Show answerHide answer
+Worked answer
+Expected observation: the two steel balls hit approximately together. Neglecting drag, a = Fg/m = mg/m = g, so increasing mass increases gravitational force but does not change free-fall acceleration. Report your actual observations and experimental uncertainty.
+Question 2Textbook p. 81Open in question collection
+Show answerHide answer
+Worked answer
+In air, the steel ball normally lands first. Tissue paper has a large area and experiences a large drag force relative to its weight.
+In a vacuum, both fall together because air resistance is absent and both accelerate at g.
+Question 3Textbook p. 81Open in question collection
+Show answerHide answer
+Worked answer
+The horizontally launched and dropped balls land at approximately the same time, provided they start at the same height with zero initial vertical velocity. Their vertical motion is y = ½gt² downward. Horizontal velocity does not alter that vertical motion in the ideal model.
+Question 4Textbook p. 81Open in question collection
+Show answerHide answer
+Worked answer
+In the Moon’s negligible atmosphere, both steel balls, tissue and ball, and coin and feather released together fall together. The horizontally launched and dropped balls also land together. All accelerate more slowly than on Earth.
+For the same height and gMoon ≈ gEarth/6, t = √(2h/g) is about √6 ≈ 2.45 times longer.
+Investigation 3-1B: gravity and distance
+Investigation procedure and data tables
+Question 1Textbook p. 82Open in question collection
+Show answerHide answer
+Worked answer
+Plot Fg versus 1/r². This produces a straight line through the origin; F versus 1/r is still curved.
+With r in megametres, Fg ≈ (398 N·Mm²)/r², since 9.81 × 6.37² = 398.06. Equivalently, Fg ≈ (3.98 × 10¹⁴ N·m²)/r² with r in metres.
+Gravity on a 1 kg mass versus distance06.3712.7419.1125.4831.850246810Distance from Earth’s centre (Mm)Force (N)Gravity on a 1 kg mass versus distance. F = 9.81(6.37/r)².Linearized inverse-square relationship00.0050.010.0150.020.02502468101/r² (Mm⁻²)Force (N)Linearized inverse-square relationship. F = 398/r².
+Question 2Textbook p. 82Open in question collection
+Show answerHide answer
+Worked answer
+Set F/Fsurface = ½ = (R/r)². Thus r = R√2 = 9.01 Mm from Earth’s centre, about 2.64 Mm above the surface.
+At r = 10R, F = 9.81/10² = 0.0981 N.
+BC Science Chapter 3 / Textbook pp. 85–86      
+5 Static friction and kinetic friction
+Why friction matters
+Friction comes from interactions between contacting surfaces. Microscopic deformation and adhesion help explain why even smooth-looking surfaces can resist slipping. Friction can be useful: it allows walking, gripping, braking, and writing. It can also waste energy and wear down materials.
+Air and water resistance are related examples of resistive forces, but the dry sliding-friction model used in this chapter should not be applied indiscriminately to fluids.
+Static friction adjusts to the situation
+Static friction acts when the contacting surfaces are not sliding relative to one another. It opposes the tendency to slip and can take a range of values up to a maximum. A stationary box pushed gently can experience just enough static friction to balance the push.
+For example, if a 5 N horizontal push does not move the box and no other horizontal force acts, static friction is 5 N in the opposite direction. It is not automatically equal to its maximum value.
+Kinetic friction acts during sliding
+Kinetic friction acts when one surface slides over the other. It opposes the relative sliding at the contact. For many dry surface pairs, starting motion requires a larger force than maintaining steady sliding; the maximum static friction commonly exceeds the kinetic friction.
+Avoid the blanket rule that friction always points opposite the object's overall motion. A moving conveyor belt, for example, can exert friction that accelerates an object in the belt's direction. Look at the relative sliding or the tendency to slide at the contact.
+Constant motion and balanced forces
+A box sliding in a straight line at steady speed has balanced forces. The push or pull balances friction horizontally, while support balances weight vertically. Constant motion does not require an unbalanced forward force.
+Friction: warm-up
+Question Warm-upTextbook p. 85Open in question collection
+Show answerHide answer
+Worked answer
+Repeated poking compacts the rice around the pencil. The tightly packed grains press against the pencil, increasing the normal forces and available static friction. When the upward frictional force transmitted through the pencil is large enough to support the rice and jar, you can lift them together.
+BC Science Chapter 3 / Textbook pp. 86–88, 92      
+6 Normal force and friction calculations
+The normal force is perpendicular to the surface
+Figure 3.2.2, textbook p. 86. Weight and normal force are different forces; their magnitudes are equal only under the stated conditions.
+The normal force, FN, is the support force exerted by a contacting surface. It acts perpendicular to that surface. On a horizontal surface with no vertical acceleration and no other vertical forces, FN = mg.
+On a slope, the normal force is not equal to the entire weight. An upward component of an applied pull can also reduce the support force; a downward push can increase it. Find the normal force from the actual forces before substituting into a friction equation.
+The coefficient of kinetic friction
+For the chapter's approximate model of dry sliding surfaces:
+      Ffr = μk FN
+μk = Ffr / FN
+The coefficient μk is a dimensionless ratio. It depends on the materials and their condition, including lubrication and wetness. The textbook uses μ for the kinetic coefficient; the subscript k here makes the type of friction explicit.
+Approximate surface coefficients
+Table 3.2.1, textbook p. 87: approximate kinetic coefficientsSurfaces in contactμkWood on wood0.25Steel on steel0.50Lubricated steel on steel0.10Rubber on dry asphalt0.40Rubber on wet asphalt0.20Rubber on ice0.005Steel on ice0.01
+These textbook values illustrate the effect of surface conditions. They are approximate, not universal constants.
+Worked example: steady-speed sliding
+A wooden box weighs 450 N. It slides across a level floor at steady speed under a horizontal push. The coefficient of kinetic friction is 0.30. Find the required push.
+Show answerHide answer
+Worked answer
+There are no other vertical forces and no vertical acceleration, so FN = 450 N.
+Ffr = μk FN = (0.30)(450 N) = 135 N
+horizontal balance: Fpush = Ffr
+required push ≈ 1.4 × 10² N
+The push is in the direction of sliding and friction is opposite. The final answer is rounded to two significant figures, as in Sample Problem 3.2.1.
+What changes friction in this model?
+The normal force and the nature of the contacting surfaces have the largest effects. For otherwise comparable dry surfaces, changing the apparent contact area has little effect in this approximate model. It is not a rule covering every adhesive, deformable, or fluid-contact situation.
+A friction problem checklist
+Identify whether the contact is static or sliding, draw the forces, determine FN, calculate friction, and use the motion information to relate friction to an applied force. Do not use Ffr = μk mg unless the conditions justify FN = mg.
+When a static coefficient μs is supplied, the limiting friction is Fstatic,max = μs FN. Before sliding, the actual static friction is only as large as needed, up to that limit. Once sliding begins, use the kinetic coefficient instead.
+Sample 3.2.1: kinetic friction
+Question 3.2.1Textbook p. 87Open in question collection
+Show answerHide answer
+Worked answer
+For a horizontal push on a level floor with no vertical acceleration, N = Fg = 450 N. At steady speed, the push balances kinetic friction.
+Fpush = μkN = (0.30)(450) = 135 N ≈ 1.4 × 10² N.
+Practice 3.2.1: kinetic friction
+Question 1Textbook p. 88Open in question collection
+Show answerHide answer
+Worked answer
+Constant speed means zero net horizontal force. The total resisting friction is therefore 30 N opposite the motion.
+Question 2Textbook p. 88Open in question collection
+Show answerHide answer
+Worked answer
+N = mg = (10)(9.81) = 98.1 N. Maximum static friction is μsN = (0.30)(98.1) = 29.4 N. A horizontal push must exceed this threshold to initiate sliding (about 29 N).
+Once sliding, F = μkN = (0.25)(98.1) = 24.5 N (about 25 N) to maintain constant speed.
+Question 3Textbook p. 88Open in question collection
+Show answerHide answer
+Worked answer
+Assuming the stated resisting force is modeled as kinetic friction on a level road, N = mg = (2000)(9.81) = 19 620 N.
+μk = Ffr/N = (1.57 × 10⁴)/19 620 = 0.800, with no units.
+3.2 Review: friction
+Question 1Textbook p. 92Open in question collection
+Show answerHide answer
+Worked answer
+Reduce friction in wheel bearings, pedal bearings, and the chain using lubrication and well-adjusted bearings.
+Friction is needed between tires and the road and between brake pads and the braking surface. It also helps keep your feet on the pedals.
+Question 2Textbook p. 92Open in question collection
+Show answerHide answer
+Worked answer
+The coefficient of kinetic friction is μk = Ffr/N, the ratio of sliding friction to normal force for a pair of surfaces.
+It has no units because N/N = 1.
+Question 3Textbook p. 92Open in question collection
+Show answerHide answer
+Worked answer
+At steady speed, Ffr = 120 N. On a level road with horizontal push, N = 250 N.
+μk = 120/250 = 0.48.
+Question 4Textbook p. 92Open in question collection
+Show answerHide answer
+Worked answer
+At steady speed, Ffr = 24.5 N. N = Ffr/μk = 24.5/0.0100 = 2.45 × 10³ N. This is the block’s weight under the stated horizontal conditions.
+Question 5Textbook p. 92Open in question collection
+Show answerHide answer
+Worked answer
+The weight and surfaces are unchanged, so the friction model predicts the same pulling force: 0.10 N. Doubling the apparent contact area does not double friction.
+Question 6Textbook p. 92Open in question collection
+Show answerHide answer
+Worked answer
+N = 48 N and steady-speed friction is 42 N. Thus μk = 42/48 = 0.88.
+BC Science Chapter 3 / Textbook pp. 89–91      
+7 Investigating friction
+Investigation 3-2, Part 1: friction and weight
+Figure 3.2.3, textbook p. 89. First weigh the blocks vertically. Then pull one to four stacked blocks horizontally: total weight increases while the bottom contact area stays the same.
+In Figure 3.2.3, the vertical spring balance on the left measures each block's weight. The four setups on the right show a horizontal balance pulling stacks of one, two, three, and four blocks. Add blocks on top of the same bottom block: total weight changes while the contact area stays the same.
+Measure the pull needed to keep each stack sliding steadily. The steady pull estimates kinetic friction. A brief maximum at the start of motion is associated with overcoming static friction, not the steady sliding value.
+Include both the block and any added load when finding the normal force. For the level, horizontally pulled setup, FN equals their total weight. Graph Ffr vertically against FN horizontally:
+      slope = ΔFfr / ΔFN = μk
+The textbook labels the horizontal axis Fg; in this level setup, FN = Fg. The slope has no units because it is a ratio of two forces. Repeat measurements and use a best-fit line rather than selecting a single reading.
+Changing the surface
+Keep load and measurement method comparable while changing the contacting surfaces. A different slope indicates a different coefficient. In a fair comparison, do not change both the load and surface condition without accounting for their separate effects.
+Investigation 3-2, Part 2: contact area
+Figure 3.2.4, textbook p. 90. Arrangements (a), (b), (c), and (d) have contact areas A, 2A, 3A, and 4A. All use the same four blocks, so total weight is unchanged.
+Figure 3.2.4 uses the same four blocks in every arrangement. Read the diagrams as follows:
+(a): Four blocks stacked; one bottom face touches the bench, giving area A.
+(b): Two stacks of two blocks; two bottom faces touch the bench, giving area 2A.
+(c): Three bottom blocks with the fourth on top; three faces touch the bench, giving area 3A.
+(d): All four blocks side by side; four faces touch the bench, giving area 4A.
+Here contact area changes while total weight stays the same. Use the horizontal spring balance to compare steady sliding forces. Similar readings support the approximate independence of dry friction from apparent contact area.
+Sources of experimental uncertainty
+An angled pull changes the normal force; a changing speed makes the pulling force an unreliable estimate of friction alone. An unzeroed force meter, surface contamination, and uneven motion can also affect results. Describe how your method controlled these effects.
+Investigation 3-2, Part 1: friction and weight
+Investigation procedure and data tables
+Question 1Textbook p. 90Open in question collection
+Show answerHide answer
+Worked answer
+Expected result for the same surfaces: Ffr = μkN and N = Fg, so doubling, tripling, or quadrupling the weight approximately doubles, triples, or quadruples kinetic friction. Compare this prediction with your measured ratios.
+Question 2Textbook p. 90Open in question collection
+Show answerHide answer
+Worked answer
+Fit a line to your measured Ffr versus Fg data. The ideal relationship is Ffr = μkFg, where both forces are in newtons and the slope μk is dimensionless.
+Use your own numerical slope; no measurements are supplied. A nonzero fitted intercept can indicate balance zero error or additional resistance.
+Question 3Textbook p. 90Open in question collection
+Show answerHide answer
+Worked answer
+Your measurements are required. Calculate μk = ΔFfr/ΔFg from two well-separated points on the best-fit line. Both numerator and denominator are in newtons, so the coefficient has no units.
+Question 4Textbook p. 90Open in question collection
+Show answerHide answer
+Worked answer
+Low friction: bearings in machinery, ski bases sliding on snow, and lubricated engine parts.
+High friction: shoe soles gripping the ground, bicycle brakes, and vehicle tires gripping the road.
+Investigation 3-2: a different surface
+Investigation procedure and data tables
+Question 1Textbook p. 90Open in question collection
+Show answerHide answer
+Worked answer
+Repeat the steady-speed pulling measurements on a different horizontal surface while controlling the blocks, pulling direction, and speed. Plot Ffr against total weight and determine the new slope μk. Compare slopes; do not invent a numerical result without measurements.
+Investigation 3-2, Part 2: friction and contact area
+Investigation procedure and data tables
+Question 1Textbook p. 91Open in question collection
+Show answerHide answer
+Worked answer
+For the same total weight and the same dry surfaces, kinetic friction should be approximately independent of apparent contact area. In the model Ffr = μkN, neither μk nor N changes when the blocks are rearranged. State whether your results support that prediction within measurement uncertainty.
+Question 2Textbook p. 91Open in question collection
+Show answerHide answer
+Worked answer
+Possible errors include an incorrectly zeroed spring balance, changing pulling speed, a string angled upward (reducing N), rough or dirty patches, different block surfaces, and reading the force while starting rather than sliding steadily.
+Repeat trials, keep the pull horizontal, measure at steady speed, and report the variation among readings.
+BC Science Chapter 3 / Textbook pp. 93–94, 97      
+8 Hooke's law and spring graphs
+Extension is a change in length
+A spring's extension, x, is its loaded length minus its unloaded length. It is not the spring's full length. A compressed spring is displaced in the opposite direction from its relaxed length.
+Within a spring's linear elastic range, the magnitude of the applied force is proportional to the magnitude of the displacement:
+      F = kx
+k = F / x
+x = F / k
+spring constant units: N/m
+In these magnitude calculations x is a positive extension or compression. The spring's restoring force opposes the displacement; along a signed axis it can be written Fs = −kx. The minus sign expresses direction, not a negative spring constant.
+Seeing extension and compression
+Illustrative spring states. Extension and compression are measured from the relaxed length L₀, not from the fixed end. The same number of coils is shown in each state.
+Compare the three states of the same spring in the illustration. Its relaxed length L₀ is 10 cm. Stretching it to 14 cm gives x = +4 cm; compressing it to 6 cm gives x = −4 cm. The dashed reference line shows where the free end rests with no load.
+Signed force graph: extension and compression
+Illustrative ideal-spring graph, not measured textbook data. For k = 100 N/m (1 N/cm), the holding-force slope is +k and the restoring-force slope is −k. At rest these forces balance. Use metres when substituting into F = kx.
+The graph uses an illustrative spring with k = 100 N/m, equivalent to 1 N/cm. Positive x means extension; negative x means compression. The solid line is the external force needed to hold the spring at rest. The dashed line is the spring's restoring force, which always acts toward the relaxed position.
+Extension, x = +2 cm: Hold with +2 N to the right; the spring pulls with −2 N to the left.
+Compression, x = −2 cm: Hold with −2 N to the left; the spring pushes with +2 N to the right.
+Relaxed, x = 0: Both forces are zero in this ideal model.
+The signed holding-force graph has slope +k, and the restoring-force graph has slope −k. The textbook's positive load-versus-extension graph below uses force magnitudes, so its slope is positive.
+Reading a force-versus-extension graph
+Figure 3.3.1, textbook p. 93. The force-versus-extension slope is the spring constant; the horizontal axis is in centimetres.
+Plot force on the vertical axis and extension on the horizontal axis. The slope is the spring constant:
+      k = ΔF / Δx
+1 N/cm = 100 N/m
+A steeper force-versus-extension graph represents a stiffer spring. If the axes are reversed, the slope is 1/k. Check whether the extension axis uses metres or centimetres before interpreting the slope.
+Worked example: the textbook spring graph
+Figure 3.3.1 shows a force of 1.0 N for an extension of 0.75 cm. Find the spring constant in N/m.
+Show answerHide answer
+Worked answer
+x = 0.75 cm = 0.0075 m
+k = F / x = 1.0 / 0.0075
+  ≈ 1.3 × 10² N/m
+Equivalently, the slope is about 1.33 N/cm before rounding, which is about 133 N/m. An answer of 1.33 N/m would miss the centimetre-to-metre conversion.
+A hanging mass combines two models
+For a mass hanging at rest, the spring's upward force balances its weight:
+      kx = mg
+x = mg / k
+Doubling the mass doubles the extension as long as the spring remains in the same linear range. Stretching it too far can produce nonlinear behaviour or permanent deformation. Rubber bands also need experimental checking; they do not necessarily behave as ideal springs over a broad range.
+Hooke's law: warm-up
+Question Warm-upTextbook p. 93Open in question collection
+Show answerHide answer
+Worked answer
+Measure the unstretched hanging length L₀, then the length L₁ with mass m₁. The extension is x₁ = L₁ − L₀. If the rubber band approximately follows Hooke’s law over this range, predict x₂ = x₁(m₂/m₁) and x₃ = x₁(m₃/m₁).
+Predicted total lengths are L₀ + x₂ and L₀ + x₃. Rubber bands need not be linear, so compare your measured extensions with the predictions rather than assuming they agree.
+Spring constant: quick check
+Use this graph for the questions in this set.
+Question 1Textbook p. 94Open in question collection
+Show answerHide answer
+Worked answer
+The source omits the units of k, so a unique numerical force cannot be determined. Use F = kx with consistent length units.
+If the intended k is 3.2 N/cm, F = (3.2)(20) = 64 N. If k is 3.2 N/m, convert 20 cm to 0.20 m: F = (3.2)(0.20) = 0.64 N. The chapter’s graphs use centimetres, suggesting the first interpretation.
+Question 2Textbook p. 94Open in question collection
+Show answerHide answer
+Worked answer
+From Figure 3.3.1, a 1.0 N load produces 0.75 cm extension.
+k = ΔF/Δx = 1.0/0.75 = 1.33 N/cm ≈ 133 N/m. The graph’s slope has units; it is not dimensionless.
+Question 3Textbook p. 94Open in question collection
+Show answerHide answer
+Worked answer
+For the same spring within its elastic range, extension is proportional to weight and therefore mass.
+x₂ = x₁(m₂/m₁) = (10 cm)(5.0/2.5) = 20 cm.
+3.3 Review: Hooke's law
+Use this graph for the questions in this set.
+Question 1Textbook p. 97Open in question collection
+Show answerHide answer
+Worked answer
+The premise is a source error: the spring constant does have units. From F = kx, k = F/x, so its SI unit is N/m. On a graph with extension in centimetres, the slope is in N/cm. A coefficient of friction is dimensionless; a spring constant is not.
+Question 2Textbook p. 97Open in question collection
+Show answerHide answer
+Worked answer
+Using Figure 3.3.1, k = 1.0 N/0.75 cm ≈ 1.33 N/cm.
+F = (1.33 N/cm)x when x is measured in centimetres, or F = (133 N/m)x when x is in metres.
+Question 3Textbook p. 97Open in question collection
+Show answerHide answer
+Worked answer
+x = F/k = 4.0/(1.0/0.75) = 3.0 cm.
+F = kx = (1.0/0.75)(2.0) = 2.7 N (2.67 N before rounding).
+Question 4Textbook p. 97Open in question collection
+Show answerHide answer
+Worked answer
+At F = 5.0 N, the graph gives x ≈ 3.75 cm. The spring constant is k = F/x ≈ 5.0/3.75 = 1.33 N/cm ≈ 133 N/m.
+The source reverses the ratio: x/F = 0.75 cm/N is the compliance, the reciprocal of the spring constant.
+Question 5Textbook p. 97Open in question collection
+Show answerHide answer
+Worked answer
+Slope = (100 N − 0)/(5.0 cm − 0) = 20 N/cm = 2000 N/m.
+Fg = (20 N/cm)x, with x in centimetres.
+x = 80.0/20 = 4.0 cm.
+Fg = (20)(3.0) = 60 N.
+BC Science Chapter 3 / Textbook pp. 95–96      
+9 Elastic balances and calibration
+Investigation 3-3: another way to weigh
+Figure 3.3.2, textbook p. 95. The clamped stick bends under the load. Read the pointer against the vertical ruler, then use the calibrated force-versus-depression relationship to find the load's weight.
+Figure 3.3.2 shows a metre stick clamped horizontally, with 80.0 cm overhanging the bench. The large paper clip holds the masses, and a pointer beside the vertical ruler shows how far the free end moves downward.
+How it works: A load's weight bends the stick. The stick's elastic resistance supports the load at rest. Within a small, repeatable range, a larger force produces a proportionally larger depression, so the stick can serve as a calibrated elastic balance.
+Calibrate before weighing an unknown object:
+Record the unloaded pointer position. Measure depression y from that position, rather than using the ruler's absolute reading.
+Hang known masses and calculate each weight Fg = mg. Record the corresponding depression.
+Plot force vertically against depression horizontally. The best-fit slope is the effective stiffness keff. For an approximately linear graph through the origin, use Fg = keff y.
+Hang the unknown object, measure its depression, and read its weight from the graph or equation. If its mass is required, calculate m = Fg / g.
+Keep the same 80.0 cm overhang and clamp position during calibration and measurement; changing them changes the stick's stiffness. Remove the masses to check that the stick returns to its initial position. Compare the inferred weight with a commercial spring balance, as the investigation requests.
+Worked example: measuring an unknown mass
+A calibrated elastic balance has an effective stiffness of keff = 200 N/m. An unknown mass produces a depression of 3.00 cm while hanging at rest. Find the mass, using g = 9.81 N/kg.
+Show answerHide answer
+Worked answer
+y = 3.00 cm = 0.0300 m
+Fg = keff y = (200)(0.0300) = 6.00 N
+mg = 6.00 N
+m = 6.00 / 9.81 ≈ 0.612 kg
+This method relies on equilibrium and the elastic support still behaving within its calibrated range. In the textbook investigation, compare the force inferred from the stick with a commercial spring balance.
+Making a letter weigher
+The challenge replaces the metre stick with a strip of hacksaw blade. Use known masses to mark or calculate its scale. Check the unloaded zero, account for the holder's mass or tare it out, and check repeatability when adding and removing loads. A nonlinear or permanently deformed support will need a different calibration or replacement.
+Explaining your results
+Use your measured slope and uncertainties in the final answer. Do not copy illustrative investigation data as if you measured it. If loading and unloading do not give the same extension, report that observation and discuss whether the ideal elastic model is adequate.
+Investigation 3-3: another way to weigh
+Investigation procedure and data tables
+Question 1Textbook p. 96Open in question collection
+Show answerHide answer
+Worked answer
+Your force-versus-depression equation is F = kx, with k determined from the measured slope ΔF/Δx. If F is in newtons and x in centimetres, k is in N/cm. No numerical depression data are supplied.
+If your graph is straight and passes through the origin within uncertainty, F is directly proportional to x. A straight line with a nonzero intercept is linear but is not a direct proportion.
+Question 2Textbook p. 96Open in question collection
+Show answerHide answer
+Worked answer
+Your two measured forces are required. If neither method is treated as the accepted reference, percent difference = 100|Fgraph − Fbalance| / [(Fgraph + Fbalance)/2].
+For example, 2.00 N and 2.10 N would give 4.88%, but these example values are not your experimental result. If the balance is specified as a reference, use percent error relative to that balance reading instead.
+Investigation 3-3: make a letter weigher
+Investigation procedure and data tables
+Question 1Textbook p. 96Open in question collection
+Show answerHide answer
+Worked answer
+Clamp the strip securely, establish its unloaded position, and add known masses to mark the corresponding deflections in grams. Use several loads to test whether the scale spacing is linear, and stay within the elastic range.
+If F = kx with x in metres, then m = kx/g in kilograms, or m = 1000kx/g in grams. Check the scale with an additional known mass before using it to weigh letters.
+BC Science Chapter 3 / Textbook pp. 98–100      
+10 Chapter review and extra practice
+Choose the model before calculating
+Weight or local field: Fg = mg; use the specified g.
+Attraction between two masses: Fg = Gm₁m₂/r²; use centre-to-centre separation.
+Planetary field: g = GM/r²; at altitude, r = R + h.
+Dry sliding friction: Ffr = μk FN; find the actual normal force first.
+Spring deformation: F = kx; measure the change in length within the linear range.
+A hanging spring balance: combine kx = mg when the load is at rest.
+Units that prevent common errors
+Use kg, m, N, N/kg, and N/m consistently. Convert grams to kilograms, centimetres to metres, and kilometres to metres when necessary. Square the complete centre-to-centre distance in gravitation. Carry extra digits during calculation and round the final result appropriately.
+Graphs to recognise
+Fg against mass has slope g. Fg against 1/r² has slope Gm₁m₂. Kinetic friction against normal force has slope μk. Spring force against extension has slope k. Always inspect the axis quantities and units: reversing the axes reverses the slope's physical interpretation.
+A bridge to Newton's laws
+Extra Practice 11 asks about an accelerating desk. Its horizontal forces do not balance. Choose the push direction as positive, subtract the opposing friction, then use a = Fnet / m. This is Newton's second law, developed in Chapter 4. A force of 1 N produces an acceleration of 1 m/s² in a 1 kg mass.
+Work through the chapter questions
+Attempt each question before opening its answer. Include units and force directions when requested. For investigation questions, compare the explanation with your own procedure and data. The original chapter review and all 18 extra-practice questions follow below.
+Chapter 3 Review Questions
+Reference constants from section 3.1.
+Question 1Textbook p. 98Open in question collection
+Show answerHide answer
+Worked answer
+Fg = (6.67 × 10⁻¹¹)(5.98 × 10²⁴)(70.0)/(6.38 × 10⁶)² = 686 N downward.
+Check: mg = (70.0)(9.81) = 686.7 N ≈ 687 N. The small difference comes from rounded Earth data, which give g ≈ 9.799 N/kg.
+Question 2Textbook p. 98Open in question collection
+Show answerHide answer
+Worked answer
+Four Earth radii above the surface means r = R + 4R = 5R from the centre.
+F′ = F(R/r)² = 2500/5² = 100 N.
+Question 3Textbook p. 98Open in question collection
+Show answerHide answer
+Worked answer
+G is the universal constant in F = GMm/r². It is the same for all pairs of masses in this model.
+g = GM/r² is the local gravitational field strength, so it changes with the attracting body and distance from its centre. Treat g as approximately constant near a particular surface when the height range is small compared with that body’s radius.
+Question 4Textbook p. 98Open in question collection
+Show answerHide answer
+Worked answer
+Use g = GM/R² and divide each result by Earth’s g = 9.81 N/kg.
+Locationg (N/kg)g / gEarthMoon1.620.165Mercury3.310.338Ganymede1.470.150Sun’s surface27327.9
+Among the Moon, Ganymede, and Mercury, your weight is greatest on Mercury, since Fg = mg.
+Question 5Textbook p. 98Open in question collection
+Show answerHide answer
+Worked answer
+At 2.0 m: F = (6.67 × 10⁻¹¹)(75)(60.0)/2.0² = 7.5 × 10⁻⁸ N.
+At 1.0 m: F = (6.67 × 10⁻¹¹)(75)(60.0)/1.0² = 3.0 × 10⁻⁷ N, four times greater.
+The simple calculation treats the stated distances as centre-to-centre distances and the people as point masses. Each person experiences the same force magnitude toward the other.
+Question 6Textbook p. 98Open in question collection
+Show answerHide answer
+Worked answer
+The question supplies Mars’s mass but omits its radius. Using R = 3.43 × 10⁶ m from section 3.1 Review question 8:
+F = (6.67 × 10⁻¹¹)(6.4 × 10²³)(5.0 × 10¹)/(3.43 × 10⁶)² = 181.4 N ≈ 1.8 × 10² N toward Mars’s centre. Without a radius or local g, the numerical force is undetermined.
+Question 7Textbook p. 99Open in question collection
+Show answerHide answer
+Worked answer
+At constant speed, Ffr = 0.525 N. For a horizontal pull, N = 5.00 N.
+μk = 0.525/5.00 = 0.105.
+Question 8Textbook p. 99Open in question collection
+Show answerHide answer
+Worked answer
+Each crate contributes the same weight. Stacking two doubles N, so the required force is 2(224) = 448 N.
+Side by side, each crate still contributes 224 N of friction. Total force is 448 N. The greater apparent contact area does not change the model’s result.
+Question 9Textbook p. 99Open in question collection
+Show answerHide answer
+Worked answer
+For horizontal sliding, Fg = N = Ffr/μk = 0.25/0.0050 = 50 N.
+Question 10Textbook p. 99Open in question collection
+Show answerHide answer
+Worked answer
+Plot the five (extension, force) data points. They lie close to a line through the origin. A fit constrained through the origin gives k = ΣxF/Σx² ≈ 4.17 N/cm = 417 N/m. Thus F ≈ (4.17 N/cm)x.
+At x = 1.50 cm, F ≈ (4.17)(1.50) = 6.25 N.
+For F = 6.50 N, x ≈ 6.50/4.17 = 1.56 cm.
+Force versus spring extension00.511.522.50246810Extension (cm)Force (N)Force versus spring extension. Measured points; F ≈ 4.17x.
+Slightly different hand-drawn best-fit slopes and corresponding estimates are reasonable.
+Chapter 3 Extra Practice
+Reference constants from section 3.1.
+Question 1Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+The SI unit of mass is the kilogram (kg). Grams are also metric mass units, with 1000 g = 1 kg.
+Question 2Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+Earth: Fg = (150)(9.81) = 1471.5 N ≈ 1.5 × 10³ N.
+Using the stated one-sixth factor: FMoon = 1471.5/6 = 245.25 N ≈ 2.5 × 10² N.
+Question 3Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+They hit together if they start with the same vertical velocity and height. The Moon has negligible atmosphere, so the parachute provides essentially no aerodynamic slowing. Both have the same free-fall acceleration.
+Question 4Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+This time the stated distance is four radii from the centre: r = 4R.
+F′ = 1440(R/4R)² = 1440/16 = 90 N.
+Question 5Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+g = (6.67 × 10⁻¹¹)(7.3 × 10²²)/(1.785 × 10⁶)² = 1.528 N/kg ≈ 1.5 N/kg.
+Weight = mg ≈ (80)(1.528) = 122 N ≈ 1.2 × 10² N.
+The mass remains 80 kg.
+Question 6Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+Convert 35.5 cm to 0.355 m. F = Gm²/r² = (6.67 × 10⁻¹¹)(5.8)²/(0.355)² = 1.8 × 10⁻⁸ N. Each ball attracts the other with this magnitude.
+Question 7Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+For identical masses, F = Gm²/r², so m = √(Fr²/G).
+m = √[(5.5 × 10⁻⁷¹)(1.0)²/(6.67 × 10⁻¹¹)] = 9.1 × 10⁻³¹ kg. This is their gravitational attraction; the much stronger electrical force is not the force being calculated.
+Question 8Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+Use the values supplied in the exercise: F = (6.67 × 10⁻¹¹)(2 × 10³⁰)(6 × 10²³)/(6 × 10¹²)² = 2 × 10¹⁸ N (2.22 × 10¹⁸ N before rounding).
+The answer follows the exercise’s stated Pluto mass.
+Question 9Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+For the original box, μk = 2.5/40 = 0.0625. The combined weight is 40 + 80 = 120 N.
+F = μkN = (0.0625)(120) = 7.5 N.
+Question 10Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+μk = Ffr/N = 2.5/40 = 0.0625 ≈ 0.063.
+Question 11Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+Fnet = 157 − 123 = 34 N in the pushing direction.
+a = Fnet/m = 34/5.0 = 6.8 m/s² in that direction.
+Question 12Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+Total push = 2(300) + 2(425) = 1450 N. Constant speed means zero net force.
+The total resisting force described as friction is therefore 1.45 × 10³ N opposite the motion.
+Question 13Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+μk = 16.0/45.0 = 0.356.
+The upper block adds (1.8)(9.81) = 17.658 N of weight. Ntotal = 45.0 + 17.658 = 62.658 N. F = (16.0/45.0)(62.658) = 22.3 N, assuming the same lower block-table interface.
+Question 14Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+The coefficient stays unchanged if the surface pair and conditions stay the same. Tripling the load triples N and therefore the friction force, not μ.
+Question 15Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+The apparent area of contact has the least effect in the dry sliding-friction model used in this chapter, with weight and surface materials held fixed.
+Question 16Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+For the same spring, m/x is constant: m₂ = m₁x₂/x₁ = (2 kg)(35 cm)/(20 cm) = 3.5 kg.
+Question 17Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+The printed “applied force of 27.0 cm” is dimensionally invalid. If the intended force is 27.0 N, then k = 12 N/3.0 cm = 4.0 N/cm and x = 27.0/4.0 = 6.75 cm ≈ 6.8 cm.
+If instead the intended question asks for the force required to stretch the spring 27.0 cm, F = (4.0 N/cm)(27.0 cm) = 108 N.
+Question 18Textbook p. 100Open in question collection
+Show answerHide answer
+Worked answer
+The source omits the units of the spring constant. Taking k = 1.5 N/cm, consistent with the chapter’s centimetre graphs:
+Plot F = (1.5 N/cm)x, with x in centimetres and F in newtons. The corresponding points are in the table below.
+For 300 g: F = (0.300)(9.81) = 2.943 N; x = 2.943/1.5 = 1.96 cm.
+For 1200 g: F = (1.200)(9.81) = 11.772 N; x = 11.772/1.5 = 7.85 cm. This extends beyond the largest calibration mass and assumes the spring remains linear.
+Mass (g)Force (N)Stretch (cm)1000.9810.6542001.9621.3084003.9242.6165004.9053.2710009.816.54Spring with k = 1.5 N/cm02468036912Stretch (cm)Force (N)Spring with k = 1.5 N/cm. F = 1.5x.
+If k was intended to be 1.5 N/m, use metres instead: the 300 g and 1200 g stretches become 1.96 m and 7.85 m. Units must be specified to choose between these interpretations.
+All Physics 11 notesForces questions and homework toolsRead the textbook chapter
+Tutorial adapted from BC Science Physics 11, Edvantage Interactive (2012), Chapter 3 Forces, printed pp. 76–100 (PDF pp. 81–105). All 79 questions, original figures, shared references, procedures, and independently worked answers are reused from the Forces question collection. Examples and explanations clarify the models and units. All learning content is embedded and works offline; source links need their companion files or internet access.

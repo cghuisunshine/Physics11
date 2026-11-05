@@ -1,0 +1,80 @@
+30                 CHAPTE R 2 M OTION ALONG A STRAIG HT LI N E
+
+
+
+
+Sample Problem 2.06 Graphical integration a versus t, whiplash injury
+
+“Whiplash injury” commonly occurs in a rear-end collision                           Combining Eqs. 2-27 and 2-28, we can write
+where a front car is hit from behind by a second car. In the
+1970s, researchers concluded that the injury was due to the
+occupant’s head being whipped back over the top of the seat
+                                                                                    v1 $ v0 "   #areaandbetween acceleration curve
+                                                                                                          time axis, from t to t   $. (2-31)
+                                                                                                                                   0      1
+as the car was slammed forward. As a result of this finding,
+head restraints were built into cars, yet neck injuries in rear-             For convenience, let us separate the area into three regions
+end collisions continued to occur.                                           (Fig. 2-15b). From 0 to 40 ms, region A has no area:
+     In a recent test to study neck injury in rear-end collisions,                                         areaA " 0.
+a volunteer was strapped to a seat that was then moved                       From 40 ms to 100 ms, region B has the shape of a triangle, with
+abruptly to simulate a collision by a rear car moving at                     area
+10.5 km/h. Figure 2-15a gives the accelerations of the volun-                          areaB " 12(0.060 s)(50 m/s2) " 1.5 m/s.
+teer’s torso and head during the collision, which began at time
+t " 0. The torso acceleration was delayed by 40 ms because                   From 100 ms to 110 ms, region C has the shape of a rectan-
+during that time interval the seat back had to compress                      gle, with area
+against the volunteer. The head acceleration was delayed by                               areaC " (0.010 s)(50 m/s2) " 0.50 m/s.
+an additional 70 ms. What was the torso speed when the head
+                                                                             Substituting these values and v0 " 0 into Eq. 2-31 gives us
+began to accelerate?
+                                                                                               v1 $ 0 " 0 # 1.5 m/s # 0.50 m/s,
+KEY IDEA
+                                                                             or                      v1 " 2.0 m/s " 7.2 km/h.                  (Answer)
+We can calculate the torso speed at any time by finding an
+                                                                             Comments: When the head is just starting to move forward,
+area on the torso a(t) graph.
+                                                                             the torso already has a speed of 7.2 km/h. Researchers argue
+Calculations: We know that the initial torso speed is v0 " 0                 that it is this difference in speeds during the early stage of a
+at time t0 " 0, at the start of the “collision.” We want the                 rear-end collision that injures the neck. The backward whip-
+torso speed v1 at time t1 " 110 ms, which is when the head                   ping of the head happens later and could, especially if there is
+begins to accelerate.                                                        no head restraint, increase the injury.
+
+                 100                                                                a
+
+                                                                                   50
+                                                       Head                                                                            The total area gives the
+      a (m/s2)
+
+
+
+
+                                                                                                               B       C               change in velocity.
+                 50                                                                        A
+                                  Torso                                      (b)
+                                                                                                                               t
+                                                                                                40                   100 110
+                                                                             Figure 2-15 (a) The a(t) curve of the torso and head of a volunteer
+(a)               0         40            80          120           160      in a simulation of a rear-end collision. (b) Breaking up the region
+                                          t (ms)                             between the plotted curve and the time axis to calculate the area.
+
+                  Additional examples, video, and practice available at WileyPLUS
+
+
+
+Review & Summary
+Position The position x of a particle on an x axis locates the par-          Average Velocity When a particle has moved from position x1
+ticle with respect to the origin, or zero point, of the axis.The position    to position x2 during a time interval -t " t2 $ t1, its average velocity
+is either positive or negative, according to which side of the origin        during that interval is
+the particle is on, or zero if the particle is at the origin. The positive
+direction on an axis is the direction of increasing positive numbers;                                          -x   x $ x1
+                                                                                                      vavg "      " 2        .                       (2-2)
+the opposite direction is the negative direction on the axis.                                                  -t    t2 $ t1
+                                                                             The algebraic sign of vavg indicates the direction of motion (vavg is a
+Displacement The displacement -x of a particle is the change
+                                                                             vector quantity). Average velocity does not depend on the actual
+in its position:
+                                                                             distance a particle moves, but instead depends on its original and
+                                 -x " x2 $ x1.                      (2-1)
+                                                                             final positions.
+Displacement is a vector quantity. It is positive if the particle has              On a graph of x versus t, the average velocity for a time interval
+moved in the positive direction of the x axis and negative if the            -t is the slope of the straight line connecting the points on the curve
+particle has moved in the negative direction.                                that represent the two ends of the interval.

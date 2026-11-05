@@ -1,0 +1,47 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+      7.  To slide a metal puck across a greased sheet of metal      10.  A student added masses to the end of a hanging 
+          at constant speed requires a force of 0.525 N. If the           spring  then measured the amount of extension  or 
+          force of gravity on the puck is 5.00 N  what is the             stretch  caused by the force of gravity on each mass. 
+          coefficient of friction between the puck and the                The following readings were obtained:
+          greased metal
+                                                                     Mass  kg              0.200  0.400  0.600  0.800  1.000
+                                                                     Force of gravity  N   1.96  3.92  5.88  7.84  9.80
+                                                                     Extension  cm         0.47  0.93  1.41  1.89  2.35
+
+                                                                         a   Plot a graph with force of gravity  Fg  on the 
+                                                                             y-axis and extension  x  on the x-axis. Determine 
+                                                                             the slope of the graph in appropriate units. Write 
+      8.  a    The force of gravity on a wooden crate is 560 N.              an equation describing how the force of gravity 
+               It can be pushed along a certain floor at steady              varies with the extension.
+               speed if a horizontal force of 224 N is applied to 
+               it. How much horizontal force will be needed to 
+               move a stack of two crates at the same steady 
+               speed  
+
+
+
+
+          b   What force will be needed if the two crates are 
+              not stacked but tied to one another side by side
+
+                                                                         b   Use both your graph and your equation to figure 
+                                                                             out the force of gravity that would stretch the 
+                                                                             spring 1.50 cm.
+
+
+
+
+      9.  The coefficient of kinetic friction between a rubber 
+          disc and the ice is 0.0050. If the force of friction is 
+          0.25 N  what is the force of gravity on the rubber 
+          disc
+                                                                         c   Use both your graph and your equation to figure 
+                                                                             out how much stretch would occur in the spring 
+                                                                             when the force of gravity is 6.50 N.
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                Chapter 3   Forces  99

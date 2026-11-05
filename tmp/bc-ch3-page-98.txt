@@ -1,0 +1,61 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+      3.3  Hooke's Law
+
+         Warm Up
+         Take three different known masses and a rubber band. Measure the length of the rubber band as it hangs from 
+         a hook. Add the smallest mass and measure the distance the rubber band stretches. Predict how far the rubber 
+         band will stretch with your other two masses. Test each one and record your prediction below.
+
+         ___________________________________________________________________________________________
+
+         ___________________________________________________________________________________________
+
+         ___________________________________________________________________________________________
+
+
+
+
+                                   Figure 3.3.1 is a graph showing how the stretch of a certain spring varies with the force of 
+      Spring Constant             
+                                   gravity acting on it. This is not only a linear graph  but also a direct proportion. When the 
+                                   force of gravity on the spring is 1.0 N  the stretch is 0.75 cm. When the force is doubled to 
+                                   2.0 N  the stretch doubles to 1.50 cm. If the force is tripled to 3.0 N  the stretch also triples 
+                                   to 2.25 cm.
+                                         If a force is exerted on an object  such as a spring or a block of metal  the object 
+                                   will be stretched or compressed. If the amount of stretching or compression  x  is small 
+                                   compared with the length of the object  then x is proportional to the force  F  exerted on 
+                                   the object. Figure 3.3.1 illustrates this proportionality. In Figure 3.3.1  stretch is given the 
+                                   symbol x  and the straight-line graph through  0 0  suggests that Fgx x or that Fg = k x.  
+                                   The slope of the graph is the spring constant  k.
+
+                                                                        Load vs. Stretch on a Spring Balance
+
+                                                              5.00
+
+
+                                                              4.00
+                                    Force of gravity  Fg  N
+
+
+
+
+                                                              3.00
+
+
+                                                              2.00
+
+
+                                                              1.00
+
+
+                                                                0
+                                                                  0    1.00     2.00      3.00     4.00        5.00
+                                                                                  Stretch  x  cm
+
+                                    Figure 3.3.1  The amount of stretch in a spring is proportional to the amount of force 
+                                    exerted on the spring.
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                             Chapter 3   Forces  93

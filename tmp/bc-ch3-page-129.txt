@@ -1,0 +1,48 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+                                            The time intervals on both sides of the equation are the same because both forces 
+                                      act over the same interval of time. So the equation can be simplified to:
+                                                                                mBvB  =  o mAvA
+                                            Therefore                        mAvA    mBvB  =  0
+                                            or                                  pA     pB   =   0
+
+                                      Other Examples of the Law of Conservation of Momentum 
+                                      If you have ever played pool or billiards you will be familiar with the law of conservation 
+                                      of momentum. When the cue ball  or white ball  hits another ball  momentum is 
+                                      conserved. For example  if all the momentum is transferred from the cue ball to the 
+                                      billiard ball  the cue ball will stop and the billiard ball will move. 
+
+
+     Sample Problem 4.4.1  Conservation of Momentum 
+     A railway car of mass 6.0 ¨ 103 kg is coasting along a track with a velocity of 5.5 m/s when suddenly a 3.0 ¨ 103 kg 
+     load of sulphur is dumped into the car. What is its new velocity
+
+     What to Think About                                   How to Do It
+     1. What do I know about the problem                   The momentum of the railway car will not   change 
+                                                           because of the law of conservation of momentum.
+
+                                                           Let initial mass be m1 and initial velocity be v1. 
+                                                           The final mass of the railway car will be m2 and the 
+                                                           final velocity v2.
+
+     2. What am I trying to solve                          Solve for the final velocity v2.
+
+
+
+
+     3. What formula applies to this situation             m1v1  =  m2v2 
+
+     4. Find the final velocity v2.                            6.0 w 103 kg 5.5 m/s  =  6.0 w 103 kg   
+                                                                                                    3.0 w 103 kg v2
+                                                           33 w 103 kgtm/s  =   9.0 w 103 kg v2
+                                                                   33  103 kgrm/s
+                                                           v2 =      9.0  103 kg
+                                                               = 3.7 m/s
+                                                                           
+                                                           The rail car's new velocity is 3.7 m/s
+
+
+
+
+   124  Chapter 4   Newton's Laws of Motion                                    ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

@@ -1,0 +1,54 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+      Part 2:  Preparing Your Own Tape
+      1.  The class as a team will prepare and analyze tapes for each of the situations in Figure 4.2.2. If your class is large 
+          enough  compare duplicated data for any potential sources of error.
+      2.  Use the technique you used to measure acceleration in an earlier chapter. Remember that a group of six dots 
+          represents 0.10 s and that the average speeds for each interval are plotted mid-way through each time interval 
+          and not at the end of the interval.
+      3.  Prepare your graph. Label it carefully with the unbalanced force used  2.0 N  4.0 N  6.0 N  or 8.0 N  and the mass 
+          of the cart system. 
+      4.  The most important measurement you need is the acceleration of the cart. You get this from the slope of the 
+          graph. Express the acceleration in cm/s2. You will share this information with the rest of the class.
+
+
+      Part 3:  Analyzing Class Data
+      1.  Prepare the following tables of data  summarizing class results.
+
+          Table 4.2.1   Acceleration vs. Unbalanced Force                    Table 4.2.2   Acceleration vs Mass   unbalanced force constant
+
+                       mass constant                           
+            Unbalanced Force             Acceleration                                                                    1      1
+                  F  N                     a  cm/s2                               Mass  m       Acceleration  a         mass m
+                                                                                 mass units         cm/s2                      
+                         0                      0                                                                      mass unitso1
+
+                      2.0                                                           1.0                                      1.0
+
+                      4.0                                                           2.0                                       0.50
+
+                      6.0                                                           3.0                                       0.33
+
+                      8.0                                                           4.0                                       0.25
+                                                                                                                                           
+
+      2.  Plot a graph of acceleration  y-axis  against unbalanced force  x-axis .
+      3.  Plot a graph of acceleration against mass.
+      4.  Plot a graph of acceleration against the reciprocal of mass  1/m .
+
+      Concluding Questions
+      1.  Describe how the speed of a cart changes when a constant unbalanced force pulls it.
+      2.  According to your first graph  a vs. F  how does acceleration depend on unbalanced force  Does your graph 
+          suggest that acceleration is directly proportional to unbalanced force  Support your answer with your data.
+      3   According to your second and third graphs  how does the acceleration of the cart vary when the mass is 
+          doubled  tripled  and quadrupled
+      4   Write an equation for the third graph  complete with the numerical value and units for the slope.
+      5   What were some of the experimental difficulties you encountered in this investigation  which would make it 
+          difficult to obtain ideal results
+
+
+
+
+   114  Chapter 4   Newton's Laws of Motion                                                 ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

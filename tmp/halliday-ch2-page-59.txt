@@ -1,0 +1,81 @@
+                                                                                  2-4 CONSTANT ACCE LE RATION                              23
+
+
+
+
+2-4 CONSTANT ACCELERATION
+Learning Objectives
+After reading this module, you should be able to . . .               2.14 Calculate a particle’s change in velocity by integrating
+2.13 For constant acceleration, apply the relationships be-             its acceleration function with respect to time.
+   tween position, displacement, velocity, acceleration, and         2.15 Calculate a particle’s change in position by integrating
+   elapsed time (Table 2-1).                                            its velocity function with respect to time.
+
+Key Ideas
+● The following five equations describe the motion of a particle with constant acceleration:
+                                                         1 2
+  v " v0 # at,                      x $ x0 " v0t #         at ,
+                                                         2
+                                           1                                      1 2
+  v2 " v 20 # 2a(x $ x0),           x $ x0 " (v # v)t,            x $ x0 " vt $     at .
+                                           2 0                                    2
+These are not valid when the acceleration is not constant.
+
+
+
+
+Constant Acceleration: A Special Case
+In many types of motion, the acceleration is either constant or approximately so.                               x
+For example, you might accelerate a car at an approximately constant rate when                                                  x(t)
+a traffic light turns from red to green. Then graphs of your position, velocity,
+
+
+
+
+                                                                                                 Position
+and acceleration would resemble those in Fig. 2-9. (Note that a(t) in Fig. 2-9c is
+constant, which requires that v(t) in Fig. 2-9b have a constant slope.) Later when                                      Slope varies
+you brake the car to a stop, the acceleration (or deceleration in common                                 x0
+language) might also be approximately constant.                                            (a)                  0
+                                                                                                                                       t
+     Such cases are so common that a special set of equations has been derived
+for dealing with them. One approach to the derivation of these equations is given                       Slopes of the position graph
+in this section. A second approach is given in the next section. Throughout both                        are plotted on the velocity graph.
+sections and later when you work on the homework problems, keep in mind that
+these equations are valid only for constant acceleration (or situations in which you                            v
+can approximate the acceleration as being constant).                                                                            v(t)
+     First Basic Equation. When the acceleration is constant, the average accel-
+                                                                                                 Velocity
+
+
+
+
+eration and instantaneous acceleration are equal and we can write Eq. 2-7, with
+                                                                                                                        Slope = a
+some changes in notation, as
+                                                 v $ v0                                                  v0
+                                   a " aavg "           .                                  (b)                  0
+                                                                                                                                       t
+                                                  t$0
+Here v0 is the velocity at time t " 0 and v is the velocity at any later time t. We can                 Slope of the velocity graph is
+recast this equation as                                                                                 plotted on the acceleration graph.
+
+                                    v " v0 # at.                              (2-11)                            a
+                                                                                                 Acceleration
+
+
+
+
+                                                                                                                                a(t)
+                                                                                                                        Slope = 0
+As a check, note that this equation reduces to v " v0 for t " 0, as it must. As a fur-
+ther check, take the derivative of Eq. 2-11. Doing so yields dv/dt " a, which is the       (c)                  0
+                                                                                                                                       t
+definition of a. Figure 2-9b shows a plot of Eq. 2-11, the v(t) function; the function
+is linear and thus the plot is a straight line.                                            Figure 2-9 (a) The position x(t) of a particle
+      Second Basic Equation. In a similar manner, we can rewrite Eq. 2-2 (with a           moving with constant acceleration. (b) Its
+                                                                                           velocity v(t), given at each point by the
+few changes in notation) as
+                                                                                           slope of the curve of x(t). (c) Its (constant)
+                                               x $ x0                                      acceleration, equal to the (constant) slope
+                                      vavg "
+                                                t$0                                        of the curve of v(t).

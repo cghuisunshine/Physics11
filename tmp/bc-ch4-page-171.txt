@@ -1,0 +1,67 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   6.  A light bulb is immersed in 0.500 kg of water  which                               7.  Why are coastal climates more moderate than inland 
+       has a specific heat capacity of 4200 J/kg/¡C. The                                      climates
+       apparatus is well insulated  so that essentially all of 
+       the radiated heat is used to warm the water. Every 
+       100 s  the temperature of the water is recorded. The 
+       graph below summarizes the data.
+
+                                                  Temperature vs. Time
+
+                         100.0
+
+                          90.0
+
+                          80.0
+
+                          70.0
+       Temperature  ¡C
+
+
+
+
+                          60.0
+
+                          50.0
+                                                                                          8.  A 60 W incandescent light bulb is 5% efficient. A  
+                          40.0
+                                                                                              60 W fluorescent bulb is 15% efficient. How much 
+                          30.0
+                                                                                              more light will the fluorescent light bulb give off 
+                          20.0
+                                                                                              than the incandescent bulb  in the same period of 
+                          10.0
+                                                                                              time
+                             0
+                              0    1    2    3    4    5  6  7  8       9    10  11  12
+                                                        Time  s x 100
+
+
+
+
+    
+           a   What is the slope of the above graph  expressed 
+               in proper units and in correct significant figures
+
+
+
+
+    
+           b   Use the slope to calculate the useful heating 
+                                                                                          9.  A 1500 W kettle warms 1.00 kg of water from 18¡C to 
+               power of the light bulb.
+                                                                                              88¡C in a time of 3.6 min. How efficient is the kettle
+
+
+
+
+    
+           c   What is the approximate power rating of the 
+               bulb used in this experiment
+
+
+
+
+   166  Chapter 5   Energy                                                                      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

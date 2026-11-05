@@ -1,0 +1,50 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+     Practice Problems 5.1.2  Calculating Power
+     1.  An airport baggage handler lifts 42 pieces of luggage  averaging 24 kg each  through a height of 1.6 m onto a 
+         baggage cart  in a time of 3.6 min. In this situation  what is the power of the baggage handler
+
+
+
+
+     2.  How much work or energy  in J  does a 150 W light bulb convert to heat and light in 1.0 h
+
+
+
+
+     3.  A mechanical lifting system is approximately 25% efficient. This means that only 25% of the energy used to 
+         lift a mass is converted into useable energy. The rest is mostly lost as heat. If 1.5 w 108 W is used for 2.0 h  how 
+         much energy  in J  of useable work is produced   How much heat is produced
+
+
+
+
+                                Power is commonly measured in horsepower. Eventually  horsepower may be replaced 
+   What's Watt                 
+                                by the kilowatt  which is a metric unit  but the horsepower  non-metric  will persist for 
+                                some time because it is firmly entrenched in our vocabulary.
+                                                The Scottish engineer James Watt is famous for his improved design of a 
+                                steam engine  invented earlier by Thomas Newcomen. Watt's new engine was used at 
+                                first for pumping water out of coal mines  work that previously had been done by horses. 
+                                Customers wanted to know how many horses Watt's new engines would replace. So that 
+                                he could answer their questions  Watt did the following:
+                                    1.  He measured the force  in pounds  exerted by the average horse over a distance  
+                                        measured in feet. 
+                                    2.  He calculated the amount of work the horse did  in a unit he called foot-pounds.
+                                    3.  He measured the time it took the horse to do the work.
+                                    4.  He calculated how much work the horse would do in one second  which is the 
+                                        average power of the horse. He found this to be 550 foot-pounds per second. This 
+                                        was taken to be the average power of one horse equal to one horsepower. 
+                                                                                      foot-pounds
+                                                                1 horsepower  = 550                  
+                                                                                        second
+
+                                      The modern unit for power is the watt  W . One horsepower is equivalent to 746 W  
+                                 which is almost 3/4 kW. The following example finds the power in an electric motor and 
+                                 them shows how to convert watts to horsepower.
+
+
+
+
+   134  Chapter 5   Energy                                                 ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

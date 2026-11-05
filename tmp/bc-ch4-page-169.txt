@@ -1,0 +1,60 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+     Investigation 5-4  Measuring the Power of a Hot Plate 
+     Purpose
+     To measure the power of a hot plate indirectly  by measuring the heat transferred to a known mass of water in a 
+     given time
+     Procedure
+     1.  Measure out 300 mL of water into a 400 mL beaker using a graduated cylinder. Since water has a density of  
+         1 g/mL  this will give you 300 g or 0.300 kg of water.
+     2.  Arrange the thermometer as in Figure 5.4.1  so that 
+         it is not touching the bottom of the beaker.                                       thermometer 
+     3.  Let the hot plate warm up for a minute or two                                      clamp
+         and then start your stopwatch and record the                                        thermometer
+         temperature of the water as precisely as you           ring stand
+         can. Record the temperature of the water every                                         400 mL beaker
+         half-minute for 10 min.  Stop the experiment if 
+         the water comes to a boil and use only your data                                        300 mL water
+         for temperatures less than boiling temperature.         stopwatch
+         Record your data in a table like Table 5.4.2.
+     4.  Plot a graph with temperature on the y-axis and                                           hot plate
+         time on the x-axis.
+     5.  Find the slope of your graph  which is HT/Ht. Units 
+         will be ¡C/s.                                           Figure 5.4.1  Step 2
+
+         Table 5.4.2  Data for Investigation 5-4
+
+                  Time
+                                        0          30   60     90       120      150       180      210      240        ¤
+                    s
+           Temperature  ¡C
+
+
+     6.  Since the energy transferred to the water from the hot plate is E = mcHT  then the power of the hot plate would 
+         be:
+                                               P =  HE   =  mcHT   = mc ¨  slope  
+      
+                                                    Ht        Ht
+       Calculate the power of your hot plate using m = 0.300 kg  c = 4200 J/kg/¡C  and the slope of your graph.
+     7.  Find a cooled hot plate and read the label on it to see what the manufacturer's power rating is for it.
+     Concluding Questions
+     1.  What was your calculated power for the hot plate
+     2.  Calculate the percent difference between your calculated power and the manufacturer's rating  as follows:
+                                           manufacturer's rating o calculated power rating
+                          % difference =                                                    ¨ 100%
+                                                   manufacturer's power rating
+
+     3.  Assuming your calculations were correct  and the manufacturer's rating was also correct  what is the ratio of the 
+         power you calculated  heat absorbed by the water per second  to the hot plate's rated power  heat given off by 
+         the hot plate per second . This ratio is the efficiency of the hot plate. You can convert your decimal fraction to a 
+         percent by multiplying by 100.  
+                                                        calculated power rating
+                                       efficiency =                                   ¨ 100%
+                                                      manufacturer's power rating
+
+     4.  Why is the efficiency less than 100%
+
+
+   164  Chapter 5   Energy                                               ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

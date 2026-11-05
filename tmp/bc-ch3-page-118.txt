@@ -1,0 +1,58 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+         Investigation 4-2  Newton's Second Law of Motion
+         Purpose
+         To investigate how the change in speed of a cart is affected by 
+          a   the amount of unbalanced force  and  b   the amount of mass in the cart
+
+         Procedure
+         Part 1:  Setting up and moving the cart
+         1.  Set up the apparatus as shown in Figure 4.2.2 a . Start with three 200 g masses in the cart. Suspend a mass of 
+             200 g from the end of a string  which passes over a pulley at the end of the bench. The force of gravity on this 
+             mass is 1.96 N or approximately 2.0 N.
+         2.  Lift one end of your laboratory table so that the cart rolls toward the pulley at a steady speed. This can be 
+             checked with a ticker tape and your recording timer. If your bench cannot be lifted  do the experiment on a 
+             length of board  which can be raised at one end. What this lifting does is balance friction with a little help from 
+             gravity.
+         3.  The class will now share the task of preparing and analyzing ticker-tape records of speed vs. time for each of 
+             the situations in Figure 4.2.2. Each lab group of two students will choose one of the eight set-ups and prepare 
+             two tapes or one for each partner. Note that the whole system of cart-plus-string-plus-hanging-mass moves as 
+             one unit. The mass of the whole system must be kept constant. This means that once you build your system you 
+             must not add any additional masses.
+             Varying the Unbalanced Force                Varying the Mass
+              a   F = 2.0 N                               e   F = 2.0 N
+
+
+                                                                   M = 1 cart   200 g
+                        M = 1 cart   800 g                              1 mass unit
+
+
+             b   F = 4.0 N                                f   F = 2.0 N
+
+
+                                                                   M = 2 cart   400 g
+                       M = 1 cart   800 g                               2 mass units
+
+
+              c   F = 6.0 N                               g   F = 2.0 N
+
+
+                                                                   M = 3 cart   600 g
+                        M = 1 cart   800 g                              3 mass units
+
+
+
+              d   F = 8.0 N                               h   F = 2.0 N
+
+
+                        M = 1 cart   800 g                         M = 4 cart   800 g
+                                                                        4 mass units
+
+
+
+             Figure 4.2.2  Cart and mass set-ups
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                              Chapter 4   Newton's Laws of Motion  113

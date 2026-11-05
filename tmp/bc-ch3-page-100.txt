@@ -1,0 +1,49 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+         Investigation 3-3  Another Way to Weigh
+         Purpose
+         To make a igravity measurerw out of a metre stick
+         Introduction
+         In an earlier course  you may have done an experiment where you added known masses to a spring and graphed 
+         the stretch of the spring against the force of gravity on the masses. In Investigation 3-3  you will learn how you can 
+         measure the force of gravity using a metre stick.
+         Procedure
+         1.  Set up the apparatus in Figure 3.3.2. Clamp a metre stick horizontally so that 80.0 cm overhangs the edge of 
+             your bench.  Use a piece of cardboard to protect the metre stick from damage by the clamp.  Tape a large paper 
+             clip to the end of the metre stick and bend the clip so that masses can be hung from it.
+
+
+                                                           paper clip pointer
+                                   cardboard
+
+
+
+
+                                                        large paper clip
+                                        C-clamps
+
+
+
+
+            Figure 3.3.2  Step 1
+
+
+         2.  Mount another metre stick or ruler vertically so that the depression of the horizontal metre stick can be 
+             measured. Align the top edge of the horizontal metre stick with a convenient point on the vertical metre stick  
+             such as 0.0 cm. Another paper clip could be used as a pointer.
+
+         3.  Hang a 50.0 g mass on the paper clip and measure the depression or vertical drop of the end of the horizontal 
+             metre stick  estimating to the nearest one-tenth of a millimetre. The force of gravity on a 50.0 g mass is 0.490 N. 
+             Record the force of gravity and the depression in a table like Table 3.3.1.
+
+         4.  Measure the depression caused by each of the forces of gravity listed in Table 3.3.1. When you finish reading 
+             the depression for 4.90 N  remove the masses and see whether the depression returns to 0.00 cm. If it does not  
+             check that the metre stick is securely clamped. If it is not  tighten the clamps and repeat your measurements. Do 
+             not dismantle your set-up yet.
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                 Chapter 3   Forces  95

@@ -1,0 +1,59 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+      4.2  Newton's Second Law of Motion
+
+         Warm Up
+         Take an empty spool of thread and wrap a string or thread around it three or four times  leaving the end loose so 
+         you can pull on it. Place the spool on the floor and pull on the thread horizontally to make the spool move to the 
+         right.
+
+         1.  Based on your observations  what can you say about the direction of the force applied to the spool and the 
+             acceleration of the spool
+
+             _________________________________________________________________________________________
+
+             _________________________________________________________________________________________
+
+         2.  Would the direction of the force or the acceleration of the spool be affected if the thread were wrapped 
+             around the spool in the opposite direction  Explain your answer.
+
+             _________________________________________________________________________________________
+
+             _________________________________________________________________________________________
+
+
+
+
+                                   In his second law of motion  Newton dealt with the problem of what happens when 
+      Demning Newton's            
+                                   an unbalanced force acts on a body. Newton's second law of motion states: If an 
+      Second Law of                unbalanced force acts on a body  the body will accelerate. The rate at which it accelerates 
+      Motion                       depends directly on the unbalanced force and inversely on the mass of the body.
+
+                                                                                   F
+                                                                               a =
+                                                                                   m
+
+
+                                          The direction in which the body accelerates will be the same direction as the 
+                                    unbalanced force. The measuring unit for force is the newton  N . The measuring unit 
+                                    for mass is the kilogram  kg  and for acceleration is m/s2. Therefore  using F = ma  one 
+                                    newton can be defined as the force needed to accelerate one kilogram at a rate of one 
+                                    metre per second per second.
+                                          Whenever Newton's second law is used  it is understood that the force F in the 
+                                    equation F = ma is the unbalanced force acting on the body. This unbalanced force is also 
+                                    called the net force. To calculate the unbalanced force acting on a 1.0 kg mass falling due 
+                                    to gravity  you use Newton's second law:
+                                          F = ma = 1.00 kg w 9.81 m/s2 = 9.81 kgtm/s2 = 9.81 N
+                                          To calculate the rate at which the mass accelerates  you rearrange Newton's second 
+                                    law to give:
+                                               F     9.81 N       9.81 kgtm/s2
+                                          a =   =              =                = 9.81 m/s2
+                                              m      1.00 kg         1.00 kg
+
+                                          The acceleration of the mass is g or 9.81 m/s2. 
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                              Chapter 4   Newton's Laws of Motion  109

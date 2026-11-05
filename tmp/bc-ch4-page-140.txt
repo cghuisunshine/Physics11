@@ -1,0 +1,28 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+        Sample Problem 5.1.3  Calculating Horsepower
+        An electric motor is used  with a pulley and a rope  to lift a 650 N load from the road up to a height of 12 m. This 
+        job is done in a time of 11 s. What is the power output of the motor
+
+        What to Think About                 How to Do It
+                                                        =  W
+                                                   work
+        1.  Find the correct formula.       P = 
+                                                   time   Ht
+
+        2.  Calculate the power in          P =  Fd  =  650 N 12 m
+            watts. 
+                                                 Ht         11 s
+                                               = 7.1  102 W
+
+        3.  Calculate the horsepower.       The often-used unit of power  1 horsepower  is equivalent  
+                                            to 7.5 w 102 W.
+                                            The motor in this question would have a horsepower of
+                                              7.1 w 102 W = 0.95 HP
+                                            7.5 w 102 W/HP
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                Chapter 5   Energy  135

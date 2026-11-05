@@ -1,0 +1,52 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+     Investigation 5-3C  Absorbing Infrared Radiation
+     Purpose
+     To find out if a black surface or a shiny surface absorbs more infrared radiation in a given time
+     Procedure
+     1.  Obtain two used  black plastic film containers. Leave one black  but cover the 
+         other container with aluminum foil  as shown in Figure 5.3.8.
+     2.  Fill each container with water  and measure the temperature of the water in each 
+         one. Prepare a chart like Table 5.3.1. Enter the starting temperature in the column 
+         under 0 min.
+     3.  Set the containers on insulating Styrofoam cups  the same distance  50 cm  
+         from a source of infrared light  such as a 100-W lamp. After 1 min  measure 
+         the temperatures of the water in each container. Two students might read the 
+         temperatures simultaneously. Record these temperatures in your table.
+     4.  Repeat the measurements after 2  3  4  and 5 min. If necessary  continue taking 
+         readings until a definite pattern is established.
+
+
+
+
+                                                                                                         Figure 5.3.8  Radiation
+         Table 5.3.1  Temperatures of Containers of Water Warmed by a Lamp
+
+
+                    Time  minutes                      0         1           2          3         4         5
+                Temperature  ¡C  BLACK
+                Temperature  ¡C  SHINY
+
+
+     Concluding Questions
+     1.  Which container  if either  warmed up more
+     2.  Try to explain what you observed.
+     Challenge
+     1.  A Crooke's radiometer  named after Sir William Crookes  1832o1919  is shown 
+         in Figure 5.3.9. Four vanes are connected to a pivot in a glass bulb  which is 
+         partially  but not completely  evacuated. There are some air molecules inside 
+         the container. One side of each vane is black.  The other side may be white or 
+         silvered.
+               Design an experiment using an infrared light source  a mirror  and a 
+         radiometer to test whether infrared radiation reflects from a shiny surface the 
+         way visible light does.
+
+
+
+
+                                                                                                       Figure 5.3.9  Crooke's radiometer
+
+
+   158  Chapter 5   Energy                                                       ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

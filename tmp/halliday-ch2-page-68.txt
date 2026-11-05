@@ -1,0 +1,78 @@
+32             CHAPTE R 2 M OTION ALONG A STRAIG HT LI N E
+
+
+give the velocity v(t) for (a) the dropped egg                                                apple’s release, the balloon is accelerating upward with a magni-
+and (b) the thrown egg? (Curves A and B are                                                   tude of 4.0 m/s2 and has an upward velocity of magnitude 2 m/s.
+parallel; so are C, D, and E; so are F and G.)                                                What are the (a) magnitude and (b) direction of the acceleration of
+                                                                               1              the apple just after it is released? (c) Just then, is the apple moving
+8 The following equations give the velocity
+                                                                                              upward or downward, or is it stationary? (d) What is the magni-
+v(t) of a particle in four situations: (a) v " 3; (b)
+                                                                                              tude of its velocity just then? (e) In the next few moments, does the
+v " 4t 2 # 2t $ 6; (c) v " 3t $ 4; (d) v " 5t 2 $ 3.
+                                                                                              speed of the apple increase, decrease, or remain constant?
+To which of these situations do the equations of
+Table 2-1 apply?                                                                              11 Figure 2-23 shows that a particle moving along an x axis un-
+                                                                               2              dergoes three periods of acceleration. Without written computa-
+9 In Fig. 2-22, a cream tangerine is thrown di-                                               tion, rank the acceleration periods according to the increases
+rectly upward past three evenly spaced windows                                                they produce in the particle’s velocity, greatest first.
+of equal heights. Rank the windows according
+to (a) the average speed of the cream tangerine
+while passing them, (b) the time the cream tan-
+gerine takes to pass them, (c) the magnitude of                                3
+                                                                                                                                                           (3)
+
+
+
+
+                                                                                                                 Acceleration a
+the acceleration of the cream tangerine while
+passing them, and (d) the change -v in the
+speed of the cream tangerine during the pas-                                                                                      (1)
+sage, greatest first.                                                 Figure 2-22
+                                                                     Question 9.                                                               (2)
+10 Suppose that a passenger intent on lunch
+during his first ride in a hot-air balloon accidently drops an apple                                                                        Time t
+over the side during the balloon’s liftoff. At the moment of the                                                                  Figure 2-23 Question 11.
+
+
+Problems
+            Tutoring problem available (at instructor’s discretion) in WileyPLUS and WebAssign
+  SSM       Worked-out solution available in Student Solutions Manual                WWW Worked-out solution is at
+                                                                                                                                   http://www.wiley.com/college/halliday
+  • – •••   Number of dots indicates level of problem difficulty                        ILW     Interactive solution is at
+            Additional information available in The Flying Circus of Physics and at flyingcircusofphysics.com
+
+
+
+Module 2-1 Position, Displacement, and Average Velocity                                       “Cogito ergo zoom!” (I think, therefore I go fast!). In 2001, Sam
+•1 While driving a car at 90 km/h, how far do you move while                                  Whittingham beat Huber’s record by 19.0 km/h. What was
+your eyes shut for 0.50 s during a hard sneeze?                                               Whittingham’s time through the 200 m?
+•2 Compute your average velocity in the following two cases:                                  ••7 Two trains, each having a speed of 30 km/h, are headed at
+(a) You walk 73.2 m at a speed of 1.22 m/s and then run 73.2 m at a                           each other on the same straight track. A bird that can fly 60 km/h
+speed of 3.05 m/s along a straight track. (b) You walk for 1.00 min                           flies off the front of one train when they are 60 km apart and heads
+at a speed of 1.22 m/s and then run for 1.00 min at 3.05 m/s along a                          directly for the other train. On reaching the other train, the (crazy)
+straight track. (c) Graph x versus t for both cases and indicate how                          bird flies directly back to the first train, and so forth. What is the to-
+the average velocity is found on the graph.                                                   tal distance the bird travels before the trains collide?
+•3 SSM WWW An automobile travels on a straight road for                                       ••8            Panic escape. Figure 2-24 shows a general situation in
+40 km at 30 km/h. It then continues in the same direction for an-                             which a stream of people attempt to escape through an exit door
+other 40 km at 60 km/h. (a) What is the average velocity of the car                           that turns out to be locked. The people move toward the door at
+during the full 80 km trip? (Assume that it moves in the positive x                           speed vs " 3.50 m/s, are each d " 0.25 m in depth, and are sepa-
+direction.) (b) What is the average speed? (c) Graph x versus t and                           rated by L " 1.75 m. The
+indicate how the average velocity is found on the graph.                                      arrangement in Fig. 2-24                   L          L         L
+                                                                                              occurs at time t " 0. (a) At
+•4 A car moves uphill at 40 km/h and then back downhill at 60
+                                                                                              what average rate does the
+km/h. What is the average speed for the round trip?
+                                                                                              layer of people at the door          d           d        d
+•5 SSM The position of an object moving along an x axis is given                              increase? (b) At what time                                Locked
+by x " 3t $ 4t 2 # t 3, where x is in meters and t in seconds. Find the                       does the layer’s depth reach                              door
+position of the object at the following values of t: (a) 1 s, (b) 2 s,                        5.0 m? (The answers reveal
+(c) 3 s, and (d) 4 s. (e) What is the object’s displacement between t " 0                                                            Figure 2-24 Problem 8.
+                                                                                              how quickly such a situation
+and t " 4 s? (f) What is its average velocity for the time interval                           becomes dangerous.)
+from t " 2 s to t " 4 s? (g) Graph x versus t for 0 0 t 0 4 s and indi-                       ••9 ILW In 1 km races, runner 1 on track 1 (with time 2 min, 27.95 s)
+cate how the answer for (f) can be found on the graph.                                        appears to be faster than runner 2 on track 2 (2 min, 28.15 s).
+•6 The 1992 world speed record for a bicycle (human-powered                                   However, length L2 of track 2 might be slightly greater than length
+vehicle) was set by Chris Huber. His time through the measured                                L1 of track 1. How large can L2 $ L1 be for us still to conclude that
+200 m stretch was a sizzling 6.509 s, at which he commented,                                  runner 1 is faster?

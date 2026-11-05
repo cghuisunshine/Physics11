@@ -1,0 +1,86 @@
+                                               2-1 POSITION, DISPL ACE M E NT, AN D AVE RAG E VE LOCITY                                                      17
+
+
+
+Sample Problem 2.01 Average velocity, beat-up pickup truck
+
+You drive a beat-up pickup truck along a straight road for          Calculation: Here we find
+8.4 km at 70 km/h, at which point the truck runs out of gaso-                                               -x   10.4 km
+line and stops. Over the next 30 min, you walk another                                             vavg "      "
+                                                                                                            -t    0.62 h
+2.0 km farther along the road to a gasoline station.
+                                                                                                          " 16.8 km/h % 17 km/h.                    (Answer)
+(a) What is your overall displacement from the beginning
+of your drive to your arrival at the station?                       To find vavg graphically, first we graph the function x(t) as
+                                                                    shown in Fig. 2-5, where the beginning and arrival points on
+KEY IDEA                                                            the graph are the origin and the point labeled as “Station.”Your
+                                                                    average velocity is the slope of the straight line connecting
+Assume, for convenience, that you move in the positive di-          those points; that is, vavg is the ratio of the rise (-x " 10.4 km)
+rection of an x axis, from a first position of x1 " 0 to a second   to the run (-t " 0.62 h), which gives us vavg " 16.8 km/h.
+position of x2 at the station. That second position must be at
+x2 " 8.4 km # 2.0 km " 10.4 km. Then your displacement -x           (d) Suppose that to pump the gasoline, pay for it, and walk
+along the x axis is the second position minus the first position.   back to the truck takes you another 45 min. What is your
+                                                                    average speed from the beginning of your drive to your
+Calculation: From Eq. 2-1, we have                                  return to the truck with the gasoline?
+      -x " x2 $ x1 " 10.4 km $ 0 " 10.4 km.           (Answer)
+                                                                    KEY IDEA
+Thus, your overall displacement is 10.4 km in the positive
+direction of the x axis.                                            Your average speed is the ratio of the total distance you
+(b) What is the time interval -t from the beginning of your         move to the total time interval you take to make that move.
+drive to your arrival at the station?
+                                                                    Calculation: The total distance is 8.4 km # 2.0 km # 2.0
+                                                                    km " 12.4 km. The total time interval is 0.12 h # 0.50 h #
+KEY IDEA
+                                                                    0.75 h " 1.37 h. Thus, Eq. 2-3 gives us
+We already know the walking time interval -twlk (" 0.50 h),                                                12.4 km
+but we lack the driving time interval -tdr. However, we                                           savg "           " 9.1 km/h.                      (Answer)
+                                                                                                            1.37 h
+know that for the drive the displacement -xdr is 8.4 km and
+the average velocity vavg,dr is 70 km/h. Thus, this average
+velocity is the ratio of the displacement for the drive to the                                             Driving ends, walking starts.
+                                                                                        x
+time interval for the drive.
+Calculations: We first write                                                        12
+                                                                                                                                 Station        Slope of this
+                               -xdr                                                 10                     Walkin
+                                                                                                                 g
+                     vavg,dr "      .                                                                                                           line gives
+                                                                    Position (km)
+
+
+
+
+                               -tdr                                                                                                             average
+                                                                                    8
+Rearranging and substituting data then give us                                                                                                  velocity.
+                                                                                            ing
+
+
+
+
+                                                                                    6
+                                                                                         Driv
+
+
+
+
+                    -xdr       8.4 km                                                                                                           How far:
+             -tdr "         "         " 0.12 h.                                     4                                                           ∆ x = 10.4 km
+                    vavg,dr   70 km/h
+                                                                                    2
+So,         -t " -tdr # -twlk
+                                                                                    0                                                      t
+               " 0.12 h # 0.50 h " 0.62 h.           (Answer)                           0           0.2         0.4        0.6
+                                                                                                             Time (h)
+(c) What is your average velocity vavg from the beginning of
+your drive to your arrival at the station? Find it both numer-                                                                                 How long:
+ically and graphically.                                                                                                                        ∆t = 0.62 h
+                                                                    Figure 2-5 The lines marked “Driving” and “Walking” are the
+KEY IDEA                                                            position – time plots for the driving and walking stages. (The plot
+                                                                    for the walking stage assumes a constant rate of walking.) The
+From Eq. 2-2 we know that vavg for the entire trip is the ratio     slope of the straight line joining the origin and the point labeled
+of the displacement of 10.4 km for the entire trip to the time      “Station” is the average velocity for the trip, from the beginning
+interval of 0.62 h for the entire trip.                             to the station.
+
+
+          Additional examples, video, and practice available at WileyPLUS

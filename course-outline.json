@@ -1,0 +1,1160 @@
+{
+  "title": "Physics 11",
+  "sources": {
+    "outline": [
+      "https://www.vsb.bc.ca/vln/physics-11",
+      "https://curriculum.gov.bc.ca/curriculum/science/11/physics"
+    ],
+    "textbook": "Physics text (TOC).pdf",
+    "textbook_title": "Halliday & Resnick Fundamentals of Physics, 10th edition, Extended, Jearl Walker",
+    "page_numbering": "PDF page is the 1-based viewer page; relevant printed pages are PDF page minus 36."
+  },
+  "units": [
+    {
+      "number": 1,
+      "title": "Math Tools & Measurement",
+      "summary": "Build the measurement, algebra, graphing, and trigonometry habits that every later unit uses.",
+      "page": "tutorials/unit-01-math-tools-measurement.html",
+      "notes": "content/unit-01-math-tools-measurement.md",
+      "textbook_chapters": "Ch. 1; Ch. 2 §2-1 to §2-3; Ch. 3 §3-1",
+      "inquiry": "Measure a small object five times with a ruler. State the ruler resolution, calculate the mean and spread, and distinguish repeated-reading variation from a possible zero error. Then time several walks over the same marked distance. Plot position against time, draw a best-fit line, and explain the slope with units. Change one method to reduce uncertainty and compare the evidence.",
+      "lessons": [
+        {
+          "id": "lesson-1-1",
+          "title": "SI units and dimensional reasoning",
+          "goal": "Convert a measurement to SI units and check whether an equation has consistent dimensions.",
+          "equations": [
+            "v = Δx/Δt  [m/s]",
+            "a = Δv/Δt  [m/s²]",
+            "1 N = 1 kg·m/s²",
+            "1 J = 1 N·m",
+            "1 W = 1 J/s"
+          ],
+          "textbook_references": [
+            {
+              "section": "1-1",
+              "pdf_page": 37,
+              "printed_page": 1
+            },
+            {
+              "section": "1-2",
+              "pdf_page": 41,
+              "printed_page": 5
+            },
+            {
+              "section": "1-3",
+              "pdf_page": 42,
+              "printed_page": 6
+            }
+          ]
+        },
+        {
+          "id": "lesson-1-2",
+          "title": "Scientific notation and significant figures",
+          "goal": "Report a calculation to a precision justified by its measurements.",
+          "equations": [
+            "(a × 10ᵐ)(b × 10ⁿ) = ab × 10ᵐ⁺ⁿ",
+            "(a × 10ᵐ)/(b × 10ⁿ) = (a/b) × 10ᵐ⁻ⁿ"
+          ],
+          "textbook_references": [
+            {
+              "section": "1-1",
+              "pdf_page": 37,
+              "printed_page": 1
+            }
+          ]
+        },
+        {
+          "id": "lesson-1-3",
+          "title": "Accuracy, precision, and uncertainty",
+          "goal": "Describe the quality of data and judge whether an experimental result agrees with a model.",
+          "equations": [
+            "relative uncertainty = absolute uncertainty / |measured value|",
+            "percent uncertainty = relative uncertainty × 100%",
+            "percent error = |experimental - reference| / |reference| × 100%"
+          ],
+          "textbook_references": [
+            {
+              "section": "1-1",
+              "pdf_page": 37,
+              "printed_page": 1
+            },
+            {
+              "section": "1-2",
+              "pdf_page": 41,
+              "printed_page": 5
+            }
+          ]
+        },
+        {
+          "id": "lesson-1-4",
+          "title": "Algebra and a repeatable problem-solving method",
+          "goal": "Rearrange a physical equation before substituting values and evaluate the result.",
+          "equations": [
+            "v = v₀ + at  →  t = (v - v₀)/a",
+            "v² = v₀² + 2aΔx  →  Δx = (v² - v₀²)/(2a)"
+          ],
+          "textbook_references": [
+            {
+              "section": "2-4",
+              "pdf_page": 59,
+              "printed_page": 23
+            }
+          ]
+        },
+        {
+          "id": "lesson-1-5",
+          "title": "Graphing, slope, and area",
+          "goal": "Extract physical meaning and correct units from the slope or area of a graph.",
+          "equations": [
+            "slope = rise/run = Δ(vertical quantity)/Δ(horizontal quantity)",
+            "rectangle area = base × height",
+            "triangle area = ½ × base × height"
+          ],
+          "textbook_references": [
+            {
+              "section": "2-1",
+              "pdf_page": 49,
+              "printed_page": 13
+            },
+            {
+              "section": "2-2",
+              "pdf_page": 54,
+              "printed_page": 18
+            },
+            {
+              "section": "2-3",
+              "pdf_page": 56,
+              "printed_page": 20
+            },
+            {
+              "section": "2-6",
+              "pdf_page": 65,
+              "printed_page": 29
+            }
+          ]
+        },
+        {
+          "id": "lesson-1-6",
+          "title": "Trigonometry and vector components",
+          "goal": "Resolve a vector into signed perpendicular components and reconstruct its magnitude and direction.",
+          "equations": [
+            "Aₓ = A cos θ; Aᵧ = A sin θ",
+            "Rₓ = Aₓ + Bₓ; Rᵧ = Aᵧ + Bᵧ",
+            "R = √(Rₓ² + Rᵧ²)",
+            "tan θ = Rᵧ/Rₓ  (check quadrant)"
+          ],
+          "textbook_references": [
+            {
+              "section": "3-1",
+              "pdf_page": 76,
+              "printed_page": 40
+            },
+            {
+              "section": "3-2",
+              "pdf_page": 82,
+              "printed_page": 46
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Motion",
+      "summary": "Describe one-dimensional motion with words, vectors, graphs, and constant-acceleration equations.",
+      "page": "tutorials/unit-02-motion.html",
+      "notes": "content/unit-02-motion.md",
+      "textbook_chapters": "Ch. 2; Ch. 3 §§3-1, 3-2",
+      "inquiry": "Record a toy cart or walking motion against a measured background. Use several equally spaced times to build a position-time table, then estimate interval velocities. Identify a nearly uniform segment and an accelerating segment. Explain the effect of video frame rate, camera angle, and position resolution on the conclusion. Never infer constant acceleration from only two positions.",
+      "lessons": [
+        {
+          "id": "lesson-2-1",
+          "title": "Position, displacement, distance, and average velocity",
+          "goal": "Distinguish the length of a path from a signed change in position.",
+          "equations": [
+            "Δx = x_f - x_i",
+            "v_avg = Δx/Δt",
+            "speed_avg = total distance/Δt"
+          ],
+          "textbook_references": [
+            {
+              "section": "2-1",
+              "pdf_page": 49,
+              "printed_page": 13
+            }
+          ]
+        },
+        {
+          "id": "lesson-2-2",
+          "title": "Instantaneous velocity and interpreting position graphs",
+          "goal": "Use a local graph slope to infer velocity and recognize a turning point.",
+          "equations": [
+            "v at an instant ≈ slope of tangent to x-t graph",
+            "speed = |v|"
+          ],
+          "textbook_references": [
+            {
+              "section": "2-2",
+              "pdf_page": 54,
+              "printed_page": 18
+            }
+          ]
+        },
+        {
+          "id": "lesson-2-3",
+          "title": "Acceleration and the signs of motion",
+          "goal": "Calculate acceleration and decide whether speed increases or decreases.",
+          "equations": [
+            "a_avg = (v_f - v_i)/Δt",
+            "Δv = v_f - v_i"
+          ],
+          "textbook_references": [
+            {
+              "section": "2-3",
+              "pdf_page": 56,
+              "printed_page": 20
+            }
+          ]
+        },
+        {
+          "id": "lesson-2-4",
+          "title": "Constant-acceleration equations and their derivation",
+          "goal": "Choose and apply a kinematic equation under the constant-acceleration assumption.",
+          "equations": [
+            "v = v₀ + at",
+            "Δx = v₀t + ½at²",
+            "v² = v₀² + 2aΔx",
+            "Δx = ½(v₀ + v)t",
+            "Δx = vt - ½at²"
+          ],
+          "textbook_references": [
+            {
+              "section": "2-4",
+              "pdf_page": 59,
+              "printed_page": 23
+            }
+          ]
+        },
+        {
+          "id": "lesson-2-5",
+          "title": "Signed graph areas and multi-stage trips",
+          "goal": "Calculate displacement and distance separately from a velocity-time graph.",
+          "equations": [
+            "Δx = signed area under v-t graph",
+            "distance = area under |v|-t graph",
+            "Δv = signed area under a-t graph"
+          ],
+          "textbook_references": [
+            {
+              "section": "2-6",
+              "pdf_page": 65,
+              "printed_page": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Projectiles",
+      "summary": "Separate horizontal and vertical motion, then reconnect them through a shared flight time.",
+      "page": "tutorials/unit-03-projectiles.html",
+      "notes": "content/unit-03-projectiles.md",
+      "textbook_chapters": "Ch. 2 §2-5; Ch. 4 §§4-1 to 4-4",
+      "inquiry": "Use a soft ball rolling off a low surface, with an adult or teacher supervising the setup. Predict its landing distance from height and horizontal launch speed. Record several trials and compare with the no-drag model. Discuss uncertainty in the launch point and speed. An alternative is to collect simulated data from the trajectory explorer and clearly label it as model data, not an experiment.",
+      "lessons": [
+        {
+          "id": "lesson-3-1",
+          "title": "Vertical motion and free fall",
+          "goal": "Solve upward and downward motion with a consistent sign convention.",
+          "equations": [
+            "vᵧ = v₀ᵧ - gt",
+            "Δy = v₀ᵧt - ½gt²",
+            "vᵧ² = v₀ᵧ² - 2gΔy"
+          ],
+          "textbook_references": [
+            {
+              "section": "2-5",
+              "pdf_page": 63,
+              "printed_page": 27
+            }
+          ]
+        },
+        {
+          "id": "lesson-3-2",
+          "title": "Independent components and horizontal launches",
+          "goal": "Find flight time vertically and range horizontally for a horizontal launch.",
+          "equations": [
+            "aₓ = 0; aᵧ = -g",
+            "Δx = v₀ₓt",
+            "Δy = v₀ᵧt - ½gt²",
+            "for horizontal launch from height h: t = √(2h/g)"
+          ],
+          "textbook_references": [
+            {
+              "section": "4-3",
+              "pdf_page": 103,
+              "printed_page": 67
+            },
+            {
+              "section": "4-4",
+              "pdf_page": 106,
+              "printed_page": 70
+            }
+          ]
+        },
+        {
+          "id": "lesson-3-3",
+          "title": "Angled launches and equal-height range",
+          "goal": "Resolve an angled launch and identify when the shortcut range formula applies.",
+          "equations": [
+            "v₀ₓ = v₀ cos θ; v₀ᵧ = v₀ sin θ",
+            "t_flight = 2v₀ sin θ/g  (equal heights)",
+            "R = v₀² sin(2θ)/g  (equal heights)",
+            "h_max above launch = v₀² sin²θ/(2g)"
+          ],
+          "textbook_references": [
+            {
+              "section": "4-4",
+              "pdf_page": 106,
+              "printed_page": 70
+            }
+          ]
+        },
+        {
+          "id": "lesson-3-4",
+          "title": "Unequal launch and landing heights",
+          "goal": "Solve the vertical quadratic and select the physical flight time.",
+          "equations": [
+            "½gt² - v₀ᵧt + Δy = 0",
+            "t = [v₀ᵧ ± √(v₀ᵧ² - 2gΔy)]/g",
+            "Δx = v₀ₓt"
+          ],
+          "textbook_references": [
+            {
+              "section": "4-4",
+              "pdf_page": 106,
+              "printed_page": 70
+            }
+          ]
+        },
+        {
+          "id": "lesson-3-5",
+          "title": "Velocity during flight and evaluating the model",
+          "goal": "Reconstruct the velocity vector at a chosen time and explain ideal-model limitations.",
+          "equations": [
+            "vₓ = v₀ₓ",
+            "vᵧ = v₀ᵧ - gt",
+            "speed = √(vₓ² + vᵧ²)",
+            "velocity angle: tan φ = vᵧ/vₓ  (check signs)"
+          ],
+          "textbook_references": [
+            {
+              "section": "4-2",
+              "pdf_page": 100,
+              "printed_page": 64
+            },
+            {
+              "section": "4-4",
+              "pdf_page": 106,
+              "printed_page": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Forces",
+      "summary": "Use interactions and free-body diagrams to explain motion, contact forces, friction, and apparent weight.",
+      "page": "tutorials/unit-04-forces.html",
+      "notes": "content/unit-04-forces.md",
+      "textbook_chapters": "Ch. 5; Ch. 6 §6-1; Ch. 7 §7-4",
+      "inquiry": "Pull a block with a spring scale on a level surface. Record the largest force just before sliding and the force during nearly constant-speed sliding. Change the load while keeping the surfaces the same. Plot friction versus normal force and discuss the dry-friction model. Use small loads and keep hands clear of falling masses. Predict before measuring; explain a specific source of uncertainty.",
+      "lessons": [
+        {
+          "id": "lesson-4-1",
+          "title": "Newton’s first and second laws",
+          "goal": "Relate net force to acceleration and distinguish balanced motion from rest.",
+          "equations": [
+            "ΣF⃗ = ma⃗",
+            "ΣFₓ = maₓ; ΣFᵧ = maᵧ",
+            "1 N = 1 kg·m/s²"
+          ],
+          "textbook_references": [
+            {
+              "section": "5-1",
+              "pdf_page": 130,
+              "printed_page": 94
+            }
+          ]
+        },
+        {
+          "id": "lesson-4-2",
+          "title": "Free-body diagrams and interaction pairs",
+          "goal": "Draw only forces acting on the chosen object and identify Newton’s third-law pairs.",
+          "equations": [
+            "F⃗_A on B = -F⃗_B on A",
+            "ΣFₓ = maₓ; ΣFᵧ = maᵧ"
+          ],
+          "textbook_references": [
+            {
+              "section": "5-1",
+              "pdf_page": 130,
+              "printed_page": 94
+            },
+            {
+              "section": "5-3",
+              "pdf_page": 142,
+              "printed_page": 106
+            }
+          ]
+        },
+        {
+          "id": "lesson-4-3",
+          "title": "Mass, gravity, and normal force",
+          "goal": "Calculate gravitational force and determine the normal force from vertical dynamics.",
+          "equations": [
+            "F_g = mg",
+            "level surface with upward applied force: N + F_up - mg = maᵧ",
+            "for aᵧ = 0: N = mg - F_up"
+          ],
+          "textbook_references": [
+            {
+              "section": "5-2",
+              "pdf_page": 138,
+              "printed_page": 102
+            }
+          ]
+        },
+        {
+          "id": "lesson-4-4",
+          "title": "Tension and spring forces",
+          "goal": "Model an ideal rope and use Hooke’s law within a spring’s elastic range.",
+          "equations": [
+            "Fₛ = -kx  (signed force along spring axis)",
+            "|Fₛ| = k|x|",
+            "at rest for a hanging mass: T = mg"
+          ],
+          "textbook_references": [
+            {
+              "section": "5-2",
+              "pdf_page": 138,
+              "printed_page": 102
+            },
+            {
+              "section": "7-4",
+              "pdf_page": 195,
+              "printed_page": 159
+            }
+          ]
+        },
+        {
+          "id": "lesson-4-5",
+          "title": "Static and kinetic friction",
+          "goal": "Choose the correct friction model and determine friction before assuming motion.",
+          "equations": [
+            "0 ≤ fₛ ≤ μₛN",
+            "fₛ,max = μₛN",
+            "fₖ = μₖN"
+          ],
+          "textbook_references": [
+            {
+              "section": "6-1",
+              "pdf_page": 160,
+              "printed_page": 124
+            }
+          ]
+        },
+        {
+          "id": "lesson-4-6",
+          "title": "Elevators and apparent weight",
+          "goal": "Predict a scale’s support force from acceleration rather than direction of travel.",
+          "equations": [
+            "N - mg = maᵧ",
+            "N = m(g + aᵧ)",
+            "free fall: aᵧ = -g → N = 0"
+          ],
+          "textbook_references": [
+            {
+              "section": "5-2",
+              "pdf_page": 138,
+              "printed_page": 102
+            },
+            {
+              "section": "5-3",
+              "pdf_page": 142,
+              "printed_page": 106
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "2D Forces & Simple Machines",
+      "summary": "Resolve forces on ramps, analyze connected objects, and explain how simple machines exchange force for distance.",
+      "page": "tutorials/unit-05-2d-forces-simple-machines.html",
+      "notes": "content/unit-05-2d-forces-simple-machines.md",
+      "textbook_chapters": "Ch. 3 §3-1; Ch. 5 §5-3; Ch. 6 §6-1; Ch. 12 §§12-1, 12-2; Ch. 7 §§7-2, 7-6",
+      "inquiry": "Compare lifting a small load vertically with pulling it up a gentle ramp. Measure force and travel distance, then compare input work with the change in gravitational potential energy. Research an example of a simple machine using a publicly shared source from a local First Nation or an Indigenous-led organization. Cite the community and source, respect sharing protocols, and explain the mechanical principle without treating diverse First Peoples as one culture.",
+      "lessons": [
+        {
+          "id": "lesson-5-1",
+          "title": "Angled forces and equilibrium",
+          "goal": "Apply Newton’s second law independently along two axes.",
+          "equations": [
+            "ΣFₓ = maₓ; ΣFᵧ = maᵧ",
+            "Fₓ = F cos θ; Fᵧ = F sin θ",
+            "level floor, aᵧ = 0, upward pull: N = mg - F sin θ"
+          ],
+          "textbook_references": [
+            {
+              "section": "3-1",
+              "pdf_page": 76,
+              "printed_page": 40
+            },
+            {
+              "section": "5-3",
+              "pdf_page": 142,
+              "printed_page": 106
+            }
+          ]
+        },
+        {
+          "id": "lesson-5-2",
+          "title": "Inclined planes without friction",
+          "goal": "Choose axes along a ramp and resolve gravity relative to those axes.",
+          "equations": [
+            "F_g,parallel = mg sin θ",
+            "F_g,perpendicular = mg cos θ",
+            "N = mg cos θ  (no other perpendicular forces)",
+            "a_down = g sin θ  (frictionless)"
+          ],
+          "textbook_references": [
+            {
+              "section": "5-3",
+              "pdf_page": 142,
+              "printed_page": 106
+            },
+            {
+              "section": "6-1",
+              "pdf_page": 160,
+              "printed_page": 124
+            }
+          ]
+        },
+        {
+          "id": "lesson-5-3",
+          "title": "Friction on ramps and the threshold of slipping",
+          "goal": "Decide whether a block remains at rest and calculate acceleration after sliding begins.",
+          "equations": [
+            "rest possible if mg sin θ ≤ μₛmg cos θ",
+            "tan θ_threshold = μₛ",
+            "sliding down: a = g(sin θ - μₖ cos θ)"
+          ],
+          "textbook_references": [
+            {
+              "section": "6-1",
+              "pdf_page": 160,
+              "printed_page": 124
+            }
+          ]
+        },
+        {
+          "id": "lesson-5-4",
+          "title": "Connected masses and ideal pulleys",
+          "goal": "Write one equation per body and use the rope constraint to solve a system.",
+          "equations": [
+            "Atwood system, m₂ > m₁:",
+            "m₂g - T = m₂a",
+            "T - m₁g = m₁a",
+            "a = (m₂ - m₁)g/(m₁ + m₂)"
+          ],
+          "textbook_references": [
+            {
+              "section": "5-3",
+              "pdf_page": 142,
+              "printed_page": 106
+            }
+          ]
+        },
+        {
+          "id": "lesson-5-5",
+          "title": "Simple machines, mechanical advantage, and levers",
+          "goal": "Relate force advantage to travel distance and use torque balance for an ideal lever.",
+          "equations": [
+            "MA = F_out/F_in",
+            "IMA = d_in/d_out",
+            "ideal ramp: IMA = L/h",
+            "τ = F × perpendicular moment arm",
+            "ideal lever: F_in r_in = F_out r_out",
+            "efficiency = (MA/IMA) × 100%"
+          ],
+          "textbook_references": [
+            {
+              "section": "7-2",
+              "pdf_page": 187,
+              "printed_page": 151
+            },
+            {
+              "section": "7-6",
+              "pdf_page": 202,
+              "printed_page": 166
+            },
+            {
+              "section": "12-1",
+              "pdf_page": 363,
+              "printed_page": 327
+            },
+            {
+              "section": "12-2",
+              "pdf_page": 368,
+              "printed_page": 332
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Energy & Thermal Physics",
+      "summary": "Track work and energy in a defined system, calculate power and efficiency, and apply energy conservation to heating.",
+      "page": "tutorials/unit-06-energy-thermal-physics.html",
+      "notes": "content/unit-06-energy-thermal-physics.md",
+      "textbook_chapters": "Ch. 7; Ch. 8; Ch. 18 §§18-1, 18-4, 18-6",
+      "inquiry": "Design an insulated warm-water/cool-water mixing investigation. Measure masses and initial temperatures, predict equilibrium temperature, then measure it. Account for the cup and thermometer if their heat capacities matter. Compare the prediction and data, identify heat leakage and timing limitations, and propose improvements. Use warm rather than boiling water. Relate insulation choices to an energy-efficient structure using a properly attributed, publicly shared community source.",
+      "lessons": [
+        {
+          "id": "lesson-6-1",
+          "title": "Work and force-displacement graphs",
+          "goal": "Determine the sign and magnitude of work, including work by a changing force.",
+          "equations": [
+            "W = Fd cos θ  (constant force)",
+            "W = signed area under F_parallel-versus-position graph",
+            "1 J = 1 N·m"
+          ],
+          "textbook_references": [
+            {
+              "section": "7-2",
+              "pdf_page": 187,
+              "printed_page": 151
+            },
+            {
+              "section": "7-5",
+              "pdf_page": 198,
+              "printed_page": 162
+            }
+          ]
+        },
+        {
+          "id": "lesson-6-2",
+          "title": "Kinetic energy and the work-energy theorem",
+          "goal": "Use net work to calculate a change in speed without first finding time.",
+          "equations": [
+            "K = ½mv²",
+            "W_net = ΔK = K_f - K_i",
+            "v_f² = v_i² + 2W_net/m"
+          ],
+          "textbook_references": [
+            {
+              "section": "7-1",
+              "pdf_page": 185,
+              "printed_page": 149
+            },
+            {
+              "section": "7-2",
+              "pdf_page": 187,
+              "printed_page": 151
+            }
+          ]
+        },
+        {
+          "id": "lesson-6-3",
+          "title": "Potential energy and conservative forces",
+          "goal": "Choose a potential-energy reference and calculate gravitational or spring energy changes.",
+          "equations": [
+            "U_g = mgh; ΔU_g = mgΔh",
+            "U_s = ½kx²",
+            "W_conservative = -ΔU"
+          ],
+          "textbook_references": [
+            {
+              "section": "8-1",
+              "pdf_page": 213,
+              "printed_page": 177
+            },
+            {
+              "section": "7-4",
+              "pdf_page": 195,
+              "printed_page": 159
+            }
+          ]
+        },
+        {
+          "id": "lesson-6-4",
+          "title": "Conservation of energy with and without friction",
+          "goal": "Choose a system boundary and include thermal energy when mechanical energy decreases.",
+          "equations": [
+            "frictionless isolated model: K_i + U_i = K_f + U_f",
+            "with thermal increase: K_i + U_i + W_ext = K_f + U_f + ΔE_th",
+            "ΔE_th ≈ fₖd  (simple sliding model)"
+          ],
+          "textbook_references": [
+            {
+              "section": "8-2",
+              "pdf_page": 220,
+              "printed_page": 184
+            },
+            {
+              "section": "8-4",
+              "pdf_page": 227,
+              "printed_page": 191
+            },
+            {
+              "section": "8-5",
+              "pdf_page": 231,
+              "printed_page": 195
+            }
+          ]
+        },
+        {
+          "id": "lesson-6-5",
+          "title": "Power and efficiency",
+          "goal": "Distinguish energy from its transfer rate and calculate useful output.",
+          "equations": [
+            "P_avg = W/Δt = ΔE/Δt",
+            "P = Fv cos θ",
+            "η = E_useful/E_input × 100% = P_useful/P_input × 100%",
+            "1 W = 1 J/s"
+          ],
+          "textbook_references": [
+            {
+              "section": "7-6",
+              "pdf_page": 202,
+              "printed_page": 166
+            },
+            {
+              "section": "8-5",
+              "pdf_page": 231,
+              "printed_page": 195
+            }
+          ]
+        },
+        {
+          "id": "lesson-6-6",
+          "title": "Temperature, heat, and specific heat capacity",
+          "goal": "Calculate energy transfer for a temperature change without a phase change.",
+          "equations": [
+            "Q = mc(T_f - T_i)",
+            "c unit: J/(kg·K) or J/(kg·°C)",
+            "T_K = T_°C + 273.15",
+            "ΔT_K = ΔT_°C"
+          ],
+          "textbook_references": [
+            {
+              "section": "18-1",
+              "pdf_page": 550,
+              "printed_page": 514
+            },
+            {
+              "section": "18-4",
+              "pdf_page": 558,
+              "printed_page": 522
+            }
+          ]
+        },
+        {
+          "id": "lesson-6-7",
+          "title": "Thermal equilibrium and calorimetry",
+          "goal": "Apply energy conservation to objects reaching a shared final temperature.",
+          "equations": [
+            "ΣQ = 0  (insulated, no work or phase change)",
+            "m₁c₁(T_f - T₁) + m₂c₂(T_f - T₂) = 0",
+            "T_f = (m₁c₁T₁ + m₂c₂T₂)/(m₁c₁ + m₂c₂)"
+          ],
+          "textbook_references": [
+            {
+              "section": "18-1",
+              "pdf_page": 550,
+              "printed_page": 514
+            },
+            {
+              "section": "18-4",
+              "pdf_page": 558,
+              "printed_page": 522
+            },
+            {
+              "section": "18-6",
+              "pdf_page": 570,
+              "printed_page": 534
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Electricity",
+      "summary": "Use charge and energy conservation to solve DC circuits, real batteries, and electrical power problems.",
+      "page": "tutorials/unit-07-electricity.html",
+      "notes": "content/unit-07-electricity.md",
+      "textbook_chapters": "Ch. 24 §24-1; Ch. 26 §§26-1, 26-3 to 26-5; Ch. 27 §§27-1 to 27-3",
+      "inquiry": "With a teacher-approved low-voltage battery circuit, measure current through and voltage across a resistor at several settings. Plot V versus I and compare the slope with resistance. Repeat with series and parallel combinations and test junction and loop rules within uncertainty. Use only low-voltage classroom equipment; never investigate a wall outlet. Connect an ammeter in series and a voltmeter across the component.",
+      "lessons": [
+        {
+          "id": "lesson-7-1",
+          "title": "Charge, current, voltage, and resistance",
+          "goal": "Explain each circuit quantity and connect its definition to its unit.",
+          "equations": [
+            "I = Δq/Δt  (steady current)",
+            "V = ΔE/q  (energy per charge)",
+            "R = V/I",
+            "1 A = 1 C/s; 1 V = 1 J/C; 1 Ω = 1 V/A"
+          ],
+          "textbook_references": [
+            {
+              "section": "24-1",
+              "pdf_page": 721,
+              "printed_page": 685
+            },
+            {
+              "section": "26-1",
+              "pdf_page": 781,
+              "printed_page": 745
+            },
+            {
+              "section": "26-3",
+              "pdf_page": 788,
+              "printed_page": 752
+            }
+          ]
+        },
+        {
+          "id": "lesson-7-2",
+          "title": "Ohm’s law and electrical measurements",
+          "goal": "Identify an ohmic component and infer resistance from a graph or circuit measurements.",
+          "equations": [
+            "V = IR  (constant-R model)",
+            "R = slope of V-versus-I graph",
+            "I = slope of I-versus-V graph × V for a line through origin",
+            "slope of I-versus-V graph = 1/R"
+          ],
+          "textbook_references": [
+            {
+              "section": "26-4",
+              "pdf_page": 792,
+              "printed_page": 756
+            },
+            {
+              "section": "27-3",
+              "pdf_page": 824,
+              "printed_page": 788
+            }
+          ]
+        },
+        {
+          "id": "lesson-7-3",
+          "title": "Series circuits",
+          "goal": "Find equivalent resistance and distribute voltage along one unbranched current path.",
+          "equations": [
+            "R_eq = R₁ + R₂ + ...",
+            "I = V_source/R_eq",
+            "V_i = IR_i",
+            "V_source = V₁ + V₂ + ..."
+          ],
+          "textbook_references": [
+            {
+              "section": "27-1",
+              "pdf_page": 807,
+              "printed_page": 771
+            }
+          ]
+        },
+        {
+          "id": "lesson-7-4",
+          "title": "Parallel circuits and mixed networks",
+          "goal": "Recognize common nodes, find branch currents, and simplify a mixed circuit in stages.",
+          "equations": [
+            "1/R_eq = 1/R₁ + 1/R₂ + ...",
+            "for two branches: R_eq = R₁R₂/(R₁ + R₂)",
+            "I_total = I₁ + I₂ + ...",
+            "I_branch = V_branch/R_branch"
+          ],
+          "textbook_references": [
+            {
+              "section": "27-2",
+              "pdf_page": 817,
+              "printed_page": 781
+            }
+          ]
+        },
+        {
+          "id": "lesson-7-5",
+          "title": "Kirchhoff’s junction and loop rules",
+          "goal": "Write current and voltage equations with a consistent sign convention.",
+          "equations": [
+            "ΣI_in = ΣI_out",
+            "ΣΔV around a closed loop = 0",
+            "resistor along current: ΔV = -IR",
+            "source from - to +: ΔV = +ε"
+          ],
+          "textbook_references": [
+            {
+              "section": "27-1",
+              "pdf_page": 807,
+              "printed_page": 771
+            },
+            {
+              "section": "27-2",
+              "pdf_page": 817,
+              "printed_page": 781
+            }
+          ]
+        },
+        {
+          "id": "lesson-7-6",
+          "title": "EMF, internal resistance, and terminal voltage",
+          "goal": "Distinguish a battery’s energy-per-charge supply from the voltage delivered under load.",
+          "equations": [
+            "discharging: V_terminal = ε - Ir",
+            "I = ε/(R_load + r)",
+            "P_internal = I²r",
+            "P_source = εI; P_load = V_terminal I"
+          ],
+          "textbook_references": [
+            {
+              "section": "27-1",
+              "pdf_page": 807,
+              "printed_page": 771
+            }
+          ]
+        },
+        {
+          "id": "lesson-7-7",
+          "title": "Electrical power, energy, and transmission",
+          "goal": "Calculate electrical energy and explain why high-voltage transmission reduces resistive loss.",
+          "equations": [
+            "P = VI",
+            "for a resistor: P = I²R = V²/R",
+            "E = Pt",
+            "1 kWh = 3.6 × 10⁶ J",
+            "P_line loss = I²R_line"
+          ],
+          "textbook_references": [
+            {
+              "section": "26-5",
+              "pdf_page": 796,
+              "printed_page": 760
+            },
+            {
+              "section": "27-1",
+              "pdf_page": 807,
+              "printed_page": 771
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Waves & Sound",
+      "summary": "Describe mechanical waves, predict interference and resonance, and connect wave properties to sound.",
+      "page": "tutorials/unit-08-waves-sound.html",
+      "notes": "content/unit-08-waves-sound.md",
+      "textbook_chapters": "Ch. 15 §§15-1, 15-6; Ch. 16 §§16-1, 16-2, 16-5, 16-7; Ch. 17",
+      "inquiry": "Observe a pulse on a gently stretched rope or use the wave explorer. Track the pulse and one marked point of the medium separately. Then compare standing-wave patterns in an ideal string and an air column. For a low-volume sound investigation, collect resonance or beat data and report room conditions, length measurement, and sound-speed assumptions. Discuss environmental noise and the limits of loudness comparisons without calibrated instruments.",
+      "lessons": [
+        {
+          "id": "lesson-8-1",
+          "title": "Generating waves: energy and medium motion",
+          "goal": "Distinguish transverse and longitudinal waves and separate wave travel from particle motion.",
+          "equations": [
+            "transverse: particle motion ⟂ propagation",
+            "longitudinal: particle motion ∥ propagation",
+            "wavefront = points at the same phase"
+          ],
+          "textbook_references": [
+            {
+              "section": "16-1",
+              "pdf_page": 480,
+              "printed_page": 444
+            },
+            {
+              "section": "17-1",
+              "pdf_page": 515,
+              "printed_page": 479
+            }
+          ]
+        },
+        {
+          "id": "lesson-8-2",
+          "title": "Amplitude, wavelength, frequency, period, and speed",
+          "goal": "Read wave properties from spatial and time graphs and use v = fλ.",
+          "equations": [
+            "f = 1/T",
+            "v = fλ = λ/T",
+            "string wave speed = √(F_tension/μ_linear)",
+            "μ_linear = string mass/string length"
+          ],
+          "textbook_references": [
+            {
+              "section": "15-1",
+              "pdf_page": 449,
+              "printed_page": 413
+            },
+            {
+              "section": "16-1",
+              "pdf_page": 480,
+              "printed_page": 444
+            },
+            {
+              "section": "16-2",
+              "pdf_page": 488,
+              "printed_page": 452
+            }
+          ]
+        },
+        {
+          "id": "lesson-8-3",
+          "title": "Reflection, refraction, transmission, and diffraction",
+          "goal": "Predict wave behavior at a boundary or opening and state which quantities change.",
+          "equations": [
+            "at a stationary boundary: f₁ = f₂",
+            "λ₂/λ₁ = v₂/v₁",
+            "refraction: sin θ₁/sin θ₂ = v₁/v₂",
+            "angles measured from the normal"
+          ],
+          "textbook_references": [
+            {
+              "section": "16-7",
+              "pdf_page": 501,
+              "printed_page": 465
+            },
+            {
+              "section": "17-1",
+              "pdf_page": 515,
+              "printed_page": 479
+            }
+          ]
+        },
+        {
+          "id": "lesson-8-4",
+          "title": "Superposition and interference",
+          "goal": "Add simultaneous displacements and relate path difference to reinforcement or cancellation.",
+          "equations": [
+            "y_resultant = y₁ + y₂",
+            "in-phase sources: constructive Δr = nλ",
+            "in-phase sources: destructive Δr = (n + ½)λ",
+            "n = 0, 1, 2, ..."
+          ],
+          "textbook_references": [
+            {
+              "section": "16-5",
+              "pdf_page": 494,
+              "printed_page": 458
+            },
+            {
+              "section": "17-3",
+              "pdf_page": 521,
+              "printed_page": 485
+            }
+          ]
+        },
+        {
+          "id": "lesson-8-5",
+          "title": "Standing waves, resonance, and string harmonics",
+          "goal": "Locate nodes and antinodes and determine the allowed frequencies of a fixed-end string.",
+          "equations": [
+            "fixed ends: L = nλ_n/2",
+            "λ_n = 2L/n",
+            "f_n = nv/(2L), n = 1, 2, 3, ...",
+            "node spacing = λ/2"
+          ],
+          "textbook_references": [
+            {
+              "section": "15-6",
+              "pdf_page": 468,
+              "printed_page": 432
+            },
+            {
+              "section": "16-7",
+              "pdf_page": 501,
+              "printed_page": 465
+            }
+          ]
+        },
+        {
+          "id": "lesson-8-6",
+          "title": "Sound speed, pitch, intensity, and sound level",
+          "goal": "Connect frequency to pitch, intensity to sound level, and travel time to distance.",
+          "equations": [
+            "sound speed in air at 20 °C: v ≈ 343 m/s",
+            "I = P/A; point source I = P/(4πr²)",
+            "β = 10 log₁₀(I/I₀) dB",
+            "I₀ = 1.0 × 10⁻¹² W/m²",
+            "echo distance = vt_round-trip/2"
+          ],
+          "textbook_references": [
+            {
+              "section": "17-1",
+              "pdf_page": 515,
+              "printed_page": 479
+            },
+            {
+              "section": "17-4",
+              "pdf_page": 524,
+              "printed_page": 488
+            }
+          ]
+        },
+        {
+          "id": "lesson-8-7",
+          "title": "Air-column resonance and beats",
+          "goal": "Distinguish open and closed pipe harmonics and calculate beat frequency.",
+          "equations": [
+            "open-open pipe: f_n = nv/(2L), n = 1, 2, 3, ...",
+            "open-closed pipe: f_n = nv/(4L), n = 1, 3, 5, ...",
+            "f_beat = |f₁ - f₂|"
+          ],
+          "textbook_references": [
+            {
+              "section": "17-5",
+              "pdf_page": 528,
+              "printed_page": 492
+            },
+            {
+              "section": "17-6",
+              "pdf_page": 532,
+              "printed_page": 496
+            }
+          ]
+        },
+        {
+          "id": "lesson-8-8",
+          "title": "Doppler shifts and sonic booms",
+          "goal": "Predict frequency changes from relative motion and distinguish a sonic boom from ordinary Doppler shift.",
+          "equations": [
+            "source approaches stationary observer: f_obs = f v/(v - v_s)",
+            "source recedes: f_obs = f v/(v + v_s)",
+            "observer approaches stationary source: f_obs = f(v + v_o)/v",
+            "Mach number = source speed/sound speed"
+          ],
+          "textbook_references": [
+            {
+              "section": "17-7",
+              "pdf_page": 534,
+              "printed_page": 498
+            },
+            {
+              "section": "17-8",
+              "pdf_page": 539,
+              "printed_page": 503
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

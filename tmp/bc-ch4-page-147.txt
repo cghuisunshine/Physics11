@@ -1,0 +1,50 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   5.2  Mechanical Energy
+
+     Warm Up
+     Fill a coffee can with three or four handfuls of dry sand. Measure the temperature of the sand. Now shake the can 
+     vigorously for three minutes. Take the temperature of the sand. Describe what happened to the temperature and 
+     explain why you think it occurred.
+
+     _____________________________________________________________________________________________
+
+     _____________________________________________________________________________________________
+
+     _____________________________________________________________________________________________
+
+
+
+
+                                A moving object can do work. A falling axe does work to split a log. A moving baseball 
+   Kinetic Energy              
+                                bat does work to stop a baseball  momentarily compress the ball out of its normal shape  
+                                then reverse its direction  and send it off at high speed. 
+                                      Since a moving object has the ability to do work  it must have energy. We call the 
+                                energy of a moving object its kinetic energy. A body that is at rest can gain kinetic 
+                                energy if work is done on it by an external force. To get such a body moving at speed v  
+                                a net force must be exerted on it to accelerate it from rest up to speed v. The amount of 
+                                work  W  which must be done can be calculated as follows:
+                                                               W = Fd =  ma d = m ad
+                                Remember that for an object accelerating from rest at a uniform rate   v2f  = 2ad. 
+                                                                               v2
+                                Therefore                               ad  =  f
+                                                                               2
+                                                                           and
+                                                                                  v2     1
+                                                                W = m ad  = m f  =   mv2
+                                                                                  2      2
+                                     The work done on the object to accelerate it up to a speed v results in an amount of 
+                                energy being transferred to the object  which is equal in magnitude to  1  mv2. This is the 
+                                                                                                        2
+                                object's kinetic energy  Ek.
+                                                                          Ek =  1   mv2
+                                                                                2
+
+                                Once an object has kinetic energy  it can do work on other objects.
+
+
+
+
+   142  Chapter 5   Energy                                               ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

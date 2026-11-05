@@ -1,0 +1,423 @@
+<svg role="img" aria-label="Flight time is 2.12 s and range is 12.73 m. Velocity arrows show equal launch and impact speeds with opposite vertical components." xmlns:xlink="http://www.w3.org/1999/xlink" width="460.8pt" height="280.8pt" viewBox="0 0 460.8 280.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><title>Flight time is 2.12 s and range is 12.73 m. Velocity arrows show equal launch and impact speeds with opposite vertical components.</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.3, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="kinematics-11-0-figure_1">
+  <g id="kinematics-11-0-patch_1">
+   <path d="M 0 280.8
+L 460.8 280.8
+L 460.8 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="kinematics-11-0-axes_1">
+   <g id="kinematics-11-0-patch_2">
+    <path d="M 53.194206 247.44351
+L 407.605794 247.44351
+L 407.605794 18.118365
+L 53.194206 18.118365
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="kinematics-11-0-matplotlib.axis_1">
+    <g id="kinematics-11-0-xtick_1">
+     <g id="kinematics-11-0-line2d_1">
+      <path d="M 74.041947 247.44351
+L 74.041947 18.118365
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_2">
+      <defs>
+       <path id="kinematics-11-0-m5b99d15a00" d="M 0 0
+L 0 3.5
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#kinematics-11-0-m5b99d15a00" x="74.041947" y="247.44351" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="74.041947" y="262.041947" transform="rotate(-0 74.041947 262.041947)">0</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-xtick_2">
+     <g id="kinematics-11-0-line2d_3">
+      <path d="M 115.737428 247.44351
+L 115.737428 18.118365
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_4">
+      <g>
+       <use xlink:href="#kinematics-11-0-m5b99d15a00" x="115.737428" y="247.44351" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="115.737428" y="262.041947" transform="rotate(-0 115.737428 262.041947)">2</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-xtick_3">
+     <g id="kinematics-11-0-line2d_5">
+      <path d="M 157.432908 247.44351
+L 157.432908 18.118365
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_6">
+      <g>
+       <use xlink:href="#kinematics-11-0-m5b99d15a00" x="157.432908" y="247.44351" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="157.432908" y="262.041947" transform="rotate(-0 157.432908 262.041947)">4</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-xtick_4">
+     <g id="kinematics-11-0-line2d_7">
+      <path d="M 199.128389 247.44351
+L 199.128389 18.118365
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_8">
+      <g>
+       <use xlink:href="#kinematics-11-0-m5b99d15a00" x="199.128389" y="247.44351" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="199.128389" y="262.041947" transform="rotate(-0 199.128389 262.041947)">6</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-xtick_5">
+     <g id="kinematics-11-0-line2d_9">
+      <path d="M 240.82387 247.44351
+L 240.82387 18.118365
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_10">
+      <g>
+       <use xlink:href="#kinematics-11-0-m5b99d15a00" x="240.82387" y="247.44351" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="240.82387" y="262.041947" transform="rotate(-0 240.82387 262.041947)">8</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-xtick_6">
+     <g id="kinematics-11-0-line2d_11">
+      <path d="M 282.519351 247.44351
+L 282.519351 18.118365
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_12">
+      <g>
+       <use xlink:href="#kinematics-11-0-m5b99d15a00" x="282.519351" y="247.44351" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="282.519351" y="262.041947" transform="rotate(-0 282.519351 262.041947)">10</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-xtick_7">
+     <g id="kinematics-11-0-line2d_13">
+      <path d="M 324.214832 247.44351
+L 324.214832 18.118365
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_14">
+      <g>
+       <use xlink:href="#kinematics-11-0-m5b99d15a00" x="324.214832" y="247.44351" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="324.214832" y="262.041947" transform="rotate(-0 324.214832 262.041947)">12</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-xtick_8">
+     <g id="kinematics-11-0-line2d_15">
+      <path d="M 365.910313 247.44351
+L 365.910313 18.118365
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_16">
+      <g>
+       <use xlink:href="#kinematics-11-0-m5b99d15a00" x="365.910313" y="247.44351" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_8">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="365.910313" y="262.041947" transform="rotate(-0 365.910313 262.041947)">14</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-xtick_9">
+     <g id="kinematics-11-0-line2d_17">
+      <path d="M 407.605794 247.44351
+L 407.605794 18.118365
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_18">
+      <g>
+       <use xlink:href="#kinematics-11-0-m5b99d15a00" x="407.605794" y="247.44351" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_9">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="407.605794" y="262.041947" transform="rotate(-0 407.605794 262.041947)">16</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-text_10">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #19333d" x="230.4" y="275.720073" transform="rotate(-0 230.4 275.720073)">Horizontal distance (m)</text>
+    </g>
+   </g>
+   <g id="kinematics-11-0-matplotlib.axis_2">
+    <g id="kinematics-11-0-ytick_1">
+     <g id="kinematics-11-0-line2d_19">
+      <path d="M 53.194206 226.59577
+L 407.605794 226.59577
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_20">
+      <defs>
+       <path id="kinematics-11-0-m1450f0e31b" d="M 0 0
+L -3.5 0
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#kinematics-11-0-m1450f0e31b" x="53.194206" y="226.59577" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_11">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="46.194206" y="230.394988" transform="rotate(-0 46.194206 230.394988)">−2</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-ytick_2">
+     <g id="kinematics-11-0-line2d_21">
+      <path d="M 53.194206 184.900289
+L 407.605794 184.900289
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_22">
+      <g>
+       <use xlink:href="#kinematics-11-0-m1450f0e31b" x="53.194206" y="184.900289" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_12">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="46.194206" y="188.699507" transform="rotate(-0 46.194206 188.699507)">0</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-ytick_3">
+     <g id="kinematics-11-0-line2d_23">
+      <path d="M 53.194206 143.204808
+L 407.605794 143.204808
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_24">
+      <g>
+       <use xlink:href="#kinematics-11-0-m1450f0e31b" x="53.194206" y="143.204808" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_13">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="46.194206" y="147.004026" transform="rotate(-0 46.194206 147.004026)">2</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-ytick_4">
+     <g id="kinematics-11-0-line2d_25">
+      <path d="M 53.194206 101.509327
+L 407.605794 101.509327
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_26">
+      <g>
+       <use xlink:href="#kinematics-11-0-m1450f0e31b" x="53.194206" y="101.509327" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_14">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="46.194206" y="105.308546" transform="rotate(-0 46.194206 105.308546)">4</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-ytick_5">
+     <g id="kinematics-11-0-line2d_27">
+      <path d="M 53.194206 59.813846
+L 407.605794 59.813846
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_28">
+      <g>
+       <use xlink:href="#kinematics-11-0-m1450f0e31b" x="53.194206" y="59.813846" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_15">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="46.194206" y="63.613065" transform="rotate(-0 46.194206 63.613065)">6</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-ytick_6">
+     <g id="kinematics-11-0-line2d_29">
+      <path d="M 53.194206 18.118365
+L 407.605794 18.118365
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="kinematics-11-0-line2d_30">
+      <g>
+       <use xlink:href="#kinematics-11-0-m1450f0e31b" x="53.194206" y="18.118365" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="kinematics-11-0-text_16">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="46.194206" y="21.917584" transform="rotate(-0 46.194206 21.917584)">8</text>
+     </g>
+    </g>
+    <g id="kinematics-11-0-text_17">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #19333d" x="25.372331" y="132.780938" transform="rotate(-90 25.372331 132.780938)">Height above the ground (m)</text>
+    </g>
+   </g>
+   <g id="kinematics-11-0-line2d_31">
+    <path d="M 53.194206 184.900289
+L 407.605794 184.900289
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #82949a; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="kinematics-11-0-line2d_32">
+    <path d="M 74.041947 247.44351
+L 74.041947 18.118365
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #82949a; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="kinematics-11-0-line2d_33">
+    <path d="M 74.041947 184.900289
+L 79.383419 175.834862
+L 84.724892 167.141987
+L 90.066365 158.821664
+L 95.407838 150.873893
+L 100.749311 143.298674
+L 106.090784 136.096006
+L 111.432257 129.26589
+L 116.773729 122.808326
+L 122.115202 116.723314
+L 127.456675 111.010854
+L 132.798148 105.670945
+L 138.139621 100.703588
+L 143.481094 96.108783
+L 148.822567 91.886529
+L 154.164039 88.036827
+L 159.505512 84.559678
+L 164.846985 81.455079
+L 170.188458 78.723033
+L 173.74944 77.108642
+L 177.310422 75.65983
+L 180.871404 74.376596
+L 184.432386 73.25894
+L 187.993368 72.306864
+L 191.554349 71.520366
+L 195.115331 70.899446
+L 198.676313 70.444105
+L 202.237295 70.154342
+L 205.798277 70.030158
+L 209.359259 70.071553
+L 212.920241 70.278526
+L 216.481223 70.651078
+L 220.042205 71.189208
+L 223.603187 71.892917
+L 227.164169 72.762205
+L 230.72515 73.797071
+L 234.286132 74.997515
+L 237.847114 76.363539
+L 241.408096 77.89514
+L 244.969078 79.592321
+L 250.310551 82.448551
+L 255.652024 85.677333
+L 260.993497 89.278667
+L 266.33497 93.252552
+L 271.676442 97.59899
+L 277.017915 102.317979
+L 282.359388 107.40952
+L 287.700861 112.873612
+L 293.042334 118.710257
+L 298.383807 124.919453
+L 303.72528 131.501201
+L 309.066752 138.455501
+L 314.408225 145.782352
+L 319.749698 153.481756
+L 325.091171 161.553711
+L 330.432644 169.998218
+L 335.774117 178.815276
+L 339.335099 184.900289
+L 339.335099 184.900289
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #086b72; stroke-width: 2.5; stroke-linecap: square"/>
+   </g>
+   <g id="kinematics-11-0-line2d_34">
+    <defs>
+     <path id="kinematics-11-0-mb190433198" d="M 0 2
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214
+C 1.789267 1.03916 2 0.530406 2 0
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214
+C 1.03916 -1.789267 0.530406 -2 0 -2
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214
+C -1.789267 -1.03916 -2 -0.530406 -2 0
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214
+C -1.03916 1.789267 -0.530406 2 0 2
+z
+" style="stroke: #086b72"/>
+    </defs>
+    <g clip-path="url(#kinematics-11-0-p167f39d00e)">
+     <use xlink:href="#kinematics-11-0-mb190433198" x="74.041947" y="184.900289" style="fill: #086b72; stroke: #086b72"/>
+     <use xlink:href="#kinematics-11-0-mb190433198" x="339.335099" y="184.900289" style="fill: #086b72; stroke: #086b72"/>
+    </g>
+   </g>
+   <g id="kinematics-11-0-line2d_35">
+    <path d="M 53.194206 184.900289
+L 407.605794 184.900289
+" clip-path="url(#kinematics-11-0-p167f39d00e)" style="fill: none; stroke: #82949a; stroke-linecap: square"/>
+   </g>
+   <g id="kinematics-11-0-patch_3">
+    <path d="M 53.194206 247.44351
+L 53.194206 18.118365
+" style="fill: none; stroke: #82949a; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="kinematics-11-0-patch_4">
+    <path d="M 53.194206 247.44351
+L 407.605794 247.44351
+" style="fill: none; stroke: #82949a; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="kinematics-11-0-patch_5">
+    <path d="M 75.042088 183.167992
+Q 86.55006 163.2356 96.939998 145.2397
+" style="fill: none; stroke: #2464ad; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 91.341922 148.935853
+L 96.939998 145.2397
+L 96.538074 151.935853
+z
+" style="fill: #2464ad; stroke: #2464ad; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="kinematics-11-0-patch_6">
+    <path d="M 340.33524 186.632585
+Q 351.843212 206.564977 362.23315 224.560877
+" style="fill: none; stroke: #bc493e; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 361.831226 217.864725
+L 362.23315 224.560877
+L 356.635074 220.864725
+z
+" style="fill: #bc493e; stroke: #bc493e; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="kinematics-11-0-text_18">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #2464ad" x="78.211495" y="43.135654" transform="rotate(-0 78.211495 43.135654)">Launch: 12 m/s at 60°</text>
+   </g>
+   <g id="kinematics-11-0-text_19">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #bc493e" x="184.534971" y="239.104414" transform="rotate(-0 184.534971 239.104414)">Impact: 12 m/s at −60°</text>
+   </g>
+   <g id="kinematics-11-0-text_20">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #19333d" x="230.4" y="12.118365" transform="rotate(-0 230.4 12.118365)">Ball launched at 60°</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="kinematics-11-0-p167f39d00e">
+   <rect x="53.194206" y="18.118365" width="354.411588" height="229.325145"/>
+  </clipPath>
+ </defs>
+</svg>

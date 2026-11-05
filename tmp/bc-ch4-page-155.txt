@@ -1,0 +1,58 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   5.3  Temperature  Heat  and Thermal Energy 
+
+     Warm Up
+     On a hot summer day  you may have noticed that if you walk on concrete with your bare feet  it will be hotter 
+     than the grass. If you go inside  a tile floor will feel cooler on your feet than the rest of the house. Why do you 
+     experience these differences if the temperature is not changing dramatically
+
+     __________________________________________________________________________________________
+
+     __________________________________________________________________________________________
+
+     __________________________________________________________________________________________
+
+
+
+
+                                According to the kinetic molecular theory  all matter is made up of tiny particles that 
+   Kinetic Molecular           
+                                are constantly moving. The particles  molecules or atoms  attract each other to some 
+   Theory                       extent. The particles can move in a number of ways  Figure 5.3.1 : 
+                                t  They can move in straight lines  translational motion between collisions . 
+                                t  They can rotate. 
+                                t  They can vibrate.
+
+
+                                                           translational 
+                                                           motion
+
+
+
+                                                  rotational motion
+
+
+
+
+                                                    vibrational motion
+
+
+                                Figure 5.3.1  Particles in matter can move in three different ways.
+
+
+                                       Molecules may have translational kinetic energy  which is energy due to motion 
+                                in straight lines  rotational kinetic energy and vibrational kinetic energy. They 
+                                may also have potential energy  which arises from attractions between molecules or 
+                                repulsions at very close range.
+                                       The total energy of all the molecules in an amount of material is called the thermal 
+                                energy of the material. When thermal energy is transferred from one material to another 
+                                material  the amount of energy transferred is called heat. For a transfer of energy to 
+                                occur  there must be a difference in temperature between the body from which the 
+                                thermal energy is being transferred and the body to which the thermal energy is being 
+                                transferred. Heat is transferred from a hotter body to a cooler body.
+
+
+
+   150  Chapter 5   Energy                                                      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

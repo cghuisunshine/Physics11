@@ -35,7 +35,7 @@ function canonicalize(s) {
   return s;
 }
 // ---- Per-student history (see students.js): local-first, optional Firebase sync ----
-const students=window.StudentStore;let student='', updatedAt='';
+const students=window.StudentStore;let student='', updatedAt='',loadingStudent=false,pendingExposure=null;
 let stopActivity=null,activityState=null,activityName='',activityGoal=10,activityExists=false;
 try{const goal=Number(localStorage.getItem('physics11ActivityGoal'));if(Number.isInteger(goal)&&goal>=1&&goal<=1000)activityGoal=goal;}catch(e){}
 $('activity-goal').value=activityGoal;
@@ -141,18 +141,19 @@ const payloadFor=()=>({version:1,student,updatedAt,state:JSON.stringify(P.compac
 function readPayload(p){try{if(!p||!p.state)return null;const s=typeof p.state==='string'?JSON.parse(p.state):p.state;return validState(s)?canonicalize(s):null;}catch(e){return null;}}
 function save(){
   if(!student)return;updatedAt=new Date().toISOString();const payload=payloadFor();
-  if(!students.saveLocal(student,payload)){$('storage-message').textContent='Browser storage is unavailable or full. Export your progress before closing.';return;}
+  if(!students.saveLocal(student,payload)){$('storage-message').textContent='Browser storage is unavailable or full. Export your progress before closing.';return false;}
   $('storage-message').textContent=students.syncing()?'Saving and syncing…':'Progress saved on this device.';
-  students.push(payload);
+  students.push(payload);return true;
 }
 function syncStatus(kind,error){
   const el=$('sync-status');if(!el)return;
   const text={local:'Saved on this device only.',connecting:'Connecting to Firebase…',synced:'Synced across devices · '+new Date().toLocaleTimeString(),error:'Saved on this device; Firebase sync is unavailable'+(error&&error.code==='permission-denied'?' (permission denied by the database rules).':error&&error.message==='firebase-sdk-unavailable'?' (the Firebase library could not load — check the internet connection).':'.')}[kind]||'';
   el.textContent=text;$('student-sync-dot').dataset.state=kind;
+  if(['local','synced'].includes(kind)&&pendingExposure){const exposure=pendingExposure;pendingExposure=null;state.exposures=state.exposures||{};state.exposures[exposure.id]=exposure.at;save();}
   if(kind==='synced'&&$('storage-message').textContent==='Saving and syncing…')$('storage-message').textContent='Progress saved and synced.';
 }
 function startSync(){if(!student)return;students.start(student,{getLocal:()=>students.loadLocal(student),onStatus:syncStatus,
-  onRemote:data=>{const s=readPayload(data);if(!s)return;const previous=JSON.stringify(practiceSelection());cancelGeneration();resetFollowUp();state=s;updatedAt=data.updatedAt||'';students.saveLocal(student,{version:1,student,updatedAt,state:typeof data.state==='string'?data.state:JSON.stringify(data.state)});
+  onRemote:data=>{const s=readPayload(data);if(!s)return;const previous=JSON.stringify(practiceSelection());cancelGeneration();resetFollowUp();state=s;window.ExamUI?.invalidate();updatedAt=data.updatedAt||'';students.saveLocal(student,{version:1,student,updatedAt,state:typeof data.state==='string'?data.state:JSON.stringify(data.state)});
     restorePracticeSelection();
     if(activeAttempt)activeAttempt=state.attempts.find(a=>a.at===activeAttempt.at&&a.id===activeAttempt.id)||null;dashboard();
     if(previous!==JSON.stringify(practiceSelection())&&live.role!=='follower')next(true,false);else restoreFollowUp(current);
@@ -173,6 +174,7 @@ $('share-question').onclick=async()=>{
   try{await navigator.clipboard.writeText(url);done('Link copied');}catch(e){window.prompt('Copy this link to share the question:',url);}
 };
 function useStudent(name){
+  loadingStudent=true;pendingExposure=null;
   resetFollowUp();cancelGeneration();coachPresented=new Set();
   cancelReview();student=students.login(name);state={version:1,attempts:[],items:{}};updatedAt='';
   const local=students.loadLocal(student),s=readPayload(local);
@@ -184,7 +186,7 @@ function useStudent(name){
   restorePracticeSelection();hideLogin();dashboard();
   if(live.role==='follower')show(followedQuestion,'Following live — your answers and progress are your own.',true);
   else if(pendingShare){const p=pendingShare;pendingShare=null;show(p,'Shared question — give it a try.');}else next(true,false);
-  startSync();
+  loadingStudent=false;startSync();
 }
 function showLogin(){
   const list=$('known-students');list.replaceChildren();
@@ -386,7 +388,7 @@ function dashboard(){
   if(!queue.length)$('queue').textContent='Nothing to review yet.';
   $('review-button').disabled=!queue.length;
   renderRecent();renderLearningLog();refreshDayControls();refreshChapterControls();
-  renderAdaptiveCoverage();
+  renderAdaptiveCoverage();window.ExamUI?.refresh();
 }
 function renderAdaptiveCoverage(){
   const box=$('adaptive-coverage');box.replaceChildren();
@@ -492,6 +494,8 @@ function buildAnswerInput(problem){
   syncAnswerTools();
 }
 function show(p,reason,fromLive=false){
+  if(window.PhysicsExam.active(state))return;
+  if(student&&p&&!p.generatedData){state.exposures=state.exposures||{};if(!state.exposures[p.id]){state.exposures[p.id]=new Date().toISOString();if(loadingStudent)pendingExposure={id:p.id,at:state.exposures[p.id]};else save();}}
   resetFollowUp();cancelGeneration();
   if(live.role==='follower'&&!fromLive){p=followedQuestion;reason='Following live — your answers and progress are your own.';}
   if(p?.generatedData){state.generated=state.generated||{};state.generated[p.id]=p.generatedData;}
@@ -511,10 +515,13 @@ function show(p,reason,fromLive=false){
   buildAnswerInput(p);$('photo-section').hidden=false;openDrawing();restoreFollowUp(p);
 }
 function next(reset=false,persistSelection=true){
+  if(window.PhysicsExam.active(state))$('mode').value='exam';
   if(live.role==='follower')return;
   resetFollowUp();cancelGeneration();
   if(persistSelection)rememberPracticeSelection();
   const mode=$('mode').value;
+  document.body.classList.toggle('exam-mode',mode==='exam');$('exam-panel').hidden=mode!=='exam';
+  if(mode==='exam'){resetPhotoReview();if(!window.PhysicsExam.active(state))show(null,'Set up a timed exam.');window.ExamUI?.refresh();return;}
   $('adaptive-panel').hidden=mode!=='coach';
   renderAdaptiveCoverage();
   const dayQuestions=refreshDayControls();

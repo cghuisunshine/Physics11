@@ -1,0 +1,48 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+      4.  Place a second block on top of the first. The total force of gravity will now be the sum of the weights of the two 
+          blocks. Measure the force of friction with two blocks.
+      5.  Repeat with three  then four blocks. Record the total force of gravity and force of friction each time in  
+          Table 3.2.2.
+      6.  Plot a graph with the force of kinetic friction Ffr on the y-axis and force of gravity Fg on the x-axis. Determine the 
+          slope of the graph and write a specific equation for your graph. Include the units for the slope  if any.
+      Concluding Questions
+      1.  When you doubled the force of gravity on the object sliding over your bench  what happened to the force of 
+          friction  What happened to the force of friction when the force of gravity was tripled  quadrupled
+      2.  What is the equation for your graph   Remember to use the proper symbols and units.
+      3.  The slope of your graph is the coefficient of kinetic friction. What is the coefficient of kinetic friction between 
+          the block and the tabletop you used
+      4.  Name three situations where you need to have
+           a   a low coefficient of friction  and
+           b   a high coefficient of friction.
+      Challenge
+      1.  Measure the coefficient of kinetic friction between your blocks and a different horizontal surface.
+      Part 2
+      Purpose
+      To determine how the force of kinetic friction varies with the area of contact between two smooth  flat surfaces  
+      when all other factors are controlled
+      Procedure 
+      1.  Make a prediction: If you double the area of contact between two smooth  flat objects  will the force of friction 
+           a  stay the same   b  double   c  be cut in half  or  d  change in some other way
+      2.  Pile four blocks on top of one another as in Figure 3.2.4 a . Loop a string around the blocks  attach a spring 
+          balance  and measure the force of friction as in Part 1.  
+      3.  Prepare a table of data like Table 3.2.3.  Record your results.
+
+
+
+
+               a                                    b
+
+
+
+
+               c                                    d
+
+          Figure 3.2.4  Friction  Part 2
+
+
+
+
+   90  Chapter 3   Forces                                                  ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

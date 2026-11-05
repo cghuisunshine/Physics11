@@ -1,0 +1,41 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+         Investigation 3-2  Friction Can Be a Real Drag!
+         Part 1
+         Purpose
+         To determine how does the force of friction  Ffr   depends on the force of gravity  Fg  on an object when the object 
+         slides over a ismoothw horizontal surface
+         Procedure
+         1.  Use a spring balance to measure the force of gravity on each of four nearly identical wood blocks provided. 
+             Write their weights  in N  in pencil on each block.
+         2.  Prepare a data table like Table 3.2.2.
+             Table 3.2.2  Data For Investigation 3-2  Part 1
+
+                   Number                 Total Force            Force of
+                   of Blocks              of Gravity           Friction  N
+                                              N
+                        1
+                        2
+                        3
+                        4
+
+
+         3.  Adjust your spring balance so that it reads 0 N when it is held in a horizontal position or parallel to the bench 
+             top. Attach it to the hook on one of the four blocks. See Figure 3.2.3. Set the wide side of the block on a smooth  
+             clean bench top. To measure the force of sliding friction  measure the smallest force needed to keep the block 
+             sliding at a slow  steady speed along the bench top. You will have to give the block a small extra nudge to get it 
+             moving. Once it is moving  however  a steady force equal to the force of kinetic friction should keep it moving at 
+             a steady speed. Do several trials until you are satisfied you have a meaningful average friction force. Record the 
+             force of gravity and the force of sliding friction in your copy of Table 3.2.2.
+
+
+
+
+             Figure 3.2.3  Friction  Part 1
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                 Chapter 3   Forces  89

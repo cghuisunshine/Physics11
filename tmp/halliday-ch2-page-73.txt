@@ -1,0 +1,83 @@
+                                                                                                                       PROB LE M S                 37
+
+
+•••70 Two particles move along an x axis. The position of particle 1       reached intersection 2, where the green appeared when they were
+is given by x " 6.00t2 # 3.00t # 2.00 (in meters and seconds); the ac-     distance d from the intersection. They continue to travel at a cer-
+celeration of particle 2 is given by a " $8.00t (in meters per second      tain speed vp (the speed limit) to reach intersection 3, where the
+squared and seconds) and, at t " 0, its velocity is 20 m/s. When the       green appears when they are distance d from it. The intersections
+velocities of the particles match, what is their velocity?                 are separated by distances D23 and D12. (a) What should be the
+                                                                           time delay of the onset of green at intersection 3 relative to that at
+Additional Problems
+                                                                           intersection 2 to keep the platoon moving smoothly?
+71 In an arcade video game, a spot is programmed to move                        Suppose, instead, that the platoon had been stopped by a red
+across the screen according to x " 9.00t $ 0.750t 3, where x is dis-       light at intersection 1. When the green comes on there, the leaders
+tance in centimeters measured from the left edge of the screen and         require a certain time tr to respond to the change and an additional
+t is time in seconds. When the spot reaches a screen edge, at either       time to accelerate at some rate a to the cruising speed vp. (b) If the
+x " 0 or x " 15.0 cm, t is reset to 0 and the spot starts moving again     green at intersection 2 is to appear when the leaders are distance d
+according to x(t). (a) At what time after starting is the spot instan-     from that intersection, how long after the light at intersection 1
+taneously at rest? (b) At what value of x does this occur? (c) What        turns green should the light at intersection 2 turn green?
+is the spot’s acceleration (including sign) when this occurs? (d)
+Is it moving right or left just prior to coming to rest? (e) Just after?   77 SSM A hot rod can accelerate from 0 to 60 km/h in 5.4 s.
+(f) At what time t . 0 does it first reach an edge of the screen?          (a) What is its average acceleration, in m/s2, during this time? (b)
+                                                                           How far will it travel during the 5.4 s, assuming its acceleration is con-
+72 A rock is shot vertically upward from the edge of the top of a          stant? (c) From rest, how much time would it require to go a distance
+tall building. The rock reaches its maximum height above the top of        of 0.25 km if its acceleration could be maintained at the value in (a)?
+the building 1.60 s after being shot. Then, after barely missing the
+edge of the building as it falls downward, the rock strikes the ground     78       A red train traveling at 72 km/h and a green train traveling
+6.00 s after it is launched. In SI units: (a) with what upward velocity    at 144 km/h are headed toward each other along a straight, level
+is the rock shot, (b) what maximum height above the top of the             track. When they are 950 m apart, each engineer sees the other’s
+building is reached by the rock, and (c) how tall is the building?         train and applies the brakes. The brakes slow each train at the rate
+                                                                           of 1.0 m/s2. Is there a collision? If so, answer yes and give the speed
+73       At the instant the traffic light turns green, an automobile
+                                                                           of the red train and the speed of the green train at impact, respec-
+starts with a constant acceleration a of 2.2 m/s2. At the same instant
+                                                                           tively. If not, answer no and give the separation between the trains
+a truck, traveling with a constant speed of 9.5 m/s, overtakes and
+                                                                           when they stop.
+passes the automobile. (a) How far beyond the traffic signal will
+the automobile overtake the truck? (b) How fast will the automo-           79       At time t " 0, a rock
+bile be traveling at that instant?                                         climber accidentally allows a
+                                                                           piton to fall freely from a high
+74 A pilot flies horizontally at 1300 km/h, at height h " 35 m
+                                                                           point on the rock wall to the
+above initially level ground. However, at time t " 0, the pilot be-
+
+
+
+
+                                                                                                               y
+                                                                           valley below him. Then, after a
+gins to fly over ground sloping upward at angle u " 4.3° (Fig. 2-41).
+                                                                           short delay, his climbing part-
+If the pilot does not change the airplane’s heading, at what time t
+                                                                           ner, who is 10 m higher on the
+does the plane strike the ground?
+                                                                           wall, throws a piton down-         0           1        2                 3
+                                                                           ward. The positions y of the                      t (s)
+                        θ
+                                                                           pitons versus t during the            Figure 2-43 Problem 79.
+                                                           h               falling are given in Fig. 2-43.
+                                                                           With what speed is the second piton thrown?
+                                                                           80 A train started from rest and moved with constant accelera-
+                       Figure 2-41 Problem 74.                             tion. At one time it was traveling 30 m/s, and 160 m farther on it
+75      To stop a car, first you require a certain reaction time to be-    was traveling 50 m/s. Calculate (a) the acceleration, (b) the time re-
+gin braking; then the car slows at a constant rate. Suppose that the       quired to travel the 160 m mentioned, (c) the time required to at-
+total distance moved by your car during these two phases is 56.7 m         tain the speed of 30 m/s, and (d) the distance moved from rest to
+when its initial speed is 80.5 km/h, and 24.4 m when its initial speed     the time the train had a speed of 30 m/s. (e) Graph x versus t and v
+is 48.3 km/h. What are (a) your reaction time and (b) the magni-           versus t for the train, from rest.
+tude of the acceleration?                                                  81 SSM A particle’s acceleration along an x axis is a " 5.0t, with t
+76            Figure 2-42 shows part of a street where traffic flow        in seconds and a in meters per
+is to be controlled to allow a platoon of cars to move smoothly            second squared. At t " 2.0 s,     a (m/s2)
+along the street. Suppose that the platoon leaders have just               its velocity is #17 m/s. What is    as
+                                                                           its velocity at t " 4.0 s?
+                                  ONE WAY
+                                                                           82 Figure 2-44 gives the ac-
+                                                                           celeration a versus time t for
+                                                                           a particle moving along an x
+                                                                           axis. The a-axis scale is set by
+                                                                           as " 12.0 m/s2. At t " $2.0 s,                                          t (s)
+                            1                2         3                                                    –2        0        2       4       6
+                                                                           the particle’s velocity is 7.0
+                                    D12          D23
+                                                                           m/s. What is its velocity at t "
+                       Figure 2-42 Problem 76.                             6.0 s?                                    Figure 2-44 Problem 82.

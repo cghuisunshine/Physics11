@@ -1,0 +1,71 @@
+22         CHAPTE R 2 M OTION ALONG A STRAIG HT LI N E
+
+
+                                               whether an object’s speed is increasing or decreasing. For example, if a car with an
+                                               initial velocity v " $25 m/s is braked to a stop in 5.0 s, then aavg " #5.0 m/s2. The
+                                               acceleration is positive, but the car’s speed has decreased. The reason is the differ-
+                                               ence in signs: the direction of the acceleration is opposite that of the velocity.
+                                                    Here then is the proper way to interpret the signs:
+
+
+                                                    If the signs of the velocity and acceleration of a particle are the same, the speed
+                                                    of the particle increases. If the signs are opposite, the speed decreases.
+
+
+
+                                                   Checkpoint 3
+                                                 A wombat moves along an x axis. What is the sign of its acceleration if it is moving
+                                                 (a) in the positive direction with increasing speed, (b) in the positive direction with
+                                                 decreasing speed, (c) in the negative direction with increasing speed, and (d) in the
+                                                 negative direction with decreasing speed?
+
+
+
+
+Sample Problem 2.03 Acceleration and dv/dt
+
+A particle’s position on the x axis of Fig. 2-1 is given by            Reasoning: We need to examine the expressions for x(t),
+                                                                       v(t), and a(t).
+                       x " 4 $ 27t # t 3,
+                                                                            At t " 0, the particle is at x(0) " #4 m and is moving
+with x in meters and t in seconds.                                     with a velocity of v(0) " $27 m/s — that is, in the negative
+                                                                       direction of the x axis. Its acceleration is a(0) " 0 because just
+(a) Because position x depends on time t, the particle must
+                                                                       then the particle’s velocity is not changing (Fig. 2-8a).
+be moving. Find the particle’s velocity function v(t) and ac-
+                                                                            For 0 ( t ( 3 s, the particle still has a negative velocity,
+celeration function a(t).
+                                                                       so it continues to move in the negative direction. However,
+                                                                       its acceleration is no longer 0 but is increasing and positive.
+KEY IDEAS
+                                                                       Because the signs of the velocity and the acceleration are
+(1) To get the velocity function v(t), we differentiate the po-        opposite, the particle must be slowing (Fig. 2-8b).
+sition function x(t) with respect to time. (2) To get the accel-            Indeed, we already know that it stops momentarily at
+eration function a(t), we differentiate the velocity function          t " 3 s. Just then the particle is as far to the left of the origin
+v(t) with respect to time.                                             in Fig. 2-1 as it will ever get. Substituting t " 3 s into the
+                                                                       expression for x(t), we find that the particle’s position just
+Calculations: Differentiating the position function, we find           then is x " $50 m (Fig. 2-8c). Its acceleration is still positive.
+                   v " $27 # 3t 2,                    (Answer)              For t . 3 s, the particle moves to the right on the axis.
+                                                                       Its acceleration remains positive and grows progressively
+with v in meters per second. Differentiating the velocity              larger in magnitude. The velocity is now positive, and it too
+function then gives us                                                 grows progressively larger in magnitude (Fig. 2-8d).
+                     a " #6t,                  (Answer)
+with a in meters per second squared.                                        t=3s                   t=4s
+                                                                            v=0                    v pos
+(b) Is there ever a time when v " 0?                                        a pos                  a pos
+                                                                          reversing             speeding up
+Calculation: Setting v(t) " 0 yields
+                                                                             (c)                     (d )
+                         0 " $27 # 3t 2,                                                                                       x
+which has the solution                                                  −50 m                                           0 4m
+                                                                                                                                     t=0
+                                                                                               t=1s                                  v neg
+                      t " %3 s.                       (Answer)                                 v neg                                 a=0
+                                                                                               a pos                               leftward
+Thus, the velocity is zero both 3 s before and 3 s after the                                  slowing                               motion
+clock reads 0.                                                                                   (b)                                  (a)
+
+(c) Describe the particle’s motion for t , 0.                           Figure 2-8 Four stages of the particle’s motion.
+
+
+          Additional examples, video, and practice available at WileyPLUS

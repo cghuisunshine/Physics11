@@ -1,0 +1,71 @@
+28         CHAPTE R 2 M OTION ALONG A STRAIG HT LI N E
+
+
+
+                                                    The free-fall acceleration near Earth’s surface is a " $g " $9.8 m/s2, and the
+                                                    magnitude of the acceleration is g " 9.8 m/s2. Do not substitute $9.8 m/s2 for g.
+
+                                                   Suppose you toss a tomato directly upward with an initial (positive) velocity v0
+                                              and then catch it when it returns to the release level. During its free-fall flight (from
+                                              just after its release to just before it is caught), the equations of Table 2-1 apply to its
+                                              motion. The acceleration is always a " $g " $9.8 m/s2, negative and thus down-
+                                              ward. The velocity, however, changes, as indicated by Eqs. 2-11 and 2-16: during the
+                                              ascent, the magnitude of the positive velocity decreases, until it momentarily be-
+                                              comes zero. Because the tomato has then stopped, it is at its maximum height.
+                                              During the descent, the magnitude of the (now negative) velocity increases.
+
+
+                                                   Checkpoint 5
+                                                 (a) If you toss a ball straight up, what is the sign of the ball’s displacement for the ascent,
+                                                 from the release point to the highest point? (b) What is it for the descent, from the high-
+                                                 est point back to the release point? (c) What is the ball’s acceleration at its highest point?
+
+
+
+
+Sample Problem 2.05 Time for full up-down flight, baseball toss                                                           Ball      y
+
+In Fig. 2-13, a pitcher tosses a baseball up along a y axis, with                                             v = 0 at
+                                                                                                              highest point
+an initial speed of 12 m/s.
+(a) How long does the ball take to reach its maximum height?
+
+KEY IDEAS
+                                                                                                                                        During
+                                                                                                                                        descent,
+(1) Once the ball leaves the pitcher and before it returns to                                                                           a = –g,
+                                                                                                              During ascent,
+his hand, its acceleration is the free-fall acceleration a " $g.                                              a = –g,                   speed
+Because this is constant, Table 2-1 applies to the motion.                                                    speed decreases,          increases,
+                                                                                                              and velocity              and velocity
+(2) The velocity v at the maximum height must be 0.                                                                                     becomes
+                                                                                                              becomes less
+                                                                                                              positive                  more
+Calculation: Knowing v, a, and the initial velocity                                                                                     negative
+v0 " 12 m/s, and seeking t, we solve Eq. 2-11, which contains
+those four variables. This yields                                       Figure 2-13 A pitcher tosses a
+                                                                                                                                        y=0
+                                                                        baseball straight up into the air.
+              v $ v0   0 $ 12 m/s                                       The equations of free fall apply
+         t"          "            " 1.2 s.             (Answer)         for rising as well as for falling
+                a       $9.8 m/s2
+                                                                        objects, provided any effects
+(b) What is the ball’s maximum height above its release point?          from the air can be neglected.
+Calculation: We can take the ball’s release point to be y0 " 0.
+We can then write Eq. 2-16 in y notation, set y $ y0 " y and v "        or           5.0 m " (12 m/s)t $ (12)(9.8 m/s2)t 2.
+0 (at the maximum height), and solve for y.We get
+                                                                        If we temporarily omit the units (having noted that they are
+      v 2 $ v 20   0 $ (12 m/s)2                                        consistent), we can rewrite this as
+   y"            "               " 7.3 m.              (Answer)
+          2a       2($9.8 m/s2)
+                                                                                                4.9t 2 $ 12t # 5.0 " 0.
+(c) How long does the ball take to reach a point 5.0 m above
+its release point?                                                      Solving this quadratic equation for t yields
+
+Calculations: We know v0, a " $g, and displacement y $                                 t " 0.53 s and t " 1.9 s.                        (Answer)
+y0 " 5.0 m, and we want t, so we choose Eq. 2-15. Rewriting
+it for y and setting y0 " 0 give us                                     There are two such times! This is not really surprising
+                                                                        because the ball passes twice through y " 5.0 m, once on the
+                        y " v0 t $ 12 gt 2,                             way up and once on the way down.
+
+          Additional examples, video, and practice available at WileyPLUS

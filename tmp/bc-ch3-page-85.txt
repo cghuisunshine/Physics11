@@ -1,0 +1,54 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+                                   To calculate the force of gravity on a mass m  you could simply multiply the mass by the 
+   Earth's Gravitational    gravitational field strength  g   F = mg . You could also use the law of universal gravitation: 
+   Field Strength                                                      Mm
+                                                              Fg = G          where M is the mass of Earth.
+                                                                       r2 
+                                                                                           Mm
+                                                            This means that  mg = G                and therefore
+                                                                                           r2 
+                                                                                           M
+                                                                                  g = G 
+                                                                                           r2 
+                                           Thus  the gravitational field strength of Earth depends only on the mass of Earth 
+                                   and the distance  r  from the centre of Earth to the centre of mass of the object that has 
+                                   mass m.
+
+
+
+
+      Quick Check
+      1.  Given two small  chocolate-centred candies of masses M and m  what will happen to the force of gravity Fg 
+          between them in the following situations
+          a   r  is doubled.
+
+
+          b   r  is tripled.
+
+
+          c   r  is reduced to 1/2 r. 
+
+
+          d   r  is reduced to 1/3 r. 
+
+
+      2.  The constant G in the law of universal gravitation has a value of 6.67 w 10o11 Ntm2/kg2. Calculate the force of 
+          gravity between the following objects: 
+           a   a 100.0 kg person and Earth. Earth's mass is 5.98 w 1024 kg  and its radius is 6.38 w 106 m.
+
+
+
+
+          b   a 100.0 kg person and the Moon. The Moon's mass is 7.35 x 1022 kg  and its radius is 1.74 w 106 m.
+
+
+
+
+          c   two 46 g golf balls whose centres of mass are 10 cm apart.
+
+
+
+
+   80  Chapter 3   Forces                                                    ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

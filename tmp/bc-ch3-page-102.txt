@@ -1,0 +1,59 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+      3.3  Review Questions
+      1.  Why does the spring constant not have any units             5.  A wooden beam was clamped horizontally  so 
+                                                                          that masses could be hung from its free end. The 
+                                                                          depression x  in cm  caused by the force of gravity  
+                                                                          Fg  in N  on the masses was measured for loads up to 
+                                                                          100 N. The graph below summarizes all the data.
+                                                                                                               Enqbd ne Fq`uhsx ur- Cdoqdrrhnm
+      2.  Using symbols ixw for stretch and iFw for force of                                           110
+          gravity  write a specific equation for the line in                                           100
+          Figure 3.3.1.                                                                                 90
+
+
+
+
+                                                                          Force of gravity  load   N
+                                                                                                        80
+                                                                                                        70
+                                                                                                        60
+                                                                                                        50
+                                                                                                        40
+      3.  a    Use your equation to solve for the stretch of the 
+                                                                                                        30
+               spring when a force of gravity of 4.0 N acts on it. 
+                                                                                                        20
+               Check your solution by looking at the graph in 
+                                                                                                        10
+               Figure 3.3.1.
+                                                                                                         0
+                                                                                                            0    1.0    2.0    3.0    4.0    5.0
+                                                                                                                       Depression  cm
+                                                                       
+
+                                                                          a   What is the slope of the graph  expressed in 
+                                                                              appropriate units
+          b   Use your equation to solve for the force of 
+              gravity needed to stretch the spring 2.0 cm. 
+              Check your solution by looking at the graph in 
+              Figure 3.3.1.
+                                                                          b   Write an equation specifically for this graph.
+
+
+
+
+      4.  In a direct proportion graph  the slope of the graph            c   According to the above graph  how much will 
+          is called the spring constant. At any point on the                  the beam be depressed by a load of 80.0 N
+          line  the ratio of the stretch to the force of gravity 
+          will equal the constant of proportionality. By looking 
+          at the graph  find the spring constant when  
+          F = 5.0 N.
+                                                                          d   According to the above graph  what load will 
+                                                                              cause the beam to be depressed by 3.0 cm
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                                         Chapter 3   Forces  97

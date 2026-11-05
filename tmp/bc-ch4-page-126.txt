@@ -1,0 +1,57 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+      4.4  Momentum
+
+         Warm Up
+         Consider the following objects and motion in the two columns below:
+                feather             fast  10 m/s
+                marble              average  5 m/s
+                softball            slow  2 m/s
+
+         1.  Connect an object in the first column with a motion in the second column for the following situations.
+             a   The combination that will cause the most pain if the object hits your leg
+
+             _________________________     __________________________
+
+             b   The combination that will cause the least pain if the object hits your leg
+
+             _________________________     __________________________
+
+         2.  Explain your reasoning for each answer.
+
+             a  __________________________________________________________________________________
+
+             _____________________________________________________________________________________
+
+             b  __________________________________________________________________________________
+
+             _____________________________________________________________________________________
+
+
+
+                                   One of the most important concepts in physics is that of momentum. Isaac Newton first 
+      Mass w Velocity =           
+                                   used the idea when he wrote his second law of motion. In his original version  the second 
+      Momentum                     law looks like this:
+                                                                                  mƚv
+                                                                             F =        
+                                                                                   ƚt
+
+                                          Newton called the product of mass and velocity  mv  a quantity of motion. Thus  his 
+                                    second law stated that the unbalanced force on an object is equal to the rate of change 
+                                    of a quantity of motion with respect to time. We now call the product of mass w velocity 
+                                    momentum and we give it the symbol p. The unit of measurement for momentum is 
+                                    kgtm/s.
+                                                                               p   =  mɂv
+                                          Newton's second law can be written this way:
+                                                                                  mɂv     ɂp
+                                                                      F = ma =         = 
+                                                                                   ƚt   ƚt
+                                     Thus  the unbalanced force equals the rate of change of momentum with respect to time.
+                                     
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                              Chapter 4   Newton's Laws of Motion  121

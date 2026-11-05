@@ -33,7 +33,8 @@ module.exports=async function({page,html,bank,login,change,chooseTopics,checkedT
   const synced=page(html,{storage:{physics11FirebaseApiKey:key},firebase:remoteFirebase});login(synced,'Preferences sync');
   await until(()=>synced.$('mode').value==='coach');
   assert.equal(synced.$('practice-chapter').value,'bc-ch3');assert.deepEqual(checkedTopics(synced),topics);
-  assert.equal(remoteFirebase.writes.length,0,'Signing in cannot overwrite older synced progress with new defaults');
+  // Startup may sync a newly displayed question as exposed, while preserving every remote field.
+  for(const write of remoteFirebase.writes){const saved=JSON.parse(write.data.state);delete saved.exposures;assert.deepEqual(saved,remoteState,'Signing in cannot overwrite synced progress with new defaults');}
   change(synced,'mode','random');await pause();
   assert.equal(JSON.parse(remoteFirebase.writes.at(-1).data.state).preferences.mode,'random','Preference changes use optional sync');
   for(const instance of [p,reload,crossChapter,synced]){assert.deepEqual(instance.errors,[]);instance.w.close();}

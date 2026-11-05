@@ -1,0 +1,43 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+      4   Newton's Laws of Motion
+      By the end of this chapter  you should be able to do the following:
+      ±  Solve problems that involve the application of                              ±  Apply the concept of momentum in one dimension
+         Newton's laws of motion in one dimension                                       t  solve a variety of problems involving
+         t  state Newton's three laws of motion                                            o  momentum                        o  impulse
+         t  illustrate Newton's first and third laws with                                  o  mass                            o  net force
+             examples                                                                      o  velocity                        o  time
+         t  create free-body diagrams in one dimension for                                 o  momentum  initial and final
+             use in solving problems  e.g.  elevator problems                           t  state the law of conservation of momentum for 
+         t  use Newton's second law to solve problems that                                 isolated  one-dimensional systems
+             involve                                                                    t  solve problems  using the law of conservation of 
+             o  net force                                                                  momentum  e.g.  collisions and explosions  to 
+             o  mass                                                                       determine
+             o  acceleration                                                               o  momentum  initial and final
+                                                                                           o  velocity  initial and final
+                                                                                           o  mass
+
+      By the end of this chapter  you should know the meaning to these key terms:
+      t       action force                                    t  law of action and reaction             t    newton
+      t       gravitational mass                              t  law of conservation of                 t    Newton's first law of motion
+      t       impulse                                            momentum                               t    Newton's second law of motion
+      t       inertia                                         t  law of inertia                         t    Newton's third law of motion
+      t       inertial mass                                   t  momentum                               t    reaction force
+
+      By the end of this chapter  you should be able to use and know when to use the following formulae:
+              F = ma                    p = mv                     Hp = FHt
+
+
+
+
+                   This device is called Newton's cradle  named after Sir Isaac 
+            Newton  the British scientist. When a ball at one end is lifted and 
+           released  it hits the ball next to it but that ball doesn't move. Only 
+              the ball at the end of the row is pushed upward as shown here. 
+              In this chapter you'll learn about Newton's laws of motion and 
+                   momentum  which help to explain how this device works.
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                            Chapter 4   Newton's Laws of Motion  101

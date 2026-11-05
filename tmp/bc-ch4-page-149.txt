@@ -1,0 +1,53 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+                                When calculating gravitational potential energy  the height an object moves is always 
+   Reference Point             
+                                measured from the starting point of the movement. This is called the reference point. 
+                                This is important because it means  the amount of potential energy in an object is relative 
+                                to where the measurement occurs. For example  a table 1.0 m high has a 1.0 kg book on it. 
+                                If the book is lifted 0.5 m above the table  how much gravitational potential energy does 
+                                the book have  If h is measured from the table  it has 4.5 J of potential energy because  
+                                h = 0.5 m or Ep =  91.0 kg 9.8 m/s2 0.5 m . If h is measured from the ground  the book has 
+                                14.7 J of potential energy because h = 1.5 m or Ep =  91.0 kg 9.8 m/s2 1.5 m .
+                                       Both answers are correct. What is important that the reference point is identified 
+                                and only the vertical height is measured when determining the amount of gravitational 
+                                potential energy in an object.
+
+
+
+     Quick Check
+     1.  A box of bananas is lifted 5 m and gains a certain amount of potential energy. If the box is lifted another 5 m  
+         describe how the potential energy changes.
+
+
+
+
+     2.  What is the mass of a television if it takes 620 J to lift it 2.5 m.
+
+
+
+
+     3.  If it takes 240 J to lift a 4 kg object  how high is the object lifted
+
+
+
+
+                                If a force is applied to an object over a distance  the amount of kinetic energy in the 
+   Work Energy                 
+                                object changes. For example  a car speeds up because the force of the engine turns the 
+   Theorem                      wheels faster over a distance. The increased speed of the car represents the increase in 
+                                the car's kinetic energy. You may have noticed that when the formula for kinetic energy 
+                                was derived  work equaled the amount of kinetic energy: 
+                                                                                  1
+                                                                              W =   mv2
+                                                                                  2
+
+                                       The work-energy theorem states that the work done on a system equals the energy 
+                                  changes or:
+                                                                            W = TE
+
+
+
+
+   144  Chapter 5   Energy                                                      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

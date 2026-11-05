@@ -1,0 +1,2157 @@
+{
+  "groups": [
+    {
+      "id": "set-1",
+      "topic": "4.1",
+      "kind": "Warm-up",
+      "title": "Inertia and Newton's first law: warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              107,
+              54,
+              127.8829,
+              575,
+              167.3322
+            ]
+          ],
+          "text": "You are attending a magic show and the magician stands beside a table set with fancy plates  cups  and  silverware. Grabbing the edge of the tablecloth she quickly pulls the cloth out  and the plates  cups  and  silverware stay in place. Is this magic or just physics in action  Explain your answer.",
+          "id": "q-1"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-2",
+      "topic": "4.1",
+      "kind": "Quick check",
+      "title": "Inertial mass: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              108,
+              54,
+              453.23290000000003,
+              575,
+              465.68219999999997
+            ]
+          ],
+          "text": "1.   Why does it hurt more to kick a rock shaped like a soccer ball than a soccer ball",
+          "id": "q-2"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              108,
+              54,
+              515.2330000000001,
+              575,
+              554.6822
+            ]
+          ],
+          "text": "2.   When astronauts are living in the International Space Station  ISS  they are in orbit around Earth at a  minimum altitude of 278 km. They live in an environment of apparent weightlessness. Compare the inertial  mass of the astronauts when they live on the ISS to their inertial mass when they are on Earth. ",
+          "id": "q-3"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-3",
+      "topic": "4.1",
+      "kind": "Quick check",
+      "title": "Newton's first law: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              109,
+              54,
+              378.63100000000003,
+              575,
+              404.58029999999997
+            ]
+          ],
+          "text": "1.  A car you are driving in encounters a patch of ice just as the car enters a corner turn. Using your knowledge  of Newton's first law of motion  explain what will happen to the car.",
+          "id": "q-4"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              109,
+              54,
+              473.1309,
+              575,
+              512.5802
+            ]
+          ],
+          "text": "2.   You are a judge listening to an injury claim from a bus passenger. The passenger claims to have been hurt  when the bus driver slammed on the brakes and a suitcase came flying from the front of the bus to hit the  passenger. Do you believe the passenger's description of what happened  Explain your answer.",
+          "id": "q-5"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              109,
+              54,
+              581.1308,
+              575,
+              607.0801
+            ]
+          ],
+          "text": "3.  When you receive a drink for a take out order  usually there is a lid on the cup. Use Newton's first law to  explain why the lid is necessary to prevent spills.",
+          "id": "q-6"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-4",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1, Problem 1: seatbelts",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              110,
+              54,
+              424.37050000000005,
+              575,
+              436.8198
+            ]
+          ],
+          "text": "1.  How does this procedure illustrate inertia",
+          "id": "q-7"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              110,
+              54,
+              437.87050000000005,
+              575,
+              450.3198
+            ]
+          ],
+          "text": "2.  How does a seatbelt work",
+          "id": "q-8"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              110,
+              54,
+              451.37050000000005,
+              575,
+              463.8198
+            ]
+          ],
+          "text": "3.  Why are you more likely to survive a collision with a seatbelt than without one",
+          "id": "q-9"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          110,
+          54,
+          60,
+          575,
+          409
+        ]
+      ]
+    },
+    {
+      "id": "set-5",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1, Problem 2: air and inertia",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              110,
+              54,
+              621.6705000000001,
+              347,
+              647.6197999999999
+            ]
+          ],
+          "text": "1.  What evidence have you observed from this procedure that  supports the claim that air has inertia  ",
+          "id": "q-10"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          110,
+          54,
+          474,
+          347,
+          607
+        ],
+        [
+          110,
+          349,
+          474,
+          576,
+          713
+        ]
+      ]
+    },
+    {
+      "id": "set-6",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1, Problem 3: an air track",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              111,
+              54,
+              196.9257,
+              575,
+              209.375
+            ]
+          ],
+          "text": "1.  Are there any unbalanced forces on the glider  ",
+          "id": "q-11"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              111,
+              54,
+              210.4257,
+              575,
+              222.875
+            ]
+          ],
+          "text": "2.  Describe its motion. ",
+          "id": "q-12"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              111,
+              54,
+              223.9257,
+              575,
+              236.375
+            ]
+          ],
+          "text": "3.  How does this demonstration illustrate Newton's first law",
+          "id": "q-13"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          111,
+          54,
+          60,
+          575,
+          181
+        ],
+        [
+          111,
+          54,
+          244,
+          575,
+          334
+        ]
+      ]
+    },
+    {
+      "id": "set-7",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1, Problem 4: the train track",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              111,
+              54,
+              524.6584,
+              575,
+              537.1077
+            ]
+          ],
+          "text": "1.  What happens to the toy train when it leaves the track  Explain this in terms of inertia. ",
+          "id": "q-14"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          111,
+          54,
+          349,
+          575,
+          509
+        ],
+        [
+          111,
+          54,
+          548,
+          575,
+          702
+        ]
+      ]
+    },
+    {
+      "id": "set-8",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1, Problem 5: breaking string",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              112,
+              54,
+              237.4257,
+              375,
+              249.875
+            ]
+          ],
+          "text": "1.  Explain what happened  in terms of inertia.",
+          "id": "q-15"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              112,
+              54,
+              250.9257,
+              375,
+              276.875
+            ]
+          ],
+          "text": "2.  Which action illustrates the weight of the ball and which   illustrates the mass of the ball  ",
+          "id": "q-16"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          112,
+          54,
+          60,
+          375,
+          222
+        ],
+        [
+          112,
+          375,
+          60,
+          576,
+          257
+        ]
+      ]
+    },
+    {
+      "id": "set-9",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1, Problem 6: the pop-up coaster",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              112,
+              54,
+              587.3507000000001,
+              575,
+              599.8
+            ]
+          ],
+          "text": "1.  What forces are acting on the ball when it is in the air",
+          "id": "q-17"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              112,
+              54,
+              600.8507000000001,
+              575,
+              613.3
+            ]
+          ],
+          "text": "2.  How does this procedure illustrate Newton's first law of motion",
+          "id": "q-18"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              112,
+              54,
+              614.3507000000001,
+              575,
+              640.3
+            ]
+          ],
+          "text": "3.  Why does the ball sometimes miss the cart after it is released  Does this mean Newton's first law sometimes  does not apply",
+          "id": "q-19"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          112,
+          54,
+          287,
+          575,
+          572
+        ]
+      ]
+    },
+    {
+      "id": "set-10",
+      "topic": "4.1",
+      "kind": "Investigation",
+      "title": "Investigation 4-1: concluding question",
+      "questions": [
+        {
+          "label": "Concluding question",
+          "boxes": [
+            [
+              112,
+              54,
+              680.05069,
+              575,
+              719.5
+            ]
+          ],
+          "text": "and need to get a section of paper towel off the roll in your kitchen. You can only use one hand to tear off the paper  towel. Why does a quick  jerking motion work better than a slow pulling motion when removing the paper towel  section from the roll",
+          "id": "q-20"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-11",
+      "topic": "4.1",
+      "kind": "Section review",
+      "title": "4.1 Review: inertia and Newton's first law",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              113,
+              44,
+              79.1257,
+              291,
+              241.1156
+            ]
+          ],
+          "text": "1.  In the Warm Up of this section  you were asked  to explain why the magician was able to pull the  tablecloth out from the under the plates  cups  and silverware. Using the concepts of inertia and  Newton's first law  explain why this imagic actw  succeeds.",
+          "id": "q-21"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              113,
+              44,
+              241.1256,
+              291,
+              362.61550000000005
+            ]
+          ],
+          "text": "2.  Does 2 kg of apples have twice the inertia or half the  inertia of 1 kg of apples  Explain your answer.",
+          "id": "q-22"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              113,
+              44,
+              362.62550000000005,
+              291,
+              484.11550000000005
+            ]
+          ],
+          "text": "3.  If the pen on your desk is at rest  can you say that no  forces are acting on it  Explain your answer.",
+          "id": "q-23"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              113,
+              44,
+              484.12550000000005,
+              291,
+              592.1154
+            ]
+          ],
+          "text": "4.  If the forces acting on the pen are balanced  is it  correct to say that the pen is at rest  Explain your  answer.",
+          "id": "q-24"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              113,
+              44,
+              592.1254,
+              291,
+              724.6
+            ]
+          ],
+          "text": "5.  If you place a ball in the centre of a wagon and then  quickly push the wagon forward  in what direction  does the ball appear to go  Why",
+          "id": "q-25"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              113,
+              302,
+              79.2507,
+              576,
+              214.2407
+            ]
+          ],
+          "text": "6.  Why do headrests in cars help protect a person from  head and neck injury in a car accident",
+          "id": "q-26"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              113,
+              302,
+              214.2507,
+              576,
+              362.74060000000003
+            ]
+          ],
+          "text": "7.  A hockey puck moving a constant velocity across  the ice eventually comes to a stop. Does this  prove the Newton's first law does not apply to all  situations",
+          "id": "q-27"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              113,
+              302,
+              362.7506,
+              576,
+              524.7406000000001
+            ]
+          ],
+          "text": "8.  You are travelling in a school bus on a field trip. The  driver has to apply the brakes quickly to prevent an  accident. Describe how your body would move in  response to this rapid braking action.",
+          "id": "q-28"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              113,
+              302,
+              524.7506000000001,
+              576,
+              724.6
+            ]
+          ],
+          "text": "9.  While travelling in Africa you are chased by a very  large elephant. Would it make more sense to run  in a straight line to get away or in a zigzag motion   Explain your answer.",
+          "id": "q-29"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-12",
+      "topic": "4.2",
+      "kind": "Warm-up",
+      "title": "Newton's second law: warm-up",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              114,
+              54,
+              179.1258,
+              575,
+              205.0751
+            ]
+          ],
+          "text": "1.  Based on your observations  what can you say about the direction of the force applied to the spool and the  acceleration of the spool",
+          "id": "q-30"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              114,
+              54,
+              266.6258,
+              575,
+              292.57509999999996
+            ]
+          ],
+          "text": "2.  Would the direction of the force or the acceleration of the spool be affected if the thread were wrapped  around the spool in the opposite direction  Explain your answer.",
+          "id": "q-31"
+        }
+      ],
+      "shared": [
+        [
+          114,
+          54,
+          128.6257,
+          575,
+          168.07500000000002
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-13",
+      "topic": "4.2",
+      "kind": "Quick check",
+      "title": "Net force, mass, and acceleration: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              115,
+              54,
+              88.31808099999999,
+              575,
+              114.97500000000001
+            ]
+          ],
+          "text": "1.  A single engine plane has a mass of 1500 kg and acceleration of 0.400 m/s 2 . What is the thrust  or unbalanced  force  from the engine",
+          "id": "q-32"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              115,
+              54,
+              223.318081,
+              575,
+              236.475
+            ]
+          ],
+          "text": "2.  What is the mass of a rocket that accelerates at 2.0 m/s 2  and has a thrust of 25 000 N",
+          "id": "q-33"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              115,
+              54,
+              345.5256,
+              575,
+              371.4749
+            ]
+          ],
+          "text": "3.  Find the acceleration of a passenger jet that has a mass of 250 000 kg and an engine thrust that provides an  unbalanced force of 50 000 N.",
+          "id": "q-34"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-14",
+      "topic": "4.2",
+      "kind": "Sample prompt",
+      "title": "Sample 4.2.1: multiple forces acting on a body",
+      "questions": [
+        {
+          "label": "4.2.1",
+          "boxes": [
+            [
+              116,
+              54,
+              80,
+              575,
+              318
+            ]
+          ],
+          "text": "A 45.0 N block is being pushed along a floor  where the coefficient of kinetic friction is 0.333. If a force of 25.0 N is  applied  at what rate will the block accelerate  The mass of the block is 4.60 kg. F N normal force F N  = F g    but applied force > friction force creating the unbalanced forces applied force F fr F F g friction force force of gravity Figure 4.2.1   Forces acting on block",
+          "id": "q-35"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-15",
+      "topic": "4.2",
+      "kind": "Practice",
+      "title": "Practice 4.2.1: multiple forces acting on a body",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              117,
+              54,
+              81.56808099999999,
+              575,
+              108.22500000000001
+            ]
+          ],
+          "text": "1.  A falling object of 20 N experiences air resistance of 6.0 N. If acceleration due to gravity is 9.8 m/s 2  what is the  mass of the object",
+          "id": "q-36"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              117,
+              54,
+              203.7756,
+              575,
+              229.72490000000002
+            ]
+          ],
+          "text": "2.  A 900 N person stands on two scales so that one foot is on each scale. What will each scale register in  Newtons",
+          "id": "q-37"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              117,
+              54,
+              321.27570000000003,
+              575,
+              351.22499999999997
+            ]
+          ],
+          "text": "3.  What is the mass of a paratrooper who experiences an air resistance of 400 N and an acceleration of 4.5 m/s 2    during a parachute jump. ",
+          "id": "q-38"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              117,
+              54,
+              446.068081,
+              575,
+              553.7248999999999
+            ]
+          ],
+          "text": "4.  A force of 50 N accelerates a 5.0 kg block at 6.0 m/s 2  along a horizontal surface.   a   What is the frictional force acting on the block   b   What is the coefficient of friction",
+          "id": "q-39"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-16",
+      "topic": "4.2",
+      "kind": "Investigation",
+      "title": "Investigation 4-2: Newton's second law",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              119,
+              54,
+              541.5457,
+              575,
+              553.995
+            ]
+          ],
+          "text": "1.  Describe how the speed of a cart changes when a constant unbalanced force pulls it.",
+          "id": "q-40"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              119,
+              54,
+              555.0457,
+              575,
+              580.995
+            ]
+          ],
+          "text": "2.  According to your first graph  a vs. F  how does acceleration depend on unbalanced force  Does your graph  suggest that acceleration is directly proportional to unbalanced force  Support your answer with your data.",
+          "id": "q-41"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              119,
+              54,
+              582.0457,
+              575,
+              607.995
+            ]
+          ],
+          "text": "3   According to your second and third graphs  how does the acceleration of the cart vary when the mass is  doubled  tripled  and quadrupled",
+          "id": "q-42"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              119,
+              54,
+              609.0457,
+              575,
+              621.495
+            ]
+          ],
+          "text": "4   Write an equation for the third graph  complete with the numerical value and units for the slope.",
+          "id": "q-43"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              119,
+              54,
+              622.5457,
+              575,
+              648.495
+            ]
+          ],
+          "text": "5   What were some of the experimental difficulties you encountered in this investigation  which would make it  difficult to obtain ideal results",
+          "id": "q-44"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          118,
+          54,
+          60,
+          575,
+          724
+        ],
+        [
+          119,
+          54,
+          60,
+          575,
+          526
+        ]
+      ]
+    },
+    {
+      "id": "set-17",
+      "topic": "4.2",
+      "kind": "Section review",
+      "title": "4.2 Review: Newton's second law",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              120,
+              59,
+              86.5257,
+              306,
+              166.80808100000002
+            ]
+          ],
+          "text": "1.  What unbalanced force is needed to accelerate a   5.0 kg cart at 5.0 m/s 2",
+          "id": "q-45"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              120,
+              59,
+              166.818081,
+              306,
+              383.5156
+            ]
+          ],
+          "text": "2.  A net force of 7.5 w 10 4  N acts on a spacecraft of  mass 3.0 w 10 4  kg.   a   At what rate will the spacecraft accelerate     b    Assuming constant acceleration is maintained   how fast will the spacecraft be moving after 25 s   if its initial speed was 5.0 w 10 3  m/s",
+          "id": "q-46"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              120,
+              59,
+              383.5256,
+              306,
+              724.6
+            ]
+          ],
+          "text": "3.  A model rocket has a mass of 0.12 kg. It accelerates  vertically to 60.0 m/s in 1.2 s.   a   What is its average acceleration     b   What is the unbalanced force on the rocket   c    If the force of gravity on the rocket is 1.2 N    what is the total thrust of its engine",
+          "id": "q-47"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              120,
+              317,
+              86.492581,
+              576,
+              222.1901
+            ]
+          ],
+          "text": "4.  What is the mass of a rock if a force of 2.4 w 10 3  N  makes it accelerate at a rate of 4.0 w 10 1  m/s 2",
+          "id": "q-48"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              120,
+              317,
+              222.2001,
+              576,
+              478.69000000000005
+            ]
+          ],
+          "text": "5.  A fully loaded military rocket has a mass of   3.0 w 10 6  kg  and the force of gravity on it at ground  level is 2.9 w 10 7  N.   a    At what rate will the rocket accelerate during   lift-off  if the engines provide a thrust of   3.3 w 10 7  N   b   Why will this acceleration not remain constant",
+          "id": "q-49"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              120,
+              317,
+              478.70000000000005,
+              576,
+              724.6
+            ]
+          ],
+          "text": "6.  A boy and his skateboard have a combined mass of  60.0 kg. After an initial shove  the boy starts coasting  at 5.5 m/s along a level driveway. Friction brings  him to rest in 5.0 s. The combined force of gravity on  the boy and skateboard is 5.9 w 10 2  N. What is the  average coefficient of rolling friction between the  driveway and the skateboard wheels",
+          "id": "q-50"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-18",
+      "topic": "4.3",
+      "kind": "Warm-up",
+      "title": "Newton's third law: warm-up",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              121,
+              54,
+              130,
+              575,
+              454
+            ]
+          ],
+          "text": "1.  Consider the following situations. Draw a sketch of each situation and  on each diagram  indicate the forces  being described. Share your results with the class.   a   If you wish to climb stairs  in which   c   If you are rowing a boat  which way must your     direction do you push  Which way to you     oars push if the boat is to move forward  Which     move     way to do you move                b   If you wish to swim forward  in which   direction must your arms push  Which   way do you move         d   When a car is moving forward  in which direction do the wheels push on the road  Which way to do you move   ",
+          "id": "q-51"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-19",
+      "topic": "4.3",
+      "kind": "Quick check",
+      "title": "Action and reaction: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              122,
+              54,
+              531.7205,
+              575,
+              544.1698
+            ]
+          ],
+          "text": "1.  Review your diagrams from the Warm Up activity. In each diagram  label the action force and reaction force. ",
+          "id": "q-52"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              122,
+              54,
+              545.2205,
+              575,
+              571.1698
+            ]
+          ],
+          "text": "2.  When you are walking  you are producing an action force toward the ground. Why do you move in the  opposite direction",
+          "id": "q-53"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              122,
+              54,
+              624.2208,
+              575,
+              650.1700999999999
+            ]
+          ],
+          "text": "3.  You see a large dog running along a floating log. If the dog is running to your right  what  if anything  is  happening to the log",
+          "id": "q-54"
+        }
+      ],
+      "shared": [
+        [
+          121,
+          54,
+          130,
+          575,
+          454
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-20",
+      "topic": "4.3",
+      "kind": "Investigation",
+      "title": "Investigation 4-3, Part 1: exploding carts",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              123,
+              54,
+              358.7257,
+              575,
+              431.1751
+            ]
+          ],
+          "text": "1.  Push two identical laboratory carts together so that their spring bumpers are compressed. Release the carts on  a flat table or floor. Observe as they accelerate away from each other.   a   What force makes the carts accelerate     b   Why do the two carts  of identical mass  accelerate at the same rate        c   How does this demonstration illustrate Newton's third law",
+          "id": "q-55"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              123,
+              54,
+              438.2257,
+              575,
+              495.1751
+            ]
+          ],
+          "text": "2.  Predict what will happen if you double the mass of one of the carts by placing an extra cart on top of it. Test  your prediction.   a   Has the force repelling the carts changed     b   What has changed",
+          "id": "q-56"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              123,
+              54,
+              502.22580000000005,
+              575,
+              545.6752
+            ]
+          ],
+          "text": "3.  Try making the mass of one of the carts much greater than the mass of the other.   a   Is the force changed     b   What has changed",
+          "id": "q-57"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          123,
+          54,
+          60,
+          575,
+          358
+        ]
+      ]
+    },
+    {
+      "id": "set-21",
+      "topic": "4.3",
+      "kind": "Investigation",
+      "title": "Investigation 4-3, Part 2: motion from rest",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              124,
+              54,
+              234.8757,
+              575,
+              301.325
+            ]
+          ],
+          "text": "1.  Place a piece of light plastic insulating Styrofoam board  50 cm w 25 cm w 2.5 cm  at one end of an air table as  shown in Figure 4.3.3. Place a wind-up toy car or a radio-controlled car at one end of the board. Turn on the air  table and start the car moving. Observe and describe what happens:   a   to the car    b   to the iroadw under the car ",
+          "id": "q-58"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              124,
+              54,
+              305.3757,
+              575,
+              317.825
+            ]
+          ],
+          "text": "2.  How does this demonstration illustrate Newton's Third Law",
+          "id": "q-59"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          124,
+          54,
+          60,
+          575,
+          234
+        ]
+      ]
+    },
+    {
+      "id": "set-22",
+      "topic": "4.3",
+      "kind": "Investigation",
+      "title": "Investigation 4-3, Part 3: tug of war",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              124,
+              54,
+              531.0757,
+              575,
+              557.025
+            ]
+          ],
+          "text": "1.  Tie a string between two 20 N spring balances. Have two students stretch the string between them as shown in  Figure 4.3.4. What do the two spring balances read",
+          "id": "q-60"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              124,
+              54,
+              564.0757,
+              575,
+              590.025
+            ]
+          ],
+          "text": "2.  Try pulling with different forces. Compare the forces on each spring balance each time you pull on the string  with a different force. Does it matter who does the pulling",
+          "id": "q-61"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              124,
+              54,
+              597.0756,
+              575,
+              623.0248
+            ]
+          ],
+          "text": "3.  Try adding a third spring balance in the middle of the string. How does this demonstration illustrate Newton's  third law",
+          "id": "q-62"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          124,
+          54,
+          333,
+          575,
+          530
+        ]
+      ]
+    },
+    {
+      "id": "set-23",
+      "topic": "4.3",
+      "kind": "Investigation",
+      "title": "Investigation 4-3: concluding questions",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              124,
+              54,
+              649.2757,
+              575,
+              675.225
+            ]
+          ],
+          "text": "1.  When a car moves forward  in which direction do the wheels of the car push on the road  What force actually  makes the car move forward",
+          "id": "q-63"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              124,
+              54,
+              682.27566,
+              575,
+              708.22497
+            ]
+          ],
+          "text": "2.  List and discuss three examples of situations from your own everyday experience  that involve Newton's third  law.",
+          "id": "q-64"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-24",
+      "topic": "4.3",
+      "kind": "Section review",
+      "title": "4.3 Review: Newton's third law",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              125,
+              44,
+              86.6257,
+              291,
+              194.6156
+            ]
+          ],
+          "text": "1.  You are playing softball and your friend throws a  ball to you. You catch the ball. The action force is the  impact of the ball against your glove. What is the  reaction force",
+          "id": "q-65"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              125,
+              44,
+              194.6256,
+              291,
+              343.11580000000004
+            ]
+          ],
+          "text": "2.  During a golf swing  is the club impacting on the  ball the action force or the reaction force  Use a  diagram to illustrate your answer.",
+          "id": "q-66"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              125,
+              44,
+              343.1258,
+              291,
+              478.11580000000004
+            ]
+          ],
+          "text": "3.  If a soccer player kicks a ball with a force of 100 N   what is the magnitude of the reaction force",
+          "id": "q-67"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              125,
+              44,
+              478.1258,
+              291,
+              724.6
+            ]
+          ],
+          "text": "4.  Spiderman is having a tug of war with a grade 2  student. Both are pulling very hard from opposite  ends. Who exerts a greater force on the rope   Explain your answer.",
+          "id": "q-68"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              125,
+              302,
+              86.75099999999999,
+              576,
+              221.7409
+            ]
+          ],
+          "text": "5.  In a demolition derby a Hummer SUV collides  head-on with a SMART car. Which car experiences a  greater impact force  Explain your answer.",
+          "id": "q-69"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              125,
+              302,
+              221.7509,
+              576,
+              410.7409
+            ]
+          ],
+          "text": "6.  During a martial arts demonstration  a black belt  uses a karate chop to break a large board with her  hand by exerting a force of 2000 N. What force did  the board exert on her hand  ",
+          "id": "q-70"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              125,
+              302,
+              410.7509,
+              576,
+              724.6
+            ]
+          ],
+          "text": "7.  A few years from now after much hard work  you are  an astronaut and are completing a repair of some  solar panels. To do this you have to take a space  walk outside the International Space Station. By  accident  you find yourself disconnected from the  support rope and need to get back to the station. All  you have is your tools with you. How can you propel  yourself back to safety",
+          "id": "q-71"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-25",
+      "topic": "4.4",
+      "kind": "Warm-up",
+      "title": "Momentum: warm-up",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              126,
+              54,
+              200.7451,
+              575,
+              297.1946
+            ]
+          ],
+          "text": "1.  Connect an object in the first column with a motion in the second column for the following situations.   a   The combination that will cause the most pain if the object hits your leg   _________________________     __________________________   b   The combination that will cause the least pain if the object hits your leg   _________________________     __________________________",
+          "id": "q-72"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              126,
+              54,
+              308.2454,
+              575,
+              414.695
+            ]
+          ],
+          "text": "2.  Explain your reasoning for each answer.   a  __________________________________________________________________________________   _____________________________________________________________________________________   b  __________________________________________________________________________________   _____________________________________________________________________________________",
+          "id": "q-73"
+        }
+      ],
+      "shared": [
+        [
+          126,
+          54,
+          133.24519999999998,
+          575,
+          186.1945
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-26",
+      "topic": "4.4",
+      "kind": "Quick check",
+      "title": "Momentum: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              127,
+              54,
+              89.0257,
+              575,
+              101.47500000000001
+            ]
+          ],
+          "text": "1.  What is the momentum of a 100 kg motorbike travelling at 10 m/s",
+          "id": "q-74"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              127,
+              54,
+              155.818081,
+              575,
+              168.9751
+            ]
+          ],
+          "text": "2.  What is the mass of plane that is travelling at 200 km/h and has a momentum of 1.1 w 10 6  kgtm/s",
+          "id": "q-75"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              127,
+              54,
+              237.5256,
+              575,
+              249.975
+            ]
+          ],
+          "text": "3.  How fast does a 0.01 kg bug have to fly to have a momentum of 0.25 kgtm/s  Is this possible",
+          "id": "q-76"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-27",
+      "topic": "4.4",
+      "kind": "Quick check",
+      "title": "Impulse: quick check",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              128,
+              54,
+              88.2757,
+              575,
+              378.0211
+            ]
+          ],
+          "text": "1.  a   What is the momentum of a 112 kg football player running with a velocity of 3.6 m/s   b   What impulse must a tackler impart to the football player to bring him to a stop   c   If the tackle was completed in 0.80 s  what average force did the tackler exert on the other player   d   Why is the force negative in question 1 c   ____________________________________________________________________________________   ____________________________________________________________________________________ Any moving body has momentum equal to the product of the body's mass and its ",
+          "id": "q-77"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-28",
+      "topic": "4.4",
+      "kind": "Sample prompt",
+      "title": "Sample 4.4.1: conservation of momentum",
+      "questions": [
+        {
+          "label": "4.4.1",
+          "boxes": [
+            [
+              129,
+              54,
+              271.9952,
+              575,
+              284.4445
+            ]
+          ],
+          "text": "load of sulphur is dumped into the car. What is its new velocity",
+          "id": "q-78"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-29",
+      "topic": "4.4",
+      "kind": "Practice",
+      "title": "Practice 4.4.1: conservation of momentum",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              130,
+              54,
+              82.2757,
+              575,
+              121.72500000000001
+            ]
+          ],
+          "text": "1.  Two identical air track gliders each have a mass of 100 g and are sitting on an air track. One glider is at rest   and the other glider is moving toward it at a velocity. When they collide they stick together and move off at   2.0 m/s. What was the initial velocity of the moving glider",
+          "id": "q-79"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              130,
+              54,
+              217.2756,
+              575,
+              243.22490000000002
+            ]
+          ],
+          "text": "2.  A 1.0 kg ball of putty is rolling towards a resting 4.5 kg bowling ball at 1.5 m/s. When they collide and stick  together  what is the resulting momentum of the two objects stuck together",
+          "id": "q-80"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              130,
+              54,
+              338.77570000000003,
+              575,
+              364.72499999999997
+            ]
+          ],
+          "text": "3.  A ball rolls at a velocity of 3.5 m/s toward a 5.0 kg ball at rest. They collide and move off at a velocity of 2.5 m/s.  What was the mass of the moving ball",
+          "id": "q-81"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-30",
+      "topic": "4.4",
+      "kind": "Section review",
+      "title": "4.4 Review: momentum and impulse",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              131,
+              44,
+              86.6257,
+              291,
+              208.1156
+            ]
+          ],
+          "text": "1.  What is the momentum of a 75 g mouse running  across the floor with a velocity of 2.6 m/s",
+          "id": "q-82"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              131,
+              44,
+              208.1256,
+              291,
+              329.6157
+            ]
+          ],
+          "text": "2.  What is the impulse of a 55 N force exerted over a  time interval of 1.0 ms",
+          "id": "q-83"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              131,
+              44,
+              329.6257,
+              291,
+              464.61560000000003
+            ]
+          ],
+          "text": "3.  A 0.060 kg rifle bullet leaves the muzzle with a  velocity of 6.0 w 10 2  m/s.  If the 3.0 kg rifle is held  very loosely  with what velocity will it recoil",
+          "id": "q-84"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              131,
+              44,
+              464.6256,
+              291,
+              724.6
+            ]
+          ],
+          "text": "4.  A 53 kg skateboarder on a 2.0 kg skateboard  is coasting along at 1.6 m/s. He collides with a  stationary skateboarder of mass 43 kg  also on a   2.0 kg skateboard  and the two skateboarders coast  off in the same direction that the first skateboarder  was travelling. What velocity will the combined  skateboarders now have",
+          "id": "q-85"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              131,
+              302,
+              86.9703,
+              576,
+              207.752581
+            ]
+          ],
+          "text": "5.   What impulse is needed to change the velocity of a  10.0 kg object from 12.6 m/s to 25.5 m/s in a time of  5.00 s  How much force is needed",
+          "id": "q-86"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              131,
+              302,
+              207.76258099999998,
+              576,
+              397.46020000000004
+            ]
+          ],
+          "text": "6.  A 1.5 w 10 3  kg car travelling at 44 m/s collides  head-on with a 1.0 w 10 3  kg car travelling at 22 m/s  in the opposite direction. If the cars stick together  on impact  what is the velocity of the wreckage  immediately after impact   Hint:  Let the velocity of  the second car be o22 m/s  since it is moving in a  direction opposite to the first car.",
+          "id": "q-87"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              131,
+              302,
+              397.47020000000003,
+              576,
+              724.6
+            ]
+          ],
+          "text": "7.  a    What impulse must be imparted by a baseball  bat to a 145 g ball to change its velocity from  40.0 m/s to o50.0 m/s     b    If the collision between the baseball and the  bat lasts 1.00 ms  what force was exerted on the  ball   1 ms = 10 o3  s",
+          "id": "q-88"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-31",
+      "topic": "Chapter review",
+      "kind": "Chapter review",
+      "title": "Chapter 4 Review Questions",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              132,
+              59,
+              86.6257,
+              306,
+              289.1157
+            ]
+          ],
+          "text": "1.  A person who does not wear a seatbelt may crash  through the windshield if a car makes a sudden  stop. Explain what happens to this person in terms  of Newton's first law of motion. Explain why it is wise  to wear a seatbelt.",
+          "id": "q-89"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              132,
+              59,
+              289.1257,
+              306,
+              491.61560000000003
+            ]
+          ],
+          "text": "2.  In a frame of reference where there are no external   unbalanced forces  show that Newton's second law  includes the law of inertia.",
+          "id": "q-90"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              132,
+              59,
+              491.6256,
+              306,
+              724.6
+            ]
+          ],
+          "text": "3.  What unbalanced force is needed to accelerate a   2.0 w10 3  kg vehicle at 1.5 m/s 2",
+          "id": "q-91"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              132,
+              317,
+              86.262581,
+              576,
+              289.4601
+            ]
+          ],
+          "text": "4.  What is the acceleration of a 5.8 w 10 3  kg vehicle if  an unbalanced force of 1.16 w 10 2  N acts on it",
+          "id": "q-92"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              132,
+              317,
+              289.4701,
+              576,
+              491.96020000000004
+            ]
+          ],
+          "text": "5.  What is the mass of a space satellite if a thrust of   2.0 w 10 2  N accelerates it at a rate of 0.40 m/s 2  during  a small steering adjustment",
+          "id": "q-93"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              132,
+              317,
+              491.97020000000003,
+              576,
+              724.6
+            ]
+          ],
+          "text": "6.  At what rate will a 5.0 kg object accelerate if a 12.8 N  force is applied to it  and the friction force opposing  its motion is 2.8 N",
+          "id": "q-94"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              133,
+              44,
+              52.3507,
+              291,
+              268.3407
+            ]
+          ],
+          "text": "7.  A rope is strong enough to withstand a 750 N force  without breaking. If two people pull on opposite  ends of the rope  each with a force of 500 N  will it  break  Explain.",
+          "id": "q-95"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              133,
+              44,
+              268.3507,
+              291,
+              484.3405
+            ]
+          ],
+          "text": "8.  State Newton's third law of motion. Describe an  example of a situation involving the law of action  and reaction that you have not already used.",
+          "id": "q-96"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              133,
+              44,
+              484.3505,
+              291,
+              724.6
+            ]
+          ],
+          "text": "9.  Two tug-of-war teams are at opposite ends of a  rope. Newton's third law says that the force exerted  by team A will equal the force that team B exerts on  team A. How can either team win the tug-of-war",
+          "id": "q-97"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              133,
+              302,
+              52.3507,
+              576,
+              322.3407
+            ]
+          ],
+          "text": "10.  a   Define momentum.   b    Why is momentum considered a very important  quantity in physics",
+          "id": "q-98"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              133,
+              302,
+              322.3507,
+              576,
+              724.6
+            ]
+          ],
+          "text": "11.  a   Define impulse.   b    What is the impulse due to a force that causes  the velocity of a 46 g golf ball to change from   0 m/s to 60.0 m/s in 0.50 ms   c   What force was applied to the ball",
+          "id": "q-99"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              134,
+              59,
+              52.3507,
+              306,
+              376.3407
+            ]
+          ],
+          "text": "12.  A hunter who fails to hold the rifle firmly against a  shoulder may be injured when shooting. Explain in  terms of Newton's third law.",
+          "id": "q-100"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              134,
+              59,
+              376.3507,
+              306,
+              724.6
+            ]
+          ],
+          "text": "13.  A 4.2 kg rifle shoots a 0.050 kg bullet at a velocity of  3.00 w 10 2  m/s. At what velocity does the rifle recoil",
+          "id": "q-101"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              134,
+              317,
+              52.2508,
+              576,
+              376.2407
+            ]
+          ],
+          "text": "14.  A 0.250  kg  ball of Plasticine  moving at 5.0 m/s  overtakes and collides with a 0.300 kg ball of  Plasticine  travelling in the same direction at 2.0 m/s.  The two balls of Plasticine stick together on collision.  What is their velocity after the collision",
+          "id": "q-102"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              134,
+              317,
+              376.2507,
+              576,
+              724.6
+            ]
+          ],
+          "text": "15.  A railroad car of mass 12 000 kg is travelling at a  velocity of 6.0 m/s when it collides with an identical  car at rest. The two cars lock together. What is their  common velocity after the collision",
+          "id": "q-103"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-32",
+      "topic": "Extra practice",
+      "kind": "Extra practice",
+      "title": "Chapter 4 Extra Practice",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              135,
+              44,
+              86.1257,
+              291,
+              126.11569999999999
+            ]
+          ],
+          "text": "1.   What is the difference between inertial mass and  gravitational mass",
+          "id": "q-104"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              135,
+              44,
+              126.1257,
+              291,
+              179.6156
+            ]
+          ],
+          "text": "2.   Describe three factors related to inertia that explain  why an oil tanker ship is harder to maneuver when it  is full than when it is empty.",
+          "id": "q-105"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              135,
+              44,
+              179.6256,
+              291,
+              219.6156
+            ]
+          ],
+          "text": "3.   Use Newton's laws to explain why a headrest in a car  protects the neck of the person in a car.",
+          "id": "q-106"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              135,
+              44,
+              219.6256,
+              291,
+              273.11560000000003
+            ]
+          ],
+          "text": "4.   Some older model trucks did not have headrests.  Why could this be a safety hazard for passengers in  the truck",
+          "id": "q-107"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              135,
+              44,
+              273.1256,
+              291,
+              326.61560000000003
+            ]
+          ],
+          "text": "5.   How can you use Newton's first law of motion to  explain why shooting a hockey puck across a frozen  pond will travel a long way",
+          "id": "q-108"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              135,
+              44,
+              326.6256,
+              291,
+              393.61560000000003
+            ]
+          ],
+          "text": "6.   In a car collision seat belts are a safety device to  protect you. Should pets in a car wear a seat belt   Use Newton's first law of motion to defend you  position.",
+          "id": "q-109"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              135,
+              44,
+              393.6256,
+              291,
+              447.11560000000003
+            ]
+          ],
+          "text": "7.   Using only units and Newton's second law of  motion  prove that the unit for force can be   kgtm/s 2 .",
+          "id": "q-110"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              135,
+              44,
+              447.1256,
+              291,
+              487.11560000000003
+            ]
+          ],
+          "text": "8.   What unbalanced force is needed to push a 35 kg  girl in a 20 kg wagon at an acceleration of 1.0 m/s 2",
+          "id": "q-111"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              135,
+              44,
+              487.1256,
+              291,
+              540.6157000000001
+            ]
+          ],
+          "text": "9.   What force is needed to move a 270 N kindergarten  student learning to skate at an acceleration of   0.7 m/s 2",
+          "id": "q-112"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              135,
+              44,
+              540.6257,
+              291,
+              607.6157000000001
+            ]
+          ],
+          "text": "10.  Rhys and Gareth are having a tug of war with   1.25 kg of climbing rope. If Rhys pulls with a force of  24 N and the rope accelerates away from him at   1.4 m/s 2  with what force is Gareth pulling the rope",
+          "id": "q-113"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              135,
+              44,
+              607.6257,
+              291,
+              724.6
+            ]
+          ],
+          "text": "11  A 70 kg person is standing on a bathroom scale in an  elevator purely for scientific purposes. The elevator  begins to accelerate upward at 2.25 m/s 2  for 1.75 s  and then continues at a constant speed. What is the  reading on the scale or weight of the person when  the elevator is at rest and when it is accelerating",
+          "id": "q-114"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              135,
+              302,
+              85.9456,
+              576,
+              152.93540000000002
+            ]
+          ],
+          "text": "12.  A 400 g air track glider has an initial velocity of   0.50 m/s. A force of 0.60 N is applied in the opposite  direction. How long will it take to bring the glider to  a stop",
+          "id": "q-115"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              135,
+              302,
+              152.9454,
+              576,
+              206.43540000000002
+            ]
+          ],
+          "text": "13.  Owen is standing against the boards in a skating  rink with his skates on. He pushes against the  boards. What direction will he go",
+          "id": "q-116"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              135,
+              302,
+              206.4454,
+              576,
+              246.4353
+            ]
+          ],
+          "text": "14.  If Owen is 40 kg  and pushes with a force of 15 N   what will be his acceleration",
+          "id": "q-117"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              135,
+              302,
+              246.4453,
+              576,
+              299.9354
+            ]
+          ],
+          "text": "15.  A 2100 kg sports car is approaching a stop sign. If  the acceleration rate to slow down is o4.5 m/s 2  what  is the net force slowing the car down",
+          "id": "q-118"
+        },
+        {
+          "label": "16",
+          "boxes": [
+            [
+              135,
+              302,
+              299.9454,
+              576,
+              366.9354
+            ]
+          ],
+          "text": "16.  A plastic bag at a local store can hold a maximum  of 275 N before it rips. When lifted  the bag reaches  a maximum acceleration of 6.0 m/s 2 . What is the  maximum mass that can be put into the bag",
+          "id": "q-119"
+        },
+        {
+          "label": "17",
+          "boxes": [
+            [
+              135,
+              302,
+              366.9454,
+              576,
+              500.9354
+            ]
+          ],
+          "text": "17.  a    A racing car can reach a speed of 100 km/h in  1.95 s. If the car is 689 kg and the driver has a  weight of 833 N  what is the average acceleration  of the car   b    On a drag strip track of 350 m  the racing car  completes the distance in 4.67 s. If acceleration  is constant  what is the average acceleration and  final velocity",
+          "id": "q-120"
+        },
+        {
+          "label": "18",
+          "boxes": [
+            [
+              135,
+              302,
+              500.9454,
+              576,
+              724.6
+            ]
+          ],
+          "text": "18.  What is the acceleration of a 130 g baseball traveling  at 25 m/s when it is caught in a glove and brought  to rest in 0.05 s",
+          "id": "q-121"
+        }
+      ],
+      "shared": [],
+      "context": []
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+26        CHAPTE R 2 M OTION ALONG A STRAIG HT LI N E
+
+
+
+
+To finish the calculation, we substitute Eqs. 2-20, 2-22, and           that at t " 7.00 s the plot for the motorcycle switches from
+2-23 into Eq. 2-19, obtaining                                           being curved (because the speed had been increasing) to be-
+                    1 v2m                                               ing straight (because the speed is thereafter constant).
+          1    2
+          2 act "         # vm(t $ 7.00 s).                (2-24)
+                    2 am
+                                                                                1000
+This is a quadratic equation. Substituting in the given data,
+we solve the equation (by using the usual quadratic-equa-
+tion formula or a polynomial solver on a calculator), finding                   800
+t " 4.44 s and t " 16.6 s.                                                                                                                Car passes
+     But what do we do with two answers? Does the car pass                                                                                motorcycle
+                                                                                600
+the motorcycle twice? No, of course not, as we can see in the
+
+
+
+
+                                                                        x (m)
+video. So, one of the answers is mathematically correct but                                               Motorcycle
+not physically meaningful. Because we know that the car                         400
+passes the motorcycle after the motorcycle reaches its maxi-                                                                   Car
+                                                                                           Acceleration
+mum speed at t " 7.00 s, we discard the solution with t (                                  ends
+                                                                                200
+7.00 s as being the unphysical answer and conclude that the
+passing occurs at
+                                                                                   0
+                      t " 16.6 s.                      (Answer)                        0                  5              10          15            20
+                                                                                                                       t (s)
+    Figure 2-11 is a graph of the position versus time for
+the two vehicles, with the passing point marked. Notice                 Figure 2-11 Graph of position versus time for car and motorcycle.
+
+
+         Additional examples, video, and practice available at WileyPLUS
+
+
+
+                                              Another Look at Constant Acceleration*
+                                              The first two equations in Table 2-1 are the basic equations from which the others
+                                              are derived. Those two can be obtained by integration of the acceleration with
+                                              the condition that a is constant. To find Eq. 2-11, we rewrite the definition of ac-
+                                              celeration (Eq. 2-8) as
+                                                                                   dv " a dt.
+                                              We next write the indefinite integral (or antiderivative) of both sides:
+
+                                                                                              " "
+                                                                                                dv "          a dt.
+
+                                              Since acceleration a is a constant, it can be taken outside the integration. We obtain
+
+                                                                                               " dv " a       " dt
+
+                                              or                                                 v " at # C.                                  (2-25)
+                                              To evaluate the constant of integration C, we let t " 0, at which time v " v0.
+                                              Substituting these values into Eq. 2-25 (which must hold for all values of t,
+                                              including t " 0) yields
+                                                                           v0 " (a)(0) # C " C.
+                                              Substituting this into Eq. 2-25 gives us Eq. 2-11.
+                                                 To derive Eq. 2-15, we rewrite the definition of velocity (Eq. 2-4) as
+                                                                                                   dx " v dt
+                                              and then take the indefinite integral of both sides to obtain
+
+                                                                                              " "
+                                                                                                dx "          v dt.
+
+                                              *This section is intended for students who have had integral calculus.

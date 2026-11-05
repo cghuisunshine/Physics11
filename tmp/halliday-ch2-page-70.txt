@@ -1,0 +1,82 @@
+34           CHAPTE R 2 M OTION ALONG A STRAIG HT LI N E
+
+
+the mushroom, a drop grows on one side of the spore and a film                                                                                  Green
+                                                                                          xr
+grows on the other side. The spore is bent over by the drop’s weight,                                                                            car
+                                                                                                                                                        x
+but when the film reaches the drop, the drop’s water suddenly                      Red                                                    xg
+spreads into the film and the spore springs upward so rapidly that it              car
+is slung off into the air. Typically, the spore reaches a speed of 1.6                             Figure 2-27 Problems 34 and 35.
+m/s in a 5.0 mm launch; its speed is then reduced to zero in 1.0 mm
+by the air. Using those data and assuming constant accelerations,              ••35 Figure 2-27 shows a red car                  xg 0
+find the acceleration in terms of g during (a) the launch and (b) the          and a green car that move toward
+speed reduction.                                                               each other. Figure 2-28 is a graph of
+
+
+
+
+                                                                                                                         x (m)
+•25 An electric vehicle starts from rest and accelerates at a rate             their motion, showing the positions
+of 2.0 m/s2 in a straight line until it reaches a speed of 20 m/s. The         xg0 " 270 m and xr0 " $35.0 m at                    0
+                                                                               time t " 0. The green car has a con-              xr 0 0                 12
+vehicle then slows at a constant rate of 1.0 m/s2 until it stops. (a)
+                                                                               stant speed of 20.0 m/s and the red                             t (s)
+How much time elapses from start to stop? (b) How far does the
+vehicle travel from start to stop?                                             car begins from rest. What is the ac-             Figure 2-28 Problem 35.
+                                                                               celeration magnitude of the red car?
+•26 A muon (an elementary particle) enters a region with a speed
+of 5.00 ' 10 6 m/s and then is slowed at the rate of 1.25 ' 1014 m/s2.         ••36 A car moves along an x axis through a distance of 900 m,
+(a) How far does the muon take to stop? (b) Graph x versus t and v             starting at rest (at x " 0) and ending at rest (at x " 900 m).
+versus t for the muon.                                                         Through the first 14 of that distance, its acceleration is #2.25 m/s2.
+                                                                               Through the rest of that distance, its acceleration is $0.750 m/s2.
+•27 An electron has a constant acceleration of #3.2 m/s2. At a                 What are (a) its travel time through the 900 m and (b) its maxi-
+certain instant its velocity is #9.6 m/s. What is its velocity (a) 2.5 s       mum speed? (c) Graph position x, velocity v, and acceleration a
+earlier and (b) 2.5 s later?                                                   versus time t for the trip.
+•28 On a dry road, a car with good tires may be able to brake                  ••37 Figure 2-29 depicts the motion x (m)
+with a constant deceleration of 4.92 m/s2. (a) How long does such              of a particle moving along an x axis
+a car, initially traveling at 24.6 m/s, take to stop? (b) How far does         with a constant acceleration. The fig- xs
+it travel in this time? (c) Graph x versus t and v versus t for the            ure’s vertical scaling is set by xs " 6.0 m.
+deceleration.                                                                  What are the (a) magnitude and (b) di-
+•29 ILW A certain elevator cab has a total run of 190 m and a max-             rection of the particle’s acceleration?
+imum speed of 305 m/min, and it accelerates from rest and then                 ••38 (a) If the maximum acceleration
+back to rest at 1.22 m/s2. (a) How far does the cab move while ac-             that is tolerable for passengers in a 0                  1     2
+                                                                                                                                                    t (s)
+celerating to full speed from rest? (b) How long does it take to                                           2
+                                                                               subway train is 1.34 m/s and subway
+make the nonstop 190 m run, starting and ending at rest?                       stations are located 806 m apart, what         Figure 2-29 Problem 37.
+•30 The brakes on your car can slow you at a rate of 5.2 m/s2. (a)             is the maximum speed a subway train
+If you are going 137 km/h and suddenly see a state trooper, what is            can attain between stations? (b) What
+the minimum time in which you can get your car under the 90 km/h               is the travel time between stations? (c) If a subway train stops for 20 s
+speed limit? (The answer reveals the futility of braking to keep               at each station, what is the maximum average speed of the train, from
+your high speed from being detected with a radar or laser gun.)                one start-up to the next? (d) Graph x, v, and a versus t for the interval
+(b) Graph x versus t and v versus t for such a slowing.                        from one start-up to the next.
+•31 SSM Suppose a rocket ship in deep space moves with con-                    ••39 Cars A and B move in              xs
+stant acceleration equal to 9.8 m/s2, which gives the illusion of nor-         the same direction in adjacent
+mal gravity during the flight. (a) If it starts from rest, how long will       lanes.The position x of car A is
+                                                                                                                 x (m)
+
+
+
+
+it take to acquire a speed one-tenth that of light, which travels at           given in Fig. 2-30, from time
+3.0 ' 108 m/s? (b) How far will it travel in so doing?                         t " 0 to t " 7.0 s. The figure’s
+                                                                               vertical scaling is set by xs "
+•32         A world’s land speed record was set by Colonel John                32.0 m.At t " 0, car B is at x "
+P. Stapp when in March 1954 he rode a rocket-propelled sled that                                                      0      1 2 3         4 5 6 7
+                                                                               0, with a velocity of 12 m/s and
+moved along a track at 1020 km/h. He and the sled were brought to                                                                     t (s)
+                                                                               a negative constant accelera-
+a stop in 1.4 s. (See Fig. 2-7.) In terms of g, what acceleration did he       tion aB. (a) What must aB be              Figure 2-30 Problem 39.
+experience while stopping?                                                     such that the cars are (momen-
+•33 SSM ILW A car traveling 56.0 km/h is 24.0 m from a barrier                 tarily) side by side (momentarily at the same value of x) at t " 4.0 s?
+when the driver slams on the brakes. The car hits the barrier 2.00 s           (b) For that value of aB, how many times are the cars side by side?
+later. (a) What is the magnitude of the car’s constant acceleration            (c) Sketch the position x of car B versus time t on Fig. 2-30. How
+before impact? (b) How fast is the car traveling at impact?                    many times will the cars be side by side if the magnitude of accelera-
+••34       In Fig. 2-27, a red car and a green car, identical except for the   tion aB is (d) more than and (e) less than the answer to part (a)?
+color, move toward each other in adjacent lanes and parallel to an x           ••40        You are driving toward a traffic signal when it turns yel-
+axis. At time t " 0, the red car is at xr " 0 and the green car is at xg "     low. Your speed is the legal speed limit of v0 " 55 km/h; your best
+220 m. If the red car has a constant velocity of 20 km/h, the cars pass        deceleration rate has the magnitude a " 5.18 m/s2.Your best reaction
+each other at x " 44.5 m, and if it has a constant velocity of 40 km/h,        time to begin braking is T " 0.75 s. To avoid having the front of your
+they pass each other at x " 76.6 m. What are (a) the initial velocity          car enter the intersection after the light turns red, should you
+and (b) the constant acceleration of the green car?                            brake to a stop or continue to move at 55 km/h if the distance to

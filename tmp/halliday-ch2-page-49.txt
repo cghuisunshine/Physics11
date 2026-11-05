@@ -1,0 +1,58 @@
+     C      H      A      P      T      E      R            2
+
+
+
+Motion Along a Straight Line
+2-1 POSITION, DISPLACEMENT, AND AVERAGE VELOCITY
+Learning Objectives
+After reading this module, you should be able to …                  2.04 Apply the relationship between a particle’s average
+2.01 Identify that if all parts of an object move in the same di-      velocity, its displacement, and the time interval for that
+   rection and at the same rate, we can treat the object as if it      displacement.
+   were a (point-like) particle. (This chapter is about the mo-     2.05 Apply the relationship between a particle’s average
+   tion of such objects.)                                              speed, the total distance it moves, and the time interval for
+2.02 Identify that the position of a particle is its location as       the motion.
+   read on a scaled axis, such as an x axis.                        2.06 Given a graph of a particle’s position versus time,
+2.03 Apply the relationship between a particle’s                       determine the average velocity between any two particular
+   displacement and its initial and final positions.                   times.
+
+Key Ideas
+● The position x of a particle on an x axis locates the particle    ● When a particle has moved from position x1 to position x2
+with respect to the origin, or zero point, of the axis.             during a time interval -t " t2 $ t1, its average velocity during
+● The position is either positive or negative, according            that interval is
+                                                                                                  -x      x2 $ x1
+to which side of the origin the particle is on, or zero if                                vavg "      "            .
+the particle is at the origin. The positive direction on                                          -t       t2 $ t1
+                                                                    ● The algebraic sign of vavg indicates the direction of motion
+an axis is the direction of increasing positive numbers;
+                                                                    (vavg is a vector quantity). Average velocity does not depend
+the opposite direction is the negative direction on
+                                                                    on the actual distance a particle moves, but instead depends
+the axis.
+                                                                    on its original and final positions.
+● The displacement - x of a particle is the change in its
+                                                                    ● On a graph of x versus t, the average velocity for a time in-
+position:
+                                                                    terval -t is the slope of the straight line connecting the points
+                         -x " x2 $ x 1.
+                                                                    on the curve that represent the two ends of the interval.
+● Displacement is a vector quantity. It is positive if the          ● The average speed savg of a particle during a time interval -t
+particle has moved in the positive direction of the x axis          depends on the total distance the particle moves in that time
+and negative if the particle has moved in the negative              interval:
+direction.                                                                                       total distance
+                                                                                         savg "                  .
+                                                                                                       -t
+
+
+What Is Physics?
+One purpose of physics is to study the motion of objects—how fast they move, for
+example, and how far they move in a given amount of time. NASCAR engineers
+are fanatical about this aspect of physics as they determine the performance of
+their cars before and during a race. Geologists use this physics to measure
+tectonic-plate motion as they attempt to predict earthquakes. Medical
+researchers need this physics to map the blood flow through a patient when
+diagnosing a partially closed artery, and motorists use it to determine how they
+might slow sufficiently when their radar detector sounds a warning. There are
+countless other examples. In this chapter, we study the basic physics of motion
+where the object (race car, tectonic plate, blood cell, or any other object) moves
+along a single axis. Such motion is called one-dimensional motion.
+                                                                                                                                      13

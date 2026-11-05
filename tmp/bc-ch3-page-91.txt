@@ -1,0 +1,54 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+                               Static friction  for example  keeps a car with its parking brakes on from sliding down a 
+                               hill. A block of wood will remain stationary on a sloped table until you increase the angle 
+                               sufficiently that it begins to slide. The force required to overcome static friction is always 
+                               greater than the force needed to balance kinetic friction. Kinetic friction is the friction 
+                               force between two flat surfaces that exists when one surface slides over the other. 
+                                       To overcome static friction  you have to break the iweldsw before the objects can 
+                               move relative to one another. When you push a a heavy object  you have probably 
+                               noticed that the force needed to get the object moving was slightly greater than the force 
+                               needed to keep it moving at steady speed.
+                                       The force of friction Ffr is proportional to the force of gravity Fg on the object sliding 
+                               over a smooth surface. A more general fact about kinetic friction is that the force of 
+                               friction is proportional to the normal force FN  which is the force acting perpendicular to 
+                               the surfaces.
+                                       If a block slides horizontally across a table as in Figure 3.2.2  a  the force of gravity 
+                               is equal in magnitude to the normal force  but if the surfaces are at an angle to the 
+                               horizontal as in Figure 3.2.2  b  the normal force does not equal the force of gravity. You 
+                               will encounter situations like this in future physics courses.
+
+
+
+                                                                                             FN
+
+                                                     FN
+                                                                                                                   Fr
+
+                                 your 
+                                 force
+                                    F                               Fr
+
+                                                                                                     Fg
+
+
+                                 a                   Fg                              b
+
+                                 Figure 3.2.2  a  For a block sliding horizontally  the force of gravity and the normal force are equal. 
+                                 b  For block sliding on a slope  these two forces are not equal.
+
+
+                               In general  for two objects with smooth flat surfaces sliding over one another  the force of 
+   Coeöcients of              
+                               friction is proportional to the normal force. The constant of proportionality is called the 
+   Friction                    coefficient of kinetic friction. It is given the special symbol   which is the Greek letter 
+                               mu. 
+                                                                            F   =  FN
+                                                                              fr
+                                                  
+
+
+
+
+   86  Chapter 3   Forces                                                          ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

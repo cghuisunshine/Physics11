@@ -1,0 +1,55 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+        Sample Problem 5.4.1  Working with Specimc Heat Capacity
+        If 25 kJ of heat is transferred to 50.0 kg of water initially at 20.0¡C  what will the final temperature of the water be
+
+        What to Think About                              How to Do It
+        1.  Find the formula                             HE = mcHT
+
+        2.  Identify what you know.                      HE  = 25 kJ
+                                                           m  = 50.0 kg
+                                                            c  = 4.2 w 103 J/kg/C
+                                                           T1  = 20.0C
+                                                           T2  =   
+
+        3.  To find the final temperature                T2 m 20.0C =                      2.5 w 104 J
+            determine how much the 
+                                                                              5.0 w 101 kg      4.2 w 103 J/kg/C
+            temperature will increase with 25 kJ           = 0.12C 
+            of heat added.
+
+        4.  Solve for T2.                                T2  = 20.0C  0.12C
+                                                           = 20.1C
+
+                                                         The final temperature will be 20.1C.
+
+
+        Practice Problems 5.4.1  Working with Specimc Heat Capacity
+        1.  How much heat is needed to raise the temperature of 90.0 kg of water from 18C to 80C
+
+
+
+
+        2.  If 1.0 MJ  megajoule  of heat is transferred to 10.0 kg of water initially at 15C  what will the water's final 
+            temperature be
+
+
+
+
+        3.  If 12 kg of water cools from 100C down to room temperature  20C  how much heat will it release to the 
+            environment
+
+
+
+
+        4.  Why is water such a desirable material to use as a coolant in a car engine
+
+
+        5.  If it takes 1200 J to raise the temperature of 0.500 kg of brass from 20.0C to 26.2C  what is the specific heat 
+            capacity of brass
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                   Chapter 5   Energy  161

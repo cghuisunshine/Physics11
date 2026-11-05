@@ -1,0 +1,44 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+                                       The common laboratory spring balance uses a spring that is stretched by the force 
+                                of gravity acting on the object that is being iweighedw  Figure 3.1.1 . If the spring is of 
+                                good quality  the amount it stretches will depend directly on the force of gravity. That is  
+                                if the force of gravity doubles  the stretch will double. If the force of gravity triples  the 
+                                stretch will triple.  In other words  the amount of stretch is directly proportional to the 
+                                force of gravity on the object.
+
+
+
+
+                                a                                            b
+                               Figure 3.1.1  An example of a laboratory spring balance showing the gauge  a  
+                               and the spring  b
+
+
+                               One of Sir Isaac Newton's many valuable contributions to science is his law of universal 
+   Newton's Law               
+                               gravitation. Newton  1642o1727  realized that the force of gravity  which affects you 
+   of Universal                and everything around you  is a universal force. Any two masses in the universe exert a 
+   Gravitation                 gravitational force on each other. The force that keeps planets in orbit is the same force 
+                               that makes an apple fall to the ground. How strong the force is depends on how massive 
+                               the bodies are. It also depends on the distance between the two bodies.
+                                     Like all other forces  gravity is a mutual force. That is  the force with which the Earth 
+                               pulls on a falling apple is equal to the force with which the apple pulls on the Earth  but 
+                               in the opposite direction. The Earth pulls on your body with a force of gravity that is 
+                               commonly referred to as your iweight.w Simultaneously  your body exerts a force on planet 
+                               Earth of the same magnitude but in the opposite direction.
+                                     Newton was able to use Kepler's laws of planetary motion as a starting point for 
+                               developing his own ideas about gravity. Johannes Kepler  1571o1630  was a German 
+                               astronomer who described the motion of the planets around the Sun now called Kepler's 
+                               Laws. You will study these laws in future courses.  Using Kepler's laws  Newton showed 
+                               that the force of gravity between the Sun and the planets varied as the inverse of the 
+                               square of the distance between the Sun and the planets. He was convinced that the 
+                               inverse square relation would apply to everyday objects near Earth's surface as well. He 
+                               produced arguments suggesting that the force would depend on the product of the 
+                               masses of the two bodies attracted to one another. The result was his law of universal 
+                               gravitation.
+
+
+
+   78  Chapter 3   Forces                                                    ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

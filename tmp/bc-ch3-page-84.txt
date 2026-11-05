@@ -1,0 +1,56 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+                                          Newton's law of universal gravitation can be summarized as follows:
+
+
+                                        Every body in the universe attracts every other body with a force that  a  is directly 
+                                       proportional to the product of the masses of the two bodies  and  b  is inversely 
+                                       proportional to the square of the distance between the centres of mass of the two 
+                                       bodies.
+
+
+                                          The equation for Newton's law of universal gravitation is: 
+                                                                                      mm
+                                                                               Fg = G 12  2
+                                                                                       r
+                                    where G is the universal gravitation constant  m1 and m2 are the masses of the bodies 
+                                    attracting each other  and r is the distance between the centres of the two bodies.
+                                          Isaac Newton was unable to measure G  but Henry Cavendish  1731o1810  
+                                    measured it later in experiments. The modern value for G is 6.67 w 10o11 Ntm2/kg2. 
+
+
+                                   You can imagine how difficult it is to measure the gravitational force between two 
+      Cavendish's                 
+                                   ordinary objects. In 1797  Henry Cavendish performed a very sensitive experiment that 
+      Experiment to                was the first Earth-bound confirmation of the law of universal gravitation. Cavendish 
+      Measure G                    used two lead spheres mounted at the ends of a rod 2.0 m long. The rod was suspended 
+                                   horizontally from a wire that would twist an amount proportional to the gravitational 
+                                   force between the suspended masses and two larger fixed spherical masses placed near 
+                                   each of the suspended spheres.  See Figure 3.1.2.
+
+
+
+
+                                          m1
+
+
+                                          m2
+
+                                                                                           m2
+                                                                                    m1
+
+
+
+
+                                    Figure 3.1.2  Cavendish's apparatus
+
+                                          The forces involved in this experiment were extremely small  of the order 10o6 N  
+                                    so great care had to be taken to eliminate errors due to air currents and static electricity. 
+                                    Cavendish did manage to provide confirmation of the law of universal gravitation  and he 
+                                    arrived at the first measured value of G.
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                  Chapter 3   Forces  79

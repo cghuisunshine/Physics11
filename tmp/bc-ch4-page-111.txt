@@ -1,0 +1,51 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+     Problem 3:  Inertia on an air track
+
+     Procedure
+     1.  Place a glider on an air track as shown in Figure 4.1.4. Turn on the compressed air supply and check that 
+         the track is absolutely level. When the track is level the glider should have no tendency to move in one 
+         direction or the other. It should sit still.
+     2.  Place the glider at one end of the track. Give it a slight nudge  and let it go.
+     3.  Observe the motion of the glider.
+
+     Questions  
+     1.  Are there any unbalanced forces on the glider  
+     2.  Describe its motion. 
+     3.  How does this demonstration illustrate Newton's first law
+
+
+                air track                                     glider
+
+
+
+
+     Figure 4.1.4  Problem 3
+
+
+     Problem 4:  Get on the right track.
+
+     Procedure
+     1.  Place a battery-powered toy train on a circular track  and let it run a few full circles.
+     2.  Predict which way the train will go if one of the sections of curved track is removed. Which one of the following 
+         will the train do  Explain your answer.
+          a   continue to move in a circle 
+          b   move off along a radius of the circle 
+          c   move off in a straight line tangent to the circle
+          d   follow some other path
+     3.  Now test your prediction by setting up a section of track as shown in Figure 4.1.5. 
+
+     Question
+     1.  What happens to the toy train when it leaves the track  Explain this in terms of inertia. 
+
+
+
+
+         Figure 4.1.5  Problem 4
+
+
+
+
+   106  Chapter 4   Newton's Laws of Motion                              ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

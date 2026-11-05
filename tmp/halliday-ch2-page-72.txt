@@ -1,0 +1,110 @@
+36           CHAPTE R 2 M OTION ALONG A STRAIG HT LI N E
+
+
+••55 SSM A ball of moist clay falls 15.0 m to the ground. It is                   Module 2-6 Graphical Integration in Motion Analysis
+in contact with the ground for 20.0 ms before stopping. (a) What is               •65          Figure 2-15a gives the acceleration of a volunteer’s
+the magnitude of the average acceleration of the ball during the time             head and torso during a rear-end collision. At maximum head ac-
+it is in contact with the ground? (Treat the ball as a particle.) (b) Is the      celeration, what is the speed of (a) the head and (b) the torso?
+average acceleration up or down?
+                                                                                  ••66          In a forward punch in karate, the fist begins at rest at
+••56          Figure 2-35             v                                           the waist and is brought rapidly forward until the arm is fully ex-
+shows the speed v versus                                                          tended. The speed v(t) of the fist is given in Fig. 2-37 for someone
+height y of a ball tossed                                                         skilled in karate. The vertical scaling is set by vs " 8.0 m/s. How far
+directly upward, along a y      vA                                                has the fist moved at (a) time t " 50 ms and (b) when the speed of
+axis. Distance d is 0.40 m.                                                       the fist is maximum?
+The speed at height yA is
+                               1
+                               __
+vA. The speed at height yB     3 A
+                                  v                                                                  vs
+is 13vA. What is speed vA?                                                    y
+                                  0
+••57 To test the quality                                d
+
+
+
+
+                                                                                           v (m/s)
+                                                 yA             yB
+of a tennis ball, you drop
+it onto the floor from a             Figure 2-35 Problem 56.
+height of 4.00 m. It re-
+bounds to a height of 2.00 m. If the ball is in contact with the floor
+for 12.0 ms, (a) what is the magnitude of its average acceleration
+during that contact and (b) is the average acceleration up or down?                                  0                 50                           100             140
+                                                                                                                               t (ms)
+••58 An object falls a distance h from rest. If it travels 0.50h in
+                                                                                                          Figure 2-37 Problem 66.
+the last 1.00 s, find (a) the time and (b) the height of its fall. (c)
+Explain the physically unacceptable solution of the quadratic
+equation in t that you obtain.                                                    ••67 When a soccer          as
+                                                                                  ball is kicked to-
+••59 Water drips from the nozzle of a shower onto the floor 200                                                               Bare
+                                                                                  ward a player and
+
+
+
+
+                                                                                                            a (m/s2)
+cm below. The drops fall at regular (equal) intervals of time, the                the player deflects
+first drop striking the floor at the instant the fourth drop begins to            the ball by “head-                              Helmet
+fall. When the first drop strikes the floor, how far below the nozzle             ing” it, the accelera-
+are the (a) second and (b) third drops?                                           tion of the head dur-
+••60      A rock is thrown vertically upward from ground level at                 ing the collision can        0             2          4          6
+time t " 0.At t " 1.5 s it passes the top of a tall tower, and 1.0 s later        be significant. Figure                        t (ms)
+it reaches its maximum height.What is the height of the tower?                    2-38 gives the meas-                Figure 2-38 Problem 67.
+                                                                                  ured      acceleration
+•••61      A steel ball is dropped from a building’s roof and passes
+                                                                                  a(t) of a soccer player’s head for a bare head and a helmeted head,
+a window, taking 0.125 s to fall from the top to the bottom of the
+                                                                                  starting from rest. The scaling on the vertical axis is set by as " 200
+window, a distance of 1.20 m. It then falls to a sidewalk and
+                                                                                  m/s2. At time t " 7.0 ms, what is the difference in the speed acquired
+bounces back past the window, moving from bottom to top in
+                                                                                  by the bare head and the speed acquired by the helmeted head?
+0.125 s. Assume that the upward flight is an exact reverse of the
+fall. The time the ball spends below the bottom of the window is                  ••68          A salamander of the genus Hydromantes captures
+2.00 s. How tall is the building?                                                 prey by launching its tongue
+                                                                                  as a projectile: The skeletal
+•••62         A basketball player grabbing a rebound jumps                                                         a2
+                                                                                  part of the tongue is shot for-
+76.0 cm vertically. How much total time (ascent and descent) does
+                                                                                                                            a (m/s2)
+
+
+
+
+                                                                                  ward, unfolding the rest of
+the player spend (a) in the top 15.0 cm of this jump and (b) in the
+                                                                                  the tongue, until the outer
+bottom 15.0 cm? (The player seems to hang in the air at the top.)
+                                                                                  portion lands on the prey,       a1
+•••63      A drowsy cat spots a flowerpot that sails first up and then            sticking to it. Figure 2-39
+down past an open window. The pot is in view for a total of 0.50 s, and           shows the acceleration mag-       0        10     20     30  40
+the top-to-bottom height of the window is 2.00 m. How high above the                                                                t (ms)
+                                                                                  nitude a versus time t for the
+window top does the flowerpot go?            y                                    acceleration phase of the            Figure 2-39 Problem 68.
+                                                      s
+•••64 A ball is shot vertically up-                                               launch in a typical situation.
+ward from the surface of another                                                  The indicated accelerations are     vs
+planet. A plot of y versus t for the                                              a2 " 400 m/s2 and a1 " 100 m/s2.
+                                            y (m)
+
+
+
+
+ball is shown in Fig. 2-36, where y is                                            What is the outward speed of the
+                                                                                                                                   v (m/s)
+
+
+
+
+the height of the ball above its start-                                           tongue at the end of the
+ing point and t " 0 at the instant the                                            acceleration phase?
+ball is shot. The figure’s vertical scal-                                         ••69 ILW How far does the run-
+ing is set by ys " 30.0 m. What are the              0                            ner whose velocity–time graph is
+                                                      0    1   2     3   4    5
+magnitudes of (a) the free-fall accel-                                            shown in Fig. 2-40 travel in 16 s?                         0         4      8       12   16
+                                                                t (s)                                                                                       t (s)
+eration on the planet and (b) the ini-                                            The figure’s vertical scaling is set
+tial velocity of the ball?                          Figure 2-36 Problem 64.       by vs " 8.0 m/s.                                               Figure 2-40 Problem 69.

@@ -1,0 +1,58 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+         Quick Check
+
+         1.  a   What is the momentum of a 112 kg football player running with a velocity of 3.6 m/s
+
+
+
+
+             b   What impulse must a tackler impart to the football player to bring him to a stop
+
+
+
+
+             c   If the tackle was completed in 0.80 s  what average force did the tackler exert on the other player
+
+
+
+
+             d   Why is the force negative in question 1 c
+
+             ____________________________________________________________________________________
+
+             ____________________________________________________________________________________
+
+
+
+                             Any moving body has momentum equal to the product of the body's mass and its 
+      Law of Conservation    velocity. What makes momentum such an important quantity in nature is the fact that in 
+      of Momentum            a closed system  momentum is conserved. A closed system is one where no outside forces 
+                             act on the system. This is the law of conservation of momentum. In other words  the 
+                             total change in momentum within the closed  two-body system is zero. This means that 
+                             the total momentum is constant  or that momentum is conserved.
+                                    Scientists have done many  many experiments with momentum and are convinced 
+                             that momentum truly is a conserved quantity in nature. At the subatomic level in 
+                             experiments done with high-energy particle accelerators  physicists rely heavily on the 
+                             law of conservation of momentum in interpreting the results of collisions of particles.
+
+                                    Conservation of Momentum and Newton's Third Law
+                                    Newton's third law is a special case of the law of conservation of momentum. This can be 
+                                    shown by using a proof. A proof is a mathematical solution that logically demonstrates 
+                                    something to be true. The following is a proof showing that Newton's third law is a special 
+                                    case of the law of conservation of momentum. 
+                                            Consider two bodies interacting such that body A exerts a force on body B  and 
+                                    body B exerts an equal force on body A  but in the opposite direction.
+                                                                             FA on B  =  o FB on A
+                                                                       action force = o reaction force
+                                          The minus sign indicates that the direction of the reaction force is opposite to that 
+                                    of the action force. Using Newton's second law  written in terms of momentum:
+                                                                           mBvB      m v
+                                                                                 = o  A A
+                                                                            t         t
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                Chapter 4   Newton's Laws of Motion  123

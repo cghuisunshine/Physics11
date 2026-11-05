@@ -1,0 +1,58 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+        Practice Problems 5.1.1  Calculating Work
+        1.  How much work will you do if you push a block of concrete 4.3 m along a floor  with a steady force of 25 N
+
+
+
+
+        2.  If your mass is 70.0 kg  how much work will you do climbing a flight of stairs 25.0 m high  moving at a steady 
+            pace    g  = 9.81 N/kg
+
+
+
+
+        3.  Your car is stuck in the mud. You push on it with a force of 300.0 N for 10.0 s  but it will not move. How much 
+            work have you done in the 10.0 s
+
+
+
+
+                                   A machine is powerful if it can do a lot of work in a short time. Power is the measure of 
+      Power                       
+                                   the amount of work a machine can do in one second.
+                                                                                       work
+                                                                             power = 
+                                                                                        time
+
+                                                                                 P =  W
+                                                                                      Ht
+
+
+                                          Power could be measured in joules per second  J/s  but one joule per second is 
+                                    called one watt  W  after James Watt  1736o1819  a Scottish engineer.
+                                                                               1 W = 1 J/s
+                                          Power can be measured in kilowatts  kW  or megawatts  MW .
+
+                                                                         1 kW = 1000 W  103 W
+                                                                      1 MW = 1 000 000 W  106 W
+
+
+        Sample Problem 5.1.2  Calculating Power
+        The power of a small motor in a toy can be calculated by the amount of work it does in a period of time. What is 
+        the power rating of a toy motor that does 4200 J of work in 70.0 s
+
+        What to Think About                 How to Do It
+
+        1.  Find the correct formula.       P =  W
+                                                 Ht
+
+                                                4200 J
+        2.  Calculate the power.            P =  70.0s   = 60 W
+
+                                            The power rating of the toy motor is 60 W.
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                               Chapter 5   Energy  133

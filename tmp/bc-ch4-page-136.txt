@@ -1,0 +1,58 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+      5  Energy
+      By the end of this chapter  you should be able to do the following:
+      ±  Perform calculations involving work  force and                          ±" Solve problems involving different forms of energy
+         displacement                                                               t  solve a variety of problems involving:
+         t  solve a variety of problems involving:                                      o  gravitational potential energy
+             o   work                                                                   o  mass
+             o  force                                                                   o  acceleration due to gravity
+             o  displacement                                                            o  height above a reference point
+      ±  Solve problems involving power and efficiency                              t  solve a variety of problems involving:
+         t  perform calculations involving relationships                                o  kinetic energy      o  velocity
+             among:                                                                     o  mass
+             o  power                                                            ±" Analyse the relationship between work and energy  
+             o  work                                                                with reference to the law of conservation of energy
+             o  time                                                                t  relate energy change to work done
+         t  perform calculations involving relationships                            t  state the law of conservation of energy
+             among:                                                                 t  solve problems  using the law of conservation of 
+             o  work  input and output                                                  energy to determine:
+             o  power  input and output                                                 o  gravitational potential energy
+             o  efficiency                                                              o  total energy
+         t  solve a variety of problems involving:                                      o  kinetic energy
+             o  gravitational potential energy                                          o  thermal energy
+             o  mass                                                                t  solve a variety of problems involving:
+             o  acceleration due to gravity                                             o  thermal energy  o  specific heat capacity
+             o  height above a reference point                                          o  mass                 o  change in temperature
+
+      By the end of this chapter  you should know the meaning to these key terms:
+
+      t    conduction                                   t         heat                              t    specific heat capacity
+      t    convection                                   t         kinetic energy                    t    temperature
+      t    efficiency                                   t         law of conservation of energy     t    thermal energy
+      t    energy                                       t         power                             t    watt
+      t    gravitational potential energy               t         radiation                         t    work
+
+      By the end of the chapter  you should be able to use and 
+      know when to use the following formulae:
+
+      W = Fd                              W = HE
+
+                                                  1
+      Ep = mgh                            Ek =       mv2
+                                                  2  
+
+           W HE                                        Wout   Pout
+      P =  Ht  =  Ht                      efficiency =  W   =  P
+                                                             in         in
+
+
+
+
+                         An explosion is an example of chemical  sound  light  and 
+                              thermal energy being released all at the same time.
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                         Chapter 5   Energy  131

@@ -1,0 +1,29 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+             Table 3.2.3  Data for Investigation 3-2  Part 2
+
+                Number of                       Total Force of          Force of
+                                   Area
+                 Blocks                          Gravity  N           Friction  N
+                     4            1 w A            constant
+                     4            2 w A            constant
+                     4            3 w A            constant
+                     4            4 w A            constant
+                                                   
+         4. Double the surface area by arranging the blocks as in Figure 3.2.4 b . Notice that the force of gravity is still the 
+             same; only the area has changed. Measure and record the force of friction. Measure it several times until you are 
+             satisfied that you have an acceptable average.
+         5. Arrange the blocks so that the surface area is tripled  then quadrupled without changing the force of gravity. See 
+             Figure 3.2.4. Measure and record the force of friction each time.
+         Concluding Questions
+         1.  After comparing your results for Part 2 with several other groups doing the same experiment  write a conclusion 
+             about the effect that varying the surface area has on the amount of friction between a smooth flat object of 
+             constant force of gravity and another smooth surface.
+         2.  Discuss sources of error in this experiment.
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                 Chapter 3   Forces  91

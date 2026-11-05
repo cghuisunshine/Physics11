@@ -1,0 +1,53 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+                                           Table 3.2.1 lists some coefficients of kinetic friction.
+                                    Table 3.2.1  Coefficients of Kinetic Friction
+
+                                         Surfaces in Contact         Coefficient 
+                                      wood on wood                         0.25
+                                      steel on steel                       0.50
+                                      steel on steel  lubricated           0.10
+                                      rubber on dry asphalt                0.40
+                                      rubber on wet asphalt                0.20
+                                      rubber on ice                        0.005
+                                      steel on ice                         0.01
+                                        All values are approximate. Precise values  
+                                       vary with conditions such as degree of  
+                                        smoothness.
+
+                                           Surface area does not affect the force of friction appreciably. For example  it will 
+                                    require the same force to slide a building brick on its edge  as it will on its broad side. The 
+                                    two factors that have the greatest effect on friction are:
+                                    1.  the normal force pushing the surfaces together  and 
+                                    2.  the nature of the surfaces.
+
+
+
+       Sample Problem 3.2.1  Kinetic Friction
+       The coefficient of kinetic friction between a wooden box and a concrete floor is 0.30. With what force must you 
+       push to slide the box across the floor at steady speed if the force of gravity on the box is 450 N
+
+       What to Think About                             How to Do It
+       1.   If the box is moving at a constant         Ffr  =  FN
+            speed  the forces acting on it are 
+            balanced. This means the force 
+            needed to push the box is equal 
+            and opposite to the force of 
+            friction. Find the force of friction.
+
+       2.  The box is on a flat surface. This          FN = Fg
+           means the force of gravity equals           FN = 450 N
+           the normal force. Find the normal 
+           force
+                                                       Ffr = Fg 
+                                                         =  0.30 450 N  
+       3.  Solve.                                        = 135 N 
+                                                         = 1.4 w 102 N
+
+                                                       You have to push the box with a force of 1.4 w 102 N.
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                    Chapter 3   Forces  87

@@ -121,10 +121,24 @@ textarea:focus-visible{outline:3px solid #b78021;outline-offset:3px}
 .topic-actions{display:flex;gap:8px;flex-wrap:wrap}.topic-actions button{padding:6px 10px;font-size:12px;border:1px solid var(--line)}.topic-menu .topic-group{margin:12px 0 0;padding:10px 0 0;border:0;border-top:1px solid var(--line)}
 .toolbar .topic-option{display:flex;align-items:flex-start;gap:9px;flex:none;min-width:0;max-width:100%;padding:7px 0;font-size:13px;font-weight:400;color:var(--ink);cursor:pointer}.topic-option input{width:16px;height:16px;flex:none;margin:3px 0 0;accent-color:var(--green)}.toolbar .topic-chapter{font-weight:700}.topic-group .topic-section{padding-left:16px}
 .followup-setting{display:flex;align-items:flex-start;gap:9px;margin:14px 0;font-size:13px;font-weight:650}.followup-setting input{margin-top:5px;flex-shrink:0}.followup-card{border:1px solid #b8cbbb;background:#f4f8f1;border-radius:10px;padding:20px;margin:22px 0}.followup-card h3{margin:5px 0 10px;font-size:20px}.followup-card .statement,.followup-solution{white-space:pre-wrap;overflow-wrap:anywhere}.followup-choices{display:grid;gap:9px}.followup-choice{text-align:left;background:#fff;border:1px solid #cbd6cd;color:var(--ink);font-size:14px;font-weight:400;white-space:pre-wrap;overflow-wrap:anywhere}.followup-choice:disabled{opacity:1}.followup-card .actions:not(:has(button:not([hidden]))){display:none}.followup-choice.selected{border-color:var(--green);box-shadow:inset 0 0 0 1px var(--green)}.followup-choice.correct{background:#e2f3e7;border-color:#387b50}.followup-choice.incorrect{background:#fceae5;border-color:#ae5037}.followup-solution{border-top:1px solid var(--line);padding-top:14px;margin-top:16px;font-size:14px}.followup-card .actions .secondary{width:auto;margin:0}
+
+.exam-mode .workspace> :not(.toolbar):not(#practice-scope-help):not(#exam-panel){display:none!important}
+.exam-mode #sidebar{display:none!important}.exam-mode .layout,.exam-mode .layout.sidebar-collapsed{grid-template-columns:minmax(0,1fr)}
+.exam-panel{background:#fff;border:1px solid var(--line);margin-top:20px;padding:28px;max-width:950px}
+.exam-panel textarea{width:100%;display:block;padding:12px;font:inherit;border:1px solid #cbd6cd;border-radius:8px;resize:vertical}
+.exam-panel input[type=number]{display:block;width:100%;padding:10px;margin:5px 0 12px;border:1px solid #cbd6cd;border-radius:7px;font:inherit}
+.exam-session-head{position:sticky;top:0;z-index:5;background:#eef0e7;padding:12px;display:flex;justify-content:space-between;gap:12px;border-radius:8px}
+#exam-timer{font-variant-numeric:tabular-nums}#exam-timer.urgent{color:#a33421}
+.exam-nav{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0}.exam-nav button{background:#eef0e7;min-width:42px;padding:9px}.exam-nav button[aria-current=true]{outline:2px solid var(--green)}.exam-nav button.answered{background:#dbece3}
+#exam-canvas{display:block;width:100%;height:auto;border:1px solid var(--line);touch-action:none;background:#fff}.exam-drawing-tools{display:flex;flex-wrap:wrap;margin:10px 0}
+.exam-readiness{border-top:1px solid var(--line);padding-top:22px;margin-top:28px}.exam-panel table{width:100%;border-collapse:collapse;font-size:13px}.exam-panel th,.exam-panel td{text-align:left;padding:9px;border-bottom:1px solid var(--line)}
+.exam-review-question{margin:24px 0;border-top:1px solid var(--line);padding-top:16px}.exam-saved-answer{white-space:pre-wrap;background:#f5f5ee;padding:14px;border-radius:8px;overflow-wrap:anywhere}.exam-marks{display:flex;gap:16px}.exam-marks label{flex:1}.exam-attestation{display:flex;align-items:flex-start;gap:8px;margin:18px 0}.exam-attestation input{margin-top:6px;flex:none}
+#exam-submit,#exam-new{width:auto;margin:0}#exam-new{margin-top:18px}.exam-history-item{display:block;width:100%;text-align:left;margin:8px 0}#readiness-actions button{width:auto;margin-right:8px}.exam-panel .statement img{max-width:100%;height:auto}.exam-panel .saved-answer-ink{max-width:100%}
+@media(max-width:750px){.exam-panel{padding:18px}.exam-panel th,.exam-panel td{padding:6px;font-size:12px}.exam-session-head{font-size:13px}}
 </style></head>
 <body><header><a class="brand" href="content.html">Physics 11 <span>/ Practice Studio</span></a><div class="header-links"><button id="student-button" class="student-button" type="button" title="Switch student"><span id="student-sync-dot" class="sync-dot" data-state="local" aria-hidden="true"></span><span id="student-name-label">Sign in</span><span class="student-switch">Switch</span></button><button id="monitor-button" class="student-button" type="button">Monitor student</button><button id="fullscreen" class="fullscreen-toggle" type="button" aria-pressed="false" hidden>⛶ Full screen</button><div class="settings-wrap"><button id="settings-button" class="settings-button" type="button" aria-label="Settings" title="Settings" aria-expanded="false" aria-controls="settings-panel"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div id="settings-panel" class="settings-panel" role="dialog" aria-label="Practice and storage settings" hidden><h2>Practice settings</h2><label class="followup-setting"><input id="followup-enabled" type="checkbox" checked>Automatically create a similar AI question after a missed textbook answer</label><p class="small">Uses the original problem and worked solution with the AI tutor. Requires internet access; follow-up practice is saved separately from your textbook score.</p><p class="small">Progress is always saved on this device and works offline. Firebase is only used for optional sync across devices.</p><div class="sync-box settings-sync"><label for="firebase-key" class="small">Firebase API key or sharing link (optional)</label><input id="firebase-key" type="password" autocomplete="off" placeholder="Paste a Firebase key or sharing link"><div class="sync-actions"><button id="sync-enable" class="secondary" type="button">Turn on sync</button><button id="sync-local" class="secondary" type="button">This device only</button><button id="sync-share" class="secondary" type="button">Share sync link</button></div><p id="sync-status" class="small" role="status">Saved on this device only.</p></div></div></div></div></header>
 <main><div class="intro"><div><div class="eyebrow">A LITTLE PRACTICE. A CLEAR NEXT STEP.</div><h1>Make your next answer<br>your best one.</h1><p>Work through a question, learn from the result, and build from there.</p></div><div class="session"><span id="attempt-count">0</span><div>answers checked</div><small id="accuracy">Your progress starts here</small></div></div>
-<div class="layout sidebar-collapsed" id="layout"><section class="workspace"><div class="toolbar"><label>Practice mode<select id="mode"><option value="adaptive">Adaptive · textbook questions</option><option value="coach">Adaptive · skill builder</option><option value="chapter">By chapter · textbook sets</option><option value="random">Random · textbook questions</option><option value="review">Review · missed & flagged</option><option value="day">By day · past 7 days</option></select></label><label>Chapter<select id="practice-chapter" aria-describedby="practice-scope-help"><option value="">All chapters</option></select></label><div id="topic-control" class="topic-control"><span id="topic-label">Focus topics</span><details id="topic-picker" class="topic-picker"><summary id="topic-summary" aria-labelledby="topic-label topic-summary">All topics</summary><div class="topic-menu"><div class="topic-actions"><button id="topic-all" class="quiet" type="button">Select all</button><button id="topic-clear" class="quiet" type="button">Clear selection</button></div><p id="topic-selection-status" class="small" role="status" aria-live="polite"></p><div id="topic-list"></div></div></details></div></div>
+<div class="layout sidebar-collapsed" id="layout"><section class="workspace"><div class="toolbar"><label>Practice mode<select id="mode"><option value="adaptive">Adaptive · textbook questions</option><option value="coach">Adaptive · skill builder</option><option value="chapter">By chapter · textbook sets</option><option value="random">Random · textbook questions</option><option value="review">Review · missed & flagged</option><option value="day">By day · past 7 days</option><option value="exam">Exam Mode · timed unseen questions</option></select></label><label>Chapter<select id="practice-chapter" aria-describedby="practice-scope-help"><option value="">All chapters</option></select></label><div id="topic-control" class="topic-control"><span id="topic-label">Focus topics</span><details id="topic-picker" class="topic-picker"><summary id="topic-summary" aria-labelledby="topic-label topic-summary">All topics</summary><div class="topic-menu"><div class="topic-actions"><button id="topic-all" class="quiet" type="button">Select all</button><button id="topic-clear" class="quiet" type="button">Clear selection</button></div><p id="topic-selection-status" class="small" role="status" aria-live="polite"></p><div id="topic-list"></div></div></details></div></div>
 <p id="practice-scope-help" class="small">Choose a chapter to see its topics. Check any combination of sections, or check a whole chapter. Use Clear selection to start a new selection.</p>
 <section id="adaptive-panel" class="panel" aria-labelledby="adaptive-heading" hidden>
 <h2 id="adaptive-heading">Build every skill, one answer at a time</h2>
@@ -139,6 +153,31 @@ textarea:focus-visible{outline:3px solid #b78021;outline-offset:3px}
 <div id="chapter-controls" class="chapter-controls" hidden><div class="toolbar"><label>Problem<select id="chapter-question"></select></label></div><div class="chapter-progress"><button id="chapter-previous" class="quiet" type="button">← Previous question</button><span id="chapter-progress" class="small" role="status" aria-live="polite"></span></div><div id="chapter-grid" class="chapter-grid" role="group" aria-label="Problems in the selected chapter and topic"></div><p id="chapter-help" class="small chapter-help">Practice the selected chapter and topic in order, or jump to any question number. Green = correct; orange = needs practice, using your latest checked answer. Progress is saved with your student history.</p><p id="chapter-notice" class="notice chapter-notice" hidden></p></div>
 <div id="day-controls" hidden><div class="toolbar day-controls"><label>Practice day<select id="practice-day" aria-describedby="day-help"></select></label><label class="day-filter"><input id="day-exclude-correct" type="checkbox" aria-describedby="day-help">Exclude correctly answered questions</label></div><p id="day-help" class="small day-help">Revisit questions answered today or in the previous six days. The filter uses each question’s latest answer, including later retries.</p><label class="day-question">Question from this day<select id="day-question"></select></label></div>
 <section id="live-panel" class="live-panel" aria-label="Live question sharing" hidden><p id="live-status" role="status" aria-live="polite"></p><div id="live-link-row" class="live-link-row" hidden><input id="live-link" type="text" readonly aria-label="Live follow link"><button id="live-copy" class="primary" type="button">Copy link</button></div><button id="live-exit" class="quiet live-exit" type="button" hidden>Stop sharing</button></section>
+<section id="exam-panel" class="exam-panel panel" aria-labelledby="exam-heading" hidden>
+<div class="eyebrow">INDEPENDENT PRACTICE</div><h2 id="exam-heading">Exam Mode</h2>
+<p id="exam-message" role="status" aria-live="polite"></p><button id="exam-backup" class="quiet" type="button">Export exam progress</button>
+<div id="exam-setup">
+<p>Select chapters and topics above, then take a timed mock exam. Answers and working are saved as you go. Hints, solutions and feedback stay hidden until submission.</p>
+<p class="small">Questions are balanced across the selected topics and estimated difficulties. Investigations, warm-ups and sample prompts are excluded. Previously displayed practice questions and earlier exam questions are excluded. Views before this feature was added cannot be recovered. A teacher should check that the selection represents your school exam.</p>
+<form id="exam-start-form"><div class="toolbar"><label>Questions<input id="exam-count" type="number" min="1" max="40" step="1" value="10" required></label><label>Time limit (minutes)<input id="exam-minutes" type="number" min="1" max="180" step="1" value="30" required></label></div><p id="exam-available" class="small"></p><button id="exam-start" class="primary" type="submit">Start unseen exam</button></form>
+</div>
+<div id="exam-running" hidden>
+<div class="exam-session-head"><strong id="exam-position"></strong><span>Time left <strong id="exam-timer" role="timer" aria-label="Time remaining"></strong></span></div>
+<p class="small">Closed book · No hints or feedback · The timer continues if you leave or reload. Blank answers receive zero marks. Typed answers and handwriting are saved; photos are not used in exams.</p>
+<nav id="exam-nav" class="exam-nav" aria-label="Exam questions"></nav>
+<h3 id="exam-question-title" tabindex="-1"></h3><div id="exam-statement" class="statement"></div>
+<label for="exam-response">Your answer and working (include units and direction)</label><textarea id="exam-response" rows="5" maxlength="12000"></textarea>
+<details id="exam-working"><summary>Write your working</summary><div class="exam-drawing-tools"><button id="exam-pen" type="button" class="quiet" aria-pressed="true">Pen</button><button id="exam-eraser" type="button" class="quiet" aria-pressed="false">Eraser</button><button id="exam-undo" type="button" class="quiet">Undo</button><button id="exam-clear" type="button" class="quiet">Clear</button></div><canvas id="exam-canvas" width="1200" height="800" aria-label="Exam working pad"></canvas></details>
+<p id="exam-draft-status" class="small" role="status"></p><div class="actions"><button id="exam-prev" class="quiet" type="button">← Previous</button><button id="exam-next" class="primary" type="button">Next →</button><button id="exam-submit" class="secondary" type="button">Submit exam</button></div>
+</div>
+<div id="exam-review" hidden><h3 id="exam-review-title" tabindex="-1">Submitted exam</h3><p id="exam-review-summary"></p>
+<p class="small">Answers are locked. Mark every part, including reasoning, units and graphs, using partial credit. Enter the total earned and possible marks for each question. Blank answers must earn zero. Self-marked scores are useful practice evidence; only teacher-marked, representative exams qualify for Ready.</p>
+<form id="exam-mark-form"><div id="exam-review-questions"></div><label>Marked by<select id="exam-marker"><option value="self">Student / self-check</option><option value="teacher">Teacher / tutor</option></select></label><label class="exam-attestation"><input id="exam-representative" type="checkbox">As the teacher/tutor, I confirm this exam matches the intended topic coverage and difficulty and was completed independently.</label><p class="small">Teacher review is recorded by declaration in this shared profile; it is not an authenticated approval.</p><button class="primary" type="submit">Save exam marks</button></form>
+<button id="exam-new" class="secondary" type="button">Set up another exam</button></div>
+<div id="exam-evidence"><section class="exam-readiness" aria-labelledby="readiness-title"><div class="eyebrow">TARGET: 90% ON YOUR SCHOOL EXAM</div><h3 id="readiness-title">Exam Readiness <span id="readiness-status" class="badge">Not assessed</span></h3><p id="readiness-scope" class="small"></p><p id="readiness-evidence"></p><p id="readiness-coverage" class="small"></p><p class="small">Ready requires the latest two teacher-marked, representative exams for this exact topic selection to score at least 90%, with at least 10 questions each and every selected topic covered, on different questions, at least seven days apart. 93–95% gives a useful margin. These are planning rules, not a validated prediction or guarantee of a school-exam score.</p><div id="readiness-topics"></div><div id="readiness-actions"></div></section>
+<details id="exam-history"><summary>Saved exams <span id="exam-history-count" class="badge">0</span></summary><div id="exam-history-list"></div></details></div>
+</section>
+
 <p id="reason" class="reason"></p><article class="question-card"><div class="card-top"><button id="question-toggle" class="question-toggle" type="button" aria-expanded="true" aria-controls="question-area" title="Fold the question text away"><span class="question-toggle-icon" aria-hidden="true">▾</span><span class="question-toggle-label">Hide question</span><span class="question-toggle-title"></span></button><span class="card-actions"><button id="share-live" class="quiet share-btn" type="button" title="Share a live link that follows your questions">Share live</button><button id="share-question" class="quiet share-btn" type="button" title="Share a link that opens this same question" aria-label="Share this question"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="m16 6-4-4-4 4"/><path d="M12 2v13"/></svg><span id="share-label">Share</span></button><button id="flag" class="quiet" type="button" aria-pressed="false">☆ Flag for review</button></span></div><div id="question-area" class="question-area"><div class="question-top"><span id="badge" class="badge"></span></div><h2 id="question-title" tabindex="-1"></h2><div id="question-meta" class="muted"></div><div id="statement" class="statement"></div><p id="image-warning" class="notice" hidden>Some formulas or diagrams could not load. Open the question collection below to view them before answering.</p><a id="source" target="_blank" rel="noopener noreferrer">Open question collection ↗</a></div>
 <fieldset id="choices"><legend class="answer-legend"><span class="answer-heading"><span>Your answer</span><span class="actions"><button id="check" class="primary" disabled title="Reveal the model solution and automatically verify your submitted answer online">Show answer</button><button id="next" hidden class="primary">Next question →</button><button id="skip" class="quiet">Skip for now</button></span></span></legend><div class="answer-row"><div id="choice-list"></div></div></fieldset><details id="solution" hidden><summary>Model answer and worked solution</summary><div id="solution-body" class="statement"></div></details><div id="self-rating" class="self-rating" hidden><p class="small">If automatic verification is unavailable or uncertain, compare every part, units, direction, and graphs with the solution, then self-check.</p><div class="rating-actions"><button id="rate-correct" class="primary" type="button">I got it correct</button><button id="rate-practice" class="secondary" type="button">Needs practice</button><button id="verify-retry" class="secondary" type="button" hidden>Retry verification</button></div></div><div id="feedback" role="status" aria-live="polite" hidden></div>
 <section id="followup" class="followup-card" aria-labelledby="followup-title" aria-busy="false" hidden><div class="eyebrow">PUT THE IDEA INTO PRACTICE · AI</div><h3 id="followup-title">Try a similar question</h3><p class="small">Read the original solution above, then apply the same method here. Follow-up answers are saved with your missed attempt and do not change your textbook score.</p><p id="followup-status" role="status" aria-live="polite"></p><div id="followup-content" hidden><div id="followup-statement" class="statement"></div><fieldset><legend>Choose your answer</legend><div id="followup-choices" class="followup-choices"></div></fieldset><p id="followup-feedback" role="status" aria-live="polite"></p><div id="followup-solution" class="followup-solution" hidden></div></div><div class="actions"><button id="followup-check" class="primary" type="button" disabled hidden>Check similar answer</button><button id="followup-retry" class="secondary" type="button" hidden>Try again</button><button id="followup-reveal" class="quiet" type="button" hidden>Show solution</button><button id="followup-cancel" class="quiet" type="button" hidden>Cancel</button></div></section>
@@ -424,6 +463,91 @@ root.PhysicsFollowUp=api;
 
 </script>
 <script>
+/* Saved mock exams are independent of practice attempts. No network or automatic grading. */
+(function(root){
+'use strict';
+const types=['Practice','Quick check','Section review','Chapter review','Extra practice','Challenge'];
+const iso=n=>new Date(n).toISOString(),date=s=>typeof s==='string'&&s.length<=50&&Number.isFinite(Date.parse(s));
+const scopeKey=topics=>[...topics].sort().join('|');
+function active(state){return (state.exams||[]).find(e=>e.status==='active')||null;}
+function exposed(state){return new Set([...Object.keys(state.exposures||{}),...state.attempts.map(a=>a.id),...Object.keys(state.items),...(state.exams||[]).flatMap(e=>e.ids)]);}
+function pool(bank,state,topics){const seen=exposed(state);return bank.filter(p=>types.includes(p.questionType)&&topics.includes(p.topic)&&!seen.has(p.id));}
+function shuffle(values,rng){const out=values.slice();for(let i=out.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
+function start(bank,state,topics,count,minutes,now=Date.now(),rng=Math.random){
+  if(active(state))throw Error('Finish the current exam first.');
+  if((state.exams||[]).length>=200)throw Error('This profile has reached its 200-exam limit. Export a backup before starting a new profile.');
+  const known=[...new Set(bank.map(p=>p.topic))];
+  if(!Array.isArray(topics)||!topics.length||new Set(topics).size!==topics.length||topics.some(t=>!known.includes(t)))throw Error('Choose one or more topics.');
+  if(!Number.isInteger(count)||count<1||count>40||!Number.isInteger(minutes)||minutes<1||minutes>180)throw Error('Use 1–40 questions and 1–180 minutes.');
+  if(count<topics.length)throw Error(`Choose at least ${topics.length} questions to include every selected topic.`);
+  const available=pool(bank,state,topics);
+  const missing=topics.filter(t=>!available.some(p=>p.topic===t));
+  if(missing.length)throw Error('Some selected topics have no unseen exam questions. Narrow the topic selection; previously seen questions will not be reused.');
+  if(available.length<count)throw Error(`Only ${available.length} unseen exam questions remain in this selection. Reduce the question count.`);
+  // Spread questions over topics and estimated levels; no mastery-based selection in exams.
+  const groups=new Map(shuffle(topics,rng).map(t=>{const levels=shuffle([1,2,3],rng).map(level=>shuffle(available.filter(p=>p.topic===t&&p.level===level),rng)),questions=[];while(levels.some(list=>list.length))for(const list of levels)if(list.length)questions.push(list.shift());return [t,questions];}));
+  const chosen=[];while(chosen.length<count)for(const list of groups.values()){if(list.length&&chosen.length<count)chosen.push(list.shift());}
+  const ids=shuffle(chosen,rng).map(p=>p.id);
+  const exam={id:'exam-'+now+'-'+Math.floor(rng()*1e9),status:'active',topics:topics.slice(),ids,startedAt:iso(now),deadlineAt:iso(now+minutes*60000),responses:{},marks:{},index:0};
+  state.exams=state.exams||[];state.exams.push(exam);return exam;
+}
+function remaining(exam,now=Date.now()){return Math.max(0,Math.ceil((Date.parse(exam.deadlineAt)-now)/1000));}
+function answer(exam,id,text,ink=null,now=Date.now()){
+  if(exam.status!=='active'||!remaining(exam,now))throw Error('The exam has ended.');
+  if(!exam.ids.includes(id)||typeof text!=='string'||text.length>12000)throw Error('Invalid exam answer.');
+  if(ink&&!root.Practice.normalizeInk(ink))throw Error('The drawing is too large to save. Shorten it before continuing.');
+  exam.responses[id]={text,...(ink?{ink:root.Practice.normalizeInk(ink)}:{})};
+}
+function submit(exam,now=Date.now()){
+  if(exam.status!=='active')return false;
+  exam.status='submitted';exam.submittedAt=iso(Math.min(now,Date.parse(exam.deadlineAt)));exam.timedOut=now>=Date.parse(exam.deadlineAt);return true;
+}
+function validMark(m){return !!m&&Number.isFinite(m.earned)&&Number.isFinite(m.possible)&&m.possible>0&&m.possible<=1000&&m.earned>=0&&m.earned<=m.possible;}
+function grade(exam,marks,review,now=Date.now()){
+  if(exam.status!=='submitted')throw Error('Submit the exam before marking.');
+  if(!marks||Object.keys(marks).length!==exam.ids.length||!exam.ids.every(id=>validMark(marks[id])))throw Error('Enter earned and possible marks for every question, including zero for unanswered questions.');
+  // Blank answers cannot receive credit; all planned marks stay in the denominator.
+  if(exam.ids.some(id=>!exam.responses[id]?.text.trim()&&!exam.responses[id]?.ink&&marks[id].earned>0))throw Error('Unanswered questions must receive zero marks.');
+  if(!review||!['self','teacher'].includes(review.by)||typeof review.representative!=='boolean')throw Error('Choose who marked this exam.');
+  exam.marks=JSON.parse(JSON.stringify(marks));exam.review={by:review.by,representative:review.representative};exam.markedAt=iso(now);
+}
+function score(exam,bank,topic){
+  const ids=topic?exam.ids.filter(id=>bank.find(p=>p.id===id)?.topic===topic):exam.ids;
+  if(!exam.markedAt||!ids.length||!ids.every(id=>validMark(exam.marks[id])))return null;
+  const earned=ids.reduce((s,id)=>s+exam.marks[id].earned,0),possible=ids.reduce((s,id)=>s+exam.marks[id].possible,0);
+  return {earned,possible,percent:100*earned/possible};
+}
+function readiness(state,bank,topics){
+  const exams=(state.exams||[]).filter(e=>e.status==='submitted'&&scopeKey(e.topics)===scopeKey(topics)).sort((a,b)=>Date.parse(b.submittedAt)-Date.parse(a.submittedAt));
+  const marked=exams.filter(e=>score(e,bank)),latest=marked[0];
+  const qualified=marked.filter(e=>e.review?.by==='teacher'&&e.review.representative&&e.ids.length>=Math.max(10,topics.length)&&topics.every(t=>e.ids.some(id=>bank.find(p=>p.id===id)?.topic===t)));
+  // The latest two qualifying exams must both pass; older successes cannot mask a recent miss.
+  const pair=qualified.slice(0,2),consistent=pair.length===2&&pair.every(e=>score(e,bank).percent>=90)&&Date.parse(pair[0].startedAt)-Date.parse(pair[1].submittedAt)>=7*86400000&&!pair[0].ids.some(id=>pair[1].ids.includes(id));
+  let status='Not assessed';
+  if(latest)status=consistent&&score(latest,bank).percent>=90?'Ready':score(latest,bank).percent>=85?'Nearly ready':'Needs practice';
+  return {status,exams,latest,qualified,pair,topics:topics.map(topic=>({topic,score:latest?score(latest,bank,topic):null})),ready:status==='Ready'};
+}
+function valid(state,bank){
+  const ids=new Set(bank.map(p=>p.id)),topics=new Set(bank.map(p=>p.topic));
+  if(state.exposures!==undefined&&(!state.exposures||typeof state.exposures!=='object'||Array.isArray(state.exposures)||!Object.entries(state.exposures).every(([id,at])=>ids.has(id)&&date(at))))return false;
+  if(state.exams===undefined)return true;
+  if(!Array.isArray(state.exams)||state.exams.length>200||state.exams.filter(e=>e?.status==='active').length>1||new Set(state.exams.map(e=>e?.id)).size!==state.exams.length)return false;
+  return state.exams.every(e=>{
+    if(!e||typeof e.id!=='string'||e.id.length>100||!['active','submitted'].includes(e.status)||!Array.isArray(e.ids)||!e.ids.length||e.ids.length>40||new Set(e.ids).size!==e.ids.length||!e.ids.every(id=>ids.has(id))||!Array.isArray(e.topics)||!e.topics.length||new Set(e.topics).size!==e.topics.length||!e.topics.every(t=>topics.has(t))||!e.ids.every(id=>e.topics.includes(bank.find(p=>p.id===id).topic))||!date(e.startedAt)||!date(e.deadlineAt)||Date.parse(e.deadlineAt)-Date.parse(e.startedAt)<60000||Date.parse(e.deadlineAt)-Date.parse(e.startedAt)>180*60000||!Number.isInteger(e.index)||e.index<0||e.index>=e.ids.length)return false;
+    if(!e.responses||typeof e.responses!=='object'||Array.isArray(e.responses)||!Object.entries(e.responses).every(([id,r])=>e.ids.includes(id)&&r&&typeof r.text==='string'&&r.text.length<=12000&&(!r.ink||!!root.Practice.normalizeInk(r.ink))))return false;
+    if(!e.marks||typeof e.marks!=='object'||Array.isArray(e.marks)||!Object.entries(e.marks).every(([id,m])=>e.ids.includes(id)&&validMark(m)))return false;
+    if(e.status==='active')return !e.submittedAt&&!e.markedAt&&Object.keys(e.marks).length===0;
+    if(!date(e.submittedAt)||Date.parse(e.submittedAt)<Date.parse(e.startedAt)||Date.parse(e.submittedAt)>Date.parse(e.deadlineAt)||typeof e.timedOut!=='boolean')return false;
+    if(!e.markedAt)return Object.keys(e.marks).length===0&&!e.review;
+    return date(e.markedAt)&&Date.parse(e.markedAt)>=Date.parse(e.submittedAt)&&Object.keys(e.marks).length===e.ids.length&&e.ids.every(id=>validMark(e.marks[id])&&((e.responses[id]?.text.trim()||e.responses[id]?.ink)||e.marks[id].earned===0))&&['self','teacher'].includes(e.review?.by)&&typeof e.review.representative==='boolean';
+  });
+}
+const api={types,active,exposed,pool,start,remaining,answer,submit,grade,score,readiness,valid};
+root.PhysicsExam=api;if(typeof module!=='undefined')module.exports=api;
+})(typeof window!=='undefined'?window:globalThis);
+
+</script>
+<script>
 /* Pure practice logic, shared by the browser and Node tests. */
 (function (root) {
   'use strict';
@@ -525,7 +649,7 @@ root.PhysicsFollowUp=api;
   function compact(state){return {...state,items:Object.fromEntries(Object.entries(state.items).map(([id,item])=>[id,{...item,problem:{id}}]))};}
   function validVerification(v,correct){return !!v&&['correct','partly_correct','incorrect'].includes(v.verdict)&&['high','medium'].includes(v.confidence)&&typeof v.feedback==='string'&&v.feedback.trim().length>0&&v.feedback.length<=6000&&correct===(v.verdict==='correct');}
   function normalizePreferences(value,bank){
-    const mode=['adaptive','coach','chapter','random','review','day'].includes(value?.mode)?value.mode:'adaptive';
+    const mode=['adaptive','coach','chapter','random','review','day','exam'].includes(value?.mode)?value.mode:'adaptive';
     const chapter=bank.some(p=>p.chapter===value?.chapter)?value.chapter:'';
     const available=[...new Set(bank.filter(p=>!chapter||p.chapter===chapter).map(p=>p.topic))];
     const topics=Array.isArray(value?.topics)?available.filter(t=>value.topics.includes(t)):available;
@@ -533,6 +657,7 @@ root.PhysicsFollowUp=api;
   }
   function validState(state,bank){
     if(!state||state.version!==1||!Array.isArray(state.attempts)||state.attempts.length>50000||!state.items||typeof state.items!=='object'||Array.isArray(state.items))return false;
+    if(root.PhysicsExam&&!root.PhysicsExam.valid(state,bank))return false;
     if(state.generated!==undefined&&(!state.generated||typeof state.generated!=='object'||Array.isArray(state.generated)||Object.keys(state.generated).length>5000||!Object.entries(state.generated).every(([id,d])=>id===d?.id&&root.AdaptivePractice?.normalize(d,bank))))return false;
     const ids=new Set([...bank,...(root.AdaptivePractice?.problems(state,bank)||[])].map(p=>p.id)),str=(v,n)=>typeof v==='string'&&v.length<=n;
     return state.attempts.every(a=>a&&ids.has(a.id)&&str(a.choice,12000)&&typeof a.correct==='boolean'&&typeof a.review==='boolean'&&['self','ai'].includes(a.assessment)&&(a.assessment!=='ai'||validVerification(a.answerVerification,a.correct))&&str(a.at,50)&&Number.isFinite(Date.parse(a.at))&&Number.isFinite(a.seconds)&&a.seconds>=0&&Object.hasOwn(state.items,a.id)&&(!a.answerInk||!!normalizeInk(a.answerInk))&&(a.answerInputMode===undefined||['typed','handwritten'].includes(a.answerInputMode)))&&
@@ -546,7 +671,7 @@ root.PhysicsFollowUp=api;
     for(let i=0;i<attempts.length;i++)if(Object.keys(root.AdaptivePractice?.skills||{}).includes(state.attempts[i].practiceSkill))attempts[i].practiceSkill=state.attempts[i].practiceSkill;
     const latest=new Map(attempts.map(a=>[a.id,a]));
     const items=Object.fromEntries(Object.entries(state.items).map(([id,item])=>[id,{problem:byId.get(id),manual:item.manual,missed:latest.has(id)?!latest.get(id).correct:false,aiConcern:false}]));
-    return {version:1,attempts,items,...(state.preferences?{preferences:normalizePreferences(state.preferences,bank)}:{}),...(Object.keys(generated).length?{generated}:{})};
+    return {version:1,attempts,items,...(state.exams?{exams:JSON.parse(JSON.stringify(state.exams))}:{}),...(state.exposures?{exposures:{...state.exposures}}:{}),...(state.preferences?{preferences:normalizePreferences(state.preferences,bank)}:{}),...(Object.keys(generated).length?{generated}:{})};
   }
   function randomQuestion(bank,state,filter,currentId,rng=Math.random){
     const eligible=bank.filter(p=>!filter||p.topic===filter),other=eligible.filter(p=>p.id!==currentId),pool=other.length?other:eligible;
@@ -961,7 +1086,7 @@ function canonicalize(s) {
   return s;
 }
 // ---- Per-student history (see students.js): local-first, optional Firebase sync ----
-const students=window.StudentStore;let student='', updatedAt='';
+const students=window.StudentStore;let student='', updatedAt='',loadingStudent=false,pendingExposure=null;
 let stopActivity=null,activityState=null,activityName='',activityGoal=10,activityExists=false;
 try{const goal=Number(localStorage.getItem('physics11ActivityGoal'));if(Number.isInteger(goal)&&goal>=1&&goal<=1000)activityGoal=goal;}catch(e){}
 $('activity-goal').value=activityGoal;
@@ -1067,18 +1192,19 @@ const payloadFor=()=>({version:1,student,updatedAt,state:JSON.stringify(P.compac
 function readPayload(p){try{if(!p||!p.state)return null;const s=typeof p.state==='string'?JSON.parse(p.state):p.state;return validState(s)?canonicalize(s):null;}catch(e){return null;}}
 function save(){
   if(!student)return;updatedAt=new Date().toISOString();const payload=payloadFor();
-  if(!students.saveLocal(student,payload)){$('storage-message').textContent='Browser storage is unavailable or full. Export your progress before closing.';return;}
+  if(!students.saveLocal(student,payload)){$('storage-message').textContent='Browser storage is unavailable or full. Export your progress before closing.';return false;}
   $('storage-message').textContent=students.syncing()?'Saving and syncing…':'Progress saved on this device.';
-  students.push(payload);
+  students.push(payload);return true;
 }
 function syncStatus(kind,error){
   const el=$('sync-status');if(!el)return;
   const text={local:'Saved on this device only.',connecting:'Connecting to Firebase…',synced:'Synced across devices · '+new Date().toLocaleTimeString(),error:'Saved on this device; Firebase sync is unavailable'+(error&&error.code==='permission-denied'?' (permission denied by the database rules).':error&&error.message==='firebase-sdk-unavailable'?' (the Firebase library could not load — check the internet connection).':'.')}[kind]||'';
   el.textContent=text;$('student-sync-dot').dataset.state=kind;
+  if(['local','synced'].includes(kind)&&pendingExposure){const exposure=pendingExposure;pendingExposure=null;state.exposures=state.exposures||{};state.exposures[exposure.id]=exposure.at;save();}
   if(kind==='synced'&&$('storage-message').textContent==='Saving and syncing…')$('storage-message').textContent='Progress saved and synced.';
 }
 function startSync(){if(!student)return;students.start(student,{getLocal:()=>students.loadLocal(student),onStatus:syncStatus,
-  onRemote:data=>{const s=readPayload(data);if(!s)return;const previous=JSON.stringify(practiceSelection());cancelGeneration();resetFollowUp();state=s;updatedAt=data.updatedAt||'';students.saveLocal(student,{version:1,student,updatedAt,state:typeof data.state==='string'?data.state:JSON.stringify(data.state)});
+  onRemote:data=>{const s=readPayload(data);if(!s)return;const previous=JSON.stringify(practiceSelection());cancelGeneration();resetFollowUp();state=s;window.ExamUI?.invalidate();updatedAt=data.updatedAt||'';students.saveLocal(student,{version:1,student,updatedAt,state:typeof data.state==='string'?data.state:JSON.stringify(data.state)});
     restorePracticeSelection();
     if(activeAttempt)activeAttempt=state.attempts.find(a=>a.at===activeAttempt.at&&a.id===activeAttempt.id)||null;dashboard();
     if(previous!==JSON.stringify(practiceSelection())&&live.role!=='follower')next(true,false);else restoreFollowUp(current);
@@ -1099,6 +1225,7 @@ $('share-question').onclick=async()=>{
   try{await navigator.clipboard.writeText(url);done('Link copied');}catch(e){window.prompt('Copy this link to share the question:',url);}
 };
 function useStudent(name){
+  loadingStudent=true;pendingExposure=null;
   resetFollowUp();cancelGeneration();coachPresented=new Set();
   cancelReview();student=students.login(name);state={version:1,attempts:[],items:{}};updatedAt='';
   const local=students.loadLocal(student),s=readPayload(local);
@@ -1110,7 +1237,7 @@ function useStudent(name){
   restorePracticeSelection();hideLogin();dashboard();
   if(live.role==='follower')show(followedQuestion,'Following live — your answers and progress are your own.',true);
   else if(pendingShare){const p=pendingShare;pendingShare=null;show(p,'Shared question — give it a try.');}else next(true,false);
-  startSync();
+  loadingStudent=false;startSync();
 }
 function showLogin(){
   const list=$('known-students');list.replaceChildren();
@@ -1312,7 +1439,7 @@ function dashboard(){
   if(!queue.length)$('queue').textContent='Nothing to review yet.';
   $('review-button').disabled=!queue.length;
   renderRecent();renderLearningLog();refreshDayControls();refreshChapterControls();
-  renderAdaptiveCoverage();
+  renderAdaptiveCoverage();window.ExamUI?.refresh();
 }
 function renderAdaptiveCoverage(){
   const box=$('adaptive-coverage');box.replaceChildren();
@@ -1418,6 +1545,8 @@ function buildAnswerInput(problem){
   syncAnswerTools();
 }
 function show(p,reason,fromLive=false){
+  if(window.PhysicsExam.active(state))return;
+  if(student&&p&&!p.generatedData){state.exposures=state.exposures||{};if(!state.exposures[p.id]){state.exposures[p.id]=new Date().toISOString();if(loadingStudent)pendingExposure={id:p.id,at:state.exposures[p.id]};else save();}}
   resetFollowUp();cancelGeneration();
   if(live.role==='follower'&&!fromLive){p=followedQuestion;reason='Following live — your answers and progress are your own.';}
   if(p?.generatedData){state.generated=state.generated||{};state.generated[p.id]=p.generatedData;}
@@ -1437,10 +1566,13 @@ function show(p,reason,fromLive=false){
   buildAnswerInput(p);$('photo-section').hidden=false;openDrawing();restoreFollowUp(p);
 }
 function next(reset=false,persistSelection=true){
+  if(window.PhysicsExam.active(state))$('mode').value='exam';
   if(live.role==='follower')return;
   resetFollowUp();cancelGeneration();
   if(persistSelection)rememberPracticeSelection();
   const mode=$('mode').value;
+  document.body.classList.toggle('exam-mode',mode==='exam');$('exam-panel').hidden=mode!=='exam';
+  if(mode==='exam'){resetPhotoReview();if(!window.PhysicsExam.active(state))show(null,'Set up a timed exam.');window.ExamUI?.refresh();return;}
   $('adaptive-panel').hidden=mode!=='coach';
   renderAdaptiveCoverage();
   const dayQuestions=refreshDayControls();
@@ -2008,6 +2140,128 @@ if(followRequested){
   else{live.role='follower';setLiveStatus('invalid');}
 }
 if(students.current())useStudent(students.current());else if(!followRequested)showLogin();
+
+</script>
+<script>
+/* A separate exam workspace keeps practice helpers out of timed sessions. */
+(function(){
+'use strict';
+const E=window.PhysicsExam;
+let viewed=null,rendered='',loadingInk=false,flushing=false;
+const pad=new window.DrawingPad($('exam-canvas'),()=>{if(!loadingInk&&!pad.active)flush();});
+const topics=()=>[...selectedTopics];
+function message(text){$('exam-message').textContent=text;}
+function currentExam(){return E.active(state);}
+function flush(){
+  const exam=currentExam();if(!exam||flushing||!rendered.startsWith(student+'|'+exam.id+'|'))return true;
+  if(!E.remaining(exam)){finish(true);return false;}
+  flushing=true;
+  try{E.answer(exam,exam.ids[exam.index],$('exam-response').value,pad.snapshot());const ok=save();$('exam-draft-status').textContent=ok?'Answer saved on this device.':'Could not save on this device. Use Export exam progress before closing.';return ok;}
+  catch(error){message(error.message);return false;}finally{flushing=false;}
+}
+function loadInk(ink){loadingInk=true;pad.reset();if(ink){pad.strokes=JSON.parse(JSON.stringify(ink.strokes));pad.render();}loadingInk=false;}
+function finish(expired=false){
+  const exam=currentExam();if(!exam)return;
+  // On expiry use the last saved draft, never accept input after the deadline.
+  if(!expired&&!flush())return;
+  pad.enabled=false;E.submit(exam);viewed=exam.id;rendered='';save();refresh();$('exam-review-title').focus();
+}
+function go(index){const exam=currentExam();if(!exam||!flush())return;exam.index=Math.max(0,Math.min(exam.ids.length-1,index));save();rendered='';refresh();$('exam-question-title').focus();}
+function stripLinks(box){for(const a of box.querySelectorAll('a'))a.replaceWith(...a.childNodes);}
+function renderRunning(exam){
+  const key=student+'|'+exam.id+'|'+exam.index;
+  $('exam-position').textContent=`Question ${exam.index+1} of ${exam.ids.length}`;
+  const nav=$('exam-nav');nav.replaceChildren();
+  for(const [i,id] of exam.ids.entries()){
+    const b=document.createElement('button');b.type='button';b.textContent=i+1;const answered=!!(exam.responses[id]?.text.trim()||exam.responses[id]?.ink);b.classList.toggle('answered',answered);b.setAttribute('aria-label',`Question ${i+1}${answered?', answer saved':', unanswered'}`);if(i===exam.index)b.setAttribute('aria-current','true');b.onclick=()=>go(i);nav.append(b);
+  }
+  if(rendered!==key){const id=exam.ids[exam.index],p=bank.find(p=>p.id===id);$('exam-question-title').textContent=p.title;$('exam-statement').innerHTML=p.html;stripLinks($('exam-statement'));$('exam-response').value=exam.responses[id]?.text||'';loadInk(exam.responses[id]?.ink);pad.enabled=true;rendered=key;$('exam-draft-status').textContent='Answers save as you work.';}
+  $('exam-prev').disabled=exam.index===0;$('exam-next').disabled=exam.index===exam.ids.length-1;
+}
+function resultLabel(exam){const s=E.score(exam,bank);return s?`${s.percent.toFixed(1)}% · ${s.earned}/${s.possible} marks · ${exam.review.by==='teacher'?'teacher-marked':'self-marked'}`:'Awaiting marks';}
+function renderReview(exam){
+  const key=student+'|review|'+exam.id+'|'+(exam.markedAt||'');
+  if(rendered===key)return;
+  rendered=key;
+  $('exam-review-summary').textContent=`${new Date(exam.submittedAt).toLocaleString()} · ${exam.timedOut?'Time limit reached':'Submitted'} · ${resultLabel(exam)}`;
+  $('exam-marker').value=exam.review?.by||'self';$('exam-representative').checked=!!exam.review?.representative;
+  const box=$('exam-review-questions');box.replaceChildren();
+  for(const [i,id] of exam.ids.entries()){
+    const p=bank.find(p=>p.id===id),row=document.createElement('section');row.className='exam-review-question';
+    const h=document.createElement('h4');h.textContent=`${i+1}. ${p.title}`;row.append(h);
+    const question=document.createElement('details'),summary=document.createElement('summary'),statement=document.createElement('div');summary.textContent='Question';statement.className='statement';statement.innerHTML=p.html;stripLinks(statement);question.append(summary,statement);row.append(question);
+    const answer=document.createElement('div');answer.className='exam-saved-answer';answer.textContent=exam.responses[id]?.text||'No typed answer';row.append(answer);const ink=inkPreview(exam.responses[id]?.ink);if(ink)row.append(ink);
+    const solution=document.createElement('details'),label=document.createElement('summary'),body=document.createElement('div');label.textContent='Model answer and worked solution';body.className='statement';body.innerHTML=p.solution;solution.append(label,body);row.append(solution);
+    const inputs=document.createElement('div');inputs.className='exam-marks';
+    for(const field of ['earned','possible']){const l=document.createElement('label'),input=document.createElement('input');l.textContent=field==='earned'?'Marks earned':'Marks possible';input.type='number';input.min=field==='earned'?'0':'0.01';input.max='1000';input.step='0.01';input.required=true;input.dataset.question=id;input.dataset.field=field;input.setAttribute('aria-label',`Question ${i+1}: ${l.textContent}`);input.value=exam.marks[id]?.[field]??(field==='possible'?10:(!exam.responses[id]?.text.trim()&&!exam.responses[id]?.ink?0:''));l.append(input);inputs.append(l);}row.append(inputs);box.append(row);
+  }
+}
+function renderReadiness(){
+  const selection=topics(),r=E.readiness(state,bank,selection);
+  $('readiness-status').textContent=r.status;
+  $('readiness-scope').textContent=selection.length?`Evidence for the ${selection.length} topics currently selected above. Changing topics changes this assessment.`:'Select topics above to assess readiness.';
+  $('readiness-evidence').textContent=r.latest?`Latest marked exam: ${resultLabel(r.latest)}. ${r.qualified.length} teacher-marked, representative exam(s) meet the size and coverage requirements.`:'No marked exam for this exact selection yet. Submit an exam, then save its marks.';
+  if(r.status==='Nearly ready')$('readiness-evidence').textContent+=' Complete two qualifying exams at 90% or higher, at least seven days apart, to demonstrate consistency.';
+  const scope=bank.filter(p=>selection.includes(p.topic)),attempted=new Set(state.attempts.map(a=>a.id)),first=state.attempts.filter(a=>!a.review&&scope.some(p=>p.id===a.id));
+  $('readiness-coverage').textContent=`Practice coverage: ${scope.length?Math.round(scope.filter(p=>attempted.has(p.id)).length/scope.length*100):0}% (${scope.filter(p=>attempted.has(p.id)).length}/${scope.length} textbook questions). First-attempt practice accuracy: ${first.length?Math.round(first.filter(a=>a.correct).length/first.length*100)+'%':'not assessed'}. Exams do not change practice accuracy.`;
+  const tableBox=$('readiness-topics');tableBox.replaceChildren();const actions=$('readiness-actions');actions.replaceChildren();
+  if(r.latest){
+    const table=document.createElement('table'),caption=document.createElement('caption');caption.textContent='Latest marked exam: chapter and topic marks';table.append(caption);const head=table.createTHead().insertRow();for(const title of ['Chapter / topic','Marks','Score']){const th=document.createElement('th');th.scope='col';th.textContent=title;head.append(th);}const tbody=table.createTBody();
+    function add(label,s){const row=tbody.insertRow();for(const value of [label,s?`${s.earned}/${s.possible}`:'Not tested',s?s.percent.toFixed(1)+'%':'—'])row.insertCell().textContent=value;}
+    for(const chapter of chapters){const selected=r.latest.ids.filter(id=>bank.find(p=>p.id===id)?.chapter===chapter.chapter);if(!selected.length)continue;const s=E.score({...r.latest,ids:selected},bank);add('Chapter '+chapter.number+': '+chapter.title,s);for(const t of r.topics.filter(t=>bank.some(p=>p.chapter===chapter.chapter&&p.topic===t.topic)))add(topicName(t.topic),t.score);}
+    tableBox.append(table);
+    for(const t of r.topics.filter(t=>t.score&&t.score.percent<90)){
+      const button=document.createElement('button');button.type='button';button.className='secondary';button.textContent='Practise '+topicName(t.topic);button.onclick=()=>{$('mode').value='adaptive';$('practice-chapter').value=bank.find(p=>p.topic===t.topic).chapter;refreshTopicOptions();selectedTopics=new Set([t.topic]);syncTopicSelection();next(true);};actions.append(button);
+    }
+  }
+  const list=$('exam-history-list');list.replaceChildren();$('exam-history-count').textContent=(state.exams||[]).length;
+  for(const exam of [...(state.exams||[])].reverse()){
+    const b=document.createElement('button');b.type='button';b.className='secondary exam-history-item';b.textContent=`${new Date(exam.startedAt).toLocaleString()} · ${exam.ids.length} questions · ${exam.topics.length} topics · ${resultLabel(exam)}`;b.onclick=()=>{viewed=exam.id;rendered='';refresh();$('exam-review-title').focus();};list.append(b);
+  }
+  if(!list.children.length)list.textContent='No exams saved yet.';
+}
+function refresh(){
+  let exam=currentExam();
+  if(exam&&!E.remaining(exam)){E.submit(exam);viewed=exam.id;rendered='';save();exam=null;}
+  if(exam)$('mode').value='exam';
+  const enabled=$('mode').value==='exam';document.body.classList.toggle('exam-mode',enabled);$('exam-panel').hidden=!enabled;
+  $('practice-chapter').disabled=!!exam;$('topic-control').inert=!!exam;$('topic-control').setAttribute('aria-disabled',String(!!exam));$('topic-picker').open=false;
+  if(!enabled){viewed=null;rendered='';return;}
+  // Practice callbacks also refuse question navigation while an exam is running.
+  const review=(state.exams||[]).find(e=>e.id===viewed&&e.status==='submitted');
+  $('exam-running').hidden=!exam;$('exam-setup').hidden=!!exam||!!review;$('exam-review').hidden=!!exam||!review;$('exam-evidence').hidden=!!exam;
+  if(exam){renderRunning(exam);tick();return;}
+  if(review)renderReview(review);else rendered='';
+  if(!review&&Number($('exam-count').value)<topics().length)$('exam-count').value=topics().length;
+  const available=E.pool(bank,state,topics());$('exam-available').textContent=`${available.length} unseen exam questions available across ${topics().length} selected topics. Every selected topic needs at least one question.`;$('exam-start').disabled=!student||!topics().length||live.role!=='idle';
+  renderReadiness();
+}
+function tick(){const exam=currentExam();if(!exam)return;const seconds=E.remaining(exam);$('exam-timer').textContent=`${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`;$('exam-timer').classList.toggle('urgent',seconds<=60);if(!seconds)finish(true);}
+$('exam-start-form').onsubmit=e=>{
+  e.preventDefault();if(!$('exam-start-form').reportValidity())return;
+  try{if(!student)throw Error('Choose a student profile first.');if(live.role!=='idle')throw Error('Leave live sharing before starting an exam.');cancelGeneration();resetFollowUp();resetPhotoReview();
+    const exam=E.start(bank,state,topics(),Number($('exam-count').value),Number($('exam-minutes').value));
+    viewed=null;rendered='';message('');if(!save()){state.exams.pop();throw Error('Browser storage is unavailable or full. Free some space or export progress before starting an exam.');}refresh();$('exam-question-title').focus();
+  }catch(error){message(error.message);}
+};
+$('exam-response').oninput=()=>{flush();const exam=currentExam();if(exam){const b=$('exam-nav').children[exam.index];b?.classList.toggle('answered',!!($('exam-response').value.trim()||exam.responses[exam.ids[exam.index]]?.ink));}};
+$('exam-prev').onclick=()=>{const e=currentExam();if(e)go(e.index-1);};$('exam-next').onclick=()=>{const e=currentExam();if(e)go(e.index+1);};
+$('exam-submit').onclick=()=>{if(currentExam()&&window.confirm('Submit this exam? Answers will be locked and unanswered questions will receive zero marks.'))finish();};
+$('exam-new').onclick=()=>{viewed=null;rendered='';message('');refresh();};
+$('exam-mark-form').onsubmit=e=>{
+  e.preventDefault();if(!$('exam-mark-form').reportValidity())return;
+  try{const exam=(state.exams||[]).find(e=>e.id===viewed);if(!exam)throw Error('Select a submitted exam.');const marks={};for(const input of $('exam-review-questions').querySelectorAll('input[data-question]')){marks[input.dataset.question]=marks[input.dataset.question]||{};marks[input.dataset.question][input.dataset.field]=Number(input.value);}
+    E.grade(exam,marks,{by:$('exam-marker').value,representative:$('exam-marker').value==='teacher'&&$('exam-representative').checked});const ok=save();rendered='';refresh();message(ok?'Exam marks saved. Readiness updated for the selected topics.':'Marks could not be saved on this device. Export progress before closing.');
+  }catch(error){message(error.message);}
+};
+$('exam-backup').onclick=()=>{$('export').click();};
+$('exam-pen').onclick=()=>{pad.tool='pen';$('exam-pen').setAttribute('aria-pressed','true');$('exam-eraser').setAttribute('aria-pressed','false');};
+$('exam-eraser').onclick=()=>{pad.tool='eraser';$('exam-pen').setAttribute('aria-pressed','false');$('exam-eraser').setAttribute('aria-pressed','true');};
+$('exam-undo').onclick=()=>pad.undo();$('exam-clear').onclick=()=>{if(window.confirm('Clear this question’s handwritten working?'))pad.clear();};
+document.addEventListener('visibilitychange',tick);window.addEventListener('pagehide',()=>{flush();});
+setInterval(tick,1000);
+window.ExamUI={refresh,tick,invalidate:()=>{rendered='';viewed=null;}};refresh();
+})();
 
 </script>
 

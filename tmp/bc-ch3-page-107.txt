@@ -1,0 +1,60 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   4.1  Inertia and Newton's First Law 
+
+     Warm Up
+     You are attending a magic show and the magician stands beside a table set with fancy plates  cups  and 
+     silverware. Grabbing the edge of the tablecloth she quickly pulls the cloth out  and the plates  cups  and 
+     silverware stay in place. Is this magic or just physics in action  Explain your answer.
+
+     ______________________________________________________________________________________
+
+     ______________________________________________________________________________________
+
+     ______________________________________________________________________________________
+
+
+
+
+                               Imagine you are a passenger in a car  and the driver makes a sudden left turn. What 
+   Inertia                    
+                               sensation do you feel during the left turn  From your own experience  you might recall 
+                               that you feel as if you are being pushed to the right. Contrary to what you feel  you are 
+                               not being pushed to the right at all. 
+
+
+                                                                         direction of car
+
+                                                                                            your
+                                                                                            direction
+
+                                 direction 
+                                 of car
+
+                                                                                                        you
+
+
+
+
+                                                   you
+
+
+
+
+                                Figure 4.1.1  As the car turns  your body wants to keep moving straight ahead.
+
+
+                                       Figure 4.1.1 illustrates what happens and explains why you feel the force acting on 
+                                your body. The car starts out by going straight and then the driver steers the car to the 
+                                left. The car is moving to the left but your body wants to carry on in a straight line. What's 
+                                stopping you  The door of the car is moving left with the rest of the car so it is pushing 
+                                you in the direction the car is going. You feel as if you are pushing against the door  but 
+                                this feeling is not what is happening. What is happening is that your body is trying to 
+                                continue along its original straight path while the car is turning left. The result is that you 
+                                are being pulled along with the car rather than continuing in a straight line. 
+
+
+
+
+   102  Chapter 4   Newton's Laws of Motion                                   ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

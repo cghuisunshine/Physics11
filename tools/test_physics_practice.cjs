@@ -5,7 +5,8 @@ const fs=require('node:fs');
 const path=require('node:path');
 const {createHash}=require('node:crypto');
 const {JSDOM,VirtualConsole}=require(process.env.PHYSICS_JSDOM_PATH||'jsdom');
-const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'physics-practice.html'),'utf8');
+const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'physics-practice.html'),'utf8').replace(/(data:image\/[a-z+]+;base64,)[A-Za-z0-9+/=]+/g,'$1YQ==');
+// Canvas and image decoding are stubbed below; omit the 22 MB raster payloads from DOM fixtures.
 const pause=()=>new Promise(resolve=>setTimeout(resolve,25));
 let networkCalls=0;
 function page(source=html,{url='https://physics.test/physics-practice.html',storage={},online=false,firebase=null}={}){
@@ -257,7 +258,7 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   assert.equal(store.setApiKey(''),true);assert.equal(store.getApiKey(),'','This device only still clears the key');
   // One shared steps pad supplies handwritten answers alongside typed text.
   const ink=page();login(ink,'Ink');change(ink,'practice-chapter','bc-ch2');change(ink,'mode','chapter');
-  assert.equal(ink.$('answer-tab-handwritten'),null);assert.equal(ink.$('answer-canvas'),null);assert.equal(ink.d.querySelectorAll('canvas').length,1,'Only the shared steps canvas remains');
+  assert.equal(ink.$('answer-tab-handwritten'),null);assert.equal(ink.$('answer-canvas'),null);assert.deepEqual([...ink.d.querySelectorAll('canvas')].map(c=>c.id).sort(),['drawing-canvas','exam-canvas'],'Practice keeps one shared steps pad; exams have an isolated pad');
   pointer(ink,'pointerdown',25,25);pointer(ink,'pointermove',60,40);pointer(ink,'pointerup',60,40);await pause();
   assert.equal(ink.$('drawing-undo').disabled,false);assert.equal(ink.$('drawing-clear').disabled,false);
   ink.$('drawing-undo').click();assert.equal(ink.$('drawing-clear').disabled,true,'Undo removes the handwritten stroke');
@@ -335,6 +336,7 @@ function review(verdict='correct',confidence='high'){return {verdict,confidence,
   const monitorSource=fs.readFileSync(path.join(root,'physics-monitor.html'),'utf8');
   const m=page(monitorSource,{url:'https://physics.test/physics-monitor.html?student=Ada&period=week&exclude=',storage:saved});await pause();assert.deepEqual(m.errors,[]);assert.equal(m.$('activity-days').children.length,7);assert.match(m.$('activity-status').textContent,/saved on this device/);assert.ok(!m.w.StudentStore,'Monitor has no history-writing store');
   await require('./test_physics_adaptive.cjs')({page,html,bank,login,change,response,history,storageOf,until,pause});
+  await require('./test_physics_exam.cjs')({page,html,bank,login,change,history,storageOf,pause,fakeFirebase,until});
   await require('./test_physics_preferences.cjs')({page,html,bank,login,change,chooseTopics,checkedTopics,history,storageOf,until,pause,fakeFirebase});
   await require('./test_physics_follow_up.cjs')({page,html,bank,login,change,response,history,storageOf,until,pause,fakeFirebase});
   for(const instance of [p,restored,shared,forcesShared,newtonsShared,f,host,follower,invalidFollower,ink,inkReload,auto,autoReload,timed,m]){assert.deepEqual(instance.errors,[]);instance.w.close();}

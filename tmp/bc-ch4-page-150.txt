@@ -1,0 +1,52 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+                                    Now consider what happens when the basketball you saw in Figure 5.2.1 is allowed to 
+      Law of Conservation    fall under the influence of the force of gravity. The unbalanced force  ignoring air friction  
+      of Energy              is equal to the force of gravity on the ball. For any situation where an object of mass m is 
+                                    pulled by an unbalanced force F  there will be an acceleration  a. Newton's second law of 
+                                    motion tells us that F = ma.
+                                          In our example  the basketball is a free-falling body  and a = g. As the ball falls 
+                                    through height h  its speed increases from 0 to vf . For uniform acceleration
+                                                                                   v2f  = 2ad
+                                         For this situation  v2f  = 2gh. Since the unbalanced force pulling the ball down is mg  
+                                    the work done on the ball by Earth's gravitational field is mgh.
+                                                                                                     v2
+                                                                            If v2f = 2gh  then gh =  f  
+                                                                                                      2
+                                                                                               v2f     1
+                                                                      Therefore  mgh = m            =   mv2f
+                                                                                                2      2
+                                          When the ball is at the top of its path  all its energy is gravitational potential energy. 
+                                    The ball is not moving. It has energy only because of its position above the floor from 
+                                    which it was lifted. As the ball falls  it loses its potential energy and gains energy of 
+                                    motion  kinetic energy. Just before it collides with the floor  all the energy of the ball is 
+                                    kinetic energy  and the potential energy is zero. The amount of kinetic energy  Ek   at the 
+                                    bottom of its fall is given by:
+                                                                                          1
+                                                                                    Ek =   mv2f
+                                                                                          2
+                                         On the way down  the kinetic energy of the ball at any time depends on the speed 
+                                    the ball has reached. For any speed v  kinetic energy Ek =  mv2f. As the ball gains kinetic 
+                                    energy  it loses gravitational potential energy. At all times the sum of the gravitational 
+                                    potential energy and the kinetic energy is constant.
+                                                                             Ep   Ek  = constant
+
+                                          This is an example of the law of conservation of energy  which states: 
+
+
+                                        The total energy of a mechanical system is constant. Energy can be transformed 
+                                       from one form into another  but the total amount of energy is unchanged.
+
+
+                                          As the ball falls through positions 1  2  3  etc.  the sum of the potential energy and 
+                                    the kinetic energy remains constant:
+                                                   1                  1                    1
+                                          mgh1     mv21 = mgh2     mv22 = mgh3     mv23 = ...
+                                                   2                  2                    2
+                                         Notice that mechanical energy can be either potential or kinetic. For a mechanical 
+                                    system  the total mechanical energy is constant.
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                  Chapter 5   Energy  145

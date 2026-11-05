@@ -1,0 +1,84 @@
+                                                                                                                            QU ESTIONS                                     31
+
+
+Average Speed The average speed savg of a particle during a                      and the second time derivative of position x(t):
+time interval -t depends on the total distance the particle moves in
+                                                                                                                  dv   d 2x
+that time interval:                                                                                         a"       "      .                                  (2-8, 2-9)
+                                                                                                                  dt   dt 2
+                             total distance
+                      savg "                .                  (2-3)             On a graph of v versus t, the acceleration a at any time t is the slope
+                                   -t
+                                                                                 of the curve at the point that represents t.
+Instantaneous Velocity The instantaneous velocity (or sim-
+ply velocity) v of a moving particle is                                          Constant Acceleration The five equations in Table 2-1
+                                                                                 describe the motion of a particle with constant acceleration:
+                                       -x   dx
+                          v " lim         "    ,                         (2-4)                                 v " v0 # at,                                        (2-11)
+                                -t : 0 -t   dt
+                                                                                                         x $ x0 " v0t # 12at 2,                                    (2-15)
+where -x and -t are defined by Eq. 2-2. The instantaneous velocity                                       v2 " v20 # 2a(x $ x0),                                    (2-16)
+(at a particular time) may be found as the slope (at that particular
+time) of the graph of x versus t. Speed is the magnitude of instanta-                                    x $ x0 " 12(v0 # v)t,                                     (2-17)
+neous velocity.                                                                                          x $ x0 " vt $ 12at 2.                                     (2-18)
+
+Average Acceleration Average acceleration is the ratio of a                      These are not valid when the acceleration is not constant.
+change in velocity -v to the time interval -t in which the change occurs:
+                                         -v
+                                                                                 Free-Fall Acceleration An important example of straight-
+                                aavg "      .                            (2-7)   line motion with constant acceleration is that of an object rising or
+                                         -t
+                                                                                 falling freely near Earth’s surface. The constant acceleration equa-
+The algebraic sign indicates the direction of aavg.                              tions describe this motion, but we make two changes in notation:
+                                                                                 (1) we refer the motion to the vertical y axis with #y vertically up;
+Instantaneous Acceleration Instantaneous acceleration (or                        (2) we replace a with $g, where g is the magnitude of the free-fall
+simply acceleration) a is the first time derivative of velocity v(t)             acceleration. Near Earth’s surface, g " 9.8 m/s2 (" 32 ft/s2).
+
+Questions
+                                                                                                                                   x
+1 Figure 2-16 gives the velocity of a                v                           is the sign of the particle’s position?
+particle moving on an x axis. What                                               Is the particle’s velocity positive,
+are (a) the initial and (b) the final di-                                        negative, or 0 at (b) t " 1 s, (c) t " 2
+                                                                                                                                                                       t (s)
+rections of travel? (c) Does the parti-                                      t   s, and (d) t " 3 s? (e) How many                 0        1       2       3   4
+cle stop momentarily? (d) Is the ac-                                             times does the particle go through
+celeration positive or negative? (e) Is                                          the point x " 0?
+it constant or varying?
+2 Figure 2-17 gives the accelera-                                                5 Figure 2-20 gives the velocity of
+tion a(t) of a Chihuahua as it chases                                            a particle moving along an axis.
+                                       Figure 2-16 Question 1.                                                                    Figure 2-19 Question 4.
+a German shepherd along an axis. In                                              Point 1 is at the highest point on the
+which of the time periods indicated                                              curve; point 4 is at the lowest point;
+                                                                                                                              v
+does the Chihuahua move at constant speed?                                       and points 2 and 6 are at the same
+                                                                                 height. What is the direction of                      1
+                                                                                 travel at (a) time t " 0 and (b) point                        2                   6
+                            a
+                                                                                 4? (c) At which of the six numbered
+                                                                                                                                                                               t
+                                                                                 points does the particle reverse its                              3           5
+                                                                                 direction of travel? (d) Rank the six                                     4
+                                                                             t
+                                                                                 points according to the magnitude                Figure 2-20 Question 5.
+                                                                                 of the acceleration, greatest first.
+                                                                                 6 At t " 0, a particle moving along an      v
+Figure 2-17 Question 2.      A B         C   D   E       F   G       H                                                                             A
+                                                                                 x axis is at position x0 " $20 m. The                                                         B
+                                                                                 signs of the particle’s initial velocity v0
+3 Figure 2-18 shows four paths along                                             (at time t0) and constant acceleration a
+                                                                 1
+which objects move from a starting                                               are, respectively, for four situations: (1)
+point to a final point, all in the same                          2               #, #; (2) #, $; (3) $, #; (4) $, $. In 0                                                          t
+time interval. The paths pass over a                                             which situations will the particle (a)
+grid of equally spaced straight lines.                                      3    stop momentarily, (b) pass through the
+                                                             4
+Rank the paths according to (a) the av-                                          origin, and (c) never pass through the
+erage velocity of the objects and (b)                                                                                                                                      C
+                                                                                 origin?
+the average speed of the objects, great-
+                                                                                 7 Hanging over the railing of a                                                       D
+est first.                                       Figure 2-18 Question 3.
+                                                                                 bridge, you drop an egg (no initial ve-
+4 Figure 2-19 is a graph of a parti-                                                                                                           G       F       E
+                                                                                 locity) as you throw a second egg
+cle’s position along an x axis versus time. (a) At time t " 0, what              downward. Which curves in Fig. 2-21                  Figure 2-21 Question 7.

@@ -1,0 +1,49 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+                                           The way we describe how hot or cold a body is to use a number we call the body's 
+                                    temperature on a standard temperature scale. The Celsius scale is named after Anders 
+                                    Celsius  1704o1744  a Swedish astronomer who first suggested its use. In the Celsius 
+                                    scale  0¡C is assigned to the temperature at which ice melts or water freezes  and 100¡C is 
+                                    assigned to the temperature at which water boils at standard sea level air pressure. On a 
+                                    typical mercury or alcohol thermometer  the space between 0¡C and 100¡C is divided into 
+                                    100 equal divisions called degrees.
+                                           What does temperature really measure  Temperature depends on the average 
+                                    translational kinetic energy of all the molecules in a material. Imagine a drop of boiling 
+                                    hot water spilled from a large bucket of boiling water. The bucket of boiling water has far 
+                                    more thermal energy in it  and its total kinetic energy is far greater than the total kinetic 
+                                    energy in the drop of boiling water. The molecules in the bucket of water and those in the 
+                                    drop of water  however  have the same average translational kinetic energy  so both 
+                                    have the same temperature.
+
+
+                                   What would happen if a substance were cooled so much that the average translational 
+      Absolute Zero               
+                                   kinetic energy of its molecules was zero  The substance would have almost no energy 
+                                   to transfer to any other body. If its average translational kinetic energy were zero  
+                                   its temperature would be the lowest it could possibly be. On the Celsius scale  this 
+                                   temperature would be about o273¡C. This temperature is called absolute zero. 
+                                         On another temperature scale called the Kelvin scale  after British physicist Lord 
+                                   Kelvin  1824o1907  absolute zero is assigned a value of 0 K. On this scale  the unit for 
+                                   temperature is not called a degree  but instead a kelvin  K . Therefore  0 K = o273¡C. A 
+                                   kelvin is the same size as a Celsius degree. This means that a temperature of 0¡C would 
+                                   be equal to 273 K. Water boils at 100¡C  or 373 K. To scientists  the Kelvin scale is useful 
+                                   because on this scale  the temperature of an iidealw gas in kelvins is directly proportional 
+                                   to the average translational kinetic energy of the molecules in the gas. Helium is a gas 
+                                   that behaves like an ideal gas. It is monatomic  which means that its smallest particles 
+                                   consist of just one atom.
+
+
+
+         Quick Check
+         1.  a   Explain the difference between temperature  thermal energy  and heat.
+
+
+
+
+             b   Why is it incorrect to say that a body contains heat
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                               Chapter 5   Energy  151

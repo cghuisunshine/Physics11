@@ -1,0 +1,32 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+                                       The English scientist Robert Hooke  1635o1703  first noticed the direct proportion 
+                                 between the force exerted on a solid object and the change in length of the object 
+                                 caused by the force. If too much force is applied  and an object is stretched or 
+                                 compressed excessively  the direct proportion breaks down. In that case  the object may 
+                                 be permanently stretched or compressed. Hooke's law is written with force as the subject 
+                                 of the equation:
+                                                                              F = kHx
+
+                                 where F is the applied force  x is the change in length  and k is the spring constant.
+
+
+
+      Quick Check
+      1.  What is the applied force on a spring when it is stretched 20 cm and the spring constant is 3.2
+
+
+
+
+      2.  On Figure 3.3.1  the slope of the line is the spring constant  k . What is k for the spring used in that example
+
+
+
+
+      3.  A 2.5 kg mass stretches a spring 10 cm. How far will the spring stretch when it supports 5.0 kg
+
+
+
+
+   94  Chapter 3   Forces                                                 ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

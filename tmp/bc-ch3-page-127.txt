@@ -1,0 +1,54 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+     Quick Check
+     1.  What is the momentum of a 100 kg motorbike travelling at 10 m/s
+
+
+
+
+     2.  What is the mass of plane that is travelling at 200 km/h and has a momentum of 1.1 w 106 kgtm/s
+
+
+
+
+     3.  How fast does a 0.01 kg bug have to fly to have a momentum of 0.25 kgtm/s  Is this possible
+
+
+
+
+                                                                                             mƚv ƚp
+                                 According to Newton's second law  in its original form F =      =     . This can be 
+                                                                                              ƚt
+   Impulse                       rearranged to:                                                     ƚt
+                              
+
+                                                                        ƚp = Fƚt  = mƚv
+
+
+
+                                       The product of the force and the time interval during which it acts is called the 
+                                 impulse. The last equation shows that the impulse is equal to the change in momentum 
+                                 it produces. 
+                                       This is an important relationship when considering an object that is undergoing a 
+                                 change in momentum. An object's momentum changes because an impulse has been 
+                                 placed on the object. For example  if you are driving down a road at a constant velocity  
+                                 you and your vehicle have a momentum. When you press on the gas pedal  the velocity 
+                                 of the vehicle increases. The momentum has also increased. This increased momentum 
+                                 was caused by a force being exerted on the vehicle over a period of time. Or put another 
+                                 way  the vehicle experienced an impulse. The amount of impulse equals the change in 
+                                 momentum in the vehicle.
+
+                                 Units for Momentum and Impulse
+                                 Momentum is measured in kgtm/s because these units have the dimensions of mass and 
+                                 velocity. Impulse is measured in Nts because these units have the dimensions of force and 
+                                 time. Since impulse is equal to change in momentum  these units must be equivalent. It 
+                                 can easily be shown that this is true:
+                                                                  Nts   =   kgtm/s2  t  s   =   kgtm/s
+                                       Momentum and impulse may be expressed in either unit.
+
+
+
+
+   122  Chapter 4   Newton's Laws of Motion                               ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

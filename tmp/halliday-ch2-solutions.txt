@@ -1,0 +1,3144 @@
+Chapter 2
+
+1. The speed (assumed constant) is v = (90 km/h)(1000 m/km)  (3600 s/h) = 25 m/s.
+Thus, in 0.50 s, the car travels a distance d = vt = (25 m/s)(0.50 s)  13 m.
+
+2. (a) Using the fact that time = distance/velocity while the velocity is constant, we
+find
+                                 73.2 m  73.2 m
+                           vavg  73.2 m 73.2 m  1.74 m/s.
+                                  1.22 m/s  3.05 m
+
+
+(b) Using the fact that distance = vt while the velocity v is constant, we find
+
+                         (122
+                           . m / s)(60 s)  (3.05 m / s)(60 s)
+                vavg                                           2.14 m / s.
+                                        120 s
+
+(c) The graphs are shown below (with meters and seconds understood). The first
+consists of two (solid) line segments, the first having a slope of 1.22 and the second
+having a slope of 3.05. The slope of the dashed line represents the average velocity (in
+both graphs). The second graph also consists of two (solid) line segments, having the
+same slopes as before — the main difference (compared to the first graph) being that
+the stage involving higher-speed motion lasts much longer.
+
+
+
+
+3. THINK This one-dimensional kinematics problem consists of two parts, and we
+are asked to solve for the average velocity and average speed of the car.
+
+EXPRESS Since the trip consists of two parts, let the displacements during first and
+second parts of the motion be x1 and x2, and the corresponding time intervals be t1
+and t2, respectively. Now, because the problem is one-dimensional and both
+displacements are in the same direction, the total displacement is simply x = x1 +
+x2, and the total time for the trip is t = t1 + t2. Using the definition of average
+velocity given in Eq. 2-2, we have
+                                        x x1  x2
+                                 vavg                .
+                                        t t1  t2
+
+
+
+                                             23
+24                                                                       CHAPTER 2
+
+To find the average speed, we note that during a time t if the velocity remains a
+positive constant, then the speed is equal to the magnitude of velocity, and the
+distance is equal to the magnitude of displacement, with d  | x |  vt.
+
+ANALYZE
+(a) During the first part of the motion, the displacement is x1 = 40 km and the time
+taken is
+                                        (40 km)
+                                 t1               133
+                                                     . h.
+                                      (30 km / h)
+Similarly, during the second part of the trip the displacement is x2 = 40 km and the
+time interval is
+                                       (40 km)
+                                t2                0.67 h.
+                                      (60 km / h)
+
+The total displacement is x = x1 + x2 = 40 km + 40 km = 80 km, and the total time
+elapsed is t = t1 + t2 = 2.00 h. Consequently, the average velocity is
+
+                                    x (80 km)
+                           vavg                 40 km/h.
+                                    t   (2.0 h)
+
+(b) In this case, the average speed is the same as the magnitude of the average
+velocity: savg  40 km/h.
+
+(c) The graph of the entire trip, shown below, consists of two contiguous line
+segments, the first having a slope of 30 km/h and connecting the origin to (t1, x1) =
+ (1.33 h, 40 km) and the second having a slope of 60 km/h and connecting (t1, x1)
+to (t, x) = (2.00 h, 80 km).
+
+
+
+
+From the graphical point of view, the slope of the dashed line drawn from the origin
+to (t, x) represents the average velocity.
+
+LEARN The average velocity is a vector quantity that depends only on the net
+displacement (also a vector) between the starting and ending points.
+
+4. Average speed, as opposed to average velocity, relates to the total distance, as
+opposed to the net displacement. The distance D up the hill is, of course, the same as
+the distance down the hill, and since the speed is constant (during each stage of the
+                                                                                           25
+
+motion) we have speed = D/t. Thus, the average speed is
+
+                               Dup  Ddown            2D
+                                               
+                                t up  tdown        D   D
+                                                      
+                                                   vup vdown
+
+which, after canceling D and plugging in vup = 40 km/h and vdown = 60 km/h, yields 48
+km/h for the average speed.
+
+5. THINK In this one-dimensional kinematics problem, we’re given the position
+function x(t), and asked to calculate the position and velocity of the object at a later
+time.
+
+EXPRESS The position function is given as x(t) = (3 m/s)t – (4 m/s2)t2 + (1 m/s3)t3.
+The position of the object at some instant t0 is simply given by x(t0). For the time
+interval t1  t  t2 , the displacement is x  x(t2 )  x(t1 ) . Similarly, using Eq. 2-2,
+the average velocity for this time interval is
+                                          x x(t2 )  x(t1 )
+                                   vavg                    .
+                                          t    t2  t1
+
+ANALYZE (a) Plugging in t = 1 s into x(t) yields
+
+               x(1 s) = (3 m/s)(1 s) – (4 m/s2)(1 s)2 + (1 m/s3)(1 s)3 = 0.
+
+(b) With t = 2 s we get x(2 s) = (3 m/s)(2 s) – (4 m/s2) (2 s)2 + (1 m/s3)(2 s)3 = –2 m.
+
+(c) With t = 3 s we have x (3 s) = (3 m/s)(3 s) – (4 m/s2) (3 s)2 + (1 m/s3)(3 s)3 = 0 m.
+
+(d) Similarly, plugging in t = 4 s gives
+
+             x(4 s) = (3 m/s)(4 s) – (4 m/s2)(4 s)2 + (1 m/s3) (4 s)3 = 12 m.
+
+(e) The position at t = 0 is x = 0. Thus, the displacement between t = 0 and t = 4 s is
+x  x(4 s)  x(0)  12 m  0  12 m.
+
+(f) The position at t = 2 s is subtracted from the position at t = 4 s to give the
+displacement: x  x(4 s)  x(2 s)  12 m  (2 m)  14 m . Thus, the average velocity
+is
+                                     x 14 m
+                              vavg             7 m/s.
+                                     t    2s
+
+(g) The position of the object for the interval 0  t  4 is plotted below. The straight
+line drawn from the point at (t, x) = (2 s, –2 m) to (4 s, 12 m) would represent the
+average velocity, answer for part (f).
+26                                                                        CHAPTER 2
+
+
+
+
+LEARN Our graphical representation illustrates once again that the average velocity
+for a time interval depends only on the net displacement between the starting and
+ending points.
+
+6. Huber’s speed is
+                   v0 = (200 m)/(6.509 s) =30.72 m/s = 110.6 km/h,
+
+where we have used the conversion factor 1 m/s = 3.6 km/h. Since Whittingham beat
+Huber by 19.0 km/h, his speed is v1 = (110.6 km/h + 19.0 km/h) = 129.6 km/h, or 36
+m/s (1 km/h = 0.2778 m/s). Thus, using Eq. 2-2, the time through a distance of 200 m
+for Whittingham is
+                                 x 200 m
+                           t                5.554 s.
+                                v1 36 m/s
+
+7. Recognizing that the gap between the trains is closing at a constant rate of 60 km/h,
+the total time that elapses before they crash is t = (60 km)/(60 km/h) = 1.0 h. During
+this time, the bird travels a distance of x = vt = (60 km/h)(1.0 h) = 60 km.
+
+8. The amount of time it takes for each person to move a distance L with speed vs is
+t  L / vs . With each additional person, the depth increases by one body depth d
+
+(a) The rate of increase of the layer of people is
+
+                        d    d     dv (0.25 m)(3.50 m/s)
+                   R             s                    0.50 m/s
+                        t L / vs   L       1.75 m
+(b) The amount of time required to reach a depth of D  5.0 m is
+                                     D     5.0 m
+                                 t               10 s
+                                     R 0.50 m/s
+
+9. Converting to seconds, the running times are t1 = 147.95 s and t2 = 148.15 s,
+respectively. If the runners were equally fast, then
+
+                                                     L1 L2
+                               savg1  savg 2          .
+                                                     t1 t2
+From this we obtain
+                                                                                               27
+
+                         t             148.15 
+               L2  L1   2  1  L1          1  L1  0.00135L1  1.4 m
+                          t1           147.95 
+
+where we set L1  1000 m in the last step. Thus, if L1 and L2 are no different than
+about 1.4 m, then runner 1 is indeed faster than runner 2. However, if L1 is shorter
+than L2 by more than 1.4 m, then runner 2 would actually be faster.
+
+10. Let vw be the speed of the wind and vc be the speed of the car.
+
+(a) Suppose during time interval t1 , the car moves in the same direction as the wind.
+Then the effective speed of the car is given by veff ,1  vc  vw , and the distance traveled
+is d  veff ,1t1  (vc  vw )t1 . On the other hand, for the return trip during time interval t2,
+the car moves in the opposite direction of the wind and the effective speed would be
+ veff ,2  vc  vw . The distance traveled is d  veff ,2t2  (vc  vw )t2 . The two expressions
+can be rewritten as
+                                             d                   d
+                                   vc  vw      and vc  vw 
+                                             t1                  t2
+                                                            1d d 
+Adding the two equations and dividing by two, we obtain vc     . Thus,
+                                                            2  t1 t2 
+method 1 gives the car’s speed vc a in windless situation.
+
+(b) If method 2 is used, the result would be
+
+                     d           2d              2d            vc2  vw2        v 2 
+          vc                                                         vc 1   w   .
+                (t1  t2 ) / 2 t1  t2        d       d            vc           vc  
+                                                  
+                                           vc  vw vc  vw
+The fractional difference is
+                                             2
+                          vc  vc  vw 
+                                      (0.0240)2  5.76 104 .
+                             vc      vc 
+11. The values used in the problem statement make it easy to see that the first part of
+the trip (at 100 km/h) takes 1 hour, and the second part (at 40 km/h) also takes 1 hour.
+Expressed in decimal form, the time left is 1.25 hour, and the distance that remains is
+160 km. Thus, a speed v = (160 km)/(1.25 h) = 128 km/h is needed.
+
+12. (a) Let the fast and the slow cars be separated by a distance d at t = 0. If during the
+time interval t  L / vs  (12.0 m) /(5.0 m/s)  2.40 s in which the slow car has moved
+a distance of L  12.0 m , the fast car moves a distance of vt  d  L to join the line
+of slow cars, then the shock wave would remain stationary. The condition implies a
+separation of
+                        d  vt  L  (25 m/s)(2.4 s) 12.0 m  48.0 m.
+
+
+(b) Let the initial separation at t  0 be d  96.0 m. At a later time t, the slow and
+28                                                                            CHAPTER 2
+
+the fast cars have traveled x  vst and the fast car joins the line by moving a distance
+d  x . From
+                                                  x dx
+                                             t         ,
+                                                  vs   v
+we get
+                           vs           5.00 m/s
+                  x            d                     (96.0 m)  24.0 m,
+                         v  vs    25.0 m/s  5.00 m/s
+
+which in turn gives t  (24.0 m) /(5.00 m/s)  4.80 s. Since the rear of the slow-car
+pack has moved a distance of x  x  L  24.0 m 12.0 m  12.0 m downstream, the
+speed of the rear of the slow-car pack, or equivalently, the speed of the shock wave, is
+
+                                            x 12.0 m
+                                 vshock                2.50 m/s.
+                                             t   4.80 s
+(c) Since x  L , the direction of the shock wave is downstream.
+
+13. (a) Denoting the travel time and distance from San Antonio to Houston as T and D,
+respectively, the average speed is
+
+                         D (55 km/h)(T/2)  (90 km/h)(T / 2)
+               savg1                                        72.5 km/h
+                         T                T
+
+which should be rounded to 73 km/h.
+
+(b) Using the fact that time = distance/speed while the speed is constant, we find
+
+                                     D         D
+                           savg2       D/2              68.3 km/h
+                                     T 55 km/h  90Dkm/h
+                                                     /2
+
+
+which should be rounded to 68 km/h.
+
+(c) The total distance traveled (2D) must not be confused with the net displacement
+(zero). We obtain for the two-way trip
+                                          2D
+                          savg      D           D
+                                                        70 km/h.
+                                 72.5 km/h  68.3 km/h
+
+
+(d) Since the net displacement vanishes, the average velocity for the trip in its entirety
+is zero.
+
+(e) In asking for a sketch, the problem is allowing the student to arbitrarily set the
+distance D (the intent is not to make the student go to an atlas to look it up); the
+student can just as easily arbitrarily set T instead of D, as will be clear in the following
+discussion. We briefly describe the graph (with kilometers-per-hour understood for
+the slopes): two contiguous line segments, the first having a slope of 55 and
+connecting the origin to (t1, x1) = (T/2, 55T/2) and the second having a slope of 90 and
+connecting (t1, x1) to (T, D) where D = (55 + 90)T/2. The average velocity, from the
+                                                                                      29
+
+graphical point of view, is the slope of a line drawn from the origin to (T, D). The
+graph (not drawn to scale) is depicted below:
+
+
+
+
+14. Using the general property         d
+                                       dx   exp(bx)  b exp(bx) , we write
+
+
+                        v
+                             dx   FG
+                                  d (19t )       IJ
+                                            e  t  (19t ) 
+                                                                 FG IJ .
+                                                              de  t
+                             dt
+                                
+                                   H dt           K            dt H K
+If a concern develops about the appearance of an argument of the exponential (–t)
+apparently having units, then an explicit factor of 1/T where T = 1 second can be
+inserted and carried through the computation (which does not change our answer).
+The result of this differentiation is
+                                      v  16(1  t )e  t
+
+with t and v in SI units (s and m/s, respectively). We see that this function is zero
+when t = 1 s. Now that we know when it stops, we find out where it stops by
+plugging our result t = 1 into the given function x = 16te–t with x in meters. Therefore,
+we find x = 5.9 m.
+
+15. We use Eq. 2-4 to solve the problem.
+
+(a) The velocity of the particle is
+
+                              dx d
+                         v        (4  12t  3t 2 )  12  6t .
+                              dt dt
+
+Thus, at t = 1 s, the velocity is v = (–12 + (6)(1)) = –6 m/s.
+
+(b) Since v  0, it is moving in the –x direction at t = 1 s.
+
+(c) At t = 1 s, the speed is |v| = 6 m/s.
+
+(d) For 0  t  2 s, |v| decreases until it vanishes. For 2  t  3 s, |v| increases from
+zero to the value it had in part (c). Then, |v| is larger than that value for t  3 s.
+
+(e) Yes, since v smoothly changes from negative values (consider the t = 1 result) to
+positive (note that as t  + , we have v  + ). One can check that v = 0 when
+t  2 s.
+30                                                                          CHAPTER 2
+
+
+(f) No. In fact, from v = –12 + 6t, we know that v  0 for t  2 s.
+
+16. We use the functional notation x(t), v(t), and a(t) in this solution, where the latter
+two quantities are obtained by differentiation:
+
+
+                       b g dxdtbt g   12t and abt g  dvdtbt g   12
+                     vt 
+
+
+with SI units understood.
+
+(a) From v(t) = 0 we find it is (momentarily) at rest at t = 0.
+
+(b) We obtain x(0) = 4.0 m.
+
+(c) and (d) Requiring x(t) = 0 in the expression x(t) = 4.0 – 6.0t2 leads to t = 0.82 s
+for the times when the particle can be found passing through the origin.
+
+(e) We show both the asked-for graph (on the left) as well as the “shifted” graph that
+is relevant to part (f). In both cases, the time axis is given by –3  t  3 (SI units
+understood).
+
+
+
+
+(f) We arrived at the graph on the right (shown above) by adding 20t to the x(t)
+expression.
+
+(g) Examining where the slopes of the graphs become zero, it is clear that the shift
+causes the v = 0 point to correspond to a larger value of x (the top of the second curve
+shown in part (e) is higher than that of the first).
+
+17. We use Eq. 2-2 for average velocity and Eq. 2-4 for instantaneous velocity, and
+work with distances in centimeters and times in seconds.
+
+(a) We plug into the given equation for x for t = 2.00 s and t = 3.00 s and obtain x2 =
+21.75 cm and x3 = 50.25 cm, respectively. The average velocity during the time
+interval 2.00  t  3.00 s is
+                                     x 50.25 cm  2175
+                                                      . cm
+                              vavg     
+                                     t    3.00 s  2.00 s
+which yields vavg = 28.5 cm/s.
+
+                                               2
+                                      dt  4.5t , which, at time t = 2.00 s, yields v =
+(b) The instantaneous velocity is v  dx
+(4.5)(2.00)2 = 18.0 cm/s.
+                                                                                       31
+
+
+(c) At t = 3.00 s, the instantaneous velocity is v = (4.5)(3.00)2 = 40.5 cm/s.
+
+(d) At t = 2.50 s, the instantaneous velocity is v = (4.5)(2.50)2 = 28.1 cm/s.
+
+(e) Let tm stand for the moment when the particle is midway between x2 and x3 (that is,
+when the particle is at xm = (x2 + x3)/2 = 36 cm). Therefore,
+
+                                        . tm3
+                           xm  9.75  15        tm  2.596
+
+in seconds. Thus, the instantaneous speed at this time is v = 4.5(2.596)2 = 30.3 cm/s.
+
+(f) The answer to part (a) is given by the slope of the straight line between t = 2 and t
+= 3 in this x-vs-t plot. The answers to parts (b), (c), (d), and (e) correspond to the
+slopes of tangent lines (not shown but easily imagined) to the curve at the appropriate
+points.
+
+
+
+
+18. (a) Taking derivatives of x(t) = 12t2 – 2t3 we obtain the velocity and the
+acceleration functions:
+                        v(t) = 24t – 6t2 and a(t) = 24 – 12t
+
+with length in meters and time in seconds. Plugging in the value t = 3 yields
+x(3)  54 m .
+
+(b) Similarly, plugging in the value t = 3 yields v(3) = 18 m/s.
+
+(c) For t = 3, a(3) = –12 m/s2.
+
+(d) At the maximum x, we must have v = 0; eliminating the t = 0 root, the velocity
+equation reveals t = 24/6 = 4 s for the time of maximum x. Plugging t = 4 into the
+equation for x leads to x = 64 m for the largest x value reached by the particle.
+
+(e) From (d), we see that the x reaches its maximum at t = 4.0 s.
+
+(f) A maximum v requires a = 0, which occurs when t = 24/12 = 2.0 s. This, inserted
+into the velocity equation, gives vmax = 24 m/s.
+
+(g) From (f), we see that the maximum of v occurs at t = 24/12 = 2.0 s.
+
+(h) In part (e), the particle was (momentarily) motionless at t = 4 s. The acceleration at
+that time is readily found to be 24 – 12(4) = –24 m/s2.
+32                                                                          CHAPTER 2
+
+
+(i) The average velocity is defined by Eq. 2-2, so we see that the values of x at t = 0
+and t = 3 s are needed; these are, respectively, x = 0 and x = 54 m (found in part (a)).
+Thus,
+                                       54  0
+                               vavg =          = 18 m/s.
+                                        3 0
+
+19. THINK In this one-dimensional kinematics problem, we’re given the speed of a
+particle at two instants and asked to calculate its average acceleration.
+
+EXPRESS We represent the initial direction of motion as the +x direction. The
+average acceleration over a time interval t1  t  t2 is given by Eq. 2-7:
+
+                                            v v(t2 )  v(t1 )
+                                   aavg                      .
+                                            t    t2  t1
+
+ANALYZE Let v1 = +18 m/s at t1  0 and v2 = –30 m/s at t2 = 2.4 s. Using Eq. 2-7
+we find
+                 v(t )  v(t1 ) (30 m/s)  (1 m/s)
+           aavg  2                                   20 m/s 2 .
+                    t2  t1           2.4 s  0
+
+LEARN The average acceleration has magnitude 20 m/s2 and is in the opposite
+direction to the particle’s initial velocity. This makes sense because the velocity of the
+particle is decreasing over the time interval. With t1  0 , the velocity of the particle
+as a function of time can be written as
+
+                             v  v0  at  (18 m/s)  (20 m/s2 )t .
+
+20. We use the functional notation x(t), v(t) and a(t) and find the latter two quantities
+by differentiating:
+
+                  bg
+                vt 
+                     dx t  bg
+                             15t 2  20 and a t 
+                                                           dv t
+                                                            bg     bg
+                                                                   30t
+                       t                                    dt
+
+with SI units understood. These expressions are used in the parts that follow.
+
+(a) From 0   15t 2  20 , we see that the only positive value of t for which the
+particle is (momentarily) stopped is t  20 / 15  12
+                                                    . s.
+
+(b) From 0 = – 30t, we find a(0) = 0 (that is, it vanishes at t = 0).
+
+(c) It is clear that a(t) = – 30t is negative for t > 0.
+
+(d) The acceleration a(t) = – 30t is positive for t < 0.
+
+(e) The graphs are shown below. SI units are understood.
+                                                                                     33
+
+
+
+
+21. We use Eq. 2-2 (average velocity) and Eq. 2-7 (average acceleration). Regarding
+our coordinate choices, the initial position of the man is taken as the origin and his
+direction of motion during 5 min  t  10 min is taken to be the positive x direction.
+We also use the fact that x  vt ' when the velocity is constant during a time
+interval t' .
+
+(a) The entire interval considered is t = 8 – 2 = 6 min, which is equivalent to 360 s,
+whereas the sub-interval in which he is moving is only t'  8  5  3min  180 s.
+His position at t = 2 min is x = 0 and his position at t = 8 min is x  vt  
+(2.2)(180)  396 m . Therefore,
+                                     396 m  0
+                              vavg             110
+                                                  . m / s.
+                                       360 s
+
+(b) The man is at rest at t = 2 min and has velocity v = +2.2 m/s at t = 8 min. Thus,
+keeping the answer to 3 significant figures,
+
+                                  2.2 m / s  0
+                         aavg                   0.00611 m / s2 .
+                                      360 s
+
+(c) Now, the entire interval considered is t = 9 – 3 = 6 min (360 s again), whereas the
+sub-interval in which he is moving is t   9  5  4min  240 s ). His position at
+t  3 min is x = 0 and his position at t = 9 min is x  vt   (2.2)(240)  528 m .
+Therefore,
+                                     528 m  0
+                              vavg              147
+                                                   . m / s.
+                                       360 s
+
+(d) The man is at rest at t = 3 min and has velocity v = +2.2 m/s at t = 9 min.
+Consequently, aavg = 2.2/360 = 0.00611 m/s2 just as in part (b).
+
+(e) The horizontal line near the bottom of this
+x-vs-t graph represents the man standing at x = 0
+for 0  t < 300 s and the linearly rising line for
+300  t  600 s represents his constant-velocity
+motion. The lines represent the answers to part (a)
+and (c) in the sense that their slopes yield those
+results.
+
+The graph of v-vs-t is not shown here, but would
+consist of two horizontal “steps” (one at v = 0 for
+0  t < 300 s and the next at v = 2.2 m/s for 300 
+34                                                                             CHAPTER 2
+
+t  600 s). The indications of the average accelerations found in parts (b) and (d)
+would be dotted lines connecting the “steps” at the appropriate t values (the slopes of
+the dotted lines representing the values of aavg).
+
+22. In this solution, we make use of the notation x(t) for the value of x at a particular t.
+The notations v(t) and a(t) have similar meanings.
+
+(a) Since the unit of ct2 is that of length, the unit of c must be that of length/time2, or
+m/s2 in the SI system.
+
+(b) Since bt3 has a unit of length, b must have a unit of length/time3, or m/s3.
+
+(c) When the particle reaches its maximum (or its minimum) coordinate its velocity is
+zero. Since the velocity is given by v = dx/dt = 2ct – 3bt2, v = 0 occurs for t = 0 and
+for
+                                 2c 2(3.0 m / s2 )
+                             t                    10
+                                                      . s.
+                                 3b 3(2.0 m / s3 )
+
+For t = 0, x = x0 = 0 and for t = 1.0 s, x = 1.0 m > x0. Since we seek the maximum, we
+reject the first root (t = 0) and accept the second (t = 1s).
+
+(d) In the first 4 s the particle moves from the origin to x = 1.0 m, turns around, and
+goes back to
+                          . m / s2 )(4.0 s) 2  (2.0 m / s3 )(4.0 s) 3   80 m .
+               x(4 s)  (30
+
+The total path length it travels is 1.0 m + 1.0 m + 80 m = 82 m.
+
+(e) Its displacement is x = x2 – x1, where x1 = 0 and x2 = –80 m. Thus, x  80 m .
+
+The velocity is given by v = 2ct – 3bt2 = (6.0 m/s2)t – (6.0 m/s3)t2.
+
+(f) Plugging in t = 1 s, we obtain
+
+                    v(1 s)  (6.0 m/s2 )(1.0 s)  (6.0 m/s3 )(1.0 s)2  0.
+
+(g) Similarly, v(2 s)  (6.0 m/s2 )(2.0 s)  (6.0 m/s3 )(2.0 s) 2  12m/s .
+
+(h) v(3 s)  (6.0 m/s2 )(3.0 s)  (6.0 m/s3 )(3.0 s)2  36 m/s .
+
+(i) v(4 s)  (6.0 m/s2 )(4.0 s)  (6.0 m/s3 )(4.0 s) 2  72 m/s .
+
+The acceleration is given by a = dv/dt = 2c – 6b = 6.0 m/s2 – (12.0 m/s3)t.
+
+(j) Plugging in t = 1 s, we obtain a(1 s)  6.0 m/s2  (12.0 m/s3 )(1.0 s)  6.0 m/s2 .
+
+(k) a(2 s)  6.0 m/s2  (12.0 m/s3 )(2.0 s)  18 m/s 2 .
+                                                                                       35
+
+(l) a(3 s)  6.0 m/s2  (12.0 m/s3 )(3.0 s)  30 m/s2 .
+
+(m) a(4 s)  6.0 m/s2  (12.0 m/s3 )(4.0 s)   42 m/s 2 .
+
+23. THINK The electron undergoes a constant acceleration. Given the final speed of
+the electron and the distance it has traveled, we can calculate its acceleration.
+
+EXPRESS Since the problem involves constant acceleration, the motion of the
+electron can be readily analyzed using the equations given in Table 2-1:
+
+                               v  v0  at                 (2  11)
+                                        1
+                          x  x0  v0t  at 2              (2  15)
+                                        2
+                              v 2  v02  2a( x  x0 )     (2  16)
+
+The acceleration can be found by solving Eq. 2-16.
+
+ANALYZE With v0  1.50 105 m/s , v  5.70 106 m/s , x0 = 0 and x = 0.010 m, we
+find the average acceleration to be
+
+                   v 2  v02 (5.7 106 m/s)2  (1.5 105 m/s) 2
+              a                                                1.62 1015 m/s 2 .
+                      2x               2(0.010 m)
+
+LEARN It is always a good idea to apply other equations in Table 2-1 not used for
+solving the problem as a consistency check. For example, since we now know the
+value of the acceleration, using Eq. 2-11, the time it takes for the electron to reach its
+final speed would be
+                   v  v0 5.70 106 m/s  1.5 105 m/s
+               t                                         3.426 109 s
+                     a            1.62 1015 m/s 2
+
+Substituting the value of t into Eq. 2-15, the distance the electron travels is
+
+              1                                          1
+x  x0  v0t  at 2  0  (1.5 105 m/s)(3.426 109 s)  (1.62 1015 m/s 2 )(3.426 109 s)2
+              2                                          2
+   0.01 m
+
+This is what was given in the problem statement. So we know the problem has been
+solved correctly.
+
+24. In this problem we are given the initial and final speeds, and the displacement, and
+are asked to find the acceleration. We use the constant-acceleration equation given in
+Eq. 2-16, v2 = v20 + 2a(x – x0).
+
+(a) Given that v0  0 , v  1.6 m/s, and x  5.0 m, the acceleration of the spores
+during the launch is
+36                                                                            CHAPTER 2
+
+                    v 2  v02     (1.6 m/s)2
+               a                       6
+                                              2.56 105 m/s 2  2.6 104 g
+                       2x       2(5.0 10 m)
+
+(b) During the speed-reduction stage, the acceleration is
+
+                   v 2  v02    0  (1.6 m/s)2
+              a                               1.28 103 m/s 2  1.3 102 g
+                      2x       2(1.0 103 m)
+
+The negative sign means that the spores are decelerating.
+
+25. We separate the motion into two parts, and take the direction of motion to be
+positive. In part 1, the vehicle accelerates from rest to its highest speed; we are given
+v0 = 0; v = 20 m/s and a = 2.0 m/s2. In part 2, the vehicle decelerates from its highest
+speed to a halt; we are given v0 = 20 m/s; v = 0 and a = –1.0 m/s2 (negative because
+the acceleration vector points opposite to the direction of motion).
+
+(a) From Table 2-1, we find t1 (the duration of part 1) from v = v0 + at. In this way,
+20  0  2.0t1 yields t1 = 10 s. We obtain the duration t2 of part 2 from the same
+equation. Thus, 0 = 20 + (–1.0)t2 leads to t2 = 20 s, and the total is t = t1 + t2 = 30 s.
+
+(b) For part 1, taking x0 = 0, we use the equation v2 = v20 + 2a(x – x0) from Table 2-1
+and find
+                               v 2  v02 (20 m/s)2  (0) 2
+                           x                              100 m .
+                                  2a       2(2.0 m/s 2 )
+
+This position is then the initial position for part 2, so that when the same equation is
+used in part 2 we obtain
+                                      v 2  v02 (0)2  (20 m/s) 2
+                         x  100 m                              .
+                                         2a       2(1.0 m/s 2 )
+
+Thus, the final position is x = 300 m. That this is also the total distance traveled
+should be evident (the vehicle did not "backtrack" or reverse its direction of motion).
+
+26. The constant-acceleration condition permits the use of Table 2-1.
+
+(a) Setting v = 0 and x0 = 0 in v2  v02  2a( x  x0 ) , we find
+
+                             1 v02    1 (5.00  106 ) 2
+                        x                            0.100 m .
+                             2 a      2 1.25  1014
+
+Since the muon is slowing, the initial velocity and the acceleration must have opposite
+signs.
+
+(b) Below are the time plots of the position x and velocity v of the muon from the
+moment it enters the field to the time it stops. The computation in part (a) made no
+reference to t, so that other equations from Table 2-1 (such as v  v0  at and
+                                                                                       37
+
+x  v0t  12 at 2 ) are used in making these plots.
+
+
+
+
+27. We use v = v0 + at, with t = 0 as the instant when the velocity equals +9.6 m/s.
+
+(a) Since we wish to calculate the velocity for a time before t = 0, we set t = –2.5 s.
+Thus, Eq. 2-11 gives
+                                       c          h
+                    v  (9.6 m / s)  3.2 m / s2 ( 2.5 s)  16
+                                                              . m / s.
+
+
+                                                      c       h
+(b) Now, t = +2.5 s and we find v  (9.6 m / s)  3.2 m / s2 (2.5 s)  18 m / s.
+
+28. We take +x in the direction of motion, so v0 = +24.6 m/s and a = – 4.92 m/s2. We
+also take x0 = 0.
+
+(a) The time to come to a halt is found using Eq. 2-11:
+
+                                                24.6 m/s
+                      0  v0  at  t                       5.00 s .
+                                                4.92 m/s 2
+
+(b) Although several of the equations in Table 2-1 will yield the result, we choose Eq.
+2-16 (since it does not depend on our answer to part (a)).
+
+                                                (24.6 m/s) 2
+                0  v02  2ax  x                               61.5 m .
+                                              2   4.92 m/s 2 
+
+(c) Using these results, we plot v0t  12 at 2 (the x graph, shown next, on the left) and
+v0 + at (the v graph, on the right) over 0  t  5 s, with SI units understood.
+38                                                                                     CHAPTER 2
+
+29. We assume the periods of acceleration (duration t1) and deceleration (duration t2)
+are periods of constant a so that Table 2-1 can be used. Taking the direction of motion
+to be +x then a1 = +1.22 m/s2 and a2 = –1.22 m/s2. We use SI units so the velocity at t
+= t1 is v = 305/60 = 5.08 m/s.
+
+(a) We denote x as the distance moved during t1, and use Eq. 2-16:
+
+                                                  (5.08 m/s)2
+              v 2  v02  2a1x  x                             10.59 m  10.6 m.
+                                                  2(1.22 m/s 2 )
+(b) Using Eq. 2-11, we have
+                                       v  v0 5.08 m/s
+                                t1                       4.17 s.
+                                         a1    1.22 m/s 2
+
+The deceleration time t2 turns out to be the same so that t1 + t2 = 8.33 s. The distances
+traveled during t1 and t2 are the same so that they total to 2(10.59 m) = 21.18 m. This
+implies that for a distance of 190 m – 21.18 m = 168.82 m, the elevator is traveling at
+constant velocity. This time of constant velocity motion is
+
+                                              168.82 m
+                                       t3                33.21 s.
+                                              5.08 m / s
+
+Therefore, the total time is 8.33 s + 33.21 s  41.5 s.
+
+30. We choose the positive direction to be that of the initial velocity of the car
+(implying that a < 0 since it is slowing down). We assume the acceleration is constant
+and use Table 2-1.
+
+(a) Substituting v0 = 137 km/h = 38.1 m/s, v = 90 km/h = 25 m/s, and a = –5.2 m/s2
+into v = v0 + at, we obtain
+
+                                       25 m / s  38 m / s
+                                t                          2.5 s .
+                                          5.2 m / s2
+
+(b) We take the car to be at x = 0 when the brakes
+are applied (at time t = 0). Thus, the coordinate of
+the car as a function of time is given by
+
+                              1
+         x   38 m/s  t 
+                              2
+                                 5.2 m/s 2  t 2
+
+
+in SI units. This function is plotted from t = 0 to t
+= 2.5 s on the graph to the right. We have not
+shown the v-vs-t graph here; it is a descending
+straight line from v0 to v.
+
+31. THINK The rocket ship undergoes a constant acceleration from rest, and we want
+to know the time elapsed and the distance traveled when the rocket reaches a certain
+speed.
+                                                                                      39
+
+
+EXPRESS Since the problem involves constant acceleration, the motion of the rocket
+can be readily analyzed using the equations in Table 2-1:
+                             v  v0  at              (2  11)
+                                        1
+                          x  x0  v0t  at 2             (2  15)
+                                        2
+                               v 2  v02  2a( x  x0 )   (2  16)
+
+ANALYZE (a) Given that a  9.8 m/s2 , v0  0 and v  0.1c  3.0 107 m/s , we can
+solve v  v0  at for the time:
+                              v  v0 3.0 107 m/s  0
+                         t                     2
+                                                       3.1106 s
+                                a        9.8 m/s
+
+which is about 1.2 months. So it takes 1.2 months for the rocket to reach a speed of
+0.1c starting from rest with a constant acceleration of 9.8 m/s2.
+
+(b) To calculate the distance traveled during this time interval, we evaluate
+x  x0  v0t  12 at 2 , with x0 = 0 and v0 0 . The result is
+                              1
+                          x   9.8 m/s2  (3.1106 s)2  4.6 1013 m.
+                              2
+
+LEARN In solving parts (a) and (b), we did not use Eq. (2-16): v2  v02  2a( x  x0 ) .
+This equation can be used to check our answers. The final velocity based on this
+equation is
+
+       v  v02  2a( x  x0 )  0  2(9.8 m/s2 )(4.6 1013 m  0)  3.0 107 m/s ,
+
+which is what was given in the problem statement. So we know the problems have
+been solved correctly.
+
+32. The acceleration is found from Eq. 2-11 (or, suitably interpreted, Eq. 2-7).
+
+
+                       b             F 1000 m / kmIJ
+                        1020 km / hg G
+               a
+                    v
+                         
+                                     H 3600 s / h K         202.4 m / s2 .
+                    t                     14
+                                            . s
+
+In terms of the gravitational acceleration g, this is expressed as a multiple of 9.8 m/s2
+as follows:
+                                   202.4 m/s 2 
+                               a           2 
+                                                  g  21g .
+                                   9.8 m/s 
+
+33. THINK The car undergoes a constant negative acceleration to avoid impacting a
+barrier. Given its initial speed, we want to know the distance it has traveled and the
+time elapsed prior to the impact.
+40                                                                           CHAPTER 2
+
+
+EXPRESS Since the problem involves constant acceleration, the motion of the car
+can be readily analyzed using the equations in Table 2-1:
+
+                              v  v0  at                   (2  11)
+                                        1
+                          x  x0  v0t  at 2               (2  15)
+                                        2
+                             v 2  v02  2a( x  x0 )        (2  16)
+
+We take x0 = 0 and v0 = 56.0 km/h = 15.55 m/s to be the initial position and speed of
+the car. Solving Eq. 2-15 with t = 2.00 s gives the acceleration a. Once a is known, the
+speed of the car upon impact can be found by using Eq. 2-11.
+
+ANALYZE (a) Using Eq. 2-15, we find the acceleration to be
+
+
+                2( x  v0t ) 2 (24.0 m)  (15.55 m/s)(2.00 s) 
+           a         2
+                                                 2
+                                                                   3.56m/s 2 ,
+                    t                    (2.00 s)
+
+or | a | 3.56 m/s2 . The negative sign indicates that the acceleration is opposite to the
+direction of motion of the car; the car is slowing down.
+
+(b) The speed of the car at the instant of impact is
+
+                v  v0  at  15.55 m/s  (3.56 m/s2 )(2.00 s)  8.43 m/s
+
+which can also be converted to 30.3 km/h.
+
+LEARN In solving parts (a) and (b), we did not use Eq. 1-16. This equation can be
+used as a consistency check. The final velocity based on this equation is
+
+      v  v02  2a( x  x0 )  (15.55 m/s)2  2(3.56 m/s2 )(24 m  0)  8.43 m/s ,
+
+which is what was calculated in (b). This indicates that the problems have been solved
+correctly.
+
+34. Let d be the 220 m distance between the cars at t = 0, and v1 be the 20 km/h = 50/9
+m/s speed (corresponding to a passing point of x1 = 44.5 m) and v2 be the 40 km/h
+=100/9 m/s speed (corresponding to a passing point of x2 = 76.6 m) of the red car.
+We have two equations (based on Eq. 2-17):
+
+                                       1
+                     d – x1 = vo t1 + 2 a t12           where t1 = x1  v1
+
+                                       1
+                     d – x2 = vo t2 + 2 a t22           where t2 = x2  v2
+
+We simultaneously solve these equations and obtain the following results:
+                                                                                        41
+
+
+(a) The initial velocity of the green car is vo =  13.9 m/s. or roughly  50 km/h (the
+negative sign means that it’s along the –x direction).
+
+(b) The corresponding acceleration of the car is a =  2.0 m/s2 (the negative sign
+means that it’s along the –x direction).
+
+35. The positions of the cars as a function of time are given by
+
+                                            1                     1
+                           xr (t )  xr 0  ar t 2  (35.0 m)  ar t 2
+                                            2                     2
+                           xg (t )  xg 0  vg t  (270 m)  (20 m/s)t
+
+
+where we have substituted the velocity and not the speed for the green car. The two
+cars pass each other at t  12.0 s when the graphed lines cross. This implies that
+
+                                                            1
+             (270 m)  (20 m/s)(12.0 s)  30 m  (35.0 m)  ar (12.0 s) 2
+                                                            2
+
+which can be solved to give ar  0.90 m/s2 .
+
+36. (a) Equation 2-15 is used for part 1 of the trip and Eq. 2-18 is used for part 2:
+
+                     1                                                    900
+      x1 = vo1 t1 + 2 a1 t12      where a1 = 2.25 m/s2 and x1 =          4
+                                                                              m
+
+                    1                                                      3(900)
+      x2 = v2 t2  2 a2 t22        where a2 = 0.75 m/s2 and x2 =           4
+                                                                                  m
+
+In addition, vo1 = v2 = 0. Solving these equations for the times and adding the results
+gives t = t1 + t2 = 56.6 s.
+
+(b) Equation 2-16 is used for part 1 of the trip:
+
+                                                     900 
+                 v2 = (vo1)2 + 2a1x1 = 0 + 2(2.25)                2 2
+                                                           = 1013 m /s
+                                                     4 
+
+which leads to v = 31.8 m/s for the maximum speed.
+
+37. (a) From the figure, we see that x0 = –2.0 m. From Table 2-1, we can apply
+
+                                    x – x0 = v0t +   1
+                                                     2   at2
+
+with t = 1.0 s, and then again with t = 2.0 s. This yields two equations for the two
+unknowns, v0 and a:
+42                                                                          CHAPTER 2
+
+                                                          1
+                          0.0   2.0 m   v0 1.0 s   a 1.0 s 
+                                                                      2
+
+                                                          2
+                                                           1
+                       6.0 m   2.0 m   v0  2.0 s   a  2.0 s  .
+                                                                        2
+
+                                                           2
+
+Solving these simultaneous equations yields the results v0 = 0 and a = 4.0 m/s2.
+
+(b) The fact that the answer is positive tells us that the acceleration vector points in
+the +x direction.
+
+38. We assume the train accelerates from rest ( v0  0 and x0  0 ) at
+a1  134. m / s2 until the midway point and then decelerates at a2  134   . m / s2
+                         b        g
+until it comes to a stop v2  0 at the next station. The velocity at the midpoint is v1,
+which occurs at x1 = 806/2 = 403m.
+
+(a) Equation 2-16 leads to
+
+             v12  v02  2a1 x1  v1  2 1.34 m/s2   403 m   32.9 m/s.
+
+(b) The time t1 for the accelerating stage is (using Eq. 2-15)
+
+                                 1 2           2  403 m 
+                   x1  v0t1      a1t1  t1               24.53 s .
+                                 2             1.34 m/s2
+
+Since the time interval for the decelerating stage turns out to be the same, we double
+this result and obtain t = 49.1 s for the travel time between stations.
+
+(c) With a “dead time” of 20 s, we have T = t + 20 = 69.1 s for the total time between
+start-ups. Thus, Eq. 2-2 gives
+                                      806 m
+                               vavg          117
+                                                 . m/s .
+                                      69.1 s
+
+(d) The graphs for x, v and a as a function of t are shown below. The third graph, a(t),
+consists of three horizontal “steps” — one at 1.34 m/s2 during 0 < t < 24.53 s, and
+the next at –1.34 m/s2 during 24.53 s < t < 49.1 s and the last at zero during the “dead
+time” 49.1 s < t < 69.1 s).
+                                                                                             43
+
+
+
+
+39. (a) We note that vA = 12/6 = 2 m/s (with two significant figures understood).
+Therefore, with an initial x value of 20 m, car A will be at x = 28 m when t = 4 s.
+This must be the value of x for car B at that time; we use Eq. 2-15:
+
+                                           1
+                    28 m = (12 m/s)t + 2 aB t2            where t = 4.0 s .
+
+This yields aB = – 2.5 m/s2.
+
+(b) The question is: using the value obtained for aB in part (a), are there other values
+of t (besides t = 4 s) such that xA = xB ? The requirement is
+
+                                                      1
+                                 20 + 2t = 12t + 2 aB t2
+
+where aB  5 / 2. There       are   two       distinct   roots   unless      the   discriminant
+ 10  2(20)(aB) is zero. In our case, it is zero – which means there is only one root.
+    2
+
+The cars are side by side only once at t = 4 s.
+
+(c) A sketch is shown below. It consists of a straight line (xA) tangent to a parabola (xB)
+at t = 4.
+
+
+
+
+(d) We only care about real roots, which means 102  2(20)(aB)  0. If |aB| > 5/2
+then there are no (real) solutions to the equation; the cars are never side by side.
+
+(e) Here we have 102  2(20)(aB) > 0       two real roots. The cars are side by side
+at two different times.
+
+40. We take the direction of motion as +x, so a = –5.18 m/s2, and we use SI units, so
+v0 = 55(1000/3600) = 15.28 m/s.
+44                                                                            CHAPTER 2
+
+
+(a) The velocity is constant during the reaction time T, so the distance traveled during
+it is
+                       dr = v0T – (15.28 m/s) (0.75 s) = 11.46 m.
+
+We use Eq. 2-16 (with v = 0) to find the distance db traveled during braking:
+
+                                                       (15.28 m/s)2
+                      v 2  v02  2adb  db  
+                                                      2  5.18 m/s 2 
+
+which yields db = 22.53 m. Thus, the total distance is dr + db = 34.0 m, which means
+that the driver is able to stop in time. And if the driver were to continue at v0, the car
+would enter the intersection in t = (40 m)/(15.28 m/s) = 2.6 s, which is (barely)
+enough time to enter the intersection before the light turns, which many people would
+consider an acceptable situation.
+
+(b) In this case, the total distance to stop (found in part (a) to be 34 m) is greater than
+the distance to the intersection, so the driver cannot stop without the front end of the
+car being a couple of meters into the intersection. And the time to reach it at constant
+speed is 32/15.28 = 2.1 s, which is too long (the light turns in 1.8 s). The driver is
+caught between a rock and a hard place.
+
+41. The displacement (x) for each train is the “area” in the graph (since the
+displacement is the integral of the velocity). Each area is triangular, and the area of
+a triangle is 1/2(base) × (height). Thus, the (absolute value of the) displacement for
+one train (1/2)(40 m/s)(5 s) = 100 m, and that of the other train is (1/2)(30 m/s)(4 s) =
+60 m. The initial “gap” between the trains was 200 m, and according to our
+displacement computations, the gap has narrowed by 160 m. Thus, the answer is
+200 – 160 = 40 m.
+
+42. (a) Note that 110 km/h is equivalent to 30.56 m/s. During a two-second interval,
+you travel 61.11 m. The decelerating police car travels (using Eq. 2-15) 51.11 m. In
+light of the fact that the initial “gap” between cars was 25 m, this means the gap has
+narrowed by 10.0 m – that is, to a distance of 15.0 m between cars.
+
+(b) First, we add 0.4 s to the considerations of part (a). During a 2.4 s interval, you
+travel 73.33 m. The decelerating police car travels (using Eq. 2-15) 58.93 m during
+that time. The initial distance between cars of 25 m has therefore narrowed by 14.4 m.
+Thus, at the start of your braking (call it t0) the gap between the cars is 10.6 m. The
+speed of the police car at t0 is 30.56 – 5(2.4) = 18.56 m/s. Collision occurs at time t
+when xyou = xpolice (we choose coordinates such that your position is x = 0 and the
+police car’s position is x = 10.6 m at t0). Eq. 2-15 becomes, for each car:
+
+                                                       1
+                      xpolice – 10.6 = 18.56(t  t0) – 2 (5)(t  t0)2
+                                                       1
+                               xyou = 30.56(t  t0) – 2 (5)(t  t0)2      .
+Subtracting equations, we find
+
+                  10.6 = (30.56 – 18.56)(t  t0)  0.883 s = t  t0.
+                                                                                        45
+
+
+At that time your speed is 30.56 + a(t  t0) = 30.56 – 5(0.883)  26 m/s (or 94 km/h).
+
+43. In this solution we elect to wait until the last step to convert to SI units. Constant
+acceleration is indicated, so use of Table 2-1 is permitted. We start with Eq. 2-17 and
+denote the train’s initial velocity as vt and the locomotive’s velocity as v (which is
+also the final velocity of the train, if the rear-end collision is barely avoided). We note
+that the distance x consists of the original gap between them, D, as well as the
+forward distance traveled during this time by the locomotive v t . Therefore,
+
+                            vt  v x D  v t D
+                                               v .
+                               2     t   t      t
+
+We now use Eq. 2-11 to eliminate time from the equation. Thus,
+
+                                vt  v       D
+                                                      v
+                                   2         b   g
+                                          v  vt / a
+which leads to
+                   aG
+                       F v  v  v IJ FG v  v IJ   1 bv  v g .       2
+
+                       H 2 K H D K 2D
+                            t                      t
+                                                                   t
+
+
+Hence,
+
+               a
+                         1      FG 29 km  161 kmIJ  12888 km / h
+                                                         2
+                                                                             2
+
+                   2(0.676 km) H       h           h K
+
+which we convert as follows:
+                                   F 1000 mIJ FG 1 h IJ  0.994 m / s
+              a  c12888 km / h h G 2
+                                                             2
+                                                                                 2
+                                   H 1 km K H 3600 sK
+so that its magnitude is |a| = 0.994 m/s2. A graph is
+shown here for the case where a collision is just
+avoided (x along the vertical axis is in meters and t
+along the horizontal axis is in seconds). The top
+(straight) line shows the motion of the locomotive
+and the bottom curve shows the motion of the
+passenger train.
+
+The other case (where the collision is not quite
+avoided) would be similar except that the slope of
+the bottom curve would be greater than that of the
+top line at the point where they meet.
+
+44. We neglect air resistance, which justifies setting a = –g = –9.8 m/s2 (taking down
+as the –y direction) for the duration of the motion. We are allowed to use Table 2-1
+(with y replacing x) because this is constant acceleration motion. The ground level
+is taken to correspond to the origin of the y axis.
+
+(a) Using y  v0t  21 gt 2 , with y = 0.544 m and t = 0.200 s, we find
+46                                                                             CHAPTER 2
+
+
+                 y  gt 2 / 2 0.544 m  (9.8 m/s 2 ) (0.200 s) 2 / 2
+          v0                                                        3.70 m/s .
+                     t                    0.200 s
+
+(b) The velocity at y = 0.544 m is
+
+                 v  v0  gt  3.70 m/s  (9.8 m/s2 ) (0.200 s)  1.74 m/s .
+
+(c) Using v 2  v02  2 gy (with different values for y and v than before), we solve for
+the value of y corresponding to maximum height (where v = 0).
+
+                                  v02   (3.7 m/s) 2
+                             y                     0.698 m.
+                                  2 g 2(9.8 m/s 2 )
+
+Thus, the armadillo goes 0.698 – 0.544 = 0.154 m higher.
+
+45. THINK As the ball travels vertically upward, its motion is under the influence of
+gravitational acceleration. The kinematics is one-dimensional.
+
+EXPRESS We neglect air resistance for the duration of the motion (between
+“launching” and “landing”), so a = –g = –9.8 m/s2 (we take downward to be the –y
+direction). We use the equations in Table 2-1 (with y replacing x) because this is a
+= constant motion:
+                             v  v0  gt              (2  11)
+                                        1
+                          y  y0  v0t  gt 2               (2  15)
+                                        2
+                              v 2  v02  2 g ( y  y0 )    (2  16)
+
+We set y0 = 0. Upon reaching the maximum height y, the speed of the ball is
+momentarily zero (v = 0). Therefore, we can relate its initial speed v0 to y via the
+equation 0  v2  v02  2 gy. The time it takes for the ball to reach maximum height is
+given by v  v0  gt  0 , or t  v0 / g . Therefore, for the entire trip (from the time it
+leaves the ground until the time it returns to the ground), the total flight time is
+T  2t  2v0 / g.
+
+ANALYZE (a) At the highest point v = 0 and v0  2 gy . With y = 50 m, we find
+the initial speed of the ball to be
+                        v0  2 gy  2(9.8 m/s2 )(50 m)  31.3 m/s.
+
+(b) Using the result from (a) for v0, the total flight time of the ball is
+
+                                   2v0 2(31.3 m/s)
+                              T                   6.39 s
+                                    g   9.8 m/s 2
+                                                                                        47
+
+(c) The plots of y, v and a as a function of time are shown below. The acceleration
+graph is a horizontal line at –9.8 m/s2. At t = 3.19 s, y = 50 m.
+
+
+
+
+LEARN In calculating the total flight time of the ball, we could have used Eq. 2-15.
+At t  T  0 , the ball returns to its original position ( y  0 ). Therefore,
+
+                                     1              2v
+                            y  v0T  gT 2  0  T  0
+                                     2               g
+
+46. Neglect of air resistance justifies setting a = –g = –9.8 m/s2 (where down is our –y
+direction) for the duration of the fall. This is constant acceleration motion, and we
+may use Table 2-1 (with y replacing x).
+
+(a) Using Eq. 2-16 and taking the negative root (since the final velocity is downward),
+we have
+             v   v02  2 g y   0  2(9.8 m/s2 )(1700 m)  183 m/s .
+
+Its magnitude is therefore 183 m/s.
+
+(b) No, but it is hard to make a convincing case without more analysis. We estimate
+the mass of a raindrop to be about a gram or less, so that its mass and speed (from part
+(a)) would be less than that of a typical bullet, which is good news. But the fact that
+one is dealing with many raindrops leads us to suspect that this scenario poses an
+unhealthy situation. If we factor in air resistance, the final speed is smaller, of course,
+and we return to the relatively healthy situation with which we are familiar.
+
+47. THINK The wrench is in free fall with an acceleration a = –g = –9.8 m/s2.
+
+EXPRESS We neglect air resistance, which justifies setting a = –g = –9.8 m/s2
+(taking down as the –y direction) for the duration of the fall. This is constant
+acceleration motion, which justifies the use of Table 2-1 (with y replacing x):
+
+                              v  v0  gt                 (2  11)
+                                       1
+                         y  y0  v0t  gt 2              (2  15)
+                                       2
+                             v 2  v02  2 g ( y  y0 )   (2  16)
+
+Since the wrench had an initial speed v0 = 0, knowing its speed of impact allows us to
+apply Eq. 2-16 to calculate the height from which it was dropped.
+48                                                                           CHAPTER 2
+
+
+ANALYZE (a) Using v2  v02  2ay , we find the initial height to be
+                                 v02  v 2 0  (24 m/s) 2
+                         y                               29.4 m.
+                                    2a      2(9.8 m/s 2 )
+
+So that it fell through a height of 29.4 m.
+
+(b) Solving v = v0 – gt for time, we obtain a flight time of
+
+                                 v0  v 0  (24 m/s)
+                            t                        2.45 s.
+                                   g       9.8 m/s 2
+
+(c) SI units are used in the graphs, and the initial position is taken as the coordinate
+origin. The acceleration graph is a horizontal line at –9.8 m/s2.
+
+
+
+
+LEARN As the wrench falls, with a   g  0 , its speed increases but its velocity
+becomes more negative, as indicated by the second graph above.
+
+48. We neglect air resistance, which justifies setting a = –g = –9.8 m/s2 (taking down
+as the –y direction) for the duration of the fall. This is constant acceleration motion,
+which justifies the use of Table 2-1 (with y replacing x).
+
+(a) Noting that y = y – y0 = –30 m, we apply Eq. 2-15 and the quadratic formula
+(Appendix E) to compute t:
+                                  1 2       v0  v02  2 gy
+                        y  v0t  gt  t 
+                                  2                g
+
+which (with v0 = –12 m/s since it is downward) leads, upon choosing the positive root
+(so that t > 0), to the result:
+
+                    12 m/s  (12 m/s) 2  2(9.8 m/s 2 )(30 m)
+               t                                                 1.54 s.
+                                   9.8 m/s 2
+
+(b) Enough information is now known that any of the equations in Table 2-1 can be
+used to obtain v; however, the one equation that does not use our result from part (a)
+is Eq. 2-16:
+                                 v  v02  2 gy  27.1 m / s
+                                                                                       49
+
+
+where the positive root has been chosen in order to give speed (which is the
+magnitude of the velocity vector).
+
+49. THINK In this problem a package is dropped from a hot-air balloon which is
+ascending vertically upward. We analyze the motion of the package under the
+influence of gravity.
+
+EXPRESS We neglect air resistance, which justifies setting a = –g = –9.8 m/s2
+(taking down as the –y direction) for the duration of the motion. This allows us to use
+Table 2-1 (with y replacing x):
+                             v  v0  gt                (2  11)
+                                       1
+                         y  y0  v0t  gt 2                     (2  15)
+                                       2
+                                v 2  v02  2 g ( y  y0 )       (2  16)
+
+We place the coordinate origin on the ground and note that the initial velocity of the
+package is the same as the velocity of the balloon, v0 = +12 m/s and that its initial
+coordinate is y0 = +80 m. The time it takes for the package to hit the ground can be
+found by solving Eq. 2-15 with y = 0.
+
+ANALYZE (a) We solve 0  y  y0  v0t  12 gt 2 for time using the quadratic
+formula (choosing the positive root to yield a positive value for t):
+
+
+          v0  v02  2 gy0 12 m/s  (12 m/s)  2  9.8 m/s   80 m 
+                                            2             2
+
+       t                                                             5.45 s .
+                g                         9.8 m/s2
+
+(b) The speed of the package when it hits the ground can be calculated using Eq. 2-11.
+The result is
+
+                  v  v0  gt  12 m/s  (9.8 m/s2 )(5.447 s)  41.38 m/s .
+
+
+Its final speed is 41.38 m/s.
+
+LEARN Our answers can be readily verified by using Eq. 2-16 which was not used in
+either (a) or (b). The equation leads to
+
+      v   v02  2 g ( y  y0 )   (12 m/s)2  2(9.8 m/s2 )(0  80 m)  41.38 m/s
+
+which agrees with that calculated in (b).
+
+                                                             1
+50. The y coordinate of Apple 1 obeys y – yo1 = – 2 g t2 where y = 0 when t = 2.0 s.
+This allows us to solve for yo1, and we find yo1 = 19.6 m.
+
+The graph for the coordinate of Apple 2 (which is thrown apparently at t = 1.0 s with
+50                                                                            CHAPTER 2
+
+velocity v2) is
+                                                           1
+                            y – yo2 = v2(t – 1.0) – 2 g (t – 1.0)2
+
+where yo2 = yo1 = 19.6 m and where y = 0 when t = 2.25 s. Thus, we obtain |v2| = 9.6
+m/s, approximately.
+
+51. (a) With upward chosen as the +y direction, we use Eq. 2-11 to find the initial
+velocity of the package:
+
+                        v = vo + at      0 = vo – (9.8 m/s2)(2.0 s)
+
+which leads to vo = 19.6 m/s. Now we use Eq. 2-15:
+
+                                                1
+                  y = (19.6 m/s)(2.0 s) + 2 (–9.8 m/s2)(2.0 s)2  20 m .
+
+We note that the “2.0 s” in this second computation refers to the time interval 2 < t < 4
+in the graph (whereas the “2.0 s” in the first computation referred to the 0 < t < 2 time
+interval shown in the graph).
+
+(b) In our computation for part (b), the time interval (“6.0 s”) refers to the 2 < t < 8
+portion of the graph:
+
+                                               1
+                  y = (19.6 m/s)(6.0 s) + 2 (–9.8 m/s2)(6.0 s)2  –59 m ,
+or | y | 59 m .
+
+52. The full extent of the bolt’s fall is given by
+
+                                                     1
+                                         y – y0 = –2 g t2
+
+where y – y0 = –90 m (if upward is chosen as the positive y direction). Thus the time
+for the full fall is found to be t = 4.29 s. The first 80% of its free-fall distance is given
+by –72 = –g 2/2, which requires time  = 3.83 s.
+
+(a) Thus, the final 20% of its fall takes t –  = 0.45 s.
+
+(b) We can find that speed using v = g. Therefore, |v| = 38 m/s, approximately.
+
+(c) Similarly, vfinal = g t        |vfinal| = 42 m/s.
+
+53. THINK This problem involves two objects: a key dropped from a bridge, and a
+boat moving at a constant speed. We look for conditions such that the key will fall
+into the boat.
+
+EXPRESS The speed of the boat is constant, given by vb = d/t, where d is the distance
+of the boat from the bridge when the key is dropped (12 m) and t is the time the key
+takes in falling.
+                                                                                        51
+
+To calculate t, we take the time to be zero at the instant the key is dropped, we
+compute the time t when y = 0 using y  y0  v0t  21 gt 2 , with y0  45 m. Once t is
+known, the speed of the boat can be readily calculated.
+
+ANALYZE Since the initial velocity of the key is zero, the coordinate of the key is
+
+given by y0  12 gt 2 . Thus, the time it takes for the key to drop into the boat is
+
+                                 2 y0     2(45 m)
+                             t                    3.03 s .
+                                   g     9.8 m/s 2
+                                         12 m
+Therefore, the speed of the boat is vb          4.0 m/s.
+                                         3.03 s
+                                                d        d          g
+LEARN From the general expression vb                          d      , we see that
+                                                 t     2 y0 / g    2 y0
+vb 1/ y0 . This agrees with our intuition that the lower the height from which the
+key is dropped, the greater the speed of the boat in order to catch it.
+
+54. (a) We neglect air resistance, which justifies setting a = –g = –9.8 m/s2 (taking
+down as the –y direction) for the duration of the motion. We are allowed to use Eq.
+2-15 (with y replacing x) because this is constant acceleration motion. We use
+primed variables (except t) with the first stone, which has zero initial velocity, and
+unprimed variables with the second stone (with initial downward velocity –v0, so that
+v0 is being used for the initial speed). SI units are used throughout.
+
+                                                1 2
+                              y  0  t       gt
+                                                2
+                                                        1
+                              y   v0  t  1       g  t  1
+                                                                     2
+
+                                                        2
+
+Since the problem indicates y’ = y = –43.9 m, we solve the first equation for t
+(finding t = 2.99 s) and use this result to solve the second equation for the initial speed
+of the second stone:
+
+
+
+
+                                                       1
+                    43.9 m   v0  1.99 s  
+                                                       2
+                                                          9.8 m/s2  1.99 s 
+                                                                                2
+
+
+
+which leads to v0 = 12.3 m/s.
+
+(b) The velocity of the stones are given by
+52                                                                              CHAPTER 2
+
+                      d (y)                        d (y)
+                  vy          gt ,        vy            v0  g (t  1)
+                         dt                            dt
+The plot is shown below:
+
+
+
+
+55. THINK The free-falling moist-clay ball strikes the ground with a non-zero speed,
+and it undergoes deceleration before coming to rest.
+
+EXPRESS During contact with the ground its average acceleration is given by
+       v
+aavg      , where v is the change in its velocity during contact with the ground and
+        t
+t  20.0 103 s is the duration of contact. Thus, we must first find the velocity of the
+ball just before it hits the ground (y = 0).
+
+ANALYZE (a) Now, to find the velocity just before contact, we take t = 0 to be when
+it is dropped. Using Eq. 2-16 with y0  15.0 m , we obtain
+
+          v   v02  2 g ( y  y0 )   0  2(9.8 m/s2 )(0  15 m)  17.15 m/s
+
+where the negative sign is chosen since the ball is traveling downward at the moment
+of contact. Consequently, the average acceleration during contact with the ground is
+
+                                   v 0  (17.1 m/s)
+                          aavg                 3
+                                                       857 m/s 2 .
+                                   t   20.0  10 s
+
+(b) The fact that the result is positive indicates that this acceleration vector points
+upward.
+
+LEARN Since t is very small, it is not surprising to have a very large acceleration
+to stop the motion of the ball. In later chapters, we shall see that the acceleration is
+directly related to the magnitude and direction of the force exerted by the ground on
+the ball during the course of collision.
+
+56. We use Eq. 2-16,
+                                    vB2 = vA2 + 2a(yB – yA),
+
+                                                     1
+with a = –9.8 m/s2, yB – yA = 0.40 m, and vB = 3 vA. It is then straightforward to solve:
+vA = 3.0 m/s, approximately.
+
+57. The average acceleration during contact with the floor is aavg = (v2 – v1) / t,
+                                                                                          53
+
+where v1 is its velocity just before striking the floor, v2 is its velocity just as it leaves
+the floor, and t is the duration of contact with the floor (12  10–3 s).
+
+(a) Taking the y axis to be positively upward and placing the origin at the point where
+the ball is dropped, we first find the velocity just before striking the floor, using
+ v12  v02  2 gy . With v0 = 0 and y = – 4.00 m, the result is
+
+                v1   2 gy   2(9.8 m/s2 ) (4.00 m)  8.85 m/s
+
+where the negative root is chosen because the ball is traveling downward. To find the
+velocity just after hitting the floor (as it ascends without air friction to a height of 2.00
+m), we use v2  v22  2 g ( y  y0 ) with v = 0, y = –2.00 m (it ends up two meters
+below its initial drop height), and y0 = – 4.00 m. Therefore,
+
+          v2  2 g ( y  y0 )  2(9.8 m/s2 ) (2.00 m  4.00 m)  6.26 m/s .
+
+Consequently, the average acceleration is
+
+                       v2  v1 6.26 m/s  ( 8.85 m/s)
+              aavg                         3
+                                                        1.26  103 m/s 2 .
+                         t         12.0  10 s
+
+(b) The positive nature of the result indicates that the acceleration vector points
+upward. In a later chapter, this will be directly related to the magnitude and direction
+of the force exerted by the ground on the ball during the collision.
+
+58. We choose down as the +y direction and set the coordinate origin at the point
+where it was dropped (which is when we start the clock). We denote the 1.00 s
+duration mentioned in the problem as t – t' where t is the value of time when it lands
+and t' is one second prior to that. The corresponding distance is y – y' = 0.50h, where y
+denotes the location of the ground. In these terms, y is the same as h, so we have h –y'
+= 0.50h or 0.50h = y' .
+
+(a) We find t' and t from Eq. 2-15 (with v0 = 0):
+
+                                      1              2 y
+                                  y  gt 2  t  
+                                      2               g
+                                       1 2        2y
+                                  y     gt  t     .
+                                       2          g
+
+Plugging in y = h and y' = 0.50h, and dividing these two equations, we obtain
+
+                                t
+                                   
+                                       b      g
+                                     2 0.50h / g
+                                                  0.50 .
+                                t       2h / g
+
+Letting t' = t – 1.00 (SI units understood) and cross-multiplying, we find
+54                                                                        CHAPTER 2
+
+
+                                                        100
+                                                         .
+                           t  100
+                                .  t 0.50  t 
+                                                     1  0.50
+which yields t = 3.41 s.
+
+(b) Plugging this result into y  12 gt 2 we find h = 57 m.
+
+(c) In our approach, we did not use the quadratic formula, but we did “choose a root”
+when we assumed (in the last calculation in part (a)) that 0.50 = +0.707 instead
+of –0.707. If we had instead let 0.50 = –0.707 then our answer for t would have
+been roughly 0.6 s, which would imply that t' = t – 1 would equal a negative number
+(indicating a time before it was dropped), which certainly does not fit with the
+physical situation described in the problem.
+
+59. We neglect air resistance, which justifies setting a = –g = –9.8 m/s2 (taking down
+as the –y direction) for the duration of the motion. We are allowed to use Table 2-1
+(with y replacing x) because this is constant acceleration motion. The ground level
+is taken to correspond to the origin of the y-axis.
+
+(a) The time drop 1 leaves the nozzle is taken as t = 0 and its time of landing on the
+floor t1 can be computed from Eq. 2-15, with v0 = 0 and y1 = –2.00 m.
+
+                     1            2 y   2(2.00 m)
+               y1   gt12  t1                     0.639 s .
+                     2             g       9.8 m/s 2
+
+At that moment, the fourth drop begins to fall, and from the regularity of the dripping
+we conclude that drop 2 leaves the nozzle at t = 0.639/3 = 0.213 s and drop 3 leaves
+the nozzle at t = 2(0.213 s) = 0.426 s. Therefore, the time in free fall (up to the
+moment drop 1 lands) for drop 2 is t2 = t1 – 0.213 s = 0.426 s. Its position at the
+moment drop 1 strikes the floor is
+
+                          1        1
+                    y2   gt22   (9.8 m/s 2 )(0.426 s)2  0.889 m,
+                          2        2
+
+or about 89 cm below the nozzle.
+
+(b) The time in free fall (up to the moment drop 1 lands) for drop 3 is t3 = t1 –0.426 s
+= 0.213 s. Its position at the moment drop 1 strikes the floor is
+
+                         1        1
+                   y3   gt32   (9.8 m/s 2 )(0.213 s)2  0.222 m,
+                         2        2
+
+or about 22 cm below the nozzle.
+
+60. To find the “launch” velocity of the rock, we apply Eq. 2-11 to the maximum
+height (where the speed is momentarily zero)
+                                                                                        55
+
+                       v  v0  gt  0  v0   9.8 m/s2   2.5 s 
+
+so that v0 = 24.5 m/s (with +y up). Now we use Eq. 2-15 to find the height of the
+tower (taking y0 = 0 at the ground level)
+
+                       1 2                                  1
+                         at  y  0   24.5 m/s 1.5 s    9.8 m/s 2  1.5 s  .
+                                                                                   2
+      y  y0  v0t 
+                       2                                    2
+
+Thus, we obtain y = 26 m.
+
+61. We choose down as the +y direction and place the coordinate origin at the top of
+the building (which has height H). During its fall, the ball passes (with velocity v1) the
+top of the window (which is at y1) at time t1, and passes the bottom (which is at y2) at
+time t2. We are told y2 – y1 = 1.20 m and t2 – t1 = 0.125 s. Using Eq. 2-15 we have
+
+
+                                            b
+                             y2  y1  v1 t2  t1  g 21 g bt  t g
+                                                               2         1
+                                                                             2
+
+
+
+which immediately yields
+
+                           1.20 m  12  9.8 m/s 2   0.125 s 
+                                                                   2
+
+                    v1                                                 8.99 m/s.
+                                          0.125 s
+
+From this, Eq. 2-16 (with v0 = 0) reveals the value of y1:
+
+                                                  (8.99 m/s)2
+                        v12  2 gy1     y1                     4.12 m.
+                                                  2(9.8 m/s 2 )
+
+It reaches the ground (y3 = H) at t3. Because of the symmetry expressed in the
+problem (“upward flight is a reverse of the fall’’) we know that t3 – t2 = 2.00/2 = 1.00
+s. And this means t3 – t1 = 1.00 s + 0.125 s = 1.125 s. Now Eq. 2-15 produces
+
+                                              1
+                     y3  y1  v1 (t3  t1 )  g (t3  t1 ) 2
+                                              2
+                                                       1
+                y3  4.12 m  (8.99 m/s) (1.125 s)  (9.8 m/s 2 ) (1.125 s) 2
+                                                       2
+
+which yields y3 = H = 20.4 m.
+
+62. The height reached by the player is y = 0.76 m (where we have taken the origin of
+the y axis at the floor and +y to be upward).
+
+(a) The initial velocity v0 of the player is
+
+                     v0  2 gy  2(9.8 m/s2 ) (0.76 m)  3.86 m/s .
+
+This is a consequence of Eq. 2-16 where velocity v vanishes. As the player reaches y1
+56                                                                                  CHAPTER 2
+
+= 0.76 m – 0.15 m = 0.61 m, his speed v1 satisfies v02  v12  2 gy1 , which yields
+
+           v1  v02  2 gy1  (3.86 m/s)2  2(9.80 m/s2 ) (0.61 m)  1.71 m/s .
+
+The time t1 that the player spends ascending in the top y1 = 0.15 m of the jump can
+now be found from Eq. 2-17:
+
+                           1                       2  0.15 m 
+                   y1       v1  v  t1  t1                 0.175 s
+                           2                      1.71 m/s  0
+
+which means that the total time spent in that top 15 cm (both ascending and
+descending) is 2(0.175 s) = 0.35 s = 350 ms.
+
+(b) The time t2 when the player reaches a height of 0.15 m is found from Eq. 2-15:
+
+                                     1 2                   1
+                   0.15 m  v0t2      gt2  (3.86 m/s)t2  (9.8 m/s 2 )t22 ,
+                                     2                     2
+
+which yields (using the quadratic formula, taking the smaller of the two positive roots)
+t2 = 0.041 s = 41 ms, which implies that the total time spent in that bottom 15 cm
+(both ascending and descending) is 2(41 ms) = 82 ms.
+
+63. The time t the pot spends passing in front of the window of length L = 2.0 m is
+0.25 s each way. We use v for its velocity as it passes the top of the window (going
+up). Then, with a = –g = –9.8 m/s2 (taking down to be the –y direction), Eq. 2-18
+yields
+                                 1                  L 1
+                         L  vt  gt 2  v   gt .
+                                 2                  t 2
+
+The distance H the pot goes above the top of the window is therefore (using Eq. 2-16
+with the final velocity being zero to indicate the highest point)
+
+                                  2.00 m / 0.25 s  (9.80 m/s )(0.25 s) / 2  2.34 m.
+                                                                                2
+        v 2  L / t  gt / 2 
+                              2                                 2
+
+     H                       
+        2g          2g                          2(9.80 m/s2 )
+
+64. The graph shows y = 25 m to be the highest point (where the speed momentarily
+vanishes). The neglect of “air friction” (or whatever passes for that on the distant
+planet) is certainly reasonable due to the symmetry of the graph.
+
+(a) To find the acceleration due to gravity gp on that planet, we use Eq. 2-15 (with +y
+up)
+                          1                                     1
+            y  y0  vt  g pt 2  25 m  0   0  2.5 s   g p  2.5 s 
+                                                                             2
+
+                          2                                     2
+
+so that gp = 8.0 m/s2.
+
+(b) That same (max) point on the graph can be used to find the initial velocity.
+                                                                                      57
+
+
+                           1                                 1
+                y  y0       v0  v  t      25 m  0       v0  0  2.5 s 
+                           2                                 2
+
+Therefore, v0 = 20 m/s.
+
+65. The key idea here is that the speed of the head (and the torso as well) at any given
+time can be calculated by finding the area on the graph of the head’s acceleration
+versus time, as shown in Eq. 2-26:
+
+                                area between the acceleration curve 
+                     v1  v0                                       
+                                and the time axis, from t0 to t1    
+
+(a) From Fig. 2.15a, we see that the head begins to accelerate from rest (v0 = 0) at t0 =
+110 ms and reaches a maximum value of 90 m/s2 at t1 = 160 ms. The area of this
+region is
+                           1
+                     area  (160  110) 103s   90 m/s 2   2.25 m/s
+                           2
+
+which is equal to v1, the speed at t1.
+
+(b) To compute the speed of the torso at t1=160 ms, we divide the area into 4 regions:
+From 0 to 40 ms, region A has zero area. From 40 ms to 100 ms, region B has the
+shape of a triangle with area
+                                1
+                        area B  (0.0600 s)(50.0 m/s 2 )  1.50 m/s .
+                                2
+From 100 to 120 ms, region C has the shape of a rectangle with area
+
+                       area C  (0.0200 s) (50.0 m/s2 ) = 1.00 m/s.
+
+From 110 to 160 ms, region D has the shape of a trapezoid with area
+                           1
+                 area D     (0.0400 s) (50.0  20.0) m/s 2  1.40 m/s.
+                           2
+Substituting these values into Eq. 2-26, with v0 = 0 then gives
+
+                    v1  0  0  1.50 m/s + 1.00 m/s + 1.40 m/s = 3.90 m/s,
+or v1  3.90 m/s.
+
+66. The key idea here is that the position of an object at any given time can be
+calculated by finding the area on the graph of the object’s velocity versus time, as
+shown in Eq. 2-30:
+                                area between the velocity curve 
+                    x1  x0                                     .
+                                and the time axis, from t0 to t1 
+
+(a) To compute the position of the fist at t = 50 ms, we divide the area in Fig. 2-37
+into two regions. From 0 to 10 ms, region A has the shape of a triangle with area
+58                                                                        CHAPTER 2
+
+
+                                     1
+                         area A =      (0.010 s) (2 m/s) = 0.01 m.
+                                     2
+
+From 10 to 50 ms, region B has the shape of a trapezoid with area
+                                   1
+                       area B =      (0.040 s) (2 + 4) m/s = 0.12 m.
+                                   2
+
+Substituting these values into Eq. 2-30 with x0 = 0 then gives
+
+                              x1  0  0  0.01 m + 0.12 m = 0.13 m,
+or x1  0.13 m.
+
+(b) The speed of the fist reaches a maximum at t1 = 120 ms. From 50 to 90 ms, region
+C has the shape of a trapezoid with area
+
+                                   1
+                       area C =      (0.040 s) (4 + 5) m/s = 0.18 m.
+                                   2
+
+From 90 to 120 ms, region D has the shape of a trapezoid with area
+
+
+                                  1
+                      area D =      (0.030 s) (5 + 7.5) m/s = 0.19 m.
+                                  2
+
+Substituting these values into Eq. 2-30, with x0 = 0 then gives
+
+                  x1  0  0  0.01 m + 0.12 m + 0.18 m + 0.19 m = 0.50 m,
+or x1  0.50 m.
+
+67. The problem is solved using Eq. 2-31:
+
+                              area between the acceleration curve 
+                   v1  v0                                       
+                              and the time axis, from t0 to t1    
+
+To compute the speed of the unhelmeted, bare head at t1 = 7.0 ms, we divide the area
+under the a vs. t graph into 4 regions: From 0 to 2 ms, region A has the shape of a
+triangle with area
+                                1
+                       area A = (0.0020 s) (120 m/s 2 ) = 0.12 m/s.
+                                2
+From 2 ms to 4 ms, region B has the shape of a trapezoid with area
+
+                              1
+                   area B =     (0.0020 s) (120 + 140) m/s2 = 0.26 m/s.
+                              2
+                                                                                     59
+
+From 4 to 6 ms, region C has the shape of a trapezoid with area
+                             1
+                  area C =     (0.0020 s) (140 + 200) m/s2 = 0.34 m/s.
+                             2
+
+From 6 to 7 ms, region D has the shape of a triangle with area
+
+                              1
+                      area D  (0.0010 s) (200 m/s 2 )  0.10 m/s.
+                              2
+
+Substituting these values into Eq. 2-31, with v0=0 then gives
+
+             vunhelmeted  0.12 m/s  0.26 m/s  0.34 m/s  0.10 m/s  0.82 m/s.
+
+
+Carrying out similar calculations for the helmeted head, we have the following
+results: From 0 to 3 ms, region A has the shape of a triangle with area
+                              1
+                       area A =  (0.0030 s) (40 m/s 2 ) = 0.060 m/s.
+                              2
+From 3 ms to 4 ms, region B has the shape of a rectangle with area
+
+                       area B  (0.0010 s) (40 m/s2 )  0.040 m/s.
+
+From 4 to 6 ms, region C has the shape of a trapezoid with area
+                              1
+                   area C =     (0.0020 s) (40 + 80) m/s 2 = 0.12 m/s.
+                              2
+From 6 to 7 ms, region D has the shape of a triangle with area
+                             1
+                     area D  (0.0010 s) (80 m/s 2 )  0.040 m/s.
+                             2
+
+Substituting these values into Eq. 2-31, with v0 = 0 then gives
+
+          vhelmeted  0.060 m/s  0.040 m/s  0.12 m/s  0.040 m/s  0.26 m/s.
+
+Thus, the difference in the speed is
+
+                 v  vunhelmeted  vhelmeted  0.82 m/s  0.26 m/s  0.56 m/s.
+
+68. This problem can be solved by noting that velocity can be determined by the
+graphical integration of acceleration versus time. The speed of the tongue of the
+salamander is simply equal to the area under the acceleration curve:
+
+           1                     1                                  1
+v  area  (102 s)(100 m/s 2 )  (102 s)(100 m/s 2  400 m/s 2 )  (102 s)(400 m/s2 )
+           2                     2                                  2
+   5.0 m/s.
+60                                                                                     CHAPTER 2
+
+
+                                                      z
+69. Since v  dx / dt (Eq. 2-4), then x  v dt , which corresponds to the area
+under the v vs t graph. Dividing the total area A into rectangular (baseheight) and
+            b                g
+triangular 21 base  height areas, we have
+
+                 A     A0 t 2  A2 t 10  A10 t 12  A12 t 16
+                          1                      FG   1                  IJ
+                      
+                          2                       H
+                            (2)(8)  (8)(8)  (2)(4)  (2)(4)  (4)(4)
+                                                      2                   K
+with SI units understood. In this way, we obtain x = 100 m.
+
+70. To solve this problem, we note that velocity is equal to the time derivative of a
+position function, as well as the time integral of an acceleration function, with the
+integration constant being the initial velocity. Thus, the velocity of particle 1 can be
+written as
+                         dx    d
+                    v1  1   6.00t 2  3.00t  2.00   12.0t  3.00 .
+                         dt dt
+
+
+Similarly, the velocity of particle 2 is
+
+                     v2  v20   a2 dt  20.0   (8.00t )dt  20.0  4.00t 2 .
+
+The condition that v1  v2 implies
+
+
+                12.0t  3.00  20.0  4.00t 2            4.00t 2  12.0t  17.0  0
+
+which can be solved to give (taking positive root) t  (3  26) / 2  1.05 s. Thus,
+
+the velocity at this time is v1  v2  12.0(1.05)  3.00  15.6 m/s.
+
+71. (a) The derivative (with respect to time) of the given expression for x yields the
+“velocity” of the spot:
+                                               9
+                                    v(t) = 9 – 4 t2
+
+with 3 significant figures understood. It is easy to see that v = 0 when t = 2.00 s.
+
+(b) At t = 2 s, x = 9(2) – ¾(2)3 = 12. Thus, the location of the spot when v = 0 is 12.0
+cm from left edge of screen.
+
+                                                          9
+(c) The derivative of the velocity is a = – 2 t, which gives an acceleration of
+  9.00 cm/m2 (negative sign indicating leftward) when the spot is 12 cm from the
+left edge of screen.
+
+(d) Since v > 0 for times less than t = 2 s, then the spot had been moving rightward.
+                                                                                            61
+
+(e) As implied by our answer to part (c), it moves leftward for times immediately after
+t = 2 s. In fact, the expression found in part (a) guarantees that for all t > 2, v < 0
+(that is, until the clock is “reset” by reaching an edge).
+
+(f) As the discussion in part (e) shows, the edge that it reaches at some t > 2 s cannot
+be the right edge; it is the left edge (x = 0). Solving the expression given in the
+problem statement (with x = 0) for positive t yields the answer: the spot reaches the
+left edge at t = 12 s  3.46 s.
+
+72. We adopt the convention frequently used in the text: that "up" is the positive y
+direction.
+
+(a) At the highest point in the trajectory v = 0. Thus, with t = 1.60 s, the equation
+v = v0 – gt yields v0 = 15.7 m/s.
+
+                                                                                        1
+(b) One equation that is not dependent on our result from part (a) is y – y0 = vt + 2gt2;
+this readily gives ymax – y0 = 12.5 m for the highest ("max") point measured relative to
+where it started (the top of the building).
+
+                                                                        1
+(c) Now we use our result from part (a) and plug into y y0 = v0t + 2gt2 with t = 6.00
+s and y = 0 (the ground level). Thus, we have
+
+                                                    1
+                  0 – y0 = (15.68 m/s)(6.00 s) – 2 (9.8 m/s2)(6.00 s)2.
+
+Therefore, y0 (the height of the building) is equal to 82.3 m.
+
+73. We denote the required time as t, assuming the light turns green when the clock
+reads zero. By this time, the distances traveled by the two vehicles must be the same.
+
+(a) Denoting the acceleration of the automobile as a and the (constant) speed of the
+truck as v then
+                                     1FG
+                              x  at 2
+                                              IJ b g
+                                               vt truck
+                                     2 H  car
+                                               K
+which leads to
+
+                                   2v 2  9.5 m/s 
+                              t                    8.6 s .
+                                   a   2.2 m/s 2
+Therefore,
+                           x  vt   9.5 m/s 8.6 s   82 m .
+
+(b) The speed of the car at that moment is
+
+                         vcar  at   2.2 m/s2  8.6 s   19 m/s .
+
+74. If the plane (with velocity v) maintains its present course, and if the terrain
+continues its upward slope of 4.3°, then the plane will strike the ground after traveling
+62                                                                               CHAPTER 2
+
+
+                                h    35 m
+                       x                   4655
+                                                  . m  0.465 km.
+                              tan  tan 4.3
+
+This corresponds to a time of flight found from Eq. 2-2 (with v = vavg since it is
+constant)
+                        x    0.465 km
+                    t                   0.000358 h  1.3 s.
+                         v 1300 km / h
+
+This, then, estimates the time available to the pilot to make his correction.
+
+75. We denote tr as the reaction time and tb as the braking time. The motion during tr
+is of the constant-velocity (call it v0) type. Then the position of the car is given by
+
+                                                            1 2
+                                    x  v0tr  v0tb          atb
+                                                            2
+
+where v0 is the initial velocity and a is the acceleration (which we expect to be
+negative-valued since we are taking the velocity in the positive direction and we know
+the car is decelerating). After the brakes are applied the velocity of the car is given by
+v = v0 + atb. Using this equation, with v = 0, we eliminate tb from the first equation
+and obtain
+                                      v 2 1 v02            v02
+                           x  v0tr  0          v0tr        .
+                                       a    2 a           2 a
+
+We write this equation for each of the initial velocities:
+
+                                            2                             2
+                                         1 v01                         1 v02
+                          x1  v01tr          ,        x2  v02tr          .
+                                         2 a                           2 a
+
+Solving these equations simultaneously for tr and a we get
+
+                                                2        2
+                                               v02 x1  v01 x2
+                                     tr 
+                                                    b
+                                             v01v02 v02  v01    g
+and
+                                                     2        2
+                                              1 v02 v01  v01v02
+                                    a                          .
+                                              2 v02 x1  v01 x2
+
+(a) Substituting x1 = 56.7 m, v01 = 80.5 km/h = 22.4 m/s, x2 = 24.4 m and v02 = 48.3
+km/h = 13.4 m/s, we find
+
+                  2        2
+                 v02 x1  v01 x2    (13.4 m/s) 2 (56.7 m)  (22.4 m/s) 2 (24.4 m)
+        tr                       
+               v01v02 (v02  v01 ) (22.4 m/s)(13.4 m/s)(13.4 m/s  22.4 m/s)
+           0.74 s.
+
+(b) Similarly, substituting x1 = 56.7 m, v01 = 80.5 km/h = 22.4 m/s, x2 = 24.4 m, and
+                                                                                           63
+
+v02 = 48.3 km/h = 13.4 m/s gives
+
+                 2         2
+           1 v02v01  v01v02    1 (13.4 m/s)(22.4 m/s) 2  (22.4 m/s)(13.4 m/s) 2
+       a                   
+           2 v02 x1  v01 x2    2 (13.4 m/s)(56.7 m)  (22.4 m/s)(24.4 m)
+          6.2 m/s 2 .
+
+The magnitude of the deceleration is therefore 6.2 m/s2. Although rounded-off values
+are displayed in the above substitutions, what we have input into our calculators are
+the “exact” values (such as v02  161
+                                  12 m/s).
+
+
+76. (a) A constant velocity is equal to the ratio of displacement to elapsed time. Thus,
+for the vehicle to be traveling at a constant speed v p over a distance D23 , the time
+delay should be t  D23 / v p .
+
+(b) The time required for the car to accelerate from rest to a cruising speed v p is
+t0  v p / a . During this time interval, the distance traveled is x0  at02 / 2  v2p / 2a.
+The car then moves at a constant speed v p over a distance D12  x0  d to reach
+intersection 2, and the time elapsed is t1  ( D12  x0  d ) / v p . Thus, the time delay at
+intersection 2 should be set to
+
+                               vp   D12  x0  d       v p D12  (v 2p / 2a)  d
+     ttotal  tr  t0  t1  tr                  tr  
+                                 a       vp             a           vp
+                   1 v p D12  d
+           tr         
+                   2 a     vp
+
+77. THINK The speed of the rod changes due to a nonzero acceleration.
+
+EXPRESS Since the problem involves constant acceleration, the motion of the rod
+can be readily analyzed using the equations given in Table 2-1. We take +x to be in the
+direction of motion, so
+
+                           b
+                     v  60 km / h       g FGH
+                                     1000 m / km
+                                       3600 s / h
+                                                        IJ
+                                                      16.7 m / s
+                                                         K
+and a > 0. The location where the rod starts from rest (v0 = 0) is taken to be x0 = 0.
+
+ANALYZE (a) Using Eq. 2-7, we find the average acceleration to be
+
+                                    v v  v0 16.7 m/s  0
+                          aavg                           3.09 m/s 2 .
+                                    t t  t0   5.4 s  0
+
+(b) Assuming constant acceleration a  aavg  3.09 m/s2 , the total distance traveled
+during the 5.4-s time interval is
+64                                                                            CHAPTER 2
+
+                              1              1
+                x  x0  v0t  at 2  0  0  (3.09 m/s 2 )(5.4 s)2  45 m
+                              2              2
+
+(c) Using Eq. 2-15, the time required to travel a distance of x = 250 m is:
+
+                         1 2        2x   2  250 m 
+                    x     at  t                   12.73 s
+                         2          a     3.1 m/s 2
+
+LEARN The displacement of the rod as a function of time can be written as
+       1
+x(t )  (3.09 m/s 2 )t 2 . Note that we could have chosen Eq. 2-17 to solve for (b):
+       2
+                            1             1
+                       x   v0  v  t  16.7 m/s  5.4 s   45 m.
+                            2             2
+
+78. We take the moment of applying brakes to be t = 0. The deceleration is constant so
+that Table 2-1 can be used. Our primed variables (such as v0  72 km/h = 20 m/s ) refer
+to one train (moving in the +x direction and located at the origin when t = 0) and
+unprimed variables refer to the other (moving in the –x direction and located at x0 =
++950 m when t = 0). We note that the acceleration vector of the unprimed train points
+in the positive direction, even though the train is slowing down; its initial velocity is
+v0 = –144 km/h = –40 m/s. Since the primed train has the lower initial speed, it should
+stop sooner than the other train would (were it not for the collision). Using Eq 2-16, it
+should stop (meaning v  0 ) at
+
+                            v   v0   0  (20 m/s)2  200 m .
+                              2          2
+
+                      x 
+                                  2a            2 m/s 2
+
+The speed of the other train, when it reaches that location, is
+
+                                    40 m/s   2 1.0 m/s2   200 m  950 m 
+                                             2
+           v  v02  2ax 
+              10 m/s
+
+using Eq 2-16 again. Specifically, its velocity at that moment would be –10 m/s since
+it is still traveling in the –x direction when it crashes. If the computation of v had
+failed (meaning that a negative number would have been inside the square root) then
+we would have looked at the possibility that there was no collision and examined how
+far apart they finally were. A concern that can be brought up is whether the primed
+train collides before it comes to rest; this can be studied by computing the time it
+stops (Eq. 2-11 yields t = 20 s) and seeing where the unprimed train is at that moment
+(Eq. 2-18 yields x = 350 m, still a good distance away from contact).
+
+                                                        1
+79. The y coordinate of Piton 1 obeys y – y01 = – 2 g t2 where y = 0 when t = 3.0 s.
+This allows us to solve for yo1, and we find y01 = 44.1 m. The graph for the coordinate
+of Piton 2 (which is thrown apparently at t = 1.0 s with velocity v1) is
+                                                                                        65
+
+                                                         1
+                             y – y02 = v1(t–1.0) – 2 g (t – 1.0)2
+
+where y02 = y01 + 10 = 54.1 m and where (again) y = 0 when t = 3.0 s.             Thus we
+obtain |v1| = 17 m/s, approximately.
+
+80. We take +x in the direction of motion. We use subscripts 1 and 2 for the data. Thus,
+v1 = +30 m/s, v2 = +50 m/s, and x2 – x1 = +160 m.
+
+(a) Using these subscripts, Eq. 2-16 leads to
+
+                         v22  v12     (50 m/s)2  (30 m/s) 2
+                  a                                          5.0 m/s 2 .
+                       2  x2  x1         2 160 m 
+
+(b) We find the time interval corresponding to the displacement x2 – x1 using Eq. 2-17:
+
+                                2  x2  x1           2 160 m 
+                    t2  t1                                          4.0 s .
+                                  v1  v2           30 m/s  50 m/s
+
+(c) Since the train is at rest (v0 = 0) when the clock starts, we find the value of t1 from
+Eq. 2-11:
+                                                  30 m/s
+                          v1  v0  at1  t1               6.0 s .
+                                                 5.0 m/s 2
+
+(d) The coordinate origin is taken to be the location at which the train was initially at
+rest (so x0 = 0). Thus, we are asked to find the value of x1. Although any of several
+equations could be used, we choose Eq. 2-17:
+
+                            1                 1
+                     x1       v0  v1  t1   30 m/s  6.0 s   90 m .
+                            2                 2
+
+(e) The graphs are shown below, with SI units understood.
+
+
+
+
+81. THINK The particle undergoes a non-constant acceleration along the +x-axis. An
+integration is required to calculate velocity.
+
+EXPRESS With a non-constant acceleration a(t )  dv / dt , the velocity of the
+66                                                                                    CHAPTER 2
+
+                                                                     t1
+particle at time t1 is given by Eq. 2-27: v1  v0   a(t )dt , where v0 is the velocity at
+                                                                 t0
+
+time t0. In our situation, we have a  5.0t. In addition, we also know that
+v0  17 m/s at t0  2.0 s.
+
+ANALYZE Integrating (from t = 2 s to variable t = 4 s) the acceleration to get the
+velocity and using the values given in the problem, leads to
+
+           t            t               1                         1
+v  v0   adt  v0   (5.0t )dt  v0  (5.0)(t 2  t02 ) = 17 + 2 (5.0)(42 – 22) = 47 m/s.
+          t0           t0               2
+
+LEARN The velocity of the particle as a function of t is
+
+                             1                        1
+                 v(t )  v0  (5.0)(t 2  t02 )  17  (5.0)(t 2  4)  7  2.5t 2
+                             2                        2
+in SI units (m/s). Since the acceleration is linear in t, we expect the velocity to be
+quadratic in t, and the displacement to be cubic in t.
+
+82. The velocity v at t = 6 (SI units and two significant figures understood) is
+         6                                                                                    1
+vgiven   adt . A quick way to implement this is to recall the area of a triangle ( 2
+        2
+base × height). The result is v = 7 m/s + 32 m/s = 39 m/s.
+
+83. The object, once it is dropped (v0 = 0) is in free fall (a = –g = –9.8 m/s2 if we take
+down as the –y direction), and we use Eq. 2-15 repeatedly.
+
+(a) The (positive) distance D from the lower dot to the mark corresponding to a
+certain reaction time t is given by y   D   21 gt 2 , or D = gt2/2. Thus,
+for t1  50.0 ms ,
+
+                     D 
+                      1
+                         c9.8 m / s hc50.0  10 sh  0.0123 m = 1.23 cm.
+                                  2                   3   2
+
+
+
+                                      2
+
+                         9.8 m/s   100  10 s   0.049 m = 4D .
+                                          2                     3        2
+
+(b) For t = 100 ms, D 
+         2                 2                                                          1
+                                                  2
+
+                         9.8 m/s   150  10 s   0.11m = 9D .
+                                          2                     3        2
+
+(c) For t = 150 ms, D 
+         3                 3                                                      1
+                                                  2
+
+                         9.8 m/s   200  10 s   0.196 m =16D .
+                                          2                     3        2
+
+(d) For t = 200 ms, D 
+         4                 4                                                              1
+                                                  2
+
+
+(e) For t = 250 ms, D 
+         4
+                        c9.8 m / s hc250  10 sh  0.306 m = 25D .
+                           5
+                                      2                    3    2
+
+
+                                                                              1
+                                              2
+                                                                                                      67
+
+84. We take the direction of motion as +x, take x0 = 0 and use SI units, so v =
+1600(1000/3600) = 444 m/s.
+
+(a) Equation 2-11 gives 444 = a(1.8) or a = 247 m/s2. We express this as a multiple of
+g by setting up a ratio:
+                                   247 m/s 2 
+                               a         2 
+                                                g  25 g.
+                                   9.8 m/s 
+(b) Equation 2-17 readily yields
+
+                              1               1
+                      x         v0  v  t   444 m/s 1.8 s   400 m.
+                              2               2
+
+85. Let D be the distance up the hill. Then
+
+                       total distance traveled                    2D
+   average speed =                                    =                                  25 km/h .
+                         total time of travel                D          D
+                                                          20 km/h  + 35 km/h
+
+86. We obtain the velocity by integration of the acceleration:
+
+                                                t
+                                     v  v0   (6.1 1.2t )dt  .
+                                               0
+
+Lengths are in meters and times are in seconds. The student is encouraged to look at
+the discussion in Section 2-7 to better understand the manipulations here.
+
+(a) The result of the above calculation is v  v0  6.1 t  0.6 t 2 , where the problem
+states that v0 = 2.7 m/s. The maximum of this function is found by knowing when its
+derivative (the acceleration) is zero (a = 0 when t = 6.1/1.2 = 5.1 s) and plugging that
+value of t into the velocity equation above. Thus, we find v  18 m/s .
+
+(b) We integrate again to find x as a function of t:
+                          t           t
+              x  x0   v dt    (v0  6.1t   0.6 t 2 ) dt   v0t  3.05 t 2  0.2 t 3 .
+                         0           0
+
+
+
+With x0 = 7.3 m, we obtain x = 83 m for t = 6. This is the correct answer, but one has
+the right to worry that it might not be; after all, the problem asks for the total distance
+traveled (and x  x0 is just the displacement). If the cyclist backtracked, then his total
+distance would be greater than his displacement. Thus, we might ask, "did he
+backtrack?" To do so would require that his velocity be (momentarily) zero at some
+point (as he reversed his direction of motion). We could solve the above quadratic
+equation for velocity, for a positive value of t where v = 0; if we did, we would find
+that at t = 10.6 s, a reversal does indeed happen. However, in the time interval we are
+concerned with in our problem (0 ≤ t ≤ 6 s), there is no reversal and the displacement
+is the same as the total distance traveled.
+
+87. THINK In this problem we’re given two different speeds, and asked to find the
+difference in their travel times.
+68                                                                           CHAPTER 2
+
+EXPRESS The time is takes to travel a distance d with a speed v1 is t1  d / v1 .
+Similarly, with a speed v2 the time would be t2  d / v2 . The two speeds in this
+problem are
+                                           1609 m/mi
+                  v1  55 mi/h  (55 mi/h)            24.58 m/s
+                                            3600 s/h
+                                                 1609 m/mi
+                      v2  65 mi/h  (65 mi/h)              29.05 m/s
+                                                  3600 s/h
+ ANALYZE With d  700 km  7.0 105 m , the time difference between the two is
+
+                      1  1                    1           1     
+     t  t1  t2  d     (7.0 105 m)                         4383 s
+                       v
+                       1 v2               24.58 m/s   29.05 m/s 
+         73 min
+
+or about 1.2 h.
+
+LEARN The travel time was reduced from 7.9 h to 6.9 h. Driving at higher speed
+(within the legal limit) reduces travel time.
+
+88. The acceleration is constant and we may use the equations in Table 2-1.
+
+(a) Taking the first point as coordinate origin and time to be zero when the car is there,
+we apply Eq. 2-17:
+                          1              1
+                       x   v  v0  t  15.0 m/s  v0   6.00 s  .
+                          2              2
+
+With x = 60.0 m (which takes the direction of motion as the +x direction) we solve for
+the initial velocity: v0 = 5.00 m/s.
+
+(b) Substituting v = 15.0 m/s, v0 = 5.00 m/s, and t = 6.00 s into a = (v – v0)/t (Eq. 2-11),
+we find a = 1.67 m/s2.
+
+(c) Substituting v = 0 in v 2  v02  2ax and solving for x, we obtain
+
+                              v02   (5.00 m/s)2
+                          x                      7.50m ,
+                              2a   2 1.67 m/s 2 
+or | x |  7.50 m .
+
+(d) The graphs require computing the time when v = 0, in which case, we use v = v0 +
+at' = 0. Thus,
+                               v 5.00 m/s
+                           t  0              3.0s
+                                a 1.67 m/s 2
+
+indicates the moment the car was at rest. SI units are understood.
+                                                                                        69
+
+
+
+
+89. THINK In this problem we explore the connection between the maximum height
+an object reaches under the influence of gravity and the total amount of time it stays
+in air.
+
+EXPRESS Neglecting air resistance and setting a = –g = –9.8 m/s2 (taking down as
+the –y direction) for the duration of the motion, we analyze the motion of the ball
+using Table 2-1 (with y replacing x). We set y0 = 0. Upon reaching the maximum
+height H, the speed of the ball is momentarily zero (v = 0). Therefore, we can relate its
+initial speed v0 to H via the equation
+                           0  v2  v02  2 gH  v0  2 gH .
+
+The time it takes for the ball to reach maximum height is given by v  v0  gt  0 , or
+t  v0 / g  2H / g .
+
+ANALYZE If we want the ball to spend twice as much time in air as before, i.e.,
+t   2t , then the new maximum height H  it must reach is such that t   2H  / g .
+Solving for H  we obtain
+                               1       1             1     
+                          H   gt 2  g (2t )2  4  gt 2   4H .
+                               2       2             2     
+
+LEARN Since H t 2 , doubling t means that H must increase fourfold. Note also
+that for t   2t , the initial speed must be twice the original speed: v0  2v0 .
+
+90. (a) Using the fact that the area of a triangle is 12 (base) (height) (and the fact that
+the integral corresponds to the area under the curve) we find, from t = 0 through t = 5
+s, the integral of v with respect to t is 15 m. Since we are told that x0 = 0 then we
+conclude that x = 15 m when t = 5.0 s.
+
+(b) We see directly from the graph that v = 2.0 m/s when t = 5.0 s.
+
+(c) Since a = dv/dt = slope of the graph, we find that the acceleration during the
+interval 4 < t < 6 is uniformly equal to –2.0 m/s2.
+
+(d) Thinking of x(t) in terms of accumulated area (on the graph), we note that x(1) = 1
+m; using this and the value found in part (a), Eq. 2-2 produces
+70                                                                              CHAPTER 2
+
+                               x(5)  x(1) 15 m  1 m
+                      vavg                           3.5 m/s.
+                                  5 1         4s
+
+(e) From Eq. 2-7 and the values v(t) we read directly from the graph, we find
+
+                                  v(5)  v(1) 2 m/s  2 m/s
+                        aavg                               0.
+                                     5 1          4s
+
+91. Taking the +y direction downward and y0 = 0, we have y  v0t  21 gt 2 , which
+(with v0 = 0) yields t  2 y / g .
+
+                                                          2(50 m)
+(a) For this part of the motion, y1 = 50 m so that t1               3.2 s .
+                                                          9.8 m/s 2
+
+(b) For this next part of the motion, we note that the total displacement is y2 = 100 m.
+Therefore, the total time is
+                                      2(100 m)
+                                t2               4.5 s .
+                                       9.8 m/s 2
+
+The difference between this and the answer to part (a) is the time required to fall
+through that second 50 m distance:  t  t2  t1  4.5 s – 3.2 s = 1.3 s.
+
+92. Direction of +x is implicit in the problem statement. The initial position (when the
+clock starts) is x0 = 0 (where v0 = 0), the end of the speeding-up motion occurs at x1 =
+1100/2 = 550 m, and the subway train comes to a halt (v2 = 0) at x2 = 1100 m.
+
+(a) Using Eq. 2-15, the subway train reaches x1 at
+
+                                   2 x1   2  550 m 
+                           t1                        30.3 s .
+                                   a1     1.2 m/s 2
+
+The time interval t2 – t1 turns out to be the same value (most easily seen using Eq.
+2-18 so the total time is t2 = 2(30.3) = 60.6 s.
+
+(b) Its maximum speed occurs at t1 and equals v1  v0  a1t1  36.3 m / s .
+
+(c) The graphs are shown below:
+                                                                                       71
+
+93. We neglect air resistance, which justifies setting a = –g = –9.8 m/s2 (taking down
+as the –y direction) for the duration of the stone’s motion. We are allowed to use Table
+2-1 (with x replaced by y) because the ball has constant acceleration motion (and we
+choose y0 = 0).
+
+(a) We apply Eq. 2-16 to both measurements, with SI units understood.
+
+                                                 2
+                                         1 
+                     vB2  v02  2 gyB   v   2 g  y A  3  v02
+                                         2 
+                     vA  v0  2 gy A  v 2  2 gy A  v02
+                       2     2
+
+
+
+
+We equate the two expressions that each equal v02 and obtain
+
+                 1 2
+                 4
+                                     bg
+                   v  2 gy A  2 g 3  v 2  2 gy A         b g 43 v
+                                                           2g 3         2
+
+
+
+
+                       bg
+which yields v  2 g 4  8.85 m / s.
+
+(b) An object moving upward at A with speed v = 8.85 m/s will reach a maximum
+height y – yA = v2/2g = 4.00 m above point A (this is again a consequence of Eq. 2-16,
+now with the “final” velocity set to zero to indicate the highest point). Thus, the top of
+its motion is 1.00 m above point B.
+
+94. We neglect air resistance, which justifies setting a = –g = –9.8 m/s2 (taking down
+as the –y direction) for the duration of the motion. We are allowed to use Table 2-1
+(with y replacing x) because this is constant acceleration motion. The ground level
+is taken to correspond to the origin of the y-axis. The total time of fall can be
+computed from Eq. 2-15 (using the quadratic formula).
+
+                                  1 2       v  v02  2 gy
+                     y  v0t      gt  t  0
+                                  2               g
+
+with the positive root chosen. With y = 0, v0 = 0, and y0 = h = 60 m, we obtain
+
+                                      2 gh   2h
+                                t              35
+                                                   . s.
+                                       g      g
+
+Thus, “1.2 s earlier” means we are examining where the rock is at t = 2.3 s:
+
+                                         1
+                     y  h  v0 (2.3 s)  g (2.3 s)2  y  34 m
+                                         2
+
+where we again use the fact that h = 60 m and v0 = 0.
+
+95. THINK This problem involves analyzing a plot describing the position of an
+iceboat as function of time. The boat has a nonzero acceleration due to the wind.
+72                                                                         CHAPTER 2
+
+
+EXPRESS Since we are told that the acceleration of the boat is constant, the
+equations of Table 2-1 can be applied. However, the challenge here is that v0, v, and a
+are not explicitly given. Our strategy to deduce these values is to apply the kinematic
+equation x  x0  v0t  12 at 2 to a variety of points on the graph and solve for the
+unknowns from the simultaneous equations.
+
+ANALYZE (a) From the graph, we pick two points on the curve:
+(t , x)  (2.0 s,16 m) and (3.0 s, 27 m) . The corresponding simultaneous equations
+are
+                                                  1
+                           16 m – 0 = v0(2.0 s) + 2 a(2.0 s)2
+                                                  1         2
+                           27 m – 0 = v0(3.0 s) +
+                                                  2 a(3.0 s)
+
+Solving the equations lead to the values v0 = 6.0 m/s and a = 2.0 m/s2.
+
+(b) From Table 2-1,
+                          1 2                           1
+          x – x0 = vt –          27 m – 0 = v(3.0 s) – 2 (2.0 m/s2)(3.0 s)2
+                          2at
+
+which leads to v = 12 m/s.
+
+                                                                                1
+(c) Assuming the wind continues during 3.0 ≤ t ≤ 6.0, we apply x – x0 = v0t + 2at2 to
+this interval (where v0 = 12.0 m/s from part (b)) to obtain
+
+                                            1
+                 x = (12.0 m/s)(3.0 s) +     (2.0 m/s2)(3.0 s)2 = 45 m.
+                                            2
+
+LEARN By using the results obtained in (a), the position and velocity of the iceboat
+as a function of time can be written as
+
+                             1
+         x(t )  (6.0 m/s)t  (2.0 m/s 2 )t 2 and v(t )  (6.0 m/s)  (2.0 m/s 2 )t.
+                             2
+One can readily verify that the same answers are obtained for (b) and (c) using the
+above expressions for x(t ) and v(t ) .
+
+96. (a) Let the height of the diving board be h. We choose down as the +y direction
+and set the coordinate origin at the point where it was dropped (which is when we
+start the clock). Thus, y = h designates the location where the ball strikes the water.
+Let the depth of the lake be D, and the total time for the ball to descend be T. The
+speed of the ball as it reaches the surface of the lake is then v = 2gh (from Eq.
+2-16), and the time for the ball to fall from the board to the lake surface is t1 =
+  2h / g (from Eq. 2-15). Now, the time it spends descending in the lake (at constant
+velocity v) is
+                                        D      D
+                                   t2             .
+                                        v      2 gh
+                                                                                                 73
+
+
+                        2h          D
+Thus, T = t1 + t2 =        +             , which gives
+                         g          2 gh
+
+
+     D  T 2 gh  2h   4.80 s           2 9.80 m/s2  5.20 m   2 5.20 m   38.1 m .
+
+(b) Using Eq. 2-2, the magnitude of the average velocity is
+
+                                  D  h 38.1 m  5.20 m
+                         vavg                          9.02 m/s
+                                   T         4.80 s
+
+(c) In our coordinate choices, a positive sign for vavg means that the ball is going
+downward. If, however, upward had been chosen as the positive direction, then this
+answer in (b) would turn out negative-valued.
+
+(d) We find v0 from y  v0t  12 gt 2 with t = T and y = h + D. Thus,
+
+
+             h  D gT 5.20 m  38.1 m  9.8 m/s   4.80 s 
+                                                                   2
+
+        v0                                               14.5 m/s
+               T    2      4.80 s              2
+
+(e) Here in our coordinate choices the negative sign means that the ball is being
+thrown upward.
+
+97. We choose down as the +y direction and use the equations of Table 2-1 (replacing
+x with y) with a = +g, v0 = 0, and y0 = 0. We use subscript 2 for the elevator reaching
+the ground and 1 for the halfway point.
+
+                                      b          g
+(a) Equation 2-16, v22  v02  2a y2  y0 , leads to
+
+
+                      v2  2 gy2  2  9.8 m/s2  120 m   48.5 m/s .
+
+(b) The time at which it strikes the ground is (using Eq. 2-15)
+
+                                     2 y2   2 120 m 
+                             t2                       4.95 s .
+                                      g     9.8 m/s 2
+
+                                                     b       g
+(c) Now Eq. 2-16, in the form v12  v02  2a y1  y0 , leads to
+
+                       v1  2 gy1  2(9.8 m/s2 )(60 m)  34.3m/s.
+
+(d) The time at which it reaches the halfway point is (using Eq. 2-15)
+74                                                                               CHAPTER 2
+
+                                   2 y1   2(60 m)
+                            t1                     3.50 s .
+                                    g     9.8 m/s 2
+
+98. Taking +y to be upward and placing the origin at the point from which the objects
+are dropped, then the location of diamond 1 is given by y1   12 gt 2 and the location
+                                        b g   2
+of diamond 2 is given by y2   21 g t  1 . We are starting the clock when the first
+object is dropped. We want the time for which y2 – y1 = 10 m. Therefore,
+
+                 1         1
+                     b g 2
+                 g t  1  gt 2  10
+                 2         2
+                                                        b      g
+                                                      t  10 / g  0.5  15
+                                                                          . s.
+
+
+99. With +y upward, we have y0 = 36.6 m and y = 12.2 m. Therefore, using Eq. 2-18
+(the last equation in Table 2-1), we find
+
+                       y  y0  vt  12 gt 2  v   22.0 m/s
+
+at t = 2.00 s. The term speed refers to the magnitude of the velocity vector, so the
+answer is |v| = 22.0 m/s.
+
+100. During free fall, we ignore the air resistance and set a = –g = –9.8 m/s2 where we
+are choosing down to be the –y direction. The initial velocity is zero so that Eq. 2-15
+becomes y   21 gt 2 where y represents the negative of the distance d she has
+fallen. Thus, we can write the equation as d  21 gt 2 for simplicity.
+
+(a) The time t1 during which the parachutist is in free fall is (using Eq. 2-15) given by
+
+                                        1 2 1
+                          d1  50 m =
+                                        2
+                                                  c
+                                          gt1  9.80 m / s2 t12
+                                               2
+                                                                h
+which yields t1 = 3.2 s. The speed of the parachutist just before he opens the parachute
+is given by the positive root v12  2 gd1 , or
+
+                    v1  2 gh1      b2gc9.80 m / s hb50 mg  31 m / s.
+                                                   2
+
+
+
+
+If the final speed is v2, then the time interval t2 between the opening of the parachute
+and the arrival of the parachutist at the ground level is
+
+                               v1  v2 31 m / s  3.0 m / s
+                        t2                                 14 s.
+                                  a         2 m / s2
+
+This is a result of Eq. 2-11 where speeds are used instead of the (negative-valued)
+velocities (so that final-velocity minus initial-velocity turns out to equal initial-speed
+minus final-speed); we also note that the acceleration vector for this part of the motion
+is positive since it points upward (opposite to the direction of motion — which makes
+it a deceleration). The total time of flight is therefore t1 + t2 = 17 s.
+                                                                                        75
+
+
+(b) The distance through which the parachutist falls after the parachute is opened is
+given by
+                      v 2  v22
+                    d 1        
+                                   b       g b
+                                            2
+                                                 g  240 m.
+                                  31m / s  3.0 m / s
+                                                           2
+
+
+                         2a             b gc   h
+                                     2 2.0 m / s2
+
+In the computation, we have used Eq. 2-16 with both sides multiplied by –1 (which
+changes the negative-valued y into the positive d on the left-hand side, and switches
+the order of v1 and v2 on the right-hand side). Thus the fall begins at a height of h = 50
++ d  290 m.
+
+101. We neglect air resistance, which justifies setting a = –g = –9.8 m/s2 (taking down
+as the –y direction) for the duration of the motion. We are allowed to use Table 2-1
+(with y replacing x) because this is constant acceleration motion. The ground level
+is taken to correspond to y = 0.
+
+(a) With y0 = h and v0 replaced with –v0, Eq. 2-16 leads to
+
+                        v  (v0 )2  2 g (y  y0 )  v02  2 gh .
+
+The positive root is taken because the problem asks for the speed (the magnitude of
+the velocity).
+
+(b) We use the quadratic formula to solve Eq. 2-15 for t, with v0 replaced with –v0,
+
+                                 1 2       v  ( v0 ) 2  2 gy
+                  y   v0t      gt  t  0
+                                 2                 g
+
+where the positive root is chosen to yield t > 0. With y = 0 and y0 = h, this becomes
+
+                                       v02  2 gh  v0
+                                  t                   .
+                                             g
+
+(c) If it were thrown upward with that speed from height h then (in the absence of air
+friction) it would return to height h with that same downward speed and would
+therefore yield the same final speed (before hitting the ground) as in part (a). An
+important perspective related to this is treated later in the book (in the context of
+energy conservation).
+
+(d) Having to travel up before it starts its descent certainly requires more time than in
+part (b). The calculation is quite similar, however, except for now having +v0 in the
+equation where we had put in –v0 in part (b). The details follow:
+
+                               1             v0  v02  2 gy
+                     y  v0t  gt 2     t
+                               2                    g
+76                                                                          CHAPTER 2
+
+with the positive root again chosen to yield t > 0. With y = 0 and y0 = h, we obtain
+
+                                 v02  2 gh  v0
+                                  t             .
+                                       g
+102. We assume constant velocity motion and use Eq. 2-2 (with vavg = v > 0).
+Therefore,
+                          F     km   FG 1000 m / kmIJ I c100  10 sh  8.4 m.
+                          GH
+             x  vt  303
+                                 h    H 3600 s / h K JK
+                                                                3
+
+
+
+
+103. Assuming the horizontal velocity of the ball is constant, the horizontal
+displacement is x  vt , where x is the horizontal distance traveled, t is the time,
+and v is the (horizontal) velocity. Converting v to meters per second, we have 160
+km/h = 44.4 m/s. Thus
+                                 x     18.4 m
+                            t                   0.414 s.
+                                  v    44.4 m / s
+
+The velocity-unit conversion implemented above can be figured “from basics” (1000
+m = 1 km, 3600 s = 1 h) or found in Appendix D.
+
+104. In this solution, we make use of the notation x(t) for the value of x at a particular
+t. Thus, x(t) = 50t + 10t2 with SI units (meters and seconds) understood.
+
+(a) The average velocity during the first 3 s is given by
+
+                         x(3)  x(0) (50)(3)  (10)(3) 2  0
+                vavg                                        80 m / s.
+                             t                 3
+
+(b) The instantaneous velocity at time t is given by v = dx/dt = 50 + 20t, in SI units. At
+t = 3.0 s, v = 50 + (20)(3.0) = 110 m/s.
+
+(c) The instantaneous acceleration at time t is given by a = dv/dt = 20 m/s2. It is
+constant, so the acceleration at any time is 20 m/s2.
+
+(d) and (e) The graphs that follow show the coordinate x and velocity v as functions of
+time, with SI units understood. The dashed line marked (a) in the first graph runs from
+t = 0, x = 0 to t = 3.0s, x = 240 m. Its slope is the average velocity during the first 3s
+of motion. The dashed line marked (b) is tangent to the x curve at t = 3.0 s. Its slope is
+the instantaneous velocity at t = 3.0 s.
+                                                                                      77
+
+
+105. We take +x in the direction of motion, so v0 = +30 m/s, v1 = +15 m/s and a < 0.
+The acceleration is found from Eq. 2-11: a = (v1 – v0)/t1 where t1 = 3.0 s. This gives a
+= –5.0 m/s2. The displacement (which in this situation is the same as the distance
+traveled) to the point it stops (v2 = 0) is, using Eq. 2-16,
+
+                                                    (30 m/s)2
+                    v22  v02  2ax  x                      90 m.
+                                                   2(5 m/s 2 )
+
+106. The problem consists of two constant-acceleration parts: part 1 with v0 = 0, v =
+6.0 m/s, x = 1.8 m, and x0 = 0 (if we take its original position to be the coordinate
+origin); and, part 2 with v0 = 6.0 m/s, v = 0, and a2 = –2.5 m/s2 (negative because we
+are taking the positive direction to be the direction of motion).
+
+(a) We can use Eq. 2-17 to find the time for the first part
+
+                        1                             1
+               x – x0 = 2(v0 + v) t1     1.8 m – 0 = 2(0 + 6.0 m/s) t1
+
+so that t1 = 0.6 s. And Eq. 2-11 is used to obtain the time for the second part
+
+                     v  v0  a2t2        0 = 6.0 m/s + (–2.5 m/s2)t2
+
+from which t2 = 2.4 s is computed. Thus, the total time is t1 + t2 = 3.0 s.
+
+(b) We already know the distance for part 1. We could find the distance for part 2
+from several of the equations, but the one that makes no use of our part (a) results is
+Eq. 2-16
+              v 2  v02  2a2 x2  0 = (6.0 m/s)2 + 2(–2.5 m/s2)x2
+
+which leads to x2 = 7.2 m. Therefore, the total distance traveled by the shuffleboard
+disk is (1.8 + 7.2) m = 9.0 m.
+
+107. The time required is found from Eq. 2-11 (or, suitably interpreted, Eq. 2-7). First,
+we convert the velocity change to SI units:
+
+                                         FG 1000 m / kmIJ  27.8 m / s .
+                     v  (100 km / h)
+                                          H 3600 s / h K
+Thus, t = v/a = 27.8/50 = 0.556 s.
+
+108. From Table 2-1, v 2  v02  2ax is used to solve for a. Its minimum value is
+
+                              v2  v02 (360 km / h) 2
+                     amin                            36000 km / h 2
+                              2 xmax   2(180
+                                           . km)
+
+which converts to 2.78 m/s2.
+78                                                                           CHAPTER 2
+
+109. (a) For the automobile v = 55 – 25 = 30 km/h, which we convert to SI units:
+
+
+                    a
+                                              b
+                       v (30 km / h) 3600 s/ h
+                         
+                                      1000 m/ km
+                                                         g
+                                                  0.28 m / s2 .
+                       t (0.50 min)(60 s / min)
+
+(b) The change of velocity for the bicycle, for the same time, is identical to that of the
+car, so its acceleration is also 0.28 m/s2.
+
+110. Converting to SI units, we have v = 3400(1000/3600) = 944 m/s (presumed
+constant) and t = 0.10 s. Thus, x = vt = 94 m.
+
+111. This problem consists of two parts: part 1 with constant acceleration (so that the
+equations in Table 2-1 apply), v0 = 0, v = 11.0 m/s, x = 12.0 m, and x0 = 0 (adopting
+the starting line as the coordinate origin); and, part 2 with constant velocity (so that
+x – x0 = vt applies) with v = 11.0 m/s, x0 = 12.0, and x = 100.0 m.
+
+(a) We obtain the time for part 1 from Eq. 2-17
+
+                             1                       1
+                  x  x0 
+                             2
+                              b        g
+                               v0  v t1  12.0  0  0  110
+                                                     2
+                                                            . t1     b   g
+so that t1 = 2.2 s, and we find the time for part 2 simply from 88.0 = (11.0)t2  t2 =
+8.0 s. Therefore, the total time is t1 + t2 = 10.2 s.
+
+(b) Here, the total time is required to be 10.0 s, and we are to locate the point xp where
+the runner switches from accelerating to proceeding at constant speed. The equations
+for parts 1 and 2, used above, therefore become
+
+                                  x p  0  12  0  11.0 m/s  t1
+                         100.0 m  x p  11.0 m/s 10.0 s  t1 
+
+where in the latter equation, we use the fact that t2 = 10.0 – t1. Solving the equations
+for the two unknowns, we find that t1 = 1.8 s and xp = 10.0 m.
+
+112. The bullet starts at rest (v0 = 0) and after traveling the length of the barrel
+( x 1.2 m ) emerges with the given velocity (v = 640 m/s), where the direction of
+motion is the positive direction. Turning to the constant acceleration equations in
+Table 2-1, we use x  12 (v0  v) t . Thus, we find t = 0.00375 s (or 3.75 ms).
+
+113. There is no air resistance, which makes it quite accurate to set a = –g = –9.8 m/s2
+(where downward is the –y direction) for the duration of the fall. We are allowed to
+use Table 2-1 (with y replacing x) because this is constant acceleration motion; in
+fact, when the acceleration changes (during the process of catching the ball) we will
+again assume constant acceleration conditions; in this case, we have a2 = +25g = 245
+m/s2.
+
+(a) The time of fall is given by Eq. 2-15 with v0 = 0 and y = 0. Thus,
+                                                                                       79
+
+                                   2 y0   2(145 m)
+                            t                      5.44 s.
+                                    g     9.8 m/s 2
+
+(b) The final velocity for its free-fall (which becomes the initial velocity during the
+catching process) is found from Eq. 2-16 (other equations can be used but they would
+use the result from part (a))
+
+                     v   v02  2 g( y  y0 )   2 gy0  53.3 m / s
+
+where the negative root is chosen since this is a downward velocity. Thus, the speed is
+| v | 53.3 m/s.
+
+(c) For the catching process, the answer to part (b) plays the role of an initial velocity
+(v0 = –53.3 m/s) and the final velocity must become zero. Using Eq. 2-16, we find
+
+                             v 2  v02 (53.3 m/s)2
+                       y2                           5.80 m ,
+                               2a2      2(245 m/s 2 )
+
+or | y2 |  5.80 m. The negative value of y2 signifies that the distance traveled
+while arresting its motion is downward.
+
+114. During Tr the velocity v0 is constant (in the direction we choose as +x) and obeys
+v0 = Dr/Tr where we note that in SI units the velocity is v0 = 200(1000/3600) = 55.6
+m/s. During Tb the acceleration is opposite to the direction of v0 (hence, for us, a < 0)
+until the car is stopped (v = 0).
+
+(a) Using Eq. 2-16 (with xb = 170 m) we find
+                                                             v02
+                           v 2  v02  2axb  a  
+                                                           2 xb
+which yields |a| = 9.08 m/s2.
+
+(b) We express this as a multiple of g by setting up a ratio:
+
+                                   9.08 m/s 2 
+                                a        2 
+                                                 g  0.926 g .
+                                   9.8 m/s 
+
+(c) We use Eq. 2-17 to obtain the braking time:
+                        1                       2 170 m 
+                  xb   v0  v  Tb  Tb                 6.12 s .
+                        2                       55.6 m/s
+
+(d) We express our result for Tb as a multiple of the reaction time Tr by setting up a
+ratio:
+                                 6.12 s 
+                           Tb                T  15.3Tr .
+                                          3  r
+                                 400  10 s 
+80                                                                            CHAPTER 2
+
+(e) Since Tb > Tr, most of the full time required to stop is spent in braking.
+
+(f) We are only asked what the increase in distance D is, due to Tr = 0.100 s, so we
+simply have
+                    D  v0 Tr   55.6 m/s  0.100 s   5.56 m .
+
+115. The total time elapsed is t  2 h 41 min  161 min and the center point is
+displaced by x  3.70 m  370 cm. Thus, the average velocity of the center point is
+
+                                      x 370 cm
+                             vavg               2.30 cm/min.
+                                      t 161 min
+
+116. Using Eq. 2-11, v  v0  at , we find the initial speed to be
+
+                 v0  v  at  0  (3400)(9.8 m/s2 )(6.5 103 s)  216.6 m/s
+
+117. The total number of days walked is (including the first and the last day, and leap
+year)
+                 N  340  365  365  366  365  365  261  2427
+
+
+Thus, the average speed of the walk is
+                             d        3.06 107 m
+                    savg                                0.146 m/s.
+                             t (2427 days)(86400 s/day)
+
+118. (a) Let d be the distance traveled. The average speed with and without wings set
+as sails are vs  d / ts and vns  d / tns , respectively. Thus, the ratio of the two speeds
+is
+                             vs    d / ts tns 25.0 s
+                                                        3.52
+                            vns d / tns ts          7.1s
+
+(b) The difference in time expressed in terms of vs is
+
+                          d d        d      d      d       (2.0 m) 5.04 m
+       t  tns  ts                      2.52  2.52        
+                         vns vs (vs / 3.52) vs     vs         vs      vs
+
+119. (a) Differentiating y(t )  (2.0 cm)sin( t / 4) with respect to t, we obtain
+
+                                           dy       
+                              v y (t )        cm/s  cos( t / 4)
+                                           dt  2     
+
+The average velocity between t = 0 and t = 2.0 s is
+                                                                                         81
+
+                           1       2               1           2       t 
+                 vavg 
+                        (2.0 s)  0
+                                     v y dt           
+                                               (2.0 s)  2
+                                                           cm/s  0 cos   dt
+                                                                         4
+                           1                   /2
+                                2 cm  0 cos x dx  1.0 cm/s
+                        (2.0 s)
+
+(b) The instantaneous velocities of the particle at t = 0, 1.0 s, and 2.0 s are,
+respectively,
+                                                   
+                          v y (0)   cm/s  cos(0)  cm/s
+                                    2                2
+                                                        2
+                     v y (1.0 s)   cm/s  cos( / 4)          cm/s
+                                    2                     4
+                                         
+                    v y (2.0 s)   cm/s  cos( / 2)  0
+                                    2     
+
+(c) Differentiating v y (t ) with respect to t, we obtain the following expression for
+acceleration:
+                                        dv y   2        
+                             a y (t )          cm/s 2  sin( t / 4)
+                                         dt  8           
+
+The average acceleration between t = 0 and t = 2.0 s is
+
+                  1      2             1  2             2  t 
+        aavg          
+               (2.0 s) 0
+                           a y dt            
+                                    (2.0 s)  8
+                                                 cm/s 2   sin   dt
+                                                          0      4 
+                  1                   / 2            1              
+                         cm/s  0 sin x dx 
+                                                                                 2
+                                                              cm/s    cm/s
+               (2.0 s)  2                         (2.0 s)  2           4
+
+(d) The instantaneous accelerations of the particle at t = 0, 1.0 s, and 2.0 s are,
+respectively,
+                                  2          
+                       a y (0)       cm/s 2  sin(0)  0
+                                  8           
+                                    2
+                                                               2 2
+                  a y (1.0 s)        cm/s 2  sin( / 4)        cm/s 2
+                                    8                          16
+                                    2
+                                             2                 2
+                 a y (2.0 s)         cm/s  sin( / 2)        cm/s 2
+                                  8                           8
+

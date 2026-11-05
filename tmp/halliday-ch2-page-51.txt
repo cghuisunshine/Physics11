@@ -1,0 +1,70 @@
+                                                     2-1 POSITION, DISPL ACE M E NT, AN D AVE RAG E VE LOCITY                                     15
+
+
+                              This is a graph
+                              of position x                        x (m)
+                              versus time t
+                              for a stationary                     +1
+                              object.                                                             t (s)
+Figure 2-2 The graph of                                          –1 0      1       2   3   4
+x(t) for an armadillo that                                         –1
+is stationary at x " $2 m.
+The value of x is $2 m                 Same position                                       x(t)
+for all times t.                       for any time.
+
+
+     Displacement is an example of a vector quantity, which is a quantity that has
+both a direction and a magnitude. We explore vectors more fully in Chapter 3, but
+here all we need is the idea that displacement has two features: (1) Its magnitude
+is the distance (such as the number of meters) between the original and final po-
+sitions. (2) Its direction, from an original position to a final position, can be repre-
+sented by a plus sign or a minus sign if the motion is along a single axis.
+Here is the first of many checkpoints where you can check your understanding
+with a bit of reasoning. The answers are in the back of the book.
+
+
+    Checkpoint 1
+  Here are three pairs of initial and final positions, respectively, along an x axis. Which
+  pairs give a negative displacement: (a) $3 m, #5 m; (b) $3 m, $7 m; (c) 7 m, $3 m?
+
+
+
+Average Velocity and Average Speed
+A compact way to describe position is with a graph of position x plotted as a func-
+tion of time t—a graph of x(t). (The notation x(t) represents a function x of t, not
+the product x times t.) As a simple example, Fig. 2-2 shows the position function
+x(t) for a stationary armadillo (which we treat as a particle) over a 7 s time inter-
+val. The animal’s position stays at x " $2 m.
+     Figure 2-3 is more interesting, because it involves motion. The armadillo is
+apparently first noticed at t " 0 when it is at the position x " $5 m. It moves
+
+
+
+
+                     This is a graph
+                                                     x (m)
+                                                                                                                                                       A
+                                                      4
+                                                                                                          At x = 2 m when t = 4 s.
+                     of position x                                                                        Plotted here.
+                                                      3
+                     versus time t
+                                                      2                                                                                   x (m)
+                     for a moving                                       x(t)                              –5                 0       2
+                                                      1
+                     object.                                                                   t (s)
+                                                                                                                                     4s
+                                                      0      1     2           3       4
+                                                     –1
+                                                     –2
+                                                     –3
+                                                     –4
+              It is at position x = –5 m
+                                                     –5
+              when time t = 0 s.                                                                          At x = 0 m when t = 3 s.
+              Those data are plotted here.                                                                Plotted here.
+                                             x (m)                                                                                        x (m)
+           –5                    0       2                                                                –5                 0       2
+            0s                                                                                                               3s
+
+         Figure 2-3 The graph of x(t) for a moving armadillo. The path associated with the graph is also shown, at three times.

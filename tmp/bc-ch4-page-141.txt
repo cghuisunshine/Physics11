@@ -1,0 +1,64 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+     Investigation 5-1A  Getting Work Done with Pulleys
+     Machines such as pulleys are used to get work done  but you must do some work to operate these simple machines.
+     Purpose  
+     To compare the amount of work that you do using a pulley system with the amount of work the pulley does for you
+     Procedure
+     1.  Set up the pulley system in Figure 5.1.1.                  metre stick
+         The pulley system will be used to lift 
+         a 200 g mass up to a height of 10.0 
+         cm  0.100 m . The force of gravity on 
+         the mass is approximately 2.0 N. The 
+         work that the pulley system will do is 
+                                                                                                                      eõort
+         therefore:
+                                                                                                                      force
+             W = Fd =  2.0 N 0.10 m  =  0.20 J
+
+                                                                                                                     eõort
+     2.  Your task is to see how much work you 
+                                                                                                                     distance
+         have to do when you operate the pulley                                       starting 
+                                                         ruler
+         system to do the 0.20 J of work.                                             position
+          a    Pull gently on the spring balance 
+               until the string is tight and the 
+               load is just about to lift. Mark the                        load
+                                                                           2.0 N                        10 cm
+               position of the bottom of the spring 
+               balance hook. Pull up on the spring 
+               balance until the load has been 
+                                                         Figure 5.1.1  Pulleys Step 1
+               raised 10.0 cm. Write down the force 
+               you had to exert  effort force  and 
+               the distance through which you had to exert it  effort distance .
+          b    Calculate how much work you did by multiplying your effort force by your effort distance.  Express your 
+               answer in joules  J .
+     3.  Repeat Procedure 2 using each of the pulley arrangements in Figure 5.1.2. In each trial  use the pulley system to 
+         lift a 2.0 N load a distance of 10.0 cm  0.100 m  so that the work done by each pulley system is 0.20 J. Measure 
+         your effort force and your effort distance with each system. Record all your data in a copy of Table 5.1.1.
+
+         A                        B                   C                   D
+
+
+                       eõort                                                             eõort
+
+                                           eõort                 eõort
+
+
+
+
+                                        load
+                load
+                                                          load                    load
+
+         Actual MA = _____       Actual MA = _____    Actual MA = _____       Actual MA = _____
+         Ideal MA = ______       Ideal MA = ______    Ideal MA = ______       Ideal MA = ______
+
+         Figure 5.1.2  Pulleys Step 3
+
+
+   136  Chapter 5   Energy                                                 ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

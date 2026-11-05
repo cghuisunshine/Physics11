@@ -1,0 +1,55 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   5.1  Do You Know the Meaning of Work
+
+     Warm Up
+     Bounce a rubber or tennis ball up and down several times. List all the different forms of energy you observe.
+
+     ___________________________________________________________________________
+
+     ___________________________________________________________________________
+
+     ___________________________________________________________________________
+
+
+
+                                Energy appears in a variety of forms. Some forms you are familiar with include light  
+   What is Energy              
+                                sound  thermal energy  electrical energy  elastic potential energy  gravitational potential 
+                                energy  chemical potential energy  nuclear energy  and mechanical energy. What is 
+                                energy  Your experience tells you it is associated with movement or with the potential 
+                                for motion. Energy is what makes things move. The usual definition of energy says that 
+                                energy is the capacity to do work.
+                                      In physics  work has a specific meaning. If work is to be done on an object  two 
+                                things must happen:  1  a force must act on the object and  2  the object must move 
+                                through a distance in the direction of the force. The amount of work done is equal to 
+                                the product of the force exerted and the distance the force causes the object to move  
+                                measured in the direction of the force.
+                                                                    work  =  force     distance
+
+                                                                              W  =  Fd
+
+                                      Since force is measured in newtons  N  and distance in metres  m  work can be 
+                                measured in newton-metres. One newton-metre  N.m  is called a joule  J  after James 
+                                Joule  1818o1889  an English physicist.
+                                                                            1 J  = 1 N.m
+
+
+     Sample Problem 5.1.1  Calculating Work
+     How much work does a golfer do lifting a 46 g golf ball out of the hole and up to his pocket  0.95 m above the 
+     ground
+
+     What to Think About                 How to Do It
+     1.  Find the correct formula.       W = Fd
+
+     2.  Find the force in newtons.      F = mg =  0.046kg  9.81 m/s2
+                                         F = 0.45 N
+
+     3.  Find work done.                 W = Fd =  0.45 N 0.95 m     
+                                             =  0.43 J
+                                         The golfer does 0.43 J of work lifting the golf ball from the hole 
+                                         to his pocket.
+
+
+   132  Chapter 5   Energy                                               ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

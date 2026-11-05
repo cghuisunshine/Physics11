@@ -1,0 +1,1636 @@
+
+=== PDF 42 / printed 37 ===
+ 63.0  49.6 2  Kinematics
+ 63.0 100.4 By the end of this chapter  you should be able to do the following:
+ 63.0 120.5 ±  Apply knowledge of the relationships between 
+ 79.0 134.0 time  displacement  distance  velocity  and speed to 
+ 79.0 147.5 situations involving objects in one dimension
+ 79.0 160.7 t  differentiate between scalar and vector quantities
+ 79.0 174.2 t  construct displacement-versus-time graphs  
+ 95.0 188.0 based on data from various sources 
+ 79.0 201.2 t  use a displacement-versus-time graph to 
+ 95.0 215.0 determine 
+ 95.0 228.5 o  displacement and distance
+ 95.0 242.0 o  average velocity and speed
+ 95.0 255.5 o  instantaneous velocity and speed 
+ 79.0 268.7 t  solve problems involving
+ 95.0 282.5 o  displacement
+ 95.0 296.0 o  time
+ 95.0 309.5 o  average velocity
+ 79.0 322.7 t  construct velocity-versus-time graphs  based on 
+ 95.0 336.5 data from various sources 
+ 79.0 349.7 t  use velocity-versus-time graphs to determine
+ 95.0 363.5 o  velocity
+ 95.0 377.0 o  displacement
+ 95.0 390.5 o  average velocity
+315.0 120.5 ±  Apply knowledge of the relationships between time  
+331.0 134.0 velocity  displacement  and acceleration to situations 
+331.0 147.5 involving objects in one dimension
+331.0 160.7 t  use velocity-versus-time graphs to determine 
+347.0 174.5 acceleration  given appropriate data
+331.0 187.7 t  solve a range of problems for objects with 
+347.0 201.5 constant acceleration involving
+347.0 215.0 o  displacement
+347.0 228.5 o  initial velocity
+347.0 242.0 o  final velocity
+347.0 255.5 o  acceleration
+347.0 269.0 o  time
+331.0 282.2 t  recognize that a projectile experiences a constant 
+347.0 296.0 downward acceleration due to gravity if friction is 
+347.0 309.5 ignored
+331.0 322.7 t  solve projectile motion problems involving
+347.0 336.5 o  displacement
+347.0 350.0 o  initial velocity
+347.0 363.5 o  final velocity
+347.0 377.0 o  acceleration due to gravity
+347.0 390.5 o  time
+ 63.0 436.2 By the end of this chapter  you should know the meaning to these key terms:
+ 63.0 453.9 t 
+ 63.0 467.4 t 
+ 63.0 480.9 t 
+ 63.0 494.4 t 
+ 63.0 507.9 t 
+ 63.0 521.4 t 
+ 63.0 534.9 t 
+229.0 453.9 t 
+229.0 467.4 t 
+229.0 480.9 t 
+229.0 494.4 t 
+229.0 507.9 t 
+229.0 521.4 t 
+ 79.0 454.2 acceleration
+ 79.0 467.7 average velocity
+ 79.0 481.2 constant acceleration
+ 79.0 494.7 displacement
+ 79.0 508.2 distance 
+ 79.0 521.7 final velocity
+ 79.0 535.2 initial velocity 
+245.0 454.2 instantaneous velocity
+245.0 467.7 projectile motion
+245.0 481.2 scalar quantity
+245.0 494.7 speed
+245.0 508.2 vector quantity
+245.0 521.7 velocity
+ 63.0 567.9 By the end of the chapter  you should be able to use and know when to use 
+ 63.0 581.4 the following formulae:
+ 63.0 611.5 v = 
+ 77.8 603.5 Hd
+ 78.9 615.6 Ht  
+126.0 611.5 a = 
+141.9 603.5 Hv
+142.7 615.6 Ht  
+ 63.0 652.0 v = 
+ 78.7 645.4 v v 0
+ 86.6 658.3 2  
+133.0 651.9 d = v 0 t   
+178.0 611.5 d = vt 
+171.7 645.3 1 2
+180.9 652.0 at
+171.7 657.5 2   
+233.0 611.5 v = v 0    at
+217.1 651.2 v 2  = v 20    2ad
+215.0 657.9  
+286.4 697.9 A roller coaster is an exciting 
+272.6 708.9 example of kinematics in action.
+
+=== PDF 43 / printed 38 ===
+ 47.9  51.4 2.1  Speed and Velocity
+ 60.0  96.8 Warm Up
+ 60.0 124.4 Imagine you are on a hike from a parking lot to a waterfall 2 km away. Is there a way you could describe to 
+ 60.0 137.9 someone that the hike was 4 km long and 0 km long  Explain your answer.
+168.0 279.1 How far did it travel  How long did it take  How fast did it move  Did it speed up or slow 
+ 48.0 291.8 The Study of Motion   down  These are typical questions one might ask about any object that moves  whether it 
+168.0 306.1 is a car  a planet  an electron  or a molecule. All of these questions fall under the heading 
+168.0 319.6 of kinematics: the study of the motion of objects  without reference to the cause of 
+168.0 333.1 the motion. In kinematics  we learn how to describe the motion of objects in terms of 
+168.0 346.6 measurable variables such as time  distance  speed  and acceleration.
+ 48.0 380.5 Distance and 
+ 48.0 392.5 Displacement
+ 48.0 693.4 "
+156.0 369.1   When you take a trip a road sign will tell you the distance you have to travel to reach 
+168.0 382.6 your destination. This distance is usually measured in kilometres. Other distances you are 
+168.0 396.1 familiar with include metres  centimeters  and millimetres. Each of these measurement 
+168.0 409.6 units tells you how far two points are apart. Because magnitude  or amount of distance 
+168.0 423.1 covered  and not distance is stated  distance is a scalar quantity. The symbol for distance  
+168.0 436.6 is d.
+192.0 450.1 In the vector section of Chapter 1  two methods for determining direction were 
+168.0 463.6 described. The first method involved the use of positive   and negative  o  signs to 
+168.0 477.1 indicate direction. Any motion right or up is usually considered positive. Any motion left 
+168.0 490.6 or down is usually considered negative. The second method uses compass points. North 
+168.0 504.1 and east are usually considered positive  and west and south are negative. Sometimes this 
+168.0 517.6 can change depending on the question. For example if all the motion is downward  you 
+168.0 531.1 may consider using down as positive so the math calculations do not involve negative 
+168.0 544.6 signs. 
+192.0 558.1 When a direction is added to a distance  the position of an object or person is 
+168.0 571.6 described. For example  if you are 5 km [east] of your home you are describing your 
+168.0 585.1 position. Position is the shortest distance between the origin and where the person or 
+168.0 598.6 object is located. Position is a vector quantity and includes magnitude and direction. The 
+257.6 605.1 q
+168.0 612.1 symbol for position is d 0
+192.0 625.6 If you change your position by moving another position 5 km [east] of your original 
+168.0 639.1 position  then you have a displacement. Displacement is a change in position and is 
+168.0 652.6 a straight line between initial and final positions. It includes magnitude and direction. 
+304.9 659.1 q
+168.0 662.4 The symbol for displacement is  H d . It is calculated by determining the change from one 
+168.0 678.6 position to another. Or put mathematically: "
+352.2 690.1 q q
+388.2 690.1 q
+346.0 693.4 H d  = d f  o d 0
+
+=== PDF 44 / printed 39 ===
+207.0  50.7 The  H  sign is important because it indicates a change. In this situation  
+183.0  68.0 displacement is defined as the change between the initial position and final position  not 
+183.0  81.5 the displacement from the origin  which is your home.
+ 72.2 120.0 Sample Problem 2.1.1  Calculating Displacement
+ 72.2 135.2 A person is 2.0 m to the left of a viewpoint sign enjoying the view. She moves 4.5 m to the right of the sign to get a 
+ 72.2 148.7 better view. What is the person's displacement
+ 72.2 174.1 What to Think About
+215.5 174.1 How to Do It
+ 72.2 188.4 1.   Assume right is positive 
+ 88.2 201.9 and identify the positions.
+214.7 181.4 q
+215.5 186.0 d 0  = 2.0 m [left] = m 2.0 m
+214.7 197.9 q
+215.5 202.5 d   f  = 4.5 m [right] = 4.5 m
+ 72.2 245.4 2.  Find the displacement.
+215.5 243.0 H d  = d f  m d 0
+220.9 238.4 q
+246.1 238.4 q
+269.6 238.4 q
+220.9 254.9 q
+215.5 259.5 H d   = 4.5 m m 2.0 m
+215.5 276.7  
+233.5 276.7 = 2.5 m
+215.5 303.7 The person's displacement is 2.5 m [right]
+ 72.2 351.0 Practice Problems 2.1.1  Calculating Displacement 
+ 72.2 372.2 1.  A woman walking her dog travels 200 m north  then 400 m west  then 500 m south.
+ 91.1 385.7 a   What was the total distance she travelled
+ 91.1 493.7 b   What was the magnitude of her displacement for the entire trip
+216.2 588.2  
+435.0 628.8 Continued on the next page
+
+=== PDF 45 / printed 40 ===
+ 60.2  64.5 Practice Problems 2.1.1  Calculating Displacement  Continued  
+ 60.2  85.7 2.  The diagram below shows the displacements of a golf ball caused by a rookie golfer attempting to reach 
+ 76.2  99.2 hole number 7 on Ocean View Golf and Country Club. The golfer requires six shots to put the ball in the hole. 
+ 76.2 112.7 The diagram shows the six displacements of the ball.
+140.7 178.2  m
+265.9 175.4 75 m
+176.7 182.4 100  m
+126.1 181.2 100
+289.5 193.8 28 m
+249.2 218.8 125 m
+114.6 212.5 290 m to hole
+204.1 255.7 75 m
+ 79.0 301.2 a   What is the total distance the golf ball travelled while the golfer was playing the seventh hole
+ 79.0 341.7 b   What is the resultant displacement of the ball
+ 60.2 388.2 3.  What is the total distance and displacement the dog takes after it leaves the front porch
+140.5 423.8 8 m
+118.4 445.1 4 m
+210.5 423.8 8 m
+175.9 450.6 stop
+255.2 442.9 4 m
+210.5 454.4 8 m
+119.0 476.1 6 m
+123.0 491.7 53¡
+107.0 511.3 front 
+107.0 521.3 porch
+ 48.0 640.6 Speed
+168.0 628.0 The speed of an object such as a car is defined as the distance it travels in a unit of time. 
+168.0 641.5 For highway traffic  speeds are measured in kilometres per hour  km/h . Typical highway 
+156.0 647.0  
+168.0 655.0 speed limits are 80 km/h  100 km/h  and 120 km/h. Within city limits  speed limits may 
+168.0 668.5 be 60 km/h  50 km/h  or 30 km/h  school zone or playground . The average speed of an 
+168.0 682.0 athlete in a 100 m dash might be approximately 9.0 m/s. The speed of sound is 330 m/s  
+168.0 695.5 while the speed of light is approximately 300 000 000 m/s or 300 000 km/s.
+
+=== PDF 46 / printed 41 ===
+207.0  52.7 If you make a long journey by car  you might be interested in calculating your 
+183.0  66.0 average speed for the trip. For example  if you travel a distance of 450 km in a time of 
+183.0  79.7 6.0 h  you would calculate your average speed by dividing the total distance by the total 
+183.0  93.2 time.
+341.5  99.9 total distance
+269.2 106.7 average speed = 
+401.9 101.9  =  450 km  = 75 km/h
+349.5 112.0 total time
+419.1 114.0 6.0 h
+207.0 133.7 The symbol used for speed is v  and for average speed  v. Note that it is a line above 
+183.0 147.2 the v  not an arrow. The formula for calculating average speed from distance  d  and time 
+185.8 160.7 t  is therefore:
+367.4 167.5 a" d
+367.0 175.5 x "
+386.7 180.1 t
+207.0 201.2 If you are driving along the highway and spot a police car parked beside the road 
+183.0 214.7 with its radar aimed at your car  you will be less interested in your average speed and 
+183.0 228.2 more concerned with your instantaneous speed. That is how fast your car is going at this 
+183.0 241.7 instant in time! Your speedometer will indicate what your instantaneous speed is.
+ 75.0 284.7 Quick Check
+ 75.0 305.9 1.  a   What is the difference between average speed and instantaneous speed
+ 93.8 359.9 b   Under what condition may average speed and instantaneous speed be the same
+ 75.0 413.9 2.  A tourist travels 320 km in 3.6 h. What is her average speed for the trip
+ 75.0 467.9 3.  A trucker travels 65 km at an average speed of 85 km/h. How long does the trip take
+ 75.0 521.9 4.  If your car averages 92 km/h for a 5.0 h trip  how far will you go
+
+=== PDF 47 / printed 42 ===
+168.0  52.4 You learned that speed is distance travelled in a unit of time. Average speed is total 
+168.0  65.9 distance divided by time  and instantaneous speed is the speed of an object at a 
+ 48.0  65.0 The Diõerence 
+156.0  71.4  
+ 48.0  77.0 Between Speed and  particular instant. If an object moves along at the same speed over an extended period of 
+ 48.0  89.0 Velocity
+168.0  92.9 time  we say its speed is uniform or constant.
+192.0 106.4 Uniform speed is uncommon  but it is possible to achieve nearly uniform speed 
+168.0 119.9 in some situations. For example  a car with icruise controlw may maintain fairly constant 
+168.0 133.4 speed on the highway. Usually  however  a vehicle is making small changes in speed and 
+168.0 146.9 direction all the time.
+192.0 160.4 If an object is not travelling in a straight line all the time  then its direction becomes 
+168.0 173.9 important and must be specified. When both the size and the direction of a speed are 
+168.0 187.4 specified  we call the two properties  speed and direction  the velocity of the object. The 
+256.2 194.9 q
+168.0 200.9 symbol for velocity is x . If you say your car is moving 80 km/h  then you are describing 
+168.0 214.4 your car's speed. If you say your car is travelling 80 km/h in a northerly direction  then you 
+168.0 227.9 are describing your car's velocity. The difference between speed and velocity becomes 
+168.0 241.4 important in situations where direction changes during a trip. For example  when a ball 
+168.0 254.9 is thrown into the air  both its speed and its direction change throughout its trajectory  
+168.0 268.4 therefore velocity is specified in this situation. Velocity is calculated by finding the 
+168.0 281.9 displacement of an object over a period of time. Mathematically this is represented by:
+349.6 295.9 q
+373.1 292.1 q
+391.0 292.1 q
+374.4 300.1 d f  o d 0
+324.7 300.2 v  =  H d  = 
+383.5 312.2 H t
+345.5 312.8 H t
+323.3 302.9 q
+ 48.0 353.0 Position-Time 
+ 48.0 365.0 Graphs
+168.0 340.4 Speed and velocity can be graphically represented. The slope of a position-time graph 
+168.0 353.9 gives the velocity of the moving object. A positive slope indicates positive velocity. A 
+156.0 359.4  
+168.0 367.4 negative slope indicates negative velocity. When an object is not moving  the position 
+168.0 380.9 does not change  so the slope is zero. That is  the line is horizontal.
+192.0 394.4 Sometimes it can be confusing to determine the direction and the sign to use. It is 
+168.0 407.9 important to remember what point of view or frame of reference you are using to observe 
+168.0 421.4 the action. For example  if you are riding a bike toward your friend at a velocity of  
+168.0 434.9 10 km/h [west]  your friend sees you coming at 10 km/h [east]. Both of you observe the 
+168.0 448.4 same situation  it's just the direction that is different. That is why it is important to know 
+168.0 461.9 which direction is positive and which direction is negative before you start. Usually  if all 
+168.0 475.4 the motion is in one direction  positive values will be used unless indicated. That will be 
+168.0 488.9 the case in this book.
+192.0 502.4 The next sample problem describes how the motion of a skateboarder can be 
+168.0 515.9 solved mathematically and graphically and the velocity of the skateboarder determined.
+
+=== PDF 48 / printed 43 ===
+ 72.2  61.5 Sample Problem 2.1.2  Solving Motion Problems Mathematically
+ 72.2  76.7 You are on a skateboard and moving to the right covering 0.5 m each second for 10 s. What is your velocity
+ 72.2 102.1 What to Think About
+265.5 102.1 How to Do It
+ 72.2 120.4 1.  Motion is uniform so the velocity is the 
+ 88.2 133.9 same for each time interval. Right will 
+ 88.2 147.4 be positive.
+265.5 118.0 d 0  = 0.0 m
+265.5 110.4 q
+265.5 129.9 q
+265.5 137.5 d f  = 0.5 m
+265.5 151.7 Ht     = 1.0 s
+299.7 166.9 q
+333.0 164.0 q
+354.8 164.0 q
+333.0 169.6 d f   o    d 0
+292.2 171.2 Hd
+265.5 180.0 v  = 
+312.0 180.7  = 
+294.1 186.3 Ht
+343.9 186.9 Ht
+265.5 206.4   =  0.5 m m 0.0 m
+319.4 218.6 1.0s
+265.5 234.2   = 0.5 m/s
+265.6 176.4 q
+ 72.2 177.4 2.  Solve for velocity.
+ 72.2 258.4 3.  Include direction in the answer  which 
+ 88.2 271.9 is right since the answer is positive.
+265.5 264.9 v q  = 0.5 m/s [right]
+ 72.2 309.4 Sample Problem 2.1.3 Solving Motion Problems Graphically
+ 72.2 329.6 You are on a skateboard and moving to the right covering 0.5 m each second for 10 s. What is your velocity
+ 72.2 355.1 What to Think About
+215.5 355.1 How to Do It
+ 72.2 369.4 1.  Collect data and record in 
+ 88.2 382.9 table. Moving right will be 
+ 88.2 396.4 considered positive.
+220.0 381.2 d  m
+258.8 381.9 0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0
+220.0 405.2 t  s
+258.8 405.9 0 sample 10 pt
+277.8 405.9 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 1.0
+ 72.2 450.4 2.  Graph data and draw best 
+ 88.2 463.9 fit line.
+262.5 457.5 Position vs time
+259.9 465.3 of a skateboarder
+216.7 497.9 Position  cm
+228.7 487.9 5
+228.7 499.9 4
+228.7 511.8 3
+228.7 523.7 2
+228.7 535.7 1
+228.7 547.6 0
+229.8 555.4   0  1  2  3  4  5  6  7  8  9  10
+270.8 564.1 Time  s
+266.3 594.5 q
+ 72.2 625.9 3.  Find slope as it is equal 
+ 88.2 639.4 to the velocity of the 
+ 88.2 652.9 skateboarder.
+ 72.2 679.9 4.  The slope is positive  so the 
+ 88.2 693.4 direction is to the right.
+295.3 591.6 q
+316.7 591.6 q
+295.3 597.2 d f   o d 0 q
+257.8 599.8 Hd
+215.5 608.3 slope = 
+278.1 608.3  = 
+330.3 608.3  = v
+305.5 614.5 Ht
+259.7 614.9 Ht
+215.5 634.6 v q" =  5.0 m m 0.0 m
+270.6 646.7 10 s
+215.5 663.6   = 0.5 m/s
+314.8 599.1  
+215.5 678.5 v q = 0.5 m/s [right]
+
+=== PDF 49 / printed 44 ===
+ 57.2  61.5 Practice Problems 2.1.3 Solving Motion Problems Graphically
+ 57.2  82.7 1.  Describe the motion represented in each of the following position-time graphs.
+ 89.5 124.8 
+ 89.9 132.7 d
+123.4 167.6 Tt
+ 76.6 178.1 a
+ 89.4 231.5 
+ 89.8 239.4 d
+123.3 274.3 Tt
+ 75.8 284.7 b
+ 89.1 338.2 
+ 89.5 346.1 d
+ 57.2 396.0  
+123.0 381.0 Tt
+ 76.9 391.4 c
+ 57.2 415.5 2.  Sketch a graph of each of the following situations.
+ 76.1 429.0 a   A golf ball is rolling towards a cup at 1.5 m/s [west].
+ 76.1 483.0 b   A person is watching from the view of the cup and seeing the ball roll 1.5 m/s [east].
+ 76.1 537.0 c   A person is traveling at 1.5 m/s [west] watching the cup roll towards the hole.
+ 57.2 597.0 3.  a   Fill in the data table if a car is traveling at 30 km/h through a school zone.
+ 89.7 624.0 Time  s
+153.5 624.0 1.0
+200.5 624.0 2.0
+247.5 624.0 3.0
+294.5 624.0 4.0
+341.5 624.0 5.0
+388.5 624.0 6.0
+435.5 624.0 7.0
+482.5 624.0 8.0
+ 79.8 650.3 Distance  m
+ 76.1 683.2 b   Graph this data on a distance vs. time graph.
+
+=== PDF 50 / printed 45 ===
+ 75.0  63.9 Investigation 2-1  Measuring the Speed of a Model Car
+ 75.0  90.3 Purpose
+ 75.0 104.6 To measure the speed of a model car  such as a radio-controlled vehicle
+ 75.0 123.0 Procedure
+ 75.0 137.3 1.  Remove a 5.0 m length of ticker tape from a roll. Pass one end of it through a recording timer  and then tape it to 
+ 91.0 150.8 a battery-powered toy car.  Figure 2.3
+103.0 242.4 battery-powered 
+103.0 252.4 toy car
+118.0 307.7 recording 
+118.0 317.7 timer
+ 91.0 338.9 Figure 2.1.1   Step 1
+ 75.0 369.7 2.  Turn on the timer and let the car travel at its full speed until all the tape has passed through the timer.
+ 75.0 383.2 3.  Every six dots is one-tenth of a second. Mark off the time intervals in one-tenth of a second on your tape
+ 75.0 396.7 4.  Measure the distance traveled in each tenth of a second. Record your data in a table similar to Table 2.1.1.
+ 91.0 421.4 Table 2.1.1   Data Table for Investigation 2-1
+103.0 460.6 Time  s
+157.9 460.6 0.0
+186.9 460.6 0.1
+215.9 460.6 0.2
+244.9 460.6 0.3
+273.9 460.6 0.4
+ 94.4 492.1 Distance per 
+ 94.4 505.6 interval  cm
+ 91.8 529.1 Total distance 
+114.1 542.6 cm  
+302.9 460.6 0.5
+331.9 460.6 0.6
+360.9 460.6 0.7
+389.9 460.6 0.8
+418.9 460.6 0.9
+447.9 460.6 1.0
+476.9 460.6 1.0
+505.9 460.6 1.1
+536.1 460.6 y
+537.5 512.4 y
+537.5 542.6 y
+ 75.0 570.8 5.  Create a distance vs. time graph. On the y-axis  use total distance and on the x-axis  use time. Draw a best-fit line 
+ 91.0 584.3 on your graph.
+ 75.0 597.8 6.  Find the slope of your graph and record it along with the appropriate units.
+ 75.0 616.5 Concluding Questions
+ 75.0 630.8 1.  What does the slope of a distance-time graph represent
+ 75.0 644.3 2.  Find the average speed of the toy car over five 1 s intervals of the trip.
+ 75.0 657.8 3.  Compare your slope of the distance-time graph with your average speed over the five 1 s intervals. 
+ 75.0 671.3 4.  Why might the average speed of the car during the first 1 s intervals be less than the average speed later in the 
+ 91.0 684.8 trip
+
+=== PDF 51 / printed 46 ===
+ 48.0  51.9 2.1  Review Questions
+ 48.0  86.9 1.  Can objects with the same speed have different 
+ 64.0 100.4 velocities  Why or why not
+306.0  87.2 4.  If the average speed of your private jet is  
+322.0  99.9 8.0 w 10 2  km/h  how long will it take you to  
+322.0 113.4 travel a distance of 1.8 w 10 3  km
+ 48.0 302.9 2.  What are two ways of describing the direction of an 
+ 64.0 316.4 object's motion
+306.0 384.2 5.  A red ant travels across a driveway  which is 3.5 m 
+322.0 397.7 wide  at an average speed of 2.6 cm/s. How long 
+322.0 411.2 will the ant take to cross the driveway  Express your 
+322.0 424.7 answer  a  in seconds and  b  in minutes.
+ 48.0 505.4 3.  If you run with an average speed of 12.0 km/h  how 
+ 64.0 518.9 far will you go in 3.2 min
+
+=== PDF 52 / printed 47 ===
+ 63.0  52.8 6.  If your car moves with a steady speed of 122 km/h 
+ 79.0  66.3 for 20.0 min  then at a steady speed of 108 km/h for 
+ 79.0  79.8 30.0 min  what is the average speed of your car for 
+ 79.0  93.3 the entire trip
+321.0  52.8 8.  An object is moving with uniformly increasing 
+337.0  66.3 speed. Its speed at time zero is 0 m/s.
+339.8  79.8 a   If its average speed during the first second is  
+353.0  93.3 14 m/s  at what time will its instantaneous speed 
+353.0 106.8 be 14 m/s
+ 63.0 268.8 7.  A car moves with a steady speed of 84 km/h for  
+ 79.0 282.3 45 min  then 96 km/h for 20 min.
+ 81.8 295.8 a   What was the total distance travelled during the 
+ 95.0 309.3 whole trip
+339.8 349.8 b   What is its instantaneous speed at the end of the 
+353.0 363.3 first second
+ 81.8 511.8 b   What is its average speed for the whole trip
+
+=== PDF 53 / printed 48 ===
+ 48.0  51.9 2.2  Acceleration
+ 60.0 101.9 Warm Up
+ 60.0 129.4 Below are two blank speed-time graphs.  
+ 60.0 142.9 On graph  a  sketch the slope that represents a sports car traveling at constant speed.  
+ 60.0 156.4 On graph  b  sketch the slope of the same car starting from rest and speeding up at a constant rate.
+ 60.0 345.5  
+306.5 259.4 Speed
+368.5 181.2 Speed vs. Time
+ 78.5 259.4 Speed
+140.5 181.2 Speed vs. Time
+160.9 334.8 Time
+ 91.6 340.2 a
+ 48.0 398.7 Changing Velocity
+156.0 405.0  
+242.2 345.5  
+319.2 340.2 b
+388.9 334.8 Time
+168.0 386.0 Whenever the velocity of an object changes  the object experiences acceleration. 
+168.0 399.5 Acceleration is a change in velocity over a period of time:
+343.0 426.2 change in velocity
+276.6 431.9 acceleration = 
+350.4 438.3 change in time
+192.0 473.1 The symbol for acceleration is a. Velocity has the same symbol as speed  which is v. 
+168.0 486.6 If the velocity at the start of the time interval is v 0  and at the end of the time interval is v f  
+168.0 500.1 then the change in velocity will be v f  o v 0 . If the time at the beginning of the time interval 
+168.0 513.6 is t 0  and the time at the end of the time interval is t f  then the change in time  the time 
+168.0 527.1 interval  is t f  o t 0 . Using these symbols  acceleration can be defined as:
+318.3 555.8 v  o v
+377.9 555.0 Tv
+302.3 561.9 a =  f 0  or a = 
+319.9 570.0 t f  o t 0
+378.6 569.2 Tt
+467.2 587.2  
+168.0 606.7 where the H symbol is shorthand for ichange inw or iinterval.w
+192.0 620.2 Since velocity has two aspects to it  both speed and direction  acceleration can 
+168.0 633.7 occur under three conditions:
+170.8 647.2 a   if speed changes  
+170.8 660.7 b  if direction changes or 
+170.8 674.2 c   if both speed and direction change.
+192.0 686.9 The standard unit for expressing acceleration is m/s 2 . An object is accelerating at a 
+168.0 700.4 rate of 1 m/s 2  if its speed is increasing at a rate of 1 m/s each second. 
+
+=== PDF 54 / printed 49 ===
+ 72.2  61.5 Sample Problem  2.2.1  Calculating Acceleration
+ 72.2  76.7 A runner racing in a 100 m dash accelerates from rest to a speed of 9.0 m/s in 4.5 s. What was his average 
+ 72.2  90.2 acceleration during this time interval
+ 72.2 115.6 What to Think About
+251.5 115.6 How to Do It
+ 72.2 143.4 1.  Determine the correct formula.
+305.6 129.2 v f  m v 0
+251.5 135.2 a =  H v =  t  m t
+274.4 147.4 H t  
+310.6 154.8 f
+330.9 154.4 0 
+ 72.2 197.4 2.  Solve for acceleration. Note that 
+ 88.2 210.9 runner's average acceleration was 
+ 88.2 224.4 2.0 m/s/s  which is usually written 
+ 88.2 237.2 2.0 m/s 2
+251.5 176.4   =  9.0 m/s m 0 m/s
+290.3 188.6 4.5 s m 0 s
+251.5 208.2 a = 2.0 m/s 2
+251.5 235.2 The runner's average acceleration was 2.0 m/s 2 .
+ 72.2 287.5 Practice Problems 2.2.1  Calculating Acceleration
+ 72.2 308.7 1.  What is the average acceleration for the following
+ 91.1 322.2 a   A car speeds up from 0 km/h to 60.0 km/h in 3.00 s.
+ 72.2 389.7  
+ 91.1 403.2 b   A runner accelerates from rest to 9.00 m/s in 3.00 s.
+ 72.2 497.7 2.  What is the average acceleration of a truck that accelerates from 45.0 km/h to 60.0 km/h in 7.50 s
+ 72.2 592.2 3.  A car travelling 120 km/h brakes hard to avoid hitting a deer on the road  slowing to 60 km/h in 4.0 s. What is 
+ 88.2 605.7 its acceleration  Why is it negative
+
+=== PDF 55 / printed 50 ===
+168.0  52.2 Sometimes you will find a situation where the acceleration is negative. You may think 
+168.0  65.7 this implies that an object is slowing down  but that is not always the case. Consider the 
+156.0  71.2  
+168.0  79.2 situations shown in Figure 2.2.1.
+ 48.0  64.8 Negative 
+ 48.0  76.8 Acceleration
+198.5 107.2 
+200.2 115.1 v
+294.5 107.2 
+296.2 115.1 v
+373.0 107.2 
+374.7 115.1 v
+458.6 107.2 
+460.3 115.1 v
+198.5 144.3 a
+296.7 144.3 a
+376.4 144.3 a
+458.9 144.3 a
+171.5 162.5 a
+273.2 162.5 b
+349.7 162.5 c
+435.6 162.5 d
+168.0 182.9 Figure 2.2.1   The vectors represent the velocity and acceleration of a car in different situations.
+192.0 213.7 In  a  and  b  the velocity of the car and the acceleration are in the same direction. 
+168.0 227.2 This means the car is speeding up  even though the acceleration is negative in  b . In  c  
+168.0 240.7 and  d  the velocity and acceleration are in opposite directions and the car is slowing 
+168.0 254.2 down. We can summarize that this way:
+180.0 287.9  When the velocity and acceleration are in the same direction  the object is speeding 
+180.0 301.4 up  even if the acceleration is negative. When the velocity and acceleration are in 
+180.0 314.9 opposite directions  the object is slowing down.
+168.0 355.7 In Figure 2.2.2  fictitious data is used to show how your results from Investigation 2-1 
+168.0 369.2 might have been graphed. In this figure  the average speed of the cart is plotted on the  
+156.0 374.7  
+168.0 382.7 y-axis  since it is the dependent variable. Time is on the x-axis  because it is the 
+168.0 396.2 independent variable.
+192.0 409.7 Notice that in Figure 2.2.2 the speeds are plotted halfway through each time 
+168.0 423.2 interval. For example  the average speed of 11 cm/s  which occurs in the first time interval 
+168.0 436.7 of the sample tape  would be plotted at 0.05 s  not at 0.10 s. This is because the average 
+168.0 450.2 speed during the interval will occur halfway through it  not at the end of the interval. 
+168.0 463.7 This assumes  of course  that the speed is increasing at a constant rate and therefore 
+338.0 477.2 acceleration is constant. The average speed for 
+338.0 490.7 each interval is the same as the instantaneous 
+118.4 498.4 Speed vs. Time for an Accelerating Cart
+338.0 504.2 speed half way through the interval  if 
+338.0 517.7 acceleration is constant.
+362.0 531.2 The graph you see in Figure 2.2.2 is  in fact  
+162.8 536.8 0.80 s  62.0 cm/s
+338.0 544.7 a graph of the instantaneous speed of the cart 
+338.0 558.2 vs. time  although average speeds were used to 
+338.0 571.7 obtain it. To write an equation describing the 
+226.8 578.3 rise
+226.8 586.4  Ƌv = 62.0 cm/s o 7.0 cm/s
+338.0 585.2 line in this graph  you need to know the  
+ 90.2 591.7 0 s  7.0 cm/s
+226.8 594.5  Ƌv = 55.0 cm/s
+338.0 598.8 y-intercept and the slope.
+ 48.0 368.4 Graphing 
+ 48.0 380.4 Acceleration
+ 67.1 511.4 80.0
+ 67.1 529.3 70.0
+ 50.1 558.1 Speed  v  cm/s
+ 67.1 547.1 60.0
+ 67.1 564.9 50.0
+ 67.1 582.8 40.0
+ 67.1 600.6 30.0
+ 67.1 618.4 20.0
+143.7 626.4 run  Ƌt = 0.80 s o 0 s
+143.7 634.5          Ƌt = 0.80 s
+ 67.1 636.3 10.0
+ 66.1 659.9  
+ 75.6 654.1 0
+ 80.2 660.8 0 
+ 94.0 660.8 0.10  0.20  0.30  0.40  0.50  0.60  0.70  0.80  0.90  1.00
+182.8 672.2 Time  t  s
+ 48.5 689.9 Figure 2.2.2   An example of a graph showing acceleration
+
+=== PDF 56 / printed 51 ===
+207.0  52.8 By inspection  the y-intercept  b  equals 7.0 cm/s.  The slope m is found by using the 
+183.0  66.3 points  0 s  7.0 cm/s  and  0.80 s  62 cm/s .  Notice that the irisew of the line is equal to the 
+183.0  79.8 change in the speed of the cart  Hv  and  Hv  = v f  o v 0 . The irunw of the graph is the change 
+183.0  93.3 in time Ht  and Ht  = t f  o t 0 .
+227.7 120.3 slope = m = 
+280.3 112.0 Hv v f  o v 0
+345.7 114.5 62.0 cm/s o 7.0 cm/s
+445.1 115.0 55.0 cm/s
+294.4 120.3  = 
+333.1 120.3  = 
+433.2 120.3  = 
+487.9 119.5  = 69 cm/s 2
+281.0 125.3 Ht
+307.5 126.6 t f  o t 0
+365.5 126.6 0.80 s o 0 s
+453.2 127.1 0.80 s
+207.0 147.3 Notice that the slope has units of acceleration. This is because the slope of the 
+183.0 160.8 speed-time graph is acceleration! Remember that acceleration is equal to the change in 
+183.0 174.3 speed of the cart per second. The slope m = Hv/Ht  which is the acceleration of the cart.
+207.0 187.8 The equation for the line in Figure 2.2.2 will have the same form as the general 
+183.0 201.3 equation for a straight line  which is y = mx   b. When describing experimental results 
+183.0 214.8 from a graph  however  we substitute the specific symbols for the variables used in the 
+183.0 228.3 experiment. We also use the numerical values for the y-intercept and slope  complete 
+183.0 241.8 with their measuring units. The equation for the line in Figure 2.2.2 is therefore 
+328.7 260.5 v =  69 cm/s 2 t   7.0 cm/s
+183.0 280.8 where v  is the speed of the cart at any time t.
+
+=== PDF 57 / printed 52 ===
+ 48.0  51.9 2.2  Review Questions
+ 48.0  86.9 1.  A policeman travelling 60 km/h spots a speeder 
+ 64.0 100.4 ahead  so he accelerates his vehicle at a steady rate 
+ 64.0 113.2 of 2.22 m/s 2  for 4.00 s  at which time he catches up 
+ 64.0 127.4 with the speeder. 
+ 48.0 140.9  
+ 66.8 140.9 a   How fast was the policeman travelling in m/s
+306.0  87.2 3.  The graph below shows lines representing speed 
+322.0 100.7 vs. time for an accelerating aircraft  prepared by 
+322.0 114.2 observers at two different locations on the runway.
+406.3 133.4 Speed vs. Time
+467.1 152.2 a
+336.9 159.5 70.0
+499.9 152.2 b
+323.9 180.6 Speed  v  m/s
+336.9 172.6 60.0
+336.9 185.7 50.0
+336.9 198.9 40.0
+336.9 212.0 30.0
+336.9 225.1 20.0
+336.9 238.3 10.0
+ 48.0 262.4  
+ 66.8 262.4 b    How fast is the police car travelling after 4.00 s  
+ 79.6 275.9 Give your answer in both m/s and km/h.
+339.3 255.4  
+306.0 265.1  
+345.4 251.4 0
+349.2 255.4 0 
+371.2 255.4 1.00 
+397.3 255.4 2.00 
+423.7 255.4 3.00 
+450.1 255.4 4.00 
+476.8 255.4 5.00 
+502.6 255.4 6.00
+421.3 264.2 Time  t  s
+324.8 287.8 a   What is the equation for line  a
+324.8 368.8 b   What is the equation for line  b
+ 48.0 397.4  
+ 66.8 397.4 c    If the speeder has a constant velocity  sketch the 
+ 78.4 410.9 motion of both the speeder and police car on a 
+ 78.4 424.4 speed vs. time graph below.
+324.8 449.8 c   What is the acceleration of the aircraft according 
+338.0 463.3 to line  a
+ 48.0 559.4 2.  A motorbike accelerates at a constant rate from a 
+ 64.0 572.9 standing start. After 1.2 s  it is travelling 6.0 m/s. How 
+ 64.0 586.4 much time will have elapsed  starting from rest  
+ 64.0 599.9 before the bike is moving with a speed of 15.0 m/s
+324.8 544.3 d   What is the acceleration of the aircraft according 
+338.0 557.8 to line  b
+324.8 625.3 e   Explain why the y-intercept for line  b  is 
+338.0 638.8 different than the intercept for line  a .
+
+=== PDF 58 / printed 53 ===
+ 63.0  52.8 4.   A racing motorbike's final velocity is 38 m/s in 5.5 s 
+ 79.0  65.5 with an acceleration of 6.0 m/s 2 . What was the initial 
+ 79.0  79.8 velocity of the motorbike
+321.0  52.8 6.  The graph below describes the motion of a vehicle 
+337.0  66.3 whose acceleration changes twice.  Find the 
+337.0  79.8 acceleration of the vehicle for the parts of the graph 
+337.0  93.3 labeled  a   b  and  c  by finding the slope of each 
+337.0 106.8 part of the graph.
+365.7 133.6 Speed vs. Time for Changing Acceleration
+425.3 165.8 b
+337.0 187.3 Speed  v  m/s
+351.0 174.8 30
+ 63.0 241.8 5.   While starting your car  which is a standard gearshift  
+ 79.0 255.3 you coast downhill getting to a speed of 2.0 m/s 
+ 79.0 268.8 before the engine starts. You accelerate back 
+ 79.0 282.3 uphill moving at 5.5 m/s. This takes a total of 3.0 s. 
+ 79.0 295.8 If downhill is the positive direction  what is the 
+ 79.0 309.3 average acceleration of your car
+351.0 203.9 20
+374.8 203.9 a
+484.7 205.7 c
+351.0 233.0 10
+348.2 267.8  
+354.8 262.1 0
+358.7 267.8 0 
+388.3 267.8 2 
+418.5 267.8 4 
+447.7 267.8 6 
+477.3 267.8 8 
+504.9 267.8 10
+436.6 277.4 Time  t  s
+338.8 311.8 a
+338.8 419.8 b
+338.8 527.8 c
+
+=== PDF 59 / printed 54 ===
+ 47.9  51.4 2.3  Uniform Acceleration
+ 60.0  91.4 Warm Up
+ 60.0 112.9 In your own words  describe the difference between average velocity  initial velocity  final velocity  and a change 
+ 60.0 126.4 in velocity.
+ 48.0 263.7 Graphing 
+ 48.0 275.7 Acceleration
+168.0 251.0 In a situation where the speed of a moving body increases or decreases at a uniform rate 
+168.0 264.5 the acceleration is considered uniform. This motion can be graphed on a speed vs. time 
+156.0 270.0  
+168.0 278.0 and will be linear  Figure 2.3.1 . Since speed is the dependent variable  it is plotted on the 
+168.0 291.5 y-axis. Time  the independent variable  will be on the x-axis.
+282.0 317.0 Speed vs. Time
+332.7 334.7 t  v f  
+183.4 356.0 v f
+170.2 387.2 Speed  v  m/s
+408.1 368.8 v 0  = initial speed
+408.1 378.2       = speed at t = 0
+408.1 395.2 v f   = mnal speed
+212.5 412.6 0  v 0
+182.7 440.6 v 0
+193.3 482.6 0
+198.0 489.0 0
+367.5 491.7 t
+284.3 501.3 Time  t  s
+156.0 518.3 Figure 2.3.1   This graph shows speed changing at a uniform rate.
+192.0 545.1 The y-intercept for the speed-time graph is b = v 0  where v 0  is the speed of the 
+168.0 558.6 object at time t = 0. In Figure 2.3.1  the initial time is zero and the final time is t  so the 
+168.0 572.1 time interval is simply Ht = t o 0 = t.
+316.2 580.9 Hv
+192.0 587.6 The slope of the graph is m = 
+330.2 587.6  = a  since acceleration is change in speed divided 
+316.9 593.1 Ht
+168.0 601.1 by change in time.
+324.5 604.9 v  o v
+300.0 610.6 If a =  f 0
+192.0 616.6    
+228.0 616.6  
+264.0 616.6  
+334.9 618.6 t
+192.0 630.1  
+282.0 630.1 Then at = v f  o v 0   and
+ 48.0 666.6  
+448.3 652.4 1
+401.5 666.6  
+192.0 679.6 This is a general equation for any object that accelerates at a uniform rate. It says 
+168.0 693.1 that the final speed of the accelerating object equals the initial speed plus the change in 
+168.0 706.6 speed  at .
+252.0 655.4      
+305.4 655.3 v f  = v 0    at 
+
+=== PDF 60 / printed 55 ===
+ 72.2  61.5 Sample Problem 2.3.1  Determining Uniform Acceleration
+ 72.2  76.7 The graph below shows the uniform acceleration of an object  as it was allowed to drop off a cliff. 
+ 75.1  90.2 a   What was the acceleration of the object  
+ 75.1 103.7 b   Write an equation for the graph.
+159.7 133.6 Speed vs. Time
+ 91.0 147.1 10.0
+ 94.2 162.3 9.0
+ 94.2 177.5 8.0
+284.0 178.2 Ƌv = v f  o v 0
+ 76.5 200.8 Speed  v  m/s
+ 94.2 192.6 7.0
+232.4 207.5 Ƌv
+ 94.2 207.8 6.0
+284.0 198.2 Ƌt = t f  o 0
+ 94.2 223.0 5.0
+ 94.2 238.2 4.0
+ 94.2 253.3 3.0
+ 94.2 268.5 2.0
+ 94.2 283.7 1.0
+167.4 277.2 Ƌt
+ 98.8 298.9 0
+ 96.1 304.9   0  0.10  0.20  0.30  0.40  0.50  0.60  0.70  0.80  0.90  1.00 
+169.3 314.6 Time  t  s
+ 72.2 352.2 What to Think About
+319.5 352.2 How to Do It
+ 75.4 366.3 a
+ 72.2 380.0 1.  The acceleration is determined by finding the slope 
+ 88.2 393.5 of the speed-time graph.
+373.8 365.9 v f  m v 0
+319.5 371.8 a =  Hv  = t  m t  
+344.7 383.9 Ht
+378.8 391.5 f
+399.1 391.5 0
+319.5 403.5   =  10.0 m/s m 2.0 m/s  = 8.0 m/s  
+365.1 415.7 0.80 s m 0 s
+467.8 416.7 0.80 s
+319.5 435.3 a = 1.0 w   10 1  m/s 2
+ 75.4 460.8 b
+ 72.2 474.5 1.  Determine the general equation for any straight 
+ 88.2 488.0 line.
+ 72.2 515.0 2.  For this line  the slope m is the acceleration. 
+ 88.2 528.5 Inspection of the graph reveals that the y-intercept  
+ 88.2 542.0 b  is 2.0 m/s. 
+ 72.3 587.5 3.  Derive the specific equation for this line.
+ 72.3 601.0   Note that the final  specific equation for this graph 
+ 88.2 614.5 includes the actual numerical values of the  
+ 88.2 628.0 y-intercept and slope  complete with their 
+ 88.2 641.5 measuring units. Once this equation is established  
+ 88.2 655.0 it can be used in place of the graph  since it 
+ 88.2 668.5 describes every point on the graph.
+319.5 462.6 y = b   mx
+319.5 502.8 m = 1.0 w 10 1  m/s 2
+319.5 516.6 b = 2.0 m/s
+319.5 530.1 x = t
+319.5 543.6 y = v f
+319.5 581.8 v f  = 2.0 m/s    1.0 w 10 1  m/s 2 . t
+
+=== PDF 61 / printed 56 ===
+ 57.2  61.5 Practice Problems 2.3.1  Determining Uniform Acceleration
+181.1  96.6 Speed vs. Time
+ 74.7 155.8 Speed  v  m/s
+ 93.0 130.7 60.0
+ 93.0 149.0 50.0
+ 93.0 167.3 40.0
+ 93.0 185.6 30.0
+ 93.0 203.9 20.0
+ 93.0 222.2 10.0
+102.6 240.4 0
+101.0 247.8   0 
+124.5 247.8 1.0  2.0  3.0  4.0  5.0  6.0  7.0  8.0  9.0   10.0  
+191.7 259.8 Time  t  s
+ 57.2 286.7 1. 
+ 57.2 300.2  
+ 78.1 286.7 a   What is the y-intercept  v 0  for the graph shown above   
+ 76.1 327.2 b   What is the slope of the graph
+ 76.1 367.7 c   What property of the moving object does this slope measure
+ 76.1 408.2 d   Write the specific equation for the graph  using symbols v for speed and t for time.
+ 57.2 462.2 2.  The following equation describes the motion of a ball thrown straight down  by someone leaning out of the 
+ 73.2 475.7 window of a tall building:
+238.7 499.7 v f  =   5.0 m/s      9.8 m/s 2 . t
+ 76.1 529.7 a   At what speed was the ball initially thrown out of the window
+ 76.1 583.7 b   What was the acceleration of the ball
+ 76.1 637.7 c   How fast was the ball moving after 1.2 s
+
+=== PDF 62 / printed 57 ===
+183.0  51.5 Consider an object that is accelerating uniformly from initial speed v 0   to a final speed v f  
+ 63.0  64.1 Calculating Distance    in time t. as shown in Figure 2.3.2. How would you calculate the distance travelled by the 
+ 63.0  76.1 from Uniform 
+183.0  78.5 object during this time  
+ 63.0  88.1 Acceleration
+286.1 110.0 Speed vs. Time
+184.0 169.4 Speed  v  m/s
+338.2 129.0 t  v f  
+363.5 167.3 v 0  = initial speed
+363.5 177.3      = speed at t = 0
+363.5 195.6 v f   = mnal speed
+217.2 198.2 0  v 0
+297.6 270.8 Time  t  s
+183.4 289.8 Figure 2.3.2   This graph represents an object accelerating at a uniform rate.
+207.0 315.6 The total distance d travelled in time t will equal the average speed vo  multiplied by 
+183.0 329.1 time t. The average speed vo is just the average of the initial speed v 0   and the final speed  
+183.0 347.6 v f    which is:
+392.8 352.8 v    v
+207.0 361.1  
+374.8 356.1 vo =  0 f
+402.7 367.8 2
+183.0 387.1 Distance travelled is d = vo   or 
+183.0 413.6 However  it has already been shown that 
+183.0 441.1 Therefore   
+207.0 454.6  
+243.0 454.6  
+279.0 454.6  
+393.5 383.8 v 0    v f
+423.9 392.1  t t 
+403.4 398.8 2
+373.0 413.6 v f  = v 0    at 
+481.1 391.9 2
+375.0 392.1 d = 
+481.1 413.4 1
+390.4 432.7 v    v  at
+374.0 438.8 d =  0 0 
+437.4 441.1   t t
+410.0 447.7 2
+390.7 464.3 2v 0    at
+447.4 463.6 2v t   at 2
+424.9 470.4   t t =  0
+404.1 479.3 2
+464.1 479.3 2
+183.0 472.1 and  
+374.0 472.1 d = 
+183.0 504.1 Finally
+414.9 500.3 1
+375.0 504.8 d = v 0 t       at 2
+414.9 510.8 2
+481.1 504.9 3
+211.4 519.1   
+473.0 519.1  
+207.0 532.6 Sometimes you encounter situations involving uniform acceleration where you 
+183.0 546.1 have no information about the time interval  t  during which the motion occurred. If 
+183.0 559.6 you know the initial speed v 0  and the final speed v f      you can still calculate the distance 
+183.0 573.1 travelled if you know at what rate the object is accelerating.
+392.5 584.3 v    v
+207.0 592.6 For uniform acceleration   
+374.0 590.5 d =  0 f t t  and v f  = v 0    at
+402.4 599.4 2
+393.9 611.3 v f  o v 0
+183.0 619.6 Therefore  
+377.0 619.7 t = 
+403.3 626.5 a
+392.5 638.3 v 0    v f
+437.8 638.3 v  o v
+480.2 637.6 v 2  o v 02
+374.0 646.7 d = 
+422.9 644.5   t   f 0 =   f
+183.0 646.6 Substituting for t in the first equation   
+402.4 653.4 2
+447.2 653.5 a
+488.3 653.4 2a
+365.0 668.4 2ad = v 2f   o v 20
+183.0 669.1 Thus   
+183.0 695.2 Therefore
+225.0 705.2  
+373.6 693.1 v 2f  = v 20    2ad
+469.5 705.2  
+481.1 695.0 4
+
+=== PDF 63 / printed 58 ===
+ 48.0  64.7 The Four Uniform 
+ 48.0  76.7 Acceleration 
+ 48.0  88.7 Equations
+168.0  52.1 Four equations describing uniform acceleration were introduced above. These four 
+168.0  65.6 equations are extremely useful in this course and in future courses you might take in 
+156.0  71.1  
+168.0  79.1 physics. For your convenience  they are summarized here:
+288.8 108.8 1   v f  = v 0    at  
+323.5 127.6 v    v
+288.8 133.7 2   d =  0 f t t 
+333.4 142.6 2
+286.0 149.3   
+343.9 157.1 1
+288.8 162.1 3   d = v 0 t    at 2  
+343.9 169.2 2
+ 48.0 199.9  
+168.0 199.9  
+288.8 189.1 4   v 2f   = v 20   2ad
+ 60.0 237.9 Quick Check
+ 60.0 258.4 1.  What is the initial velocity of a car accelerating east at 3.0 m/s 2  for 5.0 s and reaching a final velocity of  
+ 76.0 272.6 25.0 m/s east
+ 60.0 407.6 2.  If we assume acceleration is uniform  how far does a plane travel when it lands at 16.0 m/s west and comes to 
+ 76.0 421.1 rest in 8.0 s  
+ 60.0 568.9 3.  What is the stopping distance of a car if it accelerates at o9.29 m/s 2  and has an initial velocity of 100 km/h.
+
+=== PDF 64 / printed 59 ===
+ 75.0  63.9 Investigation 2-3  Measuring Acceleration
+ 75.0  84.6 Purpose
+ 75.0  98.9 To measure the uniform acceleration of an object 
+ 75.0 117.7 Part 1 
+ 75.0 137.1 Procedure
+ 75.0 151.4 1.  Figure 2.3.3 shows one way to produce uniformly accelerated motion.  Your teacher may have a different 
+ 91.0 164.9 method and will explain it to you.  Remove a 1-m piece of ticker tape from a roll. Pass the tape through a 
+ 91.0 178.4 recording timer and tape it to a laboratory cart  as shown in the diagram. A 500 g mass is attached to the cart by 
+ 91.0 191.9 a 1 m string that passes over a pulley. The force of gravity on the mass accelerates both the mass and the cart.
+ 75.0 205.4 2.  For best results in this experiment  there should be no slack in the ticker tape before the cart is released. One 
+ 91.0 218.9 partner should place the hanging mass over the pulley  and hold onto the cart so that it does not accelerate 
+ 91.0 232.4 prematurely. When all is ready  simultaneously turn on the timer and release the cart.
+209.9 267.2 masking tape
+301.9 268.8 ticker tape
+304.7 278.8 no slack
+247.5 292.0 cart
+ 91.8 336.3 500 g
+ 91.8 346.3 mass
+153.2 371.1 board to 
+153.2 381.1 protect 
+153.2 391.1 the noor
+ 90.6 421.4 Figure 2.3.3   Apparatus setup for Part 1
+ 75.0 452.2 3.  Your finished ticker tape record will look something like the one in Figure 2.3.4. Often there is a smudged 
+ 91.0 465.7 grouping of dots at the start  so choose the first clear dot and label it the i0thw dot  Figure 2.3.4 . On your 
+ 91.0 479.2 tape  mark clearly the 0th dot  6th dot  12th dot  18th dot  24th dot  and so on until you have at least six time 
+ 91.0 492.7 intervals. The timer has a frequency of 60 Hz. This means it makes 60 vibrations each second. The time interval 
+ 91.0 506.2 between dots on your tape is 1/60 s. If you use a time interval of six dots  this is 6/60 s or 1/10 s. In other words  
+ 91.0 519.7 an interval of six dots is the same as 0.10 s.
+ 91.6 548.9 0th dot 6th dot
+ 99.2 596.9 0  s
+123.6 596.9 0.1  s
+164.0 548.9 12th dot
+231.0 548.9 18 th dot
+170.0 596.9 0.2  s
+239.0 596.9 0.3  s
+194.6 664.9 1
+221.1 664.9 2
+247.5 664.9 3
+273.5 664.9 4
+299.5 664.9 5
+326.3 664.9 6
+ 90.5 693.4 Figure 2.3.4   The beginning of the tape may have a smudged group of dots.
+
+=== PDF 65 / printed 60 ===
+ 60.0  64.7 4.  Carefully measure the distance the cart travelled during each successive 0.10 s time interval. For example  in the 
+ 76.0  78.2 sample tape in Figure 2.3.4  the distance travelled during the interval between 0 and 0.10 s was 1.1 cm.  
+ 76.0  91.7 Figure 2.3.5 shows how to measure the distance travelled during the second 0.10 s interval between 0.10 s and 
+ 76.0 105.2 0.20 s. In the sample tape  the distance is 1.8 cm. Prepare a table like Table 2.3.1. Record the distances travelled 
+ 76.0 118.7 in each of the recorded intervals in your table. 
+ 80.6 148.7 0th dot 6th dot
+ 88.4 197.4 0  s
+154.2 148.7 12th dot
+222.1 148.7 18 th dot
+160.2 197.4 0.2  s
+230.2 197.4 0.3  s
+113.1 197.4 0.1  s
+158.4 266.4 1
+185.3 266.4 2
+212.1 266.4 3
+238.4 266.4 4
+264.9 266.4 5
+292.0 266.4 6
+319.0 266.4 7
+ 76.0 293.4 Figure 2.3.5   How to measure the distance between 0.10 s and 0.20 s
+ 76.0 325.4 Table 2.3.1   Data for an Accelerating Cart
+122.2 345.8 Time Interval 
+145.2 359.3   s
+248.2 345.8 Distance Travelled
+278.1 359.3   cm
+364.7 345.8 Average Speed for the 
+382.0 359.3 Interval  cm/s
+133.8 381.0 0 to 0.10
+127.6 401.7 0.10 to 0.20
+127.6 423.4 0.20 to 0.30
+127.6 443.2 0.30 to 0.40
+127.6 462.9 0.40 to 0.50
+127.6 482.6 0.50 to 0.60
+ 60.0 512.0 5.  Your next task is to figure out the average speed of the cart during each of the 0.10 s time intervals. Since 
+ 76.0 525.5 average speed is just the distance travelled during the time interval divided by the time interval  all you have 
+ 76.0 539.0 to do is divide each measured distance by the time interval  0.10 s . During the first time interval on the sample 
+ 76.0 552.5 tape  the cart moved a distance of 1.1 cm. The average speed of the cart during the first 0.10 s was therefore
+287.5 573.2 o 1.1 cm
+287.0 579.5 v  = 
+332.2 579.5  = 11 cm/s
+305.1 585.4 0.10 s
+ 60.0 579.6  
+ 76.0 579.6  
+ 60.0 606.5  
+ 76.0 606.5 During the second time interval  between 0.10 s and 0.20 s  the cart moved a distance of 1.8 cm. Its average 
+ 76.0 620.0 speed during the second interval was therefore
+286.5 627.2 o 1.8 cm
+ 76.0 633.6  
+286.0 633.5 v  = 
+333.4 633.5 = 18 cm/s
+304.1 639.4 0.10 s  
+ 60.0 633.6  
+ 60.0 660.5 6.  Using your own tape data  calculate the average speed of the cart during each of the time intervals and 
+ 76.0 674.0 complete Table 2.3.1.
+
+=== PDF 66 / printed 61 ===
+ 75.0  64.4 Concluding Questions
+ 75.0  78.7 1.  a   What was the average speed of the cart during the first 0.10 s time interval
+ 93.8  92.2 b   What was the average speed of the cart during the second 0.10 s interval
+ 93.8 105.7 c   By how much did the average speed of the cart increase between the first interval and the second interval
+ 93.8 119.2 d   Calculate the acceleration of the cart between the first interval and the second interval by dividing the 
+107.0 132.7 increase in average speed by the time interval  which was 0.10 s.
+135.0 146.2 Example:  On the sample tape  the average speed increased from 11 cm/s to 18 cm/s between the 
+111.0 159.7 first and second time intervals. Therefore  the acceleration was:
+269.2 174.9 18 cm/s o 11 cm/s 7 cm/s
+253.0 181.3 a = 
+346.9 181.2  = 
+388.6 180.5   = 70 cm/s 2
+294.6 187.1 0.10 s
+360.1 187.6 0.10 s
+ 75.0 208.2 2.  Calculate the acceleration of the cart between the second and third intervals  third and fourth intervals  fourth 
+ 91.0 221.7 and fifth intervals  and fifth and sixth intervals. Allowing for slight variations due to experimental errors  is there 
+ 91.0 235.2 any pattern to your results
+ 75.0 253.7 Part 2
+ 75.0 273.1 Procedure
+ 75.0 287.4 1.  Using your data table from Investigation 2-1  Table 2.1.1  plot a graph of speed vs. time for the accelerating 
+ 91.0 300.9 cart  like the example shown below in Figure 2.3.6. Remember that the speeds in the table are average speeds 
+ 91.0 314.4 for each interval and should be plotted midway through each time interval.
+183.5 340.1 Speed vs. Time
+251.8 361.2 a
+105.5 369.4 70.0
+288.7 361.2 b
+ 90.8 393.2 Speed  v  m/s
+105.5 384.2 60.0
+105.5 398.9 50.0
+105.5 413.7 40.0
+105.5 428.5 30.0
+105.5 443.2 20.0
+105.5 458.0 10.0
+108.1 477.2  
+115.0 472.8 0
+119.3 477.2 0 
+144.0 477.2 1.00 
+173.3 477.2 2.00 
+203.0 477.2 3.00 
+232.8 477.2 4.00 
+262.7 477.2 5.00 
+291.8 477.2 6.00
+200.3 487.2 Time  t  s
+ 91.0 503.4 Figure 2.3.6   This is an example of a speed-time graph like the one 
+ 91.0 514.4 you will draw.
+ 75.0 539.2 2.  Draw a single straight line through all the plotted points. If there are stray points due to experimental error  try 
+ 91.0 552.7 to draw a line that leaves as many strays on one side of it as on the other. If a point is an obvious gross error  
+ 91.0 566.2 ignore it when drawing your ibest-fit line.w If in doubt  ask your teacher for advice.
+ 75.0 579.7 3.  Determine the y-intercept of your line. Also  figure out the slope of the line using the method outlined for  
+ 91.0 593.2 Figure 2.2.1 in section 2.2.
+ 75.0 611.9 Concluding Questions
+ 75.0 626.2 1.  What was the acceleration of your cart according to the slope of your graph
+ 75.0 639.7 2.  What is the equation for the speed-time graph you plotted for the cart
+ 75.0 653.2 3.  In Investigation 2-1  you figured out the acceleration of your cart simply by comparing average speeds of 
+ 91.0 666.7 the cart in successive time intervals. Compare the acceleration you calculated in Investigation 2-1 with the 
+ 91.0 680.2 acceleration you just obtained using the slope of your speed-time graph. Which method of finding the 
+ 91.0 693.7 acceleration iaverages outw the experimental errors better  Explain.
+
+=== PDF 67 / printed 62 ===
+ 48.0  51.9 2.3  Review Questions
+ 48.0  86.9 1.  Use the following graph to answer the questions 
+ 64.0 100.4 below.
+ 48.0 112.8  
+154.9 124.2 Speed vs. Time
+306.0  87.2 3.  What is the rate of acceleration of a mountain bike  
+322.0 100.7 if it slows down from 12.0 m/s to 8.0 m/s in a time of 
+322.0 114.2 3.25 s
+ 67.9 185.0 Speed  v  m/s
+ 84.2 157.2 6.0
+ 84.2 176.5 5.0
+ 84.2 195.7 4.0
+ 84.2 215.0 3.0
+ 84.2 234.3 2.0
+ 84.2 253.6 1.0
+ 89.5 272.9 0
+ 85.8 279.9   0 
+108.5 279.9 0.10  0.20  0.30  0.40  0.50  0.60  0.70  0.80
+165.2 290.8 Time  t  s
+ 66.8 305.6 a   What is the y-intercept  v 0  of the speed-time 
+ 80.0 319.1 graph shown above
+306.0 276.2 4.  A truck parked on a down slope slips its brakes and 
+322.0 289.7 starts to coast downhill  accelerating from rest at a 
+322.0 302.4 constant rate of 0.80 m/s 2 .
+324.8 316.7 a   How fast will the truck be moving after 5.0 s
+ 66.8 359.6 b   What is the acceleration of the moving object
+ 66.8 400.1 c   What is the specific equation for this graph
+ 48.0 440.6 2.  A cyclist coasting along a road allows her bike to 
+ 64.0 454.1 come to rest with the help of a slight upslope in 
+ 64.0 467.6 the road. The motion of the bike is described by the 
+ 64.0 481.1 equation:
+113.0 499.9 v f  = 6.6 m/s o  2.2 m/s 2 t t
+324.8 505.7 b   How far will the truck coast during the 5.0 s
+ 66.8 527.6 a   What was the initial speed of the bike
+ 66.8 581.6 b   At what rate did the bike accelerate while 
+ 80.0 595.1 coming to rest
+ 66.8 649.1 c   How long did the bike take to come to rest
+
+=== PDF 68 / printed 63 ===
+ 63.0  52.7 5.  An aircraft starts from rest and accelerates at a 
+ 79.0  66.2 constant rate down the runway.
+ 81.8  79.7 a   After 12.0 s  its speed is 36.0 m/s. What is its 
+ 95.0  93.2 acceleration
+321.0  52.8 7.  A very frustrated physics student drops a physics 
+337.0  66.3 textbook off the top of the CN tower.  If the tower 
+337.0  79.0 is 5.3 w 10 2  m high  how long will the book take 
+337.0  93.3 to reach the ground  assuming there is no air 
+337.0 106.8 resistance  
+ 81.8 187.7 b   How fast is the plane moving after 15.0 s
+ 81.8 322.7 c   How far down the runway will the plane be after 
+ 95.0 336.2 15.0 s
+321.0 363.3 8.  If an electron accelerates in a space of 5.0 cm  
+337.0 376.8 from rest to 1/10 c   where c is the speed of light   
+337.0 389.5 3.0 w 10 8  m/s  what is its acceleration
+ 63.0 538.7 6.  A truck is moving along at 80.0 km/h when it hits  
+ 79.0 552.2 a gravel patch  which causes it to accelerate at  
+ 79.0 565.7 o5.0 km/h/s. How far will the truck travel before it 
+ 79.0 579.2 slows to 20.0 km/h
+
+=== PDF 69 / printed 64 ===
+ 47.9  51.4 2.4  Acceleration of Bodies Due to Gravity
+ 60.0 101.4 Warm Up
+ 60.0 128.9 Take a piece of paper and book in each hand and raise them to about the height of your shoulder. Predict which 
+ 60.0 142.4 one will hit the ground first if they are both dropped at the same time. Drop both and record results. Now 
+ 60.0 155.9 crumple the same piece of paper and repeat. Describe and suggest reasons for any differences between the two 
+ 60.0 169.4 events.
+ 48.0 313.0 Free Fall
+168.0 300.3 One of the most common situations involving uniform acceleration is the phenomenon 
+168.0 313.8 known as free fall. For example  if a coin drops out of your pocket  it accelerates toward 
+156.0 319.3  
+168.0 327.3 the ground. If the effects of air resistance are ignored  the acceleration of the coin toward 
+168.0 340.8 the ground is uniform. The coin starts its downward fall with zero speed  but gains 
+168.0 354.3 speed as it falls toward Earth. Since gravity is the cause of the acceleration  we call the 
+168.0 367.8 acceleration during free fall the acceleration of gravity. The acceleration of gravity is 
+168.0 381.3 given a special symbol  g.
+306.2 394.8 The magnitude of g depends on your location. At Earth's 
+282.2 407.6 surface  g is approximately 9.81 m/s 2 . At higher altitudes  
+282.2 421.8 g decreases. For our present purposes  g is assumed to be 
+282.2 434.6 constant at Earth's surface and to be 9.81 m/s 2 . On the Moon  
+282.2 448.8 the magnitude of g is approximately 1/6 of what it is here on 
+282.2 462.3 Earth's surface. A body in free fall near the Moon's surface has 
+282.2 475.1 an acceleration of gravity of only 1.60 m/s 2 .
+306.2 489.3 Of course  the four equations for uniform acceleration 
+282.2 502.8 apply to free fall as well as other uniform acceleration 
+282.2 516.3 situations. The symbol g may be substituted for a in those 
+282.2 529.8 equations.
+ 48.0 696.1 Figure 2.4.1   These sky divers are in free fall until they 
+ 48.0 707.1 open their parachutes to slow their descent.
+
+=== PDF 70 / printed 65 ===
+ 72.2  61.5 Sample Problem 2.4.1  Free Fall
+ 72.2  76.7 A golf ball is dropped from the top of the CN tower. Assuming that the ball is in true free fall  negligible air 
+ 72.2  90.2 resistance  answer these questions: 
+ 75.1 103.7 a   How fast will the ball be falling after 1.0 s
+ 75.1 117.2 b   How far down will the ball have fallen after 1.0 s
+ 72.2 142.6 What to Think About
+274.0 142.6 How to Do It
+ 75.4 156.8 a
+ 72.2 170.4 1.  Determine initial conditions in the 
+ 88.2 183.9 problem so you can choose the correct 
+ 88.2 197.4 formula.
+274.0 168.7 The ball starts from rest  so v 0  = 0.0 m/s
+274.0 181.2 The rate of acceleration is g = 9.8 m/s 2
+274.0 195.7 The time of fall is t = 1.0 s
+ 72.2 224.4 2.  Determine which formula to use.
+274.0 222.7 The first uniform acceleration equation  1  applies to 
+274.0 236.2 this question.
+ 72.2 264.9 3.  Solve.
+274.0 262.5 v f  = v 0    at
+274.0 279.7 v f  = 0 m/s    9.8 m/s 2 1.0 s    
+274.0 297.5 v f  = 9.8 m/s
+274.0 315.7 The ball will be falling 9.8 m/s after 1 s.
+ 75.4 332.3 b
+ 72.2 345.9 1.  Determine which formula to use.
+ 72.2 386.4 2.  Solve.
+274.0 342.7 The third uniform acceleration equation  3  applies 
+274.0 356.2 to this question.
+274.0 377.9 d = v 0 t    1  at 2
+331.2 390.1 2
+274.0 404.9 d =  0 m/s 1.0 s     1 9.8 m/s 2 1.0 s 1.0 s
+391.2 417.1 2
+274.0 428.0 d = 4.9 m
+274.0 455.7 The ball will have fallen 4.9 m after 1 s.
+ 72.2 514.1 Practice Problems 2.4.1  Free Fall
+ 72.2 535.2 1.  a    How fast will the golf ball in the Sample Problem be moving after it has fallen a distance of 530 m   
+103.0 548.7 which is the height of the CN tower   Assume free fall.
+ 91.1 616.2 b   Why does the ball not reach this speed when it hits the ground
+
+=== PDF 71 / printed 66 ===
+ 57.2  61.0 Practice Problems 2.4.1  Free Fall
+ 57.2  76.2 2.  How high is the cliff if you toss a small rock off of it with an initial speed of 5.0 m/s and the rock takes 3.1 s  
+ 73.2  89.7 to reach the water
+ 57.2 157.2 3.  a    At the Pacific National Exhibition in Vancouver  one of the amusement park rides drops a person in free  
+ 88.0 170.7 fall for 1.9 s. What will be the final velocity of the rider at the end of this ride
+ 76.1 238.2 b   What is the height of this ride
+ 57.2 305.0 4.  At an air show  a jet car accelerates from rest at a rate of 3g  where g is 9.81 m/s 2 . How far does the jet car  
+ 73.2 319.2 travel down the runway in a time of 4.0 s
+ 48.0 477.5 Projectiles
+168.0 464.8 There are different types of projectile motion. From throwing a ball up and having it land 
+168.0 478.3 on your hand to a golf ball being hit off a tee to throwing a rock off a cliff. The golf ball 
+156.0 483.8  
+168.0 491.8 and rock examples require analysis of motion using two dimensions and will be studied in 
+168.0 505.3 later courses. The example of throwing a ball up in the air and having it land back in your 
+168.0 518.8 hand is an example of projectile motion in one dimension. This type of projectile motion 
+168.0 532.3 will be studied next.
+192.0 545.8 Recall that acceleration is a vector quantity with both magnitude and direction. 
+168.0 559.3 In situations where the acceleration is caused by the force of gravity  the direction of 
+168.0 572.8 acceleration is downward. This is a negative direction. In gravitational acceleration 
+168.0 585.6 problems  therefore  you use a = 1 9.81 m/s 2 .
+192.0 599.1 If a body is thrown into the air  it accelerates downward  a = 1 9.81 m/s 2  at all times 
+168.0 612.0 during the trajectory  whether the velocity is upward   zero  or downward  1 .
+192.0 626.8 You throw a baseball straight up. It leaves your hand with an initial velocity of  
+168.0 640.3 10.0 m/s. Figure 2.4.2 is a graph showing how the velocity of the ball varies with time  
+168.0 653.8 starting when you begin to throw the ball and ending when you finish catching it. At A  
+168.0 667.3 the ball has just left your hand. At C  the ball has just reached the glove in which you will 
+168.0 680.7 catch the ball. Notice that between A and C  the velocity is changing at a uniform rate. If 
+168.0 694.3 you take the slope of this graph  you will obtain the acceleration of the ball due to gravity 
+168.0 707.8 alone.
+
+=== PDF 72 / printed 67 ===
+208.6  51.9 Velocity vs. Time  for a Ball Thrown Straight up
+197.2  75.0 10.0
+220.1  66.6 A  0.2  9.8
+200.2  87.4 9.0
+200.2  99.9 8.0
+200.2 112.3 7.0
+200.2 124.7 6.0
+200.2 137.1 5.0
+200.2 149.5 4.0
+181.9 179.5 Velocity  v  m/s
+200.2 161.9 3.0
+200.2 174.4 2.0
+200.2 186.8 1.0
+204.5 199.2 0
+202.9 204.7   0 
+197.3 212.6 o1.0
+217.3 191.1 D
+356.5 191.1 E
+291.0 191.1 B
+218.4 204.7 0.2  0.4  0.6  0.8  1.0  1.2  1.4  1.6  1.8  2.0  2.2  2.4
+376.9 202.9 Time  t  s
+197.3 225.0 o2.0
+197.3 237.4 o3.0
+197.3 249.8 o4.0
+197.3 262.2 o5.0
+197.3 274.7 o6.0
+197.3 287.1 o7.0
+197.3 299.5 o8.0
+197.3 311.9 o9.0
+194.2 324.3 o10.0
+341.9 327.6 C  2.2  o9.8
+183.0 348.2 Figure 2.4.2   This graph represents the velocity of a ball as a function of 
+183.0 359.4 time  when you throw a ball straight up in the air.
+ 75.0 401.7 Quick Check
+ 75.0 422.9 1.  In Figure 2.4.2  what was the acceleration of the ball
+ 93.8 436.4 a   while it was being thrown
+ 93.8 476.9 b   while it was in free fall
+ 93.8 517.4 c   while it was being caught
+ 75.0 557.9 2.  What point on the graph corresponds with the instant when the ball reached the ipeakw of its flight  Explain 
+ 91.0 571.4 how you know this.
+ 75.0 638.9 3.  What altitude did the ball reach  Hint: The distance the ball travels equals the average speed multiplied by 
+502.6 643.5 _
+ 91.0 652.4 the time elapsed when it reaches its ipeakw altitude. What property of the graph would give you d = v  t t  
+
+=== PDF 73 / printed 68 ===
+ 48.0  51.9 2.4  Review Questions
+ 48.0  86.9 1.  On a certain asteroid  a steel ball drops a distance 
+ 64.0 100.4 of 0.80 m in 2.00 s from rest. Assuming uniform 
+ 64.0 113.9 acceleration due to gravity on this asteroid  what is 
+ 64.0 127.4 the value of g on the asteroid
+ 48.0 221.9 2.  The graph below represents the velocity of a ball 
+ 64.0 235.4 thrown straight up by a strong pitcher as a function 
+ 64.0 248.9 of time. In the first part of the graph ending at 
+ 64.0 262.4 A  the ball is accelerated to 39.2 m/s in a time of 
+ 64.0 275.9 0.20 s. After the ball leaves the pitcher's hand  it 
+ 64.0 289.4 experiences only the acceleration due to gravity 
+ 64.0 302.9 until it is caught in a glove and brought to rest in the 
+ 64.0 316.4 hand of the catcher.
+322.8 114.2 d   What point on the graph  A  B  C  or D  
+342.0 127.7 corresponds with the instant when the ball is at 
+342.0 141.2 the peak of its flight  Explain your answer.
+324.8 208.7 e   Why is the slope of the graph negative as soon 
+338.0 222.2 as the ball leaves the pitcher's hand
+324.8 289.7 f   Why is the graph labelled velocity rather than 
+338.0 303.2 speed
+ 96.0 343.0 Velocity vs. Time for a Ball Thrown Straight up
+ 84.4 370.7 40
+ 97.6 362.7 A  0.2 s  39.2 m/s
+324.8 370.7 g   How far up did the ball travel
+ 66.0 405.2 Velocity  v  m/s
+ 84.4 384.9 30
+ 84.4 399.1 20
+ 84.4 413.3 10
+ 87.8 427.5 0
+154.3 420.5 B  4.20 s  0 m/s
+212.3 421.2 D  8.40 s  0 m/s
+324.8 438.2 h   How far down did the ball fall
+ 81.0 443.0 o10 
+ 81.0 457.2 o20
+ 81.0 471.4 o30
+ 81.0 485.6 o40
+ 85.7 504.2   0 
+209.8 490.3 C  8.20 s  o 39.2 m/s
+103.5 504.2 1.0  2.0  3.0  4.0  5.0  6.0  7.0  8.0  9.0  10.0
+166.9 514.3 Time  t  s
+ 48.0 528.0  
+ 66.8 541.5 a   What is the acceleration of the ball while it is 
+ 80.0 555.0 being thrown
+ 66.8 609.0 b   What is the acceleration of the ball after it leaves 
+ 80.0 622.5 the pitcher's hand   ABC
+324.8 505.7 i   What is the average velocity of the ball for the 
+338.0 519.2 whole trip from pitcher's hand to catcher's 
+338.0 532.7 hand
+306.0 585.9 3.  A body in free fall accelerates at a rate of 9.81 m/s 2  at 
+322.0 600.2 your latitude. How far does the body fall during  
+324.8 613.7 a  the first second   b  the second second   Think 
+322.0 627.2 first!
+ 66.8 676.5 c   What is the acceleration of the ball while it is 
+ 80.0 690.0 being caught   CD
+
+=== PDF 74 / printed 69 ===
+ 62.9  51.9 Chapter 2  Review Questions
+ 62.9  86.9 1.  What is the difference between velocity and speed
+321.0  86.4 4.  Light travels with a speed of 3.00 w 10 5  km/s. How 
+337.0 100.7 long will it take light from a laser to travel to the 
+337.0 114.2 Moon  where it is reflected by a mirror  and back to 
+337.0 126.9 Earth  The Moon is 3.84 w 10 5  km from Earth.
+ 62.9 221.9 2.  A traveller drives 568 km in 7.2 h. What is the 
+ 78.9 235.4 average speed for the trip
+321.0 289.7 5.  Under what condition can acceleration be 
+337.0 303.2 calculated simply by dividing change in speed by 
+337.0 316.7 change in time
+ 62.9 329.9 3.  The following distances and times  for consecutive 
+ 78.9 343.4 parts of a trip made by a red ant  were recorded by 
+ 78.9 356.9 different observers. There is considerable variation 
+ 78.9 370.4 in the precision of their measurements.
+ 62.9 397.4  
+ 62.9 410.9  
+ 76.4 397.4 A. 4.56 m in 12 s 
+ 76.4 410.9 C. 12.8 m in 36.235 s
+170.9 397.4 B. 3.4 m in 6.89 s   
+ 81.8 437.9 a   What total distance did the ant travel
+ 81.8 518.9 b   What was the total time for the trip
+321.0 492.2 6.  A high-powered racing car accelerates from rest at a 
+337.0 504.9 rate of 7.0 m/s 2 . How fast will it be moving after  
+337.0 519.2 10.0 s  Convert this speed to km/h.
+ 81.8 613.4 c   What was the average speed of the ant
+
+=== PDF 75 / printed 70 ===
+ 48.0  52.7 7.  The graph below is a speed-time graph for a vehicle.
+117.4  76.8 Speed vs. Time
+ 63.5 125.4 Speed  v  m/s
+ 80.8 105.8 60.0
+ 80.8 122.5 50.0
+306.0  52.8 8.  A child on a toboggan slides down a snowy hill  
+322.0  65.5 accelerating uniformly at 2.8 m/s 2 . When the 
+322.0  79.8 toboggan passes the first observer  it is travelling 
+322.0  93.3 with a speed of 1.4 m/s. How fast will it be moving 
+322.0 106.8 when it passes a second observer  who is 2.5 m 
+322.0 120.3 downhill from the first observer
+ 80.8 139.2 40.0
+ 80.8 155.9 30.0
+ 80.8 172.5 20.0
+ 80.8 189.2 10.0
+ 90.6 205.9 0
+ 88.1 212.5   0 
+ 48.0 232.2  
+108.8 212.5 1.0  2.0  3.0  4.0  5.0
+128.2 224.2 Time  t  s
+ 66.8 245.7 a   What was the acceleration of the vehicle
+306.0 241.8 9.  A space vehicle is orbiting the Earth at a speed of 
+322.0 254.5 7.58 w 10 3  m/s. In preparation for a return to Earth  
+322.0 268.8 it fires retrorockets  which provide a negative 
+322.0 281.5 acceleration of 78.4 m/s 2 . Ignoring any change in 
+322.0 295.8 altitude that might occur  how long will it take the 
+322.0 308.5 vehicle to slow down to 1.52 w 10 3  m/s
+ 66.8 367.2 b   What was the average speed of the vehicle 
+ 80.0 380.7 during its 5.00 s trip
+ 66.8 488.7 c   What distance did the vehicle travel during the 
+ 80.0 502.2 5.00 s
+306.0 457.8 10.  Snoopy is taking off in his World War I biplane. He 
+322.0 471.3 coasts down the runway at a speed of 40.0 m/s  then 
+322.0 484.8 accelerates for 5.2 s at a rate of 1/2 g  where g is the 
+322.0 497.5 acceleration due to gravity  9.81 m/s 2 . How fast is 
+322.0 511.8 the plane moving after 5.2 s
+ 66.8 610.2 d   Write a specific equation for this graph.
+
+=== PDF 76 / printed 71 ===
+ 62.9  52.7 11.  A woman biker  leader of the local chapter of Heck's 
+ 78.9  66.2 Angels  is driving along the highway at 80.0 km/h  in 
+ 78.9  79.7 a 60.0 km/h speed zone. She sees a police car ahead  
+ 78.9  93.2 so she brakes and her bike accelerates at  
+ 78.9 106.7 o8.0 km/h/s. How far along the road will she travel 
+ 78.9 120.2 before she is at the legal speed limit
+321.0  52.8 13.  A stone is dropped from the top of a tall building. It 
+337.0  65.5 accelerates at a rate of 9.81 m/s 2 . How long will the 
+337.0  79.8 stone take to pass a window that is 2.0 m high  if the 
+337.0  93.3 top of the window is 20.0 m below the point from 
+337.0 106.8 which the stone was dropped
+ 62.9 228.2 12.  Spiderman is crawling up a building at the rate of 
+ 78.9 241.7 0.50 m/s. Seeing Spiderwoman 56 m ahead of him  
+ 78.9 254.4 he accelerates at the rate of 2.3 m/s 2 .
+ 81.8 268.7 a   How fast will he be moving when he reaches 
+ 94.9 282.2 Spiderwoman
+321.0 295.8 14.  An aircraft  preparing for take-off  accelerates 
+337.0 309.3 uniformly from 0 m/s to 20.0 m/s in a time of 5.00 s.
+339.8 322.8 a   What is the acceleration of the aircraft
+ 81.8 403.7 b   How much time will he take to reach 
+ 94.9 417.2 Spiderwoman
+339.8 498.3 b   How long will the plane take to reach its take-off 
+353.0 511.8 speed of 36.0 m/s
+ 81.8 538.7 c   When he reaches Spiderwoman  Spiderman 
+ 94.9 552.2 discovers that she is a Black Widow and  as you 
+ 94.9 565.7 know  Black Widows consume their mates! He 
+ 94.9 579.2 is 200.00 m from the road below. How long will 
+ 94.9 592.7 it take him to fall to the safety of the road  if he 
+ 94.9 605.4 drops with an acceleration of g = 9.81 m/s 2
+
+=== PDF 77 / printed 72 ===
+ 48.0  52.7 15.  At an air show  a jet car accelerates from rest at a 
+ 64.0  65.4 rate of 3g  where g is 9.81 m/s 2 . How fast is the jet 
+ 64.0  79.7 travelling after 0.25 km
+306.0  52.7 17.  A glider on an air track is made to accelerate 
+322.0  66.2 uniformly by tilting the track at a slight angle. The 
+322.0  79.7 distance travelled by the glider was measured at the 
+322.0  93.2 end of each 0.10 s interval  resulting in the following 
+322.0 106.7 data:
+306.0 133.7 DISTANCE  d  cm   0   0.025   0.100   0.225   0.400   0.625
+306.5 147.2 TIME 
+354.0 147.2 t       s   0   0.100   0.200   0.300   0.400   0.500
+324.8 174.2 a   Plot a graph with distance d on the y-axis and 
+338.0 187.7 time t on the x-axis.
+324.8 201.2 b   Plot a second graph with distance d on the y-axis 
+338.0 211.7 and t 2  on the x-axis.
+324.8 228.2 c   Use the slope of your second graph to figure out 
+338.0 241.7 the acceleration of the glider on the air track. 
+338.0 255.2 HINT: Think about the third equation for uniform 
+338.0 268.7 acceleration.
+ 48.0 282.2 16.  To start a soccer game  the referee flips a coin that 
+ 64.0 295.7 travels 50 cm into the air. 
+ 48.0 309.2  
+ 66.8 309.2 a   What was the coin's initial speed
+ 48.0 471.2  
+ 66.8 471.2 b    How long was the coin in the air before landing 
+ 79.6 484.7 back in the hand of the referee
+
+=== PDF 78 / printed 73 ===
+ 63.0  51.9 Chapter 2  Extra Practice
+ 63.0  86.9 1.  The speed of light in space is 300 000 km/s.  How far 
+ 79.0 100.4 does light travel in:
+ 81.8 113.9 a   1 min      
+ 81.8 127.4 b   1 h     
+ 81.8 140.9 c   1 d     
+ 81.8 154.4 d   1 y
+321.0  86.1 7.  A certain airplane has an acceleration of 15.0 m/s 2 . 
+339.8 100.3 a    How fast will it be moving 2.5 s after it starts 
+353.0 113.8 down the runway
+339.8 127.3 b   How far will it travel during the 2.5 s
+339.8 140.8 c    Minimum take-off speed is 60.0 m/s. What 
+353.0 154.3 length must the runway be
+ 63.0 181.4 2.  A jet aircraft travels a distance of 1867 km in a time 
+ 79.0 194.9 of 3.0 h. What is its average speed for the trip
+321.0 181.3 8.  a    You are driving along the road at 80 km/h  
+354.1 194.8 22 m/s  when you see a moose 50.0 m in front  
+351.3 208.3 of your car. Your reaction time is 0.40 s  and when 
+351.3 221.8 you finally hit the brakes  your car accelerates at 
+351.3 234.6 a rate of o6.4 m/s 2 . Will your car stop in time to 
+351.3 248.8 avoid the moose
+339.8 262.3 b   If the road is wet and your car accelerates at a 
+353.0 275.1 rate of just o4.8 m/s 2  what will happen  Show 
+353.0 289.3 your calculations.
+ 63.0 221.9 3.  In a certain battery-powered circuit  an electron 
+ 79.0 234.7 requires 2.0 w 10 5  s to travel only 2.0 m. What is the 
+ 79.0 248.9 average speed of the electron in the circuit  Express 
+ 79.0 262.4 your answer in millimetres per second  mm/s .
+ 63.0 289.4 4.  Light from a laser requires 1.28 s to reach the Moon. 
+ 79.0 302.2 If light travels with a speed of 3.00 w 10 5  km/s  how 
+ 79.0 316.4 far is it to the Moon
+ 63.0 343.4 5.  A tourist averaged 82 km/h for a 6.5 h trip in her car. 
+ 79.0 356.9 How far did she go
+ 63.0 383.9 6.  Use the following graph to answer the questions 
+ 79.0 397.4 below.
+170.6 418.8 Speed vs. Time
+ 77.3 475.5 Speed  v  m/s
+ 95.0 457.4 16.0
+321.0 316.3 9.  The CN Tower in Toronto is about 530 m high. If air 
+337.0 329.8 friction did not slow it down  how long would it 
+337.0 343.3 take a penny to fall from the top of the tower to the 
+337.0 356.1 ground below    g = 9.81 m/s 2
+321.0 383.8 10.  A motocross rider is coasting at a speed of 2.00 m/s. 
+337.0 397.3 He then decides to accelerate his bike at a rate of 
+337.0 410.1 3.00 m/s 2  for a distance of 100.0 m. 
+321.0 424.3  
+339.8 424.3 a  How fast is the bike moving  in m/s  at the end of 
+337.0 437.8 the 100.0 m stretch
+339.8 451.3 b   Convert your answer from m/s to km/h.
+ 95.0 470.6 14.0
+321.0 478.3 11.  A mountain bike rider  after coming down a steep 
+337.0 491.8 hill  loses control of her bike while moving with a 
+337.0 505.3 speed of 5.00 m/s. Fortunately  she collides with a 
+337.0 518.8 haystack  which brings her to rest in a distance of 
+337.0 532.3 0.625 m. What was the acceleration of the bike and 
+337.0 545.8 rider while colliding with the haystack
+ 95.0 483.8 12.0
+ 95.0 496.9 10.0
+ 98.2 510.1 8.0
+ 98.2 523.2 6.0
+ 98.2 536.4 4.0
+ 98.2 549.5 2.0
+102.6 562.7 0
+100.7 568.3   0  1.0  2.0  3.0  4.0  5.0   6.0  7.0  8.0  9.0  10.0  11.0  12.0
+181.4 578.5 Time  t  s
+ 81.8 597.5 a   What is the y-intercept of the above graph  
+ 97.8 611.0 Include units.
+ 81.8 624.5 b   What is the slope of the above graph   Include 
+ 95.0 638.0 units.
+ 81.8 651.5 c   What is the equation for the above graph   
+ 97.8 665.0 Use symbols v and t in the equation.
+321.0 572.8 12.  A policeman on a mountain bike is cruising at a 
+337.0 586.3 speed of 4.00 m/s  when he sees a wanted criminal 
+337.0 599.8 standing on a corner  100.0 m ahead of him. If the 
+337.0 612.6 policeman accelerates at a rate of 2.00 m/s 2  how 
+337.0 626.8 much time will he take to reach the corner
+
+=== PDF 79 / printed 74 ===
+ 48.0  52.8 13.  The graph below shows how the speed of an aging 
+ 64.0  66.3 physics teacher varies with time  as he tries to run 
+ 64.0  79.8 up a hill.
+141.3  99.3 Speed vs. Time
+ 50.1 154.8 Speed  v  m/s
+ 69.6 137.1 4.0
+ 69.6 162.8 3.0
+306.0  52.0 14. Equation 4 for uniform acceleration  v 2f  = v 20  2ad  can 
+319.5  66.3 be used to show that a body thrown upward with a 
+319.5  79.8 speed v will return to the same level with the same 
+319.5  93.3 speed it had when it was thrown upward.
+324.8 106.8 a   Show mathematically why the magnitude of v f  
+338.0 120.3 equals the magnitude of v 0 .
+324.8 133.8 b   Will the ball have the same velocity when it 
+338.0 147.3 comes down as when it was thrown up in the 
+338.0 160.8 air  Explain your answer.
+306.0 187.8 15.  A skateboarder accelerates uniformly down a hill  
+322.0 201.3 starting from rest. During the third 1 s interval from 
+322.0 214.8 rest  the skateboarder travels 7.5 m. What is the 
+322.0 228.3 acceleration of the skateboarder
+ 69.6 188.5 2.0
+ 69.6 214.2 1.0
+ 73.9 239.9 0
+ 73.0 245.4   0  1.0  2.0  3.0  4.0  5.0   6.0  7.0  8.0  9.0  10.0  11.0  12.0  13.0  14.0
+151.9 255.4 Time  t  s
+ 66.8 275.3 a   What was the starting speed of the runner
+ 66.8 288.8 b   What was the acceleration of the runner
+ 66.8 302.3 c   What distance did the runner travel
+ 66.8 315.8 d   What is the specific equation for the graph

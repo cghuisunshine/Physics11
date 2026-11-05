@@ -1,0 +1,58 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+      Investigation 3-1B  How Gravitational Force Depends on Distance
+      Purpose
+      To use data to discover the nature of the relationship between gravitational force and distance
+      Procedure
+      1.  In an imaginary experiment  Superman was hired to measure the force of               Table 3.1.1  The Force of Gravity 
+           gravity on a 1 kg mass at different distances from the centre of Earth. He          on a Kilogram Mass
+           used a precise spring balance to obtain the data in Table 3.1.1. Make a 
+           graph with the force of gravity  Fg  on the y-axis and the distance from the          Force of  Distance from 
+           centre of Earth  r  on the x-axis.                                                    Gravity  Centre of Earth 
+      2.  Your first graph will not be a straight line  because the relationship                     N            Mm
+            between Fg and r is not linear  y ɉ mx   b  and is not a direct proportion              9.81           6.37
+                                                                . n  
+             y ɉ mx  . The relationship is a power law   y = m x  where the power n is              2.45          12.74
+            neither 1 nor 0. How can you find out what the value of n is  If you look               1.09          19.11
+            at Figure 3.1.6  you will see the shapes of the graphs of several power law 
+                                                                                                    0.61          25.48
+            relationships. Which of these graphs does your graph most resemble  
+                                                                                                    0.39          31.85
+            To find out if your graph is a particular type of relationship  plot force of 
+            gravity  Fg  on the y-axis  as before  and your chosen rn on the x-axis. Plot       1 Mm = 1 megametre = 106 m
+            the following graphs and see which one gives a straight line:  a  Fg vs. ro1 
+             b  Fg vs. ro2
+      Concluding Questions                                                Graphs of various power law relations
+      1.    a    What variables must you plot to         x                                     x
+               obtain a straight line  through 
+               the origin                                     y = b   mtx                                           y = mtx 2
+           b    What is the specific equation for 
+                your final straight line
+      2.  From your equation  calculate the 
+          following:                                       y = mtx 
+           a   the distance at which the force 
+                                                      0                                 y      0                                y
+                of gravity on the kilogram mass        0                                        0
+                is half of what it is at Earth's       x                                        x
+                surface
+           b   the force of gravity on the 1 kg                        y = mt 1
+                                                                              x
+                                                                                                                       1
+                                                                                                               y = mt     
+                                                                                                                       x2
+                mass at a distance of 10 Earth                            or                                      or
+                                                                      y = mtx -1                              y = mtx -2
+                radii  63.7 Mm
+
+
+
+                                                      0                                 y      0                                y
+                                                       0                                        0
+                                                     Figure 3.1.6  Power law graphs
+
+
+
+
+   82  Chapter 3   Forces                                                    ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6

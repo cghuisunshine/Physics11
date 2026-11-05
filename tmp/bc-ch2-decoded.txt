@@ -1,0 +1,2017 @@
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+                                           The H sign is important because it indicates a change. In this situation  
+                                     displacement is defined as the change between the initial position and final position  not 
+                                     the displacement from the origin  which is your home.
+
+
+        Sample Problem 2.1.1  Calculating Displacement
+        A person is 2.0 m to the left of a viewpoint sign enjoying the view. She moves 4.5 m to the right of the sign to get a 
+        better view. What is the person's displacement
+
+        What to Think About                 How to Do It
+                                            q
+        1.   Assume right is positive       d 0  = 2.0 m [left] = m 2.0 m
+             and identify the positions.    q
+                                            d  f = 4.5 m [right] = 4.5 m
+
+                                                 q     q   q
+        2.  Find the displacement.          Hd  = d f m d 0
+                                                 q
+                                            Hd   = 4.5 m m 2.0 m
+                                                     = 2.5 m
+
+                                            The person's displacement is 2.5 m [right]
+
+
+        Practice Problems 2.1.1  Calculating Displacement 
+        1.  A woman walking her dog travels 200 m north  then 400 m west  then 500 m south.
+            a   What was the total distance she travelled
+
+
+
+
+             b   What was the magnitude of her displacement for the entire trip
+
+
+
+
+                                              
+
+
+                                                                                                  Continued on the next page
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                            Chapter 2   Kinematics  39
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+      Practice Problems 2.1.1  Calculating Displacement  Continued  
+      2.  The diagram below shows the displacements of a golf ball caused by a rookie golfer attempting to reach 
+          hole number 7 on Ocean View Golf and Country Club. The golfer requires six shots to put the ball in the hole. 
+          The diagram shows the six displacements of the ball.
+
+
+
+
+                             m                                   75 m
+                      100
+                                       100  m
+
+                                                                        28 m
+                   290 m to hole
+
+
+                                                         125 m
+                                                75 m
+
+
+
+          a   What is the total distance the golf ball travelled while the golfer was playing the seventh hole
+
+
+          b   What is the resultant displacement of the ball
+
+
+
+      3.  What is the total distance and displacement the dog takes after it leaves the front porch
+
+
+                            8 m                  8 m
+
+                    4 m                                    4 m
+                                       stop      8 m
+
+                    6 m
+                     53¡
+
+                 front 
+                 porch
+
+
+
+
+                                    The speed of an object such as a car is defined as the distance it travels in a unit of time. 
+   Speed                           
+                                    For highway traffic  speeds are measured in kilometres per hour  km/h . Typical highway 
+                                    speed limits are 80 km/h  100 km/h  and 120 km/h. Within city limits  speed limits may 
+                                    be 60 km/h  50 km/h  or 30 km/h  school zone or playground . The average speed of an 
+                                    athlete in a 100 m dash might be approximately 9.0 m/s. The speed of sound is 330 m/s  
+                                    while the speed of light is approximately 300 000 000 m/s or 300 000 km/s.
+
+
+
+   40  Chapter 2   Kinematics                                                  ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+                                           If you make a long journey by car  you might be interested in calculating your 
+                                    average speed for the trip. For example  if you travel a distance of 450 km in a time of 
+                                    6.0 h  you would calculate your average speed by dividing the total distance by the total 
+                                    time.
+                                                                           total distance
+                                                          average speed =                  =  450 km  = 75 km/h
+                                                                              total time       6.0 h
+                                            The symbol used for speed is v  and for average speed  v. Note that it is a line above 
+                                    the v  not an arrow. The formula for calculating average speed from distance  d  and time 
+                                     t  is therefore:
+                                                                                   a" d
+                                                                                   x "
+                                                                                        t
+
+                                          If you are driving along the highway and spot a police car parked beside the road 
+                                    with its radar aimed at your car  you will be less interested in your average speed and 
+                                    more concerned with your instantaneous speed. That is how fast your car is going at this 
+                                    instant in time! Your speedometer will indicate what your instantaneous speed is.
+
+
+
+         Quick Check
+         1.  a   What is the difference between average speed and instantaneous speed
+
+
+
+
+             b   Under what condition may average speed and instantaneous speed be the same
+
+
+
+
+         2.  A tourist travels 320 km in 3.6 h. What is her average speed for the trip
+
+
+
+
+         3.  A trucker travels 65 km at an average speed of 85 km/h. How long does the trip take
+
+
+
+
+         4.  If your car averages 92 km/h for a 5.0 h trip  how far will you go
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                              Chapter 2   Kinematics  41
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+                                    You learned that speed is distance travelled in a unit of time. Average speed is total 
+   The Diõerence      
+                       distance divided by time  and instantaneous speed is the speed of an object at a 
+   Between Speed and  particular instant. If an object moves along at the same speed over an extended period of 
+   Velocity            time  we say its speed is uniform or constant.
+                                           Uniform speed is uncommon  but it is possible to achieve nearly uniform speed 
+                                    in some situations. For example  a car with icruise controlw may maintain fairly constant 
+                                    speed on the highway. Usually  however  a vehicle is making small changes in speed and 
+                                    direction all the time.
+                                           If an object is not travelling in a straight line all the time  then its direction becomes 
+                                    important and must be specified. When both the size and the direction of a speed are 
+                                    specified  we call the two properties  speed and direction  the velocity of the object. The 
+                                                            q
+                                    symbol for velocity is x . If you say your car is moving 80 km/h  then you are describing 
+                                    your car's speed. If you say your car is travelling 80 km/h in a northerly direction  then you 
+                                    are describing your car's velocity. The difference between speed and velocity becomes 
+                                    important in situations where direction changes during a trip. For example  when a ball 
+                                    is thrown into the air  both its speed and its direction change throughout its trajectory  
+                                    therefore velocity is specified in this situation. Velocity is calculated by finding the 
+                                    displacement of an object over a period of time. Mathematically this is represented by:
+                                                                                   q      q    q
+                                                                                          d f o d 0
+                                                                             v  =  Hd  = 
+                                                                            q
+                                                                                   Ht        Ht
+                                   Speed and velocity can be graphically represented. The slope of a position-time graph 
+   Position-Time                  
+                                   gives the velocity of the moving object. A positive slope indicates positive velocity. A 
+   Graphs                          negative slope indicates negative velocity. When an object is not moving  the position 
+                                   does not change  so the slope is zero. That is  the line is horizontal.
+                                         Sometimes it can be confusing to determine the direction and the sign to use. It is 
+                                   important to remember what point of view or frame of reference you are using to observe 
+                                   the action. For example  if you are riding a bike toward your friend at a velocity of  
+                                   10 km/h [west]  your friend sees you coming at 10 km/h [east]. Both of you observe the 
+                                   same situation  it's just the direction that is different. That is why it is important to know 
+                                   which direction is positive and which direction is negative before you start. Usually  if all 
+                                   the motion is in one direction  positive values will be used unless indicated. That will be 
+                                   the case in this book.
+                                         The next sample problem describes how the motion of a skateboarder can be 
+                                   solved mathematically and graphically and the velocity of the skateboarder determined.
+
+
+
+
+   42  Chapter 2   Kinematics                                                 ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+        Sample Problem 2.1.2  Solving Motion Problems Mathematically
+        You are on a skateboard and moving to the right covering 0.5 m each second for 10 s. What is your velocity
+
+        What to Think About                                             How to Do It
+                                                                        q
+        1.  Motion is uniform so the velocity is the                    d 0 = 0.0 m
+            same for each time interval. Right will                     q
+                                                                        d f = 0.5 m
+            be positive.
+                                                                        Ht     = 1.0 s
+                                                                                   q             q   q
+        2.  Solve for velocity.                                         q     Hd     d f  o  d 0
+                                                                        v  =      = 
+                                                                              Ht        Ht
+                                                                          =  0.5 m m 0.0 m
+                                                                                  1.0s
+                                                                          = 0.5 m/s
+        3.  Include direction in the answer  which 
+            is right since the answer is positive.                      vq = 0.5 m/s [right]
+
+
+        Sample Problem 2.1.3 Solving Motion Problems Graphically
+        You are on a skateboard and moving to the right covering 0.5 m each second for 10 s. What is your velocity
+
+        What to Think About                  How to Do It
+        1.  Collect data and record in 
+            table. Moving right will be          d  m                 0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0
+            considered positive.
+                                                 t  s                 0 sample 10 pt
+                                                                           1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 1.0
+
+
+        2.  Graph data and draw best                                   Position vs time
+            fit line.                                                 of a skateboarder
+
+                                                            5
+                                             Position  cm
+
+
+
+
+                                                            4
+                                                            3
+                                                            2
+                                                            1
+                                                            0
+                                                              0  1  2  3  4  5  6  7  8  9  10
+                                                                          Time  s
+
+
+
+                                                                        q         q         q
+                                                      Hd      d f  o d 0 q               
+                                             slope =       =             = v
+                                                       Ht        Ht
+        3.  Find slope as it is equal 
+            to the velocity of the           vq" =  5.0 m m 0.0 m
+            skateboarder.                                10 s
+                                               = 0.5 m/s
+        4.  The slope is positive  so the    vq= 0.5 m/s [right]
+            direction is to the right.
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                               Chapter 2   Kinematics  43
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+     Practice Problems 2.1.3 Solving Motion Problems Graphically
+     1.  Describe the motion represented in each of the following position-time graphs.
+
+
+
+              
+              d
+
+
+                        Tt
+          a
+
+
+
+
+              
+              d
+
+
+                        Tt
+          b
+
+
+
+
+              
+              d
+
+
+                        Tt
+          c
+
+     2.  Sketch a graph of each of the following situations.
+          a   A golf ball is rolling towards a cup at 1.5 m/s [west].
+
+
+
+
+          b   A person is watching from the view of the cup and seeing the ball roll 1.5 m/s [east].
+
+
+
+
+          c   A person is traveling at 1.5 m/s [west] watching the cup roll towards the hole.
+
+
+
+
+     3.  a   Fill in the data table if a car is traveling at 30 km/h through a school zone.
+
+              Time  s         1.0         2.0          3.0         4.0        5.0         6.0          7.0      8.0
+
+          Distance  m
+
+
+          b   Graph this data on a distance vs. time graph.
+
+
+
+
+   44  Chapter 2   Kinematics                                              ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+         Investigation 2-1  Measuring the Speed of a Model Car
+         Purpose
+         To measure the speed of a model car  such as a radio-controlled vehicle
+         Procedure
+         1.  Remove a 5.0 m length of ticker tape from a roll. Pass one end of it through a recording timer  and then tape it to 
+             a battery-powered toy car.  Figure 2.3
+
+
+
+
+                battery-powered 
+                toy car
+
+
+
+
+                    recording 
+                    timer
+
+             Figure 2.1.1  Step 1
+
+
+         2.  Turn on the timer and let the car travel at its full speed until all the tape has passed through the timer.
+         3.  Every six dots is one-tenth of a second. Mark off the time intervals in one-tenth of a second on your tape
+         4.  Measure the distance traveled in each tenth of a second. Record your data in a table similar to Table 2.1.1.
+
+             Table 2.1.1  Data Table for Investigation 2-1
+
+
+
+                Time  s         0.0      0.1     0.2         0.3   0.4   0.5   0.6   0.7   0.8   0.9   1.0     1.0    1.1     y
+
+
+              Distance per 
+              interval  cm
+                                                                                                                              y
+             Total distance 
+                   cm                                                                                                         y
+
+         5.  Create a distance vs. time graph. On the y-axis  use total distance and on the x-axis  use time. Draw a best-fit line 
+             on your graph.
+         6.  Find the slope of your graph and record it along with the appropriate units.
+         Concluding Questions
+         1.  What does the slope of a distance-time graph represent
+         2.  Find the average speed of the toy car over five 1 s intervals of the trip.
+         3.  Compare your slope of the distance-time graph with your average speed over the five 1 s intervals. 
+         4.  Why might the average speed of the car during the first 1 s intervals be less than the average speed later in the 
+             trip
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                              Chapter 2   Kinematics  45
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   2.1  Review Questions
+   1.  Can objects with the same speed have different         4.  If the average speed of your private jet is  
+       velocities  Why or why not                                 8.0 w 102 km/h  how long will it take you to  
+                                                                  travel a distance of 1.8 w 103 km
+
+
+
+
+   2.  What are two ways of describing the direction of an 
+       object's motion
+
+
+
+
+                                                              5.  A red ant travels across a driveway  which is 3.5 m 
+                                                                  wide  at an average speed of 2.6 cm/s. How long 
+                                                                  will the ant take to cross the driveway  Express your 
+                                                                  answer  a  in seconds and  b  in minutes.
+
+
+
+
+   3.  If you run with an average speed of 12.0 km/h  how 
+       far will you go in 3.2 min
+
+
+
+
+   46  Chapter 2   Kinematics                                       ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+      6.  If your car moves with a steady speed of 122 km/h        8.  An object is moving with uniformly increasing 
+          for 20.0 min  then at a steady speed of 108 km/h for         speed. Its speed at time zero is 0 m/s.
+          30.0 min  what is the average speed of your car for           a   If its average speed during the first second is  
+          the entire trip                                                   14 m/s  at what time will its instantaneous speed 
+                                                                            be 14 m/s
+
+
+
+
+      7.  A car moves with a steady speed of 84 km/h for  
+          45 min  then 96 km/h for 20 min.
+           a   What was the total distance travelled during the 
+               whole trip
+
+
+                                                                       b   What is its instantaneous speed at the end of the 
+                                                                           first second
+
+
+
+
+          b   What is its average speed for the whole trip
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                         Chapter 2   Kinematics  47
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   2.2  Acceleration
+
+      Warm Up
+      Below are two blank speed-time graphs.  
+      On graph  a  sketch the slope that represents a sports car traveling at constant speed.  
+      On graph  b  sketch the slope of the same car starting from rest and speeding up at a constant rate.
+
+                          Speed vs. Time                                                        Speed vs. Time
+          Speed
+
+
+
+
+                                                                           Speed
+
+                                     Time                                                            Time
+                  a                                                                b
+                                                           
+
+
+                                      Whenever the velocity of an object changes  the object experiences acceleration. 
+   Changing Velocity              
+                                      Acceleration is a change in velocity over a period of time:
+
+                                                                                   change in velocity
+                                                                   acceleration = 
+                                                                                    change in time
+
+
+                                              The symbol for acceleration is a. Velocity has the same symbol as speed  which is v. 
+                                      If the velocity at the start of the time interval is v0  and at the end of the time interval is vf  
+                                      then the change in velocity will be vf o v0. If the time at the beginning of the time interval 
+                                      is t0  and the time at the end of the time interval is tf  then the change in time  the time 
+                                      interval  is tf o t0. Using these symbols  acceleration can be defined as:
+
+                                                                              v  o v        Tv
+                                                                          a =  f 0  or a = 
+                                                                              tf o t0       Tt
+                                                                                                                         
+                                      where the H symbol is shorthand for ichange inw or iinterval.w
+                                               Since velocity has two aspects to it  both speed and direction  acceleration can 
+                                      occur under three conditions:
+                                       a   if speed changes  
+                                       b  if direction changes or 
+                                       c   if both speed and direction change.
+                                               The standard unit for expressing acceleration is m/s2. An object is accelerating at a 
+                                      rate of 1 m/s2 if its speed is increasing at a rate of 1 m/s each second. 
+
+
+   48  Chapter 2   Kinematics                                                          ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+        Sample Problem  2.2.1  Calculating Acceleration
+        A runner racing in a 100 m dash accelerates from rest to a speed of 9.0 m/s in 4.5 s. What was his average 
+        acceleration during this time interval
+
+        What to Think About                          How to Do It
+                                                                 vf m v0
+        1.  Determine the correct formula.           a =  H v =  t  m t
+                                                          Ht      f    0 
+
+
+                                                       =  9.0 m/s m 0 m/s
+                                                             4.5 s m 0 s
+        2.  Solve for acceleration. Note that 
+            runner's average acceleration was        a = 2.0 m/s2
+            2.0 m/s/s  which is usually written 
+            2.0 m/s2                                 The runner's average acceleration was 2.0 m/s2.
+
+
+
+        Practice Problems 2.2.1  Calculating Acceleration
+        1.  What is the average acceleration for the following
+            a   A car speeds up from 0 km/h to 60.0 km/h in 3.00 s.
+
+
+
+
+         
+             b   A runner accelerates from rest to 9.00 m/s in 3.00 s.
+
+
+
+
+        2.  What is the average acceleration of a truck that accelerates from 45.0 km/h to 60.0 km/h in 7.50 s
+
+
+
+
+        3.  A car travelling 120 km/h brakes hard to avoid hitting a deer on the road  slowing to 60 km/h in 4.0 s. What is 
+            its acceleration  Why is it negative
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                            Chapter 2   Kinematics  49
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+                                                         Sometimes you will find a situation where the acceleration is negative. You may think 
+   Negative                                             
+                                                         this implies that an object is slowing down  but that is not always the case. Consider the 
+   Acceleration                                          situations shown in Figure 2.2.1.
+
+                                                                                                                                                
+                                                                      v                             v                    v                         v
+
+                                                                      a                             a                     a                        a
+                                                             a                                  b                 c                         d
+                                                           Figure 2.2.1  The vectors represent the velocity and acceleration of a car in different situations.
+
+
+                                                                 In  a  and  b  the velocity of the car and the acceleration are in the same direction. 
+                                                           This means the car is speeding up  even though the acceleration is negative in  b . In  c  
+                                                           and  d  the velocity and acceleration are in opposite directions and the car is slowing 
+                                                           down. We can summarize that this way:
+
+
+                                                                  When the velocity and acceleration are in the same direction  the object is speeding 
+                                                                 up  even if the acceleration is negative. When the velocity and acceleration are in 
+                                                                 opposite directions  the object is slowing down.
+
+
+                                                         In Figure 2.2.2  fictitious data is used to show how your results from Investigation 2-1 
+   Graphing                                           
+                                                         might have been graphed. In this figure  the average speed of the cart is plotted on the  
+   Acceleration                                          y-axis  since it is the dependent variable. Time is on the x-axis  because it is the 
+                                                         independent variable.
+                                                                 Notice that in Figure 2.2.2 the speeds are plotted halfway through each time 
+                                                         interval. For example  the average speed of 11 cm/s  which occurs in the first time interval 
+                                                         of the sample tape  would be plotted at 0.05 s  not at 0.10 s. This is because the average 
+                                                         speed during the interval will occur halfway through it  not at the end of the interval. 
+                                                         This assumes  of course  that the speed is increasing at a constant rate and therefore 
+                                                                                                       acceleration is constant. The average speed for 
+                                                                                                       each interval is the same as the instantaneous 
+                                            Speed vs. Time for an Accelerating Cart
+                     80.0
+                                                                                                       speed half way through the interval  if 
+                                                                                                       acceleration is constant.
+                     70.0
+                                                       0.80 s  62.0 cm/s                                      The graph you see in Figure 2.2.2 is  in fact  
+                     60.0                                                                              a graph of the instantaneous speed of the cart 
+    Speed  v  cm/s
+
+
+
+
+                     50.0
+                                                                                                       vs. time  although average speeds were used to 
+                                                                          rise
+                                                                                                       obtain it. To write an equation describing the 
+                     40.0
+                                  0 s  7.0 cm/s
+                                                                           Ƌv = 62.0 cm/s o 7.0 cm/s   line in this graph  you need to know the  
+                                                                           Ƌv = 55.0 cm/s
+                     30.0                                                                              y-intercept and the slope.
+                     20.0
+                                                   run  Ƌt = 0.80 s o 0 s
+                     10.0                                   Ƌt = 0.80 s
+
+                         0
+                             0     0.10  0.20  0.30  0.40  0.50  0.60  0.70  0.80  0.90  1.00
+                                                                 Time  t  s
+
+   Figure 2.2.2  An example of a graph showing acceleration
+
+
+
+
+   50  Chapter 2   Kinematics                                                                               ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+                                          By inspection  the y-intercept  b  equals 7.0 cm/s.  The slope m is found by using the 
+                                    points  0 s  7.0 cm/s  and  0.80 s  62 cm/s .  Notice that the irisew of the line is equal to the 
+                                    change in the speed of the cart  Hv  and  Hv  = vf o v0. The irunw of the graph is the change 
+                                    in time Ht  and Ht  = tf o t0.
+
+                                                              Hv vf o v0         62.0 cm/s o 7.0 cm/s     55.0 cm/s
+                                               slope = m =        =           =                        =             = 69 cm/s2
+                                                              Ht     tf o t0          0.80 s o 0 s          0.80 s
+                                          Notice that the slope has units of acceleration. This is because the slope of the 
+                                    speed-time graph is acceleration! Remember that acceleration is equal to the change in 
+                                    speed of the cart per second. The slope m = Hv/Ht  which is the acceleration of the cart.
+                                          The equation for the line in Figure 2.2.2 will have the same form as the general 
+                                    equation for a straight line  which is y = mx   b. When describing experimental results 
+                                    from a graph  however  we substitute the specific symbols for the variables used in the 
+                                    experiment. We also use the numerical values for the y-intercept and slope  complete 
+                                    with their measuring units. The equation for the line in Figure 2.2.2 is therefore 
+                                                                          v =  69 cm/s2 t   7.0 cm/s
+                                    where v  is the speed of the cart at any time t.
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                Chapter 2   Kinematics  51
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   2.2  Review Questions
+   1.  A policeman travelling 60 km/h spots a speeder                3.  The graph below shows lines representing speed 
+       ahead  so he accelerates his vehicle at a steady rate             vs. time for an accelerating aircraft  prepared by 
+       of 2.22 m/s2 for 4.00 s  at which time he catches up              observers at two different locations on the runway.
+       with the speeder. 
+                                                                                                                 Speed vs. Time
+        a   How fast was the policeman travelling in m/s
+                                                                                                                                           a           b
+                                                                                         70.0
+                                                                                         60.0
+
+
+
+
+                                                                         Speed  v  m/s
+                                                                                         50.0
+                                                                                         40.0
+                                                                                         30.0
+                                                                                         20.0
+                                                                                         10.0
+                                                                                             0
+                                                                                                 0    1.00    2.00    3.00         4.00        5.00    6.00
+        b    How fast is the police car travelling after 4.00 s                                                       Time  t  s
+             Give your answer in both m/s and km/h.
+                                                                          a   What is the equation for line  a
+
+
+
+
+                                                                          b   What is the equation for line  b
+
+        c    If the speeder has a constant velocity  sketch the 
+             motion of both the speeder and police car on a 
+             speed vs. time graph below.
+
+                                                                          c   What is the acceleration of the aircraft according 
+                                                                              to line  a
+
+
+
+
+                                                                          d   What is the acceleration of the aircraft according 
+   2.  A motorbike accelerates at a constant rate from a                      to line  b
+       standing start. After 1.2 s  it is travelling 6.0 m/s. How 
+       much time will have elapsed  starting from rest  
+       before the bike is moving with a speed of 15.0 m/s
+
+                                                                          e   Explain why the y-intercept for line  b  is 
+                                                                              different than the intercept for line  a .
+
+
+
+
+   52  Chapter 2   Kinematics                                                      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+      4.   A racing motorbike's final velocity is 38 m/s in 5.5 s     6.  The graph below describes the motion of a vehicle 
+           with an acceleration of 6.0 m/s2. What was the initial         whose acceleration changes twice.  Find the 
+           velocity of the motorbike                                      acceleration of the vehicle for the parts of the graph 
+                                                                          labeled  a   b  and  c  by finding the slope of each 
+                                                                          part of the graph.
+
+                                                                                                        Speed vs. Time for Changing Acceleration
+
+
+                                                                                                                         b
+                                                                                              30
+
+
+
+
+                                                                          Speed  v  m/s
+                                                                                              20          a                                    c
+
+                                                                                              10
+      5.   While starting your car  which is a standard gearshift  
+           you coast downhill getting to a speed of 2.0 m/s                                   0
+           before the engine starts. You accelerate back                                           0          2     4           6         8        10
+                                                                                                                             Time  t  s
+           uphill moving at 5.5 m/s. This takes a total of 3.0 s. 
+           If downhill is the positive direction  what is the 
+           average acceleration of your car                                 a
+
+
+
+
+                                                                            b
+
+
+
+
+                                                                            c
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                                       Chapter 2   Kinematics  53
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   2.3  Uniform Acceleration
+
+       Warm Up
+       In your own words  describe the difference between average velocity  initial velocity  final velocity  and a change 
+       in velocity.
+
+
+
+
+                                   In a situation where the speed of a moving body increases or decreases at a uniform rate 
+   Graphing                       
+                                   the acceleration is considered uniform. This motion can be graphed on a speed vs. time 
+   Acceleration                    and will be linear  Figure 2.3.1 . Since speed is the dependent variable  it is plotted on the 
+                                   y-axis. Time  the independent variable  will be on the x-axis.
+
+                                                                                  Speed vs. Time
+
+                                                                                               t  vf 
+
+                                                     vf
+                                                                                                                  v0 = initial speed
+                                                                                                                        = speed at t = 0
+                                     Speed  v  m/s
+
+
+
+
+                                                                                                                  vf  = mnal speed
+                                                                  0  v0
+
+
+                                                     v0
+
+
+
+                                                          0
+                                                              0                                         t
+                                                                                  Time  t  s
+                                 Figure 2.3.1  This graph shows speed changing at a uniform rate.
+
+
+                                          The y-intercept for the speed-time graph is b = v0  where v0 is the speed of the 
+                                    object at time t = 0. In Figure 2.3.1  the initial time is zero and the final time is t  so the 
+                                    time interval is simply Ht = t o 0 = t.
+                                                                            Hv
+                                          The slope of the graph is m =          = a  since acceleration is change in speed divided 
+                                                                            Ht
+                                    by change in time.                        v  o v
+                                                                       If a =  f 0
+                                                                                 t
+                                                                  Then at = vf o v0  and
+
+                                                                                        vf = v0   at       1
+                                                                                                
+                                          This is a general equation for any object that accelerates at a uniform rate. It says 
+                                    that the final speed of the accelerating object equals the initial speed plus the change in 
+                                    speed  at .
+
+
+   54  Chapter 2   Kinematics                                                                  ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+        Sample Problem 2.3.1  Determining Uniform Acceleration
+        The graph below shows the uniform acceleration of an object  as it was allowed to drop off a cliff. 
+         a   What was the acceleration of the object  
+         b   Write an equation for the graph.
+
+                                                  Speed vs. Time
+                         10.0
+
+                          9.0
+
+                          8.0
+                                                                                             Ƌv = vf o v0
+                          7.0
+                                                                                             Ƌt = tf o 0
+         Speed  v  m/s
+
+
+
+
+                          6.0                                                 Ƌv
+                          5.0
+
+                          4.0
+
+                          3.0
+
+                          2.0
+
+                          1.0
+                                                     Ƌt
+                           0
+                            0  0.10  0.20  0.30  0.40  0.50  0.60  0.70  0.80  0.90  1.00 
+                                                      Time  t  s
+
+
+        What to Think About                                                                           How to Do It
+         a                                                                                                       vf m v0
+        1.  The acceleration is determined by finding the slope                                       a =  Hv  = t  m t  
+            of the speed-time graph.
+                                                                                                           Ht     f    0
+
+                                                                                                        =  10.0 m/s m 2.0 m/s  = 8.0 m/s  
+                                                                                                               0.80 s m 0 s       0.80 s
+                                                                                                      a = 1.0 w 101 m/s2
+         b                                                                                            y = b   mx
+        1.  Determine the general equation for any straight 
+            line.
+                                                                                                      m = 1.0 w 101 m/s2
+        2.  For this line  the slope m is the acceleration.                                           b = 2.0 m/s
+            Inspection of the graph reveals that the y-intercept                                      x = t
+            b  is 2.0 m/s.                                                                            y = vf
+
+
+        3.  Derive the specific equation for this line.                                               vf = 2.0 m/s    1.0 w 101 m/s2 .t
+          Note that the final  specific equation for this graph 
+            includes the actual numerical values of the  
+            y-intercept and slope  complete with their 
+            measuring units. Once this equation is established  
+            it can be used in place of the graph  since it 
+            describes every point on the graph.
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                                    Chapter 2   Kinematics  55
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+     Practice Problems 2.3.1  Determining Uniform Acceleration
+
+                                                    Speed vs. Time
+
+
+                           60.0
+
+                           50.0
+           Speed  v  m/s
+
+
+
+
+                           40.0
+
+                           30.0
+
+                           20.0
+
+                           10.0
+
+                             0
+                               0    1.0  2.0  3.0  4.0  5.0  6.0  7.0  8.0  9.0   10.0 
+                                                       Time  t  s
+
+     1.       a   What is the y-intercept  v0  for the graph shown above   
+      
+
+            b   What is the slope of the graph
+
+
+            c   What property of the moving object does this slope measure
+
+
+            d   Write the specific equation for the graph  using symbols v for speed and t for time.
+
+
+
+
+     2.  The following equation describes the motion of a ball thrown straight down  by someone leaning out of the 
+         window of a tall building:
+
+                                                                    vf =   5.0 m/s      9.8 m/s2 .t
+
+            a   At what speed was the ball initially thrown out of the window
+
+
+
+
+            b   What was the acceleration of the ball
+
+
+
+
+            c   How fast was the ball moving after 1.2 s
+
+
+
+
+   56  Chapter 2   Kinematics                                                                ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+                                    Consider an object that is accelerating uniformly from initial speed v0 to a final speed vf 
+      Calculating Distance    in time t. as shown in Figure 2.3.2. How would you calculate the distance travelled by the 
+      from Uniform            object during this time  
+      Acceleration
+                                                                    Speed vs. Time
+
+                                                                                   t  vf 
+
+
+                                                                                            v0 = initial speed
+
+                                    Speed  v  m/s
+                                                                                                 = speed at t = 0
+
+                                                    0  v0                                   vf  = mnal speed
+
+
+
+
+                                                                      Time  t  s
+                                    Figure 2.3.2  This graph represents an object accelerating at a uniform rate.
+
+
+                                           The total distance d travelled in time t will equal the average speed vo multiplied by 
+                                    time t. The average speed vo is just the average of the initial speed v0 and the final speed  
+                                    vf   which is:
+                                                                                           v    v
+                                                                                      vo =  0 f
+                                                                                              2
+                                                                                                     v0   vf
+                                    Distance travelled is d = vo  or                            d =           t t                2
+                                                                                                        2
+                                    However  it has already been shown that                    vf = v0   at                      1
+                                                                                                    v    v  at
+                                    Therefore                                                   d =  0 0         t t
+                                                                                                         2
+                                                                 
+                                                                                                       2v0   at         2v t   at2
+                                    and                                                         d =               t t =  0
+                                                                                                          2                 2
+
+                                    Finally                                                               1
+                                                                                                d = v0t      at2                 3
+                                                                                                          2
+                                                                                                                
+                                          Sometimes you encounter situations involving uniform acceleration where you 
+                                    have no information about the time interval  t  during which the motion occurred. If 
+                                    you know the initial speed v0 and the final speed vf    you can still calculate the distance 
+                                    travelled if you know at what rate the object is accelerating.
+                                                                                          v    v
+                                          For uniform acceleration                  d =  0 f t t  and vf = v0   at
+                                                                                             2
+                                                                                          vf o v0
+                                    Therefore                                        t = 
+                                                                                             a
+                                                                                          v0   vf      v  o v    v 2 o v02
+                                    Substituting for t in the first equation        d =             t   f 0 =   f
+                                                                                             2            a         2a
+                                    Thus                                                    2ad = v2f  o v20
+
+                                    Therefore                                                  v2f = v20    2ad                  4
+                                                                                                                              
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                             Chapter 2   Kinematics  57
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+                                   Four equations describing uniform acceleration were introduced above. These four 
+   The Four Uniform               
+                                   equations are extremely useful in this course and in future courses you might take in 
+   Acceleration                    physics. For your convenience  they are summarized here:
+   Equations
+                                                                   1   vf = v0   at  
+                                                                            v    v
+                                                                   2   d =  0 f t t 
+                                                                               2
+                                                                    
+                                                                                 1
+                                                                   3   d = v0t    at2 
+                                                                                 2
+
+                                                                   4   v2f  = v20   2ad
+                                    
+
+
+       Quick Check
+       1.  What is the initial velocity of a car accelerating east at 3.0 m/s2 for 5.0 s and reaching a final velocity of  
+           25.0 m/s east
+
+
+
+
+       2.  If we assume acceleration is uniform  how far does a plane travel when it lands at 16.0 m/s west and comes to 
+           rest in 8.0 s  
+
+
+
+
+       3.  What is the stopping distance of a car if it accelerates at o9.29 m/s2 and has an initial velocity of 100 km/h.
+
+
+
+
+   58  Chapter 2   Kinematics                                                  ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+         Investigation 2-3  Measuring Acceleration
+         Purpose
+         To measure the uniform acceleration of an object 
+         Part 1 
+         Procedure
+         1.  Figure 2.3.3 shows one way to produce uniformly accelerated motion.  Your teacher may have a different 
+             method and will explain it to you.  Remove a 1-m piece of ticker tape from a roll. Pass the tape through a 
+             recording timer and tape it to a laboratory cart  as shown in the diagram. A 500 g mass is attached to the cart by 
+             a 1 m string that passes over a pulley. The force of gravity on the mass accelerates both the mass and the cart.
+         2.  For best results in this experiment  there should be no slack in the ticker tape before the cart is released. One 
+             partner should place the hanging mass over the pulley  and hold onto the cart so that it does not accelerate 
+             prematurely. When all is ready  simultaneously turn on the timer and release the cart.
+
+
+                                                 masking tape           ticker tape
+                                                                         no slack
+                                                            cart
+
+
+
+             500 g
+             mass
+
+                               board to 
+                               protect 
+                               the noor
+
+             Figure 2.3.3  Apparatus setup for Part 1
+
+
+         3.  Your finished ticker tape record will look something like the one in Figure 2.3.4. Often there is a smudged 
+             grouping of dots at the start  so choose the first clear dot and label it the i0thw dot  Figure 2.3.4 . On your 
+             tape  mark clearly the 0th dot  6th dot  12th dot  18th dot  24th dot  and so on until you have at least six time 
+             intervals. The timer has a frequency of 60 Hz. This means it makes 60 vibrations each second. The time interval 
+             between dots on your tape is 1/60 s. If you use a time interval of six dots  this is 6/60 s or 1/10 s. In other words  
+             an interval of six dots is the same as 0.10 s.
+
+             0th dot 6th dot      12th dot              18 th dot
+
+
+
+
+               0  s   0.1  s       0.2  s                 0.3  s
+
+
+
+
+                                             1     2        3       4   5     6
+
+             Figure 2.3.4  The beginning of the tape may have a smudged group of dots.
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                Chapter 2   Kinematics  59
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+      4.  Carefully measure the distance the cart travelled during each successive 0.10 s time interval. For example  in the 
+          sample tape in Figure 2.3.4  the distance travelled during the interval between 0 and 0.10 s was 1.1 cm.  
+          Figure 2.3.5 shows how to measure the distance travelled during the second 0.10 s interval between 0.10 s and 
+          0.20 s. In the sample tape  the distance is 1.8 cm. Prepare a table like Table 2.3.1. Record the distances travelled 
+          in each of the recorded intervals in your table. 
+
+              0th dot 6th dot        12th dot           18 th dot
+
+
+
+
+                0  s   0.1  s         0.2  s              0.3  s
+
+
+
+
+                                      1         2   3       4         5     6      7
+
+          Figure 2.3.5  How to measure the distance between 0.10 s and 0.20 s
+
+
+          Table 2.3.1  Data for an Accelerating Cart
+
+                          Time Interval                            Distance Travelled           Average Speed for the 
+                                s                                          cm                      Interval  cm/s
+
+                                0 to 0.10
+
+                           0.10 to 0.20
+
+                           0.20 to 0.30
+                           0.30 to 0.40
+                           0.40 to 0.50
+                           0.50 to 0.60
+
+      5.  Your next task is to figure out the average speed of the cart during each of the 0.10 s time intervals. Since 
+          average speed is just the distance travelled during the time interval divided by the time interval  all you have 
+          to do is divide each measured distance by the time interval  0.10 s . During the first time interval on the sample 
+          tape  the cart moved a distance of 1.1 cm. The average speed of the cart during the first 0.10 s was therefore
+
+                                                                           o 1.1 cm
+                                                                           v  =          = 11 cm/s
+                                                                                 0.10 s
+
+          During the second time interval  between 0.10 s and 0.20 s  the cart moved a distance of 1.8 cm. Its average 
+          speed during the second interval was therefore
+                                                            o 1.8 cm
+                                                            v  =          = 18 cm/s
+                                                                  0.10 s  
+
+      6.  Using your own tape data  calculate the average speed of the cart during each of the time intervals and 
+          complete Table 2.3.1.
+
+
+
+
+   60  Chapter 2   Kinematics                                                           ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+         Concluding Questions
+         1.  a   What was the average speed of the cart during the first 0.10 s time interval
+             b   What was the average speed of the cart during the second 0.10 s interval
+             c   By how much did the average speed of the cart increase between the first interval and the second interval
+             d   Calculate the acceleration of the cart between the first interval and the second interval by dividing the 
+                 increase in average speed by the time interval  which was 0.10 s.
+                         Example:  On the sample tape  the average speed increased from 11 cm/s to 18 cm/s between the 
+                  first and second time intervals. Therefore  the acceleration was:
+                                                           18 cm/s o 11 cm/s 7 cm/s
+                                                      a =                     =           = 70 cm/s2
+                                                                0.10 s           0.10 s
+
+         2.  Calculate the acceleration of the cart between the second and third intervals  third and fourth intervals  fourth 
+             and fifth intervals  and fifth and sixth intervals. Allowing for slight variations due to experimental errors  is there 
+             any pattern to your results
+         Part 2
+         Procedure
+         1.  Using your data table from Investigation 2-1  Table 2.1.1  plot a graph of speed vs. time for the accelerating 
+             cart  like the example shown below in Figure 2.3.6. Remember that the speeds in the table are average speeds 
+             for each interval and should be plotted midway through each time interval.
+
+                                                     Speed vs. Time
+                                                                               a           b
+                             70.0
+                             60.0
+             Speed  v  m/s
+
+
+
+
+                             50.0
+                             40.0
+                             30.0
+                             20.0
+                             10.0
+                                 0
+                                     0    1.00    2.00    3.00         4.00        5.00    6.00
+                                                          Time  t  s
+             Figure 2.3.6  This is an example of a speed-time graph like the one 
+             you will draw.
+
+         2.  Draw a single straight line through all the plotted points. If there are stray points due to experimental error  try 
+             to draw a line that leaves as many strays on one side of it as on the other. If a point is an obvious gross error  
+             ignore it when drawing your ibest-fit line.w If in doubt  ask your teacher for advice.
+         3.  Determine the y-intercept of your line. Also  figure out the slope of the line using the method outlined for  
+             Figure 2.2.1 in section 2.2.
+         Concluding Questions
+         1.  What was the acceleration of your cart according to the slope of your graph
+         2.  What is the equation for the speed-time graph you plotted for the cart
+         3.  In Investigation 2-1  you figured out the acceleration of your cart simply by comparing average speeds of 
+             the cart in successive time intervals. Compare the acceleration you calculated in Investigation 2-1 with the 
+             acceleration you just obtained using the slope of your speed-time graph. Which method of finding the 
+             acceleration iaverages outw the experimental errors better  Explain.
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                Chapter 2   Kinematics  61
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   2.3  Review Questions
+   1.  Use the following graph to answer the questions                         3.  What is the rate of acceleration of a mountain bike  
+       below.                                                                      if it slows down from 12.0 m/s to 8.0 m/s in a time of 
+                                                                                   3.25 s
+                                            Speed vs. Time
+
+
+                       6.0
+
+                       5.0
+       Speed  v  m/s
+
+
+
+
+                       4.0
+
+                       3.0
+
+                       2.0
+
+                       1.0
+
+                         0
+                         0    0.10  0.20  0.30  0.40  0.50  0.60  0.70  0.80   4.  A truck parked on a down slope slips its brakes and 
+                                               Time  t  s                          starts to coast downhill  accelerating from rest at a 
+       a   What is the y-intercept  v0  of the speed-time                          constant rate of 0.80 m/s2.
+           graph shown above                                                        a   How fast will the truck be moving after 5.0 s
+
+
+
+       b   What is the acceleration of the moving object
+
+
+       c   What is the specific equation for this graph
+
+
+   2.  A cyclist coasting along a road allows her bike to 
+       come to rest with the help of a slight upslope in 
+       the road. The motion of the bike is described by the 
+       equation:
+                               vf = 6.6 m/s o  2.2 m/s2 t t                        b   How far will the truck coast during the 5.0 s
+
+       a   What was the initial speed of the bike
+
+
+
+
+       b   At what rate did the bike accelerate while 
+           coming to rest
+
+
+
+
+       c   How long did the bike take to come to rest
+
+
+
+
+   62  Chapter 2   Kinematics                                                        ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+      5.  An aircraft starts from rest and accelerates at a        7.  A very frustrated physics student drops a physics 
+          constant rate down the runway.                               textbook off the top of the CN tower.  If the tower 
+           a   After 12.0 s  its speed is 36.0 m/s. What is its        is 5.3 w 102 m high  how long will the book take 
+               acceleration                                            to reach the ground  assuming there is no air 
+                                                                       resistance  
+
+
+
+
+           b   How fast is the plane moving after 15.0 s
+
+
+
+
+           c   How far down the runway will the plane be after 
+               15.0 s
+
+                                                                   8.  If an electron accelerates in a space of 5.0 cm  
+                                                                       from rest to 1/10 c   where c is the speed of light   
+                                                                       3.0 w 108 m/s  what is its acceleration
+
+
+
+
+      6.  A truck is moving along at 80.0 km/h when it hits  
+          a gravel patch  which causes it to accelerate at  
+          o5.0 km/h/s. How far will the truck travel before it 
+          slows to 20.0 km/h
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                          Chapter 2   Kinematics  63
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   2.4  Acceleration of Bodies Due to Gravity
+
+      Warm Up
+      Take a piece of paper and book in each hand and raise them to about the height of your shoulder. Predict which 
+      one will hit the ground first if they are both dropped at the same time. Drop both and record results. Now 
+      crumple the same piece of paper and repeat. Describe and suggest reasons for any differences between the two 
+      events.
+
+
+
+
+                                       One of the most common situations involving uniform acceleration is the phenomenon 
+   Free Fall                          
+                                       known as free fall. For example  if a coin drops out of your pocket  it accelerates toward 
+                                       the ground. If the effects of air resistance are ignored  the acceleration of the coin toward 
+                                       the ground is uniform. The coin starts its downward fall with zero speed  but gains 
+                                       speed as it falls toward Earth. Since gravity is the cause of the acceleration  we call the 
+                                       acceleration during free fall the acceleration of gravity. The acceleration of gravity is 
+                                       given a special symbol  g.
+                                                                            The magnitude of g depends on your location. At Earth's 
+                                                                     surface  g is approximately 9.81 m/s2. At higher altitudes  
+                                                                     g decreases. For our present purposes  g is assumed to be 
+                                                                     constant at Earth's surface and to be 9.81 m/s2. On the Moon  
+                                                                     the magnitude of g is approximately 1/6 of what it is here on 
+                                                                     Earth's surface. A body in free fall near the Moon's surface has 
+                                                                     an acceleration of gravity of only 1.60 m/s2.
+                                                                            Of course  the four equations for uniform acceleration 
+                                                                     apply to free fall as well as other uniform acceleration 
+                                                                     situations. The symbol g may be substituted for a in those 
+                                                                     equations.
+
+
+
+
+   Figure 2.4.1  These sky divers are in free fall until they 
+   open their parachutes to slow their descent.
+
+
+   64  Chapter 2   Kinematics                                                    ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+        Sample Problem 2.4.1  Free Fall
+        A golf ball is dropped from the top of the CN tower. Assuming that the ball is in true free fall  negligible air 
+        resistance  answer these questions: 
+         a   How fast will the ball be falling after 1.0 s
+         b   How far down will the ball have fallen after 1.0 s
+
+        What to Think About                                How to Do It
+         a
+        1.  Determine initial conditions in the            The ball starts from rest  so v0 = 0.0 m/s
+            problem so you can choose the correct          The rate of acceleration is g = 9.8 m/s2
+            formula.                                       The time of fall is t = 1.0 s
+
+        2.  Determine which formula to use.                The first uniform acceleration equation  1  applies to 
+                                                           this question.
+
+        3.  Solve.                                         vf = v0   at
+                                                           vf = 0 m/s    9.8 m/s2 1.0 s    
+                                                           vf = 9.8 m/s
+                                                           The ball will be falling 9.8 m/s after 1 s.
+         b
+        1.  Determine which formula to use.                The third uniform acceleration equation  3  applies 
+                                                           to this question.
+
+        2.  Solve.                                         d = v0t    1  at2
+                                                                      2
+                                                           d =  0 m/s 1.0 s     1 9.8 m/s2 1.0 s 1.0 s
+                                                                                2
+                                                           d = 4.9 m
+
+                                                           The ball will have fallen 4.9 m after 1 s.
+
+
+
+        Practice Problems 2.4.1  Free Fall
+        1.  a    How fast will the golf ball in the Sample Problem be moving after it has fallen a distance of 530 m   
+                 which is the height of the CN tower   Assume free fall.
+
+
+
+
+             b   Why does the ball not reach this speed when it hits the ground
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                               Chapter 2   Kinematics  65
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+     Practice Problems 2.4.1  Free Fall
+     2.  How high is the cliff if you toss a small rock off of it with an initial speed of 5.0 m/s and the rock takes 3.1 s  
+         to reach the water
+
+
+
+
+     3.  a    At the Pacific National Exhibition in Vancouver  one of the amusement park rides drops a person in free  
+              fall for 1.9 s. What will be the final velocity of the rider at the end of this ride
+
+
+
+
+          b   What is the height of this ride
+
+
+
+
+     4.  At an air show  a jet car accelerates from rest at a rate of 3g  where g is 9.81 m/s2. How far does the jet car  
+         travel down the runway in a time of 4.0 s
+
+
+
+
+                                   There are different types of projectile motion. From throwing a ball up and having it land 
+   Projectiles                    
+                                   on your hand to a golf ball being hit off a tee to throwing a rock off a cliff. The golf ball 
+                                   and rock examples require analysis of motion using two dimensions and will be studied in 
+                                   later courses. The example of throwing a ball up in the air and having it land back in your 
+                                   hand is an example of projectile motion in one dimension. This type of projectile motion 
+                                   will be studied next.
+                                          Recall that acceleration is a vector quantity with both magnitude and direction. 
+                                   In situations where the acceleration is caused by the force of gravity  the direction of 
+                                   acceleration is downward. This is a negative direction. In gravitational acceleration 
+                                   problems  therefore  you use a = 1 9.81 m/s2.
+                                          If a body is thrown into the air  it accelerates downward  a = 1 9.81 m/s2  at all times 
+                                   during the trajectory  whether the velocity is upward   zero  or downward  1 .
+                                          You throw a baseball straight up. It leaves your hand with an initial velocity of  
+                                   10.0 m/s. Figure 2.4.2 is a graph showing how the velocity of the ball varies with time  
+                                   starting when you begin to throw the ball and ending when you finish catching it. At A  
+                                   the ball has just left your hand. At C  the ball has just reached the glove in which you will 
+                                   catch the ball. Notice that between A and C  the velocity is changing at a uniform rate. If 
+                                   you take the slope of this graph  you will obtain the acceleration of the ball due to gravity 
+                                   alone.
+
+
+   66  Chapter 2   Kinematics                                                ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+                                                                Velocity vs. Time  for a Ball Thrown Straight up
+                                                                   A  0.2  9.8
+                                                         10.0
+
+                                                          9.0
+
+                                                          8.0
+
+                                                          7.0
+
+                                                          6.0
+
+                                                          5.0
+
+                                                          4.0
+
+                                                          3.0
+
+                                                          2.0
+                                     Velocity  v  m/s     1.0
+                                                                  D                            B                         E
+                                                            0
+                                                             0    0.2  0.4  0.6  0.8  1.0  1.2  1.4  1.6  1.8  2.0  2.2  2.4   Time  t  s
+                                                         o1.0
+
+                                                         o2.0
+
+                                                         o3.0
+
+                                                         o4.0
+
+                                                         o5.0
+
+                                                         o6.0
+
+                                                         o7.0
+
+                                                         o8.0
+
+                                                         o9.0
+
+                                                        o10.0
+                                                                                                                   C  2.2  o9.8
+
+                                      Figure 2.4.2  This graph represents the velocity of a ball as a function of 
+                                      time  when you throw a ball straight up in the air.
+
+
+
+
+         Quick Check
+         1.  In Figure 2.4.2  what was the acceleration of the ball
+              a   while it was being thrown
+
+
+             b   while it was in free fall
+
+
+             c   while it was being caught
+
+
+         2.  What point on the graph corresponds with the instant when the ball reached the ipeakw of its flight  Explain 
+             how you know this.
+
+
+
+
+         3.  What altitude did the ball reach  Hint: The distance the ball travels equals the average speed multiplied by 
+                                                                                                                  _
+             the time elapsed when it reaches its ipeakw altitude. What property of the graph would give you d = v  t t  
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                                                  Chapter 2   Kinematics  67
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   2.4  Review Questions
+   1.  On a certain asteroid  a steel ball drops a distance 
+       of 0.80 m in 2.00 s from rest. Assuming uniform 
+       acceleration due to gravity on this asteroid  what is                                          d   What point on the graph  A  B  C  or D  
+       the value of g on the asteroid                                                                     corresponds with the instant when the ball is at 
+                                                                                                          the peak of its flight  Explain your answer.
+
+
+
+
+                                                                                                      e   Why is the slope of the graph negative as soon 
+   2.  The graph below represents the velocity of a ball                                                  as the ball leaves the pitcher's hand
+       thrown straight up by a strong pitcher as a function 
+       of time. In the first part of the graph ending at 
+       A  the ball is accelerated to 39.2 m/s in a time of 
+       0.20 s. After the ball leaves the pitcher's hand  it 
+       experiences only the acceleration due to gravity                                               f   Why is the graph labelled velocity rather than 
+       until it is caught in a glove and brought to rest in the                                           speed
+       hand of the catcher.
+
+                                 Velocity vs. Time for a Ball Thrown Straight up
+                                  A  0.2 s  39.2 m/s
+                           40                                                                         g   How far up did the ball travel
+                           30
+
+                           20
+       Velocity  v  m/s
+
+
+
+
+                           10
+                                                       B  4.20 s  0 m/s   D  8.40 s  0 m/s
+                            0
+
+                          o10                                                                         h   How far down did the ball fall
+                          o20
+
+                          o30
+
+                          o40
+                                                                          C  8.20 s  o 39.2 m/s
+                             0      1.0  2.0  3.0  4.0  5.0  6.0  7.0  8.0  9.0  10.0
+                                                                                                      i   What is the average velocity of the ball for the 
+                                                           Time  t  s
+                                                                                                          whole trip from pitcher's hand to catcher's 
+                                                                                                          hand
+        a   What is the acceleration of the ball while it is 
+            being thrown
+
+
+                                                                                                  3.  A body in free fall accelerates at a rate of 9.81 m/s2 at 
+                                                                                                      your latitude. How far does the body fall during  
+        b   What is the acceleration of the ball after it leaves                                       a  the first second   b  the second second   Think 
+            the pitcher's hand   ABC                                                                  first!
+
+
+
+        c   What is the acceleration of the ball while it is 
+            being caught   CD
+
+
+
+   68  Chapter 2   Kinematics                                                                           ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+      Chapter 2  Review Questions
+      1.  What is the difference between velocity and speed       4.  Light travels with a speed of 3.00 w 105 km/s. How 
+                                                                      long will it take light from a laser to travel to the 
+                                                                      Moon  where it is reflected by a mirror  and back to 
+                                                                      Earth  The Moon is 3.84 w 105 km from Earth.
+
+
+
+
+      2.  A traveller drives 568 km in 7.2 h. What is the 
+          average speed for the trip
+
+
+
+
+                                                                  5.  Under what condition can acceleration be 
+                                                                      calculated simply by dividing change in speed by 
+                                                                      change in time
+      3.  The following distances and times  for consecutive 
+          parts of a trip made by a red ant  were recorded by 
+          different observers. There is considerable variation 
+          in the precision of their measurements.
+
+          A. 4.56 m in 12 s       B. 3.4 m in 6.89 s   
+          C. 12.8 m in 36.235 s
+
+           a   What total distance did the ant travel
+
+
+
+
+                                                                  6.  A high-powered racing car accelerates from rest at a 
+                                                                      rate of 7.0 m/s2. How fast will it be moving after  
+           b   What was the total time for the trip                   10.0 s  Convert this speed to km/h.
+
+
+
+
+           c   What was the average speed of the ant
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                        Chapter 2   Kinematics  69
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   7.  The graph below is a speed-time graph for a vehicle.      8.  A child on a toboggan slides down a snowy hill  
+                                                                     accelerating uniformly at 2.8 m/s2. When the 
+                                  Speed vs. Time                     toboggan passes the first observer  it is travelling 
+                                                                     with a speed of 1.4 m/s. How fast will it be moving 
+                       60.0                                          when it passes a second observer  who is 2.5 m 
+                       50.0                                          downhill from the first observer
+       Speed  v  m/s
+
+
+
+
+                       40.0
+
+                       30.0
+
+                       20.0
+
+                       10.0
+
+                          0
+                           0    1.0  2.0  3.0  4.0  5.0
+                                     Time  t  s
+    
+          a   What was the acceleration of the vehicle           9.  A space vehicle is orbiting the Earth at a speed of 
+                                                                     7.58 w 103 m/s. In preparation for a return to Earth  
+                                                                     it fires retrorockets  which provide a negative 
+                                                                     acceleration of 78.4 m/s2. Ignoring any change in 
+                                                                     altitude that might occur  how long will it take the 
+                                                                     vehicle to slow down to 1.52 w 103 m/s
+
+
+
+
+          b   What was the average speed of the vehicle 
+              during its 5.00 s trip
+
+
+
+
+                                                                 10.  Snoopy is taking off in his World War I biplane. He 
+                                                                      coasts down the runway at a speed of 40.0 m/s  then 
+          c   What distance did the vehicle travel during the         accelerates for 5.2 s at a rate of 1/2 g  where g is the 
+              5.00 s                                                  acceleration due to gravity  9.81 m/s2 . How fast is 
+                                                                      the plane moving after 5.2 s
+
+
+
+
+          d   Write a specific equation for this graph.
+
+
+
+
+   70  Chapter 2   Kinematics                                          ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+      11.  A woman biker  leader of the local chapter of Heck's       13.  A stone is dropped from the top of a tall building. It 
+           Angels  is driving along the highway at 80.0 km/h  in           accelerates at a rate of 9.81 m/s2. How long will the 
+           a 60.0 km/h speed zone. She sees a police car ahead             stone take to pass a window that is 2.0 m high  if the 
+           so she brakes and her bike accelerates at                       top of the window is 20.0 m below the point from 
+           o8.0 km/h/s. How far along the road will she travel             which the stone was dropped
+           before she is at the legal speed limit
+
+
+
+
+      12.  Spiderman is crawling up a building at the rate of 
+           0.50 m/s. Seeing Spiderwoman 56 m ahead of him  
+           he accelerates at the rate of 2.3 m/s2.
+            a   How fast will he be moving when he reaches 
+                Spiderwoman
+                                                                      14.  An aircraft  preparing for take-off  accelerates 
+                                                                           uniformly from 0 m/s to 20.0 m/s in a time of 5.00 s.
+                                                                            a   What is the acceleration of the aircraft
+
+
+
+
+          b   How much time will he take to reach 
+              Spiderwoman
+
+
+
+
+                                                                          b   How long will the plane take to reach its take-off 
+                                                                              speed of 36.0 m/s
+
+          c   When he reaches Spiderwoman  Spiderman 
+              discovers that she is a Black Widow and  as you 
+              know  Black Widows consume their mates! He 
+              is 200.00 m from the road below. How long will 
+              it take him to fall to the safety of the road  if he 
+              drops with an acceleration of g = 9.81 m/s2
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                             Chapter 2   Kinematics  71
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   15.  At an air show  a jet car accelerates from rest at a     17.  A glider on an air track is made to accelerate 
+        rate of 3g  where g is 9.81 m/s2. How fast is the jet         uniformly by tilting the track at a slight angle. The 
+        travelling after 0.25 km                                      distance travelled by the glider was measured at the 
+                                                                      end of each 0.10 s interval  resulting in the following 
+                                                                      data:
+
+                                                                 DISTANCE  d  cm   0   0.025   0.100   0.225   0.400   0.625
+                                                                 TIME      t       s   0   0.100   0.200   0.300   0.400   0.500
+
+                                                                      a   Plot a graph with distance d on the y-axis and 
+                                                                          time t on the x-axis.
+                                                                      b   Plot a second graph with distance d on the y-axis 
+                                                                          and t2 on the x-axis.
+                                                                      c   Use the slope of your second graph to figure out 
+                                                                          the acceleration of the glider on the air track. 
+                                                                          HINT: Think about the third equation for uniform 
+                                                                          acceleration.
+   16.  To start a soccer game  the referee flips a coin that 
+        travels 50 cm into the air. 
+         a   What was the coin's initial speed
+
+
+
+
+       b    How long was the coin in the air before landing 
+            back in the hand of the referee
+
+
+
+
+   72  Chapter 2   Kinematics                                          ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+      Chapter 2  Extra Practice
+      1.  The speed of light in space is 300 000 km/s.  How far                                  7.  A certain airplane has an acceleration of 15.0 m/s2. 
+          does light travel in:                                                                      a    How fast will it be moving 2.5 s after it starts 
+           a   1 min                                                                                      down the runway
+           b   1 h                                                                                   b   How far will it travel during the 2.5 s
+           c   1 d                                                                                   c    Minimum take-off speed is 60.0 m/s. What 
+           d   1 y                                                                                        length must the runway be
+
+      2.  A jet aircraft travels a distance of 1867 km in a time                                 8.  a    You are driving along the road at 80 km/h  
+          of 3.0 h. What is its average speed for the trip                                                 22 m/s  when you see a moose 50.0 m in front  
+                                                                                                          of your car. Your reaction time is 0.40 s  and when 
+      3.  In a certain battery-powered circuit  an electron                                               you finally hit the brakes  your car accelerates at 
+          requires 2.0 w 105 s to travel only 2.0 m. What is the                                          a rate of o6.4 m/s2. Will your car stop in time to 
+          average speed of the electron in the circuit  Express                                           avoid the moose
+          your answer in millimetres per second  mm/s .                                              b   If the road is wet and your car accelerates at a 
+                                                                                                          rate of just o4.8 m/s2  what will happen  Show 
+      4.  Light from a laser requires 1.28 s to reach the Moon.                                           your calculations.
+          If light travels with a speed of 3.00 w 105 km/s  how 
+          far is it to the Moon                                                                  9.  The CN Tower in Toronto is about 530 m high. If air 
+                                                                                                     friction did not slow it down  how long would it 
+      5.  A tourist averaged 82 km/h for a 6.5 h trip in her car.                                    take a penny to fall from the top of the tower to the 
+          How far did she go                                                                         ground below    g = 9.81 m/s2
+
+      6.  Use the following graph to answer the questions                                        10.  A motocross rider is coasting at a speed of 2.00 m/s. 
+          below.                                                                                      He then decides to accelerate his bike at a rate of 
+                                                                                                      3.00 m/s2 for a distance of 100.0 m. 
+                                                      Speed vs. Time
+                                                                                                       a  How fast is the bike moving  in m/s  at the end of 
+                                                                                                      the 100.0 m stretch
+                         16.0                                                                          b   Convert your answer from m/s to km/h.
+                         14.0
+         Speed  v  m/s
+
+
+
+
+                         12.0                                                                    11.  A mountain bike rider  after coming down a steep 
+                         10.0                                                                         hill  loses control of her bike while moving with a 
+                          8.0                                                                         speed of 5.00 m/s. Fortunately  she collides with a 
+                          6.0                                                                         haystack  which brings her to rest in a distance of 
+                          4.0                                                                         0.625 m. What was the acceleration of the bike and 
+                          2.0                                                                         rider while colliding with the haystack
+                            0
+                             0  1.0  2.0  3.0  4.0  5.0   6.0  7.0  8.0  9.0  10.0  11.0  12.0
+                                                                                                 12.  A policeman on a mountain bike is cruising at a 
+                                                          Time  t  s
+                                                                                                      speed of 4.00 m/s  when he sees a wanted criminal 
+              a   What is the y-intercept of the above graph                                          standing on a corner  100.0 m ahead of him. If the 
+                   Include units.                                                                     policeman accelerates at a rate of 2.00 m/s2  how 
+              b   What is the slope of the above graph   Include                                      much time will he take to reach the corner
+                  units.
+              c   What is the equation for the above graph   
+                   Use symbols v and t in the equation.
+
+
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                                        Chapter 2   Kinematics  73
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+   13.  The graph below shows how the speed of an aging                                                14. Equation 4 for uniform acceleration  v2f = v20  2ad  can 
+        physics teacher varies with time  as he tries to run                                               be used to show that a body thrown upward with a 
+        up a hill.                                                                                         speed v will return to the same level with the same 
+                                                                                                           speed it had when it was thrown upward.
+                                                Speed vs. Time
+                                                                                                            a   Show mathematically why the magnitude of vf 
+                                                                                                                equals the magnitude of v0.
+                    4.0                                                                                     b   Will the ball have the same velocity when it 
+                                                                                                                comes down as when it was thrown up in the 
+    Speed  v  m/s
+
+
+
+
+                    3.0                                                                                         air  Explain your answer.
+
+                    2.0                                                                                15.  A skateboarder accelerates uniformly down a hill  
+                                                                                                            starting from rest. During the third 1 s interval from 
+                    1.0
+                                                                                                            rest  the skateboarder travels 7.5 m. What is the 
+                                                                                                            acceleration of the skateboarder
+                      0
+                       0  1.0  2.0  3.0  4.0  5.0   6.0  7.0  8.0  9.0  10.0  11.0  12.0  13.0  14.0
+
+                                                     Time  t  s
+
+                    a   What was the starting speed of the runner
+                    b   What was the acceleration of the runner
+                    c   What distance did the runner travel
+                    d   What is the specific equation for the graph
+
+
+
+
+   74  Chapter 2   Kinematics                                                                                ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+
+      3  Forces
+      By the end of this chapter  you should be able to do the following:
+      ±  Solve problems involving the force of gravity                ±  Analyse situations involving the force due to friction
+         t  recognize the relationship between                           t  conduct experiments investigating force due to 
+             o  mass and attractive force due to gravity  e.g.              friction  involving
+                 force due to gravity on Earth's surface is                 o  normal force
+                 proportional to Earth's mass                               o  various types of material
+             o  the force of gravity between two objects and                o  surface area
+                 their distance of separation  i.e.  the inverse            o  speed 
+                 square law                                              t  recognize the relationship between force due to 
+         t  solve a variety of problems involving the                       friction and the strengths of normal force and 
+             relationship between                                           coefficient of friction
+             o  mass                                                     t  solve problems with objects sliding on horizontal 
+             o  gravitational field strength                                surfaces  involving
+             o  force due to gravity  weight                                o  force of friction
+         t  use Newton's law of universal gravitation to solve              o  coefficient of friction
+             problems involving                                             o  normal force
+             o  force
+             o  mass                                                  ±  Apply Hooke's law to the deformation of materials
+             o  distance of separation                                   t  state Hooke's law
+             o  universal gravitational constant                         t  use Hooke's law to solve problems that involve
+                                                                            o  force
+                                                                            o  spring constant
+                                                                            o  change in length
+
+
+      By the end of this chapter  you should know the meaning 
+      to these key terms:
+      t    coefficient of friction      t  mass
+      t    force                        t  Newton's law of 
+      t    force due to gravity            universal gravitation
+      t    gravitational field          t  normal force
+           strength                     t  spring constant
+      t    gravity                      t  static friction
+      t    Hooke's law                  t  universal gravitational 
+      t    inverse square law              constant
+      t    kinetic friction             t  weight
+
+
+
+      By the end of the chapter  you should be able to use and 
+      know when to use the following formulae:
+                                          m1m2
+      Fg = mg                      Fg = G  2  
+                                           r
+      Ffr = IFN                      F = k H x  
+                                                                       This bungee jumper experiences both the force of gravity and 
+                                                                       elastic force during her jump.
+
+
+      ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6                                                       Chapter 3   Forces  75
+kicensed to nak aay recondary for use from reptember QOPQ to iune ROK QOPR only
+
+
+    3.1  Force of Gravity
+
+      Warm Up
+      At shoulder level  hold a sheet of paper in one hand and a book in the other. If you release them at the same 
+      time  which will hit the ground first  Test your prediction. Now place the sheet of paper on top of the book. The 
+      paper should not extend over the edges of the book. Will the paper fall at the same rate as the book  faster  or 
+      slower  Test your prediction. Can you create a rule for falling objects that explains how different masses fall to 
+      the Earth  
+
+      ____________________________________________________________________________________________
+
+      ____________________________________________________________________________________________
+
+      ____________________________________________________________________________________________
+
+
+
+                               Every time you push  pull  twist or squeeze something you exert a force on it. Almost 
+   Force                      
+                               every time you exert a force on an object  you change something about that object: its 
+                               speed  its direction  or its shape. A force is a push or a pull.
+                                      When a soccer player iheadsw the ball the speed of the ball changes  and sometimes 
+                               its direction does too. When a hockey player is given a solid body check  the force 
+                               changes his direction and speed. When a golf ball is struck by a golf club  the force of the 
+                               impact changes the ball's shape during the collision. The force due to air friction alters the 
+                               shape of a raindrop  from a perfect sphere to something more like a teardrop.
+                                      Forces are measured in a unit called the newton  N  named after Sir Isaac Newton.
+
+
+                               The force of gravity pulls on you all the time. The force of attraction between planet Earth 
+   Gravitational Force        
+                               and you keeps you from floating aimlessly off into space! Any two bodies in the universe 
+                               exert a gravitational force on each other. The amount of force they exert depends upon 
+                               how massive the bodies are and how far apart they are. Two unique facts about the force 
+                               of gravity are:  1  it cannot be ishut offw; and  2  it is always an attractive force  never 
+                               repulsive. 
+                                      Gravitational force is an example of a force that acts on objects without touching 
+                               them. This classifies gravity as an action-at-a-distance force. Gravitational force creates 
+                               a gravitational field around a body. Think of a field as an area where a force is exerted. 
+                               For example  magnets have a field around them created by the attraction and repulsion 
+                               between magnetic poles. A gravitational field depends on the mass of an object. The 
+                               bigger the mass  the bigger the gravitational field. For Earth  this means a small mass 
+                               like a person is attracted to the centre of Earth because Earth is the larger mass. The 
+                               gravitational force experienced by the person results mainly from the Earth's gravitational 
+                               field. The force within the gravitational field is referred to as the gravitational field 
+                                                                                                             Fg
+                               strength. It is measured as the gravitational force per unit mass or g =          . The symbol for
+                                                                                                             m
+                               gravitational field strength is g. At Earth's surface  g is approximately 9.81 N/kg.             
+
+
+
+
+   76  Chapter 3   Forces                                                 ª Edvantage Interactive 2012  ISBN 978-0-9864778-3-6
+
