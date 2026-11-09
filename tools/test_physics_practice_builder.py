@@ -5,15 +5,23 @@ import tempfile
 import unittest
 from pathlib import Path
 from html import unescape
-from build_physics_practice import ROOT, Tree, load_bank
+from build_physics_practice import ROOT, Tree, clean_fragment, load_bank
 
 
 class PracticeBuilderTests(unittest.TestCase):
+    def test_fragment_checks_attribute_names(self):
+        image = '<img src="data:image/webp;base64,+oNyUCAA==" alt="Image">'
+        self.assertEqual(clean_fragment(image), image)
+        for unsafe in ('<script>alert(1)</script>', '<img onload="alert(1)">',
+                       '<svg><g onload="alert(1)"></g></svg>'):
+            with self.assertRaises(ValueError):
+                clean_fragment(unsafe)
+
     def test_source_fidelity(self):
         bank = load_bank(ROOT/'content/physics-practice-chapters.json')
         registry = json.loads((ROOT/'content/physics-practice-chapters.json').read_text())
-        self.assertEqual(len(bank), 445)
-        self.assertEqual(len({q['id'] for q in bank}), 445)
+        self.assertEqual(len(bank), 824)
+        self.assertEqual(len({q['id'] for q in bank}), 824)
         self.assertEqual(next(q['topicTitle'] for q in bank if q['topic'] == 'Ch 3 · 3.3'), "3.3 Hooke's law")
         by_id = {q['id']: q for q in bank}
         for chapter in registry['chapters']:

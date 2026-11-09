@@ -8,7 +8,11 @@ for(const [file,count,query,matchTopic] of [
   ['vectors-notes.html',7,'relative velocity: boats','topic-7'],
   ['forces-notes.html',10,"Cavendish's measurement",'topic-3'],
   ['newtons-laws-notes.html',12,'a car on a movable road','topic-8'],
-  ['energy-notes.html',14,'a runaway hill','topic-6']
+  ['energy-notes.html',14,'a runaway hill','topic-6'],
+  ['wave-motion-notes.html',12,'a singing glass','topic-1'],
+  ['optics-notes.html',15,'a life-size photograph','topic-15'],
+  ['relativity-notes.html',12,'a headlight in vacuum','topic-2'],
+  ['nuclear-notes.html',12,'identify the key control','topic-1']
 ]){
 const html=fs.readFileSync(path.join(root,file),'utf8');
 const errors=[],scrolls=[],virtualConsole=new VirtualConsole();virtualConsole.on('jsdomError',error=>errors.push(error));

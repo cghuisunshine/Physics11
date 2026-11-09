@@ -86,13 +86,16 @@ class Tree(HTMLParser):
 def clean_fragment(fragment):
     # These fragments are copied into a pinned panel too. Collection control IDs
     # and scripts must not leak into the practice page.
-    if re.search(r'<script\b|\bon\w+\s*=', fragment, re.I):
-        raise ValueError('Chapter content must not contain scripts/event handlers')
-    fragment = re.sub(r'\s+(?:id|aria-labelledby)="[^"]*"', '', fragment)
-    for src in re.findall(r'<img\b[^>]*\bsrc="([^"]+)"', fragment, re.I):
-        if not src.startswith('data:image/'):
+    nodes = list(Tree(fragment).root.children)
+    while nodes:
+        node = nodes.pop()
+        if node.tag == 'script' or any(name.startswith('on') for name in node.attrs):
+            raise ValueError('Chapter content must not contain scripts/event handlers')
+        src = node.attrs.get('src')
+        if node.tag == 'img' and src is not None and not src.startswith('data:image/'):
             raise ValueError('Question images must be embedded for offline practice')
-    return fragment
+        nodes.extend(node.children)
+    return re.sub(r'\s+(?:id|aria-labelledby)="[^"]*"', '', fragment)
 
 
 def enlarge_question_images(fragment):

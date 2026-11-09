@@ -2,7 +2,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const {JSDOM,VirtualConsole}=require(process.env.PHYSICS_JSDOM_PATH||'jsdom');
 const root=path.resolve(__dirname,'..');
-for(const name of ['vectors','kinematics','forces','newtons-laws','energy']){
+for(const name of ['vectors','kinematics','forces','newtons-laws','energy','wave-motion','optics','relativity','nuclear']){
   const file=name+'-notes.html',errors=[],vc=new VirtualConsole();let printed=0;
   vc.on('jsdomError',e=>errors.push(e));
   const dom=new JSDOM(fs.readFileSync(path.join(root,file),'utf8'),{url:'https://physics.test/'+file,runScripts:'dangerously',virtualConsole:vc,beforeParse(w){

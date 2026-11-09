@@ -1,0 +1,1229 @@
+{
+  "source": "bc_science_physics_11.pdf",
+  "chapter": 9,
+  "title": "Nuclear Fission and Fusion",
+  "question_count": 70,
+  "groups": [
+    {
+      "id": "set-1",
+      "topic": "9.1",
+      "kind": "Warm-up",
+      "title": "The radiation symbol",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              285,
+              48,
+              99,
+              544,
+              208
+            ]
+          ],
+          "text": "What hazard is represented by the three-bladed radiation symbol shown on some smoke detectors?",
+          "id": "q-1",
+          "answer_html": "<p>The three-bladed <strong>radiation trefoil</strong> warns of ionizing radiation or radioactive material. An ionization smoke detector can contain a small sealed source, typically americium-241.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-2",
+      "topic": "9.1",
+      "kind": "Quick check",
+      "title": "The discovery of radioactivity",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              287,
+              43,
+              242.5752,
+              580,
+              254.9245
+            ]
+          ],
+          "text": "1. What was Becquerel looking for when he discovered radioactivity by accident",
+          "id": "q-2",
+          "answer_html": "<p>Becquerel was testing whether a fluorescent uranium compound emitted penetrating radiation like X-rays. The wrapped photographic plate darkened even when the compound had been stored in the dark. The emission came from the material itself.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              287,
+              43,
+              293.0752,
+              580,
+              305.4245
+            ]
+          ],
+          "text": "2. Who introduced the term radioactivity",
+          "id": "q-3",
+          "answer_html": "<p><strong>Marie Curie</strong> introduced the term <em>radioactivity</em> for the spontaneous emission.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              287,
+              43,
+              337.5752,
+              580,
+              349.9245
+            ]
+          ],
+          "text": "3. Who first identified alpha particles beta particles gamma radiation",
+          "id": "q-4",
+          "answer_html": "<p><strong>Ernest Rutherford</strong> distinguished and named alpha and beta radiation by their different penetration. <strong>Paul Villard</strong> detected the third, more penetrating component later called gamma radiation. Experiments later established what each component was.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-3",
+      "topic": "9.1",
+      "kind": "Quick check",
+      "title": "Identifying alpha, beta, and gamma radiation",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              289,
+              43,
+              300.36089999999996,
+              580,
+              326.21020000000004
+            ]
+          ],
+          "text": "1. What effect does a magnetic field have on a beam of radiation containing a mixture of alpha particles beta particles and gamma rays",
+          "id": "q-5",
+          "answer_html": "<p>For a beam crossing the field, positive alpha and negative beta-minus particles deflect in opposite directions. Gamma photons have zero charge and travel straight in the field. The radius of a charged track also depends on its momentum, charge, and field strength.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              289,
+              43,
+              364.36089999999996,
+              580,
+              376.71020000000004
+            ]
+          ],
+          "text": "2. Who showed that beta particles were actually electrons How did he do it",
+          "id": "q-6",
+          "answer_html": "<p><strong>Henri Becquerel</strong> used deflection measurements to determine the charge-to-mass ratio of beta particles. Its negative sign and magnitude matched those of electrons measured in cathode rays.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              289,
+              43,
+              461.861,
+              580,
+              487.7103
+            ]
+          ],
+          "text": "3. Who showed that gamma radiation was actually electromagnetic radiation like light and X-rays What kind of experiment did this require",
+          "id": "q-7",
+          "answer_html": "<p><strong>Rutherford and Edward Andrade</strong> used crystal diffraction. The crystal produced a diffraction pattern, as it does for X-rays, supporting the interpretation of gamma radiation as short-wavelength electromagnetic radiation.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-4",
+      "topic": "9.1",
+      "kind": "Quick check",
+      "title": "Transmutation and the nucleus",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              292,
+              43,
+              300.0752,
+              580,
+              312.4245
+            ]
+          ],
+          "text": "1. What is natural transmutation",
+          "id": "q-8",
+          "answer_html": "<p><strong>Natural transmutation</strong> is the spontaneous change of one element into another when a nucleus decays and its proton number changes. Alpha and beta-minus decay can do this. Gamma emission leaves the element unchanged.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              292,
+              43,
+              374.0752,
+              580,
+              386.4245
+            ]
+          ],
+          "text": "2. Describe the Rutherford model of the hydrogen atom.",
+          "id": "q-9",
+          "answer_html": "<p>Rutherford pictured hydrogen as a very small, dense, positive nucleus containing a single proton, with one negative electron outside it. Most of the atom’s volume lies outside the nucleus. Modern models describe the electron with a quantum state.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              292,
+              43,
+              442.07529999999997,
+              580,
+              454.4246
+            ]
+          ],
+          "text": "3. What is a proton What is the atomic number of an element",
+          "id": "q-10",
+          "answer_html": "<p>A <strong>proton</strong> is a positively charged constituent of a nucleus. The <strong>atomic number Z</strong> counts its protons and determines the element.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              292,
+              43,
+              492.57529999999997,
+              580,
+              504.9246
+            ]
+          ],
+          "text": "4. Is a neutron stable outside the nucleus Explain.",
+          "id": "q-11",
+          "answer_html": "<p>A free neutron is unstable. It undergoes beta-minus decay: <strong>n → p + e⁻ + ν̄ₑ</strong>. Its mean lifetime is about 15 minutes. Nuclear binding can make a neutron stable within a stable nucleus.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-5",
+      "topic": "9.1",
+      "kind": "Quick check",
+      "title": "Isotopes and nuclear equations",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              295,
+              43,
+              92.57570000000001,
+              580,
+              104.925
+            ]
+          ],
+          "text": "1. What are isotopes How are they the same How are they different",
+          "id": "q-12",
+          "answer_html": "<p>Isotopes are nuclei of the <strong>same element</strong> with the same proton number but different neutron numbers. They have different mass numbers and may differ in nuclear stability. Neutral atoms of the same element have the same number of electrons.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              295,
+              43,
+              166.57580000000002,
+              580,
+              178.9251
+            ]
+          ],
+          "text": "2. What is a radioisotope",
+          "id": "q-13",
+          "answer_html": "<p>A <strong>radioisotope</strong> is an isotope with an unstable nucleus that can decay spontaneously.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              295,
+              43,
+              212,
+              580,
+              235
+            ]
+          ],
+          "text": "Explain the meaning of the uranium-238 symbol, ²³⁸₉₂U.",
+          "id": "q-14",
+          "answer_html": "<p>²³⁸₉₂U is uranium with <strong>92 protons</strong> and <strong>238 nucleons</strong>. It contains 238 − 92 = <strong>146 neutrons</strong>. A neutral atom has 92 electrons.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              295,
+              43,
+              267,
+              580,
+              402
+            ]
+          ],
+          "text": "4. Complete these nuclear reactions: 226 222 a Ra Ο 88 Rn 88 214 214 Pb Ο 83 Bi b 82 218 4 He Po Ο c 84 2 210 0 Bi Ο e d 83 o1",
+          "id": "q-15",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He.</strong> The printed radon subscript is 88. Radon has Z = 86, which balances the equation with the emitted alpha particle.</li><li><strong>²¹⁴₈₂Pb → ²¹⁴₈₃Bi + ⁰₋₁e + ν̄ₑ.</strong> The missing charged particle is the beta-minus electron.</li><li><strong>²¹⁸₈₄Po → ²¹⁴₈₂Pb + ⁴₂He.</strong> The daughter is lead-214.</li><li><strong>²¹⁰₈₃Bi → ²¹⁰₈₄Po + ⁰₋₁e + ν̄ₑ.</strong> The daughter is polonium-210.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-6",
+      "topic": "9.1",
+      "kind": "Sample prompt",
+      "title": "Sample 9.1.1 · Calculating half-life",
+      "questions": [
+        {
+          "label": "9.1.1",
+          "boxes": [
+            [
+              296,
+              65,
+              408,
+              557,
+              456
+            ]
+          ],
+          "text": "How long will it take for a sample of iodine-131 to reach 1/16 of the original number of iodine-131 atoms? The table gives a half-life of 8.1 days.",
+          "id": "q-16",
+          "answer_html": "<p>Use the textbook half-life of 8.1 days. Since 1/16 = (1/2)⁴, four half-lives are needed. t = 4 × 8.1 = <strong>32.4 days</strong>, about 32 days to two significant figures. Iodine has atomic number <strong>53</strong>. The printed 63 should read 53.</p>"
+        }
+      ],
+      "shared": [
+        [
+          296,
+          60,
+          55,
+          184,
+          126
+        ],
+        [
+          296,
+          60,
+          230,
+          184,
+          254
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-7",
+      "topic": "9.1",
+      "kind": "Practice",
+      "title": "Practice 9.1.1 · Calculating half-life",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              297,
+              52,
+              82,
+              555,
+              111
+            ]
+          ],
+          "text": "1. Thorium-234 has a half-life of 24 d. How many atoms from a 4000 atom sample will still be thorium-234 after a period of 144 d",
+          "id": "q-17",
+          "answer_html": "<p>144 d/24 d = 6 half-lives. The expected parent count is 4000(1/2)⁶ = 62.5, or <strong>about 63 thorium-234 atoms</strong>. An actual small sample can give a different count.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              297,
+              52,
+              183,
+              555,
+              218
+            ]
+          ],
+          "text": "After 26 years, the number of cobalt-60 atoms is 1/32 of the original count. What is the half-life?",
+          "id": "q-18",
+          "answer_html": "<p>1/32 = (1/2)⁵. Five half-lives take 26 years, so T½ = 26/5 = <strong>5.2 years</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-8",
+      "topic": "9.1",
+      "kind": "Quick check",
+      "title": "Reading the uranium-238 decay series",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              297,
+              43,
+              526.0752,
+              580,
+              538.4245
+            ]
+          ],
+          "text": "1. Write the nuclear reaction for the decay of radium into radon Figure 9.1.8 .",
+          "id": "q-19",
+          "answer_html": "<p><strong>²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He.</strong> Mass number drops by four and atomic number drops by two.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              297,
+              43,
+              566.5752,
+              580,
+              578.9245
+            ]
+          ],
+          "text": "2. Write the nuclear reaction for the decay of Pb-214 into Bi-214.",
+          "id": "q-20",
+          "answer_html": "<p><strong>²¹⁴₈₂Pb → ²¹⁴₈₃Bi + ⁰₋₁e + ν̄ₑ.</strong> Mass number stays 214 and atomic number increases from 82 to 83.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              297,
+              43,
+              607.0752,
+              580,
+              632.9245
+            ]
+          ],
+          "text": "3. How many different elements are involved in the radioactive series in Figure 9.1.8 How many different isotopes are involved",
+          "id": "q-21",
+          "answer_html": "<p>The chart contains <strong>8 elements</strong> (U, Th, Pa, Ra, Rn, Po, Pb, and Bi) and <strong>15 distinct nuclides</strong>, counting uranium-238 at the start and stable lead-206 at the end. Follow the 14 arrows and count both endpoints.</p>"
+        }
+      ],
+      "shared": [
+        [
+          298,
+          167,
+          48,
+          551,
+          365
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-9",
+      "topic": "9.1",
+      "kind": "Investigation",
+      "title": "Investigation 9-1 · Simulating radioactive decay",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              299,
+              43,
+              264.17569999999995,
+              580,
+              276.52500000000003
+            ]
+          ],
+          "text": "1. From the graph determine the half-life of your radioactive atoms and express it in number or rolls.",
+          "id": "q-22",
+          "answer_html": "<p>Take half the combined initial count and read where the class curve crosses that level. Record the number of rolls, interpolating between adjacent points if useful. The observed value depends on the class data. For fair dice the expected fraction after n rolls is (5/6)ⁿ, so the model half-life is ln(1/2)/ln(5/6) ≈ <strong>3.8 rolls</strong>.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"Expected results for 100 fair dice, with one face removed per roll\"><title>Expected results for 100 fair dice, with one face removed per roll</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M118.667 54V226\" stroke=\"#dce4e1\"/><text x=\"118.667\" y=\"246\" text-anchor=\"middle\">2</text><path d=\"M175.333 54V226\" stroke=\"#dce4e1\"/><text x=\"175.333\" y=\"246\" text-anchor=\"middle\">4</text><path d=\"M232 54V226\" stroke=\"#dce4e1\"/><text x=\"232\" y=\"246\" text-anchor=\"middle\">6</text><path d=\"M288.667 54V226\" stroke=\"#dce4e1\"/><text x=\"288.667\" y=\"246\" text-anchor=\"middle\">8</text><path d=\"M345.333 54V226\" stroke=\"#dce4e1\"/><text x=\"345.333\" y=\"246\" text-anchor=\"middle\">10</text><path d=\"M402 54V226\" stroke=\"#dce4e1\"/><text x=\"402\" y=\"246\" text-anchor=\"middle\">12</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">0</text><path d=\"M62 183H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"187\" text-anchor=\"end\">25</text><path d=\"M62 140H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"144\" text-anchor=\"end\">50</text><path d=\"M62 97H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"101\" text-anchor=\"end\">75</text><path d=\"M62 54H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"58\" text-anchor=\"end\">100</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><polyline points=\"62.00,54.00 90.33,82.67 118.67,106.56 147.00,126.46 175.33,143.05 203.67,156.88 232.00,168.40 260.33,178.00 288.67,186.00 317.00,192.67 345.33,198.22 373.67,202.85 402.00,206.71\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><circle cx=\"62\" cy=\"54\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"90.3333\" cy=\"82.6667\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"118.667\" cy=\"106.556\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"147\" cy=\"126.463\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"175.333\" cy=\"143.052\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"203.667\" cy=\"156.877\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"232\" cy=\"168.398\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"260.333\" cy=\"177.998\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"288.667\" cy=\"185.998\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"317\" cy=\"192.665\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"345.333\" cy=\"198.221\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"373.667\" cy=\"202.851\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"402\" cy=\"206.709\" r=\"3.5\" fill=\"#096a70\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">Number of rolls</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">Undecayed dice</text></svg><figcaption>Expected results for 100 fair dice, with one face removed per roll. <span style=\"color:#096a70\">Expected survivors</span>.</figcaption></figure>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          299,
+          48,
+          62,
+          563,
+          247
+        ]
+      ]
+    },
+    {
+      "id": "set-10",
+      "topic": "9.1",
+      "kind": "Section review",
+      "title": "9.1 Review · Radioactivity",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              300,
+              43,
+              86.57570000000001,
+              316,
+              112.425
+            ]
+          ],
+          "text": "1. What were the properties of the rays discovered by Henri Becquerel",
+          "id": "q-23",
+          "answer_html": "<p>Becquerel’s radiation was invisible, passed through paper that blocked visible light, fogged photographic plates, and ionized air. The emission persisted without prior exposure to light. Different components later showed different penetration.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              300,
+              43,
+              235.07580000000002,
+              316,
+              260.92510000000004
+            ]
+          ],
+          "text": "2. What was the significance of transmutation in developing an understanding of radioactivity",
+          "id": "q-24",
+          "answer_html": "<p>Transmutation showed that radioactivity could change the identity of an element. A change in proton number comes from a <strong>nuclear process</strong>. The finding helped explain the appearance of daughter substances in a decaying sample.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              300,
+              43,
+              397.0757,
+              316,
+              409.425
+            ]
+          ],
+          "text": "3. How was the neutron discovered",
+          "id": "q-25",
+          "answer_html": "<p><strong>James Chadwick</strong> studied the neutral radiation produced when alpha particles struck beryllium. It knocked protons out of hydrogen-rich material such as paraffin. Recoil measurements supported a neutral particle with a mass close to that of the proton.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              300,
+              43,
+              532.0757,
+              316,
+              571.4250000000001
+            ]
+          ],
+          "text": "4. Why would you not expect alpha particles on passing through gold foil to be deflected significantly by electrons in the gold atoms",
+          "id": "q-26",
+          "answer_html": "<p>The alpha particle is thousands of times more massive than an electron. An electron can give it only a small deflection. The observed large-angle scattering is explained by close approaches to a concentrated positive nucleus.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              300,
+              316,
+              86.80810000000001,
+              580,
+              99.1574
+            ]
+          ],
+          "text": "5. What is meant by the half-life of an isotope",
+          "id": "q-27",
+          "answer_html": "<p>A <strong>half-life</strong> is the time for the expected number of undecayed parent nuclei to fall to half its initial value. The activity of that parent isotope also halves if no additional parent nuclei are supplied.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              300,
+              316,
+              248.808,
+              580,
+              505.3078
+            ]
+          ],
+          "text": "6. Complete the following nuclear equations. Rewrite the equations and solve for x. x 14 a 6 C Ο x N 0 e 1 226 222 x b 88 Ra Ο 86 Rn x X 221 x c x Ac Ο 87 Fr 4 He 2 209 x d 82 X Ο 83 Bi x x o1",
+          "id": "q-28",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>¹⁴₆C → ¹⁴₇N + ⁰₋₁e + ν̄ₑ.</strong> Nitrogen-14 has Z = 7. The electron must have charge number −1 to balance 6 = 7 − 1. The source shows a positive subscript.</li><li><strong>²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He.</strong> The missing particle is ⁴₂He.</li><li><strong>²²⁵₈₉Ac → ²²¹₈₇Fr + ⁴₂He.</strong> The parent has A = 225 and Z = 89.</li><li><strong>²⁰⁹₈₂Pb → ²⁰⁹₈₃Bi + ⁰₋₁e + ν̄ₑ.</strong> The parent is lead-209 and the emitted charged particle is a beta-minus electron.</li></ol>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              300,
+              316,
+              505.3078,
+              580,
+              531.1572
+            ]
+          ],
+          "text": "7. After five half-lives how much of a 4000 g sample of carbon-14 is left",
+          "id": "q-29",
+          "answer_html": "<p>The fraction of parent carbon-14 left is (1/2)⁵ = 1/32. 4000 g/32 = <strong>125 g of carbon-14</strong>. The remaining material can include decay products.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-11",
+      "topic": "9.2",
+      "kind": "Warm-up",
+      "title": "Fission and fusion",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              301,
+              47,
+              133,
+              550,
+              152
+            ]
+          ],
+          "text": "What is the difference between fission and fusion",
+          "id": "q-30",
+          "answer_html": "<p><strong>Fission</strong> splits a heavy nucleus into lighter fragments. <strong>Fusion</strong> joins light nuclei to make a heavier nucleus. Both can release energy when the total product rest mass is lower.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-12",
+      "topic": "9.2",
+      "kind": "Section review",
+      "title": "9.2 Review · Nuclear fission and fusion",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              307,
+              43,
+              86.57570000000001,
+              302,
+              220.4248
+            ]
+          ],
+          "text": "1. a Describe the landmark achievement of Cockcroft and Walton. b What was the source of the excess energy in this reaction",
+          "id": "q-31",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Cockcroft and Walton used accelerated protons to induce a reaction in lithium-7. The products were two helium-4 nuclei.</li><li>The products had lower total rest mass. The mass difference released energy according to Q = (m(initial) − m(final))c², mostly as kinetic energy of the helium nuclei in this reaction.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              307,
+              43,
+              289.0755,
+              302,
+              530.9249
+            ]
+          ],
+          "text": "2. a What is nuclear fission b What is the most important consequence of fission c Why is a chain reaction feasible in nuclear fission of uranium-235",
+          "id": "q-32",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Fission is the splitting of a heavy nucleus into lighter fragments, often after neutron absorption.</li><li>It releases a large amount of energy, mainly first as kinetic energy of the fragments. Additional neutrons can also be emitted.</li><li>Some emitted neutrons can cause further uranium-235 fissions, so the reaction can sustain itself.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              307,
+              43,
+              599.5755,
+              302,
+              625.4249
+            ]
+          ],
+          "text": "3. What is it about the fission of U-235 that makes a chain reaction possible",
+          "id": "q-33",
+          "answer_html": "<p>A uranium-235 fission generally emits several neutrons. If, on average, one causes another fission, the chain reaction is self-sustaining at steady power. The other neutrons can escape or be absorbed without producing fission.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              307,
+              302,
+              86.8007,
+              580,
+              112.64999999999999
+            ]
+          ],
+          "text": "4. Compare and contrast three types of nuclear reactors.",
+          "id": "q-34",
+          "answer_html": "<div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Type</th><th scope=\"col\">Where steam forms</th><th scope=\"col\">Moderator and primary coolant</th></tr></thead><tbody><tr><td>Boiling-water reactor (BWR)</td><td>Water boils in the reactor vessel. Its steam goes to the turbine.</td><td>Ordinary water serves as coolant and moderator.</td></tr><tr><td>Pressurized-water reactor (PWR)</td><td>Primary water stays liquid and transfers heat to a separate steam loop.</td><td>Ordinary water serves as coolant and moderator.</td></tr><tr><td>CANDU</td><td>Primary coolant carries heat to steam generators and a separate ordinary-water steam loop.</td><td>Heavy water in the moderator vessel slows neutrons. Separate pressurized heavy water flows through the fuel channels.</td></tr></tbody></table></div>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              307,
+              302,
+              316.3006,
+              580,
+              342.1499
+            ]
+          ],
+          "text": "5. Create a list of pros and cons of using nuclear power to generate electricity.",
+          "id": "q-35",
+          "answer_html": "<div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Benefits</th><th scope=\"col\">Trade-offs</th></tr></thead><tbody><tr><td>High energy yield from a relatively small amount of fuel. Low direct greenhouse-gas emissions during electricity generation.</td><td>Used fuel and other radioactive waste require isolation and long-term management.</td></tr><tr><td>Steady electricity generation while the plant is operating.</td><td>Construction and decommissioning require substantial resources. Safety and cooling systems need continuing oversight.</td></tr></tbody></table></div>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              307,
+              302,
+              518.8004999999999,
+              580,
+              544.6498
+            ]
+          ],
+          "text": "6. In a nuclear reactor how is an explosion avoided when fission occurs",
+          "id": "q-36",
+          "answer_html": "<p>The reactor controls the chain reaction by regulating how many neutrons produce new fissions. Neutron absorbers and independent shutdown systems can reduce that number. Coolant removes heat, including decay heat after shutdown, and containment helps limit releases. A conventional reactor is designed for controlled, steady operation.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-13",
+      "topic": "Chapter review",
+      "kind": "Chapter review",
+      "title": "Chapter 9 Review",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              308,
+              43,
+              86.57570000000001,
+              316,
+              98.925
+            ]
+          ],
+          "text": "1. How was radioactivity accidentally discovered",
+          "id": "q-37",
+          "answer_html": "<p>Becquerel placed a uranium compound near a light-shielded photographic plate while studying fluorescence. The plate was exposed even when the compound had been kept in the dark. The observation revealed spontaneous radiation from the compound.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              308,
+              43,
+              275.5755,
+              316,
+              301.4248
+            ]
+          ],
+          "text": "2. What are the three properties of the Rutherford model of the atom",
+          "id": "q-38",
+          "answer_html": "<p>Rutherford’s model placed positive charge and most of the mass in a tiny <strong>nucleus</strong>. Most of the atom’s volume was outside the nucleus. The negative electrons occupied the surrounding region.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              308,
+              43,
+              478.0754,
+              316,
+              503.92470000000003
+            ]
+          ],
+          "text": "3. What did early researchers such as Rutherford and the Curies know about the dangers of radioactivity",
+          "id": "q-39",
+          "answer_html": "<p>Early researchers observed effects such as skin burns as they worked with radioactive sources, but dose measurement and knowledge of long-term health effects were limited. Radiation protection developed as these effects became better understood.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              308,
+              316,
+              85,
+              580,
+              117
+            ]
+          ],
+          "text": "4. What is the difference between a beta particle and gamma radiation",
+          "id": "q-40",
+          "answer_html": "<p>In this chapter a <strong>beta particle</strong> is a beta-minus electron, with negative charge and nonzero rest mass. A <strong>gamma ray</strong> is a photon emitted by the nucleus. It has zero charge and zero rest mass.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              308,
+              316,
+              285,
+              580,
+              312
+            ]
+          ],
+          "text": "What does the symbol ⁰₋₁e represent?",
+          "id": "q-41",
+          "answer_html": "<p>⁰₋₁e is an <strong>electron</strong>, written this way when it is emitted in beta-minus decay. Its mass number is zero because it contains no nucleons. The lower −1 is its charge number.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              308,
+              316,
+              486,
+              580,
+              510
+            ]
+          ],
+          "text": "Describe the differences between ²³⁵₉₂U and ²³⁸₉₂U.",
+          "id": "q-42",
+          "answer_html": "<p>Both isotopes have 92 protons. Uranium-235 has 235 − 92 = <strong>143 neutrons</strong>, while uranium-238 has 238 − 92 = <strong>146 neutrons</strong>. Their mass numbers and nuclear properties differ.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              309,
+              43,
+              52.4007,
+              302,
+              213.2501
+            ]
+          ],
+          "text": "7. Write the nuclear reactions for the following: a uranium-238 decaying to thorium-234 b thorium-234 decaying to protactinium-234",
+          "id": "q-43",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He.</strong></li><li><strong>²³⁴₉₀Th → ²³⁴₉₁Pa + ⁰₋₁e + ν̄ₑ.</strong></li></ol>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              309,
+              43,
+              349.4007,
+              302,
+              361.75
+            ]
+          ],
+          "text": "8. What is meant by the half-life of a radioisotope",
+          "id": "q-44",
+          "answer_html": "<p>The half-life is the time for the number of undecayed parent nuclei, or their activity, to fall to half its starting value. Repeat the halving for each additional half-life.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              309,
+              43,
+              497.9006,
+              302,
+              537.2499
+            ]
+          ],
+          "text": "9. Cobalt-60 has a half-life of 5.2 years. Describe what would happen to a sample of 1 million cobalt-60 atoms in a period of 52 years.",
+          "id": "q-45",
+          "answer_html": "<p>52 years ÷ 5.2 years = 10 half-lives. Expected Co-60 left = 10⁶(1/2)¹⁰ ≈ <strong>977 atoms</strong>. About 999,023 of the original atoms have decayed, mainly to nickel-60.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              309,
+              302,
+              52.4009,
+              580,
+              105.25019999999999
+            ]
+          ],
+          "text": "10. A solution containing a radioactive isotope is injected into your bloodstream just before you have a brain scan. Should the radioisotope used have a short half-life or long half-life Explain.",
+          "id": "q-46",
+          "answer_html": "<p>For the textbook example, choose a <strong>relatively short physical half-life</strong> that still allows preparation and enough time to record the scan. It gives a measurable signal during imaging and leaves less lingering activity afterward. The actual choice also depends on how the tracer behaves in the body.</p>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              309,
+              302,
+              295.4009,
+              580,
+              431.13570000000004
+            ]
+          ],
+          "text": "11. Complete the following nuclear reactions. 230 4 a 90 Th q He ___________ 2 234 234 b 90 Th q 91 Pa ___________ 14 0 c C q e 6 o1 218 214 d 84 Po q 82 Pb ___________",
+          "id": "q-47",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>²³⁰₉₀Th → ²²⁶₈₈Ra + ⁴₂He.</strong> The missing daughter is radium-226.</li><li><strong>²³⁴₉₀Th → ²³⁴₉₁Pa + ⁰₋₁e + ν̄ₑ.</strong> The missing charged particle is a beta-minus electron.</li><li><strong>¹⁴₆C → ¹⁴₇N + ⁰₋₁e + ν̄ₑ.</strong> The missing daughter is nitrogen-14.</li><li><strong>²¹⁸₈₄Po → ²¹⁴₈₂Pb + ⁴₂He.</strong> The missing particle is an alpha particle.</li></ol>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              309,
+              302,
+              455.9007,
+              580,
+              468.25
+            ]
+          ],
+          "text": "12. Describe the main components of a nuclear reactor.",
+          "id": "q-48",
+          "answer_html": "<p><strong>Fuel</strong> contains nuclei that undergo fission. A <strong>moderator</strong> slows neutrons in a thermal reactor. <strong>Control and shutdown absorbers</strong> capture neutrons. <strong>Coolant</strong> carries away heat. <strong>Shielding and containment</strong> limit radiation exposure and releases. In a power station, steam drives a <strong>turbine and generator</strong>, and a condenser returns the steam to water.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              310,
+              43,
+              52.4007,
+              316,
+              312.6756
+            ]
+          ],
+          "text": "13. Identify and label the above nuclear reactor below.",
+          "id": "q-49",
+          "answer_html": "<p>The horizontal fuel channels identify a <strong>CANDU pressurized-heavy-water reactor</strong>. Its reactor coolant and turbine steam follow separate paths.</p><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Location in the diagram</th><th scope=\"col\">Label</th></tr></thead><tbody><tr><td>Lower left, horizontal tubes in the core</td><td>Fuel channels in the moderator vessel</td></tr><tr><td>Left loop between the core and upper vessel</td><td>Pressurized heavy-water coolant and its circulation pump</td></tr><tr><td>Upper left, heated vessel above the core</td><td>Steam generator and steam outlet</td></tr><tr><td>Right, fan-shaped component</td><td>Steam turbine</td></tr><tr><td>Far right, driven by the turbine shaft</td><td>Electrical generator</td></tr><tr><td>Lower right, where steam gives up heat</td><td>Condenser, with its own cooling-water path</td></tr><tr><td>Lower return pipe</td><td>Feedwater pump and return to the steam source</td></tr></tbody></table></div>"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              310,
+              43,
+              312.6756,
+              316,
+              338.5249
+            ]
+          ],
+          "text": "14. What is nuclear fusion Give one example of a possible fusion reaction.",
+          "id": "q-50",
+          "answer_html": "<p><strong>Fusion</strong> joins light nuclei and can release energy. Example: <strong>²₁H + ³₁H → ⁴₂He + ¹₀n + energy</strong>. Deuterium and tritium are isotopes of hydrogen.</p>"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              310,
+              43,
+              515.1754,
+              316,
+              541.0247
+            ]
+          ],
+          "text": "15. Why is fusion difficult to achieve under controlled circumstances",
+          "id": "q-51",
+          "answer_html": "<p>Positive nuclei repel one another electrically. A fusion system must bring them close enough for the nuclear force to bind them. It needs a very hot plasma and enough density and confinement time for useful numbers of collisions, while limiting energy losses and handling the reaction products.</p>"
+        },
+        {
+          "label": "16",
+          "boxes": [
+            [
+              310,
+              316,
+              52.3007,
+              580,
+              78.14999999999999
+            ]
+          ],
+          "text": "16. Why is fusion favoured over fission as a future source of energy for human use",
+          "id": "q-52",
+          "answer_html": "<p>Fusion could use abundant deuterium and would avoid a self-sustaining fission chain reaction. D–T fusion still requires tritium management and produces neutrons that can activate materials. Practical energy generation depends on meeting confinement, materials, maintenance, and energy-balance requirements.</p>"
+        },
+        {
+          "label": "17",
+          "boxes": [
+            [
+              310,
+              316,
+              349.3006,
+              580,
+              375.1499
+            ]
+          ],
+          "text": "17. What kind of nuclei can undergo fusion What conditions are needed",
+          "id": "q-53",
+          "answer_html": "<p>Light nuclei such as hydrogen isotopes can fuse and release energy. They need sufficient relative energy to approach despite electric repulsion, plus enough density and confinement time for a useful reaction rate. In stars, gravity provides confinement.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-14",
+      "topic": "Extra practice",
+      "kind": "Extra practice",
+      "title": "Chapter 9 Extra Practice",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              311,
+              43,
+              86.6757,
+              302,
+              112.52499999999999
+            ]
+          ],
+          "text": "1. What evidence led to the identification of three types of Becquerel rays",
+          "id": "q-54",
+          "answer_html": "<p>Absorber tests showed components with different penetrating abilities. A transverse field also separated the positive and negative components while a neutral component continued straight. These observations distinguished alpha, beta, and gamma radiation.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              311,
+              43,
+              127.1756,
+              302,
+              153.0249
+            ]
+          ],
+          "text": "2. What is special about the nuclear strong force Over what distance is it effective",
+          "id": "q-55",
+          "answer_html": "<p>The residual <strong>strong nuclear force</strong> binds nearby nucleons and can overcome proton–proton electric repulsion at nuclear distances. It acts over roughly <strong>a few femtometres</strong>, of order 10⁻¹⁵ m, and falls off rapidly beyond that range.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              311,
+              43,
+              167.6756,
+              302,
+              180.0249
+            ]
+          ],
+          "text": "3. What is an alpha particle",
+          "id": "q-56",
+          "answer_html": "<p>An alpha particle is a <strong>helium-4 nucleus</strong> with two protons, two neutrons, and charge +2e.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              311,
+              43,
+              191,
+              302,
+              214
+            ]
+          ],
+          "text": "What does the symbol ⁴₂He represent?",
+          "id": "q-57",
+          "answer_html": "<p>⁴₂He denotes helium-4. Its upper 4 is the mass number and its lower 2 is the proton number. In a nuclear equation it can represent the emitted alpha particle.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              311,
+              43,
+              221.6756,
+              302,
+              247.5249
+            ]
+          ],
+          "text": "5. For what research did Ernest Rutherford receive a Nobel Prize in chemistry",
+          "id": "q-58",
+          "answer_html": "<p>Rutherford received the <strong>1908 Nobel Prize in Chemistry</strong> for studying how elements disintegrate and investigating the chemistry of radioactive substances, including transformations between elements.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              311,
+              43,
+              262.1755,
+              302,
+              506.2356
+            ]
+          ],
+          "text": "6. Use this graph to answer the questions below. Radioactive decay of an isotope 100 Percent of original isotope 75 50 25 0 0 10 20 30 40 50 60 70 80 Time millions of years a What is the half-life of the element b How old would the element be after three half- lives c After 80 million years how many half-lives has the sample gone through",
+          "id": "q-59",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The curve reaches 50% at about <strong>20 million years</strong>.</li><li>Three half-lives take about <strong>60 million years</strong>.</li><li>80 million years ÷ 20 million years per half-life = <strong>4 half-lives</strong>. About 6.25% remains in the model.</li></ol>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              311,
+              43,
+              506.2356,
+              302,
+              559.085
+            ]
+          ],
+          "text": "7. Technetium-90 has a half-life of 6.0 h. If there are 64 atoms of technetium-90 in a sample to start with how many atoms of this radioisotope will be left in their original state after one full 24-h day",
+          "id": "q-60",
+          "answer_html": "<p>Using the problem’s stated 6.0 h, 24 h is four half-lives. The expected count is 64(1/2)⁴ = <strong>4 atoms</strong>. The isotope label in the textbook is inconsistent with evaluated decay data. The approximately six-hour half-life belongs to <strong>technetium-99m</strong>.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              311,
+              43,
+              573.7356,
+              302,
+              726
+            ]
+          ],
+          "text": "8. Complete the following nuclear reactions. 222 4 Rn q He 86 2 210 210 Pb q 83 Bi 82 210 0 Bi q e 83 o1",
+          "id": "q-61",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>²²²₈₆Rn → ²¹⁸₈₄Po + ⁴₂He.</strong> The missing daughter is polonium-218.</li><li><strong>²¹⁰₈₂Pb → ²¹⁰₈₃Bi + ⁰₋₁e + ν̄ₑ.</strong> The missing charged particle is a beta-minus electron.</li><li><strong>²¹⁰₈₃Bi → ²¹⁰₈₄Po + ⁰₋₁e + ν̄ₑ.</strong> The missing daughter is polonium-210.</li></ol>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              311,
+              302,
+              86.9081,
+              580,
+              246.04070000000002
+            ]
+          ],
+          "text": "9. Identify and label the nuclear reactor below.",
+          "id": "q-62",
+          "answer_html": "<p>This is a <strong>pressurized-water reactor (PWR)</strong>. The left reactor vessel and neighbouring steam generator are joined by the primary water circuit. The steam circuit is separate.</p><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Location in the diagram</th><th scope=\"col\">Label</th></tr></thead><tbody><tr><td>Tall vessel on the left</td><td>Reactor vessel with fuel, moderator/coolant, and control rods</td></tr><tr><td>Tall vessel to its right</td><td>Steam generator, where primary heat boils secondary water</td></tr><tr><td>Upper line from that vessel to the turbine</td><td>Secondary steam line</td></tr><tr><td>Right, fan-shaped component</td><td>Steam turbine</td></tr><tr><td>Far right, driven by the turbine shaft</td><td>Electrical generator</td></tr><tr><td>Lower right, where steam gives up heat</td><td>Condenser, with its own cooling-water path</td></tr><tr><td>Lower return pipe</td><td>Feedwater pump and return to the steam source</td></tr></tbody></table></div>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              311,
+              302,
+              246.04070000000002,
+              580,
+              412.29159999999996
+            ]
+          ],
+          "text": "10. Identify and label the nuclear reactor below.",
+          "id": "q-63",
+          "answer_html": "<p>This is a <strong>boiling-water reactor (BWR)</strong>. Steam produced in the reactor vessel goes directly to the turbine.</p><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Location in the diagram</th><th scope=\"col\">Label</th></tr></thead><tbody><tr><td>Tall vessel on the left</td><td>Reactor vessel with fuel, moderator/coolant, and control rods</td></tr><tr><td>Upper line from the vessel to the turbine</td><td>Steam line directly from the reactor vessel</td></tr><tr><td>Right, fan-shaped component</td><td>Steam turbine</td></tr><tr><td>Far right, driven by the turbine shaft</td><td>Electrical generator</td></tr><tr><td>Lower right, where steam gives up heat</td><td>Condenser, with its own cooling-water path</td></tr><tr><td>Lower return pipe</td><td>Feedwater pump and return to the steam source</td></tr></tbody></table></div>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              311,
+              302,
+              412.29159999999996,
+              580,
+              465.14090000000004
+            ]
+          ],
+          "text": "11. What happens when uranium-235 undergoes fission Describe what starts the process what happens during fission and what the consequences are.",
+          "id": "q-64",
+          "answer_html": "<p>A uranium-235 nucleus can absorb a neutron and form an excited uranium-236 nucleus. It can then split into two lighter fragments and release energy plus additional neutrons. The fragments transfer kinetic energy to their surroundings as heat. The released neutrons can cause further fissions.</p>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              311,
+              302,
+              479.7915,
+              580,
+              492.1408
+            ]
+          ],
+          "text": "12. How is fusion different from fission",
+          "id": "q-65",
+          "answer_html": "<p>Fission splits a heavy nucleus into lighter ones. Fusion joins light nuclei. Either can release energy if the final products have less total rest mass.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              311,
+              302,
+              506.79139999999995,
+              580,
+              559.6407
+            ]
+          ],
+          "text": "13. What happens when a slow-moving neutron successfully encounters: a a uranium-238 nucleus b a uranium-235 nucleus",
+          "id": "q-66",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Uranium-238 can capture a slow neutron to form <strong>uranium-239</strong>. Slow-neutron capture usually does not cause U-238 to fission.</li><li>Uranium-235 can absorb a slow neutron and undergo <strong>fission</strong>, releasing energy, lighter fragments, and more neutrons. Some captures can occur without fission.</li></ol>"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              311,
+              302,
+              574.2913,
+              580,
+              600.1406000000001
+            ]
+          ],
+          "text": "14. What is meant by critical mass How is it achieved in an atomic bomb",
+          "id": "q-67",
+          "answer_html": "<p><strong>Critical mass</strong> is the amount of fissile material needed for a self-sustaining chain reaction under specified conditions. In a nuclear weapon, the fission stage is brought from a subcritical state to a rapidly supercritical state, so successive neutron generations grow very quickly.</p>"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              311,
+              302,
+              614.7912,
+              580,
+              627.1405
+            ]
+          ],
+          "text": "15. How is fusion initiated in a hydrogen bomb",
+          "id": "q-68",
+          "answer_html": "<p>A thermonuclear weapon uses energy from a fission stage to create the extreme conditions for light nuclei to fuse. The high temperature lets some nuclei approach closely enough to react.</p>"
+        },
+        {
+          "label": "16",
+          "boxes": [
+            [
+              311,
+              302,
+              641.7912,
+              580,
+              667.6405
+            ]
+          ],
+          "text": "16. Why are scientists hopeful of achieving controlled fusion as a source of energy",
+          "id": "q-69",
+          "answer_html": "<p>Fusion could provide useful energy from light nuclei, including deuterium. It offers a high energy yield per mass of fuel. A practical system must sustain the plasma and capture enough of the released energy while coping with losses and material damage.</p>"
+        },
+        {
+          "label": "17",
+          "boxes": [
+            [
+              311,
+              302,
+              682.29106,
+              580,
+              708.14036
+            ]
+          ],
+          "text": "17. a What elements make up most of the stars b What type of nuclear reaction occurs in stars",
+          "id": "q-70",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Most stars consist mainly of <strong>hydrogen and helium</strong>.</li><li><strong>Nuclear fusion</strong> powers stars. For much of a star’s life, fusion converts hydrogen into helium.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    }
+  ]
+}

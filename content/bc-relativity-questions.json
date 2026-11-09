@@ -1,0 +1,743 @@
+{
+  "source": "bc_science_physics_11.pdf",
+  "chapter": 8,
+  "title": "Special Relativity",
+  "question_count": 39,
+  "groups": [
+    {
+      "id": "set-1",
+      "topic": "8.1",
+      "kind": "Warm-up",
+      "title": "Motion at a red light",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              265,
+              47,
+              134,
+              572,
+              164
+            ]
+          ],
+          "text": "Imagine you are sitting in your car at a red light and the cars around you start to move. Is it possible to feel like you are moving even if your car is still stopped Explain your answer.",
+          "id": "q-1",
+          "answer_html": "<p>Yes. If the neighbouring cars move forward, the distance from you to them increases. With only those cars as a reference, your brain may interpret this as your car rolling backward. Compare your position with a fixed roadside object to tell the difference.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-2",
+      "topic": "8.1",
+      "kind": "Quick check",
+      "title": "Relative velocities in the river",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              266,
+              63,
+              461,
+              565,
+              490
+            ]
+          ],
+          "text": "Find the velocity of the person in the boat relative to (a) the water and (b) Earth’s surface. In Figure 8.1.1 downstream is left. The river flows left at 5.0 km/h relative to Earth, the boat moves left at 10 km/h relative to water, the wind blows right at 20 km/h relative to Earth, and the bird flies left at 25 km/h relative to air.",
+          "id": "q-2",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>10 km/h downstream (left)</strong> relative to the water, as marked on the diagram.</li><li>Add the river’s 5.0 km/h downstream speed to get <strong>15 km/h downstream</strong> relative to Earth.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              266,
+              63,
+              520,
+              565,
+              547
+            ]
+          ],
+          "text": "Find the velocity of the bird relative to (a) the air, (b) the water, and (c) Earth’s surface. In Figure 8.1.1 downstream is left. The river flows left at 5.0 km/h relative to Earth, the boat moves left at 10 km/h relative to water, the wind blows right at 20 km/h relative to Earth, and the bird flies left at 25 km/h relative to air.",
+          "id": "q-3",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>25 km/h left</strong> relative to the air.</li><li>The bird’s Earth-frame velocity is 25 − 20 = 5 km/h left, the same as the river. It is at <strong>0 km/h</strong> relative to the water.</li><li><strong>5 km/h left</strong> relative to Earth. The wind blows 20 km/h to the right.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              266,
+              42,
+              577.3584,
+              581,
+              589.7077
+            ]
+          ],
+          "text": "3. What is the velocity of the water relative to the bird In Figure 8.1.1 downstream is left. The river flows left at 5.0 km/h relative to Earth, the boat moves left at 10 km/h relative to water, the wind blows right at 20 km/h relative to Earth, and the bird flies left at 25 km/h relative to air.",
+          "id": "q-4",
+          "answer_html": "<p>The river and bird both move left at 5 km/h relative to Earth. Subtract their velocities to get <strong>0 km/h</strong> relative to the bird.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              266,
+              42,
+              621.8584,
+              581,
+              634.2077
+            ]
+          ],
+          "text": "4. What is the velocity of the person in the boat relative to the bird In Figure 8.1.1 downstream is left. The river flows left at 5.0 km/h relative to Earth, the boat moves left at 10 km/h relative to water, the wind blows right at 20 km/h relative to Earth, and the bird flies left at 25 km/h relative to air.",
+          "id": "q-5",
+          "answer_html": "<p>The boat moves left at 15 km/h relative to Earth and the bird at 5 km/h left. The person therefore moves <strong>10 km/h downstream (left)</strong> relative to the bird.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              266,
+              42,
+              666.3582,
+              581,
+              692.2075100000001
+            ]
+          ],
+          "text": "5. What would all the velocities in Figure 8.1.1 appear to be relative to a camera in a spy satellite in geosynchronous orbit Its position is ifixedw relative to a point on the rotating Earth. In Figure 8.1.1 downstream is left. The river flows left at 5.0 km/h relative to Earth, the boat moves left at 10 km/h relative to water, the wind blows right at 20 km/h relative to Earth, and the bird flies left at 25 km/h relative to air.",
+          "id": "q-6",
+          "answer_html": "<p>The question describes a <strong>geostationary</strong> view, with the camera fixed over a point on the rotating Earth. In the Earth-fixed map used by the camera, the local ground is stationary, so the local Earth-relative velocities are unchanged. These are the boat at 15 km/h left, river and bird at 5 km/h left, and wind at 20 km/h right. The diagram’s boat-relative-to-water and bird-relative-to-air velocities describe the same pairwise motion.</p>"
+        }
+      ],
+      "shared": [
+        [
+          266,
+          178,
+          191,
+          560,
+          361
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-3",
+      "topic": "8.1",
+      "kind": "Quick check",
+      "title": "A ball thrown inside a moving van",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              268,
+              42,
+              518.2393,
+              581,
+              544.0886
+            ]
+          ],
+          "text": "1. Both observers in Figure 8.1.4 are moving at constant velocity. What is the velocity of observer A relative to the road Figure 8.1.4 shows observer A standing by the road and observer B in a van travelling right at 50 km/h.",
+          "id": "q-7",
+          "answer_html": "<p>Observer A stands at the roadside, so their road-relative velocity is <strong>0 km/h</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              268,
+              42,
+              572.2392,
+              581,
+              598.0885000000001
+            ]
+          ],
+          "text": "2. Sketch what the path of the ball thrown in the van would look like to an observer standing on the road looking into the van as it passes. Figure 8.1.4 shows observer A standing by the road and observer B in a van travelling right at 50 km/h.",
+          "id": "q-8",
+          "answer_html": "<p>The ball keeps the van’s steady horizontal velocity after release. In the road frame it moves forward while rising and falling under gravity. Draw a <strong>parabola</strong> opening downward, with the catch farther along the road. In the van frame the throw is straight up and down.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"One possible road-frame path, with illustrative distances\"><title>One possible road-frame path, with illustrative distances</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M232 54V226\" stroke=\"#dce4e1\"/><text x=\"232\" y=\"246\" text-anchor=\"middle\">3</text><path d=\"M402 54V226\" stroke=\"#dce4e1\"/><text x=\"402\" y=\"246\" text-anchor=\"middle\">6</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">0</text><path d=\"M62 140H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"144\" text-anchor=\"end\">1</text><path d=\"M62 54H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"58\" text-anchor=\"end\">2</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><polyline points=\"62.00,226.00 90.33,178.70 118.67,140.00 147.00,109.90 175.33,88.40 203.67,75.50 232.00,71.20 260.33,75.50 288.67,88.40 317.00,109.90 345.33,140.00 373.67,178.70 402.00,226.00\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">Forward distance (m)</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">Height above release (m)</text></svg><figcaption>One possible road-frame path, with illustrative distances. <span style=\"color:#096a70\">Ball travels right</span>.</figcaption></figure>"
+        }
+      ],
+      "shared": [
+        [
+          268,
+          178,
+          302,
+          568,
+          453
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-4",
+      "topic": "8.1",
+      "kind": "Sample prompt",
+      "title": "Sample 8.1.1 · Time dilation",
+      "questions": [
+        {
+          "label": "8.1.1",
+          "boxes": [
+            [
+              272,
+              57,
+              408,
+              562,
+              437
+            ]
+          ],
+          "text": "How much is time expanded or dilated from a fixed observer's point of view if the spaceship in Figure 8.1.7 is moving at one-half the speed of light v = 1/2c",
+          "id": "q-9",
+          "answer_html": "<p>With β = 0.500, γ = 1/√(1 − 0.500²) ≈ 1.1547. Thus <strong>Δt ≈ 1.155 Δτ</strong> for the same clock interval. An hour on board corresponds to about 69.3 min outside, about <strong>9.3 min longer</strong>.</p>"
+        }
+      ],
+      "shared": [
+        [
+          271,
+          162,
+          306,
+          565,
+          570
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-5",
+      "topic": "8.1",
+      "kind": "Practice",
+      "title": "Practice 8.1.1 · Time dilation",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              273,
+              53,
+              136,
+              253,
+              150
+            ]
+          ],
+          "text": "1. 0.65c Calculate the outside observer’s time for a proper time of 5.0 s.",
+          "id": "q-10",
+          "answer_html": "<p>Δt = Δτ/√(1 − β²) = (5.0 s)/√(1 − 0.65²) ≈ <strong>6.6 s</strong>. The outside frame assigns the longer interval.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              273,
+              53,
+              257,
+              253,
+              271
+            ]
+          ],
+          "text": "2. 0.866c Calculate the outside observer’s time for a proper time of 5.0 s.",
+          "id": "q-11",
+          "answer_html": "<p>Δt = Δτ/√(1 − β²) = (5.0 s)/√(1 − 0.866²) ≈ <strong>10 s</strong>. The outside frame assigns the longer interval.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              273,
+              269,
+              136,
+              551,
+              150
+            ]
+          ],
+          "text": "3. 0.995c Calculate the outside observer’s time for a proper time of 5.0 s.",
+          "id": "q-12",
+          "answer_html": "<p>Δt = Δτ/√(1 − β²) = (5.0 s)/√(1 − 0.995²) ≈ <strong>5.0 × 10¹ s</strong>. The outside frame assigns the longer interval.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              273,
+              269,
+              257,
+              551,
+              271
+            ]
+          ],
+          "text": "4. 0.999c Calculate the outside observer’s time for a proper time of 5.0 s.",
+          "id": "q-13",
+          "answer_html": "<p>Δt = Δτ/√(1 − β²) = (5.0 s)/√(1 − 0.999²) ≈ <strong>1.1 × 10² s</strong>. The outside frame assigns the longer interval.</p>"
+        }
+      ],
+      "shared": [
+        [
+          273,
+          51,
+          81,
+          553,
+          126
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-6",
+      "topic": "8.1",
+      "kind": "Sample prompt",
+      "title": "Sample 8.1.2 · Length contraction",
+      "questions": [
+        {
+          "label": "8.1.2",
+          "boxes": [
+            [
+              275,
+              51,
+              81,
+              555,
+              97
+            ]
+          ],
+          "text": "How long would a metre stick appear to be if it was moving past you with a speed of 0.995c",
+          "id": "q-14",
+          "answer_html": "<p>The stick’s proper length is 1.00 m. Its length measured parallel to its motion is (1.00 m)√(1 − 0.995²) ≈ <strong>0.100 m, or 10.0 cm</strong>. Record both endpoint positions at the same time in your frame. The speed in the question is 0.995c.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-7",
+      "topic": "8.1",
+      "kind": "Practice",
+      "title": "Practice 8.1.2 · Length contraction",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              275,
+              42,
+              381.3082,
+              581,
+              393.6575
+            ]
+          ],
+          "text": "1. 0.63c Find the length measured from outside the ship when its proper length is 100 m.",
+          "id": "q-15",
+          "answer_html": "<p>L = L₀√(1 − β²) = (100 m)√(1 − 0.63²) ≈ <strong>78 m</strong>. The length is measured along the direction of motion.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              275,
+              42,
+              475.8082,
+              581,
+              488.1575
+            ]
+          ],
+          "text": "2. 0.866c Find the length measured from outside the ship when its proper length is 100 m.",
+          "id": "q-16",
+          "answer_html": "<p>L = L₀√(1 − β²) = (100 m)√(1 − 0.866²) ≈ <strong>50 m</strong>. The length is measured along the direction of motion.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              275,
+              42,
+              597.3083,
+              581,
+              609.6576
+            ]
+          ],
+          "text": "3. 0.999c Find the length measured from outside the ship when its proper length is 100 m.",
+          "id": "q-17",
+          "answer_html": "<p>L = L₀√(1 − β²) = (100 m)√(1 − 0.999²) ≈ <strong>4.5 m</strong>. The length is measured along the direction of motion.</p>"
+        }
+      ],
+      "shared": [
+        [
+          275,
+          51,
+          334,
+          552,
+          369
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-8",
+      "topic": "8.1",
+      "kind": "Quick check",
+      "title": "Newtonian and relativistic momentum",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              277,
+              42,
+              85.07570000000001,
+              581,
+              195.9251
+            ]
+          ],
+          "text": "1. Let the mass of an electron be m. The speed of light is c. Calculate what the momentum of an electron would be at each of the following speeds according to the Newtonian equation for momentum p = mv. a 0.10c b 0.50c c 0.87c\"\"\"\"\" e c d 0.9999c",
+          "id": "q-18",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>0.10mc</li><li>0.50mc</li><li>0.87mc</li><li>0.9999mc</li><li>mc</li></ol><p>These follow by formally substituting into p = mv. The Newtonian model is an approximation for low speeds and its c result is only a formal value.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              277,
+              42,
+              264.57559999999995,
+              581,
+              361.92510000000004
+            ]
+          ],
+          "text": "2. Calculate what the relativistic momentum of an electron would be at these speeds: a 0.10c b 0.50c c 0.87c e c d 0.9999c",
+          "id": "q-19",
+          "answer_html": "<p>Use p/(mc) = β/√(1 − β²), where m is the invariant mass. At c the formula has no finite value for an electron. The momentum grows without bound as v approaches c from below.</p><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Speed</th><th scope=\"col\">Newtonian p</th><th scope=\"col\">Relativistic p</th></tr></thead><tbody><tr><td>0.1c</td><td>0.1 mc</td><td>0.101 mc</td></tr><tr><td>0.5c</td><td>0.5 mc</td><td>0.577 mc</td></tr><tr><td>0.87c</td><td>0.87 mc</td><td>1.76 mc</td></tr><tr><td>0.9999c</td><td>0.9999 mc</td><td>70.7 mc</td></tr><tr><td>c</td><td>mc (formal Newtonian result)</td><td>No finite value for a massive electron</td></tr></tbody></table></div>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              277,
+              42,
+              430.57559999999995,
+              581,
+              456.425
+            ]
+          ],
+          "text": "3. Calculate the unbalanced force that would be needed to accelerate an electron from rest up to the speed of light c in a time t.",
+          "id": "q-20",
+          "answer_html": "<p>The average net force in the chosen frame is Δp/Δt. From rest, Δp = γmv. At any fixed finite time t, the required average force grows without bound as v approaches c. <strong>No finite force can bring an electron to c in finite time.</strong></p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-9",
+      "topic": "8.1",
+      "kind": "Section review",
+      "title": "8.1 Review · Special relativity",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              279,
+              42,
+              86.6757,
+              302,
+              112.52499999999999
+            ]
+          ],
+          "text": "1. On what two postulates is the special theory of relativity based",
+          "id": "q-21",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The laws of physics have the same form in all inertial frames.</li><li>All inertial observers measure the same speed c for light in vacuum, regardless of the motion of its source.</li></ol>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              279,
+              42,
+              370.1756,
+              302,
+              409.5249
+            ]
+          ],
+          "text": "2. You are approaching a star in a spaceship that is travelling at half the speed of light. How fast will the light from the star go past you",
+          "id": "q-22",
+          "answer_html": "<p>The light passes at <strong>c ≈ 3.00 × 10⁸ m/s</strong> in the spaceship frame. Moving toward the star can change the frequency you measure.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              279,
+              302,
+              86.58330000000001,
+              581,
+              422.9325
+            ]
+          ],
+          "text": "3. An astronaut makes a trip in a spaceship travelling at a speed of 0.65c. a The astronaut's calendar and clocks indicate the trip lasts 10 a. How long does the trip last according to observers on a ifixedw Earth b The spaceship is 50.0 m long when at rest. How long does it appear to be to an observer in a fixed position on a line parallel to the path of the spaceship",
+          "id": "q-23",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The 10 a on the astronaut’s clock is proper time. Δt = 10/√(1 − 0.65²) ≈ <strong>13.2 years</strong> in the Earth frame.</li><li>L = (50.0 m)√(1 − 0.65²) ≈ <strong>38.0 m</strong>. Measure the two endpoints simultaneously in the Earth frame.</li></ol>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              280,
+              42,
+              52.3007,
+              317,
+              118.64999999999999
+            ]
+          ],
+          "text": "4. An event takes t 0 seconds to occur according to the occupants of a space bus that is moving at one-half the speed of light 12 c . To a fixed observer outside the space bus how long will the event take to occur",
+          "id": "q-24",
+          "answer_html": "<p>With β = ½, Δt = t₀/√(1 − ¼) = <strong>2t₀/√3 ≈ 1.155t₀</strong>. The bus clock measures the proper interval for an event pair at the same location in the bus.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              280,
+              42,
+              376.3006,
+              317,
+              415.6499
+            ]
+          ],
+          "text": "5. How fast must a space bus travel in order for its length to appear to an outside observer that the bus contracts to one-half its full length",
+          "id": "q-25",
+          "answer_html": "<p>Set L/L₀ = ½ = √(1 − β²). Then β² = ¾, so <strong>v = (√3/2)c ≈ 0.866c</strong>.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              280,
+              317,
+              52.300599999999996,
+              581,
+              145.65
+            ]
+          ],
+          "text": "6. From a fixed reference point you observe a space bus pass by at a very high speed v. The occupants say the space bus is 10 m long. If the space bus appears to be only 5 m long from your frame of reference how fast is the space bus moving Express your answer as a decimal fraction of the speed of light c.",
+          "id": "q-26",
+          "answer_html": "<p>The ratio is 5 m/10 m = 0.5. Then v/c = √(1 − 0.5²) = <strong>0.866</strong>. The bus travels at 0.866c.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              280,
+              317,
+              362,
+              581,
+              472
+            ]
+          ],
+          "text": "When you look at a distant star, are you seeing it (a) as it appears now, (b) as it will look in the future, or (c) as it looked in the past? Explain your answer.",
+          "id": "q-27",
+          "answer_html": "<p><strong>Choice (c).</strong> The light has taken time to reach Earth, so it carries information about the star when the light was emitted. For example, a star 10 light-years away is seen roughly 10 years in the past in the Earth frame.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              281,
+              42,
+              52.4007,
+              302,
+              118.75
+            ]
+          ],
+          "text": "8. A man is 25 a old. He expects to live to an age of 75 a. He plans to make a trip in a spaceship leaving Earth in the year 2020. He would like to return to Earth in the year 2520. Is this possible How fast would the spaceship have to travel",
+          "id": "q-28",
+          "answer_html": "<p>In the idealized model, Earth ages by 2520 − 2020 = 500 years. The traveller can spend at most 75 − 25 = 50 years on board, so γ must be at least 10. At γ = 10, v = c√(1 − 1/100) ≈ <strong>0.995c</strong>. This assumes equal cruising speeds on the outward and return legs with negligible time spent turning around.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              281,
+              42,
+              362.90049999999997,
+              302,
+              402.25
+            ]
+          ],
+          "text": "9. If 1 mg of mass were converted into pure energy how many joules of energy would be produced o6 1 mg = 10 kg",
+          "id": "q-29",
+          "answer_html": "<p>1 mg = 1 × 10⁻⁶ kg. E₀ = mc² ≈ (1 × 10⁻⁶)(3.00 × 10⁸)² = <strong>9 × 10¹⁰ J</strong> if all of that mass is converted.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              281,
+              302,
+              52.4008,
+              581,
+              429.25
+            ]
+          ],
+          "text": "10. a If the mass of a golf ball 46 g could be converted entirely into energy E = mc 2 how much energy would be released b Imagine your home uses an average of 16 kWth of electrical energy per day. If you could convert the energy from the mass of a golf ball directly into electrical energy and store it how many years supply would you be able to store away 1 kWth = 3.6 × 10⁶ J",
+          "id": "q-30",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Convert 46 g to 0.046 kg. E₀ = (0.046)(3.00 × 10⁸)² ≈ <strong>4.1 × 10¹⁵ J</strong>.</li><li>16 kWh/day = 5.76 × 10⁷ J/day. Dividing 4.14 × 10¹⁵ J by that rate gives about 7.19 × 10⁷ days, or <strong>2.0 × 10⁵ years</strong>, under complete conversion and lossless storage.</li></ol>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              282,
+              42,
+              52.4007,
+              317,
+              118.75
+            ]
+          ],
+          "text": "11. Find out from your hydroelectric bill how many joules of electrical energy you use each month. If you could somehow convert 1 g of mass directly into electrical energy how many months worth of electrical energy would this provide you with",
+          "id": "q-31",
+          "answer_html": "<p>Use your own monthly reading B in kWh. The monthly energy is B × 3.6 × 10⁶ J. Full conversion of 1 g gives (0.001)(3.00 × 10⁸)² = 9.0 × 10¹³ J, or <strong>2.5 × 10⁷ kWh</strong>. Divide 2.5 × 10⁷ by B for the number of months. A reading of 600 kWh would give about 4.2 × 10⁴ months.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-10",
+      "topic": "8.1",
+      "kind": "Extension",
+      "title": "8.1 Extension · The speed limit and gravity",
+      "questions": [
+        {
+          "label": "12",
+          "boxes": [
+            [
+              282,
+              317,
+              79.40060000000001,
+              581,
+              132.25
+            ]
+          ],
+          "text": "12. Discuss what happens to the momentum p of an electron if it is accelerated to a speed approaching the speed of light. Discuss whether the electron can be made to travel at the speed of light.",
+          "id": "q-32",
+          "answer_html": "<p>For invariant mass m, p = γmv. As v approaches c, γ increases without bound and so does the required momentum. Total energy E = γmc² also grows without bound. An electron can be accelerated very close to c, but cannot reach c with finite energy.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              282,
+              317,
+              389.9006,
+              581,
+              442.7499
+            ]
+          ],
+          "text": "13. The special theory of relativity deals only with frames of reference moving at uniform velocity. Find out how the general theory of relativity deals with gravity space and time.",
+          "id": "q-33",
+          "answer_html": "<p>Special relativity describes physics in flat spacetime. It can also describe an accelerating object by tracking its motion in that spacetime. General relativity describes gravity through spacetime curvature produced by matter and energy. Freely falling objects follow geodesics, and clocks can accumulate different proper times when they follow different paths or remain at different heights in a gravitational field.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-11",
+      "topic": "Extra practice",
+      "kind": "Extra practice",
+      "title": "Chapter 8 Extra Practice",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              283,
+              42,
+              113.6756,
+              302,
+              213.025
+            ]
+          ],
+          "text": "1. A 10 m long missile is test fired such that it moves with a speed of 0.1c. What is the apparent length of the missile at this speed a 9.90 m b 9.95 m c 10.0 m d 10.1 m",
+          "id": "q-34",
+          "answer_html": "<p><strong>Choice (b), 9.95 m.</strong> L = (10 m)√(1 − 0.1²) = 9.94987 m before rounding. This is a small contraction.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              283,
+              42,
+              227.6756,
+              302,
+              354.02500000000003
+            ]
+          ],
+          "text": "2. Rajesh and Radha were Earthlings and twins both 20 years old. That was when Rajesh went into space in a spaceship moving at a constant speed of 0.8c returning when he turned 25. How many years according to Radha did Rajesh spend in space a 3 years b 5 years c 8 years and 4 months d 11 years 2 months and 5 days",
+          "id": "q-35",
+          "answer_html": "<p><strong>Choice (c), 8 years and 4 months.</strong> The traveller ages 5 years. At 0.8c, γ = 1/0.6 = 5/3, so the Earth-frame duration is (5/3)(5 years) = 8⅓ years. Treat the turnaround as brief and use 0.8c as the speed on both legs.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              283,
+              42,
+              368.6756,
+              302,
+              454.52500000000003
+            ]
+          ],
+          "text": "3. What is the energy contained in an electron at rest in joules a 0.0144 J b 1.14 × 10¹⁵ J c 4.10 × 10⁻¹⁵ J d 8.20 × 10⁻¹⁵ J",
+          "id": "q-36",
+          "answer_html": "<p>Use the electron rest mass m ≈ 9.11 × 10⁻³¹ kg. E₀ = mc² ≈ (9.11 × 10⁻³¹)(3.00 × 10⁸)² = <strong>8.20 × 10⁻¹⁴ J</strong>. None of the printed choices matches. Choice (d) has the right coefficient and an exponent one power of ten too small.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              283,
+              302,
+              86.96440000000001,
+              581,
+              213.3136
+            ]
+          ],
+          "text": "4. A source of light is at rest with respect to an observer. The observer then starts moving toward the light source with velocity v. If the initial velocity of light for the observer was c what would be the new velocity a c b v c c o v d c v",
+          "id": "q-37",
+          "answer_html": "<p><strong>Choice (a), c.</strong> The observer still measures c for light in vacuum. Their motion toward the source changes the received frequency.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              283,
+              302,
+              229.9644,
+              581,
+              342.8136
+            ]
+          ],
+          "text": "5. Keelyn and Jon set their watches at 5:00 a.m. before Keelyn moves to space in a spaceship at a speed of 0.6c. What will be the time by Keelyn's watch if it is 5:20 a.m. by Jon's watch a 5:12:64 a.m. b 5:16 a.m. c 5:17:70 a.m. d 5:25 a.m.",
+          "id": "q-38",
+          "answer_html": "<p><strong>Choice (b), 5:16 a.m.</strong> At 0.6c, 1/γ = √(1 − 0.6²) = 0.800. The spaceship watch advances by 0.800 × 20 min = 16 min over the 20 min Earth-frame interval.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              283,
+              302,
+              357.4642,
+              581,
+              456.8136
+            ]
+          ],
+          "text": "6. A spaceship is cruising with a speed of 0.7c and fires a missile with speed 0.5c. What will be the speed of the missile in the rest frame of reference a 0.20c b 0.35c c 0.89c d 1.2c",
+          "id": "q-39",
+          "answer_html": "<p><strong>Choice (c), 0.89c.</strong> For a forward launch at 0.5c relative to the ship, u = (0.7c + 0.5c)/(1 + 0.7 × 0.5) ≈ 0.889c in the outside frame. A backward launch would require a negative signed launch velocity and give a different answer.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    }
+  ]
+}

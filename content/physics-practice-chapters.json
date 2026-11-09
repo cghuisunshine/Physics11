@@ -27,6 +27,34 @@
       "title": "Energy",
       "html": "bc-energy-questions.html",
       "inventory": "content/bc-energy-questions.json"
+    },
+    {
+      "id": "bc-ch6",
+      "number": 6,
+      "title": "Wave Motion",
+      "html": "bc-wave-motion-questions.html",
+      "inventory": "content/bc-wave-motion-questions.json"
+    },
+    {
+      "id": "bc-ch7",
+      "number": 7,
+      "title": "Light and Geometric Optics",
+      "html": "bc-optics-questions.html",
+      "inventory": "content/bc-optics-questions.json"
+    },
+    {
+      "id": "bc-ch8",
+      "number": 8,
+      "title": "Special Relativity",
+      "html": "bc-relativity-questions.html",
+      "inventory": "content/bc-relativity-questions.json"
+    },
+    {
+      "id": "bc-ch9",
+      "number": 9,
+      "title": "Nuclear Fission and Fusion",
+      "html": "bc-nuclear-questions.html",
+      "inventory": "content/bc-nuclear-questions.json"
     }
   ]
 }

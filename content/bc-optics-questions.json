@@ -1,0 +1,3123 @@
+{
+  "source": "bc_science_physics_11.pdf",
+  "chapter": 7,
+  "title": "Light and Geometric Optics",
+  "question_count": 173,
+  "groups": [
+    {
+      "id": "set-1",
+      "topic": "7.1",
+      "kind": "Warm-up",
+      "title": "Pinhole camera warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              205,
+              42,
+              93,
+              582,
+              220
+            ]
+          ],
+          "text": "Warm Up Make a pinhole camera with a Styrofoam or paper cup. Place pinhole a square of wax paper over the open end of the cup and hold wax it in place with a rubber band. With a pin poke a small hole paper in the other end of the cup. In a dark room with a light bulb at one end observe the image formed on the wax paper. Styrofoam Make sure the pinhole faces the light. Describe the image. cup rubber band",
+          "id": "q-1",
+          "answer_html": "<p>The screen shows a <strong>real, inverted image</strong> of the bulb. Rays travel in straight lines through the small hole. Rays from the top reach the lower screen and rays from the bottom reach the upper screen. Its size relative to the bulb depends on the two distances.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Rays from the top and bottom of the object cross at the pinhole and form an inverted image.\"><polyline points=\"44.0,38.0 199.0,83.0 351.0,127.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"44.0,115.0 199.0,83.0 351.0,52.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"199.0,24.0 199.0,77.0\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><polyline points=\"199.0,89.0 199.0,143.0\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><polyline points=\"351.0,25.0 351.0,146.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><text x=\"21\" y=\"159\" fill=\"#203440\">Object</text><text x=\"176\" y=\"159\" fill=\"#203440\">Pinhole</text><text x=\"329\" y=\"159\" fill=\"#203440\">Screen</text></svg><figcaption>Rays from the top and bottom of the object cross at the pinhole and form an inverted image.</figcaption></figure>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-2",
+      "topic": "7.1",
+      "kind": "Quick check",
+      "title": "Plane-mirror images",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              210,
+              42,
+              405.0757,
+              582,
+              417.425
+            ]
+          ],
+          "text": "1. You are a basketball player 2 m tall. What is the shortest mirror you need to see your whole self in it",
+          "id": "q-2",
+          "answer_html": "<p>The minimum mirror height is <strong>1.0 m</strong>, half of 2 m. The extreme reflection points are halfway in height between the eye and the top of the head, and between the eye and the feet. The mirror must be mounted at the correct height.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              210,
+              42,
+              451.57559999999995,
+              582,
+              477.42490000000004
+            ]
+          ],
+          "text": "2. At night have you ever seen your image in your living room window Why don't you see it during the daytime",
+          "id": "q-3",
+          "answer_html": "<p>The glass reflects some indoor light all day. At night the view through the window is dark, so the reflection stands out. Daytime light transmitted from outdoors can swamp the faint indoor reflection.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              210,
+              42,
+              511.5754,
+              582,
+              622.9247
+            ]
+          ],
+          "text": "3. a When you look into a mirror where exactly is your image b Is it on the mirror surface in front of it or behind it c If you move closer to the mirror what happens to your image",
+          "id": "q-4",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Extend reflected rays backward to locate a virtual image.</li><li>It is <strong>behind the mirror</strong> as far as you are in front.</li><li>The image moves closer to the mirror by the same distance. Your separation from the image decreases twice as fast.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-3",
+      "topic": "7.1",
+      "kind": "Investigation",
+      "title": "Investigation 7-1A · Image location",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              211,
+              42,
+              284.5757,
+              582,
+              296.925
+            ]
+          ],
+          "text": "1. Where is the image in the mirror How does the image distance compare with the object distance",
+          "id": "q-5",
+          "answer_html": "<p>The unlit candle lines up with a <strong>virtual image behind the sheet</strong>. The image is as far behind the reflecting surface as the lit candle is in front. Check alignment from more than one viewing position to reduce parallax.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              211,
+              42,
+              298.0757,
+              582,
+              310.425
+            ]
+          ],
+          "text": "2. According to your observations where does the reflection of light occur in the imirrorw",
+          "id": "q-6",
+          "answer_html": "<p>Reflection occurs at the <strong>air–plastic interfaces</strong>. The front surface usually gives the brighter reflection. Light transmitted into the sheet can reflect at the back surface and emerge to give a faint offset image.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          211,
+          42,
+          62,
+          582,
+          269
+        ]
+      ]
+    },
+    {
+      "id": "set-4",
+      "topic": "7.1",
+      "kind": "Investigation",
+      "title": "Investigation 7-1A · Reflected rays",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              212,
+              42,
+              501.50019999999995,
+              582,
+              527.3495
+            ]
+          ],
+          "text": "1. Compare the distance from the object to the mirror with the distance from the image to the mirror. Explain any difference you observe.",
+          "id": "q-7",
+          "answer_html": "<p>Measure perpendicular to the reflecting surface. The ideal result is <strong>equal distance magnitudes</strong>. Finite beam width, an inaccurate mirror line, and measurement errors can shift the measured intersection.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              212,
+              42,
+              528.5002,
+              582,
+              554.3495
+            ]
+          ],
+          "text": "2. The image in a plane mirror appears to be behind the mirror. Explain why this is so. Where does the light you see coming from the image really originate",
+          "id": "q-8",
+          "answer_html": "<p>Reflected rays diverge in front of the mirror. Extending them backward makes them appear to meet behind it. The light actually originates at the <strong>bulb filament in front</strong>.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              212,
+              42,
+              555.5002,
+              582,
+              581.3495
+            ]
+          ],
+          "text": "3. For each beam how did the angle of incidence compare with the angle of reflection Is this consistent with what you observed with waves reflecting from a plane surface",
+          "id": "q-9",
+          "answer_html": "<p>Each incident angle equals its reflected angle, measured from the normal. This is the same law used for wavefronts reflecting from a plane barrier. Report your observed differences and angle uncertainty.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          211,
+          42,
+          316,
+          582,
+          725
+        ],
+        [
+          212,
+          42,
+          62,
+          582,
+          486
+        ]
+      ]
+    },
+    {
+      "id": "set-5",
+      "topic": "7.1",
+      "kind": "Challenge",
+      "title": "Investigation 7-1A · Photographing a mirror image",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              212,
+              42,
+              602.0002,
+              582,
+              627.8495
+            ]
+          ],
+          "text": "1. Imagine that you wish to photograph your image in a plane wall mirror. You are standing 2 m in front of the mirror. At what distance should you set your camera lens Try this at school or at home with your cellphone.",
+          "id": "q-10",
+          "answer_html": "<p>Set the focus to about <strong>4 m</strong> if the camera is also 2 m from the mirror and next to your face. The virtual image is 2 m behind the mirror. In general add the appropriate object and camera distances for a head-on setup.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-6",
+      "topic": "7.1",
+      "kind": "Investigation",
+      "title": "Investigation 7-1B · Multiple images",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              214,
+              42,
+              263.30069999999995,
+              582,
+              289.15000000000003
+            ]
+          ],
+          "text": "1. What is the rule for predicting how many images you will see if you arrange two mirrors at an angle k",
+          "id": "q-11",
+          "answer_html": "<p>For the usual symmetric setup and when 360°/θ is an integer, the textbook model gives <strong>N = 360°/θ − 1</strong>. At 90° this gives 3 images. Finite mirrors can hide some images. For an odd integer ratio, moving the object off the bisector can change the count. Parallel facing mirrors can give a long chain of reflections.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              214,
+              42,
+              290.30069999999995,
+              582,
+              343.15000000000003
+            ]
+          ],
+          "text": "2. You wish to make a kaleidoscope toy with which you will see the same pattern repeated four times including the object. At what angle should you arrange the two long plane mirrors inside the tube of the kaleidoscope",
+          "id": "q-12",
+          "answer_html": "<p>Four copies include the object, so 360°/θ = 4. The angle is <strong>90°</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          213,
+          42,
+          62,
+          582,
+          724
+        ],
+        [
+          214,
+          42,
+          62,
+          582,
+          248
+        ]
+      ]
+    },
+    {
+      "id": "set-7",
+      "topic": "7.1",
+      "kind": "Challenge",
+      "title": "Investigation 7-1B · Infinity box and periscope",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              214,
+              42,
+              363.5007,
+              582,
+              389.35
+            ]
+          ],
+          "text": "1. Make an iinfinity box.w Use one mirror tile as the floor of the box and make walls out of four other mirror tiles. At the centre of the iinfinity box w place an interesting object such as a flickering light bulb or a small moving toy.",
+          "id": "q-13",
+          "answer_html": "<p>With the object centred, opposing mirror walls reflect each other repeatedly. Each successive image is normally dimmer. The floor mirror also gives images below the apparent floor.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              214,
+              42,
+              390.5007,
+              582,
+              416.35
+            ]
+          ],
+          "text": "2. Make a periscope on a large scale using mirror tiles so you can see down a hallway over the heads of students in the hall.",
+          "id": "q-14",
+          "answer_html": "<p>Put two plane mirrors at 45° to the tube, with their reflective faces parallel and oriented to send the light down the tube and then toward the eye. Two reflections preserve the scene’s orientation.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Two parallel 45° reflecting faces turn the light down, then horizontally toward the eye.\"><polyline points=\"341.0,48.0 207.0,48.0 207.0,132.0 70.0,132.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"239.0,16.0 239.0,80.0 175.0,80.0 239.0,16.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><polyline points=\"175.0,100.0 239.0,100.0 175.0,164.0 175.0,100.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><text x=\"277\" y=\"38\" fill=\"#203440\">Light in ←</text><text x=\"51\" y=\"120\" fill=\"#203440\">← To eye</text></svg><figcaption>Two parallel 45° reflecting faces turn the light down, then horizontally toward the eye.</figcaption></figure>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-8",
+      "topic": "7.1",
+      "kind": "Section review",
+      "title": "7.1 Review · Reflection and the spectrum",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              215,
+              42,
+              86.57570000000001,
+              302,
+              112.425
+            ]
+          ],
+          "text": "1. What is the relationship between frequency and wavelength in the electromagnetic spectrum",
+          "id": "q-15",
+          "answer_html": "<p>For electromagnetic radiation in vacuum, <strong>c = fλ</strong>. All bands have the same c, so higher frequency corresponds to shorter wavelength.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              215,
+              42,
+              181.0756,
+              302,
+              206.9249
+            ]
+          ],
+          "text": "2. What is considered the visible spectrum in the electromagnetic spectrum",
+          "id": "q-16",
+          "answer_html": "<p>The visible spectrum is the range detectable by the human eye, about <strong>380–760 nm</strong> using the textbook’s limits. Violet is at the short-wavelength end and red at the long-wavelength end.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              215,
+              42,
+              275.5755,
+              302,
+              301.4248
+            ]
+          ],
+          "text": "3. Describe two forms of electromagnetic radiation that have wavelengths longer than visible light.",
+          "id": "q-17",
+          "answer_html": "<p><strong>Infrared</strong> lies beyond red and is emitted by warm objects. <strong>Radio waves</strong> have longer wavelengths still and are used in broadcasting. Microwaves are another example.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              215,
+              42,
+              397.0755,
+              302,
+              422.9248
+            ]
+          ],
+          "text": "4. List three forms of electromagnetic radiation that have frequencies shorter than visible light.",
+          "id": "q-18",
+          "answer_html": "<p><strong>Infrared, microwaves, and radio waves</strong> all have lower frequencies than visible light.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              215,
+              42,
+              559.0754,
+              302,
+              584.9247
+            ]
+          ],
+          "text": "5. Define the law of reflection and give one real-world example.",
+          "id": "q-19",
+          "answer_html": "<p>The incident and reflected angles are <strong>equal</strong> when measured from the normal at the point of reflection. The rays and normal lie in the same plane. A bathroom mirror is a familiar example.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              215,
+              302,
+              86.8007,
+              582,
+              139.6499
+            ]
+          ],
+          "text": "6. In your own words describe how you can use a mirror to see around a corner. In your explanation use the terms reflecting ray incident ray normal line and law of reflection.",
+          "id": "q-20",
+          "answer_html": "<p>Place a mirror near the corner so the <strong>incident ray</strong> from the hidden object reflects toward your eye. Draw the normal perpendicular to the mirror where the ray hits. Rotate the mirror until the reflected and incident rays make equal angles with that normal.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              215,
+              302,
+              248.8007,
+              582,
+              274.65000000000003
+            ]
+          ],
+          "text": "7. What is the difference between image distance and object distance.",
+          "id": "q-21",
+          "answer_html": "<p>Object distance is measured from the object to the mirror. Image distance is measured from the mirror to the image. Their magnitudes match for a plane mirror. The image distance is negative in the signed convention because that image is virtual.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              215,
+              302,
+              478.3006,
+              582,
+              544.6499
+            ]
+          ],
+          "text": "8. Why is the image you see in a plane mirror not considered a real image A real image is one formed by light arriving at a region in space usually on a screen or film. The image in a plane mirror is called a virtual image.",
+          "id": "q-22",
+          "answer_html": "<p>No light converges at the apparent image behind the plane mirror. The rays reaching your eye only <em>appear</em> to originate there. You cannot catch the virtual image on a screen behind the mirror.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              216,
+              42,
+              52.3007,
+              316,
+              162.15019999999998
+            ]
+          ],
+          "text": "9. How many images of yourself will you see if you look into a pair of hinged mirrors forming these angles Assume you can fit! a 60° d 10° b 45° e 1° c 15°",
+          "id": "q-23",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>5</strong> at 60°.</li><li><strong>7</strong> at 45°.</li><li><strong>23</strong> at 15°.</li><li><strong>35</strong> at 10°.</li><li><strong>359</strong> at 1° in the ideal model.</li></ol><p>Use 360°/θ − 1 for these symmetric arrangements. Physical size and the field of view limit what you can actually see.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              216,
+              42,
+              176.8008,
+              316,
+              229.65
+            ]
+          ],
+          "text": "10. Imagine you are 180 cm tall. What is the shortest mirror you can use if you want to see your whole body Use a diagram to illustrate your answer. Will it matter how far from the mirror you stand",
+          "id": "q-24",
+          "answer_html": "<p>The shortest mirror is <strong>90 cm</strong> high. The two points of reflection lie halfway in height between the eye and the head and between the eye and the feet. Their vertical separation is half the person’s height regardless of distance from the mirror.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Rays from the head and feet meet the mirror halfway between those heights and eye level.\"><polyline points=\"70.0,25.0 317.0,37.0 70.0,49.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"70.0,148.0 317.0,98.5 70.0,49.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"317.0,36.0 317.0,100.0\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><polyline points=\"70.0,25.0 70.0,148.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><text x=\"17\" y=\"28\" fill=\"#203440\">Head</text><text x=\"23\" y=\"54\" fill=\"#203440\">Eye</text><text x=\"20\" y=\"151\" fill=\"#203440\">Feet</text><text x=\"320\" y=\"73\" fill=\"#203440\">Mirror</text></svg><figcaption>Rays from the head and feet meet the mirror halfway between those heights and eye level.</figcaption></figure>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              216,
+              42,
+              433.30069999999995,
+              316,
+              499.65000000000003
+            ]
+          ],
+          "text": "11. Why is AMBULANCE written backwards on the front of the vehicle Write your own name in such a way that it looks irightw when held up to a mirror. Draw a diagram to show why the letter ibw looks like a idw in a mirror.",
+          "id": "q-25",
+          "answer_html": "<p>Mirrored lettering on the ambulance reads normally in the driver’s rear-view mirror. To mirror your name, reverse the letter order and flip each letter across a vertical line. Draw the upright stroke of a b to the left of its loop, then place the stroke at the same distance on the right of the loop in the reflected view to obtain d.</p>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              216,
+              316,
+              52.4007,
+              582,
+              105.25
+            ]
+          ],
+          "text": "12. In the Warm Up you made a pinhole camera. Draw a diagram that illustrates why the image on the wax paper or screen was inverted. What are the other characteristics of the image",
+          "id": "q-26",
+          "answer_html": "<p>A ray from the top passes through the hole and reaches the lower screen. The image is <strong>real and inverted</strong>. Its size ratio is screen distance from the hole divided by object distance from the hole.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Rays from the top and bottom of the object cross at the pinhole and form an inverted image.\"><polyline points=\"44.0,38.0 199.0,83.0 351.0,127.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"44.0,115.0 199.0,83.0 351.0,52.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"199.0,24.0 199.0,77.0\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><polyline points=\"199.0,89.0 199.0,143.0\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><polyline points=\"351.0,25.0 351.0,146.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><text x=\"21\" y=\"159\" fill=\"#203440\">Object</text><text x=\"176\" y=\"159\" fill=\"#203440\">Pinhole</text><text x=\"329\" y=\"159\" fill=\"#203440\">Screen</text></svg><figcaption>Rays from the top and bottom of the object cross at the pinhole and form an inverted image.</figcaption></figure>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              216,
+              316,
+              362.9006,
+              582,
+              415.7499
+            ]
+          ],
+          "text": "13. Draw a diagram showing how you might use two prisms 45° o45° o90° as imirrorsw in a periscope. Show how the prisms must be arranged to act as mirrors.",
+          "id": "q-27",
+          "answer_html": "<p>Use two right-angle prisms whose hypotenuse faces are parallel. Light enters the first prism perpendicular to a leg, reflects internally at 45°, and exits down the tube. The second prism turns it toward the eye.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Two parallel 45° reflecting faces turn the light down, then horizontally toward the eye.\"><polyline points=\"341.0,48.0 207.0,48.0 207.0,132.0 70.0,132.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"239.0,16.0 239.0,80.0 175.0,80.0 239.0,16.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><polyline points=\"175.0,100.0 239.0,100.0 175.0,164.0 175.0,100.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><text x=\"277\" y=\"38\" fill=\"#203440\">Light in ←</text><text x=\"51\" y=\"120\" fill=\"#203440\">← To eye</text></svg><figcaption>Two parallel 45° reflecting faces turn the light down, then horizontally toward the eye.</figcaption></figure>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-9",
+      "topic": "7.2",
+      "kind": "Warm-up",
+      "title": "Spoon mirrors warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              217,
+              42,
+              120,
+              582,
+              151
+            ]
+          ],
+          "text": "Take a metal spoon. Hold it at arms length. Describe what the image looks like and how it changes as you bring it to your nose. Repeat with the other side. Share your findings with the class.",
+          "id": "q-28",
+          "answer_html": "<p>The concave bowl can give an <strong>inverted</strong> image from farther away and an <strong>upright, enlarged</strong> one when your face is inside its focal length. The convex back gives an upright, reduced virtual image. A spoon’s non-spherical shape can distort the image.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-10",
+      "topic": "7.2",
+      "kind": "Quick check",
+      "title": "Concave mirror ray diagrams",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              220,
+              42,
+              79,
+              582,
+              440
+            ]
+          ],
+          "text": "1. Complete these ray diagrams to show where the image of the object will form and what its relative size will be. Draw at least two rays for each diagram. a Type: Attitude: C F Magnification: Position: a b Type: Attitude: F Magnification: C Position: b c Type: Attitude: C F Magnification: Position: c",
+          "id": "q-29",
+          "answer_html": "<p>In order, the drawings place the object beyond C, at C, and between C and F. From the arrow tip, draw a ray parallel to the axis and reflect it through F. A second ray through the vertex reflects at equal angles to the axis. Their intersections give the image tips.</p><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Object position</th><th scope=\"col\">Image</th></tr></thead><tbody><tr><td>dₒ &gt; 2f</td><td>Real, inverted, reduced. Between f and 2f in front of the mirror.</td></tr><tr><td>dₒ = 2f</td><td>Real, inverted, same size. At 2f in front of the mirror.</td></tr><tr><td>f &lt; dₒ &lt; 2f</td><td>Real, inverted, enlarged. Beyond 2f in front of the mirror.</td></tr></tbody></table></div><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ &gt; 2f. Real, inverted, reduced. Between f and 2f in front of the mirror.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M258.6 17Q284.6 79 258.6 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"189.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"183.671\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"107.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"101.788\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"58.7,52.0 271.6,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"271.6,52.0 27.0,132.6\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"58.7,52.0 271.6,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"271.6,79.0 27.0,110.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"58.7,79.0 58.7,52.0 54.7,57.0 58.7,52.0 62.7,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"138.5,79.0 138.5,95.9 134.5,90.9 138.5,95.9 142.5,90.9\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ &gt; 2f. Real, inverted, reduced. Between f and 2f in front of the mirror.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ = 2f. Real, inverted, same size. At 2f in front of the mirror.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M249.0 17Q275.0 79 249.0 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"172.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"166.769\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"83.5\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"77.5385\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"83.5,52.0 262.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"262.0,52.0 27.0,123.1\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"83.5,52.0 262.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"262.0,79.0 27.0,114.6\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"83.5,79.0 83.5,52.0 79.5,57.0 83.5,52.0 87.5,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"83.5,79.0 83.5,106.0 79.5,101.0 83.5,106.0 87.5,101.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ = 2f. Real, inverted, same size. At 2f in front of the mirror.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"f &lt; dₒ &lt; 2f. Real, inverted, enlarged. Beyond 2f in front of the mirror.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M268.7 17Q294.7 79 268.7 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"207.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"201.702\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"133.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"127.66\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"170.7,52.0 281.7,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"281.7,52.0 27.0,144.9\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"170.7,52.0 281.7,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"281.7,79.0 27.0,140.9\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"170.7,79.0 170.7,52.0 166.7,57.0 170.7,52.0 174.7,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"59.6,79.0 59.6,133.0 55.6,128.0 59.6,133.0 63.6,128.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>f &lt; dₒ &lt; 2f. Real, inverted, enlarged. Beyond 2f in front of the mirror.</figcaption></figure>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-11",
+      "topic": "7.2",
+      "kind": "Sample prompt",
+      "title": "Sample 7.2.1 · Using the mirror equation",
+      "questions": [
+        {
+          "label": "7.2.1",
+          "boxes": [
+            [
+              222,
+              42,
+              318,
+              582,
+              346
+            ]
+          ],
+          "text": "A concave mirror has a focal length of 20.0 cm. If an object is 1.00 m in front of the mirror where will the image form",
+          "id": "q-30",
+          "answer_html": "<p>Convert 1.00 m to 100 cm. 1/dᵢ = 1/20.0 − 1/100 = 0.0400 cm⁻¹, so <strong>dᵢ = +25.0 cm</strong>. The image is real and forms in front of the mirror.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-12",
+      "topic": "7.2",
+      "kind": "Practice",
+      "title": "Practice 7.2.1 · Using the mirror equation",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              223,
+              42,
+              80.32570000000001,
+              582,
+              106.175
+            ]
+          ],
+          "text": "1. A real image forms 25.0 cm in front of a concave mirror which has a focal length of 20.0 cm. How far is the object from the mirror",
+          "id": "q-31",
+          "answer_html": "<p>Real image gives dᵢ = +25.0 cm. 1/dₒ = 1/20.0 − 1/25.0 = 0.0100 cm⁻¹. The object is <strong>100 cm in front</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              223,
+              42,
+              188.3255,
+              582,
+              214.1748
+            ]
+          ],
+          "text": "2. An image forms in front of a concave mirror at the same distance from the mirror as the object. Solve for the object or the image distance in terms of the focal length f.",
+          "id": "q-32",
+          "answer_html": "<p>With dᵢ = dₒ, 2/dₒ = 1/f. Thus <strong>dₒ = dᵢ = 2f</strong>. The object is at C for a spherical concave mirror in the paraxial model.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              223,
+              42,
+              309.8255,
+              582,
+              335.67490000000004
+            ]
+          ],
+          "text": "3. What is the focal length of a concave mirror that forms an image on a screen 40.0 cm away when an object is 20.0 cm in front of the mirror",
+          "id": "q-33",
+          "answer_html": "<p>1/f = 1/20.0 + 1/40.0 = 0.0750 cm⁻¹. The focal length is <strong>13.3 cm</strong>.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              223,
+              42,
+              431.3255,
+              582,
+              457.175
+            ]
+          ],
+          "text": "4. An object is placed 10.0 cm in front of a concave mirror of focal length 15.0 cm. Solve for d i . Why is the answer negative",
+          "id": "q-34",
+          "answer_html": "<p>1/dᵢ = 1/15.0 − 1/10.0 = −1/30.0 cm⁻¹. <strong>dᵢ = −30.0 cm</strong> indicates an upright virtual image 30.0 cm behind the mirror.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-13",
+      "topic": "7.2",
+      "kind": "Investigation",
+      "title": "Investigation 7-2A · Convex mirrors",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              225,
+              42,
+              446.5257,
+              582,
+              458.875
+            ]
+          ],
+          "text": "1. Why is a convex mirror called a diverging mirror",
+          "id": "q-35",
+          "answer_html": "<p>Parallel incoming rays <strong>spread apart after reflection</strong>. Their backward extensions meet near a virtual focus behind the convex mirror.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              225,
+              42,
+              460.0257,
+              582,
+              472.375
+            ]
+          ],
+          "text": "2. Why does a convex mirror give a wide-angle view when you look at it",
+          "id": "q-36",
+          "answer_html": "<p>The curved surface presents different local normals across its width. It can direct rays from a wider range of directions to the eye, at the cost of reduced image size.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              225,
+              42,
+              473.5257,
+              582,
+              499.375
+            ]
+          ],
+          "text": "3. Describe the nature of the image you see in a diverging mirror. Is it real or virtual Enlarged or smaller Erect or inverted",
+          "id": "q-37",
+          "answer_html": "<p>For a real object, a convex mirror gives a <strong>virtual, upright, reduced</strong> image behind the mirror, between the vertex and F.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              225,
+              42,
+              500.5257,
+              582,
+              512.875
+            ]
+          ],
+          "text": "4. What would you look like in a tall vertical mirror shaped like a cylinder",
+          "id": "q-38",
+          "answer_html": "<p>A vertical cylindrical mirror curves across its width and is straight vertically. With a convex side facing you, your image looks <strong>narrower</strong> while the vertical scale is much less changed. A concave side close enough can stretch the width instead.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          225,
+          42,
+          62,
+          582,
+          431
+        ]
+      ]
+    },
+    {
+      "id": "set-14",
+      "topic": "7.2",
+      "kind": "Investigation",
+      "title": "Investigation 7-2A · Concave mirrors",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              226,
+              42,
+              149.5007,
+              582,
+              161.85
+            ]
+          ],
+          "text": "1. Why is a concave mirror called a converging mirror",
+          "id": "q-39",
+          "answer_html": "<p>Rays parallel to the principal axis <strong>converge after reflecting</strong>. In the paraxial approximation the crossing is at the principal focus.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              226,
+              42,
+              163.0007,
+              582,
+              175.35
+            ]
+          ],
+          "text": "2. Why are concave mirrors used in some telescopes",
+          "id": "q-40",
+          "answer_html": "<p>A concave primary mirror collects light from a distant object and forms a real image near the focus. A larger mirror intercepts more light. An eyepiece or sensor views that image.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              226,
+              42,
+              176.5007,
+              582,
+              188.85
+            ]
+          ],
+          "text": "3. Does a cylindrical mirror focus all the incoming parallel beams of light to a single point Discuss.",
+          "id": "q-41",
+          "answer_html": "<p>A cylindrical mirror curves in only one direction, so it can focus a parallel sheet of rays to a <strong>line</strong>. The ray-box view shows a cross-section. Rays far from the axis can also show aberration.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          225,
+          42,
+          520,
+          582,
+          725
+        ],
+        [
+          226,
+          42,
+          62,
+          582,
+          134
+        ]
+      ]
+    },
+    {
+      "id": "set-15",
+      "topic": "7.2",
+      "kind": "Investigation",
+      "title": "Investigation 7-2A · Measuring focal length",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              226,
+              42,
+              622.0251999999999,
+              582,
+              647.8745
+            ]
+          ],
+          "text": "1. If you placed the light source closer to the mirror say 1.5 m would the light from the source come to a focus Would it converge at the principal focus Discuss.",
+          "id": "q-42",
+          "answer_html": "<p>If 1.5 m exceeds f, the rays still converge to a real image. Use 1/dᵢ = 1/f − 1/(1.5 m), so <strong>dᵢ > f</strong> for a finite distance. If dₒ = f they leave parallel, and if dₒ < f the image is virtual.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              226,
+              42,
+              649.0251999999999,
+              582,
+              674.8745
+            ]
+          ],
+          "text": "2. Why is it important to use a distant light source when you are trying to measure the focal length of a concave mirror",
+          "id": "q-43",
+          "answer_html": "<p>A distant source supplies nearly parallel rays. With 1/dₒ ≈ 0, the mirror equation reduces to dᵢ ≈ f. Locate the sharpest image on a screen and measure from the mirror vertex.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          226,
+          42,
+          195,
+          582,
+          607
+        ]
+      ]
+    },
+    {
+      "id": "set-16",
+      "topic": "7.2",
+      "kind": "Investigation",
+      "title": "Investigation 7-2B · Images in concave mirrors",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              227,
+              42,
+              513.0251999999999,
+              582,
+              538.8745
+            ]
+          ],
+          "text": "1. Draw ray diagrams showing where and why the real images formed when the object was at these distances: a >2f b 2f c 1.5f d f.",
+          "id": "q-44",
+          "answer_html": "<p>The first three placements yield real images. At f the reflected rays from an object point are parallel, so there is no real image at a finite distance.</p><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Object position</th><th scope=\"col\">Image</th></tr></thead><tbody><tr><td>dₒ &gt; 2f</td><td>Real, inverted, reduced. Between f and 2f in front of the mirror.</td></tr><tr><td>dₒ = 2f</td><td>Real, inverted, same size. At 2f in front of the mirror.</td></tr><tr><td>f &lt; dₒ &lt; 2f</td><td>Real, inverted, enlarged. Beyond 2f in front of the mirror.</td></tr><tr><td>dₒ = f</td><td>Outgoing rays from each object point are parallel. No finite image.</td></tr></tbody></table></div><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ &gt; 2f. Real, inverted, reduced. Between f and 2f in front of the mirror.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M258.6 17Q284.6 79 258.6 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"189.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"183.671\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"107.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"101.788\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"58.7,52.0 271.6,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"271.6,52.0 27.0,132.6\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"58.7,52.0 271.6,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"271.6,79.0 27.0,110.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"58.7,79.0 58.7,52.0 54.7,57.0 58.7,52.0 62.7,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"138.5,79.0 138.5,95.9 134.5,90.9 138.5,95.9 142.5,90.9\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ &gt; 2f. Real, inverted, reduced. Between f and 2f in front of the mirror.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ = 2f. Real, inverted, same size. At 2f in front of the mirror.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M249.0 17Q275.0 79 249.0 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"172.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"166.769\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"83.5\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"77.5385\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"83.5,52.0 262.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"262.0,52.0 27.0,123.1\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"83.5,52.0 262.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"262.0,79.0 27.0,114.6\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"83.5,79.0 83.5,52.0 79.5,57.0 83.5,52.0 87.5,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"83.5,79.0 83.5,106.0 79.5,101.0 83.5,106.0 87.5,101.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ = 2f. Real, inverted, same size. At 2f in front of the mirror.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"f &lt; dₒ &lt; 2f. Real, inverted, enlarged. Beyond 2f in front of the mirror.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M268.7 17Q294.7 79 268.7 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"207.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"201.702\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"133.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"127.66\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"170.7,52.0 281.7,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"281.7,52.0 27.0,144.9\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"170.7,52.0 281.7,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"281.7,79.0 27.0,140.9\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"170.7,79.0 170.7,52.0 166.7,57.0 170.7,52.0 174.7,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"59.6,79.0 59.6,133.0 55.6,128.0 59.6,133.0 63.6,128.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>f &lt; dₒ &lt; 2f. Real, inverted, enlarged. Beyond 2f in front of the mirror.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ = f. Outgoing rays from each object point are parallel. No finite image.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M249.0 17Q275.0 79 249.0 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"172.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"166.769\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"83.5\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"77.5385\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"172.8,52.0 262.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"262.0,52.0 27.0,123.1\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"172.8,52.0 262.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"262.0,79.0 30.7,149.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"172.8,79.0 172.8,52.0 168.8,57.0 172.8,52.0 176.8,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ = f. Outgoing rays from each object point are parallel. No finite image.</figcaption></figure>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              227,
+              42,
+              540.0251999999999,
+              582,
+              552.3745
+            ]
+          ],
+          "text": "2. If this concave mirror is being used as an astronomical telescope where will the image form",
+          "id": "q-45",
+          "answer_html": "<p>A distant star gives nearly parallel incident rays. Its real image forms near the <strong>focal plane</strong>, about f in front of the mirror.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              227,
+              42,
+              553.5251999999999,
+              582,
+              565.8745
+            ]
+          ],
+          "text": "3. If the mirror is being used in an automobile headlight or in a spotlight where will you place the object",
+          "id": "q-46",
+          "answer_html": "<p>Put the filament at the <strong>principal focus</strong> to obtain a nearly parallel outgoing beam. A source of finite size gives some beam spread.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              227,
+              42,
+              567.0251999999999,
+              582,
+              579.3745
+            ]
+          ],
+          "text": "4. Why is it difficult to obtain a good image of the object when it is at F",
+          "id": "q-47",
+          "answer_html": "<p>At dₒ = f, 1/dᵢ = 0. Rays from each object point leave parallel, so there is no finite screen position that gives a sharp image.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              227,
+              42,
+              580.5251999999999,
+              582,
+              592.8745
+            ]
+          ],
+          "text": "5. In general what object distance range will give a real image",
+          "id": "q-48",
+          "answer_html": "<p>A real object must be <strong>farther than the focus</strong>, so dₒ > f. The reflected rays then cross in front of the mirror.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              227,
+              42,
+              592.5251999999999,
+              582,
+              604.8745
+            ]
+          ],
+          "text": "6. In general what object distance range will give a virtual image",
+          "id": "q-49",
+          "answer_html": "<p>For <strong>0 < dₒ < f</strong> the reflected rays diverge. They appear to originate from an upright virtual image behind the mirror.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          227,
+          42,
+          62,
+          582,
+          497
+        ]
+      ]
+    },
+    {
+      "id": "set-17",
+      "topic": "7.2",
+      "kind": "Section review",
+      "title": "7.2 Review · Curved mirrors",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              228,
+              42,
+              86.57570000000001,
+              582,
+              98.925
+            ]
+          ],
+          "text": "1. What is the difference between a convex and concave lens",
+          "id": "q-50",
+          "answer_html": "<p>A simple convex lens is thicker at the centre than at its edges. A simple concave lens is thinner at the centre. In air with ordinary glass, the first converges parallel rays and the second diverges them.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              228,
+              42,
+              140.5757,
+              582,
+              152.92499999999998
+            ]
+          ],
+          "text": "2. What is the difference between a diverging and converging lens",
+          "id": "q-51",
+          "answer_html": "<p>A converging lens brings an axial parallel bundle to a real focus. A diverging lens makes it spread as if from a virtual focus on the incoming side.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              228,
+              42,
+              194.5756,
+              582,
+              206.9249
+            ]
+          ],
+          "text": "3. Which type of mirror makes the image smaller than real life",
+          "id": "q-52",
+          "answer_html": "<p>A <strong>convex mirror</strong> always reduces a real object. A concave mirror can also reduce an object placed beyond C, giving a real inverted image in that case.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              228,
+              42,
+              235.0756,
+              582,
+              314.9248
+            ]
+          ],
+          "text": "4. Which type of mirror would you use for the following situations Explain your answer. a make-up or shaving b security mirror in a store c clothes store",
+          "id": "q-53",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>Concave</strong>, with your face inside f for a magnified upright image.</li><li><strong>Convex</strong> for a wide field of view.</li><li><strong>Plane</strong> for an upright, undistorted, same-size view.</li></ol>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              228,
+              42,
+              329.5754,
+              582,
+              498.77500000000003
+            ]
+          ],
+          "text": "5. Match the following terms with the correct definition ___ Principal axis A. The geometric centre of the curved mirror ___ Vertex B. The point that represents the centre of the sphere from which the mirror was cut ___ Focal point C. The distance between the focal point and the vertex ___ Centre of curvature D. The distance between the centre of curvature and the mirror ___ Radius of curvature E. An imaginary line drawn from the vertex and perpendicular to the curved mirror at that point ___ Focal length F. Where light rays parallel to the principal axis converge after being reflected",
+          "id": "q-54",
+          "answer_html": "<p>In order, <strong>E, A, F, B, D, C</strong>. The vertex is where the principal axis meets the surface. For a spherical mirror in the small-angle approximation, |f| = R/2.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              228,
+              42,
+              515.4257,
+              582,
+              727
+            ]
+          ],
+          "text": "6. For converging mirrors describe the image characteristics for the following object positions. Object Position Image Characteristics Far away Outside centre of curvature At the centre of curvature Between the focal point and centre of curvature At the focal point Between focal point and vertex",
+          "id": "q-55",
+          "answer_html": "<div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Object position</th><th scope=\"col\">Image</th></tr></thead><tbody><tr><td>Far away</td><td>Near F, real, inverted, strongly reduced</td></tr><tr><td>Beyond C</td><td>Between F and C, real, inverted, reduced</td></tr><tr><td>At C</td><td>At C, real, inverted, same size</td></tr><tr><td>Between F and C</td><td>Beyond C, real, inverted, enlarged</td></tr><tr><td>At F</td><td>No finite image</td></tr><tr><td>Between F and vertex</td><td>Behind mirror, virtual, upright, enlarged</td></tr></tbody></table></div>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              229,
+              42,
+              52.3007,
+              582,
+              361.6497
+            ]
+          ],
+          "text": "7. Draw the ray diagrams for the following concave mirrors: a Object is more than two focal lengths away from the mirror b Object is between one and two focal lengths. c Object is at focal point. d Object is between mirror and focal point.",
+          "id": "q-56",
+          "answer_html": "<div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Object position</th><th scope=\"col\">Image</th></tr></thead><tbody><tr><td>dₒ &gt; 2f</td><td>Real, inverted, reduced. Between f and 2f in front of the mirror.</td></tr><tr><td>f &lt; dₒ &lt; 2f</td><td>Real, inverted, enlarged. Beyond 2f in front of the mirror.</td></tr><tr><td>dₒ = f</td><td>Outgoing rays from each object point are parallel. No finite image.</td></tr><tr><td>0 &lt; dₒ &lt; f</td><td>Virtual, upright, enlarged. Behind the mirror.</td></tr></tbody></table></div><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ &gt; 2f. Real, inverted, reduced. Between f and 2f in front of the mirror.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M258.6 17Q284.6 79 258.6 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"189.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"183.671\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"107.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"101.788\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"58.7,52.0 271.6,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"271.6,52.0 27.0,132.6\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"58.7,52.0 271.6,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"271.6,79.0 27.0,110.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"58.7,79.0 58.7,52.0 54.7,57.0 58.7,52.0 62.7,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"138.5,79.0 138.5,95.9 134.5,90.9 138.5,95.9 142.5,90.9\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ &gt; 2f. Real, inverted, reduced. Between f and 2f in front of the mirror.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"f &lt; dₒ &lt; 2f. Real, inverted, enlarged. Beyond 2f in front of the mirror.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M268.7 17Q294.7 79 268.7 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"207.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"201.702\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"133.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"127.66\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"170.7,52.0 281.7,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"281.7,52.0 27.0,144.9\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"170.7,52.0 281.7,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"281.7,79.0 27.0,140.9\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"170.7,79.0 170.7,52.0 166.7,57.0 170.7,52.0 174.7,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"59.6,79.0 59.6,133.0 55.6,128.0 59.6,133.0 63.6,128.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>f &lt; dₒ &lt; 2f. Real, inverted, enlarged. Beyond 2f in front of the mirror.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ = f. Outgoing rays from each object point are parallel. No finite image.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M249.0 17Q275.0 79 249.0 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"172.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"166.769\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"83.5\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"77.5385\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"172.8,52.0 262.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"262.0,52.0 27.0,123.1\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"172.8,52.0 262.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"262.0,79.0 30.7,149.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"172.8,79.0 172.8,52.0 168.8,57.0 172.8,52.0 176.8,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ = f. Outgoing rays from each object point are parallel. No finite image.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"0 &lt; dₒ &lt; f. Virtual, upright, enlarged. Behind the mirror.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M203.3 17Q229.3 79 203.3 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"144.6\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"138.635\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"73.0\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"66.9882\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"169.7,60.1 216.3,60.1\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"216.3,60.1 27.0,110.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"216.3,60.1 349.3,25.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"169.7,60.1 216.3,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"216.3,79.0 43.8,149.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"216.3,79.0 349.3,25.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"169.7,79.0 169.7,60.1 165.7,65.1 169.7,60.1 173.7,65.1\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"349.3,79.0 349.3,25.0 345.3,30.0 349.3,25.0 353.3,30.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Dashed lines are extensions</text></svg><figcaption>0 &lt; dₒ &lt; f. Virtual, upright, enlarged. Behind the mirror.</figcaption></figure>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              229,
+              42,
+              443.80039999999997,
+              582,
+              542.15
+            ]
+          ],
+          "text": "8. What shape of itrickw mirror would make: a A thin person look larger ___________________________ b A large person look thinner _________________________ c A tall person look shorter ___________________________ d A short person look taller ___________________________",
+          "id": "q-57",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Make it <strong>concave across the width</strong> and stand inside f to appear wider.</li><li>Make it <strong>convex across the width</strong> to appear narrower.</li><li>Make it <strong>convex in the vertical cross-section</strong> to compress height.</li><li>Make it <strong>concave in the vertical cross-section</strong> and stand inside f to stretch height.</li></ol>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              229,
+              42,
+              556.6359,
+              582,
+              727
+            ]
+          ],
+          "text": "9. On the diagram below use two rays to show where the image of the arrow will be. convex mirror object centre of curvature C F virtual focus",
+          "id": "q-58",
+          "answer_html": "<p>Draw one incoming ray parallel to the axis. Reflect it so its backward extension passes through F. A second ray striking the vertex reflects at the same angle to the axis. Extend the reflected rays behind the mirror. They meet at a reduced, upright image between F and the vertex.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Convex mirror. Backward extensions meet behind the mirror between the vertex and F.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M217.0 17Q191.0 79 217.0 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"270.9\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"264.923\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"337.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"331.846\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"56.8,52.0 204.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,52.0 97.4,9.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,52.0 250.0,70.6\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"56.8,52.0 204.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 27.0,111.5\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 250.0,70.6\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"56.8,79.0 56.8,52.0 52.8,57.0 56.8,52.0 60.8,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"250.0,79.0 250.0,70.6 246.0,75.6 250.0,70.6 254.0,75.6\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Dashed lines are extensions</text></svg><figcaption>Convex mirror. Backward extensions meet behind the mirror between the vertex and F.</figcaption></figure>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              230,
+              42,
+              52.3007,
+              582,
+              334.6499
+            ]
+          ],
+          "text": "10. a Can a convex mirror form a real image Explain your answer with a ray diagram. b Can a convex mirror form an enlarged image Explain your answer with a ray diagram.",
+          "id": "q-59",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>For the real object shown in the usual classroom setup, <strong>no</strong>. Reflected rays diverge and only their extensions meet.</li><li><strong>No</strong> for a real object. With f < 0 and dₒ > 0, |dᵢ| = |f|dₒ/(|f| + dₒ) < dₒ, so |m| < 1.</li></ol><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Convex mirror. Backward extensions meet behind the mirror between the vertex and F.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M217.0 17Q191.0 79 217.0 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"270.9\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"264.923\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"337.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"331.846\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"56.8,52.0 204.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,52.0 97.4,9.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,52.0 250.0,70.6\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"56.8,52.0 204.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 27.0,111.5\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 250.0,70.6\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"56.8,79.0 56.8,52.0 52.8,57.0 56.8,52.0 60.8,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"250.0,79.0 250.0,70.6 246.0,75.6 250.0,70.6 254.0,75.6\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Dashed lines are extensions</text></svg><figcaption>Convex mirror. Backward extensions meet behind the mirror between the vertex and F.</figcaption></figure>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-18",
+      "topic": "7.2",
+      "kind": "Challenge",
+      "title": "Curved mirrors challenge · The Mirage",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              230,
+              42,
+              605,
+              582,
+              726
+            ]
+          ],
+          "text": "Challenge 1. The commercially available double concave mirror shown here is called a Mirage. It creates a very realistic image at the opening of the top mirror. Is this image real or is it virtual On a separate sheet of paper draw a ray diagram to explain why the image forms where it does.",
+          "id": "q-60",
+          "answer_html": "<p>The image is <strong>real</strong>. Light from the object at the bottom reflects from the upper concave surface and then from the lower one. The rays really meet near the opening. The mirrors are positioned so the first reflection supplies a bundle the second can focus there.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Two facing concave mirrors return light through the opening and bring the rays together at a real image.\"><path d=\"M67 75.7Q130 35.8 193 32.3M217 32.3Q280 35.8 343 75.7M67 97.3Q205 184.7 343 97.3\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><polyline points=\"205.0,141.0 112.0,51.8 112.0,121.2 205.0,32.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"205.0,141.0 298.0,51.8 298.0,121.2 205.0,32.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><text x=\"220\" y=\"23\" fill=\"#203440\">Image</text><text x=\"218\" y=\"157\" fill=\"#203440\">Object</text></svg><figcaption>Two facing concave mirrors return light through the opening and bring the rays together at a real image.</figcaption></figure>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-19",
+      "topic": "7.3",
+      "kind": "Warm-up",
+      "title": "Pencil in water warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              231,
+              42,
+              130,
+              582,
+              161
+            ]
+          ],
+          "text": "Fill a beaker about three-quarters full of water. Place a pencil or pen in the beaker. Draw what you observe. Explain your diagram by adding notes to it.",
+          "id": "q-61",
+          "answer_html": "<p>The part under water appears displaced, so the pencil seems bent at the surface. Rays from the submerged part speed up and bend away from the normal as they enter air. Your eye traces them back along straight lines to a shallower virtual position.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Rays leaving water bend away from the normal. Extend them backward to locate a shallower virtual image.\"><polyline points=\"25.0,69.0 385.0,69.0\" fill=\"none\" stroke=\"#506b80\" stroke-width=\"2\"/><polyline points=\"180.0,145.0 180.0,69.0 180.0,22.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"180.0,145.0 219.0,69.0 256.0,18.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"219.0,69.0 180.0,123.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"24\" y=\"62\" fill=\"#203440\">Air</text><text x=\"24\" y=\"94\" fill=\"#203440\">Water</text><text x=\"112\" y=\"128\" fill=\"#203440\">Virtual</text><text x=\"125\" y=\"150\" fill=\"#203440\">Coin</text></svg><figcaption>Rays leaving water bend away from the normal. Extend them backward to locate a shallower virtual image.</figcaption></figure>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-20",
+      "topic": "7.3",
+      "kind": "Quick check",
+      "title": "Snell’s law and dispersion",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              233,
+              42,
+              338.3262,
+              582,
+              364.1755
+            ]
+          ],
+          "text": "1. Light entering a block of glass at an angle of incidence of 18.5° leaves the boundary between the air and the glass at an angle of 12.0°. What is the index of refraction of this type of glass",
+          "id": "q-62",
+          "answer_html": "<p>Use n₁ sin θ₁ = n₂ sin θ₂ with n(air) ≈ 1.00. n(glass) = sin 18.5°/sin 12.0° ≈ <strong>1.53</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              233,
+              42,
+              405.8262,
+              582,
+              418.1755
+            ]
+          ],
+          "text": "2. Light is incident on a diamond at an angle of 10.0°. At what angle will it refract",
+          "id": "q-63",
+          "answer_html": "<p>With n(diamond) = 2.42, θ₂ = sin⁻¹(sin 10.0°/2.42) ≈ <strong>4.11°</strong> from the normal.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              233,
+              42,
+              459.8261,
+              582,
+              553.1755
+            ]
+          ],
+          "text": "3. A beam of light is incident on a sheet of glass in a window at an angle of 30°. Describe exactly what path the light beam will take a as it enters the glass. b as it leaves the other side of the glass. Assume n = 1.500.",
+          "id": "q-64",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>It slows and bends toward the normal. θ(glass) = sin⁻¹(sin 30°/1.500) ≈ <strong>19.5°</strong>.</li><li>It speeds up and bends away from the normal. Snell’s law gives an exit angle of <strong>30°</strong>. For parallel faces and air on both sides, the exiting ray is parallel to the incoming ray and shifted sideways.</li></ol>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              233,
+              42,
+              608.3263,
+              582,
+              634.1756
+            ]
+          ],
+          "text": "4. What optical device is designed specifically to separate the colours in iwhite lightw using the fact that different wavelengths colours have different indices of refraction in glass Which colour refracts most",
+          "id": "q-65",
+          "answer_html": "<p>A <strong>prism</strong> disperses white light because the refractive index depends on wavelength. In ordinary glass, violet is refracted more than red.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-21",
+      "topic": "7.3",
+      "kind": "Quick check",
+      "title": "Critical angles",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              235,
+              42,
+              79.07570000000001,
+              582,
+              91.425
+            ]
+          ],
+          "text": "1. Calculate the critical angle for diamond which has an index of refraction of 2.42.",
+          "id": "q-66",
+          "answer_html": "<p>Assume a diamond–air interface. sin θc = 1.00/2.42, so <strong>θc = 24.4°</strong>.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              235,
+              42,
+              133.0757,
+              582,
+              145.42499999999998
+            ]
+          ],
+          "text": "2. What is the critical angle for a glass that has an index of refraction of 1.500",
+          "id": "q-67",
+          "answer_html": "<p>For glass to air, θc = sin⁻¹(1.000/1.500) = <strong>41.8°</strong>.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              235,
+              42,
+              187.0756,
+              582,
+              199.4249
+            ]
+          ],
+          "text": "3. A certain material has a critical angle of 52.0°. What is its index of refraction",
+          "id": "q-68",
+          "answer_html": "<p>For the material to air, n = 1.00/sin 52.0° = <strong>1.27</strong>. The index depends on the surrounding medium if it is other than air.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-22",
+      "topic": "7.3",
+      "kind": "Investigation",
+      "title": "Investigation 7-3A · Refraction in water",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              238,
+              42,
+              646.2506999999999,
+              582,
+              658.6
+            ]
+          ],
+          "text": "1. Describe what happens to a beam of light when it enters water or Plexiglas from air.",
+          "id": "q-69",
+          "answer_html": "<p>Light slows down in water or Plexiglas. At oblique incidence it bends toward the normal and its wavelength decreases. Its frequency remains fixed. At normal incidence it continues straight.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              238,
+              42,
+              659.7506999999999,
+              582,
+              699.10001
+            ]
+          ],
+          "text": "2. Find the slope of the straight part of each graph.What units would this slope have What relationship exists between the angles of incidence and the angles of refraction for the angles where the graph is straight Which refracts light more water or Plexiglas glass",
+          "id": "q-70",
+          "answer_html": "<p>With θᵢ vertical and θᵣ horizontal as instructed, the small-angle slope Δθᵢ/Δθᵣ is dimensionless and approximately n(material)/n(air). Use measured points near the origin. Plexiglas usually gives a larger slope and a greater bend than water. Plot sin θᵢ vertically against sin θᵣ horizontally for a straight-line fit over all angles. Its slope is n(material)/n(air).</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              238,
+              42,
+              700.25072,
+              582,
+              712.60002
+            ]
+          ],
+          "text": "3. Is the refraction of light similar in any way s to the refraction of water waves Discuss.",
+          "id": "q-71",
+          "answer_html": "<p>Yes. Both light and water waves can change speed at a boundary while their frequency stays fixed. Both bend toward the normal when going into a slower region at oblique incidence.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          238,
+          42,
+          62,
+          582,
+          631
+        ]
+      ]
+    },
+    {
+      "id": "set-23",
+      "topic": "7.3",
+      "kind": "Investigation",
+      "title": "Investigation 7-3B · Internal reflection and critical angle",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              239,
+              166,
+              527.8257,
+              582,
+              567.1750000000001
+            ]
+          ],
+          "text": "1. What is the critical angle for a water b Plexiglas glass",
+          "id": "q-72",
+          "answer_html": "<p>Compare your observed last grazing refracted ray with θc = sin⁻¹[n(air)/n(material)]. Typical predictions are <strong>48.8° for water</strong> (n ≈ 1.33) and <strong>42.2° for acrylic</strong> (n ≈ 1.49). If the sample is glass, use its measured index. For n = 1.50, θc = 41.8°.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              239,
+              166,
+              568.3257,
+              582,
+              594.1750000000001
+            ]
+          ],
+          "text": "2. Sketch how light can be made to travel by total internal reflection through the curved plastic ioptical pipew in Figure 7.3.11.",
+          "id": "q-73",
+          "answer_html": "<p>Draw successive reflections at the inside wall of the pipe. At each wall, construct the local normal and use equal incident and reflected angles. Total internal reflection continues wherever the incidence angle exceeds the plastic–air critical angle. A very sharp bend can let light escape.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 290 194\" role=\"img\" aria-label=\"The solid ray follows the guide around a bend. Both incidence angles exceed the critical angle.\"><path d=\"M20 120H160A50 50 0 0 0 210 70V22H270V70A110 110 0 0 1 160 180H20Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"2\"/><polyline points=\"20.0,146.0 105.0,180.0 258.7,118.5 231.3,22.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/></svg><figcaption>The solid ray follows the guide around a bend. Both incidence angles exceed the critical angle.</figcaption></figure>"
+        }
+      ],
+      "shared": [
+        [
+          239,
+          51,
+          512,
+          164,
+          705
+        ],
+        [
+          239,
+          52,
+          707,
+          184,
+          721
+        ]
+      ],
+      "context": [
+        [
+          239,
+          42,
+          62,
+          582,
+          512
+        ]
+      ]
+    },
+    {
+      "id": "set-24",
+      "topic": "7.3",
+      "kind": "Investigation",
+      "title": "Investigation 7-3C · Polarization",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              241,
+              42,
+              587.4185,
+              582,
+              599.7678000000001
+            ]
+          ],
+          "text": "1. Why is polarization considered good evidence that light consists of waves rather than particles",
+          "id": "q-74",
+          "answer_html": "<p>A polarizer selects a transverse electric-field direction, and a second crossed polarizer can block that component. This directional behaviour is evidence of the transverse wave nature of light. Photons also carry polarization in the quantum description.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              241,
+              42,
+              600.9185,
+              582,
+              613.2678000000001
+            ]
+          ],
+          "text": "2. Why are the polarizing filters in sunglasses arranged to transmit only vertically polarized light",
+          "id": "q-75",
+          "answer_html": "<p>Light reflected from a horizontal road or water surface is often strongly <strong>horizontally polarized</strong>. A vertical transmission axis suppresses much of that glare.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              241,
+              42,
+              614.4186,
+              582,
+              640.2679
+            ]
+          ],
+          "text": "3. When photographing a water surface a photographer may use a polarizing filter. Why would this improve the picture",
+          "id": "q-76",
+          "answer_html": "<p>Rotate the filter to reduce the reflected glare. This can increase contrast and make detail below the surface easier to see. The effect depends on viewing angle.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              241,
+              42,
+              641.4186,
+              582,
+              653.7679
+            ]
+          ],
+          "text": "4. Does a calcite crystal act as a polarizing filter Explain.",
+          "id": "q-77",
+          "answer_html": "<p>Calcite separates an incident beam into two rays with different polarizations by <strong>birefringence</strong>. An ordinary calcite crystal can transmit both, so the crystal alone differs from a filter that absorbs one component. A device can isolate one of the two rays.</p>"
+        }
+      ],
+      "shared": [],
+      "context": [
+        [
+          240,
+          42,
+          62,
+          582,
+          725
+        ],
+        [
+          241,
+          42,
+          62,
+          582,
+          572
+        ]
+      ]
+    },
+    {
+      "id": "set-25",
+      "topic": "7.3",
+      "kind": "Section review",
+      "title": "7.3 Review · Refraction of light",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              242,
+              42,
+              86.57570000000001,
+              316,
+              256.80019999999996
+            ]
+          ],
+          "text": "1. Why can't the fisher in the drawing below see the specific ray shown coming from the fish Can she see the fish at all 20°",
+          "id": "q-78",
+          "answer_html": "<p>The shown ray is 20° to the water surface, hence <strong>70° to the normal</strong>. This exceeds the water–air critical angle of about 49°, so the ray is totally internally reflected. Other rays from the fish can leave the water at smaller incidence angles and reach the fisher.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              242,
+              42,
+              256.80019999999996,
+              316,
+              728
+            ]
+          ],
+          "text": "2. a The fisher wants to spear the fish in the drawing below. apparent position Where should he aim Circle one and use a diagram to explain your answer below. i at the apparent position of the fish ii above the fish iii below the fish b A high tech fisherman wants to zap the fish with a laser. Should she aim the laser at the fish below the fish or above the fish Explain.",
+          "id": "q-79",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>Choice iii.</strong> Aim below the apparent position, toward the real fish. Rays from the fish bend away from the normal as they leave water, making it appear shallower.</li><li>Aim the laser along the line of sight toward the <strong>apparent position</strong>. Refraction is reversible, so the beam will bend toward the normal on entering water and follow the sight ray back to the real fish.</li></ol><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Rays leaving water bend away from the normal. Extend them backward to locate a shallower virtual image.\"><polyline points=\"25.0,69.0 385.0,69.0\" fill=\"none\" stroke=\"#506b80\" stroke-width=\"2\"/><polyline points=\"180.0,145.0 180.0,69.0 180.0,22.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"180.0,145.0 219.0,69.0 256.0,18.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"219.0,69.0 180.0,123.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"24\" y=\"62\" fill=\"#203440\">Air</text><text x=\"24\" y=\"94\" fill=\"#203440\">Water</text><text x=\"112\" y=\"128\" fill=\"#203440\">Virtual</text><text x=\"125\" y=\"150\" fill=\"#203440\">Coin</text></svg><figcaption>Rays leaving water bend away from the normal. Extend them backward to locate a shallower virtual image.</figcaption></figure>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              242,
+              316,
+              86.8009,
+              582,
+              139.65
+            ]
+          ],
+          "text": "3. Why can you see more than one image in a mirror made with very thick glass Use a simple sketch to illustrate the effects of internal reflection within the glass of the mirror.",
+          "id": "q-80",
+          "answer_html": "<p>Some rays reflect directly at the front air–glass surface. Others enter the glass, reflect off the rear coating, and refract out. For a thick sheet and an oblique view, the two reflected bundles are offset. Further internal bounces can give still fainter images.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Front-surface reflection and reflection from the back coating reach the viewer at offset positions.\"><rect x=\"70\" y=\"65\" width=\"280\" height=\"48\" fill=\"#e8f4f6\" stroke=\"#526b75\"/><polyline points=\"100.0,20.0 154.0,65.0 208.0,20.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"100.0,20.0 154.0,65.0 186.0,113.0 218.0,65.0 272.0,20.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><text x=\"74\" y=\"135\" fill=\"#203440\">Rear coating</text><text x=\"272\" y=\"61\" fill=\"#203440\">Front surface</text></svg><figcaption>Front-surface reflection and reflection from the back coating reach the viewer at offset positions.</figcaption></figure>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              242,
+              316,
+              235.3008,
+              582,
+              261.1501
+            ]
+          ],
+          "text": "4. What is the critical angle of a glass if its index of refraction is 1.58",
+          "id": "q-81",
+          "answer_html": "<p>For glass to air, θc = sin⁻¹(1/1.58) ≈ <strong>39.3°</strong>.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              242,
+              316,
+              329.093081,
+              582,
+              369.15000000000003
+            ]
+          ],
+          "text": "5. Light of frequency 5.00 × 10¹⁴ Hz is emitted by a laser. If light speed is 3.00 × 10⁸ m/s what is the wavelength of the light in nanometres",
+          "id": "q-82",
+          "answer_html": "<p>λ = c/f = (3.00 × 10⁸)/(5.00 × 10¹⁴) = 6.00 × 10⁻⁷ m = <strong>600 nm</strong>.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              242,
+              316,
+              450.593081,
+              582,
+              490.65000000000003
+            ]
+          ],
+          "text": "6. Light speed in a vacuum is 3.00 × 10⁸ m/s. How fast does light travel in diamond if the index of refraction of diamond is 2.42",
+          "id": "q-83",
+          "answer_html": "<p>v = c/n = (3.00 × 10⁸)/2.42 = <strong>1.24 × 10⁸ m/s</strong>.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              242,
+              316,
+              572.8004999999999,
+              582,
+              616.807402
+            ]
+          ],
+          "text": "7. Show that in general for light travelling from a medium with index of refraction n 1 into a medium with index of refraction n n 1 sin k i = n 2 sin k r . 2",
+          "id": "q-84",
+          "answer_html": "<p>Matching phase along the boundary gives sin θ₁/λ₁ = sin θ₂/λ₂. Since λ = v/f, f is unchanged, and v = c/n, this becomes <strong>n₁ sin θ₁ = n₂ sin θ₂</strong>. The angles are measured from the normal.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              243,
+              42,
+              52.3007,
+              302,
+              91.64999999999999
+            ]
+          ],
+          "text": "8. When we say that the index of refraction of water is 1.33 what qualifiers should we add to this statement",
+          "id": "q-85",
+          "answer_html": "<p>1.33 is an approximate value for visible light in ordinary water. Index depends on wavelength and on water conditions such as temperature and composition. It is defined relative to the vacuum speed c.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              243,
+              42,
+              160.3006,
+              302,
+              348.15000000000003
+            ]
+          ],
+          "text": "9. a What three phenomena are involved in the production of a rainbow b Under what conditions will you see a rainbow c What are the colours in the primary rainbow listed from the top of the bow and going down",
+          "id": "q-86",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The three processes are <strong>refraction, dispersion, and internal reflection</strong>.</li><li>Look toward rain or spray with the Sun behind you. A primary rainbow is centred on the direction opposite the Sun.</li><li>From the outside or top to the inside of a primary bow: <strong>red, orange, yellow, green, blue, indigo, violet</strong>. The colours form a continuum.</li></ol>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              243,
+              42,
+              416.8006,
+              302,
+              456.15000000000003
+            ]
+          ],
+          "text": "10. In a vacuum which colour of light travels fastest  red blue or green Explain. Which colour travels fastest in a block of glass",
+          "id": "q-87",
+          "answer_html": "<p>In a vacuum, red, green, and blue all travel at <strong>c</strong>. In ordinary glass with normal dispersion, red has the lowest index of the three and travels fastest.</p>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              243,
+              42,
+              538.3004999999999,
+              302,
+              577.65
+            ]
+          ],
+          "text": "11. The index of refraction of a certain type of glass is 1.50. What is the speed of light in glass The speed of light is 3.0 × 10⁸ m/s in air.",
+          "id": "q-88",
+          "answer_html": "<p>v = c/n ≈ (3.0 × 10⁸)/1.50 = <strong>2.0 × 10⁸ m/s</strong>.</p>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              243,
+              302,
+              51.693081,
+              582,
+              91.75
+            ]
+          ],
+          "text": "12. Light travels with a speed of 1.95 × 10⁸ m/s in a quartz crystal. What is the index of refraction of the quartz crystal",
+          "id": "q-89",
+          "answer_html": "<p>n = c/v = (3.00 × 10⁸)/(1.95 × 10⁸) ≈ <strong>1.54</strong> for the given quartz ray.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              243,
+              302,
+              187.4007,
+              582,
+              442.7499
+            ]
+          ],
+          "text": "13. Brain buster: A laser sends red light of wavelength 650 nm from air into water in a swimming pool. The index of refraction of the water is 1.33. a What wavelength will the light have in the water b What colour would light of this wavelength appear if it were in air c Why does a swimmer under the water see the light as red",
+          "id": "q-90",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>The frequency stays fixed, so λ(water) = λ(air)/n ≈ 650/1.33 = <strong>489 nm</strong>.</li><li>Light with 489 nm wavelength in air would appear <strong>blue-green</strong>.</li><li>The transmitted light has the same frequency as the 650 nm red light in air. Colour perception follows that frequency, so it still looks red.</li></ol>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-26",
+      "topic": "7.3",
+      "kind": "Challenge",
+      "title": "Refraction Brain Stretch",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              243,
+              302,
+              544.1007,
+              582,
+              556.45
+            ]
+          ],
+          "text": "1. Why do diamonds sparkle",
+          "id": "q-91",
+          "answer_html": "<p>Diamond’s high refractive index gives a small critical angle. Properly cut facets send light through repeated internal reflections and back toward the viewer. Dispersion separates wavelengths into coloured flashes.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              243,
+              302,
+              557.6007,
+              582,
+              583.45
+            ]
+          ],
+          "text": "2. How is the science of fibre optics used to transmit telephone signals",
+          "id": "q-92",
+          "answer_html": "<p>The signal is encoded as light pulses. The higher-index core guides light within the lower-index cladding. A detector converts the pulses back into an electrical signal.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              243,
+              302,
+              584.6007,
+              582,
+              610.45
+            ]
+          ],
+          "text": "3. How does the refraction of light lengthen your day by several minutes",
+          "id": "q-93",
+          "answer_html": "<p>Near the horizon, light bends through layers of changing air density. The Sun appears higher than its geometric position, so it is visible a little before geometric sunrise and a little after geometric sunset.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              243,
+              302,
+              611.6006,
+              582,
+              623.9499000000001
+            ]
+          ],
+          "text": "4. What causes a mirage",
+          "id": "q-94",
+          "answer_html": "<p>A strong temperature gradient changes the refractive index with height and curves light rays. Above hot pavement, rays from the sky can bend upward toward the eye and appear to come from the ground, making a water-like image.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              243,
+              302,
+              625.1006,
+              582,
+              650.9499000000001
+            ]
+          ],
+          "text": "5. Why does a swimming pool never look as deep as it really is",
+          "id": "q-95",
+          "answer_html": "<p>Rays from the bottom bend away from the normal as they leave water. Their straight backward extensions meet at a shallower apparent depth. Viewed close to straight down, apparent depth ≈ actual depth/n(water).</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              243,
+              302,
+              652.1006,
+              582,
+              691.4499900000001
+            ]
+          ],
+          "text": "6. How can an expert quickly tell the difference between a real diamond and a fake diamond made of glass",
+          "id": "q-96",
+          "answer_html": "<p>A gem tester can compare thermal conductivity, which is much higher for diamond than for ordinary glass. A specialist can corroborate with optical tests or microscopy. Sparkle by itself is an unreliable identifier.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              243,
+              302,
+              692.60069,
+              582,
+              718.45
+            ]
+          ],
+          "text": "7. Why do some restaurants use thick-walled glasses to serve their soda pop drinks",
+          "id": "q-97",
+          "answer_html": "<p>One optical effect is that curved, thick glass walls can change the apparent shape or width of the liquid column. Measure the actual volume to test whether apparent size matches capacity. The glass design can also reflect strength or insulation considerations.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-27",
+      "topic": "7.4",
+      "kind": "Warm-up",
+      "title": "Looking through lenses warm-up",
+      "questions": [
+        {
+          "label": "Warm-up",
+          "boxes": [
+            [
+              244,
+              42,
+              130,
+              582,
+              174
+            ]
+          ],
+          "text": "Your teacher will give you one or two lenses. Move them so this text becomes as clear as possible. Copy the image you observe through the lens and describe its characteristics. Why is it different from what you normally see",
+          "id": "q-98",
+          "answer_html": "<p>A converging lens close to the text can give an <strong>upright, enlarged virtual image</strong> when the text is inside f. A diverging lens gives an upright, reduced virtual image. A converging lens held farther away can instead form a real, inverted image. Describe the lens and distance you actually used.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-28",
+      "topic": "7.4",
+      "kind": "Quick check",
+      "title": "Tracing rays through lenses",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              247,
+              42,
+              83.07570000000001,
+              582,
+              108.925
+            ]
+          ],
+          "text": "1. Using the diagrams in all three rows of Table 7.4.1 determine where the image will form and the characteristics of the image for a converging lens.",
+          "id": "q-99",
+          "answer_html": "<p>A ray parallel to the axis leaves through F₂. A ray through F₁ leaves parallel, and a ray through the centre continues straight. The object position determines the image. For example, if dₒ > 2f, the rays cross on the far side between f and 2f, giving a real, inverted, reduced image. The three ray rules alone do not specify a unique object distance.</p><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Object position</th><th scope=\"col\">Image</th></tr></thead><tbody><tr><td>dₒ &gt; 2f</td><td>Real, inverted, reduced. Between f and 2f on the opposite side of the lens.</td></tr></tbody></table></div><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ &gt; 2f. Real, inverted, reduced. Between f and 2f on the opposite side of the lens.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M210.0 17Q196.0 79 210.0 141H220.0Q234.0 79 220.0 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"152.3\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"146.27\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"277.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"271.676\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"51.9,52.0 215.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"215.0,52.0 381.0,123.5\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"51.9,52.0 215.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"215.0,79.0 381.0,106.5\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"51.9,79.0 51.9,52.0 47.9,57.0 51.9,52.0 55.9,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"316.9,79.0 316.9,95.9 312.9,90.9 316.9,95.9 320.9,90.9\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ &gt; 2f. Real, inverted, reduced. Between f and 2f on the opposite side of the lens.</figcaption></figure>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              247,
+              42,
+              218.0756,
+              582,
+              243.9249
+            ]
+          ],
+          "text": "2. Using the diagrams in all three rows of Table 7.4.1 determine where the image will form and the characteristics of the image for a diverging lens.",
+          "id": "q-100",
+          "answer_html": "<p>For a real object, rays leaving a diverging lens spread. Backward extensions meet on the object side, between the lens and near focus. The image is <strong>virtual, upright, and reduced</strong>.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Diverging lens. Backward extensions meet between the lens and the near focus.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M199.0 17Q207.0 79 199.0 141H209.0Q201.0 79 209.0 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"137.1\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"131.077\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"270.9\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"264.923\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"92.5,52.0 204.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,52.0 310.6,9.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,52.0 162.2,68.9\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"92.5,52.0 204.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 381.0,121.8\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 162.2,68.9\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"92.5,79.0 92.5,52.0 88.5,57.0 92.5,52.0 96.5,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"162.2,79.0 162.2,68.9 158.2,73.9 162.2,68.9 166.2,73.9\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Dashed lines are extensions</text></svg><figcaption>Diverging lens. Backward extensions meet between the lens and the near focus.</figcaption></figure>"
+        }
+      ],
+      "shared": [
+        [
+          246,
+          42,
+          46,
+          582,
+          435
+        ]
+      ],
+      "context": []
+    },
+    {
+      "id": "set-29",
+      "topic": "7.4",
+      "kind": "Quick check",
+      "title": "The thin-lens equation",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              249,
+              42,
+              81.57570000000001,
+              582,
+              105.925
+            ]
+          ],
+          "text": "1. A convex lens has a focal length of 50.0 mm. How far from the lens will the image form of an object that is 5.00 m away",
+          "id": "q-101",
+          "answer_html": "<p>5.00 m = 5000 mm. 1/dᵢ = 1/50.0 − 1/5000 mm⁻¹, so <strong>dᵢ = +50.5 mm</strong> on the far side.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              249,
+              42,
+              153.5757,
+              582,
+              165.92499999999998
+            ]
+          ],
+          "text": "2. An object is 100.0 mm away from a lens of focal length 50.0 mm. How far from the lens will the image form",
+          "id": "q-102",
+          "answer_html": "<p>1/dᵢ = 1/50.0 − 1/100.0 mm⁻¹. <strong>dᵢ = +100.0 mm</strong>, a real image on the far side.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              249,
+              42,
+              213.5756,
+              582,
+              237.92499999999998
+            ]
+          ],
+          "text": "3. A real image forms 60 mm away from a lens when the object is 30 mm from the lens. What is the focal length of the lens",
+          "id": "q-103",
+          "answer_html": "<p>1/f = 1/30 + 1/60 mm⁻¹ = 1/20 mm⁻¹. The positive focal length is <strong>20 mm</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-30",
+      "topic": "7.4",
+      "kind": "Investigation",
+      "title": "Investigation 7-4A · Focusing with lenses",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              254,
+              42,
+              136,
+              582,
+              260
+            ]
+          ],
+          "text": "1. Place a dime in an empty test tube as in Figure 7.4.12 a . Sketch a circle the size of the dime as you see it when you look straight down the test tube. Now add water to the test tube until it is partially full as in Figure 7.4.12 b . Draw a circle showing the apparent size of the dime as you see it now. Add more water to the test tube until it is 10a 10a 10a just about overflowing. The top surface will be convex as a b c in Figure 7.4.12 c . Draw a circle to show the apparent size of the dime now. Figure 7.4.12 Step 1 – Focussing on lenses",
+          "id": "q-104",
+          "answer_html": "<p>Start with the unaided view in the empty tube. With a nearly flat water surface, the coin appears closer and subtends a larger angle from the same eye position. A convex water surface adds converging power and can magnify the coin when it is inside the effective focus. Compare your circles with the same eye position.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              254,
+              65,
+              271,
+              459,
+              342
+            ],
+            [
+              254,
+              466,
+              270,
+              560,
+              465
+            ]
+          ],
+          "text": "2. Set up your ray box so that parallel beams of light pass through a concave cylindrical lens as in Figure 7.4.13 a . Sketch how the light refracts as it travels through the concave lens. Do the same with a convex lens as in Figure 7.4.13 b . Repeat with both lenses together as in Figure 7.4.13 c . Try separating the two lenses by a centimetre or two. a b c Figure 7.4.13 Step 2 – Focussing on lenses",
+          "id": "q-105",
+          "answer_html": "<p>A concave cylindrical lens makes the ray sheet spread. A convex one brings it together in the cross-section. In contact, their powers add, so similar opposite powers nearly cancel. Separating the lenses changes how wide and how convergent the bundle is at the second lens.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              254,
+              65,
+              352,
+              465,
+              555
+            ]
+          ],
+          "text": "3. a Fill a small Florence flask with water. Use the flask as a magnifying glass to read the writing on this page Figure 7.4.14 a . b Light a candle. Darken the room and use the Florence flask as a slide projector to project an image of the flame on the wall of your classroom Figure 7.4.14 b . screen a b Figure 7.4.14 Step 3 – Focussing on lenses",
+          "id": "q-106",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Hold the text closer than the water-filled flask’s focal length. It acts like a converging lens and gives a magnified upright virtual image.</li><li>Place the flame farther away than f. Move the flask or screen until the real, inverted image is sharp on the wall.</li></ol>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              254,
+              42,
+              573,
+              582,
+              664
+            ]
+          ],
+          "text": "4. Place a water-filled aquarium near a window. Push an empty Florence flask down into the aquarium as in Figure 7.4.15. Look out the window through the empty flask. air aquarium water Describe the image you see. Now remove the empty flask fill it with water and look at the same scene through the water-filled flask. Record what you saw in both situations. Figure 7.4.15 Step 4 – Focussing on lenses",
+          "id": "q-107",
+          "answer_html": "<p>In the surrounding water, the air-filled round flask tends to act as a <strong>diverging</strong> element because its inside has lower index. It can give a reduced upright view. Filling it with water greatly reduces the index contrast, so there is much less lens effect. Some distortion can remain from the glass wall.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-31",
+      "topic": "7.4",
+      "kind": "Investigation",
+      "title": "Investigation 7-4B · Predicting convex-lens images",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              255,
+              42,
+              231.2757,
+              312,
+              351.6249
+            ]
+          ],
+          "text": "1. The arrangements in Figures 7.4.16 a b and c are often used in photography. Which arrangement of object and lens would be used in: a a camera photographing a distant landscape b an enlarger c a slide or movie projector d an overhead projector e a camera that is capable of photographing a ladybug full size",
+          "id": "q-108",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li><strong>a</strong> for a distant landscape, with the object beyond 2f and a small image near F₂.</li><li><strong>c</strong> for an enlarger, with the negative between f and 2f.</li><li><strong>c</strong> for a slide or movie projector.</li><li><strong>c</strong> for an overhead projector’s magnifying stage.</li><li><strong>b</strong> for life size, with object and sensor at 2f.</li></ol><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Object position</th><th scope=\"col\">Image</th></tr></thead><tbody><tr><td>dₒ &gt; 2f</td><td>Real, inverted, reduced. Between f and 2f on the opposite side of the lens.</td></tr><tr><td>dₒ = 2f</td><td>Real, inverted, same size. At 2f on the opposite side of the lens.</td></tr><tr><td>f &lt; dₒ &lt; 2f</td><td>Real, inverted, enlarged. Beyond 2f on the opposite side of the lens.</td></tr></tbody></table></div><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ &gt; 2f. Real, inverted, reduced. Between f and 2f on the opposite side of the lens.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M210.0 17Q196.0 79 210.0 141H220.0Q234.0 79 220.0 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"152.3\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"146.27\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"277.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"271.676\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"51.9,52.0 215.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"215.0,52.0 381.0,123.5\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"51.9,52.0 215.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"215.0,79.0 381.0,106.5\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"51.9,79.0 51.9,52.0 47.9,57.0 51.9,52.0 55.9,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"316.9,79.0 316.9,95.9 312.9,90.9 316.9,95.9 320.9,90.9\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ &gt; 2f. Real, inverted, reduced. Between f and 2f on the opposite side of the lens.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ = 2f. Real, inverted, same size. At 2f on the opposite side of the lens.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M199.0 17Q185.0 79 199.0 141H209.0Q223.0 79 209.0 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"137.1\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"131.077\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"270.9\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"264.923\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"70.2,52.0 204.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,52.0 381.0,123.4\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"70.2,52.0 204.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 381.0,114.7\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"70.2,79.0 70.2,52.0 66.2,57.0 70.2,52.0 74.2,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"337.8,79.0 337.8,106.0 333.8,101.0 337.8,106.0 341.8,101.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ = 2f. Real, inverted, same size. At 2f on the opposite side of the lens.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"f &lt; dₒ &lt; 2f. Real, inverted, enlarged. Beyond 2f on the opposite side of the lens.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M175.8 17Q161.8 79 175.8 141H185.8Q199.8 79 185.8 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"122.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"116.8\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"238.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"232.8\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"93.8,52.0 180.8,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"180.8,52.0 381.0,145.2\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"93.8,52.0 180.8,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"180.8,79.0 381.0,141.1\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"93.8,79.0 93.8,52.0 89.8,57.0 93.8,52.0 97.8,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"354.8,79.0 354.8,133.0 350.8,128.0 354.8,133.0 358.8,128.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>f &lt; dₒ &lt; 2f. Real, inverted, enlarged. Beyond 2f on the opposite side of the lens.</figcaption></figure>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              255,
+              42,
+              352.7756,
+              312,
+              405.625
+            ]
+          ],
+          "text": "2. a Will you get a real image if you place an object at F as in Figure 7.4.16 d b What would happen if you placed a small bright light source right at F",
+          "id": "q-109",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>At F there is no finite real image.</li><li>Rays from an axial point source at F leave as a nearly parallel bundle.</li></ol><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Object position</th><th scope=\"col\">Image</th></tr></thead><tbody><tr><td>dₒ = f</td><td>Outgoing rays from each object point are parallel. No finite image.</td></tr></tbody></table></div><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ = f. Outgoing rays from each object point are parallel. No finite image.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M199.0 17Q185.0 79 199.0 141H209.0Q223.0 79 209.0 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"137.1\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"131.077\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"270.9\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"264.923\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"137.1,52.0 204.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,52.0 381.0,123.4\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"137.1,52.0 204.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 377.5,149.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"137.1,79.0 137.1,52.0 133.1,57.0 137.1,52.0 141.1,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ = f. Outgoing rays from each object point are parallel. No finite image.</figcaption></figure>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              255,
+              42,
+              406.7757,
+              312,
+              459.625
+            ]
+          ],
+          "text": "3. a Will you get a real image if you place an object between F and the lens as in Figure 7.4.16 e b Give an example of a situation where you would use this arrangement.",
+          "id": "q-110",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Inside F the image is upright, enlarged, and virtual, so a screen will not catch it.</li><li>A magnifying glass uses this arrangement.</li></ol><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Object position</th><th scope=\"col\">Image</th></tr></thead><tbody><tr><td>0 &lt; dₒ &lt; f</td><td>Virtual, upright, enlarged. On the object side of the lens.</td></tr></tbody></table></div><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"0 &lt; dₒ &lt; f. Virtual, upright, enlarged. On the object side of the lens.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M199.0 17Q185.0 79 199.0 141H209.0Q223.0 79 209.0 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"137.1\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"131.077\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"270.9\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"264.923\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"160.5,60.1 204.0,60.1\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,60.1 381.0,110.1\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,60.1 79.7,25.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"160.5,60.1 204.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 365.1,149.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 79.7,25.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"160.5,79.0 160.5,60.1 156.5,65.1 160.5,60.1 164.5,65.1\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"79.7,79.0 79.7,25.0 75.7,30.0 79.7,25.0 83.7,30.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Dashed lines are extensions</text></svg><figcaption>0 &lt; dₒ &lt; f. Virtual, upright, enlarged. On the object side of the lens.</figcaption></figure>"
+        }
+      ],
+      "shared": [
+        [
+          255,
+          315,
+          218,
+          549,
+          722
+        ]
+      ],
+      "context": [
+        [
+          255,
+          42,
+          62,
+          582,
+          215
+        ]
+      ]
+    },
+    {
+      "id": "set-32",
+      "topic": "7.4",
+      "kind": "Investigation",
+      "title": "Investigation 7-4B · Testing convex-lens images",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              256,
+              42,
+              534.5251999999999,
+              582,
+              573.8745
+            ]
+          ],
+          "text": "1. You wish to project a slide on a screen. One of the letters on the slide is a p. When you place the slide in the projector how must the letter look when you insert the slide as seen from behind the projector a p b d c b d q. Explain.",
+          "id": "q-111",
+          "answer_html": "<p>Choose <strong>(b) d</strong>. The projected image is rotated 180° relative to the slide as seen from behind the projector. Rotating d by 180° gives p.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              256,
+              42,
+              575.0251999999999,
+              582,
+              600.8745
+            ]
+          ],
+          "text": "2. When you use an overhead projector why do you not have to write upside down to get an image right side up on the screen",
+          "id": "q-112",
+          "answer_html": "<p>An overhead projector sends light upward through the transparency and lens. The projection head’s angled mirror turns the beam toward the screen and changes its orientation. With the transparency in the normal writing position, the viewer sees an upright image.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              256,
+              42,
+              602.0251999999999,
+              582,
+              627.8745
+            ]
+          ],
+          "text": "3. You wish to make a solar furnace using a very large convex lens. Where would the object that is to be heated be placed in relation to the lens",
+          "id": "q-113",
+          "answer_html": "<p>Place the target near the <strong>principal focus</strong> on the far side. Sunlight arrives nearly parallel, so it concentrates around the focal plane.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              256,
+              42,
+              629.0251999999999,
+              582,
+              654.8745
+            ]
+          ],
+          "text": "4. You wish to photograph a spider life size. Where must a the spider and b the film or image sensor be located in relation to the lens of the camera Assume the lens is a simple convex lens.",
+          "id": "q-114",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Put the spider <strong>2f from the lens</strong>.</li><li>Put the film or sensor <strong>2f on the other side</strong>. Then |m| = dᵢ/dₒ = 1 and the image is real and inverted.</li></ol>"
+        }
+      ],
+      "shared": [
+        [
+          255,
+          315,
+          218,
+          549,
+          722
+        ]
+      ],
+      "context": [
+        [
+          256,
+          42,
+          62,
+          582,
+          519
+        ]
+      ]
+    },
+    {
+      "id": "set-33",
+      "topic": "7.4",
+      "kind": "Section review",
+      "title": "7.4 Review · Lenses and optical instruments",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              257,
+              42,
+              86.57570000000001,
+              302,
+              98.925
+            ]
+          ],
+          "text": "1. What type of lenses can be found on eyeglasses",
+          "id": "q-115",
+          "answer_html": "<p>Eyeglasses can use <strong>converging</strong> lenses for farsightedness or <strong>diverging</strong> lenses for nearsightedness. A cylindrical component can correct astigmatism.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              257,
+              42,
+              194.5756,
+              302,
+              355.42490000000004
+            ]
+          ],
+          "text": "2. An object is 25 cm away from a lens of focal length 50 cm. a Where will the image form b Will it be a real image or a virtual image",
+          "id": "q-116",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>For f = +50 cm, 1/dᵢ = 1/50 − 1/25 = −1/50 cm⁻¹. <strong>dᵢ = −50 cm</strong>, on the object side.</li><li>It is <strong>virtual</strong>, upright, and twice as tall as the object.</li></ol>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              257,
+              42,
+              491.57559999999995,
+              302,
+              544.4250000000001
+            ]
+          ],
+          "text": "3. A camera lens focussed at infinity forms a real image 50 mm from the lens. How far out from the film must the lens be moved to focus on a person standing 3.0 m in front of the lens",
+          "id": "q-117",
+          "answer_html": "<p>At infinity the film is 50 mm from the lens, so f = 50 mm. With dₒ = 3000 mm, dᵢ = 1/(1/50 − 1/3000) ≈ 50.85 mm. Move the lens about <strong>0.85 mm farther from the film</strong>.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              257,
+              302,
+              86.80030000000001,
+              582,
+              139.6495
+            ]
+          ],
+          "text": "4. The distance from the lens of someone's eye to the retina is 20.0 mm. If the image of a book held 40.0 cm in front of the eye is in sharp focus what is the effective focal length of the lens",
+          "id": "q-118",
+          "answer_html": "<p>Use dₒ = 400 mm and dᵢ = 20.0 mm. f = 1/(1/400 + 1/20.0) ≈ <strong>19.0 mm</strong>.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              257,
+              302,
+              235.30010000000001,
+              582,
+              274.6494
+            ]
+          ],
+          "text": "5. A candle 5.0 cm high is located 80.0 cm in front of a convex lens of focal length 20.0 cm. How tall will the image of the candle appear to be on the screen",
+          "id": "q-119",
+          "answer_html": "<p>dᵢ = 1/(1/20.0 − 1/80.0) = 26.67 cm. m = −26.67/80.0 = −⅓. The projected image is <strong>1.7 cm tall and inverted</strong>.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              257,
+              302,
+              383.8001,
+              582,
+              423.1494
+            ]
+          ],
+          "text": "6. A candle is placed 30.0 cm from a convex lens of focal length 20.0 cm. What will the magnification be Will the image be real or virtual",
+          "id": "q-120",
+          "answer_html": "<p>dᵢ = 1/(1/20.0 − 1/30.0) = +60.0 cm. Signed m = −60.0/30.0 = <strong>−2.00</strong>. The image is real, inverted, and twice the object height.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              257,
+              302,
+              518.8000999999999,
+              582,
+              598.6495
+            ]
+          ],
+          "text": "7. The magnification caused by a convex lens is represented by H i /H o where H i is the height of the image and H o is the height of the object. Using that ratio show that the magnification caused by a convex lens is equal to d i /d o the ratio of the image distance to the object distance .",
+          "id": "q-121",
+          "answer_html": "<p>Draw the straight ray from the object tip through the optical centre to the image tip. The two triangles with the principal axis are similar, so <strong>|hᵢ|/hₒ = |dᵢ|/dₒ</strong>. For an inverted real image, signed m = −dᵢ/dₒ.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              258,
+              42,
+              52.4007,
+              316,
+              496.74940000000004
+            ]
+          ],
+          "text": "8. By convention a concave diverging lens has a negative focal length. Draw an object 5.0 cm high at a distance of 10.0 cm in front of a concave lens of focal length o6.0 cm. Describe the image by answering the questions below. a How far from the lens will the image form b Will it be real or virtual c Enlarged or diminished in size d Right side up or inverted e How tall will it be f On which side of the lens will it be",
+          "id": "q-122",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>1/dᵢ = 1/(−6.0) − 1/10.0 = −1/3.75 cm⁻¹, giving dᵢ = −3.75 cm, about <strong>3.8 cm</strong> from the lens.</li><li>Virtual.</li><li>Reduced.</li><li>Upright.</li><li>m = −(−3.75)/10.0 = 0.375. The image height is about <strong>1.9 cm</strong>.</li><li>On the same side as the object.</li></ol><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Diverging lens. Backward extensions meet between the lens and the near focus.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M199.0 17Q207.0 79 199.0 141H209.0Q201.0 79 209.0 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"137.1\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"131.077\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"270.9\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"264.923\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"92.5,52.0 204.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,52.0 310.6,9.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,52.0 162.2,68.9\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"92.5,52.0 204.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 381.0,121.8\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 162.2,68.9\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"92.5,79.0 92.5,52.0 88.5,57.0 92.5,52.0 96.5,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"162.2,79.0 162.2,68.9 158.2,73.9 162.2,68.9 166.2,73.9\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Dashed lines are extensions</text></svg><figcaption>Diverging lens. Backward extensions meet between the lens and the near focus.</figcaption></figure>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              258,
+              42,
+              511.4,
+              316,
+              550.7493000000001
+            ]
+          ],
+          "text": "9. What causes ired eyew in photographs How can a photographer avoid ired eyew in his or her photographs",
+          "id": "q-123",
+          "answer_html": "<p>Flash light enters a dilated pupil, reflects from the back of the eye, and returns toward a camera close to the flash axis. Move the flash off axis, use more room light, or use a preflash to constrict the pupil.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              258,
+              316,
+              52.4002,
+              582,
+              64.7495
+            ]
+          ],
+          "text": "10. What is hypermetropia and how is it corrected",
+          "id": "q-124",
+          "answer_html": "<p><strong>Hypermetropia</strong> is farsightedness. With insufficient focusing power or an eye that is too short, rays from a nearby object would meet behind the retina. A converging corrective lens increases the incoming convergence.</p>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              258,
+              316,
+              173.9001,
+              582,
+              186.2494
+            ]
+          ],
+          "text": "11. What is myopia and how is it corrected",
+          "id": "q-125",
+          "answer_html": "<p><strong>Myopia</strong> is nearsightedness. With too much focusing power or a long eyeball, rays from a distant object meet in front of the retina. A diverging corrective lens moves the focus back onto the retina.</p>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              258,
+              316,
+              322.40009999999995,
+              582,
+              388.75
+            ]
+          ],
+          "text": "12. You are looking through a microscope at a tiny bug crawling from the bottom left corner of your slide to the top right corner. In what direction will the bug be crawling when you look through the eyepiece lens",
+          "id": "q-126",
+          "answer_html": "<p>A conventional compound microscope rotates the view by 180°. The bug appears to move from the <strong>upper right to the lower left</strong>. The objective forms the inverted intermediate image, and the eyepiece magnifies it.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              258,
+              316,
+              524.9005999999999,
+              582,
+              577.75
+            ]
+          ],
+          "text": "13. Find out what a Fresnel lens is. There is one in your classroom's overhead projector and there may be one in the spotlights in your theatre. What is the advantage of a Fresnel lens over a regular glass lens",
+          "id": "q-127",
+          "answer_html": "<p>A <strong>Fresnel lens</strong> uses concentric stepped zones to reproduce the bending action of a much thicker curved lens. The reduced thickness and mass are useful for large apertures such as projector condensers.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-34",
+      "topic": "Chapter review",
+      "kind": "Chapter review",
+      "title": "Chapter 7 Review",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              259,
+              42,
+              86.57570000000001,
+              302,
+              112.425
+            ]
+          ],
+          "text": "1. What is one advantage a pinhole camera has over a lens camera",
+          "id": "q-128",
+          "answer_html": "<p>A pinhole camera needs no lens or focus adjustment. A small hole can give a large depth of field. The trade-off is a dimmer image and possible blur from diffraction if the hole is too small.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              259,
+              42,
+              194.5755,
+              302,
+              206.9248
+            ]
+          ],
+          "text": "2. How was infrared light discovered",
+          "id": "q-129",
+          "answer_html": "<p>William Herschel dispersed sunlight with a prism and compared thermometer readings across the spectrum. The thermometer just beyond the visible red end warmed, revealing radiation outside the visible range.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              259,
+              42,
+              302.5755,
+              302,
+              328.4248
+            ]
+          ],
+          "text": "3. Give an example of diffraction of light that you would experience in everyday life.",
+          "id": "q-130",
+          "answer_html": "<p>A streetlight viewed through fine mesh can show a starburst. The mesh openings and threads diffract the light into different directions.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              259,
+              42,
+              397.0755,
+              302,
+              436.4248
+            ]
+          ],
+          "text": "4. You are 1.6 m tall. What is the shortest wall mirror you need to see your whole body while standing in the mirror",
+          "id": "q-131",
+          "answer_html": "<p>The minimum height is 1.6 m/2 = <strong>0.80 m</strong>, with the mirror mounted to intercept the rays from the head and feet.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              259,
+              42,
+              491.57559999999995,
+              302,
+              557.9250000000001
+            ]
+          ],
+          "text": "5. In a clothing store a pair of large mirrors is hinged so that the angle between them can be changed. How many images will you see of yourself if you adjust the mirrors so that the angle between them is 45°",
+          "id": "q-132",
+          "answer_html": "<p>For 45°, the symmetric ideal count is 360°/45° − 1 = <strong>7 images</strong>.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              259,
+              42,
+              626.5757,
+              302,
+              652.4250000000001
+            ]
+          ],
+          "text": "6. Why do shopkeepers often place large convex mirrors at strategic locations in their stores",
+          "id": "q-133",
+          "answer_html": "<p>Convex mirrors give a <strong>wide field of view</strong>. Their reduced virtual images let staff see a larger area from one position.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              259,
+              302,
+              87.45800000000001,
+              582,
+              140.3073
+            ]
+          ],
+          "text": "7. You wish to form an enlarged real image of a light bulb filament using a concave mirror. Where should the light bulb filament be placed in relation to the mirror's vertex",
+          "id": "q-134",
+          "answer_html": "<p>Place the filament <strong>between f and 2f</strong> from the vertex. Its image forms beyond 2f and is real, inverted, and enlarged.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              259,
+              302,
+              208.9579,
+              582,
+              248.3071
+            ]
+          ],
+          "text": "8. If you use a concave mirror as a dressing or make-up mirror where do you place your face in relation to the mirror",
+          "id": "q-135",
+          "answer_html": "<p>Place your face <strong>inside the focal length</strong>. The image is then upright, enlarged, and virtual behind the mirror.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              259,
+              302,
+              316.9577,
+              582,
+              356.307
+            ]
+          ],
+          "text": "9. An object is 2.5 m away from a concave mirror with a focal length of 1.0 m. Where will the image form Will it be real or virtual",
+          "id": "q-136",
+          "answer_html": "<p>1/dᵢ = 1/1.0 − 1/2.5 = 0.60 m⁻¹. <strong>dᵢ ≈ +1.7 m</strong>, in front of the mirror. It is real.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              259,
+              302,
+              438.4575,
+              582,
+              477.8068
+            ]
+          ],
+          "text": "10. What is the focal length of a concave mirror if a real image of an object 6.0 m away forms 3.0 m from the mirror",
+          "id": "q-137",
+          "answer_html": "<p>1/f = 1/6.0 + 1/3.0 = 0.50 m⁻¹, so <strong>f = 2.0 m</strong>.</p>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              259,
+              302,
+              543.4579,
+              582,
+              639.8072
+            ]
+          ],
+          "text": "11. A beam of light makes an angle of 35° with the normal as it approaches a flat glass block. If the index of refraction of the glass is 1.60 at what angle will the refracted beam enter the glass relative to the normal At what angle will the beam leave the other side of the block of glass if the walls are parallel",
+          "id": "q-138",
+          "answer_html": "<p>At entry, θ(glass) = sin⁻¹(sin 35°/1.60) ≈ <strong>21.0°</strong>. Parallel faces give that same internal incidence angle at the exit. In air the ray leaves at <strong>35°</strong> to the exit normal.</p>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              260,
+              42,
+              52.3007,
+              582,
+              64.64999999999999
+            ]
+          ],
+          "text": "12. What is the critical angle for a glass that has an index of refraction of 1.52",
+          "id": "q-139",
+          "answer_html": "<p>For glass to air, θc = sin⁻¹(1/1.52) ≈ <strong>41.1°</strong>.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              260,
+              42,
+              106.3007,
+              582,
+              132.15
+            ]
+          ],
+          "text": "13. Use a diagram to show why refraction causes a coin in the bottom of a swimming pool to look larger and closer than it really is.",
+          "id": "q-140",
+          "answer_html": "<p>The rays from the coin bend away from the normal at the water surface. The backward extensions meet above the coin. From the same viewing position, the shallower apparent coin can subtend a larger angle. A flat interface near normal incidence mainly changes apparent depth.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Rays leaving water bend away from the normal. Extend them backward to locate a shallower virtual image.\"><polyline points=\"25.0,69.0 385.0,69.0\" fill=\"none\" stroke=\"#506b80\" stroke-width=\"2\"/><polyline points=\"180.0,145.0 180.0,69.0 180.0,22.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"180.0,145.0 219.0,69.0 256.0,18.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"219.0,69.0 180.0,123.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"24\" y=\"62\" fill=\"#203440\">Air</text><text x=\"24\" y=\"94\" fill=\"#203440\">Water</text><text x=\"112\" y=\"128\" fill=\"#203440\">Virtual</text><text x=\"125\" y=\"150\" fill=\"#203440\">Coin</text></svg><figcaption>Rays leaving water bend away from the normal. Extend them backward to locate a shallower virtual image.</figcaption></figure>"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              260,
+              42,
+              214.3006,
+              582,
+              226.6499
+            ]
+          ],
+          "text": "14. The critical angle of a liquid is 45°. What is the index of refraction of the liquid",
+          "id": "q-141",
+          "answer_html": "<p>For the liquid to air, sin 45° = 1/n. Thus <strong>n = √2 ≈ 1.41</strong>.</p>"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              260,
+              42,
+              268.3006,
+              582,
+              280.6499
+            ]
+          ],
+          "text": "15. Why does red light refract less than violet light",
+          "id": "q-142",
+          "answer_html": "<p>For ordinary glass with normal dispersion, red light has a lower refractive index than violet. At the same oblique incidence from air, red bends less toward the normal.</p>"
+        },
+        {
+          "label": "16",
+          "boxes": [
+            [
+              260,
+              42,
+              349.3005,
+              582,
+              361.6498
+            ]
+          ],
+          "text": "16. At what speed would light travel in glass with an index of refraction of 2.0",
+          "id": "q-143",
+          "answer_html": "<p>v = c/n = (3.0 × 10⁸)/2.0 = <strong>1.5 × 10⁸ m/s</strong>.</p>"
+        },
+        {
+          "label": "17",
+          "boxes": [
+            [
+              260,
+              42,
+              416.8006,
+              582,
+              593.85
+            ]
+          ],
+          "text": "17. A student wishes to find the index of refraction of a block of glass. She shines light into the block at various angles of incidence θ i and measures the angles of refraction θ r for each incident beam of light. Here are her data: angle of incidence 0° 5.00° 10.00° 15.00° 20.00° 25.00° θ i sin θ i angle of refraction 0° 3.33° 6.65° 9.94° 13.20° 16.40° θ r sin θ r a On a sheet of graph paper use a suitable graph to determine the index of refraction of the glass. Use the most precise method which involves Snell's Law. b According to your graph what is the index of refraction of the glass c What would the critical angle be for this type of glass",
+          "id": "q-144",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Plot y = sin θᵢ and x = sin θᵣ. By Snell’s law with air as the incident medium, y = n(glass)x.</li><li>A fit through the origin gives slope ≈ <strong>1.498</strong>, so n ≈ <strong>1.50</strong>.</li><li>For glass to air, θc = sin⁻¹(1/1.498) ≈ <strong>41.9°</strong>.</li></ol><figure class=\"answer-graph\"><svg viewBox=\"0 0 450 285\" role=\"img\" aria-label=\"Snell’s law fit to the textbook measurements\"><title>Snell’s law fit to the textbook measurements</title><path d=\"M62 54V226\" stroke=\"#dce4e1\"/><text x=\"62\" y=\"246\" text-anchor=\"middle\">0</text><path d=\"M175.333 54V226\" stroke=\"#dce4e1\"/><text x=\"175.333\" y=\"246\" text-anchor=\"middle\">0.1</text><path d=\"M288.667 54V226\" stroke=\"#dce4e1\"/><text x=\"288.667\" y=\"246\" text-anchor=\"middle\">0.2</text><path d=\"M402 54V226\" stroke=\"#dce4e1\"/><text x=\"402\" y=\"246\" text-anchor=\"middle\">0.3</text><path d=\"M62 226H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"230\" text-anchor=\"end\">0</text><path d=\"M62 168.667H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"172.667\" text-anchor=\"end\">0.15</text><path d=\"M62 111.333H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"115.333\" text-anchor=\"end\">0.3</text><path d=\"M62 54H402\" stroke=\"#dce4e1\"/><text x=\"53\" y=\"58\" text-anchor=\"end\">0.45</text><path d=\"M62 54V226H402\" fill=\"none\" stroke=\"#506770\" stroke-width=\"1.5\"/><polyline points=\"62.00,226.00 127.83,192.69 193.24,159.63 257.63,127.07 320.80,95.27 381.99,64.47\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2.5\"/><circle cx=\"62\" cy=\"226\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"127.832\" cy=\"192.687\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"193.245\" cy=\"159.628\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"257.632\" cy=\"127.074\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"320.798\" cy=\"95.2723\" r=\"3.5\" fill=\"#096a70\"/><circle cx=\"381.987\" cy=\"64.4659\" r=\"3.5\" fill=\"#096a70\"/><text x=\"232\" y=\"273\" text-anchor=\"middle\">sin θᵣ</text><text transform=\"translate(17 140) rotate(-90)\" text-anchor=\"middle\">sin θᵢ</text></svg><figcaption>Snell’s law fit to the textbook measurements. <span style=\"color:#096a70\">Measured points and near-linear trend</span>.</figcaption></figure>"
+        },
+        {
+          "label": "18",
+          "boxes": [
+            [
+              260,
+              42,
+              608.5006,
+              582,
+              634.3499
+            ]
+          ],
+          "text": "18. In a movie a nearsighted young boy is shown using the lenses from his eyeglasses to light a fire by focussing the Sun's rays on some dried grass. What is wrong with this scene",
+          "id": "q-145",
+          "answer_html": "<p>Typical glasses for nearsightedness use <strong>diverging lenses</strong>. Parallel sunlight spreads after passing through one, so it cannot produce the focused spot depicted.</p>"
+        },
+        {
+          "label": "19",
+          "boxes": [
+            [
+              261,
+              42,
+              52.3007,
+              582,
+              294.15020000000004
+            ]
+          ],
+          "text": "19. You wish to use a convex lens to achieve each of the following types of image. Where in relation to the lens and the principal focus and/or centre of curvature should you place the object a a small real inverted image b a large real inverted image c a real image the same size as the object d a large erect virtual image",
+          "id": "q-146",
+          "answer_html": "<ol class=\"answer-parts\" type=\"a\"><li>Place the object beyond 2f.</li><li>Place it between f and 2f.</li><li>Place it at 2f.</li><li>Place it between the lens and the near focus.</li></ol><div class=\"answer-table\"><table><thead><tr><th scope=\"col\">Object position</th><th scope=\"col\">Image</th></tr></thead><tbody><tr><td>dₒ &gt; 2f</td><td>Real, inverted, reduced. Between f and 2f on the opposite side of the lens.</td></tr><tr><td>f &lt; dₒ &lt; 2f</td><td>Real, inverted, enlarged. Beyond 2f on the opposite side of the lens.</td></tr><tr><td>dₒ = 2f</td><td>Real, inverted, same size. At 2f on the opposite side of the lens.</td></tr><tr><td>0 &lt; dₒ &lt; f</td><td>Virtual, upright, enlarged. On the object side of the lens.</td></tr></tbody></table></div><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ &gt; 2f. Real, inverted, reduced. Between f and 2f on the opposite side of the lens.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M210.0 17Q196.0 79 210.0 141H220.0Q234.0 79 220.0 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"152.3\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"146.27\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"277.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"271.676\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"51.9,52.0 215.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"215.0,52.0 381.0,123.5\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"51.9,52.0 215.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"215.0,79.0 381.0,106.5\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"51.9,79.0 51.9,52.0 47.9,57.0 51.9,52.0 55.9,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"316.9,79.0 316.9,95.9 312.9,90.9 316.9,95.9 320.9,90.9\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ &gt; 2f. Real, inverted, reduced. Between f and 2f on the opposite side of the lens.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"f &lt; dₒ &lt; 2f. Real, inverted, enlarged. Beyond 2f on the opposite side of the lens.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M175.8 17Q161.8 79 175.8 141H185.8Q199.8 79 185.8 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"122.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"116.8\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"238.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"232.8\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"93.8,52.0 180.8,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"180.8,52.0 381.0,145.2\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"93.8,52.0 180.8,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"180.8,79.0 381.0,141.1\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"93.8,79.0 93.8,52.0 89.8,57.0 93.8,52.0 97.8,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"354.8,79.0 354.8,133.0 350.8,128.0 354.8,133.0 358.8,128.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>f &lt; dₒ &lt; 2f. Real, inverted, enlarged. Beyond 2f on the opposite side of the lens.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"dₒ = 2f. Real, inverted, same size. At 2f on the opposite side of the lens.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M199.0 17Q185.0 79 199.0 141H209.0Q223.0 79 209.0 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"137.1\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"131.077\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"270.9\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"264.923\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"70.2,52.0 204.0,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,52.0 381.0,123.4\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"70.2,52.0 204.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 381.0,114.7\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"70.2,79.0 70.2,52.0 66.2,57.0 70.2,52.0 74.2,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"337.8,79.0 337.8,106.0 333.8,101.0 337.8,106.0 341.8,101.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>dₒ = 2f. Real, inverted, same size. At 2f on the opposite side of the lens.</figcaption></figure><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"0 &lt; dₒ &lt; f. Virtual, upright, enlarged. On the object side of the lens.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M199.0 17Q185.0 79 199.0 141H209.0Q223.0 79 209.0 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"137.1\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"131.077\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"270.9\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"264.923\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"160.5,60.1 204.0,60.1\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,60.1 381.0,110.1\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"204.0,60.1 79.7,25.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"160.5,60.1 204.0,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 365.1,149.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"204.0,79.0 79.7,25.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"160.5,79.0 160.5,60.1 156.5,65.1 160.5,60.1 164.5,65.1\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"79.7,79.0 79.7,25.0 75.7,30.0 79.7,25.0 83.7,30.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Dashed lines are extensions</text></svg><figcaption>0 &lt; dₒ &lt; f. Virtual, upright, enlarged. On the object side of the lens.</figcaption></figure>"
+        },
+        {
+          "label": "20",
+          "boxes": [
+            [
+              261,
+              42,
+              367.3008,
+              582,
+              548.6942
+            ]
+          ],
+          "text": "20. Complete the following ray diagram to show where the image of the candle will form and what its relative size will be. C F",
+          "id": "q-147",
+          "answer_html": "<p>The candle is beyond C. A parallel incident ray reflects through F, and a second ray through the vertex reflects symmetrically. Their intersection is between C and F in front of the mirror. The image is <strong>real, inverted, and smaller</strong>.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Concave mirror with the candle beyond C.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M287.7 17Q313.7 79 287.7 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"241.2\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"235.179\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"181.7\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"175.692\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"50.8,52.0 300.7,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"300.7,52.0 87.0,149.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"50.8,52.0 300.7,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"300.7,79.0 27.0,108.6\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"50.8,79.0 50.8,52.0 46.8,57.0 50.8,52.0 54.8,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"222.6,79.0 222.6,87.4 218.6,82.4 222.6,87.4 226.6,82.4\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>Concave mirror with the candle beyond C.</figcaption></figure>"
+        },
+        {
+          "label": "21",
+          "boxes": [
+            [
+              261,
+              42,
+              548.6942,
+              582,
+              723
+            ]
+          ],
+          "text": "21. You wish to use a concave mirror like the one in the diagram below as a makeup mirror. You want your image to appear right side up and magnified larger than life. In relation to the mirror where should your face be located if you are using the mirror for this purpose a at 1 b at 2 1 2 3 4 5 c at 3 C F d at 4 e at 5",
+          "id": "q-148",
+          "answer_html": "<p><strong>Position 5</strong> lies between the mirror and F. It gives an upright, magnified virtual image. At F the rays from each point leave parallel. Farther out than F gives an inverted real image.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"A face inside f gives an upright, magnified virtual image.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M231.3 17Q257.3 79 231.3 141\" fill=\"none\" stroke=\"#203440\" stroke-width=\"2\"/><circle cx=\"161.9\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"155.874\" y=\"96\" fill=\"#203440\">F</text><circle cx=\"79.5\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"73.4526\" y=\"96\" fill=\"#203440\">C</text><polyline points=\"199.0,54.7 244.3,54.7\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"244.3,54.7 27.0,118.8\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"244.3,54.7 345.0,25.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"199.0,54.7 244.3,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"244.3,79.0 113.7,149.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"244.3,79.0 345.0,25.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"199.0,79.0 199.0,54.7 195.0,59.7 199.0,54.7 203.0,59.7\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"345.0,79.0 345.0,25.0 341.0,30.0 345.0,25.0 349.0,30.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Dashed lines are extensions</text></svg><figcaption>A face inside f gives an upright, magnified virtual image.</figcaption></figure>"
+        },
+        {
+          "label": "22",
+          "boxes": [
+            [
+              262,
+              42,
+              52.4007,
+              582,
+              78.25
+            ]
+          ],
+          "text": "22. What is the distance from a concave mirror to a real image if the focal length of the mirror is 15.0 cm and the object is 45.0 cm in front of the mirror",
+          "id": "q-149",
+          "answer_html": "<p>1/dᵢ = 1/15.0 − 1/45.0 = 1/22.5 cm⁻¹, so the real image is <strong>22.5 cm in front of the mirror</strong>.</p>"
+        },
+        {
+          "label": "23",
+          "boxes": [
+            [
+              262,
+              42,
+              173.9007,
+              582,
+              330.04519999999997
+            ]
+          ],
+          "text": "23. Complete the following ray diagram to show where the image of the candle will form and what its relative size will be. C F F C",
+          "id": "q-150",
+          "answer_html": "<p>The candle is between 2f and f. Draw one ray through the lens centre and a second ray parallel to the axis that bends through the far focus. They meet beyond 2f on the far side. The image is <strong>real, inverted, and larger</strong>.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Converging lens with the candle between f and 2f.\"><polyline points=\"20.0,79.0 388.0,79.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><path d=\"M175.8 17Q161.8 79 175.8 141H185.8Q199.8 79 185.8 17Z\" fill=\"#e8f4f6\" stroke=\"#203440\" stroke-width=\"1.5\"/><circle cx=\"122.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"116.8\" y=\"96\" fill=\"#203440\">F₁</text><circle cx=\"238.8\" cy=\"79\" r=\"2.3\" fill=\"#203440\"/><text x=\"232.8\" y=\"96\" fill=\"#203440\">F₂</text><polyline points=\"93.8,52.0 180.8,52.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"180.8,52.0 381.0,145.2\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"93.8,52.0 180.8,79.0\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"180.8,79.0 381.0,141.1\" fill=\"none\" stroke=\"#4863a1\" stroke-width=\"2\"/><polyline points=\"93.8,79.0 93.8,52.0 89.8,57.0 93.8,52.0 97.8,57.0\" fill=\"none\" stroke=\"#8a4528\" stroke-width=\"2\"/><polyline points=\"354.8,79.0 354.8,133.0 350.8,128.0 354.8,133.0 358.8,128.0\" fill=\"none\" stroke=\"#91396d\" stroke-width=\"2\"/><text x=\"26\" y=\"169\" fill=\"#8a4528\">Object</text><text x=\"103\" y=\"169\" fill=\"#91396d\">Image</text><text x=\"176\" y=\"169\" fill=\"#096a70\">Solid lines show light paths</text></svg><figcaption>Converging lens with the candle between f and 2f.</figcaption></figure>"
+        },
+        {
+          "label": "24",
+          "boxes": [
+            [
+              262,
+              42,
+              330.04519999999997,
+              582,
+              355.89450000000005
+            ]
+          ],
+          "text": "24. What is the focal length of a lens if it forms a real image 20 mm away from one side of it when a small lamp is placed on the other side 30 mm from the lens",
+          "id": "q-151",
+          "answer_html": "<p>The real image is on the opposite side, so dᵢ = +20 mm. f = 1/(1/30 + 1/20) = <strong>12 mm</strong>.</p>"
+        },
+        {
+          "label": "25",
+          "boxes": [
+            [
+              262,
+              42,
+              451.5451,
+              582,
+              477.3944
+            ]
+          ],
+          "text": "25. What is the position of an image of an 8.3 cm toy superhero that is placed 0.8 m from a 60.0 mm focal length converging lens",
+          "id": "q-152",
+          "answer_html": "<p>Use dₒ = 0.8 m = 800 mm. dᵢ = 1/(1/60.0 − 1/800) ≈ <strong>64.9 mm</strong> on the far side. The object height is unnecessary for image position.</p>"
+        },
+        {
+          "label": "26",
+          "boxes": [
+            [
+              262,
+              42,
+              586.5452,
+              582,
+              598.8945
+            ]
+          ],
+          "text": "26. An object is placed 15.0 cm from a converging lens with a focal length of 20.5 cm. What is the image position",
+          "id": "q-153",
+          "answer_html": "<p>1/dᵢ = 1/20.5 − 1/15.0 ≈ −0.01789 cm⁻¹. <strong>dᵢ = −55.9 cm</strong>. The virtual image forms on the object side.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    },
+    {
+      "id": "set-35",
+      "topic": "Extra practice",
+      "kind": "Extra practice",
+      "title": "Chapter 7 Extra Practice",
+      "questions": [
+        {
+          "label": "1",
+          "boxes": [
+            [
+              263,
+              42,
+              86.57570000000001,
+              302,
+              112.425
+            ]
+          ],
+          "text": "1. What phenomena are primarily involved in the making of a rainbow",
+          "id": "q-154",
+          "answer_html": "<p>Light <strong>refracts and disperses</strong> on entering a raindrop, reflects internally, and refracts and disperses again on exit.</p>"
+        },
+        {
+          "label": "2",
+          "boxes": [
+            [
+              263,
+              42,
+              127.07570000000001,
+              302,
+              152.92499999999998
+            ]
+          ],
+          "text": "2. What phenomena are mainly responsible for the blueness of the sky",
+          "id": "q-155",
+          "answer_html": "<p><strong>Rayleigh scattering</strong> by air molecules preferentially redirects shorter visible wavelengths. Blue light scattered toward your eyes contributes strongly to the daytime sky colour.</p>"
+        },
+        {
+          "label": "3",
+          "boxes": [
+            [
+              263,
+              42,
+              167.5756,
+              302,
+              179.9249
+            ]
+          ],
+          "text": "3. Why do sunsets appear red",
+          "id": "q-156",
+          "answer_html": "<p>At sunset, sunlight follows a long path through the atmosphere. Much of the blue light scatters out of the direct beam, leaving a greater proportion of red and orange light.</p>"
+        },
+        {
+          "label": "4",
+          "boxes": [
+            [
+              263,
+              42,
+              194.5756,
+              302,
+              206.9249
+            ]
+          ],
+          "text": "4. What property of light is used in lenses",
+          "id": "q-157",
+          "answer_html": "<p><strong>Refraction</strong> at the curved surfaces changes the direction of the rays and can bring them together or spread them apart.</p>"
+        },
+        {
+          "label": "5",
+          "boxes": [
+            [
+              263,
+              42,
+              221.5756,
+              302,
+              247.4249
+            ]
+          ],
+          "text": "5. When white light enters glass from air what colour is refracted most",
+          "id": "q-158",
+          "answer_html": "<p><strong>Violet</strong> bends most in ordinary glass with normal dispersion. Red bends least.</p>"
+        },
+        {
+          "label": "6",
+          "boxes": [
+            [
+              263,
+              42,
+              262.07559999999995,
+              302,
+              287.925
+            ]
+          ],
+          "text": "6. Sun tan and Sun burn are caused by what form of electromagnetic radiation",
+          "id": "q-159",
+          "answer_html": "<p><strong>Ultraviolet radiation</strong> causes tanning and sunburn.</p>"
+        },
+        {
+          "label": "7",
+          "boxes": [
+            [
+              263,
+              42,
+              302.5757,
+              302,
+              314.925
+            ]
+          ],
+          "text": "7. Which colour of light travels fastest in a vacuum",
+          "id": "q-160",
+          "answer_html": "<p>Every colour travels at the same vacuum speed <strong>c</strong>.</p>"
+        },
+        {
+          "label": "8",
+          "boxes": [
+            [
+              263,
+              42,
+              329.57559999999995,
+              302,
+              382.42490000000004
+            ]
+          ],
+          "text": "8. A spotlight photographed through a glass filter with thin grooves in it will appear to have a starburst effect around it. What phenomenon is primarily involved here",
+          "id": "q-161",
+          "answer_html": "<p><strong>Diffraction</strong> at the closely spaced grooves spreads light into a starburst pattern. Interference controls the bright directions.</p>"
+        },
+        {
+          "label": "9",
+          "boxes": [
+            [
+              263,
+              42,
+              397.0755,
+              302,
+              449.9248
+            ]
+          ],
+          "text": "9. Two plane mirrors are hinged and arranged to form an angle of 36° with each other. If you place a coin between them how many images of the coin will you see when you look in the mirrors",
+          "id": "q-162",
+          "answer_html": "<p>For 36°, the textbook mirror model gives 360°/36° − 1 = <strong>9 images</strong>.</p>"
+        },
+        {
+          "label": "10",
+          "boxes": [
+            [
+              263,
+              42,
+              464.5755,
+              302,
+              503.9248
+            ]
+          ],
+          "text": "10. You are standing 2.0 m in front of a mirror and you wish to take a picture of yourself. At what distance should you focus your camera",
+          "id": "q-163",
+          "answer_html": "<p>If the camera is beside you, focus at about <strong>4.0 m</strong>. The camera is 2.0 m in front of the mirror and the virtual image lies 2.0 m behind it.</p>"
+        },
+        {
+          "label": "11",
+          "boxes": [
+            [
+              263,
+              42,
+              518.5757,
+              302,
+              544.4250000000001
+            ]
+          ],
+          "text": "11. If you run toward a mirror at 5.0 m/s how fast does your image approach you",
+          "id": "q-164",
+          "answer_html": "<p>Relative to the mirror your image moves toward it at 5.0 m/s while you also move toward it at 5.0 m/s. The closing speed is <strong>10 m/s</strong>.</p>"
+        },
+        {
+          "label": "12",
+          "boxes": [
+            [
+              263,
+              42,
+              559.0756,
+              302,
+              584.9249
+            ]
+          ],
+          "text": "12. A basketball player is 2.2 m tall. How tall a mirror does she need to see the entire length of her body",
+          "id": "q-165",
+          "answer_html": "<p>Minimum height = 2.2 m/2 = <strong>1.1 m</strong>, positioned to intercept the head and foot rays.</p>"
+        },
+        {
+          "label": "13",
+          "boxes": [
+            [
+              263,
+              42,
+              599.5756,
+              302,
+              638.9250000000001
+            ]
+          ],
+          "text": "13. When light of a certain pure colour enters a new medium at say 30° what property of the light does not change",
+          "id": "q-166",
+          "answer_html": "<p><strong>Frequency</strong> stays the same at the stationary boundary. Speed and wavelength may change.</p>"
+        },
+        {
+          "label": "14",
+          "boxes": [
+            [
+              263,
+              42,
+              653.5756,
+              302,
+              692.92492
+            ]
+          ],
+          "text": "14. Diamonds are noted for their brilliance and colour when viewed in a well-lit environment. What property or properties account for this",
+          "id": "q-167",
+          "answer_html": "<p>A high index gives a small critical angle. A suitable cut uses <strong>total internal reflection</strong> to return light to the viewer. <strong>Dispersion</strong> separates colours.</p>"
+        },
+        {
+          "label": "15",
+          "boxes": [
+            [
+              263,
+              302,
+              86.80030000000001,
+              582,
+              126.14959999999999
+            ]
+          ],
+          "text": "15. A blue spotlight and a yellow spotlight are shone on the same area of a white screen. What colour will you see on the screen",
+          "id": "q-168",
+          "answer_html": "<p>The expected result is <strong>white</strong> for balanced additive mixing. A yellow beam supplies red and green components and the blue beam supplies blue. Unequal intensities can tint the patch.</p>"
+        },
+        {
+          "label": "16",
+          "boxes": [
+            [
+              263,
+              302,
+              140.80020000000002,
+              582,
+              306.86019999999996
+            ]
+          ],
+          "text": "16. Look at the diagram below. Where should the fisherman aim his spear The fish is not moving. msherman B D C A",
+          "id": "q-169",
+          "answer_html": "<p>Aim <strong>below the apparent position C</strong>, along the direct path to the actual fish. The spear does not follow the refracted sight ray through B. Use the fish itself as the target in the sketch because the letters do not mark its exact position.</p>"
+        },
+        {
+          "label": "17",
+          "boxes": [
+            [
+              263,
+              302,
+              306.86019999999996,
+              582,
+              529.2881
+            ]
+          ],
+          "text": "17. Two prisms are to be used to make a periscope. Which of the diagrams below shows the correct way to align the prisms inside the periscope A B C D",
+          "id": "q-170",
+          "answer_html": "<p><strong>D.</strong> Both hypotenuse faces are parallel. The top prism admits the horizontal ray through its vertical leg and turns it down. The lower prism admits it through its horizontal leg and turns it left.</p><figure class=\"answer-graph\"><svg viewBox=\"0 0 410 180\" role=\"img\" aria-label=\"Two parallel 45° reflecting faces turn the light down, then horizontally toward the eye.\"><polyline points=\"341.0,48.0 207.0,48.0 207.0,132.0 70.0,132.0\" fill=\"none\" stroke=\"#096a70\" stroke-width=\"2\"/><polyline points=\"239.0,16.0 239.0,80.0 175.0,80.0 239.0,16.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><polyline points=\"175.0,100.0 239.0,100.0 175.0,164.0 175.0,100.0\" fill=\"none\" stroke=\"#a8b5bb\" stroke-width=\"2\"/><text x=\"277\" y=\"38\" fill=\"#203440\">Light in ←</text><text x=\"51\" y=\"120\" fill=\"#203440\">← To eye</text></svg><figcaption>Two parallel 45° reflecting faces turn the light down, then horizontally toward the eye.</figcaption></figure>"
+        },
+        {
+          "label": "18",
+          "boxes": [
+            [
+              263,
+              302,
+              529.2881,
+              582,
+              568.6374000000001
+            ]
+          ],
+          "text": "18. A beam of light enters a liquid at an incident angle of 35°. It refracts at 25° to the normal. What is the index of refraction of the liquid",
+          "id": "q-171",
+          "answer_html": "<p>Assuming incidence from air, n = sin 35°/sin 25° ≈ <strong>1.36</strong>. Both angles are from the normal.</p>"
+        },
+        {
+          "label": "19",
+          "boxes": [
+            [
+              263,
+              302,
+              583.288,
+              582,
+              622.6373
+            ]
+          ],
+          "text": "19. Diamond has an index of refraction of 2.42. If light enters the diamond at an angle of incidence of 63.0° at what angle will the light refract",
+          "id": "q-172",
+          "answer_html": "<p>θ₂ = sin⁻¹(sin 63.0°/2.42) ≈ <strong>21.6°</strong> from the normal.</p>"
+        },
+        {
+          "label": "20",
+          "boxes": [
+            [
+              263,
+              302,
+              636.580381,
+              582,
+              663.1373
+            ]
+          ],
+          "text": "20. The speed of light is 3.00 × 10⁸ m/s in air. What is its speed in a plastic whose index of refraction is 1.453",
+          "id": "q-173",
+          "answer_html": "<p>v = c/n = (3.00 × 10⁸)/1.453 ≈ <strong>2.06 × 10⁸ m/s</strong>.</p>"
+        }
+      ],
+      "shared": [],
+      "context": []
+    }
+  ]
+}
