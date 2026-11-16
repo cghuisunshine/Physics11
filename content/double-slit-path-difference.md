@@ -28,7 +28,13 @@ In the parallel-ray model, A and C lie on the same line perpendicular to the tra
 **Why sine rather than cosine?** θ is measured from the normal to the slit plane, not from the slit separation AB. BC is opposite θ in this triangle. If an angle α were measured from AB instead, the same projection would be d cos α, with α = 90° − θ.
 
 ## 3 Check it with exact finite-distance algebra
-Choose coordinates with the slit midpoint at (0, 0), horizontal x toward the screen, and vertical y toward A. Then A = (0, d/2), B = (0, −d/2), and P = (L, y). Pythagoras gives the exact path lengths:
+Choose coordinates with the slit midpoint at (0, 0), horizontal x toward the screen, and vertical y toward A. Then A = (0, d/2), B = (0, −d/2), and P = (L, y).
+
+EXACT_GEOMETRY_FIGURE
+
+The dashed horizontal legs end at **Q_A = (L, d/2)** and **Q_B = (L, −d/2)** on the screen. Each horizontal leg has length L. The vertical legs to P have lengths **|y − d/2|** and **|y + d/2|**; squaring removes the absolute values. The diagram shows y > d/2 for clarity, but the algebra below also applies to points between the slit heights or below the centre. The two paths meet at the same finite point P and are not parallel.
+
+Pythagoras gives the exact path lengths:
 ```
 r_A = √[L² + (y − d/2)²]
 r_B = √[L² + (y + d/2)²]
@@ -66,7 +72,7 @@ Bright bands: d(y/L) ≈ mλ → y ≈ mλL/d
 ```
 
 ## 5 Worked example and checks
-**AI-authored example.** Let d = 0.250 mm, L = 2.00 m, and y = 4.80 mm, the same geometry as the notes example. First use the screen triangle to find θ, then project the slit spacing:
+Let d = 0.250 mm, L = 2.00 m, and y = 4.80 mm, the same geometry as the notes example. First use the screen triangle to find θ, then project the slit spacing:
 ```
 d = 2.50 × 10⁻⁴ m; y = 4.80 × 10⁻³ m
 θ = arctan(y/L) = arctan(0.00240) ≈ 0.1375°

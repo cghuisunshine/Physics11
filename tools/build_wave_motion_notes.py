@@ -22,11 +22,23 @@ def build_derivation():
     figure = (f'<figure><img src="data:image/svg+xml;base64,{data}" width="760" height="510" '
               'alt="Triangle ABC: AB is the slit spacing d; AC is perpendicular to the parallel '
               'construction rays at C. Angle A is θ and the opposite side BC is d sin θ.">'
-              '<figcaption>AI-authored diagram · The orange segment BC is the projection of '
+              '<figcaption>The orange segment BC is the projection of '
               'the slit spacing onto the travel direction. The rays are parallel construction '
               'lines, not the exact paths to a finite point P.</figcaption></figure>')
     assert page.count('<p>PATH_DIFFERENCE_FIGURE</p>') == 1
     page = page.replace('<p>PATH_DIFFERENCE_FIGURE</p>', figure)
+    data = base64.b64encode((ROOT / 'assets/wave-motion-notes/double-slit-exact-geometry.svg').read_bytes()).decode()
+    figure = (f'<figure><img src="data:image/svg+xml;base64,{data}" width="900" height="690" '
+              'alt="Coordinate graph: slits A at (0, d/2) and B at (0, −d/2) connect to '
+              'P at (L, y) by exact paths r_A and r_B. Each right triangle has horizontal '
+              'leg L; its vertical leg is |y − d/2| or |y + d/2|. The dashed midpoint path '
+              'has length R and angle θ to the central normal.">'
+              '<figcaption>The coloured paths converge at P on a finite '
+              'screen. The dashed horizontal legs show the two right triangles used by '
+              'Pythagoras; the dashed diagonal is R = √(L² + y²). '
+              'Slit spacing is enlarged for clarity.</figcaption></figure>')
+    assert page.count('<p>EXACT_GEOMETRY_FIGURE</p>') == 1
+    page = page.replace('<p>EXACT_GEOMETRY_FIGURE</p>', figure)
     (ROOT / f'{DERIVATION}.html').write_text(page)
     print(f'Built {DERIVATION}.html: optional geometry and algebra derivation.')
 
@@ -50,7 +62,7 @@ def build_doppler_derivation():
     for marker, slug, width, height, alt, caption in figures:
         data = base64.b64encode((ROOT / f'assets/wave-motion-notes/{slug}.svg').read_bytes()).decode()
         figure = (f'<figure><img src="data:image/svg+xml;base64,{data}" width="{width}" '
-                  f'height="{height}" alt="{alt}"><figcaption>AI-authored diagram · '
+                  f'height="{height}" alt="{alt}"><figcaption>'
                   f'{caption}</figcaption></figure>')
         assert page.count(f'<p>{marker}</p>') == 1
         page = page.replace(f'<p>{marker}</p>', figure)

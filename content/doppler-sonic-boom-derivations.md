@@ -102,7 +102,7 @@ The cone is behind the source, so a ground observer can hear the boom after the 
 
 ## 8 Worked examples and checks
 ### A moving horn
-**AI-authored example.** A 500 Hz horn moves at 30.0 m/s through still air with c = 343 m/s. Both listeners are stationary. Use the changed wavelength because the source is moving:
+A 500 Hz horn moves at 30.0 m/s through still air with c = 343 m/s. Both listeners are stationary. Use the changed wavelength because the source is moving:
 ```
 Ahead:  λ = (343 − 30.0)/500 = 0.626 m
         f_o = 343/0.626 ≈ 548 Hz
@@ -112,7 +112,7 @@ Behind: λ = (343 + 30.0)/500 = 0.746 m
 For comparison, a stationary 500 Hz source and an observer moving toward it at 30.0 m/s give f_o = 500(343 + 30.0)/343 ≈ 544 Hz. The closing speed is the same as in the approaching-source example, but the sound-frequency shifts differ because different objects move relative to the medium.
 
 ### A source at Mach 2
-**AI-authored example.** With c = 343 m/s and u_s = 686 m/s, first find M, then the cone half-angle:
+With c = 343 m/s and u_s = 686 m/s, first find M, then the cone half-angle:
 ```
 M = u_s/c = 686/343 = 2.00
 sin μ = 1/M = 0.500
