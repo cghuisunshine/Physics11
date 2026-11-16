@@ -60,7 +60,13 @@ A 256 Hz source produces 256 cycles each second. Each cycle takes about 3.91 mil
 ### Compare the two directions
 For a **transverse wave**, the medium oscillates perpendicular to the propagation direction. A pulse on a taut rope can move horizontally while a marked segment moves vertically.
 
-For a **longitudinal wave**, the medium oscillates parallel to the propagation direction. In a spring, a bunched region is a **compression** and a spread-out region is a **rarefaction**. Wavelength can be measured from one compression centre to the next. Ordinary sound in air is longitudinal.
+For a **longitudinal wave**, the particles of the medium oscillate parallel to the direction the wave travels. In a spring, a **compression** is a region where coils bunch closer together than their usual equilibrium spacing. A **rarefaction** is the opposite: a spread-out region where coils are farther apart than their usual equilibrium spacing.
+
+A repeating longitudinal wave has alternating compressions and rarefactions. The pattern travels along the spring, while each coil moves back and forth about its equilibrium position, returning near its starting point rather than travelling along with the wave.
+
+Measure **wavelength λ** along the spring between the centres of two adjacent compressions or two adjacent rarefactions. Each distance is one complete wavelength.
+
+Ordinary **sound in air** is longitudinal. In a rarefaction, air pressure and density are lower than their equilibrium values; in a compression, they are higher. Air particles oscillate back and forth parallel to the wave's travel, while the sound transfers energy through the air.
 
 ### Investigation 6-1A · Pulses in springs
 Send a sideways pulse and a compression pulse along the same stretched spring. Track a marked coil, then time the pulse over a fixed distance. Compare different tensions and small amplitudes. Hold the far end fixed and observe the reflected transverse pulse.
@@ -112,6 +118,8 @@ If five gaps span 0.200 m in the tank, λ = 0.200/5 = **0.0400 m**. At 5.00 Hz, 
 Angle of reflection = angle of incidence
 Same medium after reflection → same v, f, and λ
 ```
+In the diagram, the incoming ray travels toward the barrier and the reflected ray travels away. The short crest lines are perpendicular to the rays. Both rays make **35° with the normal**, so each makes 55° with the barrier.
+
 A circular reflection from a flat barrier appears to come from a virtual source equally far behind it. A parabolic reflector directs incoming parallel rays along its axis toward a focus. Putting a point source at the focus reverses the process and gives nearly parallel reflected rays.
 
 ### Investigation 6-2 · Stations 1–3
@@ -142,6 +150,8 @@ The ray turns toward the normal. It bends away on re-entering deep water. Parall
 ## 9 Diffraction
 ### Waves spread past edges
 **Diffraction** is the spreading of a wave around an obstacle or beyond an opening. When an opening is about a wavelength wide or smaller, the outgoing wavefronts spread widely and can look nearly semicircular. When the opening is many wavelengths wide, the wave remains more nearly straight except near the edges.
+
+The diagram compares **opening width b** with the same **wavelength λ**. In A, b ≈ λ gives broad spreading. In B, b = 5λ gives less spreading. The lines mark crests, and the arrows show incoming wave travel. With the same water depth and wave speed on both sides, frequency and wavelength stay unchanged.
 
 Sound can reach a listener around a doorway because typical audible wavelengths can be comparable to the opening. Visible-light wavelengths are much smaller than a doorway, so spreading there is usually too slight to notice. Fine mesh can diffract visible light.
 

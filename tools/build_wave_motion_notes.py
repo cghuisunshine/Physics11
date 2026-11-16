@@ -16,6 +16,9 @@ FIGURES = [
     (4, 'Compare the two directions', 181, (164, 483, 536, 632),
      'A spring carrying a sideways pulse above and a lengthwise compression pulse below.',
      'Figure 6.1.2 · Compare the motion of the coils with the travel direction of each pulse.'),
+    (6, 'Reading the ripple tank', 183, (46, 435, 295, 702),
+     'Side view of a ripple tank: a lamp above the water shines through its wavy surface and glass bottom. Crests concentrate light into bright lines on the screen below, while troughs spread the light out.',
+     'Figure 6.1.4 · The projection is the light pattern on the white screen beneath the tank. Bright lines locate the water-wave crests.'),
     (6, 'Reading the ripple tank', 185, (61, 135, 398, 232),
      'A point source produces circular fronts, while a straight vibrating bar produces straight fronts.',
      'Figure 6.1.5 · Compare the wavefront shapes made by the two sources.'),
@@ -53,6 +56,20 @@ CHAPTER = Chapter(
     references=REFERENCES, figures=FIGURES, hero=HERO, search_hint='Try “wavelength” or “Doppler”',
     worked_answers=13, review_labels=['Wave types', 'Wave equation', 'Reflection', 'Refraction',
                                      'Diffraction', 'Interference', 'Doppler effect'],
+    illustrations=((7, 'Flat and curved boundaries', 'assets/wave-motion-notes/reflection.svg',
+                    'Top view of reflection at a flat barrier: incident and reflected rays each make 35° '
+                    'with the dashed normal. Equally spaced wavefronts are perpendicular to the rays.',
+                    'AI-authored illustration · Arrows show travel directions; short lines show crests. '
+                    'Both angles are measured from the normal, perpendicular to the barrier. '
+                    'The reflected wave stays in the same medium, so its wavelength is unchanged.'),
+                   (9, 'Waves spread past edges', 'assets/wave-motion-notes/diffraction.svg',
+                    'Top views of water waves travelling right through two openings: an opening about '
+                    'one wavelength wide gives broad, nearly semicircular spreading; an opening five '
+                    'wavelengths wide gives mostly straight fronts with curved edges.',
+                    'AI-authored illustration · Lines show crests, arrows show incoming travel, and dark bars form the barrier. '
+                    'Opening width b is compared with the same wavelength λ in both panels. '
+                    'These schematic transmitted wavefronts show wider spreading at the narrower gap. '
+                    'Reflected waves are omitted; crest spacing stays unchanged in the same medium.')),
 )
 
 if __name__ == '__main__':

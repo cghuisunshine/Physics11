@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="410" viewBox="0 0 600 410" role="img" aria-labelledby="title desc">
+  <title id="title">Wave reflection at a flat barrier</title>
+  <desc id="desc">Top view of water waves. An incident ray travels down and right toward a horizontal barrier. The reflected ray travels up and right. Both make an angle of 35 degrees with the dashed vertical normal. Short crest lines are perpendicular to each ray and equally spaced on both sides.</desc>
+  <defs>
+    <marker id="incident-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+    <marker id="reflected-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b04c24"/></marker>
+    <pattern id="barrier-hatching" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M-3 12 12-3M9 15 15 9" stroke="#bac8ce" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="600" height="410" fill="white"/>
+  <g font-family="system-ui, sans-serif" font-size="19" fill="#18323f">
+    <text x="24" y="30" font-size="17" fill="#526875">Top view · water waves</text>
+    <text x="92" y="75" fill="#086b72">Incident ray</text>
+    <text x="386" y="75" fill="#b04c24">Reflected ray</text>
+    <text x="300" y="66" text-anchor="middle">Normal</text>
+    <path d="M300 85V320" stroke="#526875" stroke-width="2" stroke-dasharray="8 6"/>
+    <rect x="35" y="320" width="530" height="24" fill="url(#barrier-hatching)"/>
+    <path d="M35 320H565" stroke="#18323f" stroke-width="4"/>
+    <path d="M300 302H318V320" stroke="#526875" stroke-width="1.5" fill="none"/>
+    <g fill="none" stroke-width="3">
+      <path d="M165 194 227 150M196 238 258 194" stroke="#086b72"/>
+      <path d="M373 150 435 194M342 194 404 238" stroke="#b04c24"/>
+    </g>
+    <path d="M150 106 279 290" stroke="#086b72" stroke-width="4" fill="none" marker-end="url(#incident-arrow)"/>
+    <path d="M279 290 300 320" stroke="#086b72" stroke-width="4"/>
+    <path d="M300 320 450 106" stroke="#b04c24" stroke-width="4" fill="none" marker-end="url(#reflected-arrow)"/>
+    <path d="M254.1 254.5A80 80 0 0 1 300 240" stroke="#086b72" stroke-width="2" fill="none"/>
+    <path d="M300 240A80 80 0 0 1 345.9 254.5" stroke="#b04c24" stroke-width="2" fill="none"/>
+    <text x="249" y="225" fill="#086b72">35°</text>
+    <text x="313" y="225" fill="#b04c24">35°</text>
+    <text x="300" y="374" text-anchor="middle">Flat reflecting barrier</text>
+    <text x="300" y="399" text-anchor="middle" font-size="17" fill="#526875">Angles are measured from the normal.</text>
+  </g>
+</svg>

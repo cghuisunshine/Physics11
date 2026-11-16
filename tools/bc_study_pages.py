@@ -31,6 +31,7 @@ class Chapter:
     worked_answers: int
     review_labels: list
     sources: tuple = ()
+    illustrations: tuple = ()
 
     @property
     def pages(self):
@@ -120,6 +121,15 @@ def build_notes(chapter, work):
                 anchor = f'<h3>{escape(heading)}</h3>'
                 assert anchor in body, heading
                 body = body.replace(anchor, anchor + figure(pdf_page, box, alt, caption, work), 1)
+        for topic, heading, path, alt, caption in reversed(chapter.illustrations):
+            if topic == number:
+                anchor = f'<h3>{escape(heading)}</h3>'
+                assert anchor in body, heading
+                data = base64.b64encode((ROOT / path).read_bytes()).decode()
+                illustration = (f'<figure class="diagram"><img src="data:image/svg+xml;base64,{data}" '
+                                f'alt="{escape(alt, quote=True)}" loading="lazy">'
+                                f'<figcaption>{escape(caption)}</figcaption></figure>')
+                body = body.replace(anchor, anchor + illustration, 1)
         ref = (f'<div class="page-ref"><a href="{SOURCE}#page={source_page}">'
                f'Pages {refs} / BC Science Physics 11</a></div>')
         section = (f'<section class="section-card" id="topic-{number}" aria-labelledby="heading-{number}" '
