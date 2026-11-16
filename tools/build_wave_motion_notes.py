@@ -10,6 +10,8 @@ DERIVATION = 'double-slit-path-difference'
 DERIVATION_LABEL = 'Deriving the path difference d sin θ'
 DOPPLER_DERIVATION = 'doppler-sonic-boom-derivations'
 DOPPLER_LABEL = 'Deriving the Doppler formulas and the Mach-cone angle'
+DIFFRACTION_DERIVATION = 'diffraction-width-wavelength'
+DIFFRACTION_LABEL = 'Why opening width and wavelength control diffraction'
 
 
 def build_derivation():
@@ -90,12 +92,49 @@ def build_doppler_derivation():
     print(f'Built {DOPPLER_DERIVATION}.html: optional Doppler and Mach-cone derivations.')
 
 
+def build_diffraction_derivation():
+    from diffraction_figures import build_pattern
+    build_pattern()
+    template = (ROOT / f'tools/{DIFFRACTION_DERIVATION}-template.html').read_text()
+    with TemporaryDirectory(prefix='diffraction-') as directory:
+        page = render_outline(f'{DIFFRACTION_DERIVATION}.md', template, Path(directory))
+    figures = (
+        ('DIFFRACTION_PAIR_FIGURE', 'diffraction-pair-cancellation', 900, 620,
+         'Contributions from points Q and Q prime separated by b/2 have projected path '
+         'difference (b/2) sin θ. At the first minimum this is λ/2, so every pair cancels.',
+         'Pair the two halves of one opening. The orange projection is the extra distance '
+         'for one representative pair, not the full edge-to-edge path difference.'),
+        ('DIFFRACTION_PATTERN_FIGURE', 'diffraction-width-pattern', 960, 580,
+         'Normalized intensity versus angle for b/λ of 0.5, 1, and 5. The smaller ratios '
+         'produce broader patterns. For b = 5λ, the first minimum is at about 11.5 degrees.',
+         'Calculated ideal single-slit patterns: [sin β/β]² with β = π(b/λ) sin θ. '
+         'Each curve is normalized to its own central intensity; absolute transmitted power is not compared.'),
+    )
+    for marker, slug, width, height, alt, caption in figures:
+        data = base64.b64encode((ROOT / f'assets/wave-motion-notes/{slug}.svg').read_bytes()).decode()
+        figure = (f'<figure><img src="data:image/svg+xml;base64,{data}" width="{width}" '
+                  f'height="{height}" alt="{alt}"><figcaption>{caption}</figcaption></figure>')
+        assert page.count(f'<p>{marker}</p>') == 1
+        page = page.replace(f'<p>{marker}</p>', figure)
+    for marker, section, title in (
+        ('MINIMUM_SOURCE', '4-1-single-slit-diffraction', 'Single-Slit Diffraction'),
+        ('INTENSITY_SOURCE', '4-2-intensity-in-single-slit-diffraction', 'Intensity in Single-Slit Diffraction'),
+    ):
+        citation = (f'<p class="reference">Reference: <a href="https://openstax.org/books/'
+                    f'university-physics-volume-3/pages/{section}">OpenStax · {title}</a>.</p>')
+        assert page.count(f'<p>{marker}</p>') == 1
+        page = page.replace(f'<p>{marker}</p>', citation)
+    (ROOT / f'{DIFFRACTION_DERIVATION}.html').write_text(page)
+    print(f'Built {DIFFRACTION_DERIVATION}.html: optional diffraction-width derivation.')
+
+
 def link_derivations():
     # The outline generator renders inline Markdown links as plain text.
     # Resolve this page's authored link after building the shared notes layout.
     path = ROOT / 'wave-motion-notes.html'
     page = path.read_text()
-    for slug, label in ((DERIVATION, DERIVATION_LABEL), (DOPPLER_DERIVATION, DOPPLER_LABEL)):
+    for slug, label in ((DERIVATION, DERIVATION_LABEL), (DOPPLER_DERIVATION, DOPPLER_LABEL),
+                        (DIFFRACTION_DERIVATION, DIFFRACTION_LABEL)):
         marker = f'<p>Further reading: [{label}]({slug}.html).</p>'
         assert page.count(marker) == 1
         page = page.replace(marker, f'<p>Further reading: <a href="{slug}.html">{label}</a>.</p>')
@@ -158,14 +197,14 @@ CHAPTER = Chapter(
     illustrations=((7, 'Flat and curved boundaries', 'assets/wave-motion-notes/reflection.svg',
                     'Top view of reflection at a flat barrier: incident and reflected rays each make 35° '
                     'with the dashed normal. Equally spaced wavefronts are perpendicular to the rays.',
-                    'AI-authored illustration · Arrows show travel directions; short lines show crests. '
+                    'Arrows show travel directions; short lines show crests. '
                     'Both angles are measured from the normal, perpendicular to the barrier. '
                     'The reflected wave stays in the same medium, so its wavelength is unchanged.'),
                    (8, 'Across a boundary', 'assets/wave-motion-notes/refraction.svg',
                     'Top view of refraction from deep to shallow water: the incident ray at 45° '
                     'bends toward the normal to about 26°. Crest spacing drops from 4.0 to 2.5 cm '
                     'as speed drops from 0.20 to 0.125 m/s; frequency stays 5.0 Hz.',
-                    'AI-authored illustration · Lines show crests perpendicular to each ray; arrows '
+                    'Lines show crests perpendicular to each ray; arrows '
                     'show travel. Measure wavelength perpendicular to the crests. The slower region '
                     'has closer crests and a smaller angle to the normal. Values match the example '
                     'below; the transmitted angle is rounded. Only the incident and transmitted waves are shown.'),
@@ -173,7 +212,7 @@ CHAPTER = Chapter(
                     'Top views of water waves travelling right through two openings: an opening about '
                     'one wavelength wide gives broad, nearly semicircular spreading; an opening five '
                     'wavelengths wide gives mostly straight fronts with curved edges.',
-                    'AI-authored illustration · Lines show crests, arrows show incoming travel, and dark bars form the barrier. '
+                    'Lines show crests, arrows show incoming travel, and dark bars form the barrier. '
                     'Opening width b is compared with the same wavelength λ in both panels. '
                     'These schematic transmitted wavefronts show wider spreading at the narrower gap. '
                     'Reflected waves are omitted; crest spacing stays unchanged in the same medium.'),
@@ -181,7 +220,7 @@ CHAPTER = Chapter(
                     'Displacement versus position graphs at exact overlap: two upward pulses of '
                     'height A add to a pulse of height 2A; an upward and an equal downward pulse '
                     'add to zero at every position. All graphs use the same scales.',
-                    'AI-authored illustration · Each sum graph adds the signed displacements of '
+                    'Each sum graph adds the signed displacements of '
                     'the two pulses at the same horizontal position. Zero is equilibrium; A is '
                     'the positive amplitude of each individual pulse. Complete cancellation lasts '
                     'only during exact overlap; ideal pulses continue afterward.')),
@@ -190,5 +229,6 @@ CHAPTER = Chapter(
 if __name__ == '__main__':
     build_derivation()
     build_doppler_derivation()
+    build_diffraction_derivation()
     build_study_pages(CHAPTER)
     link_derivations()

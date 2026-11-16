@@ -156,6 +156,8 @@ The diagram compares **opening width b** with the same **wavelength λ**. In A, 
 
 Sound can reach a listener around a doorway because typical audible wavelengths can be comparable to the opening. Visible-light wavelengths are much smaller than a doorway, so spreading there is usually too slight to notice. Fine mesh can diffract visible light.
 
+Further reading: [Why opening width and wavelength control diffraction](diffraction-width-wavelength.html).
+
 ### Investigation 6-2 · Station 5
 Keep the water-wave wavelength at 2.0 cm. Compare a 2.0 cm opening with a 10 cm opening, then remove the barrier and compare obstacles of different widths.
 

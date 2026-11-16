@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+<title id="title">Pairing contributions from the two halves of an opening</title>
+<desc id="desc">An opening of width b has upper and lower halves. Every upper point Q is paired with Q prime b over two below. Parallel outgoing construction rays make angle theta with the normal. A perpendicular from Q meets the lower ray at C. The projected extra distance Q prime C is b over two times sin theta. At the first minimum it equals half a wavelength, so every pair cancels.</desc>
+<rect width="900" height="620" rx="12" fill="white"/>
+<g font-family="system-ui,sans-serif" fill="#182e3c">
+<text x="28" y="35" font-size="22" font-weight="700">One cancelling pair from the two halves</text>
+<text x="28" y="65" font-size="16" fill="#526875">Uniform phase across the opening · far-field construction</text>
+<rect x="165" y="170" width="30" height="180" fill="#edf6f4"/>
+<rect x="165" y="350" width="30" height="180" fill="#fff1e9"/>
+<path d="M180 100V170M180 530V585" stroke="#526875" stroke-width="7"/>
+<path d="M160 170H200M160 530H200M165 350H195" stroke="#91a6b0" stroke-width="2"/>
+<g fill="#91a6b0"><circle cx="180" cy="200" r="3"/><circle cx="180" cy="320" r="3"/><circle cx="180" cy="380" r="3"/><circle cx="180" cy="500" r="3"/></g>
+<path d="M180 260 465 95.455M180 440 730 122.457" stroke="#086b72" stroke-width="3"/>
+<path d="M443 97.455l22-2-13 18M708 124.457l22-2-13 18" fill="none" stroke="#086b72" stroke-width="3"/>
+<path d="M180 440H770" stroke="#91a6b0" stroke-width="1.8" stroke-dasharray="7 6"/>
+<path d="M180 260 257.942 395" stroke="#087cff" stroke-width="3"/>
+<path d="M180 440 257.942 395" stroke="#bd4b24" stroke-width="6"/>
+<path d="M250.942 382.876 238.818 389.876 245.818 402" fill="none" stroke="#087cff" stroke-width="2"/>
+<path d="M230 440A50 50 0 0 0 223.301 415" stroke="#526875" stroke-width="2" fill="none"/>
+<text x="244" y="430" font-size="22">θ</text>
+<path d="M66 170V530M59 170H73M59 530H73M126 260V440M119 260H133M119 440H133" stroke="#526875" stroke-width="2"/>
+<text x="35" y="358" font-size="24">b</text><text x="83" y="358" font-size="18">b/2</text>
+<g fill="#182e3c"><circle cx="180" cy="260" r="5"/><circle cx="180" cy="440" r="5"/><circle cx="257.942" cy="395" r="5"/></g>
+<text x="145" y="250" font-size="22" font-weight="700">Q</text><text x="143" y="471" font-size="22" font-weight="700">Q′</text><text x="272" y="407" font-size="22" font-weight="700">C</text>
+<text x="360" y="184" font-size="18" fill="#086b72">Same outgoing direction θ</text>
+<text x="340" y="390" font-size="22" fill="#bd4b24">Δr_pair ≈ (b/2) sin θ</text>
+<text x="517" y="471" font-size="17" fill="#526875">Normal direction</text>
+<text x="300" y="525" font-size="23" font-weight="700">First minimum: (b/2) sin θ₁ = λ/2</text>
+<text x="300" y="562" font-size="23" font-weight="700">Therefore b sin θ₁ = λ</text>
+<text x="28" y="606" font-size="16" fill="#526875">Every strip in the upper half has a partner b/2 below it. One representative pair is shown.</text>
+</g>
+</svg>
