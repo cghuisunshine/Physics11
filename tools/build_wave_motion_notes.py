@@ -93,12 +93,20 @@ def build_doppler_derivation():
 
 
 def build_diffraction_derivation():
-    from diffraction_figures import build_pattern
+    from diffraction_figures import build_pattern, build_wavefronts
     build_pattern()
+    build_wavefronts()
     template = (ROOT / f'tools/{DIFFRACTION_DERIVATION}-template.html').read_text()
     with TemporaryDirectory(prefix='diffraction-') as directory:
         page = render_outline(f'{DIFFRACTION_DERIVATION}.md', template, Path(directory))
     figures = (
+        ('DIFFRACTION_WAVEFRONTS_FIGURE', 'diffraction-wavefront-shapes', 1050, 800,
+         'Calculated displacement snapshots for openings of 0.5λ and 5λ at the same spatial scale. '
+         'The narrow opening gives curved crest arcs. The wide opening has nearly straight '
+         'central crests and curved waves near its edges. Black lines mark crest phase.',
+         'Spatial wavefronts, not an intensity-versus-angle graph. These scalar-wave model '
+         'snapshots show the same wavelength; colours are normalized separately for visibility. '
+         'The field calculation includes the near-opening region, where the far-field formula is not used.'),
         ('DIFFRACTION_PAIR_FIGURE', 'diffraction-pair-cancellation', 900, 620,
          'Contributions from points Q and Q prime separated by b/2 have projected path '
          'difference (b/2) sin θ. At the first minimum this is λ/2, so every pair cancels.',
@@ -117,6 +125,7 @@ def build_diffraction_derivation():
         assert page.count(f'<p>{marker}</p>') == 1
         page = page.replace(f'<p>{marker}</p>', figure)
     for marker, section, title in (
+        ('WAVEFRONT_SOURCE', '1-6-huygenss-principle', 'Huygens’s Principle'),
         ('MINIMUM_SOURCE', '4-1-single-slit-diffraction', 'Single-Slit Diffraction'),
         ('INTENSITY_SOURCE', '4-2-intensity-in-single-slit-diffraction', 'Intensity in Single-Slit Diffraction'),
     ):

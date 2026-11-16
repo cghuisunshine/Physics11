@@ -11,7 +11,7 @@ def build_pattern():
     import matplotlib.pyplot as plt
     import numpy as np
 
-    plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 11, 'svg.fonttype': 'path'})
+    plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 11, 'svg.fonttype': 'path', 'svg.hashsalt': 'Physics11-diffraction'})
     angles = np.linspace(-90, 90, 4001)
     fig, ax = plt.subplots(figsize=(9.6, 5.8))
     for ratio, colour, style in [(0.5, '#087cff', '-'), (1, '#086b72', '--'), (5, '#bd4b24', '-')]:
@@ -42,5 +42,58 @@ def build_pattern():
     return output
 
 
+def build_wavefronts():
+    """Propagate an in-phase opening with the scalar angular-spectrum model."""
+    os.environ.setdefault('MPLCONFIGDIR', str(Path(tempfile.gettempdir()) / 'physics11-matplotlib'))
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 11, 'svg.fonttype': 'path', 'svg.hashsalt': 'Physics11-diffraction'})
+    # Distances are in wavelengths. Padding keeps periodic replicas far from the displayed region.
+    count = 8192
+    y = (np.arange(count) - count // 2) / 32
+    x = np.linspace(.08, 10, 450)
+    transverse_k = 2 * np.pi * np.fft.fftfreq(count, d=1/32)
+    forward_k = np.sqrt((2 * np.pi) ** 2 - transverse_k ** 2 + 0j)
+    propagation = np.exp(1j * x[:, None] * forward_k[None, :])
+    visible = np.abs(y) <= 6
+    fig, axes = plt.subplots(1, 2, figsize=(10.5, 8), sharex=True, sharey=True)
+    for ax, ratio in zip(axes, [.5, 5]):
+        # Fractional edge cells approximate a uniform top-hat aperture without a width-rounding bias.
+        aperture = np.clip((ratio / 2 - np.abs(y)) * 32 + .5, 0, 1)
+        field = np.fft.ifft(propagation * np.fft.fft(aperture)[None, :], axis=1)[:, visible]
+        scale = np.max(np.abs(field))
+        displacement = field.real / scale
+        ax.pcolormesh(x, y[visible], displacement.T, shading='auto', cmap='RdBu_r',
+                      vmin=-.55, vmax=.55, rasterized=True)
+        # Imaginary part zero with positive real part marks equal crest phase, not trough phase.
+        crests = np.ma.masked_where(field.real < .025 * scale, field.imag)
+        ax.contour(x, y[visible], crests.T, levels=[0], colors='#182e3c', linewidths=.65)
+        ax.plot([0, 0], [-6, -ratio/2], color='#182e3c', linewidth=6, clip_on=False)
+        ax.plot([0, 0], [ratio/2, 6], color='#182e3c', linewidth=6, clip_on=False)
+        ax.set_title(f'b = {ratio:g}λ', fontsize=16, fontweight='bold', pad=12)
+        ax.set(xlim=(0, 10), ylim=(-6, 6), xlabel='Distance beyond opening x/λ',
+               xticks=np.arange(0, 11, 2), yticks=np.arange(-6, 7, 2))
+        ax.set_aspect('equal')
+        ax.spines[['top', 'right']].set_visible(False)
+    axes[0].set_ylabel('Position across opening y/λ')
+    fig.suptitle('Same wavelength: curved crests versus a nearly straight centre',
+                 fontsize=16, fontweight='bold', y=.98)
+    fig.text(.5, .92, 'Calculated scalar-wave snapshots · black curves mark crest phase', ha='center', fontsize=11)
+    fig.text(.5, .065, 'Red = positive displacement; blue = negative. Colour scales are normalized separately.',
+             ha='center', fontsize=10, color='#526875')
+    fig.text(.5, .035, 'The wide opening also has curved edge waves. These are model fields, not tank measurements.',
+             ha='center', fontsize=10, color='#526875')
+    fig.tight_layout(rect=(0, .15, 1, .90))
+    output = Path(__file__).resolve().parents[1] / 'assets/wave-motion-notes/diffraction-wavefront-shapes.svg'
+    fig.savefig(output, dpi=180, metadata={'Date': None, 'Creator': 'Physics11 diffraction_figures.py'})
+    output.write_text('\n'.join(line.rstrip() for line in output.read_text().splitlines()) + '\n')
+    plt.close(fig)
+    return output
+
+
 if __name__ == '__main__':
     print(build_pattern())
+    print(build_wavefronts())
