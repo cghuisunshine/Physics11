@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 510" role="img" aria-labelledby="title desc">
+<title id="title">Right-triangle projection of the slit separation</title>
+<desc id="desc">A is above B with AB equal to d. Two parallel construction rays point 30 degrees above the horizontal normal. A perpendicular from A meets the lower ray at C. Triangle ABC has a right angle at C, angle theta at A, and side BC equal to d sin theta opposite theta. The two rays represent the distant-screen approximation.</desc>
+<rect width="760" height="510" rx="12" fill="#fff"/>
+<g font-family="system-ui,sans-serif" fill="#182e3c">
+<text x="30" y="38" font-size="20" font-weight="700">Project d onto the travel direction</text>
+<text x="30" y="65" font-size="15" fill="#526875">Parallel construction rays · distant-screen model</text>
+<path d="M180 100V257M180 283V437M180 463V480" stroke="#526875" stroke-width="7"/>
+<path d="M180 270H674" stroke="#91a6b0" stroke-dasharray="7 6" stroke-width="2"/>
+<text x="490" y="304" font-size="15">Parallel to central normal</text>
+<path d="M180 270 500 85M180 450 680 161" stroke="#086b72" stroke-width="3"/>
+<path d="M478 87l22-2-13 18M658 163l22-2-13 18" fill="none" stroke="#086b72" stroke-width="3"/>
+<path d="M180 270 258 405" stroke="#087cff" stroke-width="3"/>
+<path d="M180 450 258 405" stroke="#bd4b24" stroke-width="6"/>
+<path d="m251 393-12 7 7 12" stroke="#087cff" stroke-width="2" fill="none"/>
+<path d="M180 305A35 35 0 0 0 197.5 300.3M230 270A50 50 0 0 0 223.3 245" stroke="#086b72" stroke-width="2" fill="none"/>
+<text x="189" y="326" font-size="19">θ</text><text x="242" y="254" font-size="19">θ</text>
+<path d="M180 411A39 39 0 0 1 214 430.5" stroke="#526875" stroke-width="1.5" fill="none"/>
+<text x="223" y="461" font-size="16">90° − θ</text>
+<path d="M119 270V450M112 270H126M112 450H126" stroke="#526875" stroke-width="2"/>
+<text x="88" y="367" font-size="23">d</text>
+<g fill="#182e3c"><circle cx="180" cy="270" r="5"/><circle cx="180" cy="450" r="5"/><circle cx="258" cy="405" r="5"/></g>
+<text x="145" y="264" font-size="21" font-weight="700">A</text><text x="146" y="474" font-size="21" font-weight="700">B</text><text x="270" y="418" font-size="21" font-weight="700">C</text>
+<text x="332" y="380" font-size="20" fill="#bd4b24">BC = d sin θ</text>
+<path d="M320 375 236 419" stroke="#bd4b24" stroke-width="1.5"/>
+<text x="355" y="195" font-size="16" fill="#086b72">Toward distant observation</text>
+<text x="327" y="480" font-size="14" fill="#526875">θ is enlarged for clarity; screen is not shown.</text>
+</g>
+</svg>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Optional algebra and right-triangle derivation of the double-slit path difference d sin theta, including the distant-screen approximation.">
+<title>Why is the path difference d sin θ? | Physics 11</title>
+<style>
+:root{--ink:#182e3c;--muted:#526875;--paper:#faf9f5;--line:#dce4e7;--accent:#086b72;--soft:#edf6f4}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--accent);text-underline-offset:4px}a:focus-visible,button:focus-visible{outline:3px solid #087cff;outline-offset:4px}.skip{position:absolute;top:-100px;left:16px;background:white;padding:10px}.skip:focus{top:10px}header,main,footer{max-width:960px;margin:auto;padding:24px 30px}header{border-bottom:1px solid var(--line)}nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center}.eyebrow{color:var(--accent);text-transform:uppercase;font-size:12px;letter-spacing:.14em;font-weight:750;margin-top:36px}h1{font-size:clamp(32px,6vw,54px);line-height:1.15;letter-spacing:-.04em;margin:14px 0 20px}h2{font-size:25px;line-height:1.3;margin-top:0}section{background:white;border:1px solid var(--line);border-radius:14px;padding:30px 36px;margin:24px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--soft);border-left:3px solid var(--accent);padding:18px 20px;font-size:15px;line-height:1.8;border-radius:0 8px 8px 0}code{font-family:Consolas,monospace}figure{margin:24px 0}figure img{display:block;width:100%;height:auto}figcaption,footer{font-size:13px;color:var(--muted)}button{font:inherit;font-size:14px;background:white;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer}button:hover{background:var(--soft)}footer{border-top:1px solid var(--line)}li{margin:8px 0}
+@media(max-width:600px){header,main,footer{padding:20px 16px}section{padding:24px 18px}pre{font-size:13px;padding:14px 12px}}
+@media print{body{background:white;font-size:11pt}header,.skip,button{display:none}main,footer{max-width:none;padding:0}h1{font-size:26pt}section{border:0;padding:14px 0;margin:0}h2{break-after:avoid}figure,pre{break-inside:avoid}a{color:inherit}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to derivation</a>
+<header><nav aria-label="Page navigation"><a href="wave-motion-notes.html#topic-11">← Section 11 · Young’s double slit</a><a href="content.html">All Physics 11 notes</a><button type="button" id="print">Print / Save PDF</button></nav></header>
+<main id="main">
+<p class="eyebrow">Physics 11 · Optional further reading</p>
+<h1>Why is the path difference d sin θ?</h1>
+<p>An optional mathematical derivation for Young’s double slit, using right-triangle geometry and algebra.</p>
+    <section>
+      <h2>1 Set up the geometry</h2>
+      <p>This optional tutorial extends Section 11 of Wave Motion Notes. <strong>Prerequisites:</strong> the sine ratio in a right triangle, Pythagoras, and the idea of path difference. No calculus is needed. The core notes can be completed without this page.</p>
+      <p>Two narrow slits A and B are separated by a centre-to-centre distance <strong>d</strong>. The screen is a perpendicular distance <strong>L</strong> from the slit plane. Its centre O lies directly opposite the midpoint of the slits. A point P on the screen has a signed vertical offset <strong>y</strong> from O.</p>
+      <p>Measure <strong>θ from the central normal</strong> (the line from the slit midpoint to O) toward P. Positive y and θ point toward slit A. Let r_A and r_B be the distances AP and BP. Define the signed path difference <strong>Δr = r_B − r_A</strong>. Above the centre, B is farther from P, so Δr is positive. All distances use the same units, normally metres; θ may be expressed in degrees or radians.</p>
+      <p>The geometric path difference does not require in-phase sources. To connect it to the usual bright and dark bands, assume coherent, in-phase sources of the same wavelength in a uniform medium.</p>
+    </section>
+
+    <section>
+      <h2>2 Draw the small right triangle</h2>
+      <p>For a distant observation point, the paths AP and BP are nearly parallel. Draw two <strong>parallel construction rays</strong> in the direction θ, one from each slit. From A, draw a perpendicular to the lower construction ray, meeting it at C.</p>
+      <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NjAgNTEwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+Cjx0aXRsZSBpZD0idGl0bGUiPlJpZ2h0LXRyaWFuZ2xlIHByb2plY3Rpb24gb2YgdGhlIHNsaXQgc2VwYXJhdGlvbjwvdGl0bGU+CjxkZXNjIGlkPSJkZXNjIj5BIGlzIGFib3ZlIEIgd2l0aCBBQiBlcXVhbCB0byBkLiBUd28gcGFyYWxsZWwgY29uc3RydWN0aW9uIHJheXMgcG9pbnQgMzAgZGVncmVlcyBhYm92ZSB0aGUgaG9yaXpvbnRhbCBub3JtYWwuIEEgcGVycGVuZGljdWxhciBmcm9tIEEgbWVldHMgdGhlIGxvd2VyIHJheSBhdCBDLiBUcmlhbmdsZSBBQkMgaGFzIGEgcmlnaHQgYW5nbGUgYXQgQywgYW5nbGUgdGhldGEgYXQgQSwgYW5kIHNpZGUgQkMgZXF1YWwgdG8gZCBzaW4gdGhldGEgb3Bwb3NpdGUgdGhldGEuIFRoZSB0d28gcmF5cyByZXByZXNlbnQgdGhlIGRpc3RhbnQtc2NyZWVuIGFwcHJveGltYXRpb24uPC9kZXNjPgo8cmVjdCB3aWR0aD0iNzYwIiBoZWlnaHQ9IjUxMCIgcng9IjEyIiBmaWxsPSIjZmZmIi8+CjxnIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZmlsbD0iIzE4MmUzYyI+Cjx0ZXh0IHg9IjMwIiB5PSIzOCIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjcwMCI+UHJvamVjdCBkIG9udG8gdGhlIHRyYXZlbCBkaXJlY3Rpb248L3RleHQ+Cjx0ZXh0IHg9IjMwIiB5PSI2NSIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzUyNjg3NSI+UGFyYWxsZWwgY29uc3RydWN0aW9uIHJheXMgwrcgZGlzdGFudC1zY3JlZW4gbW9kZWw8L3RleHQ+CjxwYXRoIGQ9Ik0xODAgMTAwVjI1N00xODAgMjgzVjQzN00xODAgNDYzVjQ4MCIgc3Ryb2tlPSIjNTI2ODc1IiBzdHJva2Utd2lkdGg9IjciLz4KPHBhdGggZD0iTTE4MCAyNzBINjc0IiBzdHJva2U9IiM5MWE2YjAiIHN0cm9rZS1kYXNoYXJyYXk9IjcgNiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjQ5MCIgeT0iMzA0IiBmb250LXNpemU9IjE1Ij5QYXJhbGxlbCB0byBjZW50cmFsIG5vcm1hbDwvdGV4dD4KPHBhdGggZD0iTTE4MCAyNzAgNTAwIDg1TTE4MCA0NTAgNjgwIDE2MSIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTQ3OCA4N2wyMi0yLTEzIDE4TTY1OCAxNjNsMjItMi0xMyAxOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE4MCAyNzAgMjU4IDQwNSIgc3Ryb2tlPSIjMDg3Y2ZmIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE4MCA0NTAgMjU4IDQwNSIgc3Ryb2tlPSIjYmQ0YjI0IiBzdHJva2Utd2lkdGg9IjYiLz4KPHBhdGggZD0ibTI1MSAzOTMtMTIgNyA3IDEyIiBzdHJva2U9IiMwODdjZmYiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPgo8cGF0aCBkPSJNMTgwIDMwNUEzNSAzNSAwIDAgMCAxOTcuNSAzMDAuM00yMzAgMjcwQTUwIDUwIDAgMCAwIDIyMy4zIDI0NSIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4KPHRleHQgeD0iMTg5IiB5PSIzMjYiIGZvbnQtc2l6ZT0iMTkiPs64PC90ZXh0Pjx0ZXh0IHg9IjI0MiIgeT0iMjU0IiBmb250LXNpemU9IjE5Ij7OuDwvdGV4dD4KPHBhdGggZD0iTTE4MCA0MTFBMzkgMzkgMCAwIDEgMjE0IDQzMC41IiBzdHJva2U9IiM1MjY4NzUiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIi8+Cjx0ZXh0IHg9IjIyMyIgeT0iNDYxIiBmb250LXNpemU9IjE2Ij45MMKwIOKIkiDOuDwvdGV4dD4KPHBhdGggZD0iTTExOSAyNzBWNDUwTTExMiAyNzBIMTI2TTExMiA0NTBIMTI2IiBzdHJva2U9IiM1MjY4NzUiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSI4OCIgeT0iMzY3IiBmb250LXNpemU9IjIzIj5kPC90ZXh0Pgo8ZyBmaWxsPSIjMTgyZTNjIj48Y2lyY2xlIGN4PSIxODAiIGN5PSIyNzAiIHI9IjUiLz48Y2lyY2xlIGN4PSIxODAiIGN5PSI0NTAiIHI9IjUiLz48Y2lyY2xlIGN4PSIyNTgiIGN5PSI0MDUiIHI9IjUiLz48L2c+Cjx0ZXh0IHg9IjE0NSIgeT0iMjY0IiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iNzAwIj5BPC90ZXh0Pjx0ZXh0IHg9IjE0NiIgeT0iNDc0IiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iNzAwIj5CPC90ZXh0Pjx0ZXh0IHg9IjI3MCIgeT0iNDE4IiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iNzAwIj5DPC90ZXh0Pgo8dGV4dCB4PSIzMzIiIHk9IjM4MCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2JkNGIyNCI+QkMgPSBkIHNpbiDOuDwvdGV4dD4KPHBhdGggZD0iTTMyMCAzNzUgMjM2IDQxOSIgc3Ryb2tlPSIjYmQ0YjI0IiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8dGV4dCB4PSIzNTUiIHk9IjE5NSIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzA4NmI3MiI+VG93YXJkIGRpc3RhbnQgb2JzZXJ2YXRpb248L3RleHQ+Cjx0ZXh0IHg9IjMyNyIgeT0iNDgwIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNTI2ODc1Ij7OuCBpcyBlbmxhcmdlZCBmb3IgY2xhcml0eTsgc2NyZWVuIGlzIG5vdCBzaG93bi48L3RleHQ+CjwvZz4KPC9zdmc+Cg==" width="760" height="510" alt="Triangle ABC: AB is the slit spacing d; AC is perpendicular to the parallel construction rays at C. Angle A is θ and the opposite side BC is d sin θ."><figcaption>AI-authored diagram · The orange segment BC is the projection of the slit spacing onto the travel direction. The rays are parallel construction lines, not the exact paths to a finite point P.</figcaption></figure>
+      <p>Triangle ABC is right-angled at C. Its hypotenuse AB is d. The angle at B, between BA and BC, is 90° − θ. Therefore the angle at A, between AB and AC, is θ: the two acute angles of a right triangle add to 90°.</p>
+      <p>The side opposite angle θ at A is BC. Apply the sine ratio before making any wave assumptions:</p>
+      <pre><code>sin θ = opposite / hypotenuse = BC / AB
+sin θ = BC / d
+BC = d sin θ</code></pre>
+      <p>In the parallel-ray model, A and C lie on the same line perpendicular to the travel direction. Their remaining forward distances to a common distant wavefront are equal. The lower path includes the extra segment BC, so <strong>Δr ≈ BC = d sin θ</strong> for a distant screen. The triangle identity is exact; treating its projection as the difference of the two finite paths is the approximation.</p>
+      <p><strong>Why sine rather than cosine?</strong> θ is measured from the normal to the slit plane, not from the slit separation AB. BC is opposite θ in this triangle. If an angle α were measured from AB instead, the same projection would be d cos α, with α = 90° − θ.</p>
+    </section>
+
+    <section>
+      <h2>3 Check it with exact finite-distance algebra</h2>
+      <p>Choose coordinates with the slit midpoint at (0, 0), horizontal x toward the screen, and vertical y toward A. Then A = (0, d/2), B = (0, −d/2), and P = (L, y). Pythagoras gives the exact path lengths:</p>
+      <pre><code>r_A = √[L² + (y − d/2)²]
+r_B = √[L² + (y + d/2)²]
+Δr = r_B − r_A</code></pre>
+      <p>Multiply by the conjugate to turn the difference of square roots into a difference of squares:</p>
+      <pre><code>Δr = (r_B − r_A)(r_B + r_A) / (r_B + r_A)
+   = (r_B² − r_A²) / (r_B + r_A)
+   = [(y + d/2)² − (y − d/2)²] / (r_B + r_A)
+   = [(y² + yd + d²/4) − (y² − yd + d²/4)] / (r_B + r_A)
+   = 2yd / (r_B + r_A)                  exact</code></pre>
+      <p>Let <strong>R = √(L² + y²)</strong> be the distance from the slit midpoint to P. When the slit spacing is much smaller than this distance, <strong>d ≪ R</strong>, both path lengths are approximately R. Thus r_B + r_A ≈ 2R. In the large screen triangle, sin θ = y/R, so:</p>
+      <pre><code>Δr ≈ 2yd / (2R)
+   = d(y/R)
+   = d sin θ                           distant-screen result</code></pre>
+      <p>This derivation also handles negative y: the signed path difference is negative below the centre. If path difference means the nonnegative difference of lengths, write <strong>|Δr| ≈ d |sin θ|</strong>.</p>
+    </section>
+
+    <section>
+      <h2>4 Connect the geometry to the bright bands</h2>
+      <p>For in-phase sources, reinforcement occurs when the extra distance is a whole number of wavelengths. For cancellation, it is an odd half-wavelength; complete darkness also requires equal arriving amplitudes in the ideal model. With λ the wavelength and m the nonnegative order on the upper side:</p>
+      <pre><code>Bright:  Δr = mλ          → d sin θ ≈ mλ
+Dark:    Δr = (m + ½)λ    → d sin θ ≈ (m + ½)λ
+m = 0, 1, 2, …</code></pre>
+      <p>The familiar equations d sin θ = mλ and d sin θ = (m + ½)λ use the distant-screen model. <strong>A distant screen does not by itself require a small θ.</strong> The additional small-angle approximation is needed for the usual fringe-position shortcut. From the large screen triangle:</p>
+      <pre><code>tan θ = y/L                              exact geometry
+sin θ = y/√(L² + y²)                     exact geometry
+For |y| ≪ L: sin θ ≈ tan θ ≈ y/L
+Bright bands: d(y/L) ≈ mλ → y ≈ mλL/d</code></pre>
+    </section>
+
+    <section>
+      <h2>5 Worked example and checks</h2>
+      <p><strong>AI-authored example.</strong> Let d = 0.250 mm, L = 2.00 m, and y = 4.80 mm, the same geometry as the notes example. First use the screen triangle to find θ, then project the slit spacing:</p>
+      <pre><code>d = 2.50 × 10⁻⁴ m; y = 4.80 × 10⁻³ m
+θ = arctan(y/L) = arctan(0.00240) ≈ 0.1375°
+Δr ≈ d sin θ ≈ 6.00 × 10⁻⁷ m = 600 nm</code></pre>
+      <p>If this point is the first bright band, m = 1 and λ ≈ Δr = 600 nm. Here d/R ≈ 1.25 × 10⁻⁴ and |y|/L = 0.00240, consistent with both approximations.</p>
+      <ul>
+        <li><strong>Units:</strong> sin θ has no units, so d sin θ is a length, as a path difference must be.</li>
+        <li><strong>Centre:</strong> θ = 0 gives Δr = 0; the two exact paths are equal.</li>
+        <li><strong>Symmetry:</strong> changing y to −y reverses Δr but preserves its magnitude.</li>
+        <li><strong>Magnitude:</strong> |d sin θ| ≤ d, consistent with the fact that the difference between distances to two points cannot exceed their separation.</li>
+      </ul>
+    </section>
+<p><a href="wave-motion-notes.html#topic-11">Return to Section 11 · Young’s double slit →</a></p>
+</main>
+<footer>AI-authored explanation, diagram, and worked example. This optional page supplements the course notes and works offline.</footer>
+<script>document.getElementById('print').addEventListener('click',()=>window.print());</script>
+</body>
+</html>

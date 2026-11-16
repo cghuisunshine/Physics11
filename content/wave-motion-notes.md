@@ -190,6 +190,8 @@ For small θ, bright bands:     y ≈ mλL/d
 ```
 The central bright band has m = 0. L is the perpendicular distance to the screen, and y is the offset from the centre. Use θ measured from the line pointing straight toward the centre of the screen.
 
+Further reading: [Deriving the path difference d sin θ](double-slit-path-difference.html).
+
 ### Example · Wavelength from a fringe pattern
 Two slits are 0.250 mm apart. On a screen 2.00 m away, the first bright band is 4.80 mm from the centre. Find λ using the small-angle relation.
 
@@ -206,6 +208,8 @@ The **Doppler effect** is a change in observed frequency due to motion of the so
 
 ### The sound barrier and the shock
 At about Mach 1, compressibility and shock effects become important. A supersonic source outruns its own sound and produces a shock cone. An observer hears a **sonic boom** when the shock passes. The **Mach number** is source speed divided by the local speed of sound.
+
+Further reading: [Deriving the Doppler formulas and the Mach-cone angle](doppler-sonic-boom-derivations.html).
 
 ### Example · Two listeners and a moving source
 A vehicle sounding a steady horn passes between two stationary listeners, one ahead and one behind. Compare the pitch and wave speed each hears while it is still moving toward the first listener.

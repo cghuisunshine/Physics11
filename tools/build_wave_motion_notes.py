@@ -1,6 +1,73 @@
 #!/usr/bin/env python3
-"""Build the Wave Motion study notes and Quick Review."""
-from bc_study_pages import Chapter, build_study_pages
+"""Build the Wave Motion study notes, Quick Review, and optional derivations."""
+import base64
+from tempfile import TemporaryDirectory
+from pathlib import Path
+
+from bc_study_pages import ROOT, Chapter, build_study_pages, render_outline
+
+DERIVATION = 'double-slit-path-difference'
+DERIVATION_LABEL = 'Deriving the path difference d sin θ'
+DOPPLER_DERIVATION = 'doppler-sonic-boom-derivations'
+DOPPLER_LABEL = 'Deriving the Doppler formulas and the Mach-cone angle'
+
+
+def build_derivation():
+    """Keep the optional proof separate from the core notes in every mode."""
+    template = (ROOT / f'tools/{DERIVATION}-template.html').read_text()
+    with TemporaryDirectory(prefix='double-slit-') as directory:
+        page = render_outline(f'{DERIVATION}.md', template, Path(directory))
+    svg = (ROOT / f'assets/wave-motion-notes/{DERIVATION}.svg').read_bytes()
+    data = base64.b64encode(svg).decode()
+    figure = (f'<figure><img src="data:image/svg+xml;base64,{data}" width="760" height="510" '
+              'alt="Triangle ABC: AB is the slit spacing d; AC is perpendicular to the parallel '
+              'construction rays at C. Angle A is θ and the opposite side BC is d sin θ.">'
+              '<figcaption>AI-authored diagram · The orange segment BC is the projection of '
+              'the slit spacing onto the travel direction. The rays are parallel construction '
+              'lines, not the exact paths to a finite point P.</figcaption></figure>')
+    assert page.count('<p>PATH_DIFFERENCE_FIGURE</p>') == 1
+    page = page.replace('<p>PATH_DIFFERENCE_FIGURE</p>', figure)
+    (ROOT / f'{DERIVATION}.html').write_text(page)
+    print(f'Built {DERIVATION}.html: optional geometry and algebra derivation.')
+
+
+def build_doppler_derivation():
+    template = (ROOT / f'tools/{DOPPLER_DERIVATION}-template.html').read_text()
+    with TemporaryDirectory(prefix='doppler-') as directory:
+        page = render_outline(f'{DOPPLER_DERIVATION}.md', template, Path(directory))
+    figures = (
+        ('DOPPLER_SPACING_FIGURE', 'doppler-crest-spacing', 900, 500,
+         'A source moving right compresses the forward crest spacing and stretches the backward '
+         'spacing. An observer moving toward a stationary source meets unchanged crests faster.',
+         'The marks are one-dimensional cross-sections of crests emitted one period apart. '
+         'Source motion changes their spacing; observer motion changes their encounter rate.'),
+        ('MACH_CONE_FIGURE', 'mach-cone-geometry', 840, 600,
+         'Right triangle OAS: OA is the sound-front radius c Δt, OS is source travel u_s Δt, '
+         'and SA is tangent to the front at A. Angle μ at S has sine OA divided by OS.',
+         'The cone surface is tangent to an earlier sound front. Its radius meets the surface '
+         'at a right angle, making sin μ = c/u_s. This is a cross-section of a three-dimensional cone.'),
+    )
+    for marker, slug, width, height, alt, caption in figures:
+        data = base64.b64encode((ROOT / f'assets/wave-motion-notes/{slug}.svg').read_bytes()).decode()
+        figure = (f'<figure><img src="data:image/svg+xml;base64,{data}" width="{width}" '
+                  f'height="{height}" alt="{alt}"><figcaption>AI-authored diagram · '
+                  f'{caption}</figcaption></figure>')
+        assert page.count(f'<p>{marker}</p>') == 1
+        page = page.replace(f'<p>{marker}</p>', figure)
+    (ROOT / f'{DOPPLER_DERIVATION}.html').write_text(page)
+    print(f'Built {DOPPLER_DERIVATION}.html: optional Doppler and Mach-cone derivations.')
+
+
+def link_derivations():
+    # The outline generator renders inline Markdown links as plain text.
+    # Resolve this page's authored link after building the shared notes layout.
+    path = ROOT / 'wave-motion-notes.html'
+    page = path.read_text()
+    for slug, label in ((DERIVATION, DERIVATION_LABEL), (DOPPLER_DERIVATION, DOPPLER_LABEL)):
+        marker = f'<p>Further reading: [{label}]({slug}.html).</p>'
+        assert page.count(marker) == 1
+        page = page.replace(marker, f'<p>Further reading: <a href="{slug}.html">{label}</a>.</p>')
+    path.write_text(page)
 
 REFERENCES = [
     ('173–174', 178), ('175', 180), ('175–176', 181), ('176, 179', 181),
@@ -89,4 +156,7 @@ CHAPTER = Chapter(
 )
 
 if __name__ == '__main__':
+    build_derivation()
+    build_doppler_derivation()
     build_study_pages(CHAPTER)
+    link_derivations()

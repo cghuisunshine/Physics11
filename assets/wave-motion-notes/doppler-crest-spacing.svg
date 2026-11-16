@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc">
+<title id="title">Moving source versus moving observer</title>
+<desc id="desc">One-dimensional snapshots of equally timed crests. Above, a source moves right, compressing forward crest spacing to (c minus u_s) T_s and stretching backward spacing to (c plus u_s) T_s. Below, a stationary source produces equally spaced crests travelling right while an observer moves left and meets them at relative speed c plus u_o.</desc>
+<rect width="900" height="500" rx="12" fill="white"/>
+<g font-family="system-ui,sans-serif" fill="#182e3c">
+<text x="28" y="35" font-size="21" font-weight="700">1. Moving source: different crest spacing</text>
+<text x="28" y="65" font-size="16" fill="#526875">One-dimensional snapshot · each mark is a crest</text>
+<path d="M40 155H815" stroke="#dce4e7" stroke-width="2"/>
+<g stroke="#086b72" stroke-width="3"><path d="M60 125V185M180 125V185M300 125V185M480 125V185M540 125V185M600 125V185"/></g>
+<circle cx="420" cy="155" r="10" fill="#bd4b24"/>
+<text x="390" y="191" font-size="17">Source</text>
+<path d="M388 105H452m-12-7 12 7-12 7M140 103H80m12-7-12 7 12 7M650 155H715m-12-7 12 7-12 7" fill="none" stroke="#086b72" stroke-width="2.5"/>
+<text x="395" y="90" font-size="17">u_s</text><text x="100" y="91" font-size="17">c</text><text x="675" y="141" font-size="17">c</text>
+<path d="M180 210H300M180 204V216M300 204V216M480 210H540M480 204V216M540 204V216" stroke="#526875" stroke-width="2"/>
+<text x="98" y="245" font-size="18">λ_behind = (c + u_s)T_s</text>
+<text x="450" y="245" font-size="18">λ_ahead = (c − u_s)T_s</text>
+<path d="M28 275H872" stroke="#dce4e7"/>
+<text x="28" y="310" font-size="21" font-weight="700">2. Moving observer: same spacing, faster encounters</text>
+<text x="28" y="339" font-size="16" fill="#526875">Stationary source to the left · all crests travel right at c</text>
+<path d="M50 395H835" stroke="#dce4e7" stroke-width="2"/>
+<path d="M100 370V420M200 370V420M300 370V420M400 370V420M500 370V420M600 370V420M700 370V420M800 370V420" stroke="#086b72" stroke-width="3"/>
+<circle cx="650" cy="395" r="10" fill="#bd4b24"/>
+<path d="M635 357H568m12-7-12 7 12 7M270 357H340m-12-7 12 7-12 7" fill="none" stroke="#086b72" stroke-width="2.5"/>
+<text x="594" y="349" font-size="16">u_o</text><text x="299" y="349" font-size="16">c</text>
+<text x="594" y="445" font-size="17">Observer</text>
+<text x="90" y="460" font-size="18">λ₀ = c/f_s</text>
+<text x="28" y="486" font-size="15" fill="#526875">Toward the source: f_o = (c + u_o)/λ₀. Distances and speeds are schematic.</text>
+</g>
+</svg>
