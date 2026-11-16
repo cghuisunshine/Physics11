@@ -62,6 +62,14 @@ CHAPTER = Chapter(
                     'AI-authored illustration · Arrows show travel directions; short lines show crests. '
                     'Both angles are measured from the normal, perpendicular to the barrier. '
                     'The reflected wave stays in the same medium, so its wavelength is unchanged.'),
+                   (8, 'Across a boundary', 'assets/wave-motion-notes/refraction.svg',
+                    'Top view of refraction from deep to shallow water: the incident ray at 45° '
+                    'bends toward the normal to about 26°. Crest spacing drops from 4.0 to 2.5 cm '
+                    'as speed drops from 0.20 to 0.125 m/s; frequency stays 5.0 Hz.',
+                    'AI-authored illustration · Lines show crests perpendicular to each ray; arrows '
+                    'show travel. Measure wavelength perpendicular to the crests. The slower region '
+                    'has closer crests and a smaller angle to the normal. Values match the example '
+                    'below; the transmitted angle is rounded. Only the incident and transmitted waves are shown.'),
                    (9, 'Waves spread past edges', 'assets/wave-motion-notes/diffraction.svg',
                     'Top views of water waves travelling right through two openings: an opening about '
                     'one wavelength wide gives broad, nearly semicircular spreading; an opening five '
@@ -69,7 +77,15 @@ CHAPTER = Chapter(
                     'AI-authored illustration · Lines show crests, arrows show incoming travel, and dark bars form the barrier. '
                     'Opening width b is compared with the same wavelength λ in both panels. '
                     'These schematic transmitted wavefronts show wider spreading at the narrower gap. '
-                    'Reflected waves are omitted; crest spacing stays unchanged in the same medium.')),
+                    'Reflected waves are omitted; crest spacing stays unchanged in the same medium.'),
+                   (10, 'Add signed displacements', 'assets/wave-motion-notes/interference.svg',
+                    'Displacement versus position graphs at exact overlap: two upward pulses of '
+                    'height A add to a pulse of height 2A; an upward and an equal downward pulse '
+                    'add to zero at every position. All graphs use the same scales.',
+                    'AI-authored illustration · Each sum graph adds the signed displacements of '
+                    'the two pulses at the same horizontal position. Zero is equilibrium; A is '
+                    'the positive amplitude of each individual pulse. Complete cancellation lasts '
+                    'only during exact overlap; ideal pulses continue afterward.')),
 )
 
 if __name__ == '__main__':

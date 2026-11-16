@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="770" viewBox="0 0 600 770" role="img" aria-labelledby="title desc">
+  <title id="title">Adding pulse displacements: constructive and destructive interference</title>
+  <desc id="desc">Displacement versus position graphs at exact overlap, all using the same scales. In panel A two upward triangular pulses each have peak displacement plus A. Their sum has the same width and a peak of plus 2A. In panel B an upward pulse of plus A and an equal downward pulse of minus A sum to zero at every position. The zero line is equilibrium. This cancellation is temporary; ideal pulses continue after overlapping.</desc>
+  <rect width="600" height="770" fill="white"/>
+  <g font-family="system-ui, sans-serif" font-size="19" fill="#18323f">
+    <text x="24" y="26" font-size="17" fill="#526875">At one instant: two equal pulses overlap exactly.</text>
+    <g id="constructive">
+      <text x="24" y="62" font-weight="600">A. Constructive interference</text>
+      <path d="M370 84V312" stroke="#dce4e7" stroke-width="1.5" stroke-dasharray="4 5"/>
+      <text x="24" y="131" fill="#086b72">Pulse 1: y₁</text>
+      <g stroke="#b8c8cf" stroke-width="1.5" fill="none"><path d="M190 67V159M190 125H570"/></g>
+      <g font-size="16" stroke="#526875" stroke-width="1" fill="#526875"><text x="177" y="131" text-anchor="end">0</text><path d="M185 100H195"/><text x="177" y="106" text-anchor="end">+A</text></g>
+      <path d="M190 125H280L370 100L460 125H560" stroke="#086b72" stroke-width="3.5" fill="none"/>
+      <text x="24" y="206" fill="#b04c24">Pulse 2: y₂</text>
+      <g stroke="#b8c8cf" stroke-width="1.5" fill="none"><path d="M190 142V234M190 200H570"/></g>
+      <g font-size="16" stroke="#526875" stroke-width="1" fill="#526875"><text x="177" y="206" text-anchor="end">0</text><path d="M185 175H195"/><text x="177" y="181" text-anchor="end">+A</text></g>
+      <path d="M190 200H280L370 175L460 200H560" stroke="#b04c24" stroke-width="3.5" fill="none" stroke-dasharray="8 5"/>
+      <text x="24" y="301" fill="#183b78">Sum: y₁ + y₂</text>
+      <g stroke="#b8c8cf" stroke-width="1.5" fill="none"><path d="M190 237V329M190 295H570"/></g>
+      <g font-size="16" stroke="#526875" stroke-width="1" fill="#526875"><text x="177" y="301" text-anchor="end">0</text><path d="M185 245H195"/><text x="177" y="251" text-anchor="end">+2A</text></g>
+      <path d="M190 295H280L370 245L460 295H560" stroke="#183b78" stroke-width="3.5" fill="none"/>
+      <text x="560" y="319" text-anchor="end" font-size="16" fill="#526875">Position x</text>
+      <text x="300" y="341" text-anchor="middle">At the peak: +A + (+A) = +2A</text>
+    </g>
+    <path d="M24 365H576" stroke="#dce4e7"/>
+    <g id="destructive" transform="translate(0 350)">
+      <text x="24" y="62" font-weight="600">B. Destructive interference</text>
+      <path d="M370 84V312" stroke="#dce4e7" stroke-width="1.5" stroke-dasharray="4 5"/>
+      <text x="24" y="131" fill="#086b72">Pulse 1: y₁</text>
+      <g stroke="#b8c8cf" stroke-width="1.5" fill="none"><path d="M190 67V159M190 125H570"/></g>
+      <g font-size="16" stroke="#526875" stroke-width="1" fill="#526875"><text x="177" y="131" text-anchor="end">0</text><path d="M185 100H195"/><text x="177" y="106" text-anchor="end">+A</text></g>
+      <path d="M190 125H280L370 100L460 125H560" stroke="#086b72" stroke-width="3.5" fill="none"/>
+      <text x="24" y="206" fill="#b04c24">Pulse 2: y₂</text>
+      <g stroke="#b8c8cf" stroke-width="1.5" fill="none"><path d="M190 142V234M190 200H570"/></g>
+      <g font-size="16" stroke="#526875" stroke-width="1" fill="#526875"><text x="177" y="206" text-anchor="end">0</text><path d="M185 225H195"/><text x="177" y="231" text-anchor="end">−A</text></g>
+      <path d="M190 200H280L370 225L460 200H560" stroke="#b04c24" stroke-width="3.5" fill="none" stroke-dasharray="8 5"/>
+      <text x="24" y="301" fill="#183b78">Sum: y₁ + y₂</text>
+      <g stroke="#b8c8cf" stroke-width="1.5" fill="none"><path d="M190 237V329M190 295H570"/></g>
+      <g font-size="16" stroke="#526875" stroke-width="1" fill="#526875"><text x="177" y="301" text-anchor="end">0</text></g>
+      <path d="M190 295H560" stroke="#183b78" stroke-width="3.5" fill="none"/>
+      <text x="560" y="319" text-anchor="end" font-size="16" fill="#526875">Position x</text>
+      <text x="300" y="341" text-anchor="middle">At every position: y₁ + y₂ = 0</text>
+    </g>
+    <text x="300" y="727" text-anchor="middle" font-size="17" fill="#526875">Vertical: displacement y · same scales in all graphs</text>
+    <text x="300" y="752" text-anchor="middle" font-size="17" fill="#526875">Ideal pulses continue after the overlap.</text>
+  </g>
+</svg>

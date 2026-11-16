@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Refraction from deep to shallow water</title>
+  <desc id="desc">Top view of water waves crossing a horizontal depth boundary. The incident ray in deep water makes 45 degrees with the dashed vertical normal. The transmitted ray in slower shallow water makes about 26 degrees with the normal. Crests are perpendicular to the rays and become more closely spaced: wavelength drops from 4.0 to 2.5 centimetres as speed drops from 0.20 to 0.125 metres per second. Frequency stays 5.0 hertz.</desc>
+  <defs>
+    <marker id="incident-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+    <marker id="transmitted-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b04c24"/></marker>
+  </defs>
+  <rect width="600" height="600" fill="white"/>
+  <rect x="24" y="270" width="552" height="250" fill="#f0f6f6"/>
+  <g font-family="system-ui, sans-serif" font-size="19" fill="#18323f">
+    <text x="24" y="28" font-size="17" fill="#526875">Top view · wave crests and travel directions</text>
+    <text x="300" y="66" text-anchor="middle">Normal</text>
+    <text x="62" y="87" fill="#086b72">Incident ray</text>
+    <text x="358" y="111" font-weight="600">Deep water (faster)</text>
+    <text x="358" y="142">λ₁ = 4.0 cm</text>
+    <text x="358" y="168">v₁ = 0.20 m/s</text>
+    <path d="M24 270H576" stroke="#526875" stroke-width="2"/>
+    <text x="24" y="258" font-size="16" fill="#526875">Depth boundary</text>
+    <path d="M300 80V510" stroke="#526875" stroke-width="2" stroke-dasharray="8 6"/>
+    <path d="M300 252H318V270" stroke="#526875" stroke-width="1.5" fill="none"/>
+    <g fill="none" stroke="#086b72" stroke-width="3">
+        <path d="M135.95 162.52 192.52 105.95"/>
+        <path d="M181.21 207.77 237.77 151.21"/>
+        <path d="M226.46 253.03 283.03 196.46"/>
+    </g>
+    <g fill="none" stroke="#b04c24" stroke-width="3">
+        <path d="M308.31 377.38 380.08 342.03"/>
+        <path d="M325.99 413.26 397.75 377.91"/>
+        <path d="M343.67 449.15 415.43 413.79"/>
+        <path d="M361.35 485.03 433.11 449.67"/>
+    </g>
+    <path d="M130.29 100.29 300 270" stroke="#086b72" stroke-width="4" fill="none" marker-end="url(#incident-arrow)"/>
+    <path d="M300 270 410.49 494.26" stroke="#b04c24" stroke-width="4" fill="none" marker-end="url(#transmitted-arrow)"/>
+    <path d="M246.97 216.97A75 75 0 0 1 300 195" stroke="#086b72" stroke-width="2" fill="none"/>
+    <text x="254" y="186" fill="#086b72">45°</text>
+    <path d="M300 345A75 75 0 0 0 333.15 337.28" stroke="#b04c24" stroke-width="2" fill="none"/>
+    <text x="303" y="363" font-size="16" fill="#b04c24">26°</text>
+    <text x="42" y="385" font-weight="600">Shallow water (slower)</text>
+    <text x="42" y="416">λ₂ = 2.5 cm</text>
+    <text x="42" y="442">v₂ = 0.125 m/s</text>
+    <text x="42" y="489" fill="#b04c24">Bends toward the normal</text>
+    <text x="300" y="553" text-anchor="middle">Frequency stays 5.0 Hz on both sides.</text>
+    <text x="300" y="582" text-anchor="middle" font-size="17" fill="#526875">Angles are measured from the normal.</text>
+  </g>
+</svg>
