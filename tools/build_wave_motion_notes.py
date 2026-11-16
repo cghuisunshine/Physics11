@@ -19,14 +19,31 @@ def build_derivation():
         page = render_outline(f'{DERIVATION}.md', template, Path(directory))
     svg = (ROOT / f'assets/wave-motion-notes/{DERIVATION}.svg').read_bytes()
     data = base64.b64encode(svg).decode()
-    figure = (f'<figure><img src="data:image/svg+xml;base64,{data}" width="760" height="510" '
-              'alt="Triangle ABC: AB is the slit spacing d; AC is perpendicular to the parallel '
-              'construction rays at C. Angle A is θ and the opposite side BC is d sin θ.">'
-              '<figcaption>The orange segment BC is the projection of '
-              'the slit spacing onto the travel direction. The rays are parallel construction '
-              'lines, not the exact paths to a finite point P.</figcaption></figure>')
+    figure = (f'<figure><img src="data:image/svg+xml;base64,{data}" width="940" height="720" '
+              'alt="Exact paths AP and BP meet at screen point P. M is the slit midpoint; '
+              'MP makes angle θ with the central normal. AC and BD are perpendicular to MP '
+              'at C and D, with D, M, C, P collinear. The projected separation CD is d sin θ '
+              'exactly. For distant P, AP is approximately CP and BP is approximately DP.">'
+              '<figcaption>Both slits are projected onto MP: AC and BD are perpendicular '
+              'to this midpoint direction. The orange segment CD equals d sin θ exactly. '
+              'Using AP ≈ CP and BP ≈ DP for a distant P makes the path difference '
+              'approximately CD. Slit spacing is enlarged for clarity.</figcaption></figure>')
     assert page.count('<p>PATH_DIFFERENCE_FIGURE</p>') == 1
     page = page.replace('<p>PATH_DIFFERENCE_FIGURE</p>', figure)
+    sketch = ROOT / 'assets/wave-motion-notes/double-slit-parallel-rays-annotated.jpg'
+    data = base64.b64encode(sketch.read_bytes()).decode()
+    figure = (f'<figure><img src="data:image/jpeg;base64,{data}" width="1280" height="848" '
+              'alt="User-annotated parallel-ray sketch: green rays from A and B are chosen '
+              'parallel to MP and approximate the directions of AP and BP for a distant P; '
+              'AC is perpendicular to them and the orange segment BC equals d sin θ. '
+              'Red lines add the midpoint M, screen point P, and AP, MP, and CP. '
+              'C is on the lower construction ray, not generally on the actual path BP.">'
+              '<figcaption>The green rays are chosen parallel to MP: the upper ray approximates '
+              'AP and the lower ray approximates BP when P is distant. The red overlay shows '
+              'the finite point P and midpoint M. This local point C differs from '
+              'the projection foot C in the first diagram.</figcaption></figure>')
+    assert page.count('<p>PARALLEL_SKETCH_FIGURE</p>') == 1
+    page = page.replace('<p>PARALLEL_SKETCH_FIGURE</p>', figure)
     data = base64.b64encode((ROOT / 'assets/wave-motion-notes/double-slit-exact-geometry.svg').read_bytes()).decode()
     figure = (f'<figure><img src="data:image/svg+xml;base64,{data}" width="900" height="690" '
               'alt="Coordinate graph: slits A at (0, d/2) and B at (0, −d/2) connect to '

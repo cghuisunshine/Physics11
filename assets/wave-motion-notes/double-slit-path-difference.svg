@@ -1,29 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 510" role="img" aria-labelledby="title desc">
-<title id="title">Right-triangle projection of the slit separation</title>
-<desc id="desc">A is above B with AB equal to d. Two parallel construction rays point 30 degrees above the horizontal normal. A perpendicular from A meets the lower ray at C. Triangle ABC has a right angle at C, angle theta at A, and side BC equal to d sin theta opposite theta. The two rays represent the distant-screen approximation.</desc>
-<rect width="760" height="510" rx="12" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 720" role="img" aria-labelledby="title desc">
+<title id="title">Project both slits onto the midpoint direction MP</title>
+<desc id="desc">Slits A and B have midpoint M. AP and BP meet at screen point P. AC and BD are perpendicular to MP, meeting it at C and D. D, M, C, P are collinear. MC and MD each equal half d sin theta, so CD equals d sin theta exactly. Actual paths AP and BP are slightly longer than projected lengths CP and DP.</desc>
+<rect width="940" height="720" rx="12" fill="white"/>
 <g font-family="system-ui,sans-serif" fill="#182e3c">
-<text x="30" y="38" font-size="20" font-weight="700">Project d onto the travel direction</text>
-<text x="30" y="65" font-size="15" fill="#526875">Parallel construction rays · distant-screen model</text>
-<path d="M180 100V257M180 283V437M180 463V480" stroke="#526875" stroke-width="7"/>
-<path d="M180 270H674" stroke="#91a6b0" stroke-dasharray="7 6" stroke-width="2"/>
-<text x="490" y="304" font-size="15">Parallel to central normal</text>
-<path d="M180 270 500 85M180 450 680 161" stroke="#086b72" stroke-width="3"/>
-<path d="M478 87l22-2-13 18M658 163l22-2-13 18" fill="none" stroke="#086b72" stroke-width="3"/>
-<path d="M180 270 258 405" stroke="#087cff" stroke-width="3"/>
-<path d="M180 450 258 405" stroke="#bd4b24" stroke-width="6"/>
-<path d="m251 393-12 7 7 12" stroke="#087cff" stroke-width="2" fill="none"/>
-<path d="M180 305A35 35 0 0 0 197.5 300.3M230 270A50 50 0 0 0 223.3 245" stroke="#086b72" stroke-width="2" fill="none"/>
-<text x="189" y="326" font-size="19">θ</text><text x="242" y="254" font-size="19">θ</text>
-<path d="M180 411A39 39 0 0 1 214 430.5" stroke="#526875" stroke-width="1.5" fill="none"/>
-<text x="223" y="461" font-size="16">90° − θ</text>
-<path d="M119 270V450M112 270H126M112 450H126" stroke="#526875" stroke-width="2"/>
-<text x="88" y="367" font-size="23">d</text>
-<g fill="#182e3c"><circle cx="180" cy="270" r="5"/><circle cx="180" cy="450" r="5"/><circle cx="258" cy="405" r="5"/></g>
-<text x="145" y="264" font-size="21" font-weight="700">A</text><text x="146" y="474" font-size="21" font-weight="700">B</text><text x="270" y="418" font-size="21" font-weight="700">C</text>
-<text x="332" y="380" font-size="20" fill="#bd4b24">BC = d sin θ</text>
-<path d="M320 375 236 419" stroke="#bd4b24" stroke-width="1.5"/>
-<text x="355" y="195" font-size="16" fill="#086b72">Toward distant observation</text>
-<text x="327" y="480" font-size="14" fill="#526875">θ is enlarged for clarity; screen is not shown.</text>
+<text x="28" y="36" font-size="23" font-weight="700">Project both slits onto MP</text>
+<text x="28" y="66" font-size="16" fill="#526875">AC ⟂ MP and BD ⟂ MP · slit spacing enlarged for clarity</text>
+<path d="M240 150V268M240 292V568M240 592V632M820 150V615" stroke="#526875" stroke-width="6"/>
+<text x="785" y="131" font-size="17">Screen</text>
+<path d="M240 430H902" stroke="#91a6b0" stroke-width="1.8" stroke-dasharray="7 6"/>
+<text x="600" y="460" font-size="17" fill="#526875">Central normal MO</text>
+<path d="M140 473.103 820.000 180.000" stroke="#526875" stroke-width="2" stroke-dasharray="8 6"/>
+<path d="M240.000 280.000 820.000 180.000M240.000 580.000 820.000 180.000" stroke="#086b72" stroke-width="3.5" fill="none"/>
+<path d="M240.000 280.000 294.525 406.498M240.000 580.000 185.475 453.502" stroke="#087cff" stroke-width="3" fill="none"/>
+<path d="M185.475 453.502 294.525 406.498" stroke="#bd4b24" stroke-width="6"/>
+<path d="M288.983 393.641 301.840 388.100 307.381 400.956" fill="none" stroke="#087cff" stroke-width="2"/>
+<path d="M191.017 466.359 203.873 460.817 198.332 447.961" fill="none" stroke="#087cff" stroke-width="2"/>
+<path d="M290 430A50 50 0 0 0 285.916 410.209M240 330A50 50 0 0 0 259.791 325.916" fill="none" stroke="#526875" stroke-width="2"/>
+<text x="325" y="423" font-size="21">θ</text><text x="270" y="332" font-size="21">θ</text>
+<text transform="translate(500 216) rotate(-9.782)" font-size="22" fill="#086b72">AP</text>
+<text transform="translate(500 424) rotate(-34.592)" font-size="22" fill="#086b72">BP</text>
+<text transform="translate(508 294) rotate(-23.318)" font-size="20" fill="#526875">CP</text>
+<text transform="translate(568 316) rotate(-23.318)" font-size="18" fill="#526875">DP = DC + CP</text>
+<text x="282" y="355" font-size="18" fill="#087cff">AC</text><text x="139" y="550" font-size="18" fill="#087cff">BD</text>
+<circle cx="240.000" cy="280.000" r="5" fill="#182e3c"/>
+<circle cx="240.000" cy="580.000" r="5" fill="#182e3c"/>
+<circle cx="240.000" cy="430.000" r="5" fill="#182e3c"/>
+<circle cx="294.525" cy="406.498" r="5" fill="#182e3c"/>
+<circle cx="185.475" cy="453.502" r="5" fill="#182e3c"/>
+<circle cx="820.000" cy="180.000" r="5" fill="#182e3c"/>
+<circle cx="820.000" cy="430.000" r="5" fill="#182e3c"/>
+<text x="205" y="280" font-size="22" font-weight="700">A</text><text x="205" y="605" font-size="22" font-weight="700">B</text>
+<text x="239" y="460" font-size="22" font-weight="700">M</text><text x="309" y="386" font-size="22" font-weight="700">C</text>
+<text x="159.475" y="482.502" font-size="22" font-weight="700">D</text>
+<text x="840" y="186" font-size="22" font-weight="700">P</text><text x="840" y="459" font-size="22" font-weight="700">O</text>
+<path d="M110 280V580M103 280H117M103 580H117" stroke="#526875" stroke-width="2"/>
+<text x="80" y="437" font-size="24">d</text>
+<text x="400" y="553" font-size="25" font-weight="700" fill="#bd4b24">CD = d sin θ</text>
+<text x="400" y="590" font-size="21">MC = MD = (d/2) sin θ</text>
+<text x="28" y="671" font-size="17">C and D lie on MP, not on BP. M is the midpoint of the slits.</text>
+<text x="28" y="703" font-size="17" fill="#526875">Distant P: AP ≈ CP, BP ≈ DP, so BP − AP ≈ DP − CP = CD.</text>
 </g>
 </svg>

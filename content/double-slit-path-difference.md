@@ -10,22 +10,75 @@ Measure **θ from the central normal** (the line from the slit midpoint to O) to
 
 The geometric path difference does not require in-phase sources. To connect it to the usual bright and dark bands, assume coherent, in-phase sources of the same wavelength in a uniform medium.
 
-## 2 Draw the small right triangle
-For a distant observation point, the paths AP and BP are nearly parallel. Draw two **parallel construction rays** in the direction θ, one from each slit. From A, draw a perpendicular to the lower construction ray, meeting it at C.
+## 2 Project the slit separation onto MP
+Mark **M, the midpoint of the two slits**, and **P, the point where both paths arrive on the screen**. Draw AP, BP, and MP. The angle between MP and the central normal MO is θ. Put **C on MP so that AC is perpendicular to MP**, and put **D on the backward extension of MP so that BD is also perpendicular to MP**. Thus D, M, C, and P lie on the same straight line in the illustrated arrangement.
 
 PATH_DIFFERENCE_FIGURE
 
-Triangle ABC is right-angled at C. Its hypotenuse AB is d. The angle at B, between BA and BC, is 90° − θ. Therefore the angle at A, between AB and AC, is θ: the two acute angles of a right triangle add to 90°.
-
-The side opposite angle θ at A is BC. Apply the sine ratio before making any wave assumptions:
+### The projection CD is exactly d sin θ
+Triangle AMC is right-angled at C, with hypotenuse AM = d/2. The angle between AM and AC is θ: these lines are perpendicular to the central normal and MP, respectively. Apply the sine ratio:
 ```
-sin θ = opposite / hypotenuse = BC / AB
-sin θ = BC / d
-BC = d sin θ
+sin θ = MC/AM
+MC = (d/2) sin θ
 ```
-In the parallel-ray model, A and C lie on the same line perpendicular to the travel direction. Their remaining forward distances to a common distant wavefront are equal. The lower path includes the extra segment BC, so **Δr ≈ BC = d sin θ** for a distant screen. The triangle identity is exact; treating its projection as the difference of the two finite paths is the approximation.
+By symmetry, triangle BMD gives the same projected length on the other side of M:
+```
+MD = (d/2) sin θ
+CD = CM + MD
+   = (d/2) sin θ + (d/2) sin θ
+   = d sin θ                           exact projection
+```
+**Why sine rather than cosine?** The viewing angle θ is measured from the normal to the slit plane. In triangle AMC, MC is opposite θ and AM is the hypotenuse. If the viewing angle were measured from the slit plane instead, the complementary angle would give the same projection using cosine.
 
-**Why sine rather than cosine?** θ is measured from the normal to the slit plane, not from the slit separation AB. BC is opposite θ in this triangle. If an angle α were measured from AB instead, the same projection would be d cos α, with α = 90° − θ.
+### The actual paths are slightly longer than their projections
+The coloured paths AP and BP meet at P. The dashed line MP contains their projected lengths CP and DP. Because AC and BD are perpendicular to MP, Pythagoras gives:
+```
+AP² = AC² + CP²
+BP² = BD² + DP²
+```
+Thus **AP > CP** and **BP > DP** when the perpendicular legs are nonzero. Neither equality is exact at a finite screen. The same factorization explains why each difference becomes small as P gets farther away:
+```
+AP − CP = AC²/(AP + CP)
+BP − DP = BD²/(BP + DP)
+```
+Here AC = BD = (d/2) cos θ. The perpendicular legs remain bounded by d/2 while the denominators grow with distance.
+
+### Now make the distant-screen approximation
+The figure shows P above the centre, with MP > d/2, so both projection feet lie before P along the line from D to P. Therefore DP = DC + CP. For a distant P, replace each actual path by its projected length:
+```
+AP ≈ CP,  BP ≈ DP
+Δr = BP − AP
+   ≈ DP − CP
+   = CD
+   = d sin θ
+```
+**CD = d sin θ is exact geometry; Δr ≈ CD uses the distant-screen approximation.** In this construction C and D lie on MP, not on the actual path BP. The coordinate derivation below checks the approximation directly without assuming either path equals its projection. Negative viewing angles are handled by the signed algebra in Section 3.
+
+### Another interpretation: parallel rays with your annotated sketch
+The sketch below gives a second way to visualize the same projection. **Its point C belongs to this separate construction:** it lies on the lower green ray, rather than on MP as in the diagram above.
+
+PARALLEL_SKETCH_FIGURE
+
+**Choose both green rays parallel to MP.** The upper green ray starts at A and approximates the direction of AP; the lower green ray starts at B and approximates the direction of BP. When **MP ≫ d**, the directions of AP and BP differ only slightly from the midpoint direction MP. Replacing both by that common direction is the **parallel-ray, or distant-screen, approximation**.
+
+Both green rays therefore make the same angle θ with a horizontal normal, and the blue segment AC is perpendicular to them. In right triangle ABC, AB = d and BC is opposite θ at A. Therefore:
+```
+sin θ = BC/AB = BC/d
+BC = d sin θ                           exact construction
+```
+The red overlay adds **M, the slit midpoint**, **P, a finite screen point**, and AP, MP, and CP. It makes the approximation visible: the actual paths meet at P, while the green rays keep the common direction parallel to MP. The sketch is schematic; θ is the angle of this chosen common direction.
+
+To interpret the green picture, imagine a second line perpendicular to both green rays farther along their direction. Let it meet the upper ray at E and the lower ray at F. Since AC is perpendicular to the rays too, the parallel segments **AE and CF are exactly equal**. The lower construction path includes the extra segment BC:
+```
+AE = CF
+BF = BC + CF
+BF − AE = BC = d sin θ
+```
+These equal remaining lengths end at **different points E and F on a common perpendicular line**. The red paths end at the same finite P instead, so **AP ≈ CP is a distant-screen approximation**, not an exact equality.
+
+In the parallel-ray picture, the upper path starts at A, while the lower path first travels the orange distance BC before reaching the same perpendicular line AC. Their remaining parallel travel contributes equally, leaving BC as the extra distance. Thus **approximating AP by the upper green ray and BP by the lower green ray gives BP − AP ≈ BC = d sin θ**.
+
+At finite distance, C remains on the green construction ray rather than exactly on the actual path BP. This is why the final path-difference formula uses an approximation. It gives the same far-distance result as the midpoint-projection interpretation above.
 
 ## 3 Check it with exact finite-distance algebra
 Choose coordinates with the slit midpoint at (0, 0), horizontal x toward the screen, and vertical y toward A. Then A = (0, d/2), B = (0, −d/2), and P = (L, y).
