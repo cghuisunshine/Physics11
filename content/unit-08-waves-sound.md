@@ -12,6 +12,10 @@ A mechanical wave is a disturbance propagated through an interacting medium. The
 
 A transverse wave has particle motion perpendicular to propagation; a longitudinal wave has particle motion parallel to propagation. A single pulse differs from a repeating periodic wave. Straight wavefronts describe a locally plane wave; circular wavefronts spread from a source in a two-dimensional medium. Rays indicate propagation direction and are perpendicular to wavefronts in a uniform isotropic medium.
 
+In a spring, a **compression** has coils closer together than their usual equilibrium spacing; a **rarefaction** has coils farther apart. A repeating longitudinal wave has alternating compressions and rarefactions. The pattern travels along the spring while each coil moves back and forth about its equilibrium position, parallel to the wave's travel, rather than travelling along with the wave.
+
+In sound in air, rarefactions have pressure and density below their equilibrium values; compressions have pressure and density above those values. Air particles oscillate about equilibrium while the sound transfers energy through the air.
+
 ### Equations and units
 ```text
 transverse: particle motion ⟂ propagation
@@ -48,6 +52,8 @@ Read wave properties from spatial and time graphs and use v = fλ.
 
 ### Understand the model
 Amplitude A is the maximum displacement from equilibrium. Wavelength λ is the distance between neighboring points in the same phase, such as crest to crest in a sinusoidal snapshot. Period T is the time for one oscillation at a fixed location, and frequency f counts oscillations per second. One hertz means one cycle per second.
+
+For a repeating longitudinal wave, measure **wavelength λ** between the centres of adjacent compressions or adjacent rarefactions. Each distance is one complete wavelength.
 
 In one period a travelling periodic pattern advances one wavelength, giving v = λ/T = fλ. The source sets frequency while the medium and its conditions determine wave speed. A displacement-position graph shows wavelength; a displacement-time graph at one point shows period. A change in amplitude alone does not change speed in the linear ideal model. For a stretched string, speed increases with tension and decreases with linear mass density.
 

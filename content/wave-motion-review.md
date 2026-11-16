@@ -9,8 +9,9 @@
 ### Key ideas
 - A **pulse** is one travelling disturbance. A **periodic wave** repeats regularly. Both carry energy.
 - A mechanical wave needs matter. Electromagnetic waves can travel through a vacuum.
-- Transverse oscillations are perpendicular to the direction of travel. Longitudinal oscillations are parallel to it.
-- Read **amplitude A** from the equilibrium line to a crest or trough. Measure **wavelength λ** from crest to adjacent crest, trough to adjacent trough, or compression to adjacent compression.
+- Transverse oscillations are perpendicular to the direction of travel. Longitudinal oscillations are parallel to it; particles move back and forth about equilibrium while the wave pattern travels onward.
+- In a spring, **compressions** have coils closer together than their usual spacing; **rarefactions** have coils farther apart. In sound in air, rarefactions have lower pressure and density than equilibrium; compressions have higher values.
+- Read **amplitude A** from the equilibrium line to a crest or trough. Measure **wavelength λ** between adjacent crests, adjacent troughs, adjacent compression centres, or adjacent rarefaction centres.
 ### Reading a graph
 A displacement–position graph is a snapshot and shows λ. A displacement–time graph tracks one point and shows T. Either graph can show amplitude.
 ### Check yourself
@@ -119,7 +120,7 @@ Bright fringes: d sin θ ≈ mλ          For small θ: y ≈ mλL/d
 
 **2.** λ = 0.85 − 0.20 = **0.65 m**. A = **3.0 cm**. The height from trough to crest is 2A = **6.0 cm**.
 
-**3.** The coils oscillate left and right, parallel to the wave’s travel. It is a **longitudinal wave**. Measure from one compression centre to the next.
+**3.** The coils oscillate left and right about equilibrium, parallel to the wave’s travel, rather than travelling with the pattern. It is a **longitudinal wave**. Measure between the centres of adjacent compressions or adjacent rarefactions to find one wavelength.
 
 ### Frequency, period, and speed · Q4–6
 **4.** f = 18/12.0 = **1.50 Hz**. T = 12.0/18 = **0.667 s**.
