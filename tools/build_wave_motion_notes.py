@@ -32,15 +32,18 @@ def build_derivation():
     page = page.replace('<p>PATH_DIFFERENCE_FIGURE</p>', figure)
     sketch = ROOT / 'assets/wave-motion-notes/double-slit-parallel-rays-annotated.jpg'
     data = base64.b64encode(sketch.read_bytes()).decode()
-    figure = (f'<figure><img src="data:image/jpeg;base64,{data}" width="1280" height="848" '
+    figure = (f'<figure><img src="data:image/jpeg;base64,{data}" width="1280" height="871" '
               'alt="User-annotated parallel-ray sketch: green rays from A and B are chosen '
               'parallel to MP and approximate the directions of AP and BP for a distant P; '
               'AC is perpendicular to them and the orange segment BC equals d sin θ. '
               'Red lines add the midpoint M, screen point P, and AP, MP, and CP. '
+              'The added line EF passes through P perpendicular to MP, meeting the upper '
+              'green ray at E and the lower at F. AE approximates AP; BF approximates BP. '
               'C is on the lower construction ray, not generally on the actual path BP.">'
-              '<figcaption>The green rays are chosen parallel to MP: the upper ray approximates '
-              'AP and the lower ray approximates BP when P is distant. The red overlay shows '
-              'the finite point P and midpoint M. This local point C differs from '
+              '<figcaption>Your updated sketch places E and F on a common line through P '
+              'perpendicular to the green rays and MP. For distant P, AE ≈ AP and BF ≈ BP. '
+              'Since AE = CF, their difference BF − AE equals BC = d sin θ. '
+              'This local point C differs from '
               'the projection foot C in the first diagram.</figcaption></figure>')
     assert page.count('<p>PARALLEL_SKETCH_FIGURE</p>') == 1
     page = page.replace('<p>PARALLEL_SKETCH_FIGURE</p>', figure)

@@ -68,17 +68,33 @@ BC = d sin θ                           exact construction
 ```
 The red overlay adds **M, the slit midpoint**, **P, a finite screen point**, and AP, MP, and CP. It makes the approximation visible: the actual paths meet at P, while the green rays keep the common direction parallel to MP. The sketch is schematic; θ is the angle of this chosen common direction.
 
-To interpret the green picture, imagine a second line perpendicular to both green rays farther along their direction. Let it meet the upper ray at E and the lower ray at F. Since AC is perpendicular to the rays too, the parallel segments **AE and CF are exactly equal**. The lower construction path includes the extra segment BC:
+Your added **E and F** make the approximate path lengths explicit. Draw **EF through P, perpendicular to MP and both green rays**. Let E lie on the upper green ray and F on the lower green ray. EF is an auxiliary perpendicular line through the observation point, not the vertical screen itself.
+
+The finite path AP ends at P, while its parallel-ray replacement AE ends at E. Similarly, BP is replaced by BF. Triangles AEP and BFP are right-angled at E and F:
 ```
-AE = CF
+AP² = AE² + EP²
+BP² = BF² + FP²
+```
+For a distant P, EP and FP are small compared with the long forward distances AE and BF. Therefore:
+```
+AP ≈ AE
+BP ≈ BF
+```
+Since AC and EF are both perpendicular to the green rays, the segments **AE and CF are exactly equal**. B, C, and F lie on the same lower green ray, so:
+```
+AE = CF                               exact construction
 BF = BC + CF
-BF − AE = BC = d sin θ
+BF − AE = BC
 ```
-These equal remaining lengths end at **different points E and F on a common perpendicular line**. The red paths end at the same finite P instead, so **AP ≈ CP is a distant-screen approximation**, not an exact equality.
-
-In the parallel-ray picture, the upper path starts at A, while the lower path first travels the orange distance BC before reaching the same perpendicular line AC. Their remaining parallel travel contributes equally, leaving BC as the extra distance. Thus **approximating AP by the upper green ray and BP by the lower green ray gives BP − AP ≈ BC = d sin θ**.
-
-At finite distance, C remains on the green construction ray rather than exactly on the actual path BP. This is why the final path-difference formula uses an approximation. It gives the same far-distance result as the midpoint-projection interpretation above.
+Now substitute the approximate path lengths into the actual path difference:
+```
+Δr = BP − AP
+   ≈ BF − AE
+   = (BC + CF) − AE
+   = BC
+   = d sin θ
+```
+**The upper green length AE approximates AP, and the lower green length BF approximates BP. Their difference is exactly BC in the construction.** The equality AE = CF is exact; the replacements AP ≈ AE and BP ≈ BF use the distant-screen approximation. At finite distance, E and F remain different points from P, and C lies on BF rather than generally on the actual path BP. This gives the same far-distance result as the midpoint-projection interpretation above.
 
 ## 3 Check it with exact finite-distance algebra
 Choose coordinates with the slit midpoint at (0, 0), horizontal x toward the screen, and vertical y toward A. Then A = (0, d/2), B = (0, −d/2), and P = (L, y).
