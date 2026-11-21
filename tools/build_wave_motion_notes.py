@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build the Wave Motion study notes, Quick Review, and optional derivations."""
 import base64
+from html import escape
 from tempfile import TemporaryDirectory
 from pathlib import Path
 
@@ -168,6 +169,38 @@ def build_diffraction_derivation():
     print(f'Built {DIFFRACTION_DERIVATION}.html: optional diffraction-width derivation.')
 
 
+def embed_ripple_measurement_figures():
+    """Keep the question visible and its solution diagram inside the hidden answer."""
+    path = ROOT / 'wave-motion-notes.html'
+    page = path.read_text()
+    for kind, width, height, alt, caption in (
+        ('question', 1000, 740,
+         'Question: six consecutive bright crest lines numbered 1 to 6 span 0.200 m '
+         'in the tank at 5.00 Hz. Find wavelength and speed, then predict wavelength '
+         'at 10.0 Hz assuming unchanged speed and depth. The stated span is corrected '
+         'for projection magnification.',
+         'Illustrative question data. Count gaps between the six lines; the labelled '
+         '0.200 m is the actual tank distance, not an uncorrected screen length.'),
+        ('answer', 1000, 900,
+         'Answer: six crests enclose five gaps, so wavelength is 0.200 divided by 5, '
+         'or 0.0400 m. At 5.00 Hz the speed is 0.200 m/s. Assuming that speed at '
+         '10.0 Hz gives wavelength 0.0200 m: eleven crests enclose ten gaps over '
+         'the same 0.200 m tank span.',
+         'Both patterns use the same horizontal scale and 0.200 m tank span. '
+         'The 10.0 Hz pattern is a prediction under the constant-speed assumption.'),
+    ):
+        svg = ROOT / f'assets/wave-motion-notes/ripple-measurement-{kind}.svg'
+        data = base64.b64encode(svg.read_bytes()).decode()
+        marker = f'<p>RIPPLE_MEASUREMENT_{kind.upper()}_FIGURE</p>'
+        assert page.count(marker) == 1
+        figure = (f'<figure class="diagram ripple-measurement-{kind}">'
+                  f'<img src="data:image/svg+xml;base64,{data}" width="{width}" height="{height}" '
+                  f'alt="{escape(alt, quote=True)}" loading="lazy">'
+                  f'<figcaption>{escape(caption)}</figcaption></figure>')
+        page = page.replace(marker, figure)
+    path.write_text(page)
+
+
 def link_derivations():
     # The outline generator renders inline Markdown links as plain text.
     # Resolve this page's authored link after building the shared notes layout.
@@ -276,4 +309,5 @@ if __name__ == '__main__':
     build_doppler_derivation()
     build_diffraction_derivation()
     build_study_pages(CHAPTER)
+    embed_ripple_measurement_figures()
     link_derivations()

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="900" viewBox="0 0 1000 900" role="img" aria-labelledby="title desc">
+<title id="title">Worked answer: six lines, five gaps</title><desc id="desc">At 5.00 Hz, five gaps span 0.200 m, giving wavelength 0.0400 m and speed 0.200 m/s. At 10.0 Hz with unchanged speed, wavelength is 0.0200 m; ten gaps occupy the same span.</desc>
+<defs><filter id="glow" x="-100%" width="300%"><feGaussianBlur stdDeviation="3"/></filter></defs>
+<rect width="1000" height="900" rx="16" fill="#ffffff"/>
+<g font-family="system-ui,-apple-system,sans-serif" fill="#182e3c">
+<text x="60" y="56" font-size="32" fill="#182e3c" font-weight="750" text-anchor="start">Worked answer · Count gaps, then use v = fλ</text>
+<text x="60" y="98" font-size="24" fill="#526875" font-weight="400" text-anchor="start">Both drawings use the same horizontal scale and tank span.</text>
+<text x="60" y="145" font-size="27" fill="#182e3c" font-weight="700" text-anchor="start">Trial 1 · f₁ = 5.00 Hz</text>
+<path d="M140 188V204M140 196H860M860 188V204" fill="none" stroke="#086b72" stroke-width="2.5"/>
+<text x="500.0" y="181" font-size="25" fill="#086b72" font-weight="650" text-anchor="middle">0.200 m</text>
+<rect x="100" y="220" width="800" height="125" rx="12" fill="#142c3c"/>
+<path d="M140 232V333" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M140 232V333" stroke="#fff2c6" stroke-width="4"/>
+<path d="M284 232V333" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M284 232V333" stroke="#fff2c6" stroke-width="4"/>
+<path d="M428 232V333" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M428 232V333" stroke="#fff2c6" stroke-width="4"/>
+<path d="M572 232V333" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M572 232V333" stroke="#fff2c6" stroke-width="4"/>
+<path d="M716 232V333" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M716 232V333" stroke="#fff2c6" stroke-width="4"/>
+<path d="M860 232V333" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M860 232V333" stroke="#fff2c6" stroke-width="4"/>
+<path d="M140 356V372M140 364H284M284 356V372" fill="none" stroke="#086b72" stroke-width="2.5"/>
+<text x="212.0" y="397" font-size="25" fill="#086b72" font-weight="650" text-anchor="middle">λ₁</text>
+<text x="440" y="390" font-size="26" fill="#182e3c" font-weight="650" text-anchor="start">6 crests enclose 5 gaps.</text>
+<text x="100" y="434" font-size="27" fill="#086b72" font-weight="700" text-anchor="start">λ₁ = L / 5 = 0.200 m / 5 = 0.0400 m</text>
+<text x="100" y="475" font-size="26" fill="#182e3c" font-weight="400" text-anchor="start">v₁ = f₁λ₁ = (5.00 Hz)(0.0400 m) = 0.200 m/s</text>
+<path d="M60 497H940" stroke="#d6e2e5" stroke-width="2"/>
+<text x="60" y="536" font-size="27" fill="#182e3c" font-weight="700" text-anchor="start">Trial 2 · f₂ = 10.0 Hz · constant-speed prediction</text>
+<path d="M140 573V589M140 581H860M860 573V589" fill="none" stroke="#086b72" stroke-width="2.5"/>
+<text x="500.0" y="566" font-size="25" fill="#086b72" font-weight="650" text-anchor="middle">0.200 m</text>
+<rect x="100" y="604" width="800" height="118" rx="12" fill="#142c3c"/>
+<path d="M140 616V710" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M140 616V710" stroke="#fff2c6" stroke-width="4"/>
+<path d="M212 616V710" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M212 616V710" stroke="#fff2c6" stroke-width="4"/>
+<path d="M284 616V710" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M284 616V710" stroke="#fff2c6" stroke-width="4"/>
+<path d="M356 616V710" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M356 616V710" stroke="#fff2c6" stroke-width="4"/>
+<path d="M428 616V710" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M428 616V710" stroke="#fff2c6" stroke-width="4"/>
+<path d="M500 616V710" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M500 616V710" stroke="#fff2c6" stroke-width="4"/>
+<path d="M572 616V710" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M572 616V710" stroke="#fff2c6" stroke-width="4"/>
+<path d="M644 616V710" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M644 616V710" stroke="#fff2c6" stroke-width="4"/>
+<path d="M716 616V710" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M716 616V710" stroke="#fff2c6" stroke-width="4"/>
+<path d="M788 616V710" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M788 616V710" stroke="#fff2c6" stroke-width="4"/>
+<path d="M860 616V710" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M860 616V710" stroke="#fff2c6" stroke-width="4"/>
+<path d="M140 732V748M140 740H212M212 732V748" fill="none" stroke="#086b72" stroke-width="2.5"/>
+<text x="176.0" y="772" font-size="25" fill="#086b72" font-weight="650" text-anchor="middle">λ₂</text>
+<text x="440" y="766" font-size="26" fill="#182e3c" font-weight="650" text-anchor="start">11 crests enclose 10 gaps.</text>
+<text x="100" y="813" font-size="25" fill="#086b72" font-weight="700" text-anchor="start">λ₂ = v₁ / f₂ = (0.200 m/s) / (10.0 Hz) = 0.0200 m</text>
+<text x="500" y="870" font-size="24" fill="#526875" font-weight="400" text-anchor="middle">Same speed + twice the frequency → half the wavelength.</text>
+</g></svg>

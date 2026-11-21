@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="740" viewBox="0 0 1000 740" role="img" aria-labelledby="title desc">
+<title id="title">Question: ripple-tank wavelength and speed</title><desc id="desc">Six consecutive bright crest lines span a corrected tank distance of 0.200 m at 5.00 Hz. Calculate wavelength and speed. Predict wavelength at 10.0 Hz, assuming the same depth and speed.</desc>
+<defs><filter id="glow" x="-100%" width="300%"><feGaussianBlur stdDeviation="3"/></filter></defs>
+<rect width="1000" height="740" rx="16" fill="#ffffff"/>
+<g font-family="system-ui,-apple-system,sans-serif" fill="#182e3c">
+<text x="60" y="58" font-size="34" fill="#182e3c" font-weight="750" text-anchor="start">Question · Measuring water waves</text>
+<text x="60" y="102" font-size="25" fill="#182e3c" font-weight="400" text-anchor="start">A straight bar produces the parallel crests shown below.</text>
+<path d="M140 150V166M140 158H860M860 150V166" fill="none" stroke="#086b72" stroke-width="2.5"/>
+<text x="500.0" y="140" font-size="25" fill="#086b72" font-weight="650" text-anchor="middle">L = 0.200 m in the tank</text>
+<rect x="100" y="214" width="800" height="170" rx="12" fill="#142c3c"/>
+<path d="M140 226V372" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M140 226V372" stroke="#fff2c6" stroke-width="4"/>
+<text x="140.0" y="196" font-size="24" fill="#526875" font-weight="650" text-anchor="middle">1</text>
+<path d="M284 226V372" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M284 226V372" stroke="#fff2c6" stroke-width="4"/>
+<text x="284.0" y="196" font-size="24" fill="#526875" font-weight="650" text-anchor="middle">2</text>
+<path d="M428 226V372" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M428 226V372" stroke="#fff2c6" stroke-width="4"/>
+<text x="428.0" y="196" font-size="24" fill="#526875" font-weight="650" text-anchor="middle">3</text>
+<path d="M572 226V372" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M572 226V372" stroke="#fff2c6" stroke-width="4"/>
+<text x="572.0" y="196" font-size="24" fill="#526875" font-weight="650" text-anchor="middle">4</text>
+<path d="M716 226V372" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M716 226V372" stroke="#fff2c6" stroke-width="4"/>
+<text x="716.0" y="196" font-size="24" fill="#526875" font-weight="650" text-anchor="middle">5</text>
+<path d="M860 226V372" stroke="#ffd481" stroke-width="11" opacity="0.5" filter="url(#glow)"/>
+<path class="crest" d="M860 226V372" stroke="#fff2c6" stroke-width="4"/>
+<text x="860.0" y="196" font-size="24" fill="#526875" font-weight="650" text-anchor="middle">6</text>
+<text x="500" y="424" font-size="24" fill="#526875" font-weight="400" text-anchor="middle">Six consecutive bright crest lines · top view of the screen</text>
+<rect x="60" y="460" width="880" height="227" rx="14" fill="#edf6f4" stroke="#d6e2e5"/>
+<text x="88" y="502" font-size="27" fill="#182e3c" font-weight="650" text-anchor="start">Given: f₁ = 5.00 Hz; then f₂ = 10.0 Hz.</text>
+<text x="88" y="545" font-size="24" fill="#182e3c" font-weight="400" text-anchor="start">Assume: unchanged depth and speed for the prediction.</text>
+<text x="88" y="590" font-size="24" fill="#182e3c" font-weight="400" text-anchor="start">Find: the number of gaps, λ₁, v₁ and the predicted λ₂.</text>
+<text x="88" y="635" font-size="24" fill="#182e3c" font-weight="400" text-anchor="start">Explain how real measurements could test this assumption.</text>
+<text x="60" y="720" font-size="21" fill="#526875" font-weight="400" text-anchor="start">Illustrative data. The labelled span is already corrected for projection magnification.</text>
+</g></svg>

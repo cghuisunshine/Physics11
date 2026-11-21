@@ -111,9 +111,40 @@ Further reading: [Animate the ripple tank and its bright crest lines](ripple-tan
 ### Investigation 6-1B · Relating speed, wavelength, and frequency
 At fixed depth, vary the generator frequency. Measure a span of several consecutive bright lines, divide by the number of gaps, and calculate v = fλ. Use the same screen scale and account for projection magnification if converting screen lengths to actual tank distances.
 
+**Illustrative calculation task (AI-authored)**
+
+A straight bar generates waves at **f₁ = 5.00 Hz** in water of uniform, fixed depth. Six consecutive bright crest lines are shown. The perpendicular distance from the first line to the sixth corresponds to **L = 0.200 m in the tank**, after correcting for projection magnification. These are illustrative data, not experimental measurements.
+
+- Count the complete crest-to-crest gaps in L. Calculate the wavelength λ₁, then the wave speed v₁ using v = fλ.
+- Increase the frequency to **f₂ = 10.0 Hz** without changing the depth. **Assume the wave speed stays the same for this prediction.** Calculate the new wavelength λ₂ and explain how its value compares with λ₁.
+- In a real investigation, how would you use measured speeds and their measurement uncertainties to check that constant-speed assumption?
+
+RIPPLE_MEASUREMENT_QUESTION_FIGURE
+
 **Worked answer**
 
-If five gaps span 0.200 m in the tank, λ = 0.200/5 = **0.0400 m**. At 5.00 Hz, v = **0.200 m/s**. At 10.0 Hz and the same speed, λ would be **0.0200 m**. If your calculated speeds differ beyond measurement uncertainty, the constant-speed model may be too simple. Water-wave speed can depend on wavelength as well as depth.
+Consecutive bright lines locate consecutive crests, so each complete gap represents one wavelength. **Six lines enclose five gaps**, not six. Let N = 5 be the number of gaps, L the tank distance in metres, f the frequency in hertz, λ the wavelength in metres, and v the wave speed in m/s.
+
+```
+L = Nλ₁
+λ₁ = L/N = (0.200 m)/5 = 0.0400 m
+
+v₁ = f₁λ₁ = (5.00 Hz)(0.0400 m) = 0.200 m/s
+```
+
+For the second trial, use the question's constant-speed assumption: v₂ = v₁. Rearrange v = fλ before substituting.
+
+```
+λ₂ = v₂/f₂ = (0.200 m/s)/(10.0 Hz) = 0.0200 m
+
+λ₂/λ₁ = f₁/f₂ = 5.00/10.0 = 1/2
+```
+
+Doubling the frequency halves the wavelength **if speed remains constant**. The same 0.200 m tank span would then contain ten gaps between eleven consecutive crests. Unit check: Hz × m = m/s; (m/s)/Hz = m.
+
+RIPPLE_MEASUREMENT_ANSWER_FIGURE
+
+For a real test, measure wavelength independently at each frequency, calculate both speeds, and compare the difference with their combined measurement uncertainty. If the speeds differ beyond that uncertainty, the constant-speed model may be too simple. Fixed depth alone does not guarantee unchanged speed: water-wave speed can also depend on wavelength. The 10.0 Hz result above is a model prediction, not a second measured result.
 
 ## 7 Reflection
 ### Flat and curved boundaries
