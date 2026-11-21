@@ -201,6 +201,39 @@ def embed_ripple_measurement_figures():
     path.write_text(page)
 
 
+def embed_reflection_station_figures():
+    path = ROOT / 'wave-motion-notes.html'
+    page = path.read_text()
+    for kind, alt, caption in (
+        ('question',
+         'Three reflection tasks. A: circular incident fronts from source S approach '
+         'a flat barrier; sketch reflected fronts and locate their apparent source. '
+         'B: a ray approaches point P at 35 degrees to a dashed normal perpendicular '
+         'to the flat barrier; draw the leaving ray and label its angle. '
+         'C: straight fronts and parallel rays approach a parabolic barrier along '
+         'its axis; trace their reflected paths near marked focus F.',
+         'Top views for tasks A–C. Teal lines show incident crests and arrows show '
+         'travel directions. Complete the reflected paths before opening the answer.'),
+        ('answer',
+         'A: orange reflected circular arcs appear to spread from virtual source S prime, '
+         'the mirror image of S behind the flat barrier. B: the leaving ray is on the '
+         'other side of the normal at 35 degrees to it, or 55 degrees to the barrier; '
+         'crest lines are perpendicular to the rays. C: orange reflected rays from '
+         'the parabolic barrier converge toward focus F.',
+         'Orange shows reflected fronts or rays. The virtual source behind the flat '
+         'barrier is a construction. All reflection angles are measured from the normal.'),
+    ):
+        data = base64.b64encode((ROOT / f'assets/wave-motion-notes/reflection-stations-{kind}.svg').read_bytes()).decode()
+        marker = f'<p>REFLECTION_STATIONS_{kind.upper()}_FIGURE</p>'
+        assert page.count(marker) == 1
+        figure = (f'<figure class="diagram reflection-stations-{kind}">'
+                  f'<img src="data:image/svg+xml;base64,{data}" width="1200" height="1140" '
+                  f'alt="{escape(alt, quote=True)}" loading="lazy">'
+                  f'<figcaption>{escape(caption)}</figcaption></figure>')
+        page = page.replace(marker, figure)
+    path.write_text(page)
+
+
 def link_derivations():
     # The outline generator renders inline Markdown links as plain text.
     # Resolve this page's authored link after building the shared notes layout.
@@ -302,6 +335,8 @@ CHAPTER = Chapter(
 )
 
 if __name__ == '__main__':
+    from reflection_station_figures import build_reflection_station_figures
+    build_reflection_station_figures()
     from build_ripple_tank_animation import build_ripple_tank_animation
     build_ripple_tank_animation()
     build_singing_glass()
@@ -310,4 +345,5 @@ if __name__ == '__main__':
     build_diffraction_derivation()
     build_study_pages(CHAPTER)
     embed_ripple_measurement_figures()
+    embed_reflection_station_figures()
     link_derivations()

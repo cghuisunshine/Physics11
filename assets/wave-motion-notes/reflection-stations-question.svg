@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1140" viewBox="0 0 1200 1140" role="img" aria-labelledby="title desc">
+<title id="title">Reflection stations · sketch and predict</title><desc id="desc">Three top-view ripple-tank diagrams: circular fronts at a flat barrier, a straight-front ray incident at 35 degrees to the normal, and straight fronts approaching a parabolic barrier along its axis. Sketch the reflected fronts in A, the leaving ray and angle in B, and the reflected paths toward the marked focus in C.</desc>
+<defs><clipPath id="circular-water"><rect x="60" y="200" width="500" height="200"/></clipPath>
+<marker id="incident-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1L9 5L1 9" fill="none" stroke="#086b72" stroke-width="1.8"/></marker>
+<marker id="reflected-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1L9 5L1 9" fill="none" stroke="#ad4e16" stroke-width="1.8"/></marker></defs>
+<rect width="1200" height="1140" rx="16" fill="white"/>
+<g font-family="system-ui,-apple-system,sans-serif">
+<rect x="40" y="125" width="540" height="495" rx="14" fill="#f4f9fa" stroke="#d6e2e5"/>
+<rect x="620" y="125" width="540" height="495" rx="14" fill="#f4f9fa" stroke="#d6e2e5"/>
+<rect x="40" y="650" width="1120" height="445" rx="14" fill="#f4f9fa" stroke="#d6e2e5"/>
+
+<text x="40" y="55" font-size="34" fill="#182e3c" font-weight="750" text-anchor="start">Reflection stations · sketch and predict</text>
+<text x="40" y="96" font-size="25" fill="#526875" font-weight="400" text-anchor="start">Top views · crest lines are perpendicular to travel rays</text>
+<text x="65" y="169" font-size="28" fill="#182e3c" font-weight="700" text-anchor="start">A · Circular fronts</text>
+<rect x="60" y="200" width="500" height="200" fill="#e4f2f4"/>
+<rect x="60" y="405" width="500" height="155" fill="#f0f1f1"/>
+<text x="76" y="230" font-size="22" fill="#526875" font-weight="400" text-anchor="start">Water</text>
+<text x="76" y="461" font-size="21" fill="#526875" font-weight="400" text-anchor="start">Behind barrier</text>
+<g clip-path="url(#circular-water)" fill="none">
+<circle cx="300" cy="270" r="38" stroke="#086b72" stroke-width="2.5"/>
+<circle cx="300" cy="270" r="76" stroke="#086b72" stroke-width="2.5"/>
+<circle cx="300" cy="270" r="114" stroke="#086b72" stroke-width="2.5"/>
+<circle cx="300" cy="270" r="152" stroke="#086b72" stroke-width="2.5"/>
+<circle cx="300" cy="270" r="190" stroke="#086b72" stroke-width="2.5"/>
+<circle cx="300" cy="270" r="228" stroke="#086b72" stroke-width="2.5"/>
+</g>
+<path d="M60 400H560" fill="none" stroke="#182e3c" stroke-width="9" />
+<circle cx="300" cy="270" r="6" fill="#182e3c"/>
+<text x="312" y="259" font-size="23" fill="#182e3c" font-weight="700" text-anchor="start">S</text>
+<path d="M335.000,311.364L410.000,400.000" fill="none" stroke="#086b72" stroke-width="3.5" marker-end="url(#incident-head)"/>
+<text x="76" y="429" font-size="21" fill="#182e3c" font-weight="600" text-anchor="start">Flat barrier</text>
+<text x="66" y="587" font-size="23" fill="#182e3c" font-weight="400" text-anchor="start">Sketch reflected fronts and their</text>
+<text x="66" y="612" font-size="23" fill="#182e3c" font-weight="400" text-anchor="start">apparent source position.</text>
+<text x="645" y="169" font-size="28" fill="#182e3c" font-weight="700" text-anchor="start">B · Straight fronts</text>
+<path d="M650 480H1130" fill="none" stroke="#182e3c" stroke-width="9" />
+<path d="M900 220V480" fill="none" stroke="#526875" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="915" y="240" font-size="23" fill="#526875" font-weight="400" text-anchor="start">Normal</text>
+<text x="646" y="268" font-size="22" fill="#086b72" font-weight="600" text-anchor="start">Incident ray</text>
+<path d="M768.077,291.595L900.000,480.000" fill="none" stroke="#086b72" stroke-width="3.5" marker-end="url(#incident-head)"/>
+<circle cx="900" cy="480" r="5" fill="#182e3c"/>
+<text x="911" y="507" font-size="22" fill="#182e3c" font-weight="700" text-anchor="start">P</text>
+<text x="650" y="516" font-size="22" fill="#182e3c" font-weight="400" text-anchor="start">Flat barrier</text>
+<path d="M900 450H930V480" fill="none" stroke="#526875" stroke-width="1.5" />
+<path d="M832.816,429.381L875.412,399.555" fill="none" stroke="#086b72" stroke-width="2" />
+<path d="M801.269,384.327L843.865,354.501" fill="none" stroke="#086b72" stroke-width="2" />
+<path d="M769.723,339.274L812.318,309.448" fill="none" stroke="#086b72" stroke-width="2" />
+<path d="M900 414A66 66 0 0 0 862.144 425.936" fill="none" stroke="#086b72" stroke-width="2" />
+<text x="844" y="397" font-size="25" fill="#086b72" font-weight="650" text-anchor="start">35°</text>
+<text x="645" y="559" font-size="23" fill="#182e3c" font-weight="400" text-anchor="start">Draw the ray leaving P.</text>
+<text x="645" y="591" font-size="23" fill="#182e3c" font-weight="400" text-anchor="start">Label its angle to the normal.</text>
+<text x="65" y="697" font-size="28" fill="#182e3c" font-weight="700" text-anchor="start">C · Straight fronts approaching a parabolic barrier</text>
+<text x="75" y="737" font-size="22" fill="#086b72" font-weight="600" text-anchor="start">Parallel incident fronts</text>
+<path d="M140 875H1090" fill="none" stroke="#526875" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="145" y="904" font-size="22" fill="#526875" font-weight="400" text-anchor="start">Axis</text>
+<path d="M220 750V1020" fill="none" stroke="#086b72" stroke-width="2" />
+<path d="M310 750V1020" fill="none" stroke="#086b72" stroke-width="2" />
+<path d="M400 750V1020" fill="none" stroke="#086b72" stroke-width="2" />
+<path d="M490 750V1020" fill="none" stroke="#086b72" stroke-width="2" />
+<path d="M580 750V1020" fill="none" stroke="#086b72" stroke-width="2" />
+<path d="M670 750V1020" fill="none" stroke="#086b72" stroke-width="2" />
+<path d="M760 750V1020" fill="none" stroke="#086b72" stroke-width="2" />
+<path d="M160.000,755.000L955.000,755.000" fill="none" stroke="#086b72" stroke-width="3.5" marker-end="url(#incident-head)"/>
+<path d="M160.000,815.000L988.750,815.000" fill="none" stroke="#086b72" stroke-width="3.5" marker-end="url(#incident-head)"/>
+<path d="M160.000,935.000L988.750,935.000" fill="none" stroke="#086b72" stroke-width="3.5" marker-end="url(#incident-head)"/>
+<path d="M160.000,995.000L955.000,995.000" fill="none" stroke="#086b72" stroke-width="3.5" marker-end="url(#incident-head)"/>
+<path d="M934.297,730L936.097,732L937.872,734L939.622,736L941.347,738L943.047,740L944.722,742L946.372,744L947.997,746L949.597,748L951.172,750L952.722,752L954.247,754L955.747,756L957.222,758L958.672,760L960.097,762L961.497,764L962.872,766L964.222,768L965.547,770L966.847,772L968.122,774L969.372,776L970.597,778L971.797,780L972.972,782L974.122,784L975.247,786L976.347,788L977.422,790L978.472,792L979.497,794L980.497,796L981.472,798L982.422,800L983.347,802L984.247,804L985.122,806L985.972,808L986.797,810L987.597,812L988.372,814L989.122,816L989.847,818L990.547,820L991.222,822L991.872,824L992.497,826L993.097,828L993.672,830L994.222,832L994.747,834L995.247,836L995.722,838L996.172,840L996.597,842L996.997,844L997.372,846L997.722,848L998.047,850L998.347,852L998.622,854L998.872,856L999.097,858L999.297,860L999.472,862L999.622,864L999.747,866L999.847,868L999.922,870L999.972,872L999.997,874L999.997,876L999.972,878L999.922,880L999.847,882L999.747,884L999.622,886L999.472,888L999.297,890L999.097,892L998.872,894L998.622,896L998.347,898L998.047,900L997.722,902L997.372,904L996.997,906L996.597,908L996.172,910L995.722,912L995.247,914L994.747,916L994.222,918L993.672,920L993.097,922L992.497,924L991.872,926L991.222,928L990.547,930L989.847,932L989.122,934L988.372,936L987.597,938L986.797,940L985.972,942L985.122,944L984.247,946L983.347,948L982.422,950L981.472,952L980.497,954L979.497,956L978.472,958L977.422,960L976.347,962L975.247,964L974.122,966L972.972,968L971.797,970L970.597,972L969.372,974L968.122,976L966.847,978L965.547,980L964.222,982L962.872,984L961.497,986L960.097,988L958.672,990L957.222,992L955.747,994L954.247,996L952.722,998L951.172,1000L949.597,1002L947.997,1004L946.372,1006L944.722,1008L943.047,1010L941.347,1012L939.622,1014L937.872,1016L936.097,1018L934.297,1020" fill="none" stroke="#182e3c" stroke-width="9" />
+<circle cx="920" cy="875" r="6" fill="#182e3c"/>
+<text x="889" y="909" font-size="25" fill="#182e3c" font-weight="700" text-anchor="start">F</text>
+<text x="1015" y="842" font-size="20" fill="#182e3c" font-weight="400" text-anchor="start">Parabolic</text>
+<text x="1015" y="868" font-size="20" fill="#182e3c" font-weight="400" text-anchor="start">barrier</text>
+<text x="75" y="1071" font-size="25" fill="#182e3c" font-weight="650" text-anchor="start">Trace the reflected rays. What happens near F?</text>
+<text x="40" y="1127" font-size="21" fill="#526875" font-weight="400" text-anchor="start">Sketches are schematic. Water depth and barrier position remain fixed.</text>
+</g></svg>

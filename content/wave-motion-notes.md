@@ -160,9 +160,21 @@ A circular reflection from a flat barrier appears to come from a virtual source 
 ### Investigation 6-2 · Stations 1–3
 In a ripple tank, compare reflected circular fronts, measure the reflected angle of a straight front, and send straight waves toward a parabolic barrier. A ray strikes a flat barrier at 35° to the normal. How does it leave?
 
+Use the three top-view sketches below. Lines show crests; arrows show the direction of wave travel. Assume uniform water depth and stationary barriers.
+
+- **A · Circular fronts:** sketch two reflected fronts in the water. Where would their apparent source be relative to the flat barrier?
+- **B · Straight fronts:** draw the reflected ray from P and label its angle to the dashed normal. The given 35° is measured from the normal, not from the barrier.
+- **C · Parabolic barrier:** trace the reflected rays for straight fronts arriving parallel to the axis. Describe what happens near the marked focus F.
+
+REFLECTION_STATIONS_QUESTION_FIGURE
+
 **Worked answer**
 
-The reflected ray leaves at **35° to the normal** on the other side of the normal. A straight wavefront makes the same angle with the barrier as its ray makes with the normal. In the curved setup, straight fronts incident along the axis converge toward the focus.
+- **A:** the reflected fronts are circular arcs that spread away from the flat barrier. They appear to come from a virtual source S′ directly opposite the actual source S, the same perpendicular distance behind the barrier. S′ is a geometric construction, not a second source making waves behind the barrier.
+- **B:** apply the law of reflection: the angle of reflection equals the angle of incidence. The ray leaves P at **35° to the normal**, on the other side of the normal from the incident ray, travelling away from the barrier. Equivalently, it makes 90° − 35° = **55° to the barrier**. A straight wavefront is perpendicular to its ray, so the front makes 35° with the barrier.
+- **C:** each ray reflects from a different part of the parabolic barrier. For incident rays parallel to its axis, the reflected rays converge toward the focus F, and the reflected fronts curve inward as they approach F. The barrier redirects the waves; it does not change their frequency. In the same uniform water, speed and wavelength also stay unchanged.
+
+REFLECTION_STATIONS_ANSWER_FIGURE
 
 ## 8 Refraction
 ### Across a boundary
