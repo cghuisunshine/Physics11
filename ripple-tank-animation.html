@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Animate circular and straight water waves and see how overhead light projects bright crest lines onto a screen below a ripple tank.">
+<title>Ripple tank: waves and light | Physics 11</title>
+<style>
+:root{color-scheme:light;--ink:#182e3c;--muted:#526875;--paper:#faf9f5;--line:#d6e2e5;--accent:#086b72;--soft:#edf6f4;--gold:#ffd481}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--accent);text-underline-offset:4px}button,input{font:inherit}button,a,input{touch-action:manipulation}:focus-visible{outline:3px solid #1676ed;outline-offset:4px}button{border:1px solid #b6cdd1;border-radius:9px;background:white;color:var(--ink);padding:9px 15px;cursor:pointer}button:hover{background:var(--soft)}button.primary{background:var(--accent);border-color:var(--accent);color:white}.skip{position:absolute;top:-100px;left:16px;background:white;padding:10px;z-index:2}.skip:focus{top:12px}header,main,footer{max-width:1160px;margin:auto;padding:22px 28px}header{border-bottom:1px solid var(--line)}nav{display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px}nav button{margin-left:auto;font-size:14px}.eyebrow{font-size:14px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);font-weight:750;margin:20px 0 12px}h1{font-size:clamp(32px,5vw,52px);line-height:1.12;letter-spacing:-.035em;margin:0 0 18px}h2{font-size:25px;line-height:1.3;margin:0 0 12px}h3{font-size:18px;margin:0 0 8px}.intro{max-width:820px;font-size:19px;margin-bottom:24px}.lab{background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden}.controls{display:flex;align-items:center;gap:16px 24px;flex-wrap:wrap;padding:20px 24px;border-bottom:1px solid var(--line)}fieldset{margin:0;padding:0;border:0;min-width:0}legend,.control-title{font-size:14px;color:var(--muted);font-weight:650;margin-bottom:6px}.source-options{display:flex;gap:4px;flex-wrap:wrap}.source-options label{position:relative;display:flex;gap:7px;align-items:center;background:var(--soft);border:1px solid var(--line);padding:8px 12px;border-radius:8px;cursor:pointer}.source-options label:has(input:checked){border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}input{accent-color:var(--accent)}.transport{display:flex;gap:8px;flex-wrap:wrap}.frequency{flex:1;min-width:195px;max-width:270px}.frequency label{display:block;font-size:14px;font-weight:650}.frequency input{display:block;width:100%;margin:12px 0 0}.lamp-control{display:flex;gap:8px;align-items:center;font-size:16px}.readouts{display:flex;gap:12px 30px;flex-wrap:wrap;background:var(--soft);padding:12px 24px;font-size:16px}.readouts output{font-weight:750;font-variant-numeric:tabular-nums}.readouts p{margin:0}.views{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:24px 24px 8px}figure{min-width:0;margin:0}figure svg{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px}figcaption{font-size:14px;color:var(--muted);margin-top:10px}.view-heading{display:flex;justify-content:space-between;gap:8px;align-items:baseline}.view-heading span{font-size:14px;color:var(--muted)}.status{margin:0;padding:10px 24px;color:var(--muted);font-size:14px}.cross-section{border-top:1px solid var(--line);padding:24px;margin-top:12px}.cross-section p{max-width:860px;margin:8px 0 18px}.cross-section svg{width:100%;display:block;height:auto}.side-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#f4f9fa}.legend{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14px;color:var(--muted);margin:12px 0}.swatch{display:inline-block;width:22px;height:4px;vertical-align:middle;margin-right:6px;background:#086b72}.swatch.light{background:#a87113}.explanation{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:26px 0}.explanation article{padding:22px;background:white;border:1px solid var(--line);border-radius:12px}.explanation p{margin:0}.note{font-size:15px;color:var(--muted);max-width:960px}footer{border-top:1px solid var(--line);font-size:14px;color:var(--muted)}.print-note{display:none}noscript p{padding:20px;background:var(--soft)}
+@media(max-width:720px){header,main,footer{padding:18px 16px}nav{gap:12px}nav button{margin-left:0}.intro{font-size:17px}.controls{padding:18px 16px;gap:18px}.frequency{max-width:none;width:100%;flex:auto}.readouts{padding:12px 16px;gap:8px 18px}.views{grid-template-columns:1fr;padding:20px 16px 8px;gap:24px}.cross-section{padding:20px 16px}.side-scroll svg{min-width:650px}.explanation{grid-template-columns:1fr;gap:14px}.status{padding:10px 16px}}
+@media print{body{background:white;font-size:11pt}header,.controls,.skip,.status{display:none}main,footer{max-width:none;padding:0}h1{font-size:26pt}.lab{border:0}.views{padding:12px 0;gap:14px}.cross-section{padding:16px 0}.side-scroll{overflow:visible}.side-scroll svg{min-width:0}.explanation{gap:12px;margin:12px 0;grid-template-columns:repeat(3,1fr)}.explanation article{border:0;padding:4px}figure,article,.side-scroll{break-inside:avoid}.print-note{display:block;font-size:10pt}.note,figcaption{font-size:10pt}a{color:inherit}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to animation</a>
+<header><nav aria-label="Page navigation"><a href="wave-motion-notes.html#topic-6">Section 6 · Measuring water waves</a><a href="content.html">All Physics 11 notes</a><button type="button" id="print">Print / Save PDF</button></nav></header>
+<main id="main">
+<p class="eyebrow">Physics 11 · Optional visual explanation</p>
+<h1>Ripple tank: waves and light</h1>
+<p class="intro">Watch the water crests spread. Then follow the light to the screen below: its bright lines reveal where the crests are.</p>
+<section class="lab" aria-label="Interactive ripple tank">
+<div class="controls">
+<fieldset><legend>Wave generator</legend><div class="source-options"><label><input type="radio" name="source" value="point" checked>Point source</label><label><input type="radio" name="source" value="bar">Straight bar</label></div></fieldset>
+<div><p class="control-title">Time controls</p><div class="transport"><button class="primary" type="button" id="play" aria-pressed="true">Pause</button><button type="button" id="step">Step</button><button type="button" id="reset">Reset</button></div></div>
+<div class="frequency"><label for="frequency">Source frequency: <output id="frequency-value" for="frequency">1.2 Hz</output></label><input id="frequency" type="range" min="0.8" max="2.0" step="0.1" value="1.2"></div>
+<label class="lamp-control"><input id="lamp" type="checkbox" checked>Lamp on</label>
+</div>
+<div class="readouts"><p>Model wave speed <output>12 cm/s</output></p><p>Wavelength <output id="wavelength">10.0 cm</output></p><p><strong>v = fλ</strong></p></div>
+<div class="views">
+<figure><div class="view-heading"><h2>Water surface</h2><span>Top view</span></div>
+<svg id="water-view" viewBox="0 0 480 300" role="img" aria-labelledby="water-title water-desc"><title id="water-title">Water wavefronts</title><desc id="water-desc">Crest lines move away from a point source as circles, or away from a straight bar as parallel lines. Uniform water depth and no edge reflections are assumed.</desc><defs><clipPath id="water-clip"><rect x="1" y="1" width="478" height="298" rx="10"/></clipPath><pattern id="water-grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#b6d5d9" stroke-width="0.8"/></pattern><marker id="travel-head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7" fill="none" stroke="#182e3c" stroke-width="1.5"/></marker></defs><rect width="480" height="300" fill="#e4f2f4"/><rect width="480" height="300" fill="url(#water-grid)"/><g clip-path="url(#water-clip)"><g id="water-fronts" fill="none" stroke="#086b72" stroke-width="2.6"></g><g id="generator"></g><g id="travel-direction" stroke="#182e3c" stroke-width="2" fill="none" marker-end="url(#travel-head)"></g></g></svg>
+<figcaption id="water-caption">Each teal circle joins points at a crest. The pattern travels outwards in every horizontal direction.</figcaption></figure>
+<figure><div class="view-heading"><h2>Screen below the tank</h2><span>Top view</span></div>
+<svg id="screen-view" viewBox="0 0 480 300" role="img" aria-labelledby="screen-title screen-desc"><title id="screen-title">Optical projection of the waves</title><desc id="screen-desc">With the lamp on, bright lines match the water crests. With the lamp off, the screen becomes dark while the water waves continue.</desc><defs><clipPath id="screen-clip"><rect x="1" y="1" width="478" height="298" rx="10"/></clipPath><filter id="screen-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5"/></filter></defs><rect width="480" height="300" fill="#142c3c"/><g id="screen-light" clip-path="url(#screen-clip)" fill="none"><g id="screen-halos" stroke="#ffce70" stroke-width="8" opacity="0.55" filter="url(#screen-glow)"></g><g id="screen-fronts" stroke="#fff0bf" stroke-width="2.8"></g></g><text id="lamp-off-label" x="240" y="154" text-anchor="middle" fill="#d6e2e5" font-family="system-ui,sans-serif" font-size="19" visibility="hidden">Lamp off · no projection</text></svg>
+<figcaption>The same instant and horizontal scale as the water view. Bright lines locate crests in the textbook arrangement; they are light on a screen.</figcaption></figure>
+</div>
+<p class="status" id="status" role="status">Running · point source · lamp on.</p>
+<div class="cross-section"><h2>How the bright lines form</h2><p>The overhead lamp shines through the moving surface and the glass base. Around a crest, the curved water surface bends nearby light rays together. Around a trough, the rays spread apart.</p>
+<div class="side-scroll" tabindex="0" aria-label="Side-view diagram; scroll horizontally on a small screen">
+<svg id="side-view" viewBox="0 0 960 400" role="img" aria-labelledby="side-title side-desc"><title id="side-title">Side view: overhead light, water, glass base, and screen</title><desc id="side-desc">Yellow rays enter from above. The curved water surface concentrates rays beneath crests and spreads them beneath troughs. Bright bands appear on the screen. The wave profile and ray paths move together. This is a schematic, not a quantitative ray trace.</desc><defs><clipPath id="side-clip"><rect x="60" y="58" width="840" height="302"/></clipPath></defs><rect width="960" height="400" fill="#f4f9fa"/><rect x="60" y="230" width="840" height="12" fill="#b6cdd1" stroke="#526875"/><path id="water-fill" fill="#d4edf2"/><path id="water-profile" fill="none" stroke="#086b72" stroke-width="3"/><g id="light-rays" clip-path="url(#side-clip)" fill="none" stroke="#a87113" stroke-width="1.5" opacity="0.78"></g><rect x="60" y="338" width="840" height="23" rx="3" fill="#142c3c"/><g id="side-bright-lines" clip-path="url(#side-clip)"></g><rect id="overhead-lamp" x="60" y="42" width="840" height="10" rx="5" fill="#ffd481" stroke="#a87113"/><g id="side-generator" fill="#182e3c"></g><g font-family="system-ui,sans-serif" font-size="17" fill="#182e3c"><text x="480" y="29" text-anchor="middle">Overhead lighting</text><text x="8" y="97">Air</text><text x="8" y="191">Water</text><text x="60" y="267">Glass base</text><text x="60" y="388">Screen: bright bands beneath crests</text></g></svg>
+</div>
+<div class="legend"><span><i class="swatch"></i>Water surface</span><span><i class="swatch light"></i>Light rays</span></div>
+<p class="note">Side view through the point source, or perpendicular to the bar. Heights and ray paths are exaggerated to show the idea. The screen is drawn at the same horizontal scale as the water; a real projection can be magnified. On a narrow screen, scroll the side-view diagram horizontally.</p>
+</div>
+</section>
+<section class="explanation" aria-label="What to notice">
+<article><h3>A point makes circles</h3><p>In uniform water, waves travel equally fast in every horizontal direction. Crests emitted at the same time form circles centred on the point source.</p></article>
+<article><h3>A bar makes straight fronts</h3><p>A straight bar dipping uniformly acts as a line of sources moving together. Away from its ends, the crests are nearly straight and parallel to the bar.</p></article>
+<article><h3>The screen shows light</h3><p>Turn the lamp off. The water still moves, but the bright pattern disappears. The screen displays an optical projection of the water motion.</p></article>
+</section>
+<p class="note">This optional animation supplements Section 6; no additional prerequisites beyond waves, crests, frequency, and wavelength are needed. The model uses uniform depth, small waves, a chosen constant speed, and an established wave train. Start-up effects, damping, radial amplitude changes, bar-end diffraction, and edge reflections are omitted. Changing frequency selects a new steady pattern. The optical view illustrates the textbook’s crest-bright arrangement; contrast in real tanks depends on the lighting and screen geometry.</p>
+<p class="print-note">Printed snapshot: teal fronts mark water crests; bright screen lines are the optical projection at the same instant.</p>
+<noscript><p>The animation needs JavaScript. A point source produces circular crests; a uniformly dipping straight bar produces nearly straight crests. Overhead light concentrates below crests, making bright lines on the screen.</p></noscript>
+<p><a href="wave-motion-notes.html#topic-6">Return to Section 6 · Measuring water waves</a></p>
+</main>
+<footer>AI-authored animation and explanation based on the course notes. Schematic illustrations, not experimental measurements. Works offline.</footer>
+<script>
+/* Kinematic crest model and a deliberately schematic optical projection. */
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const state = { source: 'point', frequency: 1.2, phase: 0.25, playing: !reducedMotion, lamp: true };
+  const speed = 120; // Logical units/s; 10 logical units represent 1 cm.
+  let lastTime = null, frameId = null;
+  const tau = 2 * Math.PI;
+  const wavelength = () => speed / state.frequency;
+  const distance = x => state.source === 'point' ? Math.abs(x - 240) : x - 40;
+  const elevation = x => state.source === 'bar' && x < 40 ? 0 : Math.cos(tau * (distance(x) / wavelength() - state.phase));
+
+  function fronts() {
+    const lambda = wavelength(), parts = [];
+    if (state.source === 'point') {
+      for (let r = state.phase * lambda; r < 290; r += lambda) {
+        parts.push(`<circle cx="240" cy="150" r="${r.toFixed(3)}"/>`);
+      }
+    } else {
+      for (let x = 40 + state.phase * lambda; x < 480; x += lambda) {
+        parts.push(`<path d="M${x.toFixed(3)} 0V300" data-x="${x.toFixed(3)}"/>`);
+      }
+    }
+    return parts.join('');
+  }
+
+  function drawSideView() {
+    const scale = 1.75, left = 60, baseline = 135, amplitude = 16;
+    const lambda = wavelength(), waveNumber = tau / lambda;
+    const points = [];
+    for (let x = 0; x <= 480; x += 2) points.push(`${(left + x * scale).toFixed(2)},${(baseline - amplitude * elevation(x)).toFixed(2)}`);
+    $('water-profile').setAttribute('d', 'M' + points.join('L'));
+    $('water-fill').setAttribute('d', 'M' + points.join('L') + 'L900,230H60Z');
+    const rays = [];
+    for (let x = 4; x < 480; x += 10) {
+      const sx = left + x * scale, sy = baseline - amplitude * elevation(x);
+      const sign = state.source === 'point' && x < 240 ? -1 : 1;
+      // Mapping compresses neighbouring rays near crests and spreads them near troughs.
+      // It conveys focusing qualitatively; it is not a Snell-law ray trace.
+      const shift = state.source === 'bar' && x < 40 ? 0 : sign * 0.85 / waveNumber * Math.sin(waveNumber * distance(x) - tau * state.phase) * scale;
+      rays.push(`<path d="M${sx.toFixed(2)},57V${sy.toFixed(2)}L${(sx - shift * 0.45).toFixed(2)},230L${(sx - shift * 0.46).toFixed(2)},242L${(sx - shift).toFixed(2)},349"/>`);
+    }
+    $('light-rays').innerHTML = rays.join('');
+    const bands = [];
+    for (let x = 0; x <= 480; x += 1) {
+      if (state.source === 'bar' && x < 40) continue;
+      const bright = Math.pow(Math.max(0, elevation(x)), 18);
+      if (bright > 0.015) bands.push(`<rect x="${left + x * scale}" y="339" width="1.8" height="21" fill="#fff0bf" opacity="${bright.toFixed(3)}"/>`);
+    }
+    $('side-bright-lines').innerHTML = bands.join('');
+    const sourceX = state.source === 'point' ? 240 : 40;
+    $('side-generator').innerHTML = `<rect x="${left + sourceX * scale - 5}" y="${baseline - amplitude * elevation(sourceX) - 17}" width="10" height="20" rx="3"/>`;
+    $('light-rays').setAttribute('visibility', state.lamp ? 'visible' : 'hidden');
+    $('side-bright-lines').setAttribute('visibility', state.lamp ? 'visible' : 'hidden');
+    $('overhead-lamp').setAttribute('fill', state.lamp ? '#ffd481' : '#b6cdd1');
+  }
+
+  function draw() {
+    const geometry = fronts();
+    $('water-fronts').innerHTML = geometry;
+    $('screen-fronts').innerHTML = geometry;
+    $('screen-halos').innerHTML = geometry;
+    $('water-view').setAttribute('data-phase', state.phase.toFixed(6));
+    $('generator').innerHTML = state.source === 'point'
+      ? '<circle cx="240" cy="150" r="8" fill="#182e3c" stroke="white" stroke-width="2"/>'
+      : '<path d="M40 12V288" stroke="#182e3c" stroke-width="9" stroke-linecap="round"/>';
+    $('travel-direction').innerHTML = state.source === 'point'
+      ? '<path d="M270 175H325"/><path d="M210 125H155"/>' : '<path d="M70 150H135"/>';
+    $('screen-light').setAttribute('visibility', state.lamp ? 'visible' : 'hidden');
+    $('lamp-off-label').setAttribute('visibility', state.lamp ? 'hidden' : 'visible');
+    drawSideView();
+  }
+
+  function updateControls() {
+    $('play').textContent = state.playing ? 'Pause' : 'Play';
+    $('play').setAttribute('aria-pressed', String(state.playing));
+    $('frequency-value').textContent = state.frequency.toFixed(1) + ' Hz';
+    $('frequency').setAttribute('aria-valuetext', state.frequency.toFixed(1) + ' hertz');
+    $('wavelength').textContent = (wavelength() / 10).toFixed(1) + ' cm';
+    $('water-caption').textContent = state.source === 'point'
+      ? 'Each teal circle joins points at a crest. The pattern travels outwards in every horizontal direction.'
+      : 'Each teal line is a crest parallel to the bar. This view shows waves on one side; waves can travel on both sides of a real bar.';
+    $('status').textContent = `${state.playing ? 'Running' : 'Paused'} · ${state.source === 'point' ? 'point source' : 'straight bar'} · lamp ${state.lamp ? 'on' : 'off'}.`;
+  }
+
+  function tick(now) {
+    frameId = null;
+    if (!state.playing || document.hidden) return;
+    if (lastTime !== null) state.phase = (state.phase + Math.min((now - lastTime) / 1000, 0.1) * state.frequency) % 1;
+    lastTime = now;
+    draw();
+    frameId = requestAnimationFrame(tick);
+  }
+
+  function schedule() {
+    if (frameId !== null) cancelAnimationFrame(frameId);
+    frameId = null;
+    lastTime = null;
+    if (state.playing && !document.hidden) frameId = requestAnimationFrame(tick);
+  }
+
+  $('play').addEventListener('click', () => { state.playing = !state.playing; updateControls(); schedule(); });
+  $('step').addEventListener('click', () => {
+    state.playing = false;
+    state.phase = (state.phase + 1 / 12) % 1;
+    updateControls(); draw(); schedule();
+  });
+  $('reset').addEventListener('click', () => { state.phase = 0.25; updateControls(); draw(); schedule(); });
+  $('frequency').addEventListener('input', event => {
+    state.frequency = Number(event.target.value);
+    updateControls(); draw(); schedule();
+  });
+  document.querySelectorAll('input[name="source"]').forEach(input => input.addEventListener('change', () => {
+    if (!input.checked) return;
+    state.source = input.value;
+    updateControls(); draw();
+  }));
+  $('lamp').addEventListener('change', event => { state.lamp = event.target.checked; updateControls(); draw(); });
+  document.addEventListener('visibilitychange', schedule);
+  let resumeAfterPrint = false;
+  window.addEventListener('beforeprint', () => {
+    resumeAfterPrint = state.playing;
+    state.playing = false; updateControls(); schedule();
+  });
+  window.addEventListener('afterprint', () => {
+    state.playing = resumeAfterPrint; updateControls(); schedule();
+  });
+  $('print').addEventListener('click', () => window.print());
+  updateControls(); draw(); schedule();
+})();
+
+</script>
+</body>
+</html>

@@ -14,6 +14,8 @@ DIFFRACTION_DERIVATION = 'diffraction-width-wavelength'
 DIFFRACTION_LABEL = 'Why opening width and wavelength control diffraction'
 SINGING_GLASS = 'singing-glass'
 SINGING_GLASS_LABEL = 'Why does a glass sing, and why does water lower its pitch?'
+RIPPLE_TANK = 'ripple-tank-animation'
+RIPPLE_TANK_LABEL = 'Animate the ripple tank and its bright crest lines'
 
 
 def build_singing_glass():
@@ -173,7 +175,8 @@ def link_derivations():
     page = path.read_text()
     for slug, label in ((DERIVATION, DERIVATION_LABEL), (DOPPLER_DERIVATION, DOPPLER_LABEL),
                         (DIFFRACTION_DERIVATION, DIFFRACTION_LABEL),
-                        (SINGING_GLASS, SINGING_GLASS_LABEL)):
+                        (SINGING_GLASS, SINGING_GLASS_LABEL),
+                        (RIPPLE_TANK, RIPPLE_TANK_LABEL)):
         marker = f'<p>Further reading: [{label}]({slug}.html).</p>'
         assert page.count(marker) == 1
         page = page.replace(marker, f'<p>Further reading: <a href="{slug}.html">{label}</a>.</p>')
@@ -266,6 +269,8 @@ CHAPTER = Chapter(
 )
 
 if __name__ == '__main__':
+    from build_ripple_tank_animation import build_ripple_tank_animation
+    build_ripple_tank_animation()
     build_singing_glass()
     build_derivation()
     build_doppler_derivation()

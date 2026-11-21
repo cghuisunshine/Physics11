@@ -106,6 +106,8 @@ The time covers the outward and return legs. Distance to the surface = vΔt/2 = 
 ### Reading the ripple tank
 A point source makes circular wavefronts in uniform water. A straight bar that dips uniformly into the water can generate nearly straight fronts. Overhead lighting projects the water pattern onto a screen. In the textbook arrangement, crests concentrate light into bright lines. Those lines locate the crests. They are an optical projection of the water motion.
 
+Further reading: [Animate the ripple tank and its bright crest lines](ripple-tank-animation.html).
+
 ### Investigation 6-1B · Relating speed, wavelength, and frequency
 At fixed depth, vary the generator frequency. Measure a span of several consecutive bright lines, divide by the number of gaps, and calculate v = fλ. Use the same screen scale and account for projection magnification if converting screen lengths to actual tank distances.
 
