@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">A ringing glass mode and its equivalent oscillator</title>
+<desc id="desc">An exaggerated top view shows the circular rim deforming between horizontal and vertical ovals. A separate mass and spring represent the mode’s effective mass and stiffness.</desc>
+<rect width="900" height="360" rx="12" fill="#edf6f4"/>
+<g font-family="system-ui,sans-serif" fill="#182e3c" font-size="20">
+<text x="32" y="40" font-weight="700">Glass rim · top view</text>
+<circle cx="220" cy="179" r="87" fill="none" stroke="#526875" stroke-width="2" stroke-dasharray="7 6"/>
+<ellipse cx="220" cy="179" rx="113" ry="65" fill="none" stroke="#086b72" stroke-width="4"/>
+<ellipse cx="220" cy="179" rx="65" ry="113" fill="none" stroke="#a54d12" stroke-width="4"/>
+<text x="349" y="176" fill="#086b72">Phase A</text>
+<text x="237" y="75" fill="#a54d12">Phase B</text>
+<text x="32" y="328" font-size="18">Dashed circle: equilibrium shape</text>
+<path d="M470 55V297" stroke="#c5d5d8" stroke-width="2"/>
+<text x="505" y="40" font-weight="700">Equivalent one-mode model</text>
+<path d="M518 131V237M518 181H543L555 161L575 201L595 161L615 201L635 161L647 181H671" fill="none" stroke="#086b72" stroke-width="4" stroke-linejoin="round"/>
+<rect x="671" y="143" width="157" height="77" rx="9" fill="white" stroke="#182e3c" stroke-width="3"/>
+<text x="699" y="190">m_eff</text>
+<text x="558" y="131">k_eff</text>
+<path d="M671 245H828M671 239V251M828 239V251" stroke="#526875" stroke-width="2"/>
+<text x="689" y="278" font-size="18">x positive outward</text>
+<text x="505" y="328" font-size="18">Water adds effective inertia.</text>
+</g></svg>

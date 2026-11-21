@@ -12,6 +12,35 @@ DOPPLER_DERIVATION = 'doppler-sonic-boom-derivations'
 DOPPLER_LABEL = 'Deriving the Doppler formulas and the Mach-cone angle'
 DIFFRACTION_DERIVATION = 'diffraction-width-wavelength'
 DIFFRACTION_LABEL = 'Why opening width and wavelength control diffraction'
+SINGING_GLASS = 'singing-glass'
+SINGING_GLASS_LABEL = 'Why does a glass sing, and why does water lower its pitch?'
+
+
+def build_singing_glass():
+    template = (ROOT / f'tools/{SINGING_GLASS}-template.html').read_text()
+    with TemporaryDirectory(prefix='singing-glass-') as directory:
+        page = render_outline(f'{SINGING_GLASS}.md', template, Path(directory))
+    data = base64.b64encode((ROOT / 'assets/wave-motion-notes/singing-glass-mode.svg').read_bytes()).decode()
+    figure = (f'<figure><img src="data:image/svg+xml;base64,{data}" width="900" height="360" '
+              'alt="Top view of a glass rim: two exaggerated oval shapes show opposite phases '
+              'of one ringing mode around the dashed circular equilibrium. A mass and spring '
+              'represent the mode’s effective inertia and stiffness, not a literal spring in the glass.">'
+              '<figcaption>One mode can be described by a single deformation coordinate. '
+              'The rim’s deformation is exaggerated; the mass–spring drawing is an equivalent '
+              'model, not the glass’s physical construction.</figcaption></figure>')
+    marker = '<p>GLASS_MODE_FIGURE</p>'
+    assert page.count(marker) == 1
+    page = page.replace(marker, figure)
+    for label, url in (
+        ('UNSW Music Acoustics FAQ', 'https://newt.phys.unsw.edu.au/jw/musFAQ.html'),
+        ('Vibrational modes of partly filled wine glasses',
+         'https://phys.unsw.edu.au/music/people/publications/Jundtetal2006.pdf'),
+    ):
+        marker = f'[{label}]({url})'
+        assert page.count(marker) == 1
+        page = page.replace(marker, f'<a href="{url}">{label}</a>')
+    (ROOT / f'{SINGING_GLASS}.html').write_text(page)
+    print(f'Built {SINGING_GLASS}.html: optional glass vibration explanation.')
 
 
 def build_derivation():
@@ -143,7 +172,8 @@ def link_derivations():
     path = ROOT / 'wave-motion-notes.html'
     page = path.read_text()
     for slug, label in ((DERIVATION, DERIVATION_LABEL), (DOPPLER_DERIVATION, DOPPLER_LABEL),
-                        (DIFFRACTION_DERIVATION, DIFFRACTION_LABEL)):
+                        (DIFFRACTION_DERIVATION, DIFFRACTION_LABEL),
+                        (SINGING_GLASS, SINGING_GLASS_LABEL)):
         marker = f'<p>Further reading: [{label}]({slug}.html).</p>'
         assert page.count(marker) == 1
         page = page.replace(marker, f'<p>Further reading: <a href="{slug}.html">{label}</a>.</p>')
@@ -236,6 +266,7 @@ CHAPTER = Chapter(
 )
 
 if __name__ == '__main__':
+    build_singing_glass()
     build_derivation()
     build_doppler_derivation()
     build_diffraction_derivation()

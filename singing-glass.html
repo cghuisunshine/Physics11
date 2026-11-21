@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Why an empty glass rings, why water lowers its pitch, and how an effective mass–spring model explains the trend. Includes an optional calculus derivation.">
+<title>Why does a glass sing? | Physics 11</title>
+<style>
+:root{--ink:#182e3c;--muted:#526875;--paper:#faf9f5;--line:#dce4e7;--accent:#086b72;--soft:#edf6f4}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--accent);text-underline-offset:4px}a:focus-visible,button:focus-visible{outline:3px solid #087cff;outline-offset:4px}.skip{position:absolute;top:-100px;left:16px;background:white;padding:10px}.skip:focus{top:10px}header,main,footer{max-width:960px;margin:auto;padding:24px 30px}header{border-bottom:1px solid var(--line)}nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center}.eyebrow{color:var(--accent);text-transform:uppercase;font-size:14px;letter-spacing:.14em;font-weight:750;margin-top:36px}h1{font-size:clamp(32px,6vw,54px);line-height:1.15;letter-spacing:-.04em;margin:14px 0 20px}h2{font-size:25px;line-height:1.3;margin-top:0}section{background:white;border:1px solid var(--line);border-radius:14px;padding:30px 36px;margin:24px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--soft);border-left:3px solid var(--accent);padding:18px 20px;font-size:15px;line-height:1.8;border-radius:0 8px 8px 0}code{font-family:Consolas,monospace}figure{margin:24px 0}figure img{display:block;width:100%;height:auto}figcaption,footer{font-size:14px;color:var(--muted)}button{font:inherit;font-size:14px;background:white;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer}button:hover{background:var(--soft)}footer{border-top:1px solid var(--line)}li{margin:8px 0}
+@media(max-width:600px){header,main,footer{padding:20px 16px}section{padding:24px 18px}pre{font-size:14px;padding:14px 12px}}
+@media print{body{background:white;font-size:11pt}header,.skip,button{display:none}main,footer{max-width:none;padding:0}h1{font-size:26pt}section{border:0;padding:14px 0;margin:0}h2{break-after:avoid}figure,pre{break-inside:avoid}a{color:inherit}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to explanation</a>
+<header><nav aria-label="Page navigation"><a href="wave-motion-notes.html#topic-1">Section 1 · A singing glass</a><a href="content.html">All Physics 11 notes</a><button type="button" id="print">Print / Save PDF</button></nav></header>
+<main id="main">
+<p class="eyebrow">Physics 11 · Optional further reading</p>
+<h1>Why does a glass sing?</h1>
+<p>Vibrating walls, water, and the mass–spring model behind Warm-up 6.1.</p>
+    <section>
+      <h2>1 Start with the sound</h2>
+      <p>This is <strong>optional further reading for Warm-up 6.1 in Section 1 of Wave Motion Notes</strong>. You can complete the Physics 11 notes without this page. Prerequisites for the model are Newton’s second law, Hooke’s law, frequency, and algebra. Section 3 additionally uses second derivatives and the differentiation of cosine; it is a calculus extension beyond Physics 11.</p>
+      <p><strong>An empty glass can ring.</strong> Its elastic walls deform and vibrate, pushing and pulling on nearby air. The resulting pressure disturbances travel to your ear as sound. The glass vibrates about its equilibrium shape; the air transmits the sound away.</p>
+      <p>Adding water generally lowers the ringing frequency and therefore the pitch, because the moving walls also set some water in motion. Compare the same glass at different fill levels, with the same holding and rubbing technique.</p>
+      <p>The short explanation above develops the notes’ worked answer. The mathematical model below is an additional idealization, rather than a derivation supplied by the original warm-up.</p>
+      <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iMzYwIiB2aWV3Qm94PSIwIDAgOTAwIDM2MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9InRpdGxlIGRlc2MiPgo8dGl0bGUgaWQ9InRpdGxlIj5BIHJpbmdpbmcgZ2xhc3MgbW9kZSBhbmQgaXRzIGVxdWl2YWxlbnQgb3NjaWxsYXRvcjwvdGl0bGU+CjxkZXNjIGlkPSJkZXNjIj5BbiBleGFnZ2VyYXRlZCB0b3AgdmlldyBzaG93cyB0aGUgY2lyY3VsYXIgcmltIGRlZm9ybWluZyBiZXR3ZWVuIGhvcml6b250YWwgYW5kIHZlcnRpY2FsIG92YWxzLiBBIHNlcGFyYXRlIG1hc3MgYW5kIHNwcmluZyByZXByZXNlbnQgdGhlIG1vZGXigJlzIGVmZmVjdGl2ZSBtYXNzIGFuZCBzdGlmZm5lc3MuPC9kZXNjPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjM2MCIgcng9IjEyIiBmaWxsPSIjZWRmNmY0Ii8+CjxnIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZmlsbD0iIzE4MmUzYyIgZm9udC1zaXplPSIyMCI+Cjx0ZXh0IHg9IjMyIiB5PSI0MCIgZm9udC13ZWlnaHQ9IjcwMCI+R2xhc3MgcmltIMK3IHRvcCB2aWV3PC90ZXh0Pgo8Y2lyY2xlIGN4PSIyMjAiIGN5PSIxNzkiIHI9Ijg3IiBmaWxsPSJub25lIiBzdHJva2U9IiM1MjY4NzUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNyA2Ii8+CjxlbGxpcHNlIGN4PSIyMjAiIGN5PSIxNzkiIHJ4PSIxMTMiIHJ5PSI2NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjQiLz4KPGVsbGlwc2UgY3g9IjIyMCIgY3k9IjE3OSIgcng9IjY1IiByeT0iMTEzIiBmaWxsPSJub25lIiBzdHJva2U9IiNhNTRkMTIiIHN0cm9rZS13aWR0aD0iNCIvPgo8dGV4dCB4PSIzNDkiIHk9IjE3NiIgZmlsbD0iIzA4NmI3MiI+UGhhc2UgQTwvdGV4dD4KPHRleHQgeD0iMjM3IiB5PSI3NSIgZmlsbD0iI2E1NGQxMiI+UGhhc2UgQjwvdGV4dD4KPHRleHQgeD0iMzIiIHk9IjMyOCIgZm9udC1zaXplPSIxOCI+RGFzaGVkIGNpcmNsZTogZXF1aWxpYnJpdW0gc2hhcGU8L3RleHQ+CjxwYXRoIGQ9Ik00NzAgNTVWMjk3IiBzdHJva2U9IiNjNWQ1ZDgiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSI1MDUiIHk9IjQwIiBmb250LXdlaWdodD0iNzAwIj5FcXVpdmFsZW50IG9uZS1tb2RlIG1vZGVsPC90ZXh0Pgo8cGF0aCBkPSJNNTE4IDEzMVYyMzdNNTE4IDE4MUg1NDNMNTU1IDE2MUw1NzUgMjAxTDU5NSAxNjFMNjE1IDIwMUw2MzUgMTYxTDY0NyAxODFINjcxIiBmaWxsPSJub25lIiBzdHJva2U9IiMwODZiNzIiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cmVjdCB4PSI2NzEiIHk9IjE0MyIgd2lkdGg9IjE1NyIgaGVpZ2h0PSI3NyIgcng9IjkiIGZpbGw9IndoaXRlIiBzdHJva2U9IiMxODJlM2MiIHN0cm9rZS13aWR0aD0iMyIvPgo8dGV4dCB4PSI2OTkiIHk9IjE5MCI+bV9lZmY8L3RleHQ+Cjx0ZXh0IHg9IjU1OCIgeT0iMTMxIj5rX2VmZjwvdGV4dD4KPHBhdGggZD0iTTY3MSAyNDVIODI4TTY3MSAyMzlWMjUxTTgyOCAyMzlWMjUxIiBzdHJva2U9IiM1MjY4NzUiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSI2ODkiIHk9IjI3OCIgZm9udC1zaXplPSIxOCI+eCBwb3NpdGl2ZSBvdXR3YXJkPC90ZXh0Pgo8dGV4dCB4PSI1MDUiIHk9IjMyOCIgZm9udC1zaXplPSIxOCI+V2F0ZXIgYWRkcyBlZmZlY3RpdmUgaW5lcnRpYS48L3RleHQ+CjwvZz48L3N2Zz4K" width="900" height="360" alt="Top view of a glass rim: two exaggerated oval shapes show opposite phases of one ringing mode around the dashed circular equilibrium. A mass and spring represent the mode’s effective inertia and stiffness, not a literal spring in the glass."><figcaption>One mode can be described by a single deformation coordinate. The rim’s deformation is exaggerated; the mass–spring drawing is an equivalent model, not the glass’s physical construction.</figcaption></figure>
+    </section>
+
+    <section>
+      <h2>2 Model one vibration as a mass and a spring</h2>
+      <p>A real glass has many possible patterns of vibration, called <strong>modes</strong>. Focus on one dominant ringing mode at small amplitude. Its pattern is fixed in this approximation: a single coordinate x(t) measures its deformation from equilibrium, in metres. Choose x positive when a selected point on the rim moves outward; the restoring force then acts in the negative direction. Other points need not move in the same direction at that instant.</p>
+      <p>The system is the vibrating glass together with the water participating in this mode. Represent its elastic resistance and inertia by two effective quantities:</p>
+      <ul>
+        <li><strong>k_eff</strong>, effective stiffness, in N/m: resistance to deformation in the chosen mode.</li>
+        <li><strong>m_eff</strong>, effective mass, in kg: inertia participating in that same deformation. It is not necessarily the total mass on a scale.</li>
+      </ul>
+      <p>For small deformations, approximate the restoring force by F_restore = −k_eff x, like Hooke’s law. Ignore damping and the finger’s driving force initially. The model’s undamped natural frequency is:</p>
+      <pre><code>f₀ = (1 / 2π) √(k_eff / m_eff)</code></pre>
+      <p>Here f₀ is measured in hertz (Hz = cycles/s). A stiffer system oscillates faster; a system with more inertia oscillates more slowly. For weak damping, a sustained ringing tone is usually close to this natural frequency.</p>
+    </section>
+
+    <section>
+      <h2>3 Optional calculus: why the frequency formula works</h2>
+      <p><strong>Calculus extension.</strong> Newton’s second law says that the restoring force produces acceleration. With x measured from equilibrium, the linearized equation of motion is:</p>
+      <pre><code>m_eff d²x/dt² = −k_eff x
+m_eff d²x/dt² + k_eff x = 0</code></pre>
+      <p>Try a sinusoidal oscillation, x(t) = A cos(ωt), starting at maximum positive deformation. A is amplitude in metres, t is time in seconds, and ω is angular frequency in rad/s. Differentiating twice gives:</p>
+      <pre><code>dx/dt = −Aω sin(ωt)
+d²x/dt² = −Aω² cos(ωt) = −ω²x</code></pre>
+      <p>Substitute into the equation of motion:</p>
+      <pre><code>−m_eff ω²x + k_eff x = 0
+(k_eff − m_eff ω²)x(t) = 0</code></pre>
+      <p>For a nonzero oscillation, x(t) is not identically zero. Therefore its constant coefficient must vanish; we do not divide by x at an instant when x = 0.</p>
+      <pre><code>k_eff − m_eff ω² = 0
+ω² = k_eff / m_eff
+ω = √(k_eff / m_eff)</code></pre>
+      <p>One cycle corresponds to 2π radians. Since ω = 2πf₀:</p>
+      <pre><code>f₀ = ω / (2π) = (1 / 2π) √(k_eff / m_eff)</code></pre>
+      <p><strong>Unit check:</strong> (N/m)/kg = s⁻². Taking its square root gives s⁻¹, as required for a frequency. The factor 2π converts angular frequency to cycles per second.</p>
+    </section>
+
+    <section>
+      <h2>4 Why adding water lowers the pitch</h2>
+      <h3>Notes</h3>
+      <p>Moving some water along with the walls increases the mode’s inertia. A simple added-mass approximation is:</p>
+      <pre><code>m_eff = m_g + αm_w</code></pre>
+      <ul>
+        <li><strong>m_g</strong> is the effective mass of the empty-glass mode, in kg, for the chosen coordinate x.</li>
+        <li><strong>m_w</strong> is the water’s total mass, in kg.</li>
+        <li><strong>α</strong> is a dimensionless participation factor: αm_w is the effective added mass due to the water’s motion. It is not simply a measured fraction of water moving rigidly with the glass.</li>
+      </ul>
+      <p>Assume that the effective stiffness and glass-mode description stay approximately unchanged. Apply the same frequency formula to the empty and water-filled glass, then divide:</p>
+      <pre><code>f_empty = (1 / 2π) √(k_eff / m_g)
+f_water ≈ (1 / 2π) √[k_eff / (m_g + αm_w)]
+
+f_water / f_empty ≈ √[m_g / (m_g + αm_w)]</code></pre>
+      <p>When αm_w is positive, the denominator inside the square root is larger than the numerator, so the ratio is below 1. The oscillation takes longer to complete each cycle, giving a lower frequency and pitch.</p>
+      <p><strong>Limiting check:</strong> if the effective added mass approaches zero, the frequency ratio approaches 1. The empty-glass result is recovered.</p>
+      <h3>Example · An effective mass that doubles</h3>
+      <p>Suppose the participating water adds effective mass equal to m_g, so αm_w = m_g. This is a hypothetical model condition, not a claim that equal total masses of water and glass will produce this result.</p>
+      <pre><code>f_water / f_empty ≈ √[m_g / (2m_g)]
+                     = 1/√2 ≈ 0.707
+
+For f_empty = 800 Hz:
+f_water ≈ 800/√2 Hz ≈ 566 Hz</code></pre>
+      <p>Doubling effective mass lowers the frequency to about 71% of its original value. It does not halve the frequency.</p>
+    </section>
+
+    <section>
+      <h2>5 Why rubbing keeps it ringing</h2>
+      <p>A tapped glass gradually becomes quiet because vibration energy leaves through sound radiation, internal losses, and interactions with the water and support. The <a href="https://newt.phys.unsw.edu.au/jw/musFAQ.html">UNSW Music Acoustics FAQ</a> explains how finger friction can sustain a glass’s vibration through a stick–slip process, similar to a violin bow.</p>
+      <p>With suitable moisture, pressure, and motion, the moving finger briefly grips and then slips over the rim. Energy from your hand feeds the vibration. The ringing frequency is governed mainly by the glass–water system; it is not the number of times your finger circles the rim each second.</p>
+      <p>A schematic driven, damped version of the model is:</p>
+      <pre><code>m_eff d²x/dt² + b dx/dt + k_eff x = F_rub(t)</code></pre>
+      <p>Here b is a positive damping coefficient in kg/s. The damping force is −b dx/dt: it opposes motion. F_rub(t), measured in newtons, represents the finger’s effective driving force on this mode. Actual friction depends on the finger–glass motion, so this equation is a simplified description rather than a prescribed sinusoidal driving mechanism.</p>
+      <p>At a steady amplitude, the finger supplies as much energy per cycle as the system loses. When you stop rubbing, that supply stops and the sound fades. Stronger damping can also shift the observed frequency away from the undamped model value.</p>
+    </section>
+
+    <section>
+      <h2>6 What the model can and cannot predict</h2>
+      <p>The added-mass model explains the <strong>usual downward trend</strong> in frequency when water is added. A real glass’s shape, wall thickness, water depth, holding position, and mode pattern affect the result. α can vary with fill level; stiffness and the mode pattern need not stay fixed. Water mass alone therefore does not determine an exact ringing frequency.</p>
+      <p>The main oscillator in this activity is the glass wall coupled to the liquid. Do not use an air-column length formula to predict its tone: blowing across a bottle’s opening excites a different kind of oscillator.</p>
+      <p>For a fuller experimental and theoretical treatment of the coupled glass–liquid vibration, see Jundt and colleagues’ <a href="https://phys.unsw.edu.au/music/people/publications/Jundtetal2006.pdf">Vibrational modes of partly filled wine glasses</a>. The schematic model and numerical example here are AI-authored explanations, not measured results or publisher-verified worked answers.</p>
+    </section>
+<p><a href="wave-motion-notes.html#topic-1">Return to Section 1 · A singing glass</a></p>
+</main>
+<footer>Explanations, diagrams, and worked examples are AI-authored. This optional page supplements the course notes and works offline.</footer>
+<script>document.getElementById('print').addEventListener('click',()=>window.print());</script>
+</body>
+</html>

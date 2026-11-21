@@ -17,6 +17,8 @@ A damp finger rubbed around a glass rim can make it ring. Compare the pitch at t
 
 A rubbed empty glass can ring because its walls vibrate and disturb the air. Adding water generally lowers its resonant frequency and pitch because some water moves with the vibrating glass. Use the same glass and rubbing technique in each trial.
 
+Further reading: [Why does a glass sing, and why does water lower its pitch?](singing-glass.html).
+
 ### Chapter scope
 These notes follow BC Science Physics 11 Chapter 6, printed pp. 173–198 (PDF pp. 178–203). Section 6.1 develops the language and equations for waves. Section 6.2 explores what happens when waves encounter boundaries, openings, other waves, or moving observers.
 
