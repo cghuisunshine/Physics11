@@ -234,6 +234,31 @@ def embed_reflection_station_figures():
     path.write_text(page)
 
 
+def embed_refraction_depth_figure():
+    """Preserve the supplied perspective image and clarify its angle annotation."""
+    path = ROOT / 'wave-motion-notes.html'
+    page = path.read_text()
+    marker = '<p>REFRACTION_DEPTH_FIGURE</p>'
+    assert page.count(marker) == 1
+    data = base64.b64encode((ROOT / 'assets/wave-motion-notes/refraction-deep-shallow-user.png').read_bytes()).decode()
+    alt = ('Perspective view of a ripple tank with deep water on the left and a raised '
+           'block making shallow water on the right. The incoming teal ray bends toward '
+           'the horizontal dashed normal as it enters the shallow region. The vertical '
+           'dashed line marks the depth boundary. The supplied teal arc is drawn to '
+           'the boundary rather than to the normal.')
+    caption = ('The raised block makes the water shallower on the right. '
+               'Horizontal dashed line: normal; vertical dashed line: depth boundary. '
+               'Measure both ray angles from the horizontal normal. The teal arc in '
+               'this supplied illustration is drawn to the boundary, so it does not '
+               'show the angle of incidence. Ray directions and depths are schematic; '
+               'use the top-view diagram above for the numerical angles.')
+    figure = (f'<figure class="diagram refraction-depth-figure">'
+              f'<img src="data:image/png;base64,{data}" width="1752" height="897" '
+              f'alt="{escape(alt, quote=True)}" loading="lazy">'
+              f'<figcaption>{escape(caption)}</figcaption></figure>')
+    path.write_text(page.replace(marker, figure))
+
+
 def link_derivations():
     # The outline generator renders inline Markdown links as plain text.
     # Resolve this page's authored link after building the shared notes layout.
@@ -346,4 +371,5 @@ if __name__ == '__main__':
     build_study_pages(CHAPTER)
     embed_ripple_measurement_figures()
     embed_reflection_station_figures()
+    embed_refraction_depth_figure()
     link_derivations()

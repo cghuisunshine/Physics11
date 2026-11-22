@@ -182,7 +182,9 @@ At a stationary boundary, the source fixes the **frequency** on both sides. A ch
 ```
 v₂/v₁ = λ₂/λ₁              f₂ = f₁
 ```
-In the diagram, the wave enters slower, shallow water: the crests move closer together and the ray bends toward the dashed normal. Each crest line is perpendicular to its ray. Measure wavelength **perpendicular to the crests**, along the travel direction. The frequency stays the same; the speed and wavelength values match the example below. Reversing the travel direction makes the ray bend away from the normal as it enters faster, deep water.
+In the top-view diagram, the wave enters slower, shallow water: the crests move closer together and the ray bends toward the dashed normal. Each crest line is perpendicular to its ray. Measure wavelength **perpendicular to the crests**, along the travel direction. The frequency stays the same; the speed and wavelength values match the example below. Reversing the travel direction makes the ray bend away from the normal as it enters faster, deep water.
+
+REFRACTION_DEPTH_FIGURE
 
 ### Investigation 6-2 · Station 4
 Measure crest spacing in deep and shallow water. Repeat with the boundary turned so the incoming fronts meet it obliquely. Suppose the wavelength drops from 4.0 cm to 2.5 cm at 5.0 Hz. Find both speeds and describe the turn.
