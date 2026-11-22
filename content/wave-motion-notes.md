@@ -214,6 +214,8 @@ Keep the water-wave wavelength at 2.0 cm. Compare a 2.0 cm opening with a 10 cm 
 
 The **2.0 cm opening** gives wider spreading because its width is comparable to λ. Behind a large obstacle there is a clearer shadow, with bending around the edges. A very small obstacle produces little persistent shadow because waves spread around it.
 
+DIFFRACTION_OPENINGS_OBSTACLES_FIGURE
+
 ## 10 Superposition and interference
 ### Add signed displacements
 When waves overlap in a linear medium, add their instantaneous displacements. **Constructive interference** reinforces a displacement. **Destructive interference** reduces it. Complete cancellation requires opposite displacements of equal size. In the ideal model each pulse continues after the overlap.
@@ -227,9 +229,17 @@ Two sources are **coherent** when their phase difference stays fixed. For cohere
 ### Investigation 6-2 · Station 6
 Send two equal pulses along a spring, first with the same sign and then with opposite signs. In the ripple tank, compare points with path differences of 1.0λ and 1.5λ from two in-phase sources.
 
+Use the picture below to sketch the spring's displacement at exact overlap, then decide how the waves combine at each marked water point P. The labelled water paths are illustrative examples with the required differences; both sources oscillate in phase. Complete cancellation also requires equal amplitudes at P.
+
+INTERFERENCE_STATION_QUESTION_FIGURE
+
 **Worked answer**
 
 Equal upward pulses of height A give **2A** at exact overlap. An upward and equal downward pulse give **zero** during exact overlap. In the tank, **1.0λ** gives constructive interference. **1.5λ** gives destructive interference because the extra travel is one and a half cycles.
+
+Complete cancellation in the water occurs only if the two arriving waves have equal amplitudes. Otherwise destructive interference reduces the amplitude without making it zero. The pulses on the spring continue after the overlap.
+
+INTERFERENCE_STATION_ANSWER_FIGURE
 
 ## 11 Young’s double slit
 ### From ripple patterns to light

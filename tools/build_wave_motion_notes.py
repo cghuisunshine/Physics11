@@ -259,6 +259,60 @@ def embed_refraction_depth_figure():
     path.write_text(page.replace(marker, figure))
 
 
+def embed_diffraction_openings_obstacles():
+    path = ROOT / 'wave-motion-notes.html'
+    page = path.read_text()
+    marker = '<p>DIFFRACTION_OPENINGS_OBSTACLES_FIGURE</p>'
+    assert page.count(marker) == 1
+    data = base64.b64encode((ROOT / 'assets/wave-motion-notes/diffraction-openings-obstacles.svg').read_bytes()).decode()
+    alt = ('Four top views at wavelength 2.0 cm and the same scale. A 2.0 cm '
+           'opening makes broadly curved outgoing crests. A 10 cm opening gives '
+           'more forward travel with curved edge fronts. A large obstacle has a '
+           'weaker-wave shadow with waves bending into it at both edges. Behind '
+           'a very small obstacle, the wave pattern fills in with little lasting shadow.')
+    caption = ('Compare all four cases at the same wavelength and scale. '
+               'Crest lines illustrate the spreading; the shaded shadow behind the large '
+               'obstacle is a region of weaker waves, not a guarantee of zero disturbance. '
+               'Obstacle widths are illustrative; reflected waves are omitted.')
+    figure = (f'<figure class="diagram diffraction-openings-obstacles">'
+              f'<img src="data:image/svg+xml;base64,{data}" width="1800" height="1620" '
+              f'alt="{escape(alt, quote=True)}" loading="lazy">'
+              f'<figcaption>{escape(caption)}</figcaption></figure>')
+    path.write_text(page.replace(marker, figure))
+
+
+def embed_interference_station_figures():
+    path = ROOT / 'wave-motion-notes.html'
+    page = path.read_text()
+    for kind, alt, caption in (
+        ('question',
+         'Four interference tasks. Two equal upward pulses approach each other; then '
+         'an upward and downward pulse approach. Blank plots ask for the resultant '
+         'at exact overlap. Two in-phase water sources send waves to P along '
+         '3λ and 4λ paths in C, or 3λ and 4.5λ paths in D. Decide whether arrivals reinforce or cancel.',
+         'Sketch the resultant at exact overlap in A and B. In C and D, compare '
+         'the labelled path lengths to decide the arrival phase at P. The source '
+         'separation and distance scale are the same in both lower drawings.'),
+        ('answer',
+         'Equal upward pulses add to plus 2A at exact overlap; equal opposite pulses '
+         'sum to zero. Paths of 3λ and 4λ differ by one wavelength, giving in-phase '
+         'arrivals and constructive interference. Paths of 3λ and 4.5λ differ by '
+         'one and a half wavelengths, giving opposite-phase arrivals and destructive interference.',
+         'The small arrival graphs use the same time scale and show equal amplitudes '
+         'for comparison. Exact cancellation at P requires equal arriving amplitudes. '
+         'The spring pulses continue after overlapping.'),
+    ):
+        data = base64.b64encode((ROOT / f'assets/wave-motion-notes/interference-station-{kind}.svg').read_bytes()).decode()
+        marker = f'<p>INTERFERENCE_STATION_{kind.upper()}_FIGURE</p>'
+        assert page.count(marker) == 1
+        figure = (f'<figure class="diagram interference-station-{kind}">'
+                  f'<img src="data:image/svg+xml;base64,{data}" width="1800" height="1740" '
+                  f'alt="{escape(alt, quote=True)}" loading="lazy">'
+                  f'<figcaption>{escape(caption)}</figcaption></figure>')
+        page = page.replace(marker, figure)
+    path.write_text(page)
+
+
 def link_derivations():
     # The outline generator renders inline Markdown links as plain text.
     # Resolve this page's authored link after building the shared notes layout.
@@ -360,6 +414,10 @@ CHAPTER = Chapter(
 )
 
 if __name__ == '__main__':
+    from interference_station_figures import build_interference_station_figures
+    build_interference_station_figures()
+    from diffraction_openings_obstacles import build_diffraction_openings_obstacles
+    build_diffraction_openings_obstacles()
     from reflection_station_figures import build_reflection_station_figures
     build_reflection_station_figures()
     from build_ripple_tank_animation import build_ripple_tank_animation
@@ -372,4 +430,6 @@ if __name__ == '__main__':
     embed_ripple_measurement_figures()
     embed_reflection_station_figures()
     embed_refraction_depth_figure()
+    embed_diffraction_openings_obstacles()
+    embed_interference_station_figures()
     link_derivations()
