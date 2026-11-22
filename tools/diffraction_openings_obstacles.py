@@ -84,6 +84,8 @@ def build_diffraction_openings_obstacles():
     figure.subplots_adjust(left=.05, right=.98, top=.875, bottom=.12, wspace=.16, hspace=.34)
     output = ROOT / 'assets/wave-motion-notes/diffraction-openings-obstacles'
     figure.savefig(output.with_suffix('.svg'), metadata={'Date': None, 'Creator': 'Physics11 diffraction_openings_obstacles.py'})
+    svg = output.with_suffix('.svg')
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines()) + '\n')
     figure.savefig(output.with_suffix('.png'), dpi=150)
     plt.close(figure)
     print('Built diffraction-openings-obstacles.svg and .png.')

@@ -114,6 +114,8 @@ def build_interference_station_figures():
         kind = 'answer' if answer else 'question'
         output = ROOT / f'assets/wave-motion-notes/interference-station-{kind}'
         fig.savefig(output.with_suffix('.svg'), metadata={'Date': None, 'Creator': 'Physics11 interference_station_figures.py'})
+        svg = output.with_suffix('.svg')
+        svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines()) + '\n')
         fig.savefig(output.with_suffix('.png'), dpi=150)
         plt.close(fig)
     print('Built interference-station question and answer SVG/PNG pictures.')
