@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="484" viewBox="0 826 680 484" role="img" aria-labelledby="title desc">
+  <title id="title">Two reflections in a periscope</title>
+  <desc id="desc">A light ray enters from the left, turns downward at an upper mirror, then turns right at a lower mirror toward the eye. Both mirror faces are at forty-five degrees to the tube. Dashed lines are normals.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+    <g id="image"><circle r="12" fill="#e5f4f4" stroke="#086b72" stroke-width="3" stroke-dasharray="5 3"/></g>
+    <g id="object"><circle r="12" fill="#b24c20" stroke="#fff" stroke-width="2"/></g>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#203440;font-size:19px}
+      .title{font-size:24px;font-weight:700;fill:#075d64}
+      .small{font-size:18px}
+      .image-label{fill:#086b72;font-weight:700}
+      .panel{fill:#fff;stroke:#cadbdd;stroke-width:2}
+      .mirror{stroke:#086b72;stroke-width:7;stroke-linecap:round}
+      .normal{stroke:#637981;stroke-width:2;stroke-dasharray:6 5}
+    </style>
+  </defs>
+  <rect class="panel" x="12" y="838" width="656" height="460" rx="14"/>
+  <text class="title" x="32" y="877">C · Periscope (side view)</text>
+  <text x="32" y="907">The two mirror faces are parallel, each at 45° to the tube.</text>
+  <path d="M80 965H385V1115H590V1185H295V1035H80Z" fill="#edf7f7"/>
+  <path d="M80 965H385V1115H590 M590 1185H295V1035H80" fill="none" stroke="#a8bfc3" stroke-width="3"/>
+  <path d="M300 960 380 1040 M300 1110 380 1190" class="mirror"/>
+  <path d="M298 1042 382 958 M298 1192 382 1108" class="normal"/>
+  <path d="M90 1000H340V1150H580" fill="none" stroke="#b24c20" stroke-width="4" stroke-linejoin="round"/>
+  <g fill="none" stroke="#b24c20" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M170 1000H230"/>
+    <path d="M340 1050V1095"/>
+    <path d="M460 1150H520"/>
+  </g>
+  <text x="88" y="950">Light in</text>
+  <text x="440" y="1002">Upper mirror</text>
+  <path d="M429 1008 378 1028" fill="none" stroke="#637981" stroke-width="1.5"/>
+  <text x="134" y="1132">Lower mirror</text>
+  <path d="M254 1137 307 1131" fill="none" stroke="#637981" stroke-width="1.5"/>
+  <ellipse cx="612" cy="1150" rx="22" ry="13" fill="#fff" stroke="#203440" stroke-width="2"/>
+  <circle cx="612" cy="1150" r="7" fill="#203440"/>
+  <text x="588" y="1190">Eye</text>
+  <text class="small" x="32" y="1230">Two 90° turns: the outgoing ray is parallel to the incoming ray.</text>
+  <text class="small" x="32" y="1257">Dashed lines are normals; at each mirror, θᵢ = θᵣ = 45°.</text>
+  <text class="small" x="32" y="1284">Image positions and light path are schematic.</text>
+</svg>

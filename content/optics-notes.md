@@ -60,6 +60,8 @@ The picture calls the large-hole image “out of focus”; here the blur comes f
 ### Investigation 7-1B · Two mirrors and a periscope
 Two angled mirrors can reflect each other’s images. With a centred object and an angle that divides 360° evenly, the ideal number of images is 360°/θ − 1. The object is counted separately. Parallel facing mirrors give a chain of repeated reflections. A periscope instead uses two parallel reflective faces at 45° to the tube to turn the light twice.
 
+In diagram A, the solid dot is the object and the five dashed circles are its **virtual images**, not extra objects. In B, repeated images appear behind both mirrors and become fainter in real mirrors. In C, follow the arrows: each reflection turns the light through 90°, so the outgoing ray is parallel to the incoming ray. The dashed lines are normals; the angles of incidence and reflection are both 45° at each mirror.
+
 ### Example · Mirror height and image count
 A student is 1.76 m tall. What is the minimum correctly positioned plane-mirror height to see their full body? How many images does a symmetric 60° mirror pair produce?
 

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="354" viewBox="0 478 680 354" role="img" aria-labelledby="title desc">
+  <title id="title">Repeated images between parallel mirrors</title>
+  <desc id="desc">Two parallel facing mirrors produce repeated virtual images behind both mirrors. More distant images are shown fainter to represent light lost in real reflections.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+    <g id="image"><circle r="12" fill="#e5f4f4" stroke="#086b72" stroke-width="3" stroke-dasharray="5 3"/></g>
+    <g id="object"><circle r="12" fill="#b24c20" stroke="#fff" stroke-width="2"/></g>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#203440;font-size:19px}
+      .title{font-size:24px;font-weight:700;fill:#075d64}
+      .small{font-size:18px}
+      .image-label{fill:#086b72;font-weight:700}
+      .panel{fill:#fff;stroke:#cadbdd;stroke-width:2}
+      .mirror{stroke:#086b72;stroke-width:7;stroke-linecap:round}
+      .normal{stroke:#637981;stroke-width:2;stroke-dasharray:6 5}
+    </style>
+  </defs>
+  <rect class="panel" x="12" y="490" width="656" height="330" rx="14"/>
+  <text class="title" x="32" y="528">B · Parallel facing mirrors (top view)</text>
+  <text x="32" y="558">Each mirror reflects images formed by the other.</text>
+  <rect x="290" y="595" width="100" height="110" fill="#edf7f7"/>
+  <path d="M290 593V708 M390 593V708" class="mirror"/>
+  <text class="small" x="218" y="585">Mirror 1</text>
+  <text class="small" x="401" y="585">Mirror 2</text>
+  <path d="M28 650H652" fill="none" stroke="#cadbdd" stroke-width="2" stroke-dasharray="3 6"/>
+  <use href="#object" x="340" y="650"/>
+  <text x="332" y="688">O</text>
+  <use href="#image" x="240" y="650"/>
+  <use href="#image" x="140" y="650" opacity=".7"/>
+  <use href="#image" x="40" y="650" opacity=".45"/>
+  <use href="#image" x="440" y="650"/>
+  <use href="#image" x="540" y="650" opacity=".7"/>
+  <use href="#image" x="640" y="650" opacity=".45"/>
+  <text x="31" y="731">Virtual images</text>
+  <text x="481" y="731">Virtual images</text>
+  <text class="small" x="32" y="772">The ideal sequence continues behind both mirrors.</text>
+  <text class="small" x="32" y="798">Real mirrors lose some light at every reflection.</text>
+</svg>

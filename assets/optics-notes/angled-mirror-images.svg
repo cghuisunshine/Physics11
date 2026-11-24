@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="484" viewBox="0 0 680 484" role="img" aria-labelledby="title desc">
+  <title id="title">Five images between mirrors at sixty degrees</title>
+  <desc id="desc">A point object centred between two mirrors at sixty degrees has five virtual images. The object and images are equally far from the vertex.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+    <g id="image"><circle r="12" fill="#e5f4f4" stroke="#086b72" stroke-width="3" stroke-dasharray="5 3"/></g>
+    <g id="object"><circle r="12" fill="#b24c20" stroke="#fff" stroke-width="2"/></g>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#203440;font-size:19px}
+      .title{font-size:24px;font-weight:700;fill:#075d64}
+      .small{font-size:18px}
+      .image-label{fill:#086b72;font-weight:700}
+      .panel{fill:#fff;stroke:#cadbdd;stroke-width:2}
+      .mirror{stroke:#086b72;stroke-width:7;stroke-linecap:round}
+      .normal{stroke:#637981;stroke-width:2;stroke-dasharray:6 5}
+    </style>
+  </defs>
+  <rect class="panel" x="12" y="12" width="656" height="460" rx="14"/>
+  <text class="title" x="32" y="49">A · Angled mirrors (top view)</text>
+  <text x="32" y="79">The object is halfway between the mirror faces.</text>
+  <circle cx="320" cy="265" r="128" fill="none" stroke="#d3e1e3" stroke-width="2" stroke-dasharray="4 6"/>
+  <path d="M320 265 524 265 M320 265 422 88" class="mirror"/>
+  <text x="456" y="292">Mirror 1</text>
+  <text x="436" y="112">Mirror 2</text>
+  <path d="M376 265 A56 56 0 0 0 348 216.5" fill="none" stroke="#b24c20" stroke-width="2"/>
+  <text x="382" y="245" fill="#b24c20">60°</text>
+  <use href="#object" x="430.85" y="201"/>
+  <text x="453" y="199">O</text>
+  <use href="#image" x="320" y="137"/>
+  <text class="image-label" x="307" y="112">I₁</text>
+  <use href="#image" x="209.15" y="201"/>
+  <text class="image-label" x="166" y="197">I₂</text>
+  <use href="#image" x="209.15" y="329"/>
+  <text class="image-label" x="166" y="341">I₃</text>
+  <use href="#image" x="320" y="393"/>
+  <text class="image-label" x="307" y="425">I₄</text>
+  <use href="#image" x="430.85" y="329"/>
+  <text class="image-label" x="451" y="341">I₅</text>
+  <text class="small" x="34" y="132">● O: object</text>
+  <text class="small" x="34" y="159">I₁–I₅: virtual images</text>
+  <text x="34" y="452">N = 360° / 60° − 1 = 5 images (plus the object)</text>
+</svg>

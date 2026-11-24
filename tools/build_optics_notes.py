@@ -75,7 +75,26 @@ CHAPTER = Chapter(
                     'A small hole gives a sharp inverted tree. A larger hole lets rays from '
                     'each tree point reach a wider screen patch, producing overlapping, fuzzy images.',
                     'Small and large pinholes · Light travels from right to left. '
-                    'A wider opening produces overlapping patches on the screen.'),),
+                    'A wider opening produces overlapping patches on the screen.'),
+                   (3, 'Investigation 7-1B · Two mirrors and a periscope',
+                    'assets/optics-notes/angled-mirror-images.svg',
+                    'A point object centred between two mirrors at 60 degrees has five virtual '
+                    'images. The object and images are equally far from the mirror vertex.',
+                    'A · Five virtual images for a centred object at 60°. Solid orange dot: '
+                    'object; dashed teal circles: virtual images.'),
+                   (3, 'Investigation 7-1B · Two mirrors and a periscope',
+                    'assets/optics-notes/parallel-mirror-images.svg',
+                    'Two parallel facing mirrors produce repeated virtual images behind both '
+                    'mirrors. More distant images are shown fainter because real reflections lose light.',
+                    'B · Each mirror reflects images formed by the other. The sequence continues '
+                    'in the ideal model; with real mirrors, images become fainter.'),
+                   (3, 'Investigation 7-1B · Two mirrors and a periscope',
+                    'assets/optics-notes/periscope-light-path.svg',
+                    'A light ray enters from the left, turns downward at the upper mirror, and '
+                    'turns right at the lower mirror toward the eye. Both parallel mirror faces '
+                    'are at 45 degrees to the tube; dashed lines are normals.',
+                    'C · Two reflections guide light through a periscope. At each mirror, '
+                    'the angles of incidence and reflection are 45°, measured from the normal.')),
 )
 
 if __name__ == '__main__':
