@@ -94,7 +94,14 @@ CHAPTER = Chapter(
                     'turns right at the lower mirror toward the eye. Both parallel mirror faces '
                     'are at 45 degrees to the tube; dashed lines are normals.',
                     'C · Two reflections guide light through a periscope. At each mirror, '
-                    'the angles of incidence and reflection are 45°, measured from the normal.')),
+                    'the angles of incidence and reflection are 45°, measured from the normal.'),
+                   (3, 'Example · Mirror height and image count',
+                    'assets/optics-notes/plane-mirrors-problem.png',
+                    'Two question panels: a 1.76 m tall student faces a vertical plane mirror '
+                    'of unknown minimum height; a top view shows an object on the angle '
+                    'bisector between two mirrors meeting at 60 degrees.',
+                    'Question setup · A: find the minimum mirror height. B: count the images '
+                    'of the centred object. Schematic, not to scale.')),
 )
 
 if __name__ == '__main__':

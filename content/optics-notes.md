@@ -65,9 +65,18 @@ In diagram A, the solid dot is the object and the five dashed circles are its **
 ### Example · Mirror height and image count
 A student is 1.76 m tall. What is the minimum correctly positioned plane-mirror height to see their full body? How many images does a symmetric 60° mirror pair produce?
 
+Use panel A for the full-body view and panel B for the two-mirror arrangement. The object in panel B lies on the angle bisector.
+
 **Worked answer**
 
-The limiting rays reflect halfway from the eye to the head and halfway from the eye to the feet. Their reflection points are separated by **0.880 m**, independent of distance to the mirror. The symmetric pair gives **360°/60° − 1 = 5 images** in the ideal model.
+For a student standing upright in front of a vertical plane mirror, the law of reflection makes the limiting reflection points lie halfway in **vertical height** between the eye and the top of the head, and between the eye and the feet. Let H = 1.76 m be the student's height and hₑ their eye height above the floor. The minimum mirror extends from hₑ/2 above the floor to (H + hₑ)/2 above the floor.
+```
+Minimum mirror height = (H + hₑ)/2 − hₑ/2
+                      = H/2 = 1.76 m / 2 = 0.880 m
+```
+The eye height cancels, so its numerical value is not needed to calculate the mirror's height. It is needed to set the mirror's position. The minimum height is independent of the student's distance from the mirror in this ideal ray model.
+
+For the symmetric mirror pair, the object lies on the 60° angle bisector. In the ideal model, 360°/60° = 6 counts the object together with its images. Subtract the object to obtain **6 − 1 = 5 images**.
 
 ## 4 Concave and convex mirrors
 ### Vertex, focus, and centre of curvature
