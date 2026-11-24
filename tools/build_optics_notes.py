@@ -4,6 +4,7 @@ import base64
 from html import escape
 
 from bc_study_pages import ROOT, Chapter, build_study_pages
+from optics_mirror_position_figures import CASES, build_mirror_position_figures
 
 
 def embed_mirror_height_solution():
@@ -27,6 +28,43 @@ def embed_mirror_height_solution():
               f'alt="{escape(alt, quote=True)}" loading="lazy">'
               f'<figcaption>{escape(caption)}</figcaption></figure>')
     path.write_text(page.replace(marker, figure))
+
+
+def embed_mirror_position_figures():
+    """Show prediction setups first and keep the ray constructions in the answer."""
+    path = ROOT / 'optics-notes.html'
+    page = path.read_text()
+
+    def figure(slug, width, height, alt, caption):
+        svg = ROOT / f'assets/optics-notes/mirror-image-positions-{slug}.svg'
+        data = base64.b64encode(svg.read_bytes()).decode()
+        return (f'<figure class="diagram mirror-positions-{slug}">'
+                f'<img src="data:image/svg+xml;base64,{data}" width="{width}" height="{height}" '
+                f'alt="{escape(alt, quote=True)}" loading="lazy">'
+                f'<figcaption>{escape(caption)}</figcaption></figure>')
+
+    question = figure(
+        'question', 1000, 884,
+        'Six prediction setups with upright object arrows: five concave-mirror positions '
+        'beyond C, at C, between C and F, at F, and inside F; then a convex security mirror. '
+        'C, F and V are labelled. Images are not shown.',
+        'Prediction setups · O is the object. For the concave cases C and F lie in front '
+        'of the mirror; for the convex mirror they lie behind it. Predict before opening the answer.')
+    answers = ''.join(figure(
+        slug, 960, 454, f'{title}. {prediction}. {screen} '
+        'Dark arrow: object; magenta arrow: image. Solid arrows show light; '
+        'dashed rays behind the mirror are backward extensions.',
+        f'{title} · {prediction}. {screen}')
+        for slug, title, ratio, sign, prediction, screen in CASES)
+    for marker, figures in (
+        ('MIRROR_IMAGE_POSITIONS_QUESTION_FIGURE', question),
+        ('MIRROR_IMAGE_POSITIONS_ANSWER_FIGURES', answers),
+    ):
+        token = f'<p>{marker}</p>'
+        assert page.count(token) == 1
+        page = page.replace(token, figures)
+    path.write_text(page)
+
 
 REFERENCES = [
     ('199–203', 204), ('204–207', 209), ('200, 208–211', 205),
@@ -131,5 +169,7 @@ CHAPTER = Chapter(
 )
 
 if __name__ == '__main__':
+    build_mirror_position_figures()
     build_study_pages(CHAPTER)
     embed_mirror_height_solution()
+    embed_mirror_position_figures()

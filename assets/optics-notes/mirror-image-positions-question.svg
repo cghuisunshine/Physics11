@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="884" viewBox="0 0 1000 884" role="img" aria-labelledby="title desc">
+<title id="title">Predict the images for six curved-mirror setups</title><desc id="desc">Five concave mirror panels place an upright object beyond C, at C, between C and F, at F, and inside F. A sixth panel places a real object in front of a convex security mirror. Images are not shown.</desc>
+<defs>
+<marker id="orange-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+<marker id="teal-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;font-size:19px;fill:#203440}
+.title{font-size:25px;font-weight:700;fill:#075d64}.subtitle{font-size:20px;font-weight:700}
+.small{font-size:17px}.point-label{font-size:18px;font-weight:700}
+.axis{fill:none;stroke:#a4b8bc;stroke-width:1.4}.mirror{fill:none;stroke:#086b72;stroke-width:6;stroke-linecap:round}
+.orange{fill:none;stroke:#b24c20;stroke-width:2.5}.teal{fill:none;stroke:#086b72;stroke-width:2.5}
+.extension{stroke-dasharray:7 5}.object{fill:none;stroke:#203440;stroke-width:4}
+.image{fill:none;stroke:#8d315f;stroke-width:4}.image-label{fill:#8d315f;font-weight:700}
+.panel{fill:#fff;stroke:#cadbdd;stroke-width:2}.back{fill:#f0f5f5}
+</style></defs>
+<rect width="1000" height="884" fill="#fff"/>
+<text x="24" y="37" class="title" text-anchor="start">Predict first: where will the image form?</text>
+<text x="24" y="66" class="small" text-anchor="start">Object arrows are shown; image positions and orientations are left for you.</text>
+<g id="setup-1"><rect class="panel" x="14" y="88" width="480" height="229" rx="12"/>
+<text x="30" y="118" class="subtitle" text-anchor="start">1 · Concave · Object beyond C</text>
+<rect class="back" x="335" y="141" width="145" height="151"/>
+<path d="M37.000,233.000 470.000,233.000" class="axis"/>
+<path class="mirror" d="M304 178 Q334 233 304 288"/><path d="M313.400,189.000 322.400,181.000" class="axis"/><path d="M320.144,209.000 329.144,201.000" class="axis"/><path d="M322.921,229.000 331.921,221.000" class="axis"/><path d="M321.731,249.000 330.731,241.000" class="axis"/><path d="M316.574,269.000 325.574,261.000" class="axis"/>
+<path d="M139.000,233.000 139.000,195.000" class="object"/><path d="M134.050,204.000 139.000,195.000 143.950,204.000" class="object"/>
+<text x="139" y="183" class="point-label" text-anchor="middle">O</text>
+<circle cx="199" cy="233" r="3" fill="#647a84"/>
+<text x="199" y="258" class="point-label" text-anchor="middle">C</text>
+<circle cx="259" cy="233" r="3" fill="#647a84"/>
+<text x="259" y="258" class="point-label" text-anchor="middle">F</text>
+<circle cx="319" cy="233" r="3" fill="#647a84"/>
+<text x="336" y="258" class="point-label" text-anchor="middle">V</text>
+<text x="38" y="293" class="small" text-anchor="start">Reflecting side</text>
+<text x="341" y="283" class="small" text-anchor="start">Behind mirror</text>
+</g>
+<g id="setup-2"><rect class="panel" x="508" y="88" width="480" height="229" rx="12"/>
+<text x="524" y="118" class="subtitle" text-anchor="start">2 · Concave · Object at C</text>
+<rect class="back" x="829" y="141" width="145" height="151"/>
+<path d="M531.000,233.000 964.000,233.000" class="axis"/>
+<path class="mirror" d="M798 178 Q828 233 798 288"/><path d="M807.400,189.000 816.400,181.000" class="axis"/><path d="M814.144,209.000 823.144,201.000" class="axis"/><path d="M816.921,229.000 825.921,221.000" class="axis"/><path d="M815.731,249.000 824.731,241.000" class="axis"/><path d="M810.574,269.000 819.574,261.000" class="axis"/>
+<path d="M693.000,233.000 693.000,195.000" class="object"/><path d="M688.050,204.000 693.000,195.000 697.950,204.000" class="object"/>
+<text x="693" y="183" class="point-label" text-anchor="middle">O</text>
+<circle cx="693" cy="233" r="3" fill="#647a84"/>
+<text x="693" y="258" class="point-label" text-anchor="middle">C</text>
+<circle cx="753" cy="233" r="3" fill="#647a84"/>
+<text x="753" y="258" class="point-label" text-anchor="middle">F</text>
+<circle cx="813" cy="233" r="3" fill="#647a84"/>
+<text x="830" y="258" class="point-label" text-anchor="middle">V</text>
+<text x="532" y="293" class="small" text-anchor="start">Reflecting side</text>
+<text x="835" y="283" class="small" text-anchor="start">Behind mirror</text>
+</g>
+<g id="setup-3"><rect class="panel" x="14" y="331" width="480" height="229" rx="12"/>
+<text x="30" y="361" class="subtitle" text-anchor="start">3 · Concave · Object between C and F</text>
+<rect class="back" x="335" y="384" width="145" height="151"/>
+<path d="M37.000,476.000 470.000,476.000" class="axis"/>
+<path class="mirror" d="M304 421 Q334 476 304 531"/><path d="M313.400,432.000 322.400,424.000" class="axis"/><path d="M320.144,452.000 329.144,444.000" class="axis"/><path d="M322.921,472.000 331.921,464.000" class="axis"/><path d="M321.731,492.000 330.731,484.000" class="axis"/><path d="M316.574,512.000 325.574,504.000" class="axis"/>
+<path d="M229.000,476.000 229.000,438.000" class="object"/><path d="M224.050,447.000 229.000,438.000 233.950,447.000" class="object"/>
+<text x="229" y="426" class="point-label" text-anchor="middle">O</text>
+<circle cx="199" cy="476" r="3" fill="#647a84"/>
+<text x="199" y="501" class="point-label" text-anchor="middle">C</text>
+<circle cx="259" cy="476" r="3" fill="#647a84"/>
+<text x="259" y="501" class="point-label" text-anchor="middle">F</text>
+<circle cx="319" cy="476" r="3" fill="#647a84"/>
+<text x="336" y="501" class="point-label" text-anchor="middle">V</text>
+<text x="38" y="536" class="small" text-anchor="start">Reflecting side</text>
+<text x="341" y="526" class="small" text-anchor="start">Behind mirror</text>
+</g>
+<g id="setup-4"><rect class="panel" x="508" y="331" width="480" height="229" rx="12"/>
+<text x="524" y="361" class="subtitle" text-anchor="start">4 · Concave · Object at F</text>
+<rect class="back" x="829" y="384" width="145" height="151"/>
+<path d="M531.000,476.000 964.000,476.000" class="axis"/>
+<path class="mirror" d="M798 421 Q828 476 798 531"/><path d="M807.400,432.000 816.400,424.000" class="axis"/><path d="M814.144,452.000 823.144,444.000" class="axis"/><path d="M816.921,472.000 825.921,464.000" class="axis"/><path d="M815.731,492.000 824.731,484.000" class="axis"/><path d="M810.574,512.000 819.574,504.000" class="axis"/>
+<path d="M753.000,476.000 753.000,438.000" class="object"/><path d="M748.050,447.000 753.000,438.000 757.950,447.000" class="object"/>
+<text x="753" y="426" class="point-label" text-anchor="middle">O</text>
+<circle cx="693" cy="476" r="3" fill="#647a84"/>
+<text x="693" y="501" class="point-label" text-anchor="middle">C</text>
+<circle cx="753" cy="476" r="3" fill="#647a84"/>
+<text x="753" y="501" class="point-label" text-anchor="middle">F</text>
+<circle cx="813" cy="476" r="3" fill="#647a84"/>
+<text x="830" y="501" class="point-label" text-anchor="middle">V</text>
+<text x="532" y="536" class="small" text-anchor="start">Reflecting side</text>
+<text x="835" y="526" class="small" text-anchor="start">Behind mirror</text>
+</g>
+<g id="setup-5"><rect class="panel" x="14" y="574" width="480" height="229" rx="12"/>
+<text x="30" y="604" class="subtitle" text-anchor="start">5 · Concave · Object inside F</text>
+<rect class="back" x="335" y="627" width="145" height="151"/>
+<path d="M37.000,719.000 470.000,719.000" class="axis"/>
+<path class="mirror" d="M304 664 Q334 719 304 774"/><path d="M313.400,675.000 322.400,667.000" class="axis"/><path d="M320.144,695.000 329.144,687.000" class="axis"/><path d="M322.921,715.000 331.921,707.000" class="axis"/><path d="M321.731,735.000 330.731,727.000" class="axis"/><path d="M316.574,755.000 325.574,747.000" class="axis"/>
+<path d="M283.000,719.000 283.000,681.000" class="object"/><path d="M278.050,690.000 283.000,681.000 287.950,690.000" class="object"/>
+<text x="283" y="669" class="point-label" text-anchor="middle">O</text>
+<circle cx="199" cy="719" r="3" fill="#647a84"/>
+<text x="199" y="744" class="point-label" text-anchor="middle">C</text>
+<circle cx="259" cy="719" r="3" fill="#647a84"/>
+<text x="259" y="744" class="point-label" text-anchor="middle">F</text>
+<circle cx="319" cy="719" r="3" fill="#647a84"/>
+<text x="336" y="744" class="point-label" text-anchor="middle">V</text>
+<text x="38" y="779" class="small" text-anchor="start">Reflecting side</text>
+<text x="341" y="769" class="small" text-anchor="start">Behind mirror</text>
+</g>
+<g id="setup-6"><rect class="panel" x="508" y="574" width="480" height="229" rx="12"/>
+<text x="524" y="604" class="subtitle" text-anchor="start">6 · Convex · Security mirror</text>
+<rect class="back" x="829" y="627" width="145" height="151"/>
+<path d="M531.000,719.000 964.000,719.000" class="axis"/>
+<path class="mirror" d="M828 664 Q798 719 828 774"/><path d="M826.600,675.000 835.600,667.000" class="axis"/><path d="M819.856,695.000 828.856,687.000" class="axis"/><path d="M817.079,715.000 826.079,707.000" class="axis"/><path d="M818.269,735.000 827.269,727.000" class="axis"/><path d="M823.426,755.000 832.426,747.000" class="axis"/>
+<path d="M633.000,719.000 633.000,681.000" class="object"/><path d="M628.050,690.000 633.000,681.000 637.950,690.000" class="object"/>
+<text x="633" y="669" class="point-label" text-anchor="middle">O</text>
+<circle cx="933" cy="719" r="3" fill="#647a84"/>
+<text x="933" y="744" class="point-label" text-anchor="middle">C</text>
+<circle cx="873" cy="719" r="3" fill="#647a84"/>
+<text x="873" y="744" class="point-label" text-anchor="middle">F</text>
+<circle cx="813" cy="719" r="3" fill="#647a84"/>
+<text x="830" y="744" class="point-label" text-anchor="middle">V</text>
+<text x="532" y="779" class="small" text-anchor="start">Reflecting side</text>
+<text x="835" y="769" class="small" text-anchor="start">Behind mirror</text>
+</g>
+<text x="24" y="851" class="small" text-anchor="start">C = centre of curvature · F = principal focus · V = vertex</text>
+<text x="24" y="875" class="small" text-anchor="start">Positions are illustrative. Open the worked answer after making your predictions.</text>
+</svg>

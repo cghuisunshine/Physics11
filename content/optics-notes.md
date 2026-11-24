@@ -106,6 +106,10 @@ Where reflected rays cross, they form a **real image**. Where only their backwar
 ### Investigation 7-2B · Image positions
 Put an object beyond C, at C, between C and F, at F, and inside F. Predict the image in each case before moving a screen. Then explain why a convex security mirror gives a reduced image.
 
+MIRROR_IMAGE_POSITIONS_QUESTION_FIGURE
+
+For each setup, predict the image's location, orientation, relative size, and whether it can be received on a screen. C is the centre of curvature, F the principal focus, and V the mirror vertex. The object positions are illustrative.
+
 **Worked answer**
 
 - **Beyond C** gives a real, inverted, reduced image between C and F.
@@ -114,6 +118,12 @@ Put an object beyond C, at C, between C and F, at F, and inside F. Predict the i
 - **At F** gives parallel reflected rays from each object point. There is no finite image.
 - **Inside F** gives an upright, enlarged virtual image behind the mirror.
 - A **convex mirror** gives an upright, reduced virtual image for a real object. Its backward extensions cross between the vertex and the virtual focus.
+
+Compare the two rays from the tip of each object below. Solid arrows show actual light. Dashed rays extend reflected rays backward; light does not travel through the mirror along them. The magenta arrow marks the image. A screen receives an image only where actual reflected rays converge.
+
+MIRROR_IMAGE_POSITIONS_ANSWER_FIGURES
+
+The outward-curving face of a convex security mirror makes reflected rays diverge. Their backward extensions meet behind the mirror between V and F, closer to the mirror than the object is in front. The ray geometry therefore gives an upright image with a smaller height. This reduced view lets a security mirror show a wider scene.
 
 ## 6 Mirror equation and magnification
 ### Use signed distances

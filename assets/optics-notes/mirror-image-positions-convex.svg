@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="454" viewBox="0 0 960 454" role="img" aria-labelledby="title desc">
+<title id="title">Convex · Security mirror</title><desc id="desc">Between V and F, behind mirror · Virtual, upright, reduced. Reflected rays diverge; their backward extensions locate the smaller image. The object is a dark upright arrow. The image is a magenta arrow. Solid rays show actual light; dashed lines behind the mirror are backward extensions, not transmitted light.</desc>
+<defs>
+<marker id="orange-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+<marker id="teal-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;font-size:19px;fill:#203440}
+.title{font-size:25px;font-weight:700;fill:#075d64}.subtitle{font-size:20px;font-weight:700}
+.small{font-size:17px}.point-label{font-size:18px;font-weight:700}
+.axis{fill:none;stroke:#a4b8bc;stroke-width:1.4}.mirror{fill:none;stroke:#086b72;stroke-width:6;stroke-linecap:round}
+.orange{fill:none;stroke:#b24c20;stroke-width:2.5}.teal{fill:none;stroke:#086b72;stroke-width:2.5}
+.extension{stroke-dasharray:7 5}.object{fill:none;stroke:#203440;stroke-width:4}
+.image{fill:none;stroke:#8d315f;stroke-width:4}.image-label{fill:#8d315f;font-weight:700}
+.panel{fill:#fff;stroke:#cadbdd;stroke-width:2}.back{fill:#f0f5f5}
+</style></defs>
+<rect width="960" height="454" fill="#fff"/>
+<rect x="12" y="12" width="936" height="430" rx="14" class="panel"/>
+<text x="32" y="47" class="title" text-anchor="start">Convex · Security mirror</text>
+<text x="32" y="78" class="subtitle" text-anchor="start">Between V and F, behind mirror · Virtual, upright, reduced</text>
+<rect class="back" x="638.0" y="102" width="285" height="249" rx="7"/>
+<text x="648" y="123" class="small" text-anchor="start">Behind mirror</text>
+<path d="M120.000,226.000 910.000,226.000" class="axis"/>
+<g id="ray-construction" data-f="-110.0" data-do="330.0" data-di="-82.5" data-height="36.0" data-v="620.0" data-axis="226.0">
+<path d="M290.000,190.000 620.000,190.000" class="orange" id="incident-1"/>
+<path d="M620.000,190.000 455.000,136.000" class="orange" id="reflected-1"/>
+<path d="M428.600,190.000 488.000,190.000" class="orange" marker-end="url(#orange-arrow)"/>
+<path d="M550.700,167.320 521.000,157.600" class="orange" marker-end="url(#orange-arrow)"/>
+<path d="M620.000,190.000 702.500,217.000" class="orange extension" id="extension-1"/>
+<path d="M290.000,190.000 620.000,226.000" class="teal" id="incident-2"/>
+<path d="M620.000,226.000 140.000,278.364" class="teal" id="reflected-2"/>
+<path d="M428.600,205.120 488.000,211.600" class="teal" marker-end="url(#teal-arrow)"/>
+<path d="M418.400,247.993 332.000,257.418" class="teal" marker-end="url(#teal-arrow)"/>
+<path d="M620.000,226.000 702.500,217.000" class="teal extension" id="extension-2"/>
+<path class="mirror" d="M635 126 Q605 226 635 326"/><path d="M633.600,146.000 642.600,138.000" class="axis"/><path d="M629.400,166.000 638.400,158.000" class="axis"/><path d="M626.400,186.000 635.400,178.000" class="axis"/><path d="M624.600,206.000 633.600,198.000" class="axis"/><path d="M624.000,226.000 633.000,218.000" class="axis"/><path d="M624.600,246.000 633.600,238.000" class="axis"/><path d="M626.400,266.000 635.400,258.000" class="axis"/><path d="M629.400,286.000 638.400,278.000" class="axis"/><path d="M633.600,306.000 642.600,298.000" class="axis"/>
+<path d="M290.000,226.000 290.000,190.000" class="object" id="object"/><path d="M285.050,199.000 290.000,190.000 294.950,199.000" class="object"/>
+<text x="278" y="176" class="point-label" text-anchor="middle">O</text>
+<path d="M702.500,226.000 702.500,217.000" class="image" stroke-dasharray="6 4" id="image"/><path d="M700.025,221.500 702.500,217.000 704.975,221.500" class="image"/>
+<text x="716.5" y="208" class="image-label" text-anchor="start">I</text>
+<circle cx="840.0" cy="226.0" r="3" fill="#647a84"/>
+<text x="840" y="249" class="point-label" text-anchor="middle">C</text>
+<circle cx="730.0" cy="226.0" r="3" fill="#647a84"/>
+<text x="730" y="249" class="point-label" text-anchor="middle">F</text>
+<circle cx="620.0" cy="226.0" r="3" fill="#647a84"/>
+<text x="638" y="249" class="point-label" text-anchor="middle">V</text>
+</g>
+<text x="32" y="377" class="small" text-anchor="start">Reflected rays diverge; their backward extensions locate the smaller image.</text>
+<text x="32" y="405" class="small" text-anchor="start">O: object · I: image · Solid rays: light · Dashed rays: backward extensions</text>
+<text x="32" y="431" class="small" text-anchor="start">Ideal small-angle ray model; curved mirror faces are schematic.</text>
+</svg>
