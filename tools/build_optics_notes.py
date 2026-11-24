@@ -1,6 +1,32 @@
 #!/usr/bin/env python3
 """Build the Chapter 7 optics study notes and Quick Review."""
-from bc_study_pages import Chapter, build_study_pages
+import base64
+from html import escape
+
+from bc_study_pages import ROOT, Chapter, build_study_pages
+
+
+def embed_mirror_height_solution():
+    """Keep the explanatory ray diagram inside the example's hidden answer."""
+    path = ROOT / 'optics-notes.html'
+    page = path.read_text()
+    marker = '<p>MINIMUM_MIRROR_HEIGHT_SOLUTION_FIGURE</p>'
+    assert page.count(marker) == 1
+    svg = ROOT / 'assets/optics-notes/minimum-mirror-height-solution.svg'
+    data = base64.b64encode(svg.read_bytes()).decode()
+    alt = ('Light from the head top A reflects at the upper edge U into the eye E; '
+           'light from the feet B reflects at the lower edge L into E. Dashed '
+           'backward extensions reach virtual image points equally far behind '
+           'the mirror. The equal horizontal distances make U and L vertical '
+           'midpoints, so their separation is half the student height: 0.880 m.')
+    caption = ('Side-view construction · U is halfway in height between eye and head top; '
+               'L is halfway between eye and feet. A shorter mirror would cut off '
+               'one of these limiting rays. The eye height shown is illustrative.')
+    figure = (f'<figure class="diagram mirror-height-solution">'
+              f'<img src="data:image/svg+xml;base64,{data}" width="1000" height="810" '
+              f'alt="{escape(alt, quote=True)}" loading="lazy">'
+              f'<figcaption>{escape(caption)}</figcaption></figure>')
+    path.write_text(page.replace(marker, figure))
 
 REFERENCES = [
     ('199–203', 204), ('204–207', 209), ('200, 208–211', 205),
@@ -106,3 +132,4 @@ CHAPTER = Chapter(
 
 if __name__ == '__main__':
     build_study_pages(CHAPTER)
+    embed_mirror_height_solution()

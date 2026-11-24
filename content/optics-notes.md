@@ -70,6 +70,10 @@ Use panel A for the full-body view and panel B for the two-mirror arrangement. T
 **Worked answer**
 
 For a student standing upright in front of a vertical plane mirror, the law of reflection makes the limiting reflection points lie halfway in **vertical height** between the eye and the top of the head, and between the eye and the feet. Let H = 1.76 m be the student's height and hₑ their eye height above the floor. The minimum mirror extends from hₑ/2 above the floor to (H + hₑ)/2 above the floor.
+
+MINIMUM_MIRROR_HEIGHT_SOLUTION_FIGURE
+
+Follow the solid arrows from the head top A and feet B to the mirror, then back to the eye E. The dashed lines extend the reflected rays backward to the virtual image. The image is the same distance behind the mirror as the student is in front, so the mirror is halfway horizontally along each straight sightline from E to an image point. The similar triangles on either side of the mirror therefore have equal vertical changes: U and L are also halfway in height. A shorter mirror would miss the head-top ray or the foot ray.
 ```
 Minimum mirror height = (H + hₑ)/2 − hₑ/2
                       = H/2 = 1.76 m / 2 = 0.880 m

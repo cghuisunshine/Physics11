@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="810" viewBox="0 0 1000 810" role="img" aria-labelledby="title desc">
+  <title id="title">Why the minimum plane mirror is half the student's height</title>
+  <desc id="desc">Side-view ray construction. A is the top of the head, E is the eye, and B is the feet, at the same distance d in front of the mirror. Their virtual image points A prime and B prime are distance d behind it. Light travels from A to the upper mirror edge U and back to E, and from B to the lower edge L and back to E. Dashed backward extensions meet the virtual image points. Since the mirror is halfway horizontally from the eye to each image, U and L are also halfway in vertical height. U is at (H plus eye height) divided by two and L is at eye height divided by two, so UL equals H divided by two, or 0.880 metres for H equal to 1.76 metres.</desc>
+  <defs>
+    <marker id="head-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+    <marker id="feet-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+    <marker id="dimension-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M10 0 0 5 10 10" fill="none" stroke="#526a75" stroke-width="1.5"/></marker>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#203440;font-size:20px}
+      .title{font-size:27px;font-weight:700;fill:#075d64}
+      .small{font-size:18px}
+      .label{font-weight:700}
+      .head{fill:#b24c20}
+      .feet{fill:#086b72}
+      .dimension{fill:none;stroke:#526a75;stroke-width:1.6;marker-start:url(#dimension-arrow);marker-end:url(#dimension-arrow)}
+      .extension{fill:none;stroke-width:2.5;stroke-dasharray:8 6}
+      .ray{fill:none;stroke-width:3.5;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect x="12" y="12" width="976" height="786" rx="14" fill="#fff" stroke="#cadbdd" stroke-width="2"/>
+  <text class="title" x="36" y="51">Why half-height is enough</text>
+  <text class="small" x="36" y="80">Side view · A, E and B are the same horizontal distance from the mirror.</text>
+
+  <!-- The geometry uses one scale: H = 480, eye height = 410, distance = 270. -->
+  <!-- Actual points A(230,110), E(230,180), B(230,590); mirror at x = 500. -->
+  <!-- U(500,145) and L(500,385) bisect the endpoint heights exactly. -->
+  <text class="small label" x="275" y="112">Student</text>
+  <text class="small label" x="785" y="145">Virtual image</text>
+  <text class="small" x="785" y="171">behind mirror</text>
+  <path d="M230 110V590" stroke="#647a84" stroke-width="4"/>
+  <path d="M770 110V590" stroke="#a4b8bc" stroke-width="3" stroke-dasharray="7 7"/>
+  <path d="M155 590H835" stroke="#a4b8bc" stroke-width="2"/>
+  <text class="small" x="845" y="597">Floor</text>
+
+  <!-- Equal incidence and reflection angles are measured from these normals. -->
+  <path d="M430 145H575 M430 385H575" stroke="#9eafb4" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <text class="small" x="582" y="391">Normal</text>
+
+  <!-- Dashed lines are backward extensions, not light travelling behind the mirror. -->
+  <path id="head-extension" class="extension" d="M500 145 770 110" stroke="#b24c20"/>
+  <path id="feet-extension" class="extension" d="M500 385 770 590" stroke="#086b72"/>
+  <path id="head-ray" class="ray" d="M230 110 500 145 230 180" stroke="#b24c20"/>
+  <path id="feet-ray" class="ray" d="M230 590 500 385 230 180" stroke="#086b72"/>
+  <g fill="none" stroke-width="3.5">
+    <path d="M325 122.315 375 128.796" stroke="#b24c20" marker-end="url(#head-arrow)"/>
+    <path d="M410 156.667 355 163.796" stroke="#b24c20" marker-end="url(#head-arrow)"/>
+    <path d="M320 521.667 370 483.704" stroke="#086b72" marker-end="url(#feet-arrow)"/>
+    <path d="M410 316.667 360 278.704" stroke="#086b72" marker-end="url(#feet-arrow)"/>
+  </g>
+
+  <!-- Only the segment from U to L needs to be reflective. -->
+  <path id="minimum-mirror" d="M500 145V385" stroke="#086b72" stroke-width="8"/>
+  <path d="M505 151 516 140 M505 173 516 162 M505 195 516 184 M505 217 516 206 M505 239 516 228 M505 261 516 250 M505 283 516 272 M505 305 516 294 M505 327 516 316 M505 349 516 338 M505 371 516 360" stroke="#647a84" stroke-width="1.5"/>
+  <text class="small label" x="442" y="210">Mirror</text>
+  <text class="small label" x="470" y="130">U</text>
+  <text class="small label" x="474" y="414">L</text>
+  <path d="M524 145H561 M524 385H561" stroke="#526a75" stroke-width="1.5"/>
+  <path class="dimension" d="M550 150V380"/>
+  <text class="label" x="569" y="256">Minimum height</text>
+  <text class="label" x="569" y="287">UL = H/2</text>
+
+  <g fill="#203440">
+    <circle id="head" cx="230" cy="110" r="5"/>
+    <circle id="eye" cx="230" cy="180" r="6"/>
+    <circle id="feet" cx="230" cy="590" r="5"/>
+    <circle cx="500" cy="145" r="4"/>
+    <circle cx="500" cy="385" r="4"/>
+  </g>
+  <g fill="#fff" stroke="#647a84" stroke-width="2">
+    <circle id="virtual-head" cx="770" cy="110" r="5"/>
+    <circle id="virtual-feet" cx="770" cy="590" r="5"/>
+  </g>
+  <text class="small label" x="210" y="104" text-anchor="end">A · Head top</text>
+  <text class="small label" x="210" y="187" text-anchor="end">E · Eye</text>
+  <text class="small label" x="210" y="580" text-anchor="end">B · Feet</text>
+  <text class="label" x="785" y="115">A′</text>
+  <text class="label" x="785" y="580">B′</text>
+
+  <path d="M90 110H140 M90 590H140" stroke="#a4b8bc" stroke-width="1.5"/>
+  <path class="dimension" d="M105 115V585"/>
+  <text class="label" transform="translate(77 350) rotate(-90)" text-anchor="middle">H = 1.76 m</text>
+  <path d="M230 611V645 M500 611V645 M770 611V645" stroke="#a4b8bc" stroke-width="1.5"/>
+  <path class="dimension" d="M235 632H495 M505 632H765"/>
+  <text class="small" x="365" y="620" text-anchor="middle">d</text>
+  <text class="small" x="635" y="620" text-anchor="middle">d</text>
+
+  <path d="M36 668H964" stroke="#cadbdd" stroke-width="1.5"/>
+  <text class="small" x="36" y="699">Equal horizontal distances → the mirror cuts each dashed sightline halfway.</text>
+  <text class="small" x="36" y="728">Heights above the floor: U = (H + hₑ)/2 and L = hₑ/2.</text>
+  <text class="label" x="36" y="762">UL = (H + hₑ)/2 − hₑ/2 = H/2 = 0.880 m</text>
+  <text class="small" x="36" y="786">hₑ = eye height. Solid arrows: actual light. Dashed rays: backward extensions.</text>
+</svg>
