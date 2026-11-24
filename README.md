@@ -120,6 +120,8 @@ Section 12 links to [Deriving the Doppler effect and sonic booms](doppler-sonic-
 
 [Light and Geometric Optics Notes](optics-notes.html) covers fifteen topics from BC Science Physics 11 Chapter 7, printed pp. 199–258. The [Quick Review](optics-review.html) has seven topic pages, 21 questions, and two answer pages. Edit the manuscripts in `content/` and rebuild both with `python tools/build_optics_notes.py` using Pillow, BeautifulSoup, Poppler, and the chapter tutorial generator.
 
+Section 3 compares small and large pinholes using the user-supplied picture `assets/optics-notes/pinhole-small-large-user.png`. The AI-authored explanation traces rays from one object point to a screen patch and explains why larger, overlapping patches give a brighter but fuzzier image. Edit `content/optics-notes.md` and the illustration entry in `tools/build_optics_notes.py`; the same builder embeds the picture for offline Study, Simple, Slides, and printing.
+
 [Chapter 7 Questions](bc-optics-questions.html) contains 173 entries across 35 sets, with original ray diagrams, investigation procedures, and worked solutions. Rebuild with `python tools/build_bc_optics_questions.py` using Pillow and Poppler. The collection is registered as `bc-ch7` in Practice Studio.
 
 [Special Relativity Notes](relativity-notes.html) covers twelve topics from BC Science Physics 11 Chapter 8, printed pp. 259–278. The [Quick Review](relativity-review.html) has seven topic pages, 21 questions, and two answer pages. Edit the manuscripts in `content/` and rebuild both with `python tools/build_relativity_notes.py` using Pillow, BeautifulSoup, Poppler, and the chapter tutorial generator.

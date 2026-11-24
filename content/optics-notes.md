@@ -45,7 +45,17 @@ In the thin-sheet approximation place the marker **20.0 cm behind** the reflecti
 
 ## 3 Pinhole cameras and multiple reflections
 ### A pinhole produces a real image
-Rays from the top and bottom of a scene cross at the hole and reach opposite parts of the screen. The image is inverted and real. Its size depends on the screen-to-hole distance compared with the object-to-hole distance. Smaller holes let less light through. Extremely small holes can blur the image by diffraction.
+Rays from the top and bottom of a scene cross at the hole and reach opposite parts of the screen. The image is inverted and real. Its size depends on the screen-to-hole distance compared with the object-to-hole distance.
+
+### Small pinhole versus large pinhole
+In the picture, light travels from the tree on the right through the opening to the screen on the left. Compare the two openings with the object and screen distances kept the same. Use the straight-line ray model: the hole lets light through but does not bend or focus it.
+
+- **Small pinhole:** only a narrow bundle of rays from each point on the tree can pass through. That bundle reaches a small patch on the screen, so neighbouring object points produce little overlap. The image is sharper but dimmer because less light enters.
+- **Large pinhole:** rays from the same point on the tree can pass through different parts of the opening. They continue along different straight paths and reach a larger patch on the screen. Patches from neighbouring points overlap, so edges and details merge into a fuzzy image. More light enters, making the image brighter.
+
+Trace the two rays from the treetop in the lower drawing: they pass through different parts of the large hole and reach different places near the bottom of the screen. The same spreading into patches happens for every point on the tree. Both images remain inverted: light from the top reaches the lower screen and light from the bottom reaches the upper screen.
+
+The picture calls the large-hole image “out of focus”; here the blur comes from overlapping patches of light, with no lens to bring each bundle to a point. Making an ordinary pinhole smaller reduces this overlap, but an extremely small hole can also blur the image by diffraction.
 
 ### Investigation 7-1B · Two mirrors and a periscope
 Two angled mirrors can reflect each other’s images. With a centred object and an angle that divides 360° evenly, the ideal number of images is 360°/θ − 1. The object is counted separately. Parallel facing mirrors give a chain of repeated reflections. A periscope instead uses two parallel reflective faces at 45° to the tube to turn the light twice.

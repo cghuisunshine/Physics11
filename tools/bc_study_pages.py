@@ -4,6 +4,7 @@ import base64
 from dataclasses import dataclass
 from html import escape
 import io
+import mimetypes
 from pathlib import Path
 import re
 import subprocess
@@ -126,7 +127,9 @@ def build_notes(chapter, work):
                 anchor = f'<h3>{escape(heading)}</h3>'
                 assert anchor in body, heading
                 data = base64.b64encode((ROOT / path).read_bytes()).decode()
-                illustration = (f'<figure class="diagram"><img src="data:image/svg+xml;base64,{data}" '
+                mime = mimetypes.guess_type(path)[0]
+                assert mime and mime.startswith('image/'), path
+                illustration = (f'<figure class="diagram"><img src="data:{mime};base64,{data}" '
                                 f'alt="{escape(alt, quote=True)}" loading="lazy">'
                                 f'<figcaption>{escape(caption)}</figcaption></figure>')
                 body = body.replace(anchor, anchor + illustration, 1)

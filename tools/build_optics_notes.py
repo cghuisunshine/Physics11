@@ -69,6 +69,13 @@ CHAPTER = Chapter(
     references=REFERENCES, figures=FIGURES, hero=HERO, search_hint='Try “Snell” or “critical angle”',
     worked_answers=16, review_labels=['Plane mirrors', 'Curved mirrors', 'Mirror equation', 'Refraction',
                                      'Critical angle and colour', 'Lenses', 'Optical instruments'],
+    illustrations=((3, 'Small pinhole versus large pinhole',
+                    'assets/optics-notes/pinhole-small-large-user.png',
+                    'Two ray diagrams with trees on the right and camera screens on the left. '
+                    'A small hole gives a sharp inverted tree. A larger hole lets rays from '
+                    'each tree point reach a wider screen patch, producing overlapping, fuzzy images.',
+                    'Small and large pinholes · Light travels from right to left. '
+                    'A wider opening produces overlapping patches on the screen.'),),
 )
 
 if __name__ == '__main__':
