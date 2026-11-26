@@ -181,7 +181,12 @@ REFLECTION_STATIONS_ANSWER_FIGURE
 At a stationary boundary, the source fixes the **frequency** on both sides. A change of speed therefore changes wavelength. For oblique incidence, a wave entering a slower region bends **toward the normal**. A wave entering a faster region bends **away from the normal**. At normal incidence, wavelength and speed may change while the direction stays straight.
 ```
 v₂/v₁ = λ₂/λ₁              f₂ = f₁
+sin θ₁/v₁ = sin θ₂/v₂
 ```
+The second equation is **Snell’s law for waves**, with θ₁ and θ₂ measured from the normal and v₁ and v₂ denoting wave speeds. For oblique incidence with a propagating transmitted wave, sin θ₁/sin θ₂ = v₁/v₂ = λ₁/λ₂. At normal incidence, both angles are zero; use the first angular form instead of dividing by sin θ₂.
+
+Further reading: [Why do waves obey Snell’s law? A geometric derivation and interactive comparison with light](wave-refraction-snell-law.html).
+
 In the top-view diagram, the wave enters slower, shallow water: the crests move closer together and the ray bends toward the dashed normal. Each crest line is perpendicular to its ray. Measure wavelength **perpendicular to the crests**, along the travel direction. The frequency stays the same; the speed and wavelength values match the example below. Reversing the travel direction makes the ray bend away from the normal as it enters faster, deep water.
 
 REFRACTION_DEPTH_FIGURE
@@ -195,7 +200,7 @@ v(deep) = (5.0)(0.040) = 0.20 m/s
 v(shallow) = (5.0)(0.025) = 0.125 m/s ≈ 0.13 m/s
 v(shallow)/v(deep) = 2.5/4.0 ≈ 0.63
 ```
-The ray turns toward the normal. It bends away on re-entering deep water. Parallel entry and exit boundaries with equal depths outside the shallow strip restore the original direction, with a possible sideways offset.
+The ray turns toward the normal. For the 45° incidence shown in the diagram, Snell’s law gives sin θ₂ = (0.125/0.20) sin 45°, so θ₂ ≈ 26°. It bends away on re-entering deep water. Parallel entry and exit boundaries with equal depths outside the shallow strip restore the original direction, with a possible sideways offset.
 
 ## 9 Diffraction
 ### Waves spread past edges
