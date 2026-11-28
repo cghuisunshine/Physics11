@@ -125,4 +125,4 @@ The added-mass model explains the **usual downward trend** in frequency when wat
 
 The main oscillator in this activity is the glass wall coupled to the liquid. Do not use an air-column length formula to predict its tone: blowing across a bottle’s opening excites a different kind of oscillator.
 
-For a fuller experimental and theoretical treatment of the coupled glass–liquid vibration, see Jundt and colleagues’ [Vibrational modes of partly filled wine glasses](https://phys.unsw.edu.au/music/people/publications/Jundtetal2006.pdf). The schematic model and numerical example here are AI-authored explanations, not measured results or publisher-verified worked answers.
+For a fuller experimental and theoretical treatment of the coupled glass–liquid vibration, see Jundt and colleagues’ [Vibrational modes of partly filled wine glasses](https://phys.unsw.edu.au/music/people/publications/Jundtetal2006.pdf). The schematic model and numerical example here are explanations, not measured results or publisher-verified worked answers.

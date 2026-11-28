@@ -111,7 +111,7 @@ Further reading: [Animate the ripple tank and its bright crest lines](ripple-tan
 ### Investigation 6-1B · Relating speed, wavelength, and frequency
 At fixed depth, vary the generator frequency. Measure a span of several consecutive bright lines, divide by the number of gaps, and calculate v = fλ. Use the same screen scale and account for projection magnification if converting screen lengths to actual tank distances.
 
-**Illustrative calculation task (AI-authored)**
+**Illustrative calculation task**
 
 A straight bar generates waves at **f₁ = 5.00 Hz** in water of uniform, fixed depth. Six consecutive bright crest lines are shown. The perpendicular distance from the first line to the sixth corresponds to **L = 0.200 m in the tank**, after correcting for projection magnification. These are illustrative data, not experimental measurements.
 
