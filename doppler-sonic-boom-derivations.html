@@ -18,117 +18,148 @@
 <main id="main">
 <p class="eyebrow">Physics 11 · Optional further reading</p>
 <h1>Deriving the Doppler effect and sonic booms</h1>
-<p>Follow successive wave crests to derive the sound-frequency formulas, then use a right triangle to find the Mach-cone angle.</p>
-    <section>
-      <h2>1 Model, symbols, and prerequisites</h2>
-      <p>This is <strong>optional further reading for Section 12 of Wave Motion Notes</strong>. Prerequisites are speed = distance/time, period and frequency, the wave equation, algebra, and right-triangle trigonometry. No calculus is required. You can complete the main notes without this page.</p>
-      <p>Use a uniform medium at rest, such as still air. Sound travels at speed <strong>c relative to the medium</strong>, independently of the source’s speed in this model. The source emits at a constant frequency <strong>f_s</strong>, with period <strong>T_s = 1/f_s</strong>. The observer receives frequency <strong>f_o</strong>, with arrival period <strong>T_o = 1/f_o</strong>. Frequencies are in hertz (Hz), times in seconds (s), speeds in metres per second (m/s), and wavelengths in metres (m).</p>
-      <p>For the Doppler derivations, motion is along the source–observer line, the source is subsonic, and the observer does not overtake the wave crests. Speeds of moving objects are measured relative to the medium. These are classical <strong>sound</strong> formulas; light needs a different, relativistic treatment.</p>
-    </section>
-
-    <section>
-      <h2>2 Moving source: derive the changed wavelength</h2>
-      <h3>Notes</h3>
-      <p>First hold the observer still and let the source move right at speed <strong>u_s</strong>, with 0 ≤ u_s &lt; c. It emits one crest, waits one period T_s, then emits the next. In that interval, the first crest travels cT_s while the source advances u_sT_s. Subtract those distances ahead of the source and add them behind it.</p>
-      <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+Cjx0aXRsZSBpZD0idGl0bGUiPk1vdmluZyBzb3VyY2UgdmVyc3VzIG1vdmluZyBvYnNlcnZlcjwvdGl0bGU+CjxkZXNjIGlkPSJkZXNjIj5PbmUtZGltZW5zaW9uYWwgc25hcHNob3RzIG9mIGVxdWFsbHkgdGltZWQgY3Jlc3RzLiBBYm92ZSwgYSBzb3VyY2UgbW92ZXMgcmlnaHQsIGNvbXByZXNzaW5nIGZvcndhcmQgY3Jlc3Qgc3BhY2luZyB0byAoYyBtaW51cyB1X3MpIFRfcyBhbmQgc3RyZXRjaGluZyBiYWNrd2FyZCBzcGFjaW5nIHRvIChjIHBsdXMgdV9zKSBUX3MuIEJlbG93LCBhIHN0YXRpb25hcnkgc291cmNlIHByb2R1Y2VzIGVxdWFsbHkgc3BhY2VkIGNyZXN0cyB0cmF2ZWxsaW5nIHJpZ2h0IHdoaWxlIGFuIG9ic2VydmVyIG1vdmVzIGxlZnQgYW5kIG1lZXRzIHRoZW0gYXQgcmVsYXRpdmUgc3BlZWQgYyBwbHVzIHVfby48L2Rlc2M+CjxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiByeD0iMTIiIGZpbGw9IndoaXRlIi8+CjxnIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZmlsbD0iIzE4MmUzYyI+Cjx0ZXh0IHg9IjI4IiB5PSIzNSIgZm9udC1zaXplPSIyMSIgZm9udC13ZWlnaHQ9IjcwMCI+MS4gTW92aW5nIHNvdXJjZTogZGlmZmVyZW50IGNyZXN0IHNwYWNpbmc8L3RleHQ+Cjx0ZXh0IHg9IjI4IiB5PSI2NSIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzUyNjg3NSI+T25lLWRpbWVuc2lvbmFsIHNuYXBzaG90IMK3IGVhY2ggbWFyayBpcyBhIGNyZXN0PC90ZXh0Pgo8cGF0aCBkPSJNNDAgMTU1SDgxNSIgc3Ryb2tlPSIjZGNlNGU3IiBzdHJva2Utd2lkdGg9IjIiLz4KPGcgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjMiPjxwYXRoIGQ9Ik02MCAxMjVWMTg1TTE4MCAxMjVWMTg1TTMwMCAxMjVWMTg1TTQ4MCAxMjVWMTg1TTU0MCAxMjVWMTg1TTYwMCAxMjVWMTg1Ii8+PC9nPgo8Y2lyY2xlIGN4PSI0MjAiIGN5PSIxNTUiIHI9IjEwIiBmaWxsPSIjYmQ0YjI0Ii8+Cjx0ZXh0IHg9IjM5MCIgeT0iMTkxIiBmb250LXNpemU9IjE3Ij5Tb3VyY2U8L3RleHQ+CjxwYXRoIGQ9Ik0zODggMTA1SDQ1Mm0tMTItNyAxMiA3LTEyIDdNMTQwIDEwM0g4MG0xMi03LTEyIDcgMTIgN002NTAgMTU1SDcxNW0tMTItNyAxMiA3LTEyIDciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzA4NmI3MiIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KPHRleHQgeD0iMzk1IiB5PSI5MCIgZm9udC1zaXplPSIxNyI+dV9zPC90ZXh0Pjx0ZXh0IHg9IjEwMCIgeT0iOTEiIGZvbnQtc2l6ZT0iMTciPmM8L3RleHQ+PHRleHQgeD0iNjc1IiB5PSIxNDEiIGZvbnQtc2l6ZT0iMTciPmM8L3RleHQ+CjxwYXRoIGQ9Ik0xODAgMjEwSDMwME0xODAgMjA0VjIxNk0zMDAgMjA0VjIxNk00ODAgMjEwSDU0ME00ODAgMjA0VjIxNk01NDAgMjA0VjIxNiIgc3Ryb2tlPSIjNTI2ODc1IiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iOTgiIHk9IjI0NSIgZm9udC1zaXplPSIxOCI+zrtfYmVoaW5kID0gKGMgKyB1X3MpVF9zPC90ZXh0Pgo8dGV4dCB4PSI0NTAiIHk9IjI0NSIgZm9udC1zaXplPSIxOCI+zrtfYWhlYWQgPSAoYyDiiJIgdV9zKVRfczwvdGV4dD4KPHBhdGggZD0iTTI4IDI3NUg4NzIiIHN0cm9rZT0iI2RjZTRlNyIvPgo8dGV4dCB4PSIyOCIgeT0iMzEwIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iNzAwIj4yLiBNb3Zpbmcgb2JzZXJ2ZXI6IHNhbWUgc3BhY2luZywgZmFzdGVyIGVuY291bnRlcnM8L3RleHQ+Cjx0ZXh0IHg9IjI4IiB5PSIzMzkiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM1MjY4NzUiPlN0YXRpb25hcnkgc291cmNlIHRvIHRoZSBsZWZ0IMK3IGFsbCBjcmVzdHMgdHJhdmVsIHJpZ2h0IGF0IGM8L3RleHQ+CjxwYXRoIGQ9Ik01MCAzOTVIODM1IiBzdHJva2U9IiNkY2U0ZTciIHN0cm9rZS13aWR0aD0iMiIvPgo8cGF0aCBkPSJNMTAwIDM3MFY0MjBNMjAwIDM3MFY0MjBNMzAwIDM3MFY0MjBNNDAwIDM3MFY0MjBNNTAwIDM3MFY0MjBNNjAwIDM3MFY0MjBNNzAwIDM3MFY0MjBNODAwIDM3MFY0MjAiIHN0cm9rZT0iIzA4NmI3MiIgc3Ryb2tlLXdpZHRoPSIzIi8+CjxjaXJjbGUgY3g9IjY1MCIgY3k9IjM5NSIgcj0iMTAiIGZpbGw9IiNiZDRiMjQiLz4KPHBhdGggZD0iTTYzNSAzNTdINTY4bTEyLTctMTIgNyAxMiA3TTI3MCAzNTdIMzQwbS0xMi03IDEyIDctMTIgNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjIuNSIvPgo8dGV4dCB4PSI1OTQiIHk9IjM0OSIgZm9udC1zaXplPSIxNiI+dV9vPC90ZXh0Pjx0ZXh0IHg9IjI5OSIgeT0iMzQ5IiBmb250LXNpemU9IjE2Ij5jPC90ZXh0Pgo8dGV4dCB4PSI1OTQiIHk9IjQ0NSIgZm9udC1zaXplPSIxNyI+T2JzZXJ2ZXI8L3RleHQ+Cjx0ZXh0IHg9IjkwIiB5PSI0NjAiIGZvbnQtc2l6ZT0iMTgiPs674oKAID0gYy9mX3M8L3RleHQ+Cjx0ZXh0IHg9IjI4IiB5PSI0ODYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM1MjY4NzUiPlRvd2FyZCB0aGUgc291cmNlOiBmX28gPSAoYyArIHVfbykvzrvigoAuIERpc3RhbmNlcyBhbmQgc3BlZWRzIGFyZSBzY2hlbWF0aWMuPC90ZXh0Pgo8L2c+Cjwvc3ZnPgo=" width="900" height="500" alt="A source moving right compresses the forward crest spacing and stretches the backward spacing. An observer moving toward a stationary source meets unchanged crests faster."><figcaption>The marks are one-dimensional cross-sections of crests emitted one period apart. Source motion changes their spacing; observer motion changes their encounter rate.</figcaption></figure>
-      <h3>Ahead: the source approaches a stationary observer</h3>
-      <p>The second crest starts closer to the first, so the forward wavelength is shorter:</p>
-      <pre><code>λ_ahead = cT_s − u_sT_s
+<p>Follow two successive wave crests, measure their distances, then build a Mach cone from expanding circles.</p>
+<section>
+<h2>1 Model, symbols, and prerequisites</h2>
+<p>This is <strong>optional further reading for Section 12 of Wave Motion Notes</strong>. Prerequisites are speed = distance/time, period and frequency, the wave equation, algebra, and right-triangle trigonometry. No calculus is required. You can complete the main notes without this page.</p>
+<p>Use a uniform medium at rest, such as still air. Sound travels at speed <strong>c relative to the medium</strong>, independently of the source’s speed in this model. The source emits at a constant frequency <strong>f_s</strong>, with period <strong>T_s = 1/f_s</strong>. The observer receives frequency <strong>f_o</strong>, with arrival period <strong>T_o = 1/f_o</strong>. Frequencies are in hertz (Hz), times in seconds (s), speeds in metres per second (m/s), and wavelengths in metres (m).</p>
+<p>For the Doppler derivations, motion is along the source–observer line, the source is subsonic, and the observer does not overtake the wave crests. Speeds of moving objects are measured relative to the medium. These are classical <strong>sound</strong> formulas; light needs a different, relativistic treatment.</p>
+</section>
+<section>
+<h2>2 Moving source: why the wavelength changes</h2>
+<p>Imagine a horn that moves right at speed u_s while the air and both listeners are stationary. Each crest travels at sound speed c, not c + u_s. A crest is a moving pressure maximum; a circle in a top-view drawing is a cross-section of its spherical wavefront.</p>
+<h3>Step 1 — Emit the first crest</h3>
+<p>At time t = 0, the horn is at x = 0 and emits crest 1. The next crest will be emitted exactly one source period later: T_s = 1/f_s.</p>
+<h3>Step 2 — Wait one period</h3>
+<p>At t = T_s, crest 1 has expanded to radius cT_s. Its right edge is at x = cT_s and its left edge is at x = −cT_s. Meanwhile the horn has moved to x = u_sT_s and emits crest 2 there. Crest 2 initially has zero radius. The old crest does not move with the horn.</p>
+<figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNTM1IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik1vdmluZyBzb3VyY2UgYXQgdHdvIGluc3RhbnRzIj48cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjUzNSIgZmlsbD0id2hpdGUiLz48ZyBmb250LWZhbWlseT0ic3lzdGVtLXVpLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTkiIGZpbGw9IiMxODJlM2MiPjx0ZXh0IHg9IjIwIiB5PSIzMCIgZmlsbD0iIzE4MmUzYyIgdGV4dC1hbmNob3I9InN0YXJ0Ij5BIMK3IEZpcnN0IGNyZXN0IGlzIGVtaXR0ZWQ8L3RleHQ+PHBhdGggZD0iTTQwIDkwTDU2MCA5MCIgc3Ryb2tlPSIjYzVjZGQxIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz48Y2lyY2xlIGN4PSIyNzAiIGN5PSI5MCIgcj0iNiIgZmlsbD0iI2JkNGIyNCIvPjx0ZXh0IHg9IjI3MCIgeT0iNzAiIGZpbGw9IiMxODJlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlNvdXJjZSArIGNyZXN0IDE8L3RleHQ+PHRleHQgeD0iMjcwIiB5PSIxMTciIGZpbGw9IiMxODJlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPnggPSAwPC90ZXh0Pjx0ZXh0IHg9IjIwIiB5PSIxNjAiIGZpbGw9IiMxODJlM2MiIHRleHQtYW5jaG9yPSJzdGFydCI+QiDCtyBPbmUgcGVyaW9kIGxhdGVyPC90ZXh0PjxwYXRoIGQ9Ik00MCAzMDBMNTYwIDMwMCIgc3Ryb2tlPSIjYzVjZGQxIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz48Y2lyY2xlIGN4PSIyNzAiIGN5PSIzMDAiIHI9IjEzNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjMiLz48Y2lyY2xlIGN4PSIyNzAiIGN5PSIzMDAiIHI9IjYiIGZpbGw9IiM1MjY4NzUiLz48Y2lyY2xlIGN4PSIzMTUiIGN5PSIzMDAiIHI9IjYiIGZpbGw9IiNiZDRiMjQiLz48Y2lyY2xlIGN4PSIxMzUiIGN5PSIzMDAiIHI9IjYiIGZpbGw9IiMwODZiNzIiLz48Y2lyY2xlIGN4PSI0MDUiIGN5PSIzMDAiIHI9IjYiIGZpbGw9IiMwODZiNzIiLz48dGV4dCB4PSIyNzAiIHk9IjE5NCIgZmlsbD0iIzA4NmI3MiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q3Jlc3QgMSAoZXhwYW5kaW5nIGNpcmNsZSk8L3RleHQ+PHRleHQgeD0iMzI0IiB5PSIyNzkiIGZpbGw9IiNiZDRiMjQiIHRleHQtYW5jaG9yPSJzdGFydCI+Q3Jlc3QgMjwvdGV4dD48dGV4dCB4PSIxMzUiIHk9IjMyNyIgZmlsbD0iIzE4MmUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oiSY1Tigps8L3RleHQ+PHRleHQgeD0iMjcwIiB5PSIzMjciIGZpbGw9IiMxODJlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjA8L3RleHQ+PHRleHQgeD0iNDA1IiB5PSIzMjciIGZpbGw9IiMxODJlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPmNU4oKbPC90ZXh0Pjx0ZXh0IHg9IjMyMCIgeT0iMzUyIiBmaWxsPSIjYmQ0YjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj514oKbVOKCmzwvdGV4dD48cGF0aCBkPSJNMjcwIDM3N0wzMTUgMzc3IiBzdHJva2U9IiNiZDRiMjQiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxwYXRoIGQ9Ik0yNzAgMzcyTDI3MCAzODIiIHN0cm9rZT0iI2JkNGIyNCIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIC8+PHBhdGggZD0iTTMxNSAzNzJMMzE1IDM4MiIgc3Ryb2tlPSIjYmQ0YjI0IiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz48dGV4dCB4PSIyOTIuNSIgeT0iMzY4IiBmaWxsPSIjYmQ0YjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj48L3RleHQ+PHBhdGggZD0iTTI3MCA0MTFMNDA1IDQxMSIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz48cGF0aCBkPSJNMjcwIDQwNkwyNzAgNDE2IiBzdHJva2U9IiMwODZiNzIiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxwYXRoIGQ9Ik00MDUgNDA2TDQwNSA0MTYiIHN0cm9rZT0iIzA4NmI3MiIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIC8+PHRleHQgeD0iMzM3LjUiIHk9IjQwMiIgZmlsbD0iIzA4NmI3MiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Y1Tigps8L3RleHQ+PHBhdGggZD0iTTEzNSA0NjVMMzE1IDQ2NSIgc3Ryb2tlPSIjNTI2ODc1IiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz48cGF0aCBkPSJNMTM1IDQ2MEwxMzUgNDcwIiBzdHJva2U9IiM1MjY4NzUiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxwYXRoIGQ9Ik0zMTUgNDYwTDMxNSA0NzAiIHN0cm9rZT0iIzUyNjg3NSIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIC8+PHRleHQgeD0iMjI1IiB5PSI0NTYiIGZpbGw9IiM1MjY4NzUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPs67IGJlaGluZDwvdGV4dD48cGF0aCBkPSJNMzE1IDQ2NUw0MDUgNDY1IiBzdHJva2U9IiNiZDRiMjQiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxwYXRoIGQ9Ik0zMTUgNDYwTDMxNSA0NzAiIHN0cm9rZT0iI2JkNGIyNCIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIC8+PHBhdGggZD0iTTQwNSA0NjBMNDA1IDQ3MCIgc3Ryb2tlPSIjYmQ0YjI0IiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz48dGV4dCB4PSIzNjAiIHk9IjQ1NiIgZmlsbD0iI2JkNGIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+zrsgYWhlYWQ8L3RleHQ+PHRleHQgeD0iMzAwIiB5PSI1MTAiIGZpbGw9IiMxODJlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlNvdXJjZSBtb3ZlcyByaWdodDsgY3Jlc3QgMSBleHBhbmRzIG91dHdhcmQuPC90ZXh0PjwvZz48L3N2Zz4=" width="600" height="535" alt="Two snapshots of crest 1 expanding while the source moves and emits crest 2."><figcaption>Compare the two gaps at the same instant. Orange marks the source and the forward gap.</figcaption></figure>
+<h3>Step 3 — Measure the wavelength ahead</h3>
+<p>A wavelength is the separation of adjacent crests in the direction of wave travel, measured at the same instant. Just as crest 2 is emitted, its forward edge is at the horn; crest 1 is farther right. Subtract their positions.</p>
+<pre><code>λ_ahead = x₁ − x₂
+        = cT_s − u_sT_s
         = (c − u_s)T_s
-        = (c − u_s)/f_s</code></pre>
-      <p>The crests still pass the stationary observer at speed c. Use received frequency = crest speed / crest spacing:</p>
-      <pre><code>f_o = c/λ_ahead
+        = (c − u_s)/f_s
+</code></pre>
+<p>After another small time interval, both forward crests advance equally at c, so this spacing remains unchanged. It is not the distance travelled by the horn.</p>
+<h3>Step 4 — Convert spacing into received frequency</h3>
+<p>At a stationary listener, the first crest must move one wavelength farther before the next crest reaches the listener. The time between arrivals is T_o = λ_ahead/c. Frequency is the reciprocal of this arrival time.</p>
+<pre><code>f_o = 1/T_o = c/λ_ahead
     = c / [(c − u_s)/f_s]
-    = f_s c/(c − u_s)                 approaching source</code></pre>
-      <p>The denominator is smaller than c, so f_o &gt; f_s. Equivalently, the arrival period is T_o = λ_ahead/c = T_s(1 − u_s/c).</p>
-      <h3>Behind: the source recedes from a stationary observer</h3>
-      <p>The source moves away from the earlier backward-going crest, increasing the spacing:</p>
-      <pre><code>λ_behind = cT_s + u_sT_s = (c + u_s)/f_s
-f_o = c/λ_behind = f_s c/(c + u_s)     receding source</code></pre>
-      <p>Here f_o &lt; f_s. The sound speed in still air remains c on both sides; the moving source changes the wavelength, not that propagation speed.</p>
-    </section>
-
-    <section>
-      <h2>3 Moving observer: derive the crest encounter rate</h2>
-      <p>Now hold the source still. The wavelength in the medium is <strong>λ₀ = c/f_s</strong>. Let the observer move at speed <strong>u_o</strong>, with 0 ≤ u_o &lt; c. A moving observer does not change the emitted crest spacing.</p>
-      <p>When the observer moves toward the source, the observer and the arriving crests approach each other at c + u_o. In the time T_o between encounters, their relative motion closes one wavelength:</p>
-      <pre><code>(c + u_o)T_o = λ₀
+    = f_s c/(c − u_s)
+</code></pre>
+<p>The wavelength is shorter, so more crests arrive per second and the pitch increases.</p>
+<h3>Step 5 — Repeat behind the moving source</h3>
+<p>The left edge of crest 1 is at −cT_s, and crest 2 starts at +u_sT_s. The distance between them is now the sum of the two distances.</p>
+<pre><code>λ_behind = u_sT_s − (−cT_s)
+         = (c + u_s)T_s
+         = (c + u_s)/f_s
+f_o = c/λ_behind = f_s c/(c + u_s)
+</code></pre>
+<p>Behind the horn the wavelength is longer, so fewer crests arrive per second.</p>
+<h3>Quick numerical picture</h3>
+<p>Use c = 300 m/s, u_s = 100 m/s and f_s = 100 Hz. In 0.010 s the crest travels 3 m and the horn travels 1 m. The front gap is 3 − 1 = 2 m; the rear gap is 3 + 1 = 4 m. A stationary listener ahead receives 300/2 = 150 Hz and one behind receives 300/4 = 75 Hz.</p>
+</section>
+<section>
+<h2>3 Moving observer: why the encounter rate changes</h2>
+<p>Now the horn stays still and the listener moves. Successive crests have the same spacing λ₀ = cT_s = c/f_s everywhere along the ray. The listener cannot change that spacing by moving.</p>
+<h3>Step 1 — Start when one crest reaches the listener</h3>
+<p>At t = 0, the listener meets crest 1. The next crest (crest 2) is exactly one wavelength λ₀ to the left. All crests travel right.</p>
+<h3>Step 2 — Follow the next crest and the listener</h3>
+<p>The listener moves left at speed u_o (toward the horn). At the next meeting, the second crest has moved right by cT_o and the listener has moved left by u_oT_o. Together they have closed the original gap λ₀.</p>
+<figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzY1IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik1vdmluZyBvYnNlcnZlciBtZWV0cyBjb25zZWN1dGl2ZSBjcmVzdHMiPjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iMzY1IiBmaWxsPSJ3aGl0ZSIvPjxnIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOSIgZmlsbD0iIzE4MmUzYyI+PHRleHQgeD0iMjAiIHk9IjMwIiBmaWxsPSIjMTgyZTNjIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkEgwrcgRmlyc3QgY3Jlc3QgbWVldHMgb2JzZXJ2ZXI8L3RleHQ+PHBhdGggZD0iTTQwIDEwMEw1NjAgMTAwIiBzdHJva2U9IiNjNWNkZDEiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxwYXRoIGQ9Ik0xMTAgNzJMMTEwIDEyOCIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz48cGF0aCBkPSJNNDcwIDcyTDQ3MCAxMjgiIHN0cm9rZT0iIzA4NmI3MiIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIC8+PGNpcmNsZSBjeD0iNDcwIiBjeT0iMTAwIiByPSI2IiBmaWxsPSIjYmQ0YjI0Ii8+PHRleHQgeD0iMTEwIiB5PSI2MiIgZmlsbD0iIzE4MmUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q3Jlc3QgMjwvdGV4dD48dGV4dCB4PSI0NzAiIHk9IjYyIiBmaWxsPSIjMTgyZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DcmVzdCAxICsgb2JzZXJ2ZXI8L3RleHQ+PHBhdGggZD0iTTExMCAxNTFMNDcwIDE1MSIgc3Ryb2tlPSIjNTI2ODc1IiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz48cGF0aCBkPSJNMTEwIDE0NkwxMTAgMTU2IiBzdHJva2U9IiM1MjY4NzUiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxwYXRoIGQ9Ik00NzAgMTQ2TDQ3MCAxNTYiIHN0cm9rZT0iIzUyNjg3NSIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIC8+PHRleHQgeD0iMjkwIiB5PSIxNDIiIGZpbGw9IiM1MjY4NzUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPs674oKAPC90ZXh0Pjx0ZXh0IHg9IjIwIiB5PSIyMDUiIGZpbGw9IiMxODJlM2MiIHRleHQtYW5jaG9yPSJzdGFydCI+QiDCtyBOZXh0IGNyZXN0IG1lZXRzIG9ic2VydmVyPC90ZXh0PjxwYXRoIGQ9Ik00MCAyNjBMNTYwIDI2MCIgc3Ryb2tlPSIjYzVjZGQxIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz48cGF0aCBkPSJNMzgwIDIzMkwzODAgMjg4IiBzdHJva2U9IiMwODZiNzIiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxjaXJjbGUgY3g9IjM4MCIgY3k9IjI2MCIgcj0iNiIgZmlsbD0iI2JkNGIyNCIvPjx0ZXh0IHg9IjM4MCIgeT0iMjIyIiBmaWxsPSIjMTgyZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NZWV0aW5nIHBvaW50PC90ZXh0PjxwYXRoIGQ9Ik0xMTAgMjYwTDM4MCAyNjAiIHN0cm9rZT0iIzA4NmI3MiIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIC8+PHBhdGggZD0iTTQ3MCAyNjBMMzgwIDI2MCIgc3Ryb2tlPSIjYmQ0YjI0IiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz48cGF0aCBkPSJNMTEwIDMxMEwzODAgMzEwIiBzdHJva2U9IiMwODZiNzIiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxwYXRoIGQ9Ik0xMTAgMzA1TDExMCAzMTUiIHN0cm9rZT0iIzA4NmI3MiIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIC8+PHBhdGggZD0iTTM4MCAzMDVMMzgwIDMxNSIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz48dGV4dCB4PSIyNDUiIHk9IjMwMSIgZmlsbD0iIzA4NmI3MiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Y1TigpI8L3RleHQ+PHBhdGggZD0iTTM4MCAzMTBMNDcwIDMxMCIgc3Ryb2tlPSIjYmQ0YjI0IiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz48cGF0aCBkPSJNMzgwIDMwNUwzODAgMzE1IiBzdHJva2U9IiNiZDRiMjQiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxwYXRoIGQ9Ik00NzAgMzA1TDQ3MCAzMTUiIHN0cm9rZT0iI2JkNGIyNCIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIC8+PHRleHQgeD0iNDI1IiB5PSIzMDEiIGZpbGw9IiNiZDRiMjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPnXigpJU4oKSPC90ZXh0Pjx0ZXh0IHg9IjMwMCIgeT0iMzQ3IiBmaWxsPSIjMTgyZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Ub2dldGhlciB0aGVzZSBkaXN0YW5jZXMgY2xvc2UgdGhlIG9yaWdpbmFsIGdhcC48L3RleHQ+PC9nPjwvc3ZnPg==" width="600" height="365" alt="The second crest travels right while the observer moves left to the meeting point."><figcaption>The original gap is closed by both motions; the wave spacing itself is unchanged.</figcaption></figure>
+<pre><code>distance covered by crest + distance covered by listener = gap
+cT_o + u_oT_o = λ₀
+(c + u_o)T_o = λ₀
 T_o = λ₀/(c + u_o)
-f_o = 1/T_o = (c + u_o)/λ₀
-    = f_s(c + u_o)/c                 approaching observer</code></pre>
-      <p>When the observer moves away in the same direction as the arriving sound, the crests catch up at c − u_o instead:</p>
-      <pre><code>(c − u_o)T_o = λ₀
-f_o = f_s(c − u_o)/c                 receding observer</code></pre>
-      <p><strong>c ± u_o is a speed relative to the observer.</strong> It does not replace c as the sound speed relative to the medium. Source motion changes the spacing; observer motion changes how quickly that spacing is crossed.</p>
-    </section>
-
-    <section>
-      <h2>4 Combine the motions with an explicit sign convention</h2>
-      <p>Choose <strong>+x along the sound’s travel direction from source to observer</strong> for the segment being studied. Let <strong>v_s</strong> and <strong>v_o</strong> be the signed source and observer velocities along this same axis, relative to the medium. A positive source velocity follows the outgoing sound; a positive observer velocity runs away with it. Require |v_s| &lt; c and |v_o| &lt; c here.</p>
-      <p>The crest spacing is (c − v_s)/f_s. The speed at which crests overtake the observer is c − v_o. Combining the two results gives:</p>
-      <pre><code>λ = (c − v_s)/f_s
+</code></pre>
+<h3>Step 3 — Turn arrival time into frequency</h3>
+<pre><code>f_o = 1/T_o
+    = (c + u_o)/λ₀
+    = (c + u_o)/(c/f_s)
+    = f_s(c + u_o)/c
+</code></pre>
+<p>The sound still moves at c in the air. The closing speed c + u_o is relative to the listener, not a new sound speed.</p>
+<h3>Step 4 — What if the listener moves away?</h3>
+<p>The crest must catch up with a listener moving in the same direction. The crest travels cT_o, but the listener moves an additional u_oT_o away.</p>
+<pre><code>cT_o = λ₀ + u_oT_o
+(c − u_o)T_o = λ₀
+f_o = f_s(c − u_o)/c
+</code></pre>
+<p>For example, c = 300 m/s, f_s = 100 Hz and u_o = 100 m/s give λ₀ = 3 m. Moving toward the horn gives f_o = 400/3 ≈ 133 Hz; moving away gives 200/3 ≈ 66.7 Hz. The 3 m spacing never changes.</p>
+</section>
+<section>
+<h2>4 Combine the motions with an explicit sign convention</h2>
+<p>Choose <strong>+x along the sound’s travel direction from source to observer</strong> for the segment being studied. Let <strong>v_s</strong> and <strong>v_o</strong> be the signed source and observer velocities along this same axis, relative to the medium. A positive source velocity follows the outgoing sound; a positive observer velocity runs away with it. Require |v_s| &lt; c and |v_o| &lt; c here.</p>
+<p>First use the source velocity to calculate the actual crest spacing in the air. Next use the observer velocity to calculate the rate at which those crests pass the observer. Do not add both speeds to the sound speed. Combining the two results gives:</p>
+<pre><code>λ = (c − v_s)/f_s
 f_o = (c − v_o)/λ
-    = f_s(c − v_o)/(c − v_s)</code></pre>
-      <p>If the source moves toward the observer at speed u_s and the observer moves toward the source at speed u_o, then v_s = +u_s and v_o = −u_o. Therefore f_o = f_s(c + u_o)/(c − u_s). If both move away from one another, the corresponding result is f_s(c − u_o)/(c + u_s).</p>
-      <p>These signs refer to the chosen direction of sound travel, not a memorized rule that every velocity is positive. Do not use this one-dimensional derivation unchanged for a passing source at an arbitrary angle. Source and observer motion relative to the medium matter separately; their relative speed alone is insufficient for the general sound problem.</p>
-    </section>
-
-    <section>
-      <h2>5 What changes at and above Mach 1?</h2>
-      <p>Define the <strong>Mach number M = u_s/c</strong>, where u_s is now the positive source speed through the medium. The sonic-boom discussion uses a source moving steadily along a straight line in otherwise uniform, still air.</p>
-      <ul>
-        <li><strong>M &lt; 1:</strong> an earlier sound front can advance ahead of the source. The source remains inside each earlier spherical front.</li>
-        <li><strong>M = 1:</strong> the ideal forward crest spacing (c − u_s)T_s reaches zero. The fronts meet at the source’s forward position in the ideal geometry.</li>
-        <li><strong>M &gt; 1:</strong> the source outruns the earlier sound fronts. Their common envelope trails the source as a cone, called the Mach cone.</li>
-      </ul>
-      <p>The approaching-source Doppler formula has a denominator tending to zero as u_s approaches c. <strong>That is a limit of the subsonic periodic-wave model, not a prediction of an infinitely high audible pitch or a formula for a sonic boom.</strong> Supersonic motion requires a different wavefront geometry. A real aircraft produces pressure disturbances and shocks; the construction below models their Mach-cone geometry using the ambient sound speed c, rather than calculating shock strength.</p>
-    </section>
-
-    <section>
-      <h2>6 Derive the Mach-cone half-angle</h2>
-      <p>Choose an earlier source position O and the current position S. Let <strong>Δt &gt; 0</strong> be the elapsed time since the source was at O. A small sound disturbance emitted at O has expanded to a sphere of radius <strong>r = cΔt</strong>. Meanwhile the source has moved <strong>OS = u_sΔt</strong>.</p>
-      <p>In a cross-section through the flight path, draw a tangent from S to that circle, touching it at A. The radius OA is perpendicular to the tangent SA. Triangle OAS is therefore right-angled at A. Define <strong>μ as the half-angle between the backward flight axis SO and the cone surface SA</strong>.</p>
-      <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+Cjx0aXRsZSBpZD0idGl0bGUiPlJpZ2h0IHRyaWFuZ2xlIGZvciB0aGUgTWFjaC1jb25lIGhhbGYtYW5nbGU8L3RpdGxlPgo8ZGVzYyBpZD0iZGVzYyI+QXQgTWFjaCAyIHRoZSBzb3VyY2UgbW92ZXMgcmlnaHQgZnJvbSBPIHRvIFMgdGhyb3VnaCBkaXN0YW5jZSB1X3MgZGVsdGEgdC4gQW4gZWFybGllciBkaXN0dXJiYW5jZSBjZW50cmVkIGF0IE8gaGFzIHJhZGl1cyBjIGRlbHRhIHQuIFRoZSBjb25lIHN1cmZhY2UgZnJvbSBTIGlzIHRhbmdlbnQgdG8gdGhhdCBjaXJjbGUgYXQgQSwgcGVycGVuZGljdWxhciB0byByYWRpdXMgT0EuIEF0IFMsIHRoZSBoYWxmLWFuZ2xlIG11IGhhcyBvcHBvc2l0ZSBzaWRlIE9BIGFuZCBoeXBvdGVudXNlIE9TLCBzbyBzaW4gbXUgZXF1YWxzIGMgZGl2aWRlZCBieSB1X3MuPC9kZXNjPgo8cmVjdCB3aWR0aD0iODQwIiBoZWlnaHQ9IjYwMCIgcng9IjEyIiBmaWxsPSJ3aGl0ZSIvPgo8ZyBmb250LWZhbWlseT0ic3lzdGVtLXVpLHNhbnMtc2VyaWYiIGZpbGw9IiMxODJlM2MiPgo8dGV4dCB4PSIyOCIgeT0iMzYiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSI3MDAiPk1hY2gtY29uZSBjcm9zcy1zZWN0aW9uPC90ZXh0Pgo8dGV4dCB4PSIyOCIgeT0iNjUiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM1MjY4NzUiPkNvbnN0YW50IHN1cGVyc29uaWMgc3BlZWQgwrcgc2hvd24gYXQgTWFjaCAyPC90ZXh0Pgo8Y2lyY2xlIGN4PSIyNzAiIGN5PSIzMzAiIHI9IjIxMCIgZmlsbD0iI2VkZjZmNCIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTI4MCA5My4zIDY5MCAzMzAgMjgwIDU2Ni43IiBzdHJva2U9IiNiZDRiMjQiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIvPgo8cGF0aCBkPSJNMjcwIDMzMCAzNzUgMTQ4LjEzNSIgc3Ryb2tlPSIjMDg3Y2ZmIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTI3MCAzMzBINjkwIiBzdHJva2U9IiM1MjY4NzUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNyA2Ii8+CjxwYXRoIGQ9Ik0zNjkgMTU4LjUyNyAzNzkuMzkyIDE2NC41MjcgMzg1LjM5MiAxNTQuMTM1IiBzdHJva2U9IiMwODdjZmYiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPgo8cGF0aCBkPSJNNjQwIDMzMEE1MCA1MCAwIDAgMSA2NDYuNyAzMDUiIHN0cm9rZT0iI2JkNGIyNCIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+CjxwYXRoIGQ9Ik03MTUgMzMwSDc5MG0tMTQtOCAxNCA4LTE0IDgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE4MmUzYyIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KPGcgZmlsbD0iIzE4MmUzYyI+PGNpcmNsZSBjeD0iMjcwIiBjeT0iMzMwIiByPSI1Ii8+PGNpcmNsZSBjeD0iNjkwIiBjeT0iMzMwIiByPSI1Ii8+PGNpcmNsZSBjeD0iMzc1IiBjeT0iMTQ4LjEzNSIgcj0iNSIvPjwvZz4KPHRleHQgeD0iMzgyIiB5PSIxMzkiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSI3MDAiPkE8L3RleHQ+Cjx0ZXh0IHg9IjI1MCIgeT0iMzYxIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iNzAwIj5PPC90ZXh0Pgo8dGV4dCB4PSI2ODEiIHk9IjM2MSIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9IjcwMCI+UzwvdGV4dD4KPHRleHQgeD0iNjE4IiB5PSIzMTciIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiNiZDRiMjQiPs68PC90ZXh0Pgo8dGV4dCB4PSI1MDAiIHk9IjM2NCIgZm9udC1zaXplPSIxOSI+T1MgPSB1X3MgzpR0PC90ZXh0Pgo8dGV4dCB4PSIxNTkiIHk9IjIwNiIgZm9udC1zaXplPSIxOSIgZmlsbD0iIzA4N2NmZiI+T0EgPSBjIM6UdDwvdGV4dD4KPHRleHQgeD0iNTEwIiB5PSIxOTciIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiNiZDRiMjQiPkNvbmUgc3VyZmFjZTwvdGV4dD4KPHRleHQgeD0iMTEyIiB5PSI0MzQiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMwODZiNzIiPkVhcmxpZXIgc291bmQgZnJvbnQ8L3RleHQ+Cjx0ZXh0IHg9IjUwOCIgeT0iNDc4IiBmb250LXNpemU9IjIzIiBmb250LXdlaWdodD0iNzAwIj5zaW4gzrwgPSBjL3VfcyA9IDEvTTwvdGV4dD4KPHRleHQgeD0iMjgiIHk9IjU4NiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzUyNjg3NSI+TzogZWFybGllciBzb3VyY2UgcG9zaXRpb24gwrcgUzogY3VycmVudCBwb3NpdGlvbiDCtyBPQSBpcyBwZXJwZW5kaWN1bGFyIHRvIFNBPC90ZXh0Pgo8L2c+Cjwvc3ZnPgo=" width="840" height="600" alt="Right triangle OAS: OA is the sound-front radius c Δt, OS is source travel u_s Δt, and SA is tangent to the front at A. Angle μ at S has sine OA divided by OS."><figcaption>The cone surface is tangent to an earlier sound front. Its radius meets the surface at a right angle, making sin μ = c/u_s. This is a cross-section of a three-dimensional cone.</figcaption></figure>
-      <p>In triangle OAS, OA is opposite μ and OS is the hypotenuse. Apply the sine ratio:</p>
-      <pre><code>sin μ = OA/OS
+    = f_s(c − v_o)/(c − v_s)
+</code></pre>
+<p>If the source moves toward the observer at speed u_s and the observer moves toward the source at speed u_o, then v_s = +u_s and v_o = −u_o. Therefore f_o = f_s(c + u_o)/(c − u_s). If both move away from one another, the corresponding result is f_s(c − u_o)/(c + u_s).</p>
+<p>These signs refer to the chosen direction of sound travel, not a memorized rule that every velocity is positive. Do not use this one-dimensional derivation unchanged for a passing source at an arbitrary angle. Source and observer motion relative to the medium matter separately; their relative speed alone is insufficient for the general sound problem.</p>
+</section>
+<section>
+<h2>5 What changes at and above Mach 1?</h2>
+<p>Define the <strong>Mach number M = u_s/c</strong>, where u_s is now the positive source speed through the medium. The sonic-boom discussion uses a source moving steadily along a straight line in otherwise uniform, still air.</p>
+<ul>
+<li><strong>M &lt; 1:</strong> an earlier sound front can advance ahead of the source. The source remains inside each earlier spherical front.</li>
+<li><strong>M = 1:</strong> the ideal forward crest spacing (c − u_s)T_s reaches zero. The fronts meet at the source’s forward position in the ideal geometry.</li>
+<li><strong>M &gt; 1:</strong> the source outruns the earlier sound fronts. Their common envelope trails the source as a cone, called the Mach cone.</li>
+</ul>
+<p>The approaching-source Doppler formula has a denominator tending to zero as u_s approaches c. <strong>That is a limit of the subsonic periodic-wave model, not a prediction of an infinitely high audible pitch or a formula for a sonic boom.</strong> Supersonic motion requires a different wavefront geometry. A real aircraft produces pressure disturbances and shocks; the construction below models their Mach-cone geometry using the ambient sound speed c, rather than calculating shock strength.</p>
+</section>
+<section>
+<h2>6 Derive the Mach-cone half-angle</h2>
+<h3>Step 1 — Freeze the motion at the current time</h3>
+<p>Imagine an aircraft moving right at twice the speed of sound. It emits disturbances at successive positions. At the current instant S, each earlier disturbance is a circle in the drawing (a sphere in 3D). Older circles are larger because they have had longer to expand. Their centres stay at the original emission positions, not at the aircraft.</p>
+<h3>Step 2 — Connect the outside edges</h3>
+<p>The aircraft is outside all the earlier circles because u_s &gt; c. A straight line from S can touch the outside edge of every circle without cutting through it. These two common tangent lines make the V-shaped cross-section of the Mach cone.</p>
+<h3>Step 3 — Select one circle and draw a right triangle</h3>
+<p>Choose the earlier emission point O, and let Δt be the time since emission. The source travelled OS = u_sΔt. The sound travelled equally in every direction from O, giving radius OA = cΔt. A is where the upper tangent touches that circle.</p>
+<figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjUwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik1hY2ggMiBlbnZlbG9wZSBhbmQgcmlnaHQgdHJpYW5nbGUiPjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNjUwIiBmaWxsPSJ3aGl0ZSIvPjxnIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOSIgZmlsbD0iIzE4MmUzYyI+PHRleHQgeD0iMjAiIHk9IjMwIiBmaWxsPSIjMTgyZTNjIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkEgwrcgQnVpbGQgdGhlIGNvbmUgKE1hY2ggMik8L3RleHQ+PHBhdGggZD0iTTMwIDE4MEw1NTAgMTgwIiBzdHJva2U9IiNjNWNkZDEiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiBzdHJva2UtZGFzaGFycmF5PSI1IDUiLz48Y2lyY2xlIGN4PSIyNDAiIGN5PSIxODAiIHI9IjEyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjMiLz48Y2lyY2xlIGN4PSIyNDAiIGN5PSIxODAiIHI9IjYiIGZpbGw9IiM1MjY4NzUiLz48Y2lyY2xlIGN4PSIzMjAiIGN5PSIxODAiIHI9IjgwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwODZiNzIiIHN0cm9rZS13aWR0aD0iMyIvPjxjaXJjbGUgY3g9IjMyMCIgY3k9IjE4MCIgcj0iNiIgZmlsbD0iIzUyNjg3NSIvPjxjaXJjbGUgY3g9IjQwMCIgY3k9IjE4MCIgcj0iNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzA4NmI3MiIgc3Ryb2tlLXdpZHRoPSIzIi8+PGNpcmNsZSBjeD0iNDAwIiBjeT0iMTgwIiByPSI2IiBmaWxsPSIjNTI2ODc1Ii8+PHBhdGggZD0iTTIzMCAzNS42NjI0TDQ4MCAxODAiIHN0cm9rZT0iI2JkNGIyNCIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIC8+PHBhdGggZD0iTTIzMCAzMjQuMzM3Nkw0ODAgMTgwIiBzdHJva2U9IiNiZDRiMjQiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxjaXJjbGUgY3g9IjQ4MCIgY3k9IjE4MCIgcj0iNiIgZmlsbD0iI2JkNGIyNCIvPjx0ZXh0IHg9IjQ5MCIgeT0iMTYyIiBmaWxsPSIjYmQ0YjI0IiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlM8L3RleHQ+PHRleHQgeD0iNDgwIiB5PSIyMTIiIGZpbGw9IiMxODJlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk5vdzwvdGV4dD48dGV4dCB4PSIyNDAiIHk9IjIwNSIgZmlsbD0iIzE4MmUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RWFybGllcjwvdGV4dD48dGV4dCB4PSIyMCIgeT0iMzUzIiBmaWxsPSIjMTgyZTNjIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkIgwrcgS2VlcCBvbmUgd2F2ZWZyb250IGFuZCB0cmlhbmdsZTwvdGV4dD48Y2lyY2xlIGN4PSIyMDAiIGN5PSI1MDAiIHI9IjEyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMjAwIDUwMEw0NDAgNTAwIiBzdHJva2U9IiM1MjY4NzUiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxwYXRoIGQ9Ik0yMDAgNTAwTDI2MCAzOTYuMDc3IiBzdHJva2U9IiMwODcxYzAiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxwYXRoIGQ9Ik0yNjAgMzk2LjA3N0w0NDAgNTAwIiBzdHJva2U9IiNiZDRiMjQiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPjxwYXRoIGQ9Ik0yNTEgNDExLjY2NSBMMjY2LjU4OCA0MjAuNjY1IEwyNzUuNTg4IDQwNS4wNzcgTTQwMCA1MDAgQTQwIDQwIDAgMCAxIDQwNS4zNTkgNDgwIiBmaWxsPSJub25lIiBzdHJva2U9IiNiZDRiMjQiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjUwMCIgcj0iNiIgZmlsbD0iIzE4MmUzYyIvPjxjaXJjbGUgY3g9IjI2MCIgY3k9IjM5Ni4wNzciIHI9IjYiIGZpbGw9IiMxODJlM2MiLz48Y2lyY2xlIGN4PSI0NDAiIGN5PSI1MDAiIHI9IjYiIGZpbGw9IiNiZDRiMjQiLz48dGV4dCB4PSIxODgiIHk9IjUyNyIgZmlsbD0iIzE4MmUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TzwvdGV4dD48dGV4dCB4PSIyNTMiIHk9IjM4NiIgZmlsbD0iIzE4MmUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QTwvdGV4dD48dGV4dCB4PSI0NDgiIHk9IjUyNyIgZmlsbD0iIzE4MmUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UzwvdGV4dD48dGV4dCB4PSIxNTUiIHk9IjQ1MyIgZmlsbD0iIzA4NzFjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+T0EgPSBjzpR0PC90ZXh0Pjx0ZXh0IHg9IjMyMCIgeT0iNTI5IiBmaWxsPSIjMTgyZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5PUyA9IHXigpvOlHQ8L3RleHQ+PHRleHQgeD0iMzg1IiB5PSI0ODMiIGZpbGw9IiNiZDRiMjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPs68PC90ZXh0Pjx0ZXh0IHg9IjM3NSIgeT0iNDMyIiBmaWxsPSIjYmQ0YjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UYW5nZW50IFNBPC90ZXh0Pjx0ZXh0IHg9IjMwMCIgeT0iNjQyIiBmaWxsPSIjMTgyZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5PQSDin4IgU0E7IGFuZ2xlIM68IGlzIG1lYXN1cmVkIGF0IFMuPC90ZXh0PjwvZz48L3N2Zz4=" width="600" height="650" alt="Three circular wavefronts with common tangents, then the right triangle OAS."><figcaption>The top panel constructs the envelope. The bottom panel isolates the radius and tangent for the sine ratio.</figcaption></figure>
+<h3>Step 4 — Apply the sine ratio</h3>
+<p>A radius drawn to a tangent is perpendicular to the tangent, so OA is perpendicular to SA. The right angle is at A, and OS is the hypotenuse. The angle μ is at S, between the backward horizontal direction SO and the cone surface SA. The side opposite μ is OA. Therefore:</p>
+<pre><code>sin μ = OA/OS
       = cΔt/(u_sΔt)
       = c/u_s
       = 1/M
 
-μ = arcsin(1/M), for M &gt; 1</code></pre>
-      <p>The elapsed time cancels, so disturbances emitted at different earlier times share the same cone angle for constant u_s and c. Rotating the two tangent lines around the flight axis produces the three-dimensional cone. <strong>μ is the half-angle; the full opening angle is 2μ.</strong> It is not measured from a line perpendicular to the flight path.</p>
-      <p>For M &lt; 1, 1/M &gt; 1, so no real tangent-cone angle exists. As M approaches 1 from above, μ approaches 90° in this ideal model; as M increases, μ gets smaller and the cone becomes narrower.</p>
-    </section>
-
-    <section>
-      <h2>7 Why an observer hears a boom</h2>
-      <p>The cone moves with the supersonic source. An observer hears a sonic boom when the associated shock surface sweeps across their position, causing a rapid pressure change. <strong>A boom is not emitted only at the instant the source first passes Mach 1:</strong> steady supersonic flight can keep producing a shock pattern, which different observers encounter at different times.</p>
-      <p>The cone is behind the source, so a ground observer can hear the boom after the aircraft has passed overhead. The Mach-angle derivation predicts geometry, not the loudness, pressure jump, or detailed waveform of a real boom. Aircraft shape and atmospheric conditions affect those details.</p>
-    </section>
-
-    <section>
-      <h2>8 Worked examples and checks</h2>
-      <h3>A moving horn</h3>
-      <p>A 500 Hz horn moves at 30.0 m/s through still air with c = 343 m/s. Both listeners are stationary. Use the changed wavelength because the source is moving:</p>
-      <pre><code>Ahead:  λ = (343 − 30.0)/500 = 0.626 m
+μ = arcsin(1/M), for M &gt; 1
+</code></pre>
+<p>The elapsed time cancels, so disturbances emitted at different earlier times share the same cone angle for constant u_s and c. Rotating the two tangent lines around the flight axis produces the three-dimensional cone. <strong>μ is the half-angle; the full opening angle is 2μ.</strong> It is not measured from a line perpendicular to the flight path.</p>
+<p>For M &lt; 1, 1/M &gt; 1, so no real tangent-cone angle exists. As M approaches 1 from above, μ approaches 90° in this ideal model; as M increases, μ gets smaller and the cone becomes narrower.</p>
+</section>
+<section>
+<h2>7 Why an observer hears a boom</h2>
+<p>The cone moves with the supersonic source. An observer hears a sonic boom when the associated shock surface sweeps across their position, causing a rapid pressure change. <strong>A boom is not emitted only at the instant the source first passes Mach 1:</strong> steady supersonic flight can keep producing a shock pattern, which different observers encounter at different times.</p>
+<p>The cone is behind the source, so a ground observer can hear the boom after the aircraft has passed overhead. The Mach-angle derivation predicts geometry, not the loudness, pressure jump, or detailed waveform of a real boom. Aircraft shape and atmospheric conditions affect those details.</p>
+</section>
+<section>
+<h2>8 Worked examples and checks</h2>
+<h3>A moving horn</h3>
+<p>A 500 Hz horn moves at 30.0 m/s through still air with c = 343 m/s. Both listeners are stationary. Use the changed wavelength because the source is moving:</p>
+<pre><code>Ahead:  λ = (343 − 30.0)/500 = 0.626 m
         f_o = 343/0.626 ≈ 548 Hz
 Behind: λ = (343 + 30.0)/500 = 0.746 m
-        f_o = 343/0.746 ≈ 460 Hz</code></pre>
-      <p>For comparison, a stationary 500 Hz source and an observer moving toward it at 30.0 m/s give f_o = 500(343 + 30.0)/343 ≈ 544 Hz. The closing speed is the same as in the approaching-source example, but the sound-frequency shifts differ because different objects move relative to the medium.</p>
-      <h3>A source at Mach 2</h3>
-      <p>With c = 343 m/s and u_s = 686 m/s, first find M, then the cone half-angle:</p>
-      <pre><code>M = u_s/c = 686/343 = 2.00
+        f_o = 343/0.746 ≈ 460 Hz
+</code></pre>
+<p>For comparison, a stationary 500 Hz source and an observer moving toward it at 30.0 m/s give f_o = 500(343 + 30.0)/343 ≈ 544 Hz. The closing speed is the same as in the approaching-source example, but the sound-frequency shifts differ because different objects move relative to the medium.</p>
+<h3>A source at Mach 2</h3>
+<p>With c = 343 m/s and u_s = 686 m/s, first find M, then the cone half-angle:</p>
+<pre><code>M = u_s/c = 686/343 = 2.00
 sin μ = 1/M = 0.500
-μ = 30.0°; full opening angle = 60.0°</code></pre>
-      <p>After Δt = 1.00 s, an earlier disturbance has radius 343 m and the source has travelled 686 m. Their ratio is 0.500, confirming the same angle.</p>
-      <ul>
-        <li><strong>Dimensions:</strong> every Doppler speed ratio is dimensionless, leaving f_o in Hz; c/u_s is dimensionless, as sin μ must be.</li>
-        <li><strong>Stationary limit:</strong> setting both velocities to zero gives f_o = f_s.</li>
-        <li><strong>Shared motion:</strong> v_o = v_s gives f_o = f_s for this collinear, uniform-motion model.</li>
-        <li><strong>Directions:</strong> approaching raises frequency; receding lowers it under the stated subsonic assumptions.</li>
-        <li><strong>Cone limit:</strong> doubling a supersonic Mach number reduces sin μ; it does not increase the cone half-angle.</li>
-      </ul>
-    </section>
+μ = 30.0°; full opening angle = 60.0°
+</code></pre>
+<p>After Δt = 1.00 s, an earlier disturbance has radius 343 m and the source has travelled 686 m. Their ratio is 0.500, confirming the same angle.</p>
+<ul>
+<li><strong>Dimensions:</strong> every Doppler speed ratio is dimensionless, leaving f_o in Hz; c/u_s is dimensionless, as sin μ must be.</li>
+<li><strong>Stationary limit:</strong> setting both velocities to zero gives f_o = f_s.</li>
+<li><strong>Shared motion:</strong> v_o = v_s gives f_o = f_s for this collinear, uniform-motion model.</li>
+<li><strong>Directions:</strong> approaching raises frequency; receding lowers it under the stated subsonic assumptions.</li>
+<li><strong>Cone limit:</strong> doubling a supersonic Mach number reduces sin μ; it does not increase the cone half-angle.</li>
+</ul>
+</section>
+
 <p><a href="wave-motion-notes.html#topic-12">Return to Section 12 · Doppler effect and sonic booms →</a></p>
 </main>
 <footer>Explanations, diagrams, and worked examples are AI-authored. This optional page supplements the course notes and works offline.</footer>
