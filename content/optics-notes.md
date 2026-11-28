@@ -334,16 +334,69 @@ The refracted ray travels in the glass at **22.5° to the normal**. The intermed
 
 ## 8 Reversibility, apparent depth, and measuring n
 ### Why a submerged object appears shallower
-Rays leaving water for air bend away from the normal. Your eye traces those rays back to a shallower apparent position. To aim a light ray at a fish, aim along the line of sight. Refraction sends the light back along that path. A straight-moving object must instead be directed toward the actual, deeper fish.
+Light from a submerged object travels through water, then enters air on its way to your eye. Because water has a higher refractive index than air, the emerging rays bend **away from the normal**.
 
-A ray through a glass block with parallel faces and the same medium outside both sides emerges parallel to its incident direction. Oblique incidence usually gives a sideways offset.
+APPARENT_DEPTH_FIGURE
+
+Follow the solid rays from the actual object to the surface and into the air. Your eye receives only the final directions of those rays. Trace them **backward in straight lines**, as though they had never bent: the dashed lines meet at a point closer to the surface. That is the **apparent position**, a virtual image. The object itself has not moved.
+
+The dashed lines are a viewing construction; actual light in the water followed the solid paths. This diagram uses two nearby rays for one viewing direction. Apparent depth can depend on viewing angle; do not assume one exact apparent depth for every observer.
+
+### Reversibility: light can retrace the path
+For the same stationary materials, **reversing a transmitted ray reverses its route**. Snell’s law supports this directly: swap medium 1 with medium 2 and swap the two angles; the equation still holds.
+```
+Water → air:    n(water) sin θ(water) = n(air) sin θ(air)
+Air → water:    n(air) sin θ(air) = n(water) sin θ(water)
+```
+For a fish viewed through a flat water surface, a light beam sent back from your eye position **along your line of sight** bends toward the normal when entering the water and reaches the actual fish. A straight-moving object does not refract like light: its path must instead be directed toward the actual, deeper position. This comparison assumes the object follows a straight path.
+
+### A parallel-sided glass block shifts the ray
+At the first face, an oblique air-to-glass ray bends toward the normal. At the second face, glass-to-air light bends away. With **parallel faces and the same medium on both sides**, the normals are parallel and the two bends restore the original direction.
+
+PARALLEL_BLOCK_FIGURE
+
+The emerging ray is **parallel to the incoming ray**, but usually lies on a different line. The diagram's dashed line shows where the incoming ray would have continued without the block; the gap between the parallel lines is the sideways displacement. At normal incidence there is no sideways displacement. Nonparallel faces, such as a prism, do not generally restore the original direction.
+
+### Measure n by plotting sines, not raw angles
+Measure the angles from the normal in air and in a transparent material. Write Snell’s law, then isolate the air-angle sine:
+```
+n(air) sin θ(air) = n(material) sin θ(material)
+
+sin θ(air) = [n(material)/n(air)] sin θ(material)
+```
+This has the straight-line form **y = mx**:
+
+- Horizontal axis **x = sin θ(material)**.
+- Vertical axis **y = sin θ(air)**.
+- Slope **m = Δy/Δx = n(material)/n(air)**. Here m means graph slope, not the magnification from Topic 6.
+
+With n(air) ≈ 1.00, **the slope is approximately the material's refractive index**. Each sine is unitless, so the slope and n are also unitless. Use degree mode to calculate the sines of angles measured in degrees; the plotted coordinates are sine values, not degrees.
 
 ### Investigation 7-3A · Find n from a graph
 Measure angles in air and in the material. Why graph sin θ(air) vertically against sin θ(material) horizontally? If the graph passes through (0.200, 0.300), estimate the material’s index.
 
+REFRACTIVE_INDEX_GRAPH
+
 **Worked answer**
 
-Snell’s law gives a straight line with slope n(material)/n(air). The slope is 0.300/0.200 = 1.50, so **n ≈ 1.50** for air with n ≈ 1.00. Use a best-fit line through several points to reduce the effect of measurement scatter. The raw angle ratio approximates the index ratio only at small angles.
+**1. Identify what the coordinates mean.** The point (0.200, 0.300) means sin θ(material) = 0.200 and sin θ(air) = 0.300. These numbers are not the angles themselves.
+
+**2. Find the slope.** The ideal Snell-law line passes through (0, 0), because normal incidence gives zero angle in both media. Use the supplied point and that origin:
+```
+m = Δy/Δx
+  = (0.300 − 0)/(0.200 − 0)
+  = 1.50
+```
+**3. Convert slope to index.**
+```
+m = n(material)/n(air)
+n(material) = m × n(air)
+            ≈ 1.50 × 1.00
+            ≈ 1.50
+```
+**4. Check the physics.** At the supplied point, 1.00 × 0.300 = 1.50 × 0.200, so Snell’s law is satisfied. The index exceeds air's index, consistent with slower light in the material. In an experiment, use several measured points and the slope of a best-fit line, rather than relying on one point. An ideal line goes through the origin; a sizeable experimental offset can flag an angle-zero error.
+
+Use **sin θ(air)/sin θ(material)**, not θ(air)/θ(material), to find the index ratio. The raw-angle ratio is only an approximation at small angles. Reversing the graph axes gives the reciprocal slope, so label them before calculating.
 
 ## 9 Critical angle and total internal reflection
 ### A ray can remain inside the higher-index material

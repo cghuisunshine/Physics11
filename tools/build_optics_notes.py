@@ -11,6 +11,52 @@ from optics_focus_figures import build_focus_figures
 from optics_distance_graph import build_distance_graph
 from mirror_derivation_figures import build_derivation_figures
 from optics_refraction_figures import build_refraction_figures
+from optics_depth_figures import build_depth_figures
+
+
+def embed_depth_figures():
+    """Show Topic 8's ray paths and the original investigation's sine graph."""
+    path = ROOT / 'optics-notes.html'
+    page = path.read_text()
+    for marker, filename, width, height, alt, caption in (
+        ('APPARENT_DEPTH_FIGURE', 'apparent-depth-rays.svg', 960, 570,
+         'Two nearby rays leave an actual submerged point in water of index 1.33. '
+         'They bend away from the normal into air and travel toward the observer. '
+         'Dashed straight backward extensions of the emerging rays meet at a '
+         'shallower virtual image; the real object remains deeper. The apparent '
+         'position is for this viewing direction.',
+         'Apparent depth · Solid paths carry light from the actual object. '
+         'Dashed backward extensions locate the virtual image seen by the observer. '
+         'Positions are illustrative; partial reflection is omitted.'),
+        ('PARALLEL_BLOCK_FIGURE', 'parallel-block-rays.svg', 960, 570,
+         'A ray enters a parallel-sided glass block from air at 45.0 degrees '
+         'to the normal. In glass of index 1.50 its angle is about 28.1 degrees. '
+         'On returning to air it exits at 45.0 degrees, parallel to the original '
+         'direction. A dashed continuation of the incoming line shows the '
+         'perpendicular sideways displacement.',
+         'Parallel-sided block · Two bends restore the direction when both '
+         'outside media are the same. The emerging ray is shifted from the '
+         'dashed reference line. All labelled angles are measured from the normals; '
+         'values are illustrative.'),
+        ('REFRACTIVE_INDEX_GRAPH', 'refractive-index-graph.svg', 960, 620,
+         'Straight-line model graph with sin of the material angle horizontally '
+         'and sin of the air angle vertically. Both coordinates are unitless. '
+         'The line passes through the origin and the supplied point (0.200, 0.300). '
+         'A slope triangle has run 0.200 and rise 0.300. The slope is the material '
+         'index divided by the air index. This is not a measured data set.',
+         'Investigation graph · The labelled coordinates are sine values. '
+         'Use the rise and run to calculate the slope. The ideal line illustrates '
+         'the supplied point; experimental work should use several measured points.'),
+    ):
+        token = f'<p>{marker}</p>'
+        assert page.count(token) == 1
+        data = base64.b64encode((ROOT / 'assets/optics-notes' / filename).read_bytes()).decode()
+        figure = (f'<figure class="diagram {filename.removesuffix(".svg")}">'
+                  f'<img src="data:image/svg+xml;base64,{data}" width="{width}" height="{height}" '
+                  f'alt="{escape(alt, quote=True)}" loading="lazy">'
+                  f'<figcaption>{escape(caption)}</figcaption></figure>')
+        page = page.replace(token, figure)
+    path.write_text(page)
 
 
 def embed_refraction_figures():
@@ -336,12 +382,14 @@ CHAPTER = Chapter(
 )
 
 if __name__ == '__main__':
+    build_depth_figures()
     build_refraction_figures()
     build_mirror_derivation()
     build_distance_graph()
     build_focus_figures()
     build_mirror_position_figures()
     build_study_pages(CHAPTER)
+    embed_depth_figures()
     embed_refraction_figures()
     link_mirror_derivation()
     embed_focus_figures()

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="570" viewBox="0 0 960 570" role="img" aria-labelledby="title desc">
+<title id="title">Why the underwater image looks shallower</title><desc id="desc">Two rays from a real underwater point refract away from the normal into air. Their dashed backward extensions meet at a shallower virtual image. The real object stays deeper. The displayed virtual position is for these two nearby rays.</desc>
+<defs><marker id="orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+<marker id="teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+<style>text{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#203440}.title{font-size:26px;font-weight:700;fill:#075d64}.small{font-size:17px}.orange{stroke:#b24c20;stroke-width:2.7;fill:none}.teal{stroke:#086b72;stroke-width:2.7;fill:none}.guide{stroke:#91a5ab;stroke-width:1.5;fill:none}.normal{stroke:#647a84;stroke-width:1.5;stroke-dasharray:7 5;fill:none}.extension{stroke:#8d315f;stroke-width:2;stroke-dasharray:7 5;fill:none}</style></defs>
+<rect width="960" height="570" fill="#fff"/><rect x="12" y="12" width="936" height="546" rx="12" fill="none" stroke="#cadbdd" stroke-width="2"/>
+<text x="32" y="51" class="title">Why the underwater image looks shallower</text>
+<text x="32" y="84" class="small">Trace solid light paths forward; trace the final directions backward to locate the image.</text>
+<rect x="14" y="240" width="932" height="290" fill="#eaf4f7"/>
+<path d="M14 240H946" stroke="#647a84" stroke-width="2"/>
+<text x="40" y="161">Air · n ≈ 1.00</text>
+<text x="40" y="282">Water · n = 1.33</text>
+<text x="746" y="229" class="small">Water surface</text>
+<path d="M430 146V325" class="normal"/>
+<text x="322" y="184" class="small">Normal</text>
+<text x="622" y="136">To observer</text>
+<path d="M350.000 480.000L430.000 240.000" class="orange"/>
+<path d="M380.400 388.800L398.000 336.000" class="orange" marker-end="url(#orange)"/>
+<path d="M430.000 240.000L492.583 105.000" class="teal"/>
+<path d="M453.782 188.700L467.550 159.000" class="teal" marker-end="url(#teal)"/>
+<path d="M430.000 240.000L361.198 388.415" class="extension"/>
+<path d="M350.000 480.000L460.000 240.000" class="orange"/>
+<path d="M391.800 388.800L416.000 336.000" class="orange" marker-end="url(#orange)"/>
+<path d="M460.000 240.000L549.871 105.000" class="teal"/>
+<path d="M494.151 188.700L513.923 159.000" class="teal" marker-end="url(#teal)"/>
+<path d="M460.000 240.000L361.198 388.415" class="extension"/>
+<circle cx="350.0" cy="480.0" r="6" fill="#b24c20"/>
+<circle cx="361.198" cy="388.415" r="7" stroke="#8d315f" stroke-width="2.5" stroke-dasharray="3 2" fill="#fff"/>
+<text x="40" y="365" fill="#8d315f">Apparent position</text>
+<text x="40" y="392" class="small">Virtual image · shallower</text>
+<path d="M245.000 385.000L351.198 388.415" class="guide"/>
+<text x="40" y="475">Actual object</text>
+<text x="40" y="502" class="small">Real position · deeper</text>
+<path d="M220.000 480.000L338.000 480.000" class="guide"/>
+<text x="548" y="385" class="small">Dashed: straight backward extensions</text>
+<text x="548" y="413" class="small">Light did not follow these lines in water.</text>
+<text x="32" y="550" class="small">Illustrative geometry calculated from Snell’s law. Apparent position depends on viewing direction.</text>
+</svg>

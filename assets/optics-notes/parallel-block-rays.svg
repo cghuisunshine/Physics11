@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="570" viewBox="0 0 960 570" role="img" aria-labelledby="title desc">
+<title id="title">Parallel faces restore the direction, with a sideways shift</title><desc id="desc">A ray at 45 degrees in air bends to about 28.1 degrees in a glass slab of index 1.50. At its parallel second face it returns to 45 degrees in air. The emerging ray is parallel to a dashed straight continuation of the incoming ray, but displaced sideways. A short line marks the perpendicular gap.</desc>
+<defs><marker id="orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+<marker id="teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+<style>text{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#203440}.title{font-size:26px;font-weight:700;fill:#075d64}.small{font-size:17px}.orange{stroke:#b24c20;stroke-width:2.7;fill:none}.teal{stroke:#086b72;stroke-width:2.7;fill:none}.guide{stroke:#91a5ab;stroke-width:1.5;fill:none}.normal{stroke:#647a84;stroke-width:1.5;stroke-dasharray:7 5;fill:none}.extension{stroke:#8d315f;stroke-width:2;stroke-dasharray:7 5;fill:none}</style></defs>
+<rect width="960" height="570" fill="#fff"/><rect x="12" y="12" width="936" height="546" rx="12" fill="none" stroke="#cadbdd" stroke-width="2"/>
+<text x="32" y="51" class="title">Parallel faces restore the direction, with a sideways shift</text>
+<rect x="14" y="180" width="932" height="160" fill="#eaf4f7"/>
+<path d="M14 180H946M14 340H946" stroke="#647a84" stroke-width="2"/>
+<text x="40" y="130">Air · n ≈ 1.00</text>
+<text x="40" y="267">Glass · n = 1.50</text>
+<text x="40" y="396">Air · n ≈ 1.00</text>
+<path d="M320.0 103V263M405.5235974119758 272V459" class="normal"/>
+<text x="651" y="211">Faces and normals are parallel.</text>
+<text x="651" y="243" class="small">First bend: toward normal</text>
+<text x="651" y="275" class="small">Second bend: away from normal</text>
+<path d="M320.000 180.000L610.000 470.000" class="normal"/>
+<path d="M230.000 90.000L320.000 180.000" class="orange"/>
+<path d="M264.200 124.200L284.000 144.000" class="orange" marker-end="url(#orange)"/>
+<path d="M320.000 180.000L405.524 340.000" class="teal"/>
+<path d="M352.499 240.800L371.314 276.000" class="teal" marker-end="url(#teal)"/>
+<path d="M405.524 340.000L535.524 470.000" class="orange"/>
+<path d="M454.924 389.400L483.524 418.000" class="orange" marker-end="url(#orange)"/>
+<path d="M320.0 132.0A48 48 0 0 0 286.05887450304573 146.05887450304573" class="orange"/>
+<path d="M320.0 228.0A48 48 0 0 0 342.62741699796953 222.33202097703344" class="teal"/>
+<path d="M405.5235974119758 388.0A48 48 0 0 0 439.46472290893007 373.94112549695427" class="orange"/>
+<path d="M485.524 420.000L522.762 382.762" class="extension"/>
+<path d="M512.143 401.381L603.000 401.000" class="guide"/>
+<text x="612" y="405">Sideways displacement</text>
+<text x="230" y="166">45.0°</text>
+<text x="419" y="244">28.1°</text>
+<text x="445.5" y="370">45.0°</text>
+<text x="610" y="486" class="small">Dashed grey: continuation without block</text>
+<text x="32" y="550" class="small">Illustrative angles from Snell’s law. Emerging and incoming directions are parallel.</text>
+</svg>
