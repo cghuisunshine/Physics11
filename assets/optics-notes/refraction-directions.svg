@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="570" viewBox="0 0 1000 570" role="img" aria-labelledby="title desc">
+<title id="title">Refraction toward and away from the normal</title>
+<desc id="desc">Two reversed light paths at a horizontal air-glass boundary. Air to glass: incident angle 35.0 degrees becomes 22.5 degrees, toward the normal. Glass to air: incident angle 22.5 degrees becomes 35.0 degrees, away from the normal. All angles are measured from a dashed perpendicular normal, not the surface.</desc>
+<defs><marker id="incoming" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+<marker id="outgoing" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+<style>text{font-family:Arial,Helvetica,sans-serif;font-size:19px;fill:#203440}.title{font-size:25px;font-weight:700;fill:#075d64}.small{font-size:17px}.medium{font-weight:700}.in{stroke:#b24c20;stroke-width:3;fill:none}.out{stroke:#086b72;stroke-width:3;fill:none}.normal{stroke:#647a84;stroke-width:1.5;stroke-dasharray:7 5;fill:none}</style></defs>
+<rect width="1000" height="570" fill="#fff"/>
+<text x="24" y="38" class="title">The same Snell’s law, in either direction</text>
+<rect x="14" y="64" width="480" height="472" rx="12" fill="#fff" stroke="#cadbdd" stroke-width="2"/>
+<text x="32" y="98" class="title">Air → glass</text>
+<rect x="16" y="110" width="476" height="165" fill="#fafcfb"/>
+<rect x="16" y="275" width="476" height="210" fill="#eaf4f7"/>
+<path d="M16 275H492" stroke="#647a84" stroke-width="2"/>
+<text x="32" y="264" class="small">Boundary</text>
+<path d="M244 113V475" class="normal"/>
+<text x="257" y="136" class="small">Normal</text>
+<text x="31" y="175" class="medium">Air · n₁ = 1.00</text>
+<text x="31" y="330" class="medium">Glass · n₂ = 1.50</text>
+<path d="M143.624 131.648L244 275" class="in"/>
+<path d="M244 275L310.917 436.701" class="out"/>
+<path d="M181.767 186.122L203.850 217.659" class="in" marker-end="url(#incoming)"/>
+<path d="M269.429 336.446L284.150 372.020" class="out" marker-end="url(#outgoing)"/>
+<path d="M244 210A65 65 0 0 0 206.718 221.755" class="in"/>
+<path d="M244 340A65 65 0 0 0 268.855 335.060" class="out"/>
+<text x="80" y="237">θ₁ = 35.0°</text>
+<text x="344" y="375">θ₂ = 22.5°</text>
+<text x="32" y="514" class="medium">Higher n → slower → toward normal</text>
+<rect x="508" y="64" width="480" height="472" rx="12" fill="#fff" stroke="#cadbdd" stroke-width="2"/>
+<text x="526" y="98" class="title">Glass → air</text>
+<rect x="510" y="110" width="476" height="165" fill="#eaf4f7"/>
+<rect x="510" y="275" width="476" height="210" fill="#fafcfb"/>
+<path d="M510 275H986" stroke="#647a84" stroke-width="2"/>
+<text x="526" y="264" class="small">Boundary</text>
+<path d="M738 113V475" class="normal"/>
+<text x="751" y="136" class="small">Normal</text>
+<text x="525" y="175" class="medium">Glass · n₁ = 1.50</text>
+<text x="525" y="330" class="medium">Air · n₂ = 1.00</text>
+<path d="M671.083 113.299L738 275" class="in"/>
+<path d="M738 275L838.376 418.352" class="out"/>
+<path d="M696.511 174.746L711.233 210.320" class="in" marker-end="url(#incoming)"/>
+<path d="M776.143 329.474L798.226 361.011" class="out" marker-end="url(#outgoing)"/>
+<path d="M738 210A65 65 0 0 0 713.145 214.940" class="in"/>
+<path d="M738 340A65 65 0 0 0 775.282 328.245" class="out"/>
+<text x="574" y="237">θ₁ = 22.5°</text>
+<text x="838" y="375">θ₂ = 35.0°</text>
+<text x="526" y="514" class="medium">Lower n → faster → away from normal</text>
+<text x="24" y="559" class="small">Frequency stays the same across the stationary boundary. Partial reflection is omitted.</text>
+</svg>

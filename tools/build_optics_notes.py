@@ -10,6 +10,42 @@ from optics_mirror_position_figures import CASES, build_mirror_position_figures
 from optics_focus_figures import build_focus_figures
 from optics_distance_graph import build_distance_graph
 from mirror_derivation_figures import build_derivation_figures
+from optics_refraction_figures import build_refraction_figures
+
+
+def embed_refraction_figures():
+    """Keep angle definitions and the Snell-law graph visible in Topic 7."""
+    path = ROOT / 'optics-notes.html'
+    page = path.read_text()
+    for marker, filename, width, height, alt, caption in (
+        ('REFRACTION_DIRECTIONS_FIGURE', 'refraction-directions.svg', 1000, 570,
+         'Two ray diagrams at an air-glass boundary. Both show dashed normals '
+         'perpendicular to the surface. Air to glass: n rises from 1.00 to 1.50, '
+         'speed decreases and the angle to the normal changes from 35.0 to '
+         '22.5 degrees. Glass to air: n decreases and the angles reverse, '
+         '22.5 to 35.0 degrees. Every angle is measured from the normal.',
+         'Refraction in either direction · Medium 1 is where the ray starts. '
+         'Measure both angles from the dashed normal. The same Snell’s law '
+         'applies when the path is reversed; frequency stays unchanged.'),
+        ('SNELL_ANGLE_GRAPH', 'snell-angle-graph.svg', 960, 620,
+         'A model graph for air of index 1.00 into glass of index 1.50. Incident '
+         'angle is horizontal and refracted angle vertical, both in degrees '
+         'from the normal. The Snell-law curve lies below the dashed equal-angle '
+         'line. The marked point is incident angle 35.0 degrees and refracted '
+         'angle approximately 22.5 degrees. Both angles are zero at normal incidence.',
+         'Air-to-glass angle graph · The point (35.0°, 22.5°) matches the example. '
+         'The dashed line is a comparison for equal angles, not a light ray. '
+         'These are calculated values for the stated refractive indices.'),
+    ):
+        token = f'<p>{marker}</p>'
+        assert page.count(token) == 1
+        data = base64.b64encode((ROOT / 'assets/optics-notes' / filename).read_bytes()).decode()
+        figure = (f'<figure class="diagram {filename.removesuffix(".svg")}">'
+                  f'<img src="data:image/svg+xml;base64,{data}" width="{width}" height="{height}" '
+                  f'alt="{escape(alt, quote=True)}" loading="lazy">'
+                  f'<figcaption>{escape(caption)}</figcaption></figure>')
+        page = page.replace(token, figure)
+    path.write_text(page)
 
 
 def build_mirror_derivation():
@@ -227,9 +263,6 @@ FIGURES = [
     (5, 'Trace two rays from the tip', 219, (162, 157, 550, 307),
      'Two rays from the top of a candle reflect from a concave mirror and cross below the principal axis.',
      'Figure 7.2.4 · The crossing locates the tip of a real, inverted image.'),
-    (7, 'Speed changes at a boundary', 232, (178, 431, 549, 572),
-     'A ray moves from vacuum into a higher-index material and makes a smaller angle with the normal.',
-     'Figure 7.3.3 · Compare the angles to the vertical normal.'),
     (9, 'A ray can remain inside the higher-index material', 234, (180, 210, 558, 378),
      'One ray refracts out of water and partially reflects. The second reaches the interface at the critical angle.',
      'Figure 7.3.4 · At the critical angle, the refracted direction is along the surface.'),
@@ -303,11 +336,13 @@ CHAPTER = Chapter(
 )
 
 if __name__ == '__main__':
+    build_refraction_figures()
     build_mirror_derivation()
     build_distance_graph()
     build_focus_figures()
     build_mirror_position_figures()
     build_study_pages(CHAPTER)
+    embed_refraction_figures()
     link_mirror_derivation()
     embed_focus_figures()
     embed_distance_graph()

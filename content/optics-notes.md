@@ -265,23 +265,72 @@ The image is **inverted** because m is negative, and its height is **0.250 times
 **4. Check the answer.** Substitution gives 1/20.0 = 1/100 + 1/25.0, with every term in cm⁻¹. Also, C is 2f = 40.0 cm in front of V. The object is beyond C, so Topic 5 predicts a real, inverted, smaller image between F and C. The calculated 20.0 cm < 25.0 cm < 40.0 cm agrees.
 
 ## 7 Refractive index and Snell’s law
-### Speed changes at a boundary
-The **index of refraction n** is c divided by the speed of light in a material. At a stationary boundary the frequency stays the same. A wave that slows down has a shorter wavelength.
+### Refractive index tells you the speed
+Light travels at **c ≈ 3.00 × 10⁸ m/s in vacuum**. In a transparent material it travels at speed v. The **refractive index n** compares these speeds:
 ```
-n = c/v                  λ = v/f
+n = c/v          so          v = c/n
+```
+The units cancel, so **n has no units**. A larger n means a smaller speed. Air has n ≈ 1.00; the glass in our example has n = 1.50, so its light speed is approximately (3.00 × 10⁸)/1.50 = **2.00 × 10⁸ m/s**. An index of 1.50 means the speed is c/1.50.
+
+### What changes when light enters another medium?
+At a **stationary boundary**, transmitted light keeps the **same frequency f**, measured in hertz (Hz). Here f means frequency, not the mirror focal length used in Topic 6. Speed v and wavelength λ can change:
+```
+v = fλ          so          λ = v/f
+```
+If the speed decreases while frequency stays constant, the wavelength becomes shorter. If the speed increases, the wavelength becomes longer. At an oblique angle, the ray can also change direction: this is **refraction**.
+
+### Draw the normal before measuring angles
+The **boundary** is the surface separating the materials. The **normal** is an imaginary line perpendicular to that surface at the point where the ray crosses it.
+
+- **Medium 1** is where the light starts: index n₁ and incident angle θ₁.
+- **Medium 2** is where the light enters: index n₂ and refracted angle θ₂.
+- Measure **both angles from the normal**, not from the surface. A ray along the normal has angle 0°.
+
+REFRACTION_DIRECTIONS_FIGURE
+
+In the left panel, light slows down in glass and bends **toward the normal**: θ₂ is smaller. In the right panel, the same path is reversed: light speeds up in air and bends **away from the normal**. The medium numbers follow the direction of travel; glass becomes medium 1 on the return trip.
+
+### One Snell’s law works in both directions
+For refraction between two transparent media:
+```
 n₁ sin θ₁ = n₂ sin θ₂
+
+sin θ₂ = (n₁/n₂) sin θ₁
+θ₂ = sin⁻¹[(n₁/n₂) sin θ₁]
 ```
-Measure θ₁ and θ₂ from the normal. Light bends **toward the normal** when it enters a higher-index medium at oblique incidence. It bends **away from the normal** on entering a lower-index medium if a transmitted ray exists. At normal incidence it continues straight.
+Use **degree mode** when your angles are in degrees. The calculator's **sin⁻¹** means inverse sine (arcsine), not 1/sin.
+
+At oblique incidence, **higher n → slower → toward the normal**; **lower n → faster → away from the normal**, provided a refracted ray exists. At normal incidence, θ₁ = 0° gives θ₂ = 0°: speed and wavelength can change without bending the ray. If the calculated sine exceeds 1, no real refracted angle exists; Topic 9 explains total internal reflection.
+
+### Read the angle change on a graph
+Keep air at n₁ = 1.00 and glass at n₂ = 1.50. Read the incident angle horizontally and the refracted angle vertically. The curve is calculated from Snell’s law, not measured data.
+
+SNELL_ANGLE_GRAPH
+
+The curve lies below the dashed equal-angle line: **θ₂ < θ₁**, so this air-to-glass ray bends toward the normal. At θ₁ = 35.0°, the graph gives θ₂ ≈ 22.5°. This graph compares angles; it does not show the ray's path. Swapping the materials changes the curve.
 
 ### Example · Air into glass
 A ray enters glass of index 1.50 from air at 35.0° to the normal. Find its angle in glass.
 
 **Worked answer**
+
+**1. Identify the media and predict the bend.** The ray starts in air, so n₁ ≈ 1.00, and enters glass, so n₂ = 1.50. Because n₂ > n₁, predict θ₂ < 35.0°. The given 35.0° is already measured from the normal.
+
+**2. Apply Snell’s law and isolate the unknown sine.**
 ```
-sin θ₂ = (1.00/1.50) sin 35.0° = 0.3824
+n₁ sin θ₁ = n₂ sin θ₂
+sin θ₂ = (n₁/n₂) sin θ₁
+       = (1.00/1.50) sin 35.0°
+       ≈ 0.3824
+```
+**3. Take inverse sine to find the angle.**
+```
+θ₂ = sin⁻¹(0.3824)
 θ₂ ≈ 22.5°
 ```
-Use degree mode. The smaller angle agrees with bending toward the normal.
+The refracted ray travels in the glass at **22.5° to the normal**. The intermediate value 0.3824 is a sine ratio, not an angle.
+
+**4. Check.** The angle decreased, as predicted. Substitution gives n₁ sin θ₁ ≈ 0.574 and n₂ sin θ₂ ≈ 0.574 using the unrounded angle. The refractive indices and sines are unitless; the final angle is in degrees. The diagram and graph show the same result.
 
 ## 8 Reversibility, apparent depth, and measuring n
 ### Why a submerged object appears shallower
