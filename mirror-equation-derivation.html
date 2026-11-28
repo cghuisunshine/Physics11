@@ -21,7 +21,7 @@
 <p>Optional further reading: a two-ray proof using reflection, similar triangles, and signed distances.</p>
     <section>
       <h2>1 Set up one sign convention</h2>
-      <p>This optional proof extends Topic 6 of Light and Geometric Optics Notes. <strong>Prerequisites:</strong> the law of reflection, principal rays, similar triangles, and algebra with negative numbers. No calculus is needed. You can complete the Physics 11 notes without this proof.</p>
+      <p>This optional proof extends Topic 6 of Light and Geometric Optics Notes. <strong>Prerequisites:</strong> the law of reflection, principal rays, similar triangles, tangent ratios, and algebra with negative numbers. No calculus is needed. You can complete the Physics 11 notes without this proof.</p>
       <p>Use a real, upright object in front of a spherical mirror. Work in the <strong>near-axis (paraxial) model</strong>: rays make small angles with the principal axis, and the mirror's small depth is neglected when measuring their horizontal distances. In this model, a ray arriving parallel to the axis reflects through F, or its backward extension passes through F. This ray rule defines the focal point independently of the mirror equation we are about to derive.</p>
       <p>Let <strong>V be the origin</strong>. The horizontal coordinate s is positive in front of the mirror (left in both drawings); vertical height is positive upward. The lengths dₒ, dᵢ, and f use the same unit. Heights hₒ and hᵢ also use one common length unit.</p>
       <ul>
@@ -36,7 +36,30 @@
     </section>
 
     <section>
-      <h2>2 The vertex ray gives the first height equation</h2>
+      <h2>2 Why does a parallel ray head toward F?</h2>
+      <h3>Notes</h3>
+      <p><strong>The law of reflection determines the direction. F names the point where the reflected parallel rays meet, or appear to come from.</strong> Only rays arriving parallel to the principal axis obey this principal-ray rule; a ray arriving at another angle generally does not go through F.</p>
+      <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNDcwIiB2aWV3Qm94PSIwIDAgOTYwIDQ3MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9InRpdGxlIGRlc2MiPgo8dGl0bGUgaWQ9InRpdGxlIj5UaGUgbGF3IG9mIHJlZmxlY3Rpb24gc2VuZHMgYSBuZWFyLWF4aXMgcGFyYWxsZWwgcmF5IHRvd2FyZCB0aGUgZm9jdXM8L3RpdGxlPgo8ZGVzYyBpZD0iZGVzYyI+QSBwYXJhbGxlbCByYXkgc3RyaWtlcyBhIGNvbmNhdmUgc3BoZXJpY2FsIG1pcnJvciBhdCBQLiBUaGUgcmFkaXVzIFBDIGlzIG5vcm1hbCB0byB0aGUgc3VyZmFjZS4gVGhlIGluY2lkZW50IHJheSBhbmQgcmVmbGVjdGVkIHJheSBtYWtlIGVxdWFsIGFuZ2xlcyB0aGV0YSB3aXRoIFBDLiBUaGUgbm9ybWFsIGlzIHRpbHRlZCB0aGV0YSB0byB0aGUgaG9yaXpvbnRhbCwgc28gdGhlIHJlZmxlY3RlZCByYXkgaXMgdGlsdGVkIHR3aWNlIHRoZXRhIHRvIHRoZSBheGlzLiBJdCBjcm9zc2VzIHRoZSBheGlzIG5lYXIgRiwgYWJvdXQgaGFsZndheSBmcm9tIEMgdG8gVi48L2Rlc2M+CjxkZWZzPjxtYXJrZXIgaWQ9Im9yYW5nZSIgdmlld0JveD0iMCAwIDEwIDEwIiByZWZYPSI4IiByZWZZPSI1IiBtYXJrZXJXaWR0aD0iNiIgbWFya2VySGVpZ2h0PSI2IiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0wIDAgMTAgNSAwIDEwWiIgZmlsbD0iI2IyNGMyMCIvPjwvbWFya2VyPgo8bWFya2VyIGlkPSJ0ZWFsIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjgiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI2IiBtYXJrZXJIZWlnaHQ9IjYiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTAgMCAxMCA1IDAgMTBaIiBmaWxsPSIjMDg2YjcyIi8+PC9tYXJrZXI+CjxzdHlsZT50ZXh0e2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToyMHB4O2ZpbGw6IzIwMzQ0MH0udGl0bGV7Zm9udC1zaXplOjI2cHg7Zm9udC13ZWlnaHQ6NzAwO2ZpbGw6IzA3NWQ2NH0uc21hbGx7Zm9udC1zaXplOjE3cHh9Lmd1aWRle3N0cm9rZTojOTFhNWFiO3N0cm9rZS13aWR0aDoxLjQ7ZmlsbDpub25lfS5ub3JtYWx7c3Ryb2tlOiM1MjY4NzU7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWRhc2hhcnJheTo3IDU7ZmlsbDpub25lfTwvc3R5bGU+PC9kZWZzPgo8cmVjdCB3aWR0aD0iOTYwIiBoZWlnaHQ9IjQ3MCIgZmlsbD0iI2ZmZiIvPjxyZWN0IHg9IjEyIiB5PSIxMiIgd2lkdGg9IjkzNiIgaGVpZ2h0PSI0NDYiIHJ4PSIxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjY2FkYmRkIiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iMzIiIHk9IjUxIiBjbGFzcz0idGl0bGUiPlRoZSBub3JtYWwgc2V0cyB0aGUgcmVmbGVjdGVkIGRpcmVjdGlvbjwvdGV4dD4KPHRleHQgeD0iMzIiIHk9Ijg2IiBjbGFzcz0ic21hbGwiPkNvbmNhdmUgc3BoZXJpY2FsIG1pcnJvciDCtyBib3RoIGFuZ2xlcyBhdCBQIGFyZSBtZWFzdXJlZCBmcm9tIHRoZSByYWRpdXMgUEMuPC90ZXh0Pgo8cmVjdCB4PSI3NDciIHk9IjExMiIgd2lkdGg9IjE3NyIgaGVpZ2h0PSIyMTUiIHJ4PSI4IiBmaWxsPSIjZWVmM2Y0Ii8+Cjx0ZXh0IHg9Ijc2MCIgeT0iMTQ1IiBjbGFzcz0ic21hbGwiPkJlaGluZCBtaXJyb3I8L3RleHQ+CjxwYXRoIGQ9Ik03MCAyNjAuMEg5MjUiIGNsYXNzPSJndWlkZSIvPgo8dGV4dCB4PSI3NSIgeT0iMjkwIiBjbGFzcz0ic21hbGwiPlByaW5jaXBhbCBheGlzPC90ZXh0Pgo8cGF0aCBkPSJNMTIwIDIxMC4wSDY5Ni4wNjk2MTI1ODU1ODIxIiBzdHJva2U9IiNiMjRjMjAiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIvPgo8cGF0aCBkPSJNMjgwIDIxMC4wSDQyMCIgc3Ryb2tlPSIjYjI0YzIwIiBzdHJva2Utd2lkdGg9IjMiIG1hcmtlci1lbmQ9InVybCgjb3JhbmdlKSIvPgo8dGV4dCB4PSIxMjAiIHk9IjE4NSIgZmlsbD0iI2IyNGMyMCI+SW5jb21pbmc6IHBhcmFsbGVsIHRvIGF4aXM8L3RleHQ+CjxwYXRoIGQ9Ik02OTYuMDY5NjEyNTg1NTgyMSAyMTAuMEw0MzAuMCAyOTYuMzQxMzk1NjU3ODI0MyIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTY1MCAyMjQuOTQ5OTAyMDU1MzMxNDJMNjA1IDIzOS41NTI3MDc1NjQ5MzIyMyIgc3Ryb2tlPSIjMDg2YjcyIiBzdHJva2Utd2lkdGg9IjMiIG1hcmtlci1lbmQ9InVybCgjdGVhbCkiLz4KPHBhdGggZD0iTTM4MC4wIDI2MC4wTDY5Ni4wNjk2MTI1ODU1ODIxIDIxMC4wIiBjbGFzcz0ibm9ybWFsIi8+Cjx0ZXh0IHg9IjMyNiIgeT0iMTM2IiBjbGFzcz0ic21hbGwiPk5vcm1hbCA9IHJhZGl1cyBQQzwvdGV4dD4KPHBhdGggZD0iTTQzMCAxNDJMNDgyIDI0My44NjQzMTQwNzIyMDc1MiIgY2xhc3M9Imd1aWRlIi8+CjxwYXRoIGQ9Ik01NzYuMDcwIDIxMC4wMDBBMTIwIDEyMCAwIDAgMCA1NzcuNTQ0IDIyOC43NTAiIHN0cm9rZT0iI2IyNGMyMCIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+CjxwYXRoIGQ9Ik01NzcuNTQ0IDIyOC43NTBBMTIwIDEyMCAwIDAgMCA1ODEuOTI5IDI0Ny4wMzkiIHN0cm9rZT0iIzA4NmI3MiIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+Cjx0ZXh0IHg9IjUzNi41NDMyMTU1Njc0MzI2IiB5PSIyMjcuMDY4MzY0MzcyNDIxMDMiPs64PC90ZXh0Pgo8dGV4dCB4PSI1NDAuMzE0NTc5NDMzODE0MiIgeT0iMjUwLjkwODYzNDY5NTc1MDcyIj7OuDwvdGV4dD4KPHBhdGggZD0iTTY4MC40OTk1ODQwMjYzMzQzIDE1MEEzMjAuMCAzMjAuMCAwIDAgMSA2ODAuNDk5NTg0MDI2MzM0MyAzNzAiIHN0cm9rZT0iIzA3NWQ2NCIgc3Ryb2tlLXdpZHRoPSI2IiBmaWxsPSJub25lIi8+CjxjaXJjbGUgY3g9IjY5Ni4wNjk2MTI1ODU1ODIxIiBjeT0iMjEwLjAiIHI9IjQiIGZpbGw9IiMyMDM0NDAiLz4KPHRleHQgeD0iNzA5LjA2OTYxMjU4NTU4MjEiIHk9IjIwMi4wIiBmb250LXdlaWdodD0iNzAwIj5QPC90ZXh0Pgo8cGF0aCBkPSJNNjk2LjA2OTYxMjU4NTU4MjEgMjEwLjBINzMxTTczMSAyMTAuMFYyNjAuME03MjUgMjYwLjBINzM3IiBjbGFzcz0iZ3VpZGUiLz4KPHRleHQgeD0iNzM3IiB5PSIyNDAiPmg8L3RleHQ+CjxjaXJjbGUgY3g9IjM4MC4wIiBjeT0iMjYwLjAiIHI9IjQiIGZpbGw9IiMyMDM0NDAiLz48dGV4dCB4PSIzODAuMCIgeT0iMjg5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iNzAwIj5DPC90ZXh0Pgo8Y2lyY2xlIGN4PSI1NDAuMCIgY3k9IjI2MC4wIiByPSI0IiBmaWxsPSIjMjAzNDQwIi8+PHRleHQgeD0iNTQwLjAiIHk9IjI5MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjcwMCI+RjwvdGV4dD4KPGNpcmNsZSBjeD0iNzAwLjAiIGN5PSIyNjAuMCIgcj0iNCIgZmlsbD0iIzIwMzQ0MCIvPjx0ZXh0IHg9IjcwMC4wIiB5PSIyODkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSI3MDAiPlY8L3RleHQ+Cjx0ZXh0IHg9IjMzMCIgeT0iMzI4IiBjbGFzcz0ic21hbGwiPlJlZmxlY3RlZCByYXk6IGFuZ2xlIDLOuCB0byB0aGUgYXhpczwvdGV4dD4KPHBhdGggZD0iTTU0MC4wIDM1MlYzNjRNNTQwLjAgMzU4SDcwMC4wTTcwMC4wIDM1MlYzNjQiIGNsYXNzPSJndWlkZSIvPgo8dGV4dCB4PSI2MjAuMCIgeT0iMzQ4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5mIOKJiCBSLzI8L3RleHQ+CjxwYXRoIGQ9Ik0zODAuMCAzOTJWNDA0TTM4MC4wIDM5OEg3MDAuME03MDAuMCAzOTJWNDA0IiBjbGFzcz0iZ3VpZGUiLz4KPHRleHQgeD0iNTQwLjAiIHk9IjM4OCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UjwvdGV4dD4KPHRleHQgeD0iMzIiIHk9IjQzNyIgY2xhc3M9InNtYWxsIj5FeGFjdCByZWZsZWN0aW9uIGF0IHRoZSBkcmF3biBwb2ludCBQOyB0aGUgc2hhcmVkIGZvY3VzIEYgaXMgYSBuZWFyLWF4aXMgYXBwcm94aW1hdGlvbi48L3RleHQ+Cjwvc3ZnPgo=" width="960" height="470" alt="A ray parallel to the axis strikes a concave spherical mirror at P. The dashed radius PC is the normal. Incoming and reflected rays make equal angles theta with PC. The reflected ray makes twice theta with the axis and crosses it close to F, about halfway from V to C."><figcaption>Why the ray heads toward F · PC is normal to the mirror. Equal angles about PC send the reflected ray toward the axis. Near the axis, different parallel rays meet approximately at F, with f ≈ R/2.</figcaption></figure>
+      <h3>The radius supplies the normal</h3>
+      <p>For a spherical mirror, the line <strong>PC</strong>, from the reflection point P to the sphere's centre C, is perpendicular to the mirror at P. It is the <strong>normal</strong>. Its direction changes from one point on the curved mirror to another.</p>
+      <p>Suppose PC makes a small angle θ with the principal axis. An incoming ray parallel to the axis makes that same angle θ with PC. The law of reflection requires the reflected ray to make θ on the other side of PC. Therefore the reflected ray makes <strong>2θ with the axis</strong>. A ray farther from the axis meets a more tilted normal and is reflected more steeply toward the axis.</p>
+      <h3>Why the intersection is about halfway to C</h3>
+      <p>Let h be the ray's height above the axis and R the radius of curvature. For a ray close to the axis, P is nearly in the vertex plane, so the right triangles give approximately:</p>
+      <pre><code>tan θ ≈ h/R               normal PC
+tan(2θ) ≈ h/f             reflected ray</code></pre>
+      <p>For small θ, <strong>tan(2θ) ≈ 2 tan θ</strong>. This approximation can be checked with a calculator or from tan(2θ) = 2 tan θ/(1 − tan²θ): the denominator is close to 1 when tan²θ is small. Hence:</p>
+      <pre><code>h/f ≈ 2h/R
+1/f ≈ 2/R
+f ≈ R/2</code></pre>
+      <p>The ray height h cancels. That is why different parallel rays near the axis cross close to the <strong>same point F</strong>, about R/2 from V. This follows from the surface normals and equal reflection angles, without assuming the mirror equation first.</p>
+      <h3>What changes for a convex mirror?</h3>
+      <p>The outward-curving face tilts its normals the other way. Parallel incident rays reflect apart in front; their <strong>backward extensions</strong> meet near R/2 behind the mirror. Its focus is virtual and its signed focal length is f ≈ −R/2, where R here is the positive radius magnitude. Light does not pass through that virtual focus.</p>
+      <h3>The important approximation</h3>
+      <p>A spherical mirror's far-from-axis rays do <strong>not</strong> all pass through exactly the same F. The small-angle approximation and neglected mirror depth fail progressively, producing spherical aberration. In the ideal geometrical model, a parabolic mirror has a different shape that brings rays parallel to its axis to one exact focus. The present proof concerns spherical mirrors near the axis.</p>
+    </section>
+
+    <section>
+      <h2>3 The vertex ray gives the first height equation</h2>
       <p>The teal ray strikes V. At V the normal is the principal axis, so the law of reflection makes the incoming and reflected angles equal. The object and image triangles therefore have equal height-to-horizontal-distance ratios in magnitude.</p>
       <p>For the concave real image drawn above, the image is below the axis, so hᵢ is negative. Equal triangle ratios give hₒ/dₒ = (−hᵢ)/dᵢ. For a virtual image, extend the reflected ray behind the mirror: dᵢ becomes negative and hᵢ becomes positive. Both cases are represented by the same signed relation:</p>
       <pre><code>hᵢ/dᵢ = −hₒ/dₒ
@@ -46,7 +69,7 @@ hᵢ/hₒ = −dᵢ/dₒ                         (A)</code></pre>
     </section>
 
     <section>
-      <h2>3 The parallel ray gives a second height equation</h2>
+      <h2>4 The parallel ray gives a second height equation</h2>
       <p>The orange ray arrives at P parallel to the axis. After reflection, its straight line passes through <strong>P = (0, hₒ)</strong> and <strong>F = (f, 0)</strong>. For a convex mirror it is the backward extension of the ray that passes through F, but the same straight-line geometry applies.</p>
       <p>From P to F, the signed horizontal change is f and the vertical change is −hₒ. From P to the image tip I, the corresponding changes are dᵢ and hᵢ − hₒ. Equal slopes, or similar right triangles with signed changes, give:</p>
       <pre><code>(hᵢ − hₒ)/dᵢ = (0 − hₒ)/f
@@ -59,7 +82,7 @@ hᵢ/hₒ = 1 − dᵢ/f                       (B)</code></pre>
     </section>
 
     <section>
-      <h2>4 Set the two height equations equal</h2>
+      <h2>5 Set the two height equations equal</h2>
       <p>Equations (A) and (B) describe the <strong>same image tip</strong>, so their expressions for hᵢ/hₒ must agree:</p>
       <pre><code>−dᵢ/dₒ = 1 − dᵢ/f
 
@@ -77,7 +100,7 @@ dᵢ = f dₒ/(dₒ − f)                      dₒ ≠ f</code></pre>
     </section>
 
     <section>
-      <h2>5 Check both shapes with the same object distance</h2>
+      <h2>6 Check both shapes with the same object distance</h2>
       <h3>Notes</h3>
       <p>These illustrative checks use dₒ = +100 cm and focal-length magnitude 20.0 cm. They are model calculations, not new measured data or publisher-verified answers.</p>
       <h3>Concave mirror: f = +20.0 cm</h3>
@@ -96,8 +119,8 @@ m = −(−16.7 cm)/(100 cm) ≈ +0.167</code></pre>
     </section>
 
     <section>
-      <h2>6 What the derivation assumes</h2>
-      <p>The equation is exact within the ideal near-axis model. A spherical mirror does not bring all rays far from the axis to a single focus: spherical aberration limits the approximation. We did not derive the separate near-axis relation f ≈ R/2 here; the proof uses the focus determined by the parallel-ray rule.</p>
+      <h2>7 What the derivation assumes</h2>
+      <p>The equation is exact within the ideal near-axis model. A spherical mirror does not bring all rays far from the axis to a single focus: spherical aberration limits the approximation. Section 2 explains the parallel-ray rule and f ≈ R/2 from the normal and the law of reflection; the following two-ray proof uses that near-axis focus.</p>
       <p>If dₒ = f for a concave mirror, equations (A) and (B) cannot agree at any finite image point. The reflected rays are parallel and there is no finite image distance. The rearranged formula must not be evaluated by dividing by zero.</p>
       <p>For a very distant object, dᵢ approaches f. For a convex mirror, the denominator dₒ − f is always positive when dₒ &gt; 0, so the image stays behind the mirror. The reciprocal equation has units of inverse length, and f dₒ/(dₒ − f) has units of length. These are useful checks on both the algebra and the signs.</p>
     </section>

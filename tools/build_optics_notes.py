@@ -19,6 +19,14 @@ def build_mirror_derivation():
     with TemporaryDirectory(prefix='mirror-proof-') as directory:
         page = render_outline('mirror-equation-derivation.md', template, Path(directory))
     for name, alt, caption in (
+        ('reflection-focus',
+         'A ray parallel to the axis strikes a concave spherical mirror at P. '
+         'The dashed radius PC is the normal. Incoming and reflected rays make '
+         'equal angles theta with PC. The reflected ray makes twice theta with '
+         'the axis and crosses it close to F, about halfway from V to C.',
+         'Why the ray heads toward F · PC is normal to the mirror. Equal angles '
+         'about PC send the reflected ray toward the axis. Near the axis, '
+         'different parallel rays meet approximately at F, with f ≈ R/2.'),
         ('concave',
          'Concave mirror with positive f and image distance. A parallel orange ray '
          'reflects at P through F. A teal ray reflects at V. The reflected rays '
@@ -33,11 +41,11 @@ def build_mirror_derivation():
          'Convex example · Dashed backward extensions cross at I. Both dᵢ and f '
          'are negative; hᵢ is positive. Actual light remains in front.'),
     ):
-        marker = f'<p>{name.upper()}_DERIVATION_FIGURE</p>'
+        marker = f'<p>{name.upper().replace("-", "_")}_DERIVATION_FIGURE</p>'
         assert page.count(marker) == 1
         data = base64.b64encode((ROOT / f'assets/optics-notes/mirror-derivation-{name}.svg').read_bytes()).decode()
         figure = (f'<figure><img src="data:image/svg+xml;base64,{data}" '
-                  f'width="960" height="490" alt="{escape(alt, quote=True)}">'
+                  f'width="960" height="{470 if name == "reflection-focus" else 490}" alt="{escape(alt, quote=True)}">'
                   f'<figcaption>{escape(caption)}</figcaption></figure>')
         page = page.replace(marker, figure)
     assert '{{' not in page and '_DERIVATION_FIGURE' not in page

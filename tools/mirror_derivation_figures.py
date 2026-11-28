@@ -1,12 +1,73 @@
 #!/usr/bin/env python3
 """Draw two signed principal-ray constructions for the optional mirror proof."""
 from html import escape
+from math import atan2, cos, pi, sin, sqrt
 from pathlib import Path
 
 ASSETS = Path(__file__).resolve().parents[1] / 'assets/optics-notes'
 
 
+def build_focus_reflection_figure():
+    """Use exact circle normals and specular reflection; the focus is approximate."""
+    v, axis, radius, height = 700., 260., 320., 50.
+    centre, focus = v-radius, v-radius/2
+    px, py = centre+sqrt(radius**2-height**2), axis-height
+    theta = atan2(height, px-centre)
+    reflected_end_x = 430.
+    reflected_end_y = py+(px-reflected_end_x)*sin(2*theta)/cos(2*theta)
+
+    def arc(start_angle, end_angle, r):
+        a=(px+r*cos(start_angle),py+r*sin(start_angle))
+        b=(px+r*cos(end_angle),py+r*sin(end_angle))
+        return f'M{a[0]:.3f} {a[1]:.3f}A{r} {r} 0 0 0 {b[0]:.3f} {b[1]:.3f}'
+
+    edge=centre+sqrt(radius**2-110**2)
+    svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" role="img" aria-labelledby="title desc">
+<title id="title">The law of reflection sends a near-axis parallel ray toward the focus</title>
+<desc id="desc">A parallel ray strikes a concave spherical mirror at P. The radius PC is normal to the surface. The incident ray and reflected ray make equal angles theta with PC. The normal is tilted theta to the horizontal, so the reflected ray is tilted twice theta to the axis. It crosses the axis near F, about halfway from C to V.</desc>
+<defs><marker id="orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+<marker id="teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+<style>text{{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#203440}}.title{{font-size:26px;font-weight:700;fill:#075d64}}.small{{font-size:17px}}.guide{{stroke:#91a5ab;stroke-width:1.4;fill:none}}.normal{{stroke:#526875;stroke-width:2;stroke-dasharray:7 5;fill:none}}</style></defs>
+<rect width="960" height="470" fill="#fff"/><rect x="12" y="12" width="936" height="446" rx="12" fill="none" stroke="#cadbdd" stroke-width="2"/>
+<text x="32" y="51" class="title">The normal sets the reflected direction</text>
+<text x="32" y="86" class="small">Concave spherical mirror · both angles at P are measured from the radius PC.</text>
+<rect x="747" y="112" width="177" height="215" rx="8" fill="#eef3f4"/>
+<text x="760" y="145" class="small">Behind mirror</text>
+<path d="M70 {axis}H925" class="guide"/>
+<text x="75" y="290" class="small">Principal axis</text>
+<path d="M120 {py}H{px}" stroke="#b24c20" stroke-width="3" fill="none"/>
+<path d="M280 {py}H420" stroke="#b24c20" stroke-width="3" marker-end="url(#orange)"/>
+<text x="120" y="185" fill="#b24c20">Incoming: parallel to axis</text>
+<path d="M{px} {py}L{reflected_end_x} {reflected_end_y}" stroke="#086b72" stroke-width="3" fill="none"/>
+<path d="M650 {py+(px-650)*sin(2*theta)/cos(2*theta)}L605 {py+(px-605)*sin(2*theta)/cos(2*theta)}" stroke="#086b72" stroke-width="3" marker-end="url(#teal)"/>
+<path d="M{centre} {axis}L{px} {py}" class="normal"/>
+<text x="326" y="136" class="small">Normal = radius PC</text>
+<path d="M430 142L482 {py+(px-482)*height/(px-centre)}" class="guide"/>
+<path d="{arc(pi,pi-theta,120)}" stroke="#b24c20" stroke-width="2" fill="none"/>
+<path d="{arc(pi-theta,pi-2*theta,120)}" stroke="#086b72" stroke-width="2" fill="none"/>
+<text x="{px+154*cos(pi-theta/2)-6}" y="{py+154*sin(pi-theta/2)+5}">θ</text>
+<text x="{px+154*cos(pi-1.5*theta)-6}" y="{py+154*sin(pi-1.5*theta)+5}">θ</text>
+<path d="M{edge} 150A{radius} {radius} 0 0 1 {edge} 370" stroke="#075d64" stroke-width="6" fill="none"/>
+<circle cx="{px}" cy="{py}" r="4" fill="#203440"/>
+<text x="{px+13}" y="{py-8}" font-weight="700">P</text>
+<path d="M{px} {py}H731M731 {py}V{axis}M725 {axis}H737" class="guide"/>
+<text x="737" y="240">h</text>
+<circle cx="{centre}" cy="{axis}" r="4" fill="#203440"/><text x="{centre}" y="289" text-anchor="middle" font-weight="700">C</text>
+<circle cx="{focus}" cy="{axis}" r="4" fill="#203440"/><text x="{focus}" y="292" text-anchor="middle" font-weight="700">F</text>
+<circle cx="{v}" cy="{axis}" r="4" fill="#203440"/><text x="{v}" y="289" text-anchor="middle" font-weight="700">V</text>
+<text x="330" y="328" class="small">Reflected ray: angle 2θ to the axis</text>
+<path d="M{focus} 352V364M{focus} 358H{v}M{v} 352V364" class="guide"/>
+<text x="{(focus+v)/2}" y="348" text-anchor="middle">f ≈ R/2</text>
+<path d="M{centre} 392V404M{centre} 398H{v}M{v} 392V404" class="guide"/>
+<text x="{(centre+v)/2}" y="388" text-anchor="middle">R</text>
+<text x="32" y="437" class="small">Exact reflection at the drawn point P; the shared focus F is a near-axis approximation.</text>
+</svg>'''
+    ASSETS.mkdir(exist_ok=True)
+    (ASSETS/'mirror-derivation-reflection-focus.svg').write_text(svg+'\n')
+
+
 def build_derivation_figures():
+    build_focus_reflection_figure()
     for sign, name in ((1, 'concave'), (-1, 'convex')):
         v, axis, do, ho = 600., 240., 320., 60.
         f = sign*120.
@@ -71,7 +132,7 @@ def build_derivation_figures():
                 '</svg>']
         ASSETS.mkdir(exist_ok=True)
         (ASSETS/f'mirror-derivation-{name}.svg').write_text('\n'.join(svg)+'\n')
-    print('Built concave and convex two-ray derivation diagrams.')
+    print('Built reflection-normal diagram and concave/convex two-ray constructions.')
 
 
 if __name__ == '__main__':

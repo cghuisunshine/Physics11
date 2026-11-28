@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" role="img" aria-labelledby="title desc">
+<title id="title">The law of reflection sends a near-axis parallel ray toward the focus</title>
+<desc id="desc">A parallel ray strikes a concave spherical mirror at P. The radius PC is normal to the surface. The incident ray and reflected ray make equal angles theta with PC. The normal is tilted theta to the horizontal, so the reflected ray is tilted twice theta to the axis. It crosses the axis near F, about halfway from C to V.</desc>
+<defs><marker id="orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+<marker id="teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+<style>text{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#203440}.title{font-size:26px;font-weight:700;fill:#075d64}.small{font-size:17px}.guide{stroke:#91a5ab;stroke-width:1.4;fill:none}.normal{stroke:#526875;stroke-width:2;stroke-dasharray:7 5;fill:none}</style></defs>
+<rect width="960" height="470" fill="#fff"/><rect x="12" y="12" width="936" height="446" rx="12" fill="none" stroke="#cadbdd" stroke-width="2"/>
+<text x="32" y="51" class="title">The normal sets the reflected direction</text>
+<text x="32" y="86" class="small">Concave spherical mirror · both angles at P are measured from the radius PC.</text>
+<rect x="747" y="112" width="177" height="215" rx="8" fill="#eef3f4"/>
+<text x="760" y="145" class="small">Behind mirror</text>
+<path d="M70 260.0H925" class="guide"/>
+<text x="75" y="290" class="small">Principal axis</text>
+<path d="M120 210.0H696.0696125855821" stroke="#b24c20" stroke-width="3" fill="none"/>
+<path d="M280 210.0H420" stroke="#b24c20" stroke-width="3" marker-end="url(#orange)"/>
+<text x="120" y="185" fill="#b24c20">Incoming: parallel to axis</text>
+<path d="M696.0696125855821 210.0L430.0 296.3413956578243" stroke="#086b72" stroke-width="3" fill="none"/>
+<path d="M650 224.94990205533142L605 239.55270756493223" stroke="#086b72" stroke-width="3" marker-end="url(#teal)"/>
+<path d="M380.0 260.0L696.0696125855821 210.0" class="normal"/>
+<text x="326" y="136" class="small">Normal = radius PC</text>
+<path d="M430 142L482 243.86431407220752" class="guide"/>
+<path d="M576.070 210.000A120 120 0 0 0 577.544 228.750" stroke="#b24c20" stroke-width="2" fill="none"/>
+<path d="M577.544 228.750A120 120 0 0 0 581.929 247.039" stroke="#086b72" stroke-width="2" fill="none"/>
+<text x="536.5432155674326" y="227.06836437242103">θ</text>
+<text x="540.3145794338142" y="250.90863469575072">θ</text>
+<path d="M680.4995840263343 150A320.0 320.0 0 0 1 680.4995840263343 370" stroke="#075d64" stroke-width="6" fill="none"/>
+<circle cx="696.0696125855821" cy="210.0" r="4" fill="#203440"/>
+<text x="709.0696125855821" y="202.0" font-weight="700">P</text>
+<path d="M696.0696125855821 210.0H731M731 210.0V260.0M725 260.0H737" class="guide"/>
+<text x="737" y="240">h</text>
+<circle cx="380.0" cy="260.0" r="4" fill="#203440"/><text x="380.0" y="289" text-anchor="middle" font-weight="700">C</text>
+<circle cx="540.0" cy="260.0" r="4" fill="#203440"/><text x="540.0" y="292" text-anchor="middle" font-weight="700">F</text>
+<circle cx="700.0" cy="260.0" r="4" fill="#203440"/><text x="700.0" y="289" text-anchor="middle" font-weight="700">V</text>
+<text x="330" y="328" class="small">Reflected ray: angle 2θ to the axis</text>
+<path d="M540.0 352V364M540.0 358H700.0M700.0 352V364" class="guide"/>
+<text x="620.0" y="348" text-anchor="middle">f ≈ R/2</text>
+<path d="M380.0 392V404M380.0 398H700.0M700.0 392V404" class="guide"/>
+<text x="540.0" y="388" text-anchor="middle">R</text>
+<text x="32" y="437" class="small">Exact reflection at the drawn point P; the shared focus F is a near-axis approximation.</text>
+</svg>
