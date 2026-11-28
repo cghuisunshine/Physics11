@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="490" viewBox="0 0 960 490" role="img" aria-labelledby="title desc">
+<title id="title">Concave: f &gt; 0, dᵢ &gt; 0, hᵢ &lt; 0</title>
+<desc id="desc">Two rays from upright object tip O: an orange parallel ray reflects at P and a teal ray reflects at vertex V. Their reflected lines meet at image tip I, a real inverted image in front. Signed coordinate s increases toward the front, leftward. Vertical height is positive upward.</desc>
+<defs>
+<marker id="orange-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+<marker id="teal-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+<style>text{font-family:Arial,Helvetica,sans-serif;font-size:19px;fill:#203440}.title{font-size:26px;font-weight:700;fill:#075d64}.small{font-size:17px}.label{font-weight:700}.axis{stroke:#91a5ab;stroke-width:1.5;fill:none}.orange{stroke:#b24c20;stroke-width:2.5;fill:none}.teal{stroke:#086b72;stroke-width:2.5;fill:none}.extension{stroke-dasharray:7 5}.image{stroke:#8d315f;stroke-width:4;fill:none}</style></defs>
+<rect width="960" height="490" fill="#fff"/>
+<rect x="12" y="12" width="936" height="466" rx="12" fill="none" stroke="#cadbdd" stroke-width="2"/>
+<text x="32" y="50" class="title">Concave: f &gt; 0, dᵢ &gt; 0, hᵢ &lt; 0</text>
+<text x="32" y="85" class="small">Positive s points left, in front of the mirror. Positive height points up.</text>
+<rect x="636" y="110" width="287" height="213" rx="8" fill="#eef3f4"/>
+<text x="667" y="137" class="small">Behind mirror: s &lt; 0</text>
+<path d="M65 240.0H925" class="axis"/>
+<text x="68" y="269" class="small">Principal axis</text>
+<path d="M280.000 180.000L600.000 180.000" class="orange"/>
+<path d="M600.000 180.000L350.000 305.000" class="orange"/>
+<path d="M360.000 180.000L440.000 180.000" class="orange" marker-end="url(#orange-arrow)"/>
+<path d="M500.000 230.000L450.000 255.000" class="orange" marker-end="url(#orange-arrow)"/>
+<path d="M280.000 180.000L600.000 240.000" class="teal"/>
+<path d="M600.000 240.000L350.000 286.875" class="teal"/>
+<path d="M360.000 195.000L440.000 210.000" class="teal" marker-end="url(#teal-arrow)"/>
+<path d="M500.000 258.750L450.000 268.125" class="teal" marker-end="url(#teal-arrow)"/>
+<path d="M595.0 118Q605.0 240 595.0 340" stroke="#075d64" stroke-width="6" fill="none"/>
+<path d="M280.0 240.0V180.0M273.0 192.0L280.0 180.0L287.0 192.0" stroke="#203440" stroke-width="4" fill="none"/>
+<text x="264.0" y="165.0" class="label">O</text>
+<text x="242.0" y="215.0">hₒ</text>
+<path d="M408.0 240.0V276.0M402.0 267.0L408.0 276.0L414.0 267.0" class="image"/>
+<text x="422.0" y="295.0" class="label">I</text>
+<text x="370.0" y="263.0">hᵢ</text>
+<circle cx="480.0" cy="240.0" r="4" fill="#203440"/>
+<text x="480.0" y="266.0" text-anchor="middle" class="label">F</text>
+<text x="614.0" y="170.0" class="label">P (0, hₒ)</text>
+<text x="614.0" y="266.0" class="label">V (0, 0)</text>
+<path d="M280.000 397.000L280.000 407.000" class="axis"/>
+<path d="M280.000 402.000L600.000 402.000" class="axis"/>
+<path d="M600.000 397.000L600.000 407.000" class="axis"/>
+<text x="440.0" y="392" text-anchor="middle">dₒ &gt; 0</text>
+<path d="M600.000 362.000L600.000 372.000" class="axis"/>
+<path d="M600.000 367.000L408.000 367.000" class="axis"/>
+<path d="M408.000 362.000L408.000 372.000" class="axis"/>
+<text x="504.0" y="357" text-anchor="middle">dᵢ &gt; 0</text>
+<text x="32" y="450" class="small">Near-axis construction; mirror depth neglected. Diagram dimensions are illustrative.</text>
+</svg>

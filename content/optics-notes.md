@@ -179,17 +179,40 @@ Start every distance measurement at **V, the mirror vertex**, and measure along 
 These are **optics sign rules**, not a left/right coordinate rule. If you draw the mirror facing the other way, a real image in front still has positive dᵢ. For a concave mirror, the object position determines whether its image is real or virtual; the mirror type alone does not settle that.
 
 ### Calculate image position first
+**One mirror equation works for both concave and convex mirrors:**
 ```
 1/f = 1/dₒ + 1/dᵢ
 ```
-All three distances must use the **same unit**, such as cm. To find dᵢ, subtract 1/dₒ from both sides, then take the reciprocal:
+Use **f > 0 for concave** and **f < 0 for convex**. Keep the equation the same; the sign of f accounts for the mirror's shape. All three distances must use the **same unit**, such as cm. To find dᵢ, subtract 1/dₒ from both sides, then take the reciprocal:
 ```
 1/dᵢ = 1/f − 1/dₒ
-dᵢ = 1 / (1/f − 1/dₒ)
+     = (dₒ − f)/(f × dₒ)
+
+dᵢ = (f × dₒ)/(dₒ − f)
 ```
+This rearranged form also works for **both mirror types**, provided dₒ ≠ f.
+
+Further reading: [Why does one mirror equation work for both shapes?](mirror-equation-derivation.html)
+
 **The reciprocal step matters:** if 1/dᵢ = 0.0400 cm⁻¹, then dᵢ = 1/0.0400 = 25.0 cm. The number 0.0400 is not the image distance. If the right side is zero, the reflected rays are parallel and there is no finite image distance; do not divide by zero.
 
 Read the sign of your result: **positive dᵢ → real image in front**, which can be received on a screen; **negative dᵢ → virtual image behind**, located by backward ray extensions.
+
+### Read the equation on a graph
+Compare mirrors with the **same focal-length magnitude, 20.0 cm**. The solid curve uses **f = +20.0 cm for concave**; the dashed curve uses **f = −20.0 cm for convex**. Both are calculated from **dᵢ = (f × dₒ)/(dₒ − f)**. These are model curves, not measured data.
+
+MIRROR_DISTANCE_GRAPH
+
+Read **dₒ on the horizontal axis**, then go to the curve and read **dᵢ on the vertical axis**:
+
+- **Concave, dₒ = 100 cm:** dᵢ = (+20.0 × 100)/(100 − 20.0) = **+25.0 cm**, a real image in front.
+- **Convex, the same dₒ = 100 cm:** dᵢ = (−20.0 × 100)/(100 − (−20.0)) = **−16.7 cm**, a virtual image behind. Notice that subtracting negative f makes the denominator 120 cm.
+- **Concave, dₒ = 10.0 cm:** dᵢ = **−20.0 cm**, a virtual image behind. This object is inside F.
+- **Concave, dₒ = 20.0 cm = f:** there is **no finite image distance**, so its two curve branches do not join. The grey vertical line marks this object position. The convex curve remains continuous there: its f is −20.0 cm, so dₒ − f is not zero.
+
+For a convex mirror with a real object, f × dₒ is negative and dₒ − f is positive. Therefore **dᵢ is always negative**: the image is virtual. For a concave mirror, dᵢ can be positive or negative depending on whether the object is outside or inside F.
+
+This graph plots two **distances**. It is not a picture of a light ray or the mirror's shape. Large concave-mirror image distances near dₒ = f extend beyond the plotted range.
 
 ### Then describe the image with magnification
 Let **hₒ** be the object's height and **hᵢ** the image's signed height, both measured perpendicular to the axis. Take an upright object as positive: an image above the axis has positive height and an inverted image below has negative height.
@@ -203,6 +226,12 @@ Magnification m has **no units**, because it is a ratio of two lengths. Read its
 - **Magnitude gives relative height:** |m| < 1 means smaller; |m| = 1 means the same height; |m| > 1 means larger.
 
 For example, **m = −0.250** means *inverted and one quarter as tall*. **m = +2.0** means *upright and twice as tall*. A minus sign describes orientation, not a physically negative size. Do not confuse the sign of dᵢ (image location) with the sign of m (image orientation).
+
+The **same magnification equation also works for both mirrors**. For the convex case on the graph, m = −(−16.7)/100 ≈ **+0.167**: the image is upright and about one sixth as tall. For the concave case at the same object distance, m = −(+25.0)/100 = **−0.250**: inverted and one quarter as tall.
+
+MIRROR_EQUATION_SOLUTION_FIGURE
+
+In this **ray diagram**, the upright object is 100 cm from V and the inverted image is 25.0 cm from V. The two reflected rays cross at the image tip. Compare the arrow heights: the image is one quarter as tall, matching m = −25.0/100 = −0.250. Every horizontal distance starts at V.
 
 ### Sample 7.2.1 · Where does the image form?
 A concave mirror of focal length 20.0 cm is 1.00 m from an object. Find image distance and magnification.
@@ -232,8 +261,6 @@ m = −dᵢ/dₒ
   = −0.250
 ```
 The image is **inverted** because m is negative, and its height is **0.250 times the object's height**. No object height was supplied, so an image height in centimetres cannot be calculated.
-
-MIRROR_EQUATION_SOLUTION_FIGURE
 
 **4. Check the answer.** Substitution gives 1/20.0 = 1/100 + 1/25.0, with every term in cm⁻¹. Also, C is 2f = 40.0 cm in front of V. The object is beyond C, so Topic 5 predicts a real, inverted, smaller image between F and C. The calculated 20.0 cm < 25.0 cm < 40.0 cm agrees.
 

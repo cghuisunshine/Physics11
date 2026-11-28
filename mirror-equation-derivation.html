@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Optional two-ray derivation of one signed mirror equation for concave and convex mirrors using reflection, similar triangles, and the near-axis model.">
+<title>Why does one mirror equation work for both shapes? | Physics 11</title>
+<style>
+:root{--ink:#182e3c;--muted:#526875;--paper:#faf9f5;--line:#dce4e7;--accent:#086b72;--soft:#edf6f4}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--accent);text-underline-offset:4px}a:focus-visible,button:focus-visible{outline:3px solid #087cff;outline-offset:4px}.skip{position:absolute;top:-100px;left:16px;background:white;padding:10px}.skip:focus{top:10px}header,main,footer{max-width:960px;margin:auto;padding:24px 30px}header{border-bottom:1px solid var(--line)}nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center}.eyebrow{color:var(--accent);text-transform:uppercase;font-size:12px;letter-spacing:.14em;font-weight:750;margin-top:36px}h1{font-size:clamp(32px,6vw,54px);line-height:1.15;letter-spacing:-.04em;margin:14px 0 20px}h2{font-size:25px;line-height:1.3;margin-top:0}section{background:white;border:1px solid var(--line);border-radius:14px;padding:30px 36px;margin:24px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--soft);border-left:3px solid var(--accent);padding:18px 20px;font-size:15px;line-height:1.8;border-radius:0 8px 8px 0}code{font-family:Consolas,monospace}figure{margin:24px 0}figure img{display:block;width:100%;height:auto}figcaption,footer{font-size:13px;color:var(--muted)}button{font:inherit;font-size:14px;background:white;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer}button:hover{background:var(--soft)}footer{border-top:1px solid var(--line)}li{margin:8px 0}
+@media(max-width:600px){header,main,footer{padding:20px 16px}section{padding:24px 18px}pre{font-size:13px;padding:14px 12px}}
+@media print{body{background:white;font-size:11pt}header,.skip,button{display:none}main,footer{max-width:none;padding:0}h1{font-size:26pt}section{border:0;padding:14px 0;margin:0}h2{break-after:avoid}figure,pre{break-inside:avoid}a{color:inherit}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to derivation</a>
+<header><nav aria-label="Page navigation"><a href="optics-notes.html#topic-6">← Topic 6 · Mirror equation</a><a href="content.html">All Physics 11 notes</a><button type="button" id="print">Print / Save PDF</button></nav></header>
+<main id="main">
+<p class="eyebrow">Physics 11 · Optional further reading</p>
+<h1>Why does one mirror equation work for both shapes?</h1>
+<p>Optional further reading: a two-ray proof using reflection, similar triangles, and signed distances.</p>
+    <section>
+      <h2>1 Set up one sign convention</h2>
+      <p>This optional proof extends Topic 6 of Light and Geometric Optics Notes. <strong>Prerequisites:</strong> the law of reflection, principal rays, similar triangles, and algebra with negative numbers. No calculus is needed. You can complete the Physics 11 notes without this proof.</p>
+      <p>Use a real, upright object in front of a spherical mirror. Work in the <strong>near-axis (paraxial) model</strong>: rays make small angles with the principal axis, and the mirror's small depth is neglected when measuring their horizontal distances. In this model, a ray arriving parallel to the axis reflects through F, or its backward extension passes through F. This ray rule defines the focal point independently of the mirror equation we are about to derive.</p>
+      <p>Let <strong>V be the origin</strong>. The horizontal coordinate s is positive in front of the mirror (left in both drawings); vertical height is positive upward. The lengths dₒ, dᵢ, and f use the same unit. Heights hₒ and hᵢ also use one common length unit.</p>
+      <ul>
+        <li>Object tip O has coordinates <strong>(dₒ, hₒ)</strong>, with dₒ &gt; 0 and hₒ &gt; 0.</li>
+        <li>Image tip I has coordinates <strong>(dᵢ, hᵢ)</strong>. A virtual image has dᵢ &lt; 0; an inverted image has hᵢ &lt; 0.</li>
+        <li>Focus F has coordinates <strong>(f, 0)</strong>. Concave means f &gt; 0; convex means f &lt; 0.</li>
+        <li>The parallel ray meets the mirror at P, approximated by <strong>(0, hₒ)</strong> in the near-axis model.</li>
+      </ul>
+      <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNDkwIiB2aWV3Qm94PSIwIDAgOTYwIDQ5MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9InRpdGxlIGRlc2MiPgo8dGl0bGUgaWQ9InRpdGxlIj5Db25jYXZlOiBmICZndDsgMCwgZOG1oiAmZ3Q7IDAsIGjhtaIgJmx0OyAwPC90aXRsZT4KPGRlc2MgaWQ9ImRlc2MiPlR3byByYXlzIGZyb20gdXByaWdodCBvYmplY3QgdGlwIE86IGFuIG9yYW5nZSBwYXJhbGxlbCByYXkgcmVmbGVjdHMgYXQgUCBhbmQgYSB0ZWFsIHJheSByZWZsZWN0cyBhdCB2ZXJ0ZXggVi4gVGhlaXIgcmVmbGVjdGVkIGxpbmVzIG1lZXQgYXQgaW1hZ2UgdGlwIEksIGEgcmVhbCBpbnZlcnRlZCBpbWFnZSBpbiBmcm9udC4gU2lnbmVkIGNvb3JkaW5hdGUgcyBpbmNyZWFzZXMgdG93YXJkIHRoZSBmcm9udCwgbGVmdHdhcmQuIFZlcnRpY2FsIGhlaWdodCBpcyBwb3NpdGl2ZSB1cHdhcmQuPC9kZXNjPgo8ZGVmcz4KPG1hcmtlciBpZD0ib3JhbmdlLWFycm93IiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjgiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI2IiBtYXJrZXJIZWlnaHQ9IjYiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTAgMCAxMCA1IDAgMTBaIiBmaWxsPSIjYjI0YzIwIi8+PC9tYXJrZXI+CjxtYXJrZXIgaWQ9InRlYWwtYXJyb3ciIHZpZXdCb3g9IjAgMCAxMCAxMCIgcmVmWD0iOCIgcmVmWT0iNSIgbWFya2VyV2lkdGg9IjYiIG1hcmtlckhlaWdodD0iNiIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNMCAwIDEwIDUgMCAxMFoiIGZpbGw9IiMwODZiNzIiLz48L21hcmtlcj4KPHN0eWxlPnRleHR7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE5cHg7ZmlsbDojMjAzNDQwfS50aXRsZXtmb250LXNpemU6MjZweDtmb250LXdlaWdodDo3MDA7ZmlsbDojMDc1ZDY0fS5zbWFsbHtmb250LXNpemU6MTdweH0ubGFiZWx7Zm9udC13ZWlnaHQ6NzAwfS5heGlze3N0cm9rZTojOTFhNWFiO3N0cm9rZS13aWR0aDoxLjU7ZmlsbDpub25lfS5vcmFuZ2V7c3Ryb2tlOiNiMjRjMjA7c3Ryb2tlLXdpZHRoOjIuNTtmaWxsOm5vbmV9LnRlYWx7c3Ryb2tlOiMwODZiNzI7c3Ryb2tlLXdpZHRoOjIuNTtmaWxsOm5vbmV9LmV4dGVuc2lvbntzdHJva2UtZGFzaGFycmF5OjcgNX0uaW1hZ2V7c3Ryb2tlOiM4ZDMxNWY7c3Ryb2tlLXdpZHRoOjQ7ZmlsbDpub25lfTwvc3R5bGU+PC9kZWZzPgo8cmVjdCB3aWR0aD0iOTYwIiBoZWlnaHQ9IjQ5MCIgZmlsbD0iI2ZmZiIvPgo8cmVjdCB4PSIxMiIgeT0iMTIiIHdpZHRoPSI5MzYiIGhlaWdodD0iNDY2IiByeD0iMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2NhZGJkZCIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjMyIiB5PSI1MCIgY2xhc3M9InRpdGxlIj5Db25jYXZlOiBmICZndDsgMCwgZOG1oiAmZ3Q7IDAsIGjhtaIgJmx0OyAwPC90ZXh0Pgo8dGV4dCB4PSIzMiIgeT0iODUiIGNsYXNzPSJzbWFsbCI+UG9zaXRpdmUgcyBwb2ludHMgbGVmdCwgaW4gZnJvbnQgb2YgdGhlIG1pcnJvci4gUG9zaXRpdmUgaGVpZ2h0IHBvaW50cyB1cC48L3RleHQ+CjxyZWN0IHg9IjYzNiIgeT0iMTEwIiB3aWR0aD0iMjg3IiBoZWlnaHQ9IjIxMyIgcng9IjgiIGZpbGw9IiNlZWYzZjQiLz4KPHRleHQgeD0iNjY3IiB5PSIxMzciIGNsYXNzPSJzbWFsbCI+QmVoaW5kIG1pcnJvcjogcyAmbHQ7IDA8L3RleHQ+CjxwYXRoIGQ9Ik02NSAyNDAuMEg5MjUiIGNsYXNzPSJheGlzIi8+Cjx0ZXh0IHg9IjY4IiB5PSIyNjkiIGNsYXNzPSJzbWFsbCI+UHJpbmNpcGFsIGF4aXM8L3RleHQ+CjxwYXRoIGQ9Ik0yODAuMDAwIDE4MC4wMDBMNjAwLjAwMCAxODAuMDAwIiBjbGFzcz0ib3JhbmdlIi8+CjxwYXRoIGQ9Ik02MDAuMDAwIDE4MC4wMDBMMzUwLjAwMCAzMDUuMDAwIiBjbGFzcz0ib3JhbmdlIi8+CjxwYXRoIGQ9Ik0zNjAuMDAwIDE4MC4wMDBMNDQwLjAwMCAxODAuMDAwIiBjbGFzcz0ib3JhbmdlIiBtYXJrZXItZW5kPSJ1cmwoI29yYW5nZS1hcnJvdykiLz4KPHBhdGggZD0iTTUwMC4wMDAgMjMwLjAwMEw0NTAuMDAwIDI1NS4wMDAiIGNsYXNzPSJvcmFuZ2UiIG1hcmtlci1lbmQ9InVybCgjb3JhbmdlLWFycm93KSIvPgo8cGF0aCBkPSJNMjgwLjAwMCAxODAuMDAwTDYwMC4wMDAgMjQwLjAwMCIgY2xhc3M9InRlYWwiLz4KPHBhdGggZD0iTTYwMC4wMDAgMjQwLjAwMEwzNTAuMDAwIDI4Ni44NzUiIGNsYXNzPSJ0ZWFsIi8+CjxwYXRoIGQ9Ik0zNjAuMDAwIDE5NS4wMDBMNDQwLjAwMCAyMTAuMDAwIiBjbGFzcz0idGVhbCIgbWFya2VyLWVuZD0idXJsKCN0ZWFsLWFycm93KSIvPgo8cGF0aCBkPSJNNTAwLjAwMCAyNTguNzUwTDQ1MC4wMDAgMjY4LjEyNSIgY2xhc3M9InRlYWwiIG1hcmtlci1lbmQ9InVybCgjdGVhbC1hcnJvdykiLz4KPHBhdGggZD0iTTU5NS4wIDExOFE2MDUuMCAyNDAgNTk1LjAgMzQwIiBzdHJva2U9IiMwNzVkNjQiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIvPgo8cGF0aCBkPSJNMjgwLjAgMjQwLjBWMTgwLjBNMjczLjAgMTkyLjBMMjgwLjAgMTgwLjBMMjg3LjAgMTkyLjAiIHN0cm9rZT0iIzIwMzQ0MCIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIi8+Cjx0ZXh0IHg9IjI2NC4wIiB5PSIxNjUuMCIgY2xhc3M9ImxhYmVsIj5PPC90ZXh0Pgo8dGV4dCB4PSIyNDIuMCIgeT0iMjE1LjAiPmjigpI8L3RleHQ+CjxwYXRoIGQ9Ik00MDguMCAyNDAuMFYyNzYuME00MDIuMCAyNjcuMEw0MDguMCAyNzYuMEw0MTQuMCAyNjcuMCIgY2xhc3M9ImltYWdlIi8+Cjx0ZXh0IHg9IjQyMi4wIiB5PSIyOTUuMCIgY2xhc3M9ImxhYmVsIj5JPC90ZXh0Pgo8dGV4dCB4PSIzNzAuMCIgeT0iMjYzLjAiPmjhtaI8L3RleHQ+CjxjaXJjbGUgY3g9IjQ4MC4wIiBjeT0iMjQwLjAiIHI9IjQiIGZpbGw9IiMyMDM0NDAiLz4KPHRleHQgeD0iNDgwLjAiIHk9IjI2Ni4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiPkY8L3RleHQ+Cjx0ZXh0IHg9IjYxNC4wIiB5PSIxNzAuMCIgY2xhc3M9ImxhYmVsIj5QICgwLCBo4oKSKTwvdGV4dD4KPHRleHQgeD0iNjE0LjAiIHk9IjI2Ni4wIiBjbGFzcz0ibGFiZWwiPlYgKDAsIDApPC90ZXh0Pgo8cGF0aCBkPSJNMjgwLjAwMCAzOTcuMDAwTDI4MC4wMDAgNDA3LjAwMCIgY2xhc3M9ImF4aXMiLz4KPHBhdGggZD0iTTI4MC4wMDAgNDAyLjAwMEw2MDAuMDAwIDQwMi4wMDAiIGNsYXNzPSJheGlzIi8+CjxwYXRoIGQ9Ik02MDAuMDAwIDM5Ny4wMDBMNjAwLjAwMCA0MDcuMDAwIiBjbGFzcz0iYXhpcyIvPgo8dGV4dCB4PSI0NDAuMCIgeT0iMzkyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5k4oKSICZndDsgMDwvdGV4dD4KPHBhdGggZD0iTTYwMC4wMDAgMzYyLjAwMEw2MDAuMDAwIDM3Mi4wMDAiIGNsYXNzPSJheGlzIi8+CjxwYXRoIGQ9Ik02MDAuMDAwIDM2Ny4wMDBMNDA4LjAwMCAzNjcuMDAwIiBjbGFzcz0iYXhpcyIvPgo8cGF0aCBkPSJNNDA4LjAwMCAzNjIuMDAwTDQwOC4wMDAgMzcyLjAwMCIgY2xhc3M9ImF4aXMiLz4KPHRleHQgeD0iNTA0LjAiIHk9IjM1NyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+ZOG1oiAmZ3Q7IDA8L3RleHQ+Cjx0ZXh0IHg9IjMyIiB5PSI0NTAiIGNsYXNzPSJzbWFsbCI+TmVhci1heGlzIGNvbnN0cnVjdGlvbjsgbWlycm9yIGRlcHRoIG5lZ2xlY3RlZC4gRGlhZ3JhbSBkaW1lbnNpb25zIGFyZSBpbGx1c3RyYXRpdmUuPC90ZXh0Pgo8L3N2Zz4K" width="960" height="490" alt="Concave mirror with positive f and image distance. A parallel orange ray reflects at P through F. A teal ray reflects at V. The reflected rays cross at an inverted real image tip I in front, so image height is negative."><figcaption>Concave example · Solid reflected rays cross at I. Both dᵢ and f are positive; hᵢ is negative. O and I are object and image tips.</figcaption></figure>
+      <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNDkwIiB2aWV3Qm94PSIwIDAgOTYwIDQ5MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9InRpdGxlIGRlc2MiPgo8dGl0bGUgaWQ9InRpdGxlIj5Db252ZXg6IGYgJmx0OyAwLCBk4bWiICZsdDsgMCwgaOG1oiAmZ3Q7IDA8L3RpdGxlPgo8ZGVzYyBpZD0iZGVzYyI+VHdvIHJheXMgZnJvbSB1cHJpZ2h0IG9iamVjdCB0aXAgTzogYW4gb3JhbmdlIHBhcmFsbGVsIHJheSByZWZsZWN0cyBhdCBQIGFuZCBhIHRlYWwgcmF5IHJlZmxlY3RzIGF0IHZlcnRleCBWLiBUaGVpciByZWZsZWN0ZWQgbGluZXMgbWVldCBhdCBpbWFnZSB0aXAgSSwgYSB2aXJ0dWFsIHVwcmlnaHQgaW1hZ2UgYmVoaW5kLCBmb3VuZCB3aXRoIGRhc2hlZCBiYWNrd2FyZCBleHRlbnNpb25zLiBTaWduZWQgY29vcmRpbmF0ZSBzIGluY3JlYXNlcyB0b3dhcmQgdGhlIGZyb250LCBsZWZ0d2FyZC4gVmVydGljYWwgaGVpZ2h0IGlzIHBvc2l0aXZlIHVwd2FyZC48L2Rlc2M+CjxkZWZzPgo8bWFya2VyIGlkPSJvcmFuZ2UtYXJyb3ciIHZpZXdCb3g9IjAgMCAxMCAxMCIgcmVmWD0iOCIgcmVmWT0iNSIgbWFya2VyV2lkdGg9IjYiIG1hcmtlckhlaWdodD0iNiIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNMCAwIDEwIDUgMCAxMFoiIGZpbGw9IiNiMjRjMjAiLz48L21hcmtlcj4KPG1hcmtlciBpZD0idGVhbC1hcnJvdyIgdmlld0JveD0iMCAwIDEwIDEwIiByZWZYPSI4IiByZWZZPSI1IiBtYXJrZXJXaWR0aD0iNiIgbWFya2VySGVpZ2h0PSI2IiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0wIDAgMTAgNSAwIDEwWiIgZmlsbD0iIzA4NmI3MiIvPjwvbWFya2VyPgo8c3R5bGU+dGV4dHtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtmb250LXNpemU6MTlweDtmaWxsOiMyMDM0NDB9LnRpdGxle2ZvbnQtc2l6ZToyNnB4O2ZvbnQtd2VpZ2h0OjcwMDtmaWxsOiMwNzVkNjR9LnNtYWxse2ZvbnQtc2l6ZToxN3B4fS5sYWJlbHtmb250LXdlaWdodDo3MDB9LmF4aXN7c3Ryb2tlOiM5MWE1YWI7c3Ryb2tlLXdpZHRoOjEuNTtmaWxsOm5vbmV9Lm9yYW5nZXtzdHJva2U6I2IyNGMyMDtzdHJva2Utd2lkdGg6Mi41O2ZpbGw6bm9uZX0udGVhbHtzdHJva2U6IzA4NmI3MjtzdHJva2Utd2lkdGg6Mi41O2ZpbGw6bm9uZX0uZXh0ZW5zaW9ue3N0cm9rZS1kYXNoYXJyYXk6NyA1fS5pbWFnZXtzdHJva2U6IzhkMzE1ZjtzdHJva2Utd2lkdGg6NDtmaWxsOm5vbmV9PC9zdHlsZT48L2RlZnM+CjxyZWN0IHdpZHRoPSI5NjAiIGhlaWdodD0iNDkwIiBmaWxsPSIjZmZmIi8+CjxyZWN0IHg9IjEyIiB5PSIxMiIgd2lkdGg9IjkzNiIgaGVpZ2h0PSI0NjYiIHJ4PSIxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjY2FkYmRkIiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iMzIiIHk9IjUwIiBjbGFzcz0idGl0bGUiPkNvbnZleDogZiAmbHQ7IDAsIGThtaIgJmx0OyAwLCBo4bWiICZndDsgMDwvdGV4dD4KPHRleHQgeD0iMzIiIHk9Ijg1IiBjbGFzcz0ic21hbGwiPlBvc2l0aXZlIHMgcG9pbnRzIGxlZnQsIGluIGZyb250IG9mIHRoZSBtaXJyb3IuIFBvc2l0aXZlIGhlaWdodCBwb2ludHMgdXAuPC90ZXh0Pgo8cmVjdCB4PSI2MzYiIHk9IjExMCIgd2lkdGg9IjI4NyIgaGVpZ2h0PSIyMTMiIHJ4PSI4IiBmaWxsPSIjZWVmM2Y0Ii8+Cjx0ZXh0IHg9IjY2NyIgeT0iMTM3IiBjbGFzcz0ic21hbGwiPkJlaGluZCBtaXJyb3I6IHMgJmx0OyAwPC90ZXh0Pgo8cGF0aCBkPSJNNjUgMjQwLjBIOTI1IiBjbGFzcz0iYXhpcyIvPgo8dGV4dCB4PSI2OCIgeT0iMjY5IiBjbGFzcz0ic21hbGwiPlByaW5jaXBhbCBheGlzPC90ZXh0Pgo8cGF0aCBkPSJNMjgwLjAwMCAxODAuMDAwTDYwMC4wMDAgMTgwLjAwMCIgY2xhc3M9Im9yYW5nZSIvPgo8cGF0aCBkPSJNNjAwLjAwMCAxODAuMDAwTDQzMC4wMDAgOTUuMDAwIiBjbGFzcz0ib3JhbmdlIi8+CjxwYXRoIGQ9Ik0zNjAuMDAwIDE4MC4wMDBMNDQwLjAwMCAxODAuMDAwIiBjbGFzcz0ib3JhbmdlIiBtYXJrZXItZW5kPSJ1cmwoI29yYW5nZS1hcnJvdykiLz4KPHBhdGggZD0iTTUzMi4wMDAgMTQ2LjAwMEw0OTguMDAwIDEyOS4wMDAiIGNsYXNzPSJvcmFuZ2UiIG1hcmtlci1lbmQ9InVybCgjb3JhbmdlLWFycm93KSIvPgo8cGF0aCBkPSJNNjAwLjAwMCAxODAuMDAwTDcyMC4wMDAgMjQwLjAwMCIgY2xhc3M9Im9yYW5nZSBleHRlbnNpb24iLz4KPHBhdGggZD0iTTI4MC4wMDAgMTgwLjAwMEw2MDAuMDAwIDI0MC4wMDAiIGNsYXNzPSJ0ZWFsIi8+CjxwYXRoIGQ9Ik02MDAuMDAwIDI0MC4wMDBMMzUwLjAwMCAyODYuODc1IiBjbGFzcz0idGVhbCIvPgo8cGF0aCBkPSJNMzYwLjAwMCAxOTUuMDAwTDQ0MC4wMDAgMjEwLjAwMCIgY2xhc3M9InRlYWwiIG1hcmtlci1lbmQ9InVybCgjdGVhbC1hcnJvdykiLz4KPHBhdGggZD0iTTUwMC4wMDAgMjU4Ljc1MEw0NTAuMDAwIDI2OC4xMjUiIGNsYXNzPSJ0ZWFsIiBtYXJrZXItZW5kPSJ1cmwoI3RlYWwtYXJyb3cpIi8+CjxwYXRoIGQ9Ik02MDAuMDAwIDI0MC4wMDBMNzQyLjI3MyAyMTMuMzI0IiBjbGFzcz0idGVhbCBleHRlbnNpb24iLz4KPHBhdGggZD0iTTYwNS4wIDExOFE1OTUuMCAyNDAgNjA1LjAgMzQwIiBzdHJva2U9IiMwNzVkNjQiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIvPgo8cGF0aCBkPSJNMjgwLjAgMjQwLjBWMTgwLjBNMjczLjAgMTkyLjBMMjgwLjAgMTgwLjBMMjg3LjAgMTkyLjAiIHN0cm9rZT0iIzIwMzQ0MCIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIi8+Cjx0ZXh0IHg9IjI2NC4wIiB5PSIxNjUuMCIgY2xhc3M9ImxhYmVsIj5PPC90ZXh0Pgo8dGV4dCB4PSIyNDIuMCIgeT0iMjE1LjAiPmjigpI8L3RleHQ+CjxwYXRoIGQ9Ik02ODcuMjcyNzI3MjcyNzI3MyAyNDAuMFYyMjMuNjM2MzYzNjM2MzYzNjNNNjgxLjI3MjcyNzI3MjcyNzMgMjMyLjYzNjM2MzYzNjM2MzYzTDY4Ny4yNzI3MjcyNzI3MjczIDIyMy42MzYzNjM2MzYzNjM2M0w2OTMuMjcyNzI3MjcyNzI3MyAyMzIuNjM2MzYzNjM2MzYzNjMiIGNsYXNzPSJpbWFnZSIvPgo8dGV4dCB4PSI3MDEuMjcyNzI3MjcyNzI3MyIgeT0iMjA0LjYzNjM2MzYzNjM2MzYzIiBjbGFzcz0ibGFiZWwiPkk8L3RleHQ+Cjx0ZXh0IHg9IjY0OS4yNzI3MjcyNzI3MjczIiB5PSIxOTUuNjM2MzYzNjM2MzYzNjMiPmjhtaI8L3RleHQ+CjxjaXJjbGUgY3g9IjcyMC4wIiBjeT0iMjQwLjAiIHI9IjQiIGZpbGw9IiMyMDM0NDAiLz4KPHRleHQgeD0iNzIwLjAiIHk9IjI2Ni4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiPkY8L3RleHQ+Cjx0ZXh0IHg9IjYxNC4wIiB5PSIxNzAuMCIgY2xhc3M9ImxhYmVsIj5QICgwLCBo4oKSKTwvdGV4dD4KPHRleHQgeD0iNjE0LjAiIHk9IjI2Ni4wIiBjbGFzcz0ibGFiZWwiPlYgKDAsIDApPC90ZXh0Pgo8cGF0aCBkPSJNMjgwLjAwMCAzOTcuMDAwTDI4MC4wMDAgNDA3LjAwMCIgY2xhc3M9ImF4aXMiLz4KPHBhdGggZD0iTTI4MC4wMDAgNDAyLjAwMEw2MDAuMDAwIDQwMi4wMDAiIGNsYXNzPSJheGlzIi8+CjxwYXRoIGQ9Ik02MDAuMDAwIDM5Ny4wMDBMNjAwLjAwMCA0MDcuMDAwIiBjbGFzcz0iYXhpcyIvPgo8dGV4dCB4PSI0NDAuMCIgeT0iMzkyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5k4oKSICZndDsgMDwvdGV4dD4KPHBhdGggZD0iTTYwMC4wMDAgMzYyLjAwMEw2MDAuMDAwIDM3Mi4wMDAiIGNsYXNzPSJheGlzIi8+CjxwYXRoIGQ9Ik02MDAuMDAwIDM2Ny4wMDBMNjg3LjI3MyAzNjcuMDAwIiBjbGFzcz0iYXhpcyIvPgo8cGF0aCBkPSJNNjg3LjI3MyAzNjIuMDAwTDY4Ny4yNzMgMzcyLjAwMCIgY2xhc3M9ImF4aXMiLz4KPHRleHQgeD0iNjQzLjYzNjM2MzYzNjM2MzYiIHk9IjM1NyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+ZOG1oiAmbHQ7IDA8L3RleHQ+Cjx0ZXh0IHg9IjMyIiB5PSI0NTAiIGNsYXNzPSJzbWFsbCI+TmVhci1heGlzIGNvbnN0cnVjdGlvbjsgbWlycm9yIGRlcHRoIG5lZ2xlY3RlZC4gRGlhZ3JhbSBkaW1lbnNpb25zIGFyZSBpbGx1c3RyYXRpdmUuPC90ZXh0Pgo8L3N2Zz4K" width="960" height="490" alt="Convex mirror with negative f and image distance. A parallel orange ray reflects at P as if from F behind the mirror. A teal ray reflects at V. Dashed backward extensions cross at an upright virtual image I, so image height is positive."><figcaption>Convex example · Dashed backward extensions cross at I. Both dᵢ and f are negative; hᵢ is positive. Actual light remains in front.</figcaption></figure>
+      <p>Solid arrows show actual light; dashed lines behind the convex mirror extend the reflected rays backward. They are not light transmitted through the mirror. Both rays start at the same object tip and locate the same image tip.</p>
+    </section>
+
+    <section>
+      <h2>2 The vertex ray gives the first height equation</h2>
+      <p>The teal ray strikes V. At V the normal is the principal axis, so the law of reflection makes the incoming and reflected angles equal. The object and image triangles therefore have equal height-to-horizontal-distance ratios in magnitude.</p>
+      <p>For the concave real image drawn above, the image is below the axis, so hᵢ is negative. Equal triangle ratios give hₒ/dₒ = (−hᵢ)/dᵢ. For a virtual image, extend the reflected ray behind the mirror: dᵢ becomes negative and hᵢ becomes positive. Both cases are represented by the same signed relation:</p>
+      <pre><code>hᵢ/dᵢ = −hₒ/dₒ
+
+hᵢ/hₒ = −dᵢ/dₒ                         (A)</code></pre>
+      <p>This is also the magnification equation. The minus sign follows from reflection at V; it does not need to be changed for a convex mirror.</p>
+    </section>
+
+    <section>
+      <h2>3 The parallel ray gives a second height equation</h2>
+      <p>The orange ray arrives at P parallel to the axis. After reflection, its straight line passes through <strong>P = (0, hₒ)</strong> and <strong>F = (f, 0)</strong>. For a convex mirror it is the backward extension of the ray that passes through F, but the same straight-line geometry applies.</p>
+      <p>From P to F, the signed horizontal change is f and the vertical change is −hₒ. From P to the image tip I, the corresponding changes are dᵢ and hᵢ − hₒ. Equal slopes, or similar right triangles with signed changes, give:</p>
+      <pre><code>(hᵢ − hₒ)/dᵢ = (0 − hₒ)/f
+
+hᵢ − hₒ = −hₒdᵢ/f
+hᵢ = hₒ(1 − dᵢ/f)
+
+hᵢ/hₒ = 1 − dᵢ/f                       (B)</code></pre>
+      <p>In the convex example shown, f and dᵢ are both negative and 0 &lt; dᵢ/f &lt; 1. The equation therefore describes an upright image smaller than the object. No extra sign is inserted into the equation.</p>
+    </section>
+
+    <section>
+      <h2>4 Set the two height equations equal</h2>
+      <p>Equations (A) and (B) describe the <strong>same image tip</strong>, so their expressions for hᵢ/hₒ must agree:</p>
+      <pre><code>−dᵢ/dₒ = 1 − dᵢ/f
+
+dᵢ/f = 1 + dᵢ/dₒ
+
+1/f = 1/dᵢ + 1/dₒ</code></pre>
+      <p>In the final step, divide by the finite, nonzero image distance dᵢ. We obtain the familiar equation:</p>
+      <pre><code>1/f = 1/dₒ + 1/dᵢ</code></pre>
+      <p>Nothing in this step required f to be positive. <strong>The same proof therefore covers concave and convex mirrors, and both real and virtual images within the stated model.</strong> The signs belong to the distances, not to separate versions of the equation.</p>
+      <p>To isolate the image distance, use a common denominator and invert:</p>
+      <pre><code>1/dᵢ = 1/f − 1/dₒ
+     = (dₒ − f)/(f dₒ)
+
+dᵢ = f dₒ/(dₒ − f)                      dₒ ≠ f</code></pre>
+    </section>
+
+    <section>
+      <h2>5 Check both shapes with the same object distance</h2>
+      <h3>Notes</h3>
+      <p>These illustrative checks use dₒ = +100 cm and focal-length magnitude 20.0 cm. They are model calculations, not new measured data or publisher-verified answers.</p>
+      <h3>Concave mirror: f = +20.0 cm</h3>
+      <pre><code>dᵢ = (+20.0 cm)(100 cm)/(100 cm − 20.0 cm)
+   = +25.0 cm
+
+m = −(+25.0 cm)/(100 cm) = −0.250</code></pre>
+      <p>Positive dᵢ means a real image in front. Negative m means inverted; its magnitude makes the image one quarter as tall. Check: 1/20.0 = 1/100 + 1/25.0, with every term in cm⁻¹.</p>
+      <h3>Convex mirror: f = −20.0 cm</h3>
+      <pre><code>dᵢ = (−20.0 cm)(100 cm)/(100 cm − (−20.0 cm))
+   = −16.7 cm approximately
+
+m = −(−16.7 cm)/(100 cm) ≈ +0.167</code></pre>
+      <p>Negative dᵢ means a virtual image behind. Positive m means upright; its magnitude makes the image about one sixth as tall. Using the unrounded image distance, −16⅔ cm, gives −1/20 = 1/100 − 3/50 = −0.0500 cm⁻¹, as required.</p>
+      <p>For any real object and convex mirror, write f = −a with a &gt; 0. Then dᵢ = −a dₒ/(dₒ + a) is always negative, and m = a/(dₒ + a) lies between 0 and 1. This explains why the convex image is always virtual, upright, and reduced for a real object.</p>
+    </section>
+
+    <section>
+      <h2>6 What the derivation assumes</h2>
+      <p>The equation is exact within the ideal near-axis model. A spherical mirror does not bring all rays far from the axis to a single focus: spherical aberration limits the approximation. We did not derive the separate near-axis relation f ≈ R/2 here; the proof uses the focus determined by the parallel-ray rule.</p>
+      <p>If dₒ = f for a concave mirror, equations (A) and (B) cannot agree at any finite image point. The reflected rays are parallel and there is no finite image distance. The rearranged formula must not be evaluated by dividing by zero.</p>
+      <p>For a very distant object, dᵢ approaches f. For a convex mirror, the denominator dₒ − f is always positive when dₒ &gt; 0, so the image stays behind the mirror. The reciprocal equation has units of inverse length, and f dₒ/(dₒ − f) has units of length. These are useful checks on both the algebra and the signs.</p>
+    </section>
+<p><a href="optics-notes.html#topic-6">Return to Topic 6 · Mirror equation →</a></p>
+</main>
+<footer>AI-authored optional proof and diagrams. This page supplements the Physics 11 notes and works offline.</footer>
+<script>document.getElementById('print').addEventListener('click',()=>window.print());</script>
+</body>
+</html>

@@ -2,14 +2,90 @@
 """Build the Chapter 7 optics study notes and Quick Review."""
 import base64
 from html import escape
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
-from bc_study_pages import ROOT, Chapter, build_study_pages
+from bc_study_pages import ROOT, Chapter, build_study_pages, render_outline
 from optics_mirror_position_figures import CASES, build_mirror_position_figures
 from optics_focus_figures import build_focus_figures
+from optics_distance_graph import build_distance_graph
+from mirror_derivation_figures import build_derivation_figures
+
+
+def build_mirror_derivation():
+    """Keep the extended proof on a standalone optional page with return links."""
+    build_derivation_figures()
+    template = (ROOT / 'tools/mirror-equation-derivation-template.html').read_text()
+    with TemporaryDirectory(prefix='mirror-proof-') as directory:
+        page = render_outline('mirror-equation-derivation.md', template, Path(directory))
+    for name, alt, caption in (
+        ('concave',
+         'Concave mirror with positive f and image distance. A parallel orange ray '
+         'reflects at P through F. A teal ray reflects at V. The reflected rays '
+         'cross at an inverted real image tip I in front, so image height is negative.',
+         'Concave example · Solid reflected rays cross at I. Both dᵢ and f are '
+         'positive; hᵢ is negative. O and I are object and image tips.'),
+        ('convex',
+         'Convex mirror with negative f and image distance. A parallel orange ray '
+         'reflects at P as if from F behind the mirror. A teal ray reflects at V. '
+         'Dashed backward extensions cross at an upright virtual image I, '
+         'so image height is positive.',
+         'Convex example · Dashed backward extensions cross at I. Both dᵢ and f '
+         'are negative; hᵢ is positive. Actual light remains in front.'),
+    ):
+        marker = f'<p>{name.upper()}_DERIVATION_FIGURE</p>'
+        assert page.count(marker) == 1
+        data = base64.b64encode((ROOT / f'assets/optics-notes/mirror-derivation-{name}.svg').read_bytes()).decode()
+        figure = (f'<figure><img src="data:image/svg+xml;base64,{data}" '
+                  f'width="960" height="490" alt="{escape(alt, quote=True)}">'
+                  f'<figcaption>{escape(caption)}</figcaption></figure>')
+        page = page.replace(marker, figure)
+    assert '{{' not in page and '_DERIVATION_FIGURE' not in page
+    (ROOT / 'mirror-equation-derivation.html').write_text(page)
+    print('Built optional two-ray mirror-equation derivation.')
+
+
+def link_mirror_derivation():
+    """The outline renderer leaves Markdown links literal; resolve this notes link."""
+    destination = ROOT / 'mirror-equation-derivation.html'
+    assert destination.is_file()
+    path = ROOT / 'optics-notes.html'
+    page = path.read_text()
+    label = 'Why does one mirror equation work for both shapes?'
+    marker = f'[{label}]({destination.name})'
+    assert page.count(marker) == 1
+    path.write_text(page.replace(marker, f'<a href="{destination.name}">{label}</a>'))
+
+
+def embed_distance_graph():
+    """Show the equation's positive and negative image distances in the main lesson."""
+    path = ROOT / 'optics-notes.html'
+    page = path.read_text()
+    marker = '<p>MIRROR_DISTANCE_GRAPH</p>'
+    assert page.count(marker) == 1
+    data = base64.b64encode((ROOT / 'assets/optics-notes/mirror-distance-graph.svg').read_bytes()).decode()
+    alt = ('Graph of image distance versus real object distance in cm. Both mirrors '
+           'use image distance = focal length times object distance divided by '
+           '(object distance minus focal length). Solid teal: concave, f = +20.0 cm; '
+           'dashed magenta: convex, f = −20.0 cm. At object distance 100 cm, the '
+           'concave image is +25.0 cm and the convex image is −16.7 cm. The concave '
+           'image at object distance 10.0 cm is −20.0 cm. Only the concave curve '
+           'has no finite value at object distance +20.0 cm. The convex image '
+           'distance stays negative for every positive object distance.')
+    caption = ('One equation, both mirrors · Use positive f for concave and negative f '
+               'for convex. At the same object distance of 100 cm, the image is '
+               '+25.0 cm for concave and −16.7 cm for convex. Positive image distance '
+               'means real and in front; negative means virtual and behind. '
+               'The grey vertical line is a position marker, not a curve.')
+    figure = (f'<figure class="diagram mirror-distance-graph">'
+              f'<img src="data:image/svg+xml;base64,{data}" width="960" height="720" '
+              f'alt="{escape(alt, quote=True)}" loading="lazy">'
+              f'<figcaption>{escape(caption)}</figcaption></figure>')
+    path.write_text(page.replace(marker, figure))
 
 
 def embed_mirror_equation_solution():
-    """Connect the numerical result to a ray diagram inside the worked answer."""
+    """Connect the numerical result to an always-visible ray diagram."""
     path = ROOT / 'optics-notes.html'
     page = path.read_text()
     marker = '<p>MIRROR_EQUATION_SOLUTION_FIGURE</p>'
@@ -219,10 +295,14 @@ CHAPTER = Chapter(
 )
 
 if __name__ == '__main__':
+    build_mirror_derivation()
+    build_distance_graph()
     build_focus_figures()
     build_mirror_position_figures()
     build_study_pages(CHAPTER)
+    link_mirror_derivation()
     embed_focus_figures()
+    embed_distance_graph()
     embed_mirror_equation_solution()
     embed_mirror_height_solution()
     embed_mirror_position_figures()
