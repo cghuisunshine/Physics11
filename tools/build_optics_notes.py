@@ -8,6 +8,29 @@ from optics_mirror_position_figures import CASES, build_mirror_position_figures
 from optics_focus_figures import build_focus_figures
 
 
+def embed_mirror_equation_solution():
+    """Connect the numerical result to a ray diagram inside the worked answer."""
+    path = ROOT / 'optics-notes.html'
+    page = path.read_text()
+    marker = '<p>MIRROR_EQUATION_SOLUTION_FIGURE</p>'
+    assert page.count(marker) == 1
+    svg = ROOT / 'assets/optics-notes/mirror-equation-solution.svg'
+    data = base64.b64encode(svg.read_bytes()).decode()
+    alt = ('A concave mirror with its upright object 100 cm in front of V. '
+           'The real image is 25.0 cm in front, between F at 20.0 cm and C at 40.0 cm. '
+           'Two reflected rays cross at the inverted image tip. The image arrow '
+           'is one quarter as tall as the object, matching magnification −0.250. '
+           'Both distance guides start at V.')
+    caption = ('Worked-example diagram · Positive image distance puts this real image '
+               'in front of the mirror. Negative magnification makes it inverted; '
+               '|m| = 0.250 makes it one quarter as tall. The arrow heights are illustrative.')
+    figure = (f'<figure class="diagram mirror-equation-solution">'
+              f'<img src="data:image/svg+xml;base64,{data}" width="960" height="510" '
+              f'alt="{escape(alt, quote=True)}" loading="lazy">'
+              f'<figcaption>{escape(caption)}</figcaption></figure>')
+    path.write_text(page.replace(marker, figure))
+
+
 def embed_focus_figures():
     """Keep the focus comparison beside the corresponding explanation, offline."""
     path = ROOT / 'optics-notes.html'
@@ -200,5 +223,6 @@ if __name__ == '__main__':
     build_mirror_position_figures()
     build_study_pages(CHAPTER)
     embed_focus_figures()
+    embed_mirror_equation_solution()
     embed_mirror_height_solution()
     embed_mirror_position_figures()

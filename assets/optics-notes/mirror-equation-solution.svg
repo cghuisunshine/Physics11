@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="510" viewBox="0 0 960 510" role="img" aria-labelledby="title desc">
+<title id="title">A concave mirror forms a smaller, inverted real image</title>
+<desc id="desc">The upright object is 100 centimetres in front of the mirror vertex V. The focus F is 20.0 centimetres in front, the image I is 25.0 centimetres in front, and C is 40.0 centimetres in front. Two rays from the object tip reflect and cross at the inverted image tip between F and C. The image arrow is one quarter the object arrow height. All horizontal distances start at V.</desc>
+<defs>
+<marker id="orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+<marker id="teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#203440}
+.title{font-size:26px;font-weight:700;fill:#075d64}.small{font-size:18px}
+.label{font-size:22px;font-weight:700}.image-label{fill:#8d315f;font-weight:700}
+.axis{stroke:#a4b8bc;stroke-width:1.5;fill:none}
+.dimension{stroke:#647a84;stroke-width:1.5;fill:none}
+.orange{stroke:#b24c20;stroke-width:2.5;fill:none}
+.teal{stroke:#086b72;stroke-width:2.5;fill:none}
+</style></defs>
+<rect width="960" height="510" rx="12" fill="#fff"/>
+<rect x="14" y="14" width="932" height="482" rx="12" fill="none" stroke="#cadbdd" stroke-width="2"/>
+<text x="32" y="51" class="title">From the calculation to the picture</text>
+<text x="32" y="84">f = +20.0 cm · dₒ = 100 cm · dᵢ = +25.0 cm · m = −0.250</text>
+<rect x="654" y="108" width="270" height="222" rx="8" fill="#eef3f4"/>
+<text x="671" y="138" class="small">Behind mirror</text>
+<text x="671" y="171" class="small">Actual light stays in front.</text>
+<path d="M65 230H925" class="axis"/>
+<text x="742" y="257" class="small">Principal axis</text>
+<!-- Ideal near-axis rays reflect in the vertex plane; the mirror face is schematic. -->
+<path d="M130 150H610L436 295" class="orange"/>
+<path d="M235 150H325" class="orange" marker-end="url(#orange)"/>
+<path d="M582 173.333L550 200" class="orange" marker-end="url(#orange)"/>
+<path d="M130 150L610 230L268 287" class="teal"/>
+<path d="M250 170L346 186" class="teal" marker-end="url(#teal)"/>
+<path d="M575 235.833L525 244.167" class="teal" marker-end="url(#teal)"/>
+<path d="M605 119Q615 230 605 341" fill="none" stroke="#075d64" stroke-width="6"/>
+<path d="M130 230V150M122 162L130 150L138 162" fill="none" stroke="#203440" stroke-width="4"/>
+<text x="91" y="133" class="label">Object</text>
+<path d="M490 230V250M483 241L490 250L497 241" fill="none" stroke="#8d315f" stroke-width="4"/>
+<text x="358" y="320" class="image-label">Image: inverted, ¼ as tall</text>
+<path d="M477 299L490 260" class="dimension"/>
+<circle cx="418" cy="230" r="4" fill="#203440"/>
+<text x="418" y="256" text-anchor="middle" class="label">C</text>
+<circle cx="514" cy="230" r="4" fill="#203440"/>
+<text x="520" y="222" text-anchor="middle" class="label">F</text>
+<circle cx="610" cy="230" r="4" fill="#203440"/>
+<text x="629" y="256" class="label">V</text>
+<path d="M130 391V403M130 397H610M610 391V403" class="dimension"/>
+<text x="370" y="387" text-anchor="middle">dₒ = +100 cm</text>
+<path d="M490 348V360M490 354H610M610 348V360" class="dimension"/>
+<text x="550" y="344" text-anchor="middle" class="small">dᵢ = +25.0 cm</text>
+<text x="671" y="367" class="small">F: 20.0 cm from V</text>
+<text x="671" y="400" class="small">C: 40.0 cm from V</text>
+<text x="32" y="446" class="small">The real image lies between F and C, on the same side as the object.</text>
+<text x="32" y="478" class="small">Distances start at V. Arrow heights show m = −0.250. Near-axis model; mirror face schematic.</text>
+</svg>

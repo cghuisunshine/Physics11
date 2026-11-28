@@ -164,25 +164,78 @@ MIRROR_IMAGE_POSITIONS_ANSWER_FIGURES
 The outward-curving face of a convex security mirror makes reflected rays diverge. Their backward extensions meet behind the mirror between V and F, closer to the mirror than the object is in front. The ray geometry therefore gives an upright image with a smaller height. This reduced view lets a security mirror show a wider scene.
 
 ## 6 Mirror equation and magnification
+### Two questions, two equations
+A ray diagram shows roughly where an image forms. The **mirror equation** calculates its position. **Magnification** tells you whether the image is upright or inverted and how its height compares with the object's height.
+
+Use the ideal spherical-mirror model with rays close to the principal axis. The objects in this section are real objects placed in front of the reflecting surface.
+
 ### Use signed distances
-Measure distances from the mirror vertex. For a real object, dₒ is positive. Use positive f for a converging concave mirror and negative f for a diverging convex mirror.
+Start every distance measurement at **V, the mirror vertex**, and measure along the principal axis. The subscripts o and i mean **object** and **image**:
+
+- **dₒ — object distance:** from V to the object. For a real object in front of the mirror, dₒ is positive.
+- **dᵢ — image distance:** from V to the image. A real image in front has positive dᵢ; a virtual image behind has negative dᵢ.
+- **f — focal length:** from V to F, with a sign. A concave mirror has positive f; a convex mirror has negative f.
+
+These are **optics sign rules**, not a left/right coordinate rule. If you draw the mirror facing the other way, a real image in front still has positive dᵢ. For a concave mirror, the object position determines whether its image is real or virtual; the mirror type alone does not settle that.
+
+### Calculate image position first
 ```
 1/f = 1/dₒ + 1/dᵢ
-m = hᵢ/hₒ = −dᵢ/dₒ
 ```
-A positive dᵢ gives a real image in front of a mirror. A negative dᵢ gives a virtual image behind it. Negative magnification means inverted and positive magnification means upright. Compare |m| with 1 to describe size.
+All three distances must use the **same unit**, such as cm. To find dᵢ, subtract 1/dₒ from both sides, then take the reciprocal:
+```
+1/dᵢ = 1/f − 1/dₒ
+dᵢ = 1 / (1/f − 1/dₒ)
+```
+**The reciprocal step matters:** if 1/dᵢ = 0.0400 cm⁻¹, then dᵢ = 1/0.0400 = 25.0 cm. The number 0.0400 is not the image distance. If the right side is zero, the reflected rays are parallel and there is no finite image distance; do not divide by zero.
+
+Read the sign of your result: **positive dᵢ → real image in front**, which can be received on a screen; **negative dᵢ → virtual image behind**, located by backward ray extensions.
+
+### Then describe the image with magnification
+Let **hₒ** be the object's height and **hᵢ** the image's signed height, both measured perpendicular to the axis. Take an upright object as positive: an image above the axis has positive height and an inverted image below has negative height.
+```
+m = hᵢ/hₒ = −dᵢ/dₒ
+hᵢ = m × hₒ
+```
+Magnification m has **no units**, because it is a ratio of two lengths. Read its sign and size separately:
+
+- **Sign gives orientation:** m > 0 means upright; m < 0 means inverted.
+- **Magnitude gives relative height:** |m| < 1 means smaller; |m| = 1 means the same height; |m| > 1 means larger.
+
+For example, **m = −0.250** means *inverted and one quarter as tall*. **m = +2.0** means *upright and twice as tall*. A minus sign describes orientation, not a physically negative size. Do not confuse the sign of dᵢ (image location) with the sign of m (image orientation).
 
 ### Sample 7.2.1 · Where does the image form?
 A concave mirror of focal length 20.0 cm is 1.00 m from an object. Find image distance and magnification.
 
 **Worked answer**
+
+**1. Choose the principle and assign signs.** The mirror equation applies to this concave mirror in the small-angle model. Its focal length is positive, and the real object distance is positive. Convert to a common unit before calculating:
 ```
-dₒ = 100 cm
-1/dᵢ = 1/20.0 − 1/100 = 0.0400 cm⁻¹
-dᵢ = +25.0 cm
-m = −25.0/100 = −0.250
+f = +20.0 cm
+dₒ = 1.00 m = 1.00 × 10² cm
 ```
-The image is real, in front of the mirror, inverted, and one quarter the object height. Its position between f and 2f agrees with the diagram for a distant object.
+**2. Solve for image distance.** Subtract reciprocals, then invert the result:
+```
+1/dᵢ = 1/f − 1/dₒ
+     = 1/(20.0 cm) − 1/(100 cm)
+     = 0.0500 cm⁻¹ − 0.0100 cm⁻¹
+     = 0.0400 cm⁻¹
+
+dᵢ = 1/(0.0400 cm⁻¹) = +25.0 cm
+```
+The positive sign places a **real image 25.0 cm in front of V**. Both the object and this image are on the reflecting side of the mirror.
+
+**3. Calculate magnification.** Keep the minus sign in the formula:
+```
+m = −dᵢ/dₒ
+  = −(+25.0 cm)/(100 cm)
+  = −0.250
+```
+The image is **inverted** because m is negative, and its height is **0.250 times the object's height**. No object height was supplied, so an image height in centimetres cannot be calculated.
+
+MIRROR_EQUATION_SOLUTION_FIGURE
+
+**4. Check the answer.** Substitution gives 1/20.0 = 1/100 + 1/25.0, with every term in cm⁻¹. Also, C is 2f = 40.0 cm in front of V. The object is beyond C, so Topic 5 predicts a real, inverted, smaller image between F and C. The calculated 20.0 cm < 25.0 cm < 40.0 cm agrees.
 
 ## 7 Refractive index and Snell’s law
 ### Speed changes at a boundary
