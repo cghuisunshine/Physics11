@@ -102,16 +102,15 @@ def build_doppler_derivation():
     with TemporaryDirectory(prefix='doppler-') as directory:
         page = render_outline(f'{DOPPLER_DERIVATION}.md', template, Path(directory))
     figures = (
-        ('DOPPLER_SPACING_FIGURE', 'doppler-crest-spacing', 900, 500,
-         'A source moving right compresses the forward crest spacing and stretches the backward '
-         'spacing. An observer moving toward a stationary source meets unchanged crests faster.',
-         'The marks are one-dimensional cross-sections of crests emitted one period apart. '
-         'Source motion changes their spacing; observer motion changes their encounter rate.'),
-        ('MACH_CONE_FIGURE', 'mach-cone-geometry', 840, 600,
-         'Right triangle OAS: OA is the sound-front radius c Δt, OS is source travel u_s Δt, '
-         'and SA is tangent to the front at A. Angle μ at S has sine OA divided by OS.',
-         'The cone surface is tangent to an earlier sound front. Its radius meets the surface '
-         'at a right angle, making sin μ = c/u_s. This is a cross-section of a three-dimensional cone.'),
+        ("DOPPLER_SPACING_FIGURE", "doppler-crest-spacing", 600, 535,
+         "Two snapshots of crest 1 expanding while the source moves and emits crest 2.",
+         "Compare the two gaps at the same instant. Orange marks the source and the forward gap."),
+        ("OBSERVER_FIGURE", "doppler-observer-encounters", 600, 365,
+         "The second crest travels right while the observer moves left to the meeting point.",
+         "The original gap is closed by both motions; the wave spacing itself is unchanged."),
+        ("MACH_CONE_FIGURE", "mach-cone-geometry", 600, 650,
+         "Three circular wavefronts with common tangents, then the right triangle OAS.",
+         "The top panel constructs the envelope. The bottom panel isolates the radius and tangent for the sine ratio."),
     )
     for marker, slug, width, height, alt, caption in figures:
         data = base64.b64encode((ROOT / f'assets/wave-motion-notes/{slug}.svg').read_bytes()).decode()
