@@ -5,6 +5,36 @@ from html import escape
 
 from bc_study_pages import ROOT, Chapter, build_study_pages
 from optics_mirror_position_figures import CASES, build_mirror_position_figures
+from optics_focus_figures import build_focus_figures
+
+
+def embed_focus_figures():
+    """Keep the focus comparison beside the corresponding explanation, offline."""
+    path = ROOT / 'optics-notes.html'
+    page = path.read_text()
+    for name, alt, caption in (
+        ('concave',
+         'Light arrives from the left. A concave mirror reflects parallel rays back '
+         'to a real focus F in front of the mirror. The axis order is C, F, V. '
+         'VF is about half VC; C is the sphere centre, not the focus.',
+         'Concave mirror · Follow the solid arrows to the real focus F. '
+         'Both C and F are in front of the mirror.'),
+        ('convex',
+         'Light arrives from the left. A convex mirror reflects parallel rays back '
+         'to the left, spreading apart. Dashed backward extensions meet at a virtual '
+         'focus F behind the mirror. The axis order is V, F, C; VF is about half VC.',
+         'Convex mirror · Solid arrows stay in front. Only dashed backward extensions '
+         'meet at F behind the mirror; light does not follow those dashed lines.'),
+    ):
+        marker = f'<p>{name.upper()}_FOCUS_FIGURE</p>'
+        assert page.count(marker) == 1
+        data = base64.b64encode((ROOT / f'assets/optics-notes/{name}-focus.svg').read_bytes()).decode()
+        figure = (f'<figure class="diagram {name}-focus">'
+                  f'<img src="data:image/svg+xml;base64,{data}" width="960" height="490" '
+                  f'alt="{escape(alt, quote=True)}" loading="lazy">'
+                  f'<figcaption>{escape(caption)}</figcaption></figure>')
+        page = page.replace(marker, figure)
+    path.write_text(page)
 
 
 def embed_mirror_height_solution():
@@ -87,9 +117,6 @@ FIGURES = [
     (3, 'A pinhole produces a real image', 205, (322, 95, 543, 215),
      'A cup has a small pinhole at one end and a translucent wax paper screen held over the open end.',
      'Textbook warm-up · The wax paper serves as the screen.'),
-    (4, 'Vertex, focus, and centre of curvature', 218, (60, 182, 549, 311),
-     'A concave mirror with the centre of curvature, principal focus, vertex, and principal axis marked.',
-     'Figure 7.2.2 · In the spherical model, F lies about halfway from V to C.'),
     (5, 'Trace two rays from the tip', 219, (162, 157, 550, 307),
      'Two rays from the top of a candle reflect from a concave mirror and cross below the principal axis.',
      'Figure 7.2.4 · The crossing locates the tip of a real, inverted image.'),
@@ -169,7 +196,9 @@ CHAPTER = Chapter(
 )
 
 if __name__ == '__main__':
+    build_focus_figures()
     build_mirror_position_figures()
     build_study_pages(CHAPTER)
+    embed_focus_figures()
     embed_mirror_height_solution()
     embed_mirror_position_figures()

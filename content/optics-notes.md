@@ -83,19 +83,57 @@ The eye height cancels, so its numerical value is not needed to calculate the mi
 For the symmetric mirror pair, the object lies on the 60° angle bisector. In the ideal model, 360°/60° = 6 counts the object together with its images. Subtract the object to obtain **6 − 1 = 5 images**.
 
 ## 4 Concave and convex mirrors
+### Start with the reflecting surface
+A curved mirror is like part of a shiny spoon. Look at the side that reflects light:
+
+- A **concave mirror curves inward**, like the inside of a spoon or a small cave.
+- A **convex mirror bulges outward**, like the back of a spoon. Security mirrors are convex so they can show a wide view.
+
+In the diagrams below, light arrives from the **left**. The left side is **in front of the mirror**, where light arrives and reflects. The shaded right side is **behind the mirror**. “Front” does not mean the right side of the page.
+
 ### Vertex, focus, and centre of curvature
-The **vertex V** is where the principal axis meets the mirror. For a spherical mirror, the axis also passes through the **centre of curvature C**. The radius R is the distance VC. Near the axis, the focus F lies about halfway between C and V.
+Imagine cutting a small curved patch from a hollow sphere to make a **spherical mirror**. Its labels describe different things:
+
+- **C — centre of curvature:** the centre of that imaginary sphere. C is a point in space, not a mark on the mirror.
+- **V — vertex:** the middle point of the mirror's curved surface.
+- **Principal axis:** the straight reference line through C and V.
+- **F — principal focus:** the point where rays initially parallel to the axis meet after reflection, or appear to come from. The next two diagrams show the difference.
+
+The **radius of curvature R** is the distance from V to C. The **focal length f** describes how far F is from V. For a spherical mirror, using rays close to the principal axis:
 ```
-|f| ≈ R/2 for a spherical mirror and small ray angles
+distance VF = |f| ≈ R/2
 ```
-A **concave mirror** can bring an axial parallel bundle to a real focus in front. A **convex mirror** spreads the bundle. Its reflected rays appear to come from a virtual focus behind the mirror. A parabolic mirror brings rays parallel to its axis to the same focus. A spherical mirror can show spherical aberration for rays far from the axis.
+The bars in |f| mean the **positive distance**, without a sign. For example, if R = 40 cm, F is about 20 cm from V, halfway between V and C. Topic 6 introduces signed focal lengths.
+
+### Concave: parallel rays come together
+Follow the arrows: two parallel incoming rays strike different parts of the inward-curving mirror, then reflect back toward the left. The reflected rays **converge**, meaning they come together at F, in front of the mirror.
+
+CONCAVE_FOCUS_FIGURE
+
+This is a **real focus** because actual light passes through it. A screen placed there can receive a small bright spot from a distant point source. Here the order along the axis is **C — F — V**: C is the sphere's centre; F is the light's meeting point. They are different points.
+
+### Convex: parallel rays spread apart
+The outward-curving mirror makes the reflected rays **diverge**, meaning they spread apart as they return toward the left. They never actually meet in front of the mirror.
+
+CONVEX_FOCUS_FIGURE
+
+Extend the reflected rays backward using the **dashed lines**. Those extensions meet at F behind the mirror, so the light **appears to have come from F**. This is a **virtual focus**: the dashed lines are a drawing aid; light does not travel through the mirror along them. A screen placed at that F cannot catch a focused spot. Here the order is **V — F — C**, behind the mirror.
+
+**Remember:** concave brings parallel rays together; convex spreads them apart. These statements are about rays arriving parallel to the principal axis. A nearby object's image need not be at F; Topic 5 shows its position.
+
+### How well does the spherical model work?
+For a spherical mirror, rays far from the axis can miss the common focus, blurring the spot. This is called **spherical aberration**. We use rays near the axis so that F is approximately halfway to C. A **parabolic mirror** has a different curve that brings rays parallel to its axis to the same focus in the ideal model.
 
 ### Investigation 7-2A · Measuring focal length
 Why use a distant lamp when finding the focal length of a concave mirror? What is f if the sharp image of a very distant lamp is 18 cm from the vertex?
 
 **Worked answer**
 
-The incoming rays from a distant point are almost parallel, so the screen is approximately at the focus and **f ≈ 18 cm**. A closer lamp still gives a real image if it is outside f, but that image is farther from the mirror than the focal plane.
+1. A very distant lamp sends rays to the mirror that are almost parallel. A concave mirror brings those rays together near F.
+2. Move a screen in front of the mirror until the lamp's image is sharp. The screen is now approximately at F.
+3. Measure from **V to the screen**, not from C. Here VF = 18 cm, so **f ≈ +18 cm** for this concave mirror.
+
+The length unit is cm, as expected. As a model check, R ≈ 2f ≈ 36 cm, placing C twice as far from V as F. A closer lamp outside F forms its sharp image farther from the mirror than F, so using that screen distance as f would overestimate the focal length.
 
 ## 5 Drawing ray diagrams for mirrors
 ### Trace two rays from the tip

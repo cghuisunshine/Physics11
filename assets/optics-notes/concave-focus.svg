@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="490"
+ viewBox="0 0 960 490" role="img" aria-labelledby="title desc">
+<title id="title">Concave: reflected rays meet at F</title><desc id="desc">Light arrives from the left, parallel to the principal axis. Orange arrows show incoming light; teal arrows show reflected light. The reflected rays cross at the real focus F in front of the mirror. The order is C, F, V. F is halfway between V and C. The shaded area is behind the mirror.</desc>
+<defs>
+<marker id="incoming" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b24c20"/></marker>
+<marker id="reflected" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#086b72"/></marker>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#203440}
+.title{font-size:27px;font-weight:700;fill:#075d64}
+.small{font-size:18px}.label{font-size:23px;font-weight:700}
+.axis{stroke:#879da4;stroke-width:1.5}.dimension{stroke:#647a84;stroke-width:1.5;fill:none}
+.in{stroke:#b24c20;stroke-width:3;fill:none}
+.out{stroke:#086b72;stroke-width:3;fill:none}
+.extension{stroke:#086b72;stroke-width:2;stroke-dasharray:7 6;fill:none}
+</style></defs>
+<rect width="960" height="490" rx="12" fill="#fff"/>
+<rect x="14" y="14" width="932" height="462" rx="12" fill="none" stroke="#cadbdd" stroke-width="2"/>
+<text x="32" y="52" class="title">Concave: reflected rays meet at F</text>
+<text x="32" y="86" class="small">Solid arrows: actual light</text>
+<rect x="638" y="108" width="292" height="225" rx="8" fill="#eef3f4"/>
+<text x="56" y="132">In front of mirror</text>
+<text x="665" y="132">Behind mirror</text>
+<path d="M48 230H932" class="axis"/>
+<text x="55" y="258" class="small">Principal axis</text>
+<path d="M65 182H596.380" class="in"/>
+<path d="M220 182H330" class="in" marker-end="url(#incoming)"/>
+<path d="M596.380 182L150 319.014" class="out"/>
+<path d="M542.814 198.442L475.857 218.994" class="out" marker-end="url(#reflected)"/>
+<path d="M65 278H596.380" class="in"/>
+<path d="M220 278H330" class="in" marker-end="url(#incoming)"/>
+<path d="M596.380 278L150 140.986" class="out"/>
+<path d="M542.814 261.558L475.857 241.006" class="out" marker-end="url(#reflected)"/>
+<path d="M582.283 125A320 320 0 0 1 582.283 335" fill="none" stroke="#075d64" stroke-width="7"/>
+<circle cx="280" cy="230" r="5" fill="#203440"/>
+<text x="280" y="259" text-anchor="middle" class="label">C</text>
+<circle cx="440.0" cy="230" r="5" fill="#203440"/>
+<text x="440.0" y="259" text-anchor="middle" class="label">F</text>
+<circle cx="600" cy="230" r="5" fill="#203440"/>
+<text x="613" y="259" text-anchor="middle" class="label">V</text>
+<text x="312" y="315">Real focus</text>
+<path d="M410 295L435.0 238" class="dimension"/>
+<path d="M440.0 377V389M440.0 383H600M600 377V389" class="dimension"/>
+<text x="520.0" y="373" text-anchor="middle" class="small">VF = |f|</text>
+<path d="M280 419V431M280 425H600M600 419V431" class="dimension"/>
+<text x="440.0" y="415" text-anchor="middle" class="small">VC = R</text>
+<text x="32" y="459" class="small">Near-axis model: F is about halfway from V to C.</text>
+</svg>
